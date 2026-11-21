@@ -103,7 +103,6 @@
                 <testExclude>**/AbstractEncodingContext.java</testExclude>
                 <testExclude>**/StaticEncodingContext.java</testExclude>
                 <testExclude>**/DynamicEncodingContext.java</testExclude>
-                <testExclude>**/DynamicUnionTypeTest.java</testExclude>
               </testExcludes>
             </configuration>
           </plugin>

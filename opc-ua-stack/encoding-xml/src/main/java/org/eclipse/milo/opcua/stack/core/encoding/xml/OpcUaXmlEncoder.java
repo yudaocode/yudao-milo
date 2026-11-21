@@ -902,6 +902,7 @@ encodeDiagnosticInfo("DiagnosticInfo", (DiagnosticInfo) value);
           encodeBooleanArray("ListOfBoolean", (Boolean[]) value);
         }
       }
+      break;
       case Byte:
 encodeByteArray("ListOfByte", (UByte[]) value);
       break;
@@ -917,6 +918,7 @@ encodeByteArray("ListOfByte", (UByte[]) value);
           encodeSByteArray("ListOfSByte", (Byte[]) value);
         }
       }
+      break;
       case Int16: {
         if (value instanceof short[]) {
       short[] primitiveArray = (short[]) value;
@@ -929,6 +931,7 @@ encodeByteArray("ListOfByte", (UByte[]) value);
           encodeInt16Array("ListOfInt16", (Short[]) value);
         }
       }
+      break;
       case UInt16:
 encodeUInt16Array("ListOfUInt16", (UShort[]) value);
       break;
@@ -944,6 +947,7 @@ encodeUInt16Array("ListOfUInt16", (UShort[]) value);
           encodeInt32Array("ListOfInt32", (Integer[]) value);
         }
       }
+      break;
       case UInt32:
 encodeUInt32Array("ListOfUInt32", (UInteger[]) value);
       break;
@@ -959,6 +963,7 @@ encodeUInt32Array("ListOfUInt32", (UInteger[]) value);
           encodeInt64Array("ListOfInt64", (Long[]) value);
         }
       }
+      break;
       case UInt64:
 encodeUInt64Array("ListOfUInt64", (ULong[]) value);
       break;
@@ -974,6 +979,7 @@ encodeUInt64Array("ListOfUInt64", (ULong[]) value);
           encodeFloatArray("ListOfFloat", (Float[]) value);
         }
       }
+      break;
       case Double: {
         if (value instanceof double[]) {
       double[] primitiveArray = (double[]) value;
@@ -986,6 +992,7 @@ encodeUInt64Array("ListOfUInt64", (ULong[]) value);
           encodeDoubleArray("ListOfDouble", (Double[]) value);
         }
       }
+      break;
       case String:
 encodeStringArray("ListOfString", (String[]) value);
       break;
@@ -1771,6 +1778,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Byte: {
               if (elements instanceof UByte[]) {
       UByte[] array = (UByte[]) elements;
@@ -1779,6 +1787,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case SByte: {
               if (elements instanceof byte[]) {
       byte[] array = (byte[]) elements;
@@ -1792,6 +1801,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Int16: {
               if (elements instanceof short[]) {
       short[] array = (short[]) elements;
@@ -1805,6 +1815,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case UInt16: {
               if (elements instanceof UShort[]) {
       UShort[] array = (UShort[]) elements;
@@ -1813,6 +1824,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Int32: {
               if (elements instanceof int[]) {
       int[] array = (int[]) elements;
@@ -1826,6 +1838,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case UInt32: {
               if (elements instanceof UInteger[]) {
       UInteger[] array = (UInteger[]) elements;
@@ -1834,6 +1847,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Int64: {
               if (elements instanceof long[]) {
       long[] array = (long[]) elements;
@@ -1847,6 +1861,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case UInt64: {
               if (elements instanceof ULong[]) {
       ULong[] array = (ULong[]) elements;
@@ -1855,6 +1870,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Float: {
               if (elements instanceof float[]) {
       float[] array = (float[]) elements;
@@ -1868,6 +1884,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Double: {
               if (elements instanceof double[]) {
       double[] array = (double[]) elements;
@@ -1881,6 +1898,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case String: {
               if (elements instanceof String[]) {
       String[] array = (String[]) elements;
@@ -1889,6 +1907,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case DateTime: {
               if (elements instanceof DateTime[]) {
       DateTime[] array = (DateTime[]) elements;
@@ -1897,6 +1916,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Guid: {
               if (elements instanceof UUID[]) {
       UUID[] array = (UUID[]) elements;
@@ -1905,6 +1925,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case ByteString: {
               if (elements instanceof ByteString[]) {
       ByteString[] array = (ByteString[]) elements;
@@ -1913,6 +1934,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case XmlElement: {
               if (elements instanceof XmlElement[]) {
       XmlElement[] array = (XmlElement[]) elements;
@@ -1921,6 +1943,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case NodeId: {
               if (elements instanceof NodeId[]) {
       NodeId[] array = (NodeId[]) elements;
@@ -1929,6 +1952,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case ExpandedNodeId: {
               if (elements instanceof ExpandedNodeId[]) {
       ExpandedNodeId[] array = (ExpandedNodeId[]) elements;
@@ -1937,6 +1961,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case StatusCode: {
               if (elements instanceof StatusCode[]) {
       StatusCode[] array = (StatusCode[]) elements;
@@ -1945,6 +1970,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case QualifiedName: {
               if (elements instanceof QualifiedName[]) {
       QualifiedName[] array = (QualifiedName[]) elements;
@@ -1953,6 +1979,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case LocalizedText: {
               if (elements instanceof LocalizedText[]) {
       LocalizedText[] array = (LocalizedText[]) elements;
@@ -1961,6 +1988,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case ExtensionObject: {
               if (elements instanceof ExtensionObject[]) {
       ExtensionObject[] array = (ExtensionObject[]) elements;
@@ -1969,6 +1997,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case DataValue: {
               if (elements instanceof DataValue[]) {
       DataValue[] array = (DataValue[]) elements;
@@ -1977,6 +2006,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case Variant: {
               if (elements instanceof Variant[]) {
       Variant[] array = (Variant[]) elements;
@@ -1985,6 +2015,7 @@ encodeVariantArray("ListOfVariant", (Variant[]) value);
                 }
               }
             }
+            break;
             case DiagnosticInfo: {
               if (elements instanceof DiagnosticInfo[]) {
       DiagnosticInfo[] array = (DiagnosticInfo[]) elements;

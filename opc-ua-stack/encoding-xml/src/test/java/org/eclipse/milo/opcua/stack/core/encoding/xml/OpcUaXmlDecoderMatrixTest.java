@@ -67,7 +67,7 @@ public class OpcUaXmlDecoderMatrixTest {
     String encoded = encode(e -> e.encodeMatrix("Test", matrix));
 
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
       decoded = decoder.decodeMatrix("Test", matrix.getDataType().orElseThrow());
     }
@@ -114,7 +114,7 @@ public class OpcUaXmlDecoderMatrixTest {
     String encoded = encode(e -> e.encodeEnumMatrix("Test", matrix));
 
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
       decoded = decoder.decodeEnumMatrix("Test");
     }
@@ -143,7 +143,7 @@ public class OpcUaXmlDecoderMatrixTest {
     String encoded = encode(e -> e.encodeStructMatrix("Test", matrix, dataTypeId));
 
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
       decoded = decoder.decodeStructMatrix("Test", dataTypeId);
     }
@@ -168,7 +168,7 @@ public class OpcUaXmlDecoderMatrixTest {
     String encoded = encode(e -> e.encodeStructMatrix("Test", matrix, dataTypeId));
 
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
       decoded = decoder.decodeStructMatrix("Test", dataTypeId);
     }
@@ -193,7 +193,7 @@ public class OpcUaXmlDecoderMatrixTest {
     String encoded = encode(e -> e.encodeMatrix("Test", original));
 
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
       decoded = decoder.decodeMatrix("Test", OpcUaDataType.Int32);
     }
@@ -208,7 +208,7 @@ public class OpcUaXmlDecoderMatrixTest {
     String encoded = encode(e -> e.encodeMatrix("Test", original));
 
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
       decoded = decoder.decodeMatrix("Test", OpcUaDataType.String);
     }
@@ -221,25 +221,23 @@ public class OpcUaXmlDecoderMatrixTest {
     // Pretty-printed XML (e.g. copied from a UANodeSet) has whitespace text nodes between elements.
     // The decoder must locate <Dimensions>/<Elements> by element type, not by raw child position.
     String indented =
-        """
-        <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-          <uax:Dimensions>
-            <uax:Int32>2</uax:Int32>
-            <uax:Int32>3</uax:Int32>
-          </uax:Dimensions>
-          <uax:Elements>
-            <uax:Int32>1</uax:Int32>
-            <uax:Int32>2</uax:Int32>
-            <uax:Int32>3</uax:Int32>
-            <uax:Int32>4</uax:Int32>
-            <uax:Int32>5</uax:Int32>
-            <uax:Int32>6</uax:Int32>
-          </uax:Elements>
-        </Test>
-        """;
+            "        <Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">" + "\n"
+            + "          <uax:Dimensions>" + "\n"
+            + "            <uax:Int32>2</uax:Int32>" + "\n"
+            + "            <uax:Int32>3</uax:Int32>" + "\n"
+            + "          </uax:Dimensions>" + "\n"
+            + "          <uax:Elements>" + "\n"
+            + "            <uax:Int32>1</uax:Int32>" + "\n"
+            + "            <uax:Int32>2</uax:Int32>" + "\n"
+            + "            <uax:Int32>3</uax:Int32>" + "\n"
+            + "            <uax:Int32>4</uax:Int32>" + "\n"
+            + "            <uax:Int32>5</uax:Int32>" + "\n"
+            + "            <uax:Int32>6</uax:Int32>" + "\n"
+            + "          </uax:Elements>" + "\n"
+            + "        </Test>";
 
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(indented));
       decoded = decoder.decodeMatrix("Test", OpcUaDataType.Int32);
     }
@@ -252,7 +250,7 @@ public class OpcUaXmlDecoderMatrixTest {
     // A field with neither <Dimensions> nor <Elements> children decodes to a null Matrix rather
     // than throwing or returning a non-null empty Matrix.
     Matrix decoded;
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader("<Test/>"));
       decoded = decoder.decodeMatrix("Test", OpcUaDataType.Int32);
     }
@@ -269,19 +267,17 @@ public class OpcUaXmlDecoderMatrixTest {
     // OPC 10000-6 5.3.1.17 requires the product of Dimensions to match the number of
     // flattened Elements. A 2x2 matrix must therefore contain exactly 4 elements.
     String xml =
-        """
-        <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-          <uax:Dimensions>
-            <uax:Int32>2</uax:Int32>
-            <uax:Int32>2</uax:Int32>
-          </uax:Dimensions>
-          <uax:Elements>
-            <uax:Int32>1</uax:Int32>
-          </uax:Elements>
-        </Test>
-        """;
+            "        <Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">" + "\n"
+            + "          <uax:Dimensions>" + "\n"
+            + "            <uax:Int32>2</uax:Int32>" + "\n"
+            + "            <uax:Int32>2</uax:Int32>" + "\n"
+            + "          </uax:Dimensions>" + "\n"
+            + "          <uax:Elements>" + "\n"
+            + "            <uax:Int32>1</uax:Int32>" + "\n"
+            + "          </uax:Elements>" + "\n"
+            + "        </Test>";
 
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(xml));
 
       assertThrows(
@@ -296,19 +292,17 @@ public class OpcUaXmlDecoderMatrixTest {
     // OPC 10000-6 5.3.1.17 says all Matrix dimensions shall be greater than zero.
     // A zero dimension is not a valid compact representation of an empty Matrix.
     String xml =
-        """
-        <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-          <uax:Dimensions>
-            <uax:Int32>0</uax:Int32>
-            <uax:Int32>1</uax:Int32>
-          </uax:Dimensions>
-          <uax:Elements>
-            <uax:Int32>1</uax:Int32>
-          </uax:Elements>
-        </Test>
-        """;
+            "        <Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">" + "\n"
+            + "          <uax:Dimensions>" + "\n"
+            + "            <uax:Int32>0</uax:Int32>" + "\n"
+            + "            <uax:Int32>1</uax:Int32>" + "\n"
+            + "          </uax:Dimensions>" + "\n"
+            + "          <uax:Elements>" + "\n"
+            + "            <uax:Int32>1</uax:Int32>" + "\n"
+            + "          </uax:Elements>" + "\n"
+            + "        </Test>";
 
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(xml));
 
       assertThrows(
@@ -323,19 +317,17 @@ public class OpcUaXmlDecoderMatrixTest {
     // OPC 10000-6 5.3.4 says array element names shall be the type name. Since the
     // caller requested an Int32 matrix, each element in <Elements> must be <Int32>.
     String xml =
-        """
-        <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-          <uax:Dimensions>
-            <uax:Int32>1</uax:Int32>
-            <uax:Int32>1</uax:Int32>
-          </uax:Dimensions>
-          <uax:Elements>
-            <uax:String>123</uax:String>
-          </uax:Elements>
-        </Test>
-        """;
+            "        <Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">" + "\n"
+            + "          <uax:Dimensions>" + "\n"
+            + "            <uax:Int32>1</uax:Int32>" + "\n"
+            + "            <uax:Int32>1</uax:Int32>" + "\n"
+            + "          </uax:Dimensions>" + "\n"
+            + "          <uax:Elements>" + "\n"
+            + "            <uax:String>123</uax:String>" + "\n"
+            + "          </uax:Elements>" + "\n"
+            + "        </Test>";
 
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(xml));
 
       assertThrows(
@@ -354,7 +346,7 @@ public class OpcUaXmlDecoderMatrixTest {
     String encoded =
         encode(e -> e.encodeStructMatrix("Test", threeDVectorMatrix, ThreeDVector.TYPE_ID));
 
-    try (var decoder = new OpcUaXmlDecoder(context)) {
+    try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
 
       assertThrows(
@@ -371,7 +363,7 @@ public class OpcUaXmlDecoderMatrixTest {
   }
 
   private String encode(EncodeAction action) throws Exception {
-    try (var encoder = new OpcUaXmlEncoder(context)) {
+    try (OpcUaXmlEncoder encoder = new OpcUaXmlEncoder(context)) {
       action.accept(encoder);
       return encoder.getOutputString();
     }
