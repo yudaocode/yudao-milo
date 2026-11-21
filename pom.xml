@@ -73,6 +73,7 @@
 
     <!-- Plugin Dependency Versions -->
     <central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
+    <central.skipUpload>true</central.skipUpload>
     <checkstyle.version>12.3.1</checkstyle.version>
     <jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
     <license-tool-plugin.version>1.1.0</license-tool-plugin.version>
@@ -163,8 +164,9 @@
             <extensions>true</extensions>
             <configuration>
               <publishingServerId>central</publishingServerId>
-              <autoPublish>true</autoPublish>
-              <waitUntil>published</waitUntil>
+              <autoPublish>false</autoPublish>
+              <waitUntil>validated</waitUntil>
+              <skipUpload>${central.skipUpload}</skipUpload>
               <centralSnapshotsUrl>https://central.sonatype.com/repository/maven-snapshots/
               </centralSnapshotsUrl>
             </configuration>
