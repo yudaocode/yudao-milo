@@ -692,6 +692,7 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
         switch (typeHint) {
           case BUILTIN:
 encodeBuiltinTypeArrayValue(value, dataType);
+          break;
           case ENUM: {
             if (value instanceof UaEnumeratedType[]) {
       UaEnumeratedType[] array = (UaEnumeratedType[]) value;
@@ -702,6 +703,7 @@ encodeBuiltinTypeArrayValue(value, dataType);
               encodeBuiltinTypeArrayValue(values, OpcUaDataType.Int32);
             }
           }
+          break;
           case STRUCT: {
             if (value instanceof UaStructuredType[]) {
       UaStructuredType[] array = (UaStructuredType[]) value;
@@ -715,6 +717,7 @@ encodeBuiltinTypeArrayValue(value, dataType);
               encodeBuiltinTypeArrayValue(xos, OpcUaDataType.ExtensionObject);
             }
           }
+          break;
           case OPTION_SET: {
             if (value instanceof OptionSetUI8<?>[]) {
       OptionSetUI8<?>[] array = (OptionSetUI8<?>[]) value;
@@ -755,14 +758,17 @@ encodeBuiltinTypeArrayValue(value, dataType);
         switch (typeHint) {
           case BUILTIN:
 encodeMatrix("Matrix", matrix);
+          break;
           case ENUM: {
             Matrix transformed =
                 matrix.transform(
                     e -> ((UaEnumeratedType) e).getValue(), Integer.class, OpcUaDataType.Int32);
             encodeMatrix("Matrix", transformed);
           }
+          break;
           case STRUCT:
 encodeStructMatrix("Matrix", matrix, matrix.getDataTypeId().get());
+          break;
           case OPTION_SET: {
             OpcUaDataType optionSetDataType = matrix.getDataType().get();
             Matrix transformed =
@@ -772,25 +778,30 @@ encodeStructMatrix("Matrix", matrix, matrix.getDataTypeId().get());
                     optionSetDataType);
             encodeMatrix("Matrix", transformed);
           }
+          break;
         }
       } else {
         switch (typeHint) {
           case BUILTIN:
 encodeBuiltinTypeValue(value, dataType);
+          break;
           case ENUM: {
             UaEnumeratedType enumValue = (UaEnumeratedType) value;
             encodeBuiltinTypeValue(enumValue.getValue(), OpcUaDataType.Int32);
           }
+          break;
           case STRUCT: {
             UaStructuredType structValue = (UaStructuredType) value;
             ExtensionObject xo =
                 ExtensionObject.encode(context, structValue, OpcUaDefaultXmlEncoding.getInstance());
             encodeBuiltinTypeValue(xo, OpcUaDataType.ExtensionObject);
           }
+          break;
           case OPTION_SET: {
             OptionSetUInteger<?> optionSet = (OptionSetUInteger<?>) value;
             encodeBuiltinTypeValue(optionSet.getValue(), dataType);
           }
+          break;
         }
       }
     } finally {
@@ -802,52 +813,76 @@ encodeBuiltinTypeValue(value, dataType);
     switch (dataType) {
       case Boolean:
 encodeBoolean("Boolean", (Boolean) value);
+      break;
       case Byte:
 encodeByte("Byte", (UByte) value);
+      break;
       case SByte:
 encodeSByte("SByte", (Byte) value);
+      break;
       case Int16:
 encodeInt16("Int16", (Short) value);
+      break;
       case UInt16:
 encodeUInt16("UInt16", (UShort) value);
+      break;
       case Int32:
 encodeInt32("Int32", (Integer) value);
+      break;
       case UInt32:
 encodeUInt32("UInt32", (UInteger) value);
+      break;
       case Int64:
 encodeInt64("Int64", (Long) value);
+      break;
       case UInt64:
 encodeUInt64("UInt64", (ULong) value);
+      break;
       case Float:
 encodeFloat("Float", (Float) value);
+      break;
       case Double:
 encodeDouble("Double", (Double) value);
+      break;
       case String:
 encodeString("String", (String) value);
+      break;
       case DateTime:
 encodeDateTime("DateTime", (DateTime) value);
+      break;
       case Guid:
 encodeGuid("Guid", (UUID) value);
+      break;
       case ByteString:
 encodeByteString("ByteString", (ByteString) value);
+      break;
       case XmlElement:
 encodeXmlElement("XmlElement", (XmlElement) value);
+      break;
       case NodeId:
 encodeNodeId("NodeId", (NodeId) value);
+      break;
       case ExpandedNodeId:
 encodeExpandedNodeId("ExpandedNodeId", (ExpandedNodeId) value);
+      break;
       case StatusCode:
 encodeStatusCode("StatusCode", (StatusCode) value);
+      break;
       case QualifiedName:
 encodeQualifiedName("QualifiedName", (QualifiedName) value);
+      break;
       case LocalizedText:
 encodeLocalizedText("LocalizedText", (LocalizedText) value);
+      break;
       case ExtensionObject:
 encodeExtensionObject("ExtensionObject", (ExtensionObject) value);
+      break;
       case DataValue:
 encodeDataValue("DataValue", (DataValue) value);
+      break;
       case Variant:
 encodeVariant("Variant", (Variant) value);
+      break;
       case DiagnosticInfo:
 encodeDiagnosticInfo("DiagnosticInfo", (DiagnosticInfo) value);
     }
@@ -869,6 +904,7 @@ encodeDiagnosticInfo("DiagnosticInfo", (DiagnosticInfo) value);
       }
       case Byte:
 encodeByteArray("ListOfByte", (UByte[]) value);
+      break;
       case SByte: {
         if (value instanceof byte[]) {
       byte[] primitiveArray = (byte[]) value;
@@ -895,6 +931,7 @@ encodeByteArray("ListOfByte", (UByte[]) value);
       }
       case UInt16:
 encodeUInt16Array("ListOfUInt16", (UShort[]) value);
+      break;
       case Int32: {
         if (value instanceof int[]) {
       int[] primitiveArray = (int[]) value;
@@ -909,6 +946,7 @@ encodeUInt16Array("ListOfUInt16", (UShort[]) value);
       }
       case UInt32:
 encodeUInt32Array("ListOfUInt32", (UInteger[]) value);
+      break;
       case Int64: {
         if (value instanceof long[]) {
       long[] primitiveArray = (long[]) value;
@@ -923,6 +961,7 @@ encodeUInt32Array("ListOfUInt32", (UInteger[]) value);
       }
       case UInt64:
 encodeUInt64Array("ListOfUInt64", (ULong[]) value);
+      break;
       case Float: {
         if (value instanceof float[]) {
       float[] primitiveArray = (float[]) value;
@@ -949,30 +988,43 @@ encodeUInt64Array("ListOfUInt64", (ULong[]) value);
       }
       case String:
 encodeStringArray("ListOfString", (String[]) value);
+      break;
       case DateTime:
 encodeDateTimeArray("ListOfDateTime", (DateTime[]) value);
+      break;
       case Guid:
 encodeGuidArray("ListOfGuid", (UUID[]) value);
+      break;
       case ByteString:
 encodeByteStringArray("ListOfByteString", (ByteString[]) value);
+      break;
       case XmlElement:
 encodeXmlElementArray("ListOfXmlElement", (XmlElement[]) value);
+      break;
       case NodeId:
 encodeNodeIdArray("ListOfNodeId", (NodeId[]) value);
+      break;
       case ExpandedNodeId:
           encodeExpandedNodeIdArray("ListOfExpandedNodeId", (ExpandedNodeId[]) value);
+      break;
       case StatusCode:
 encodeStatusCodeArray("ListOfStatusCode", (StatusCode[]) value);
+      break;
       case QualifiedName:
           encodeQualifiedNameArray("ListOfQualifiedName", (QualifiedName[]) value);
+      break;
       case LocalizedText:
           encodeLocalizedTextArray("ListOfLocalizedText", (LocalizedText[]) value);
+      break;
       case ExtensionObject:
           encodeExtensionObjectArray("ListOfExtensionObject", (ExtensionObject[]) value);
+      break;
       case DataValue:
 encodeDataValueArray("ListOfDataValue", (DataValue[]) value);
+      break;
       case Variant:
 encodeVariantArray("ListOfVariant", (Variant[]) value);
+      break;
       case DiagnosticInfo:
           encodeDiagnosticInfoArray("ListOfDiagnosticInfo", (DiagnosticInfo[]) value);
     }

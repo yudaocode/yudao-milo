@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
 import io.netty.buffer.Unpooled;
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 import org.eclipse.milo.opcua.stack.core.NamespaceTable;
 import org.eclipse.milo.opcua.stack.core.ServerTable;
 import org.eclipse.milo.opcua.stack.core.channel.EncodingLimits;
@@ -83,13 +83,14 @@ public abstract class AbstractBsdCodecTest {
         BsdParser.parse(
             getClass().getClassLoader().getResourceAsStream("dictionaries/BsdParserTest.bsd.xml"));
 
-    var binaryDictionary = new BinaryDataTypeDictionary(typeDictionary);
+    BinaryDataTypeDictionary binaryDictionary = new BinaryDataTypeDictionary(typeDictionary);
 
     typeDictionary
         .getOpaqueTypeOrEnumeratedTypeOrStructuredType()
         .forEach(
             typeDescription -> {
-              if (typeDescription instanceof StructuredType structuredType) {
+              if (typeDescription instanceof StructuredType) {
+                StructuredType structuredType = (StructuredType) typeDescription;
                 BinaryDataTypeCodec codec =
                     createCodec(
                         BSD_CODEC_TEST_NAMESPACE,
@@ -178,6 +179,9 @@ public abstract class AbstractBsdCodecTest {
   }
 
   private static Object unwrap(Object value) {
-    return value instanceof BsdStructWrapper<?> w ? w.object() : value;
+    if (value instanceof BsdStructWrapper<?>) {
+      return ((BsdStructWrapper<?>) value).object();
+    }
+    return value;
   }
 }

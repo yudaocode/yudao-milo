@@ -117,7 +117,7 @@ public interface AccessController {
     /** Access is allowed. */
     static final class Allowed implements AccessResult {
 
-      Allowed() {
+      public Allowed() {
       }
 }
 
@@ -133,7 +133,7 @@ public interface AccessController {
         return statusCode;
       }
 
-      Denied(StatusCode statusCode) {
+      public Denied(StatusCode statusCode) {
         this.statusCode = statusCode;
       }
 

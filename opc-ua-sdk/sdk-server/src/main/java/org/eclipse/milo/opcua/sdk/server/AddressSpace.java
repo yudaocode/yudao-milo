@@ -155,7 +155,7 @@ public interface AddressSpace {
       return revisedQueueSize;
     }
 
-    RevisedDataItemParameters(Double revisedSamplingInterval, UInteger revisedQueueSize) {
+    public RevisedDataItemParameters(Double revisedSamplingInterval, UInteger revisedQueueSize) {
       this.revisedSamplingInterval = revisedSamplingInterval;
       this.revisedQueueSize = revisedQueueSize;
     }
@@ -173,7 +173,7 @@ public interface AddressSpace {
       return revisedQueueSize;
     }
 
-    RevisedEventItemParameters(UInteger revisedQueueSize) {
+    public RevisedEventItemParameters(UInteger revisedQueueSize) {
       this.revisedQueueSize = revisedQueueSize;
     }
 }
@@ -347,7 +347,7 @@ public interface AddressSpace {
     /** The NodeId being browsed is unknown to the {@link AddressSpace}. */
     static final class BadNodeIdUnknown implements ReferenceResult {
 
-      BadNodeIdUnknown() {
+      public BadNodeIdUnknown() {
       }
 }
 
@@ -363,7 +363,7 @@ public interface AddressSpace {
         return references;
       }
 
-      ReferenceList(List<Reference> references) {
+      public ReferenceList(List<Reference> references) {
         this.references = references;
       }
 }

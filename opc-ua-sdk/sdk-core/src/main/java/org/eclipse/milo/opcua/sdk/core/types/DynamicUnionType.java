@@ -141,10 +141,29 @@ public final class DynamicUnionType extends DynamicType implements UaStructuredT
     }
 
     public UnionValue(String fieldName, Object fieldValue) {
-    this.fieldName = fieldName;
-    this.fieldValue = fieldValue;
       requireNonNull(fieldName);
       requireNonNull(fieldValue);
+      this.fieldName = fieldName;
+      this.fieldValue = fieldValue;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+      if (this == o) return true;
+      if (!(o instanceof UnionValue)) return false;
+      UnionValue other = (UnionValue) o;
+      return Objects.equals(fieldName, other.fieldName)
+          && Objects.equals(fieldValue, other.fieldValue);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(fieldName, fieldValue);
+    }
+
+    @Override
+    public String toString() {
+      return "UnionValue[fieldName=" + fieldName + ", fieldValue=" + fieldValue + "]";
     }
   }
 

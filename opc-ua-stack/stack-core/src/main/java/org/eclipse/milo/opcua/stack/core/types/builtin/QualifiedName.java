@@ -45,10 +45,10 @@ public final class QualifiedName {
   public static final QualifiedName NULL_VALUE = new QualifiedName(ushort(0), null);
 
   public QualifiedName(UShort namespaceIndex, @Nullable String name) {
-  this.namespaceIndex = namespaceIndex;
-  this.name = name;
     Preconditions.checkNotNull(namespaceIndex);
     Preconditions.checkArgument(name == null || name.length() <= 512, "name");
+    this.namespaceIndex = namespaceIndex;
+    this.name = name;
   }
 
   /**
@@ -149,6 +149,16 @@ public final class QualifiedName {
 
     return namespaceIndex.equals(that.namespaceIndex)
         && (Objects.equals(name, that.name) || isNull() && that.isNull());
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(namespaceIndex, isNull() ? null : name);
+  }
+
+  @Override
+  public String toString() {
+    return "QualifiedName[namespaceIndex=" + namespaceIndex + ", name=" + name + "]";
   }
 
   /**

@@ -14,7 +14,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 import org.eclipse.milo.opcua.sdk.core.dtd.AbstractBsdCodecTest;
 import org.eclipse.milo.opcua.sdk.core.dtd.BinaryDataTypeCodec;
 import org.eclipse.milo.opcua.stack.core.types.builtin.NodeId;
@@ -149,16 +149,14 @@ public class JsonBsdCodecTest extends AbstractBsdCodecTest {
   @Test
   public void testScanSettingsJson() {
     String json =
-        """
-        {
-            "LocationTypeSpecified": 1,
-            "Reserved1": 0,
-            "Duration": 0.0,
-            "Cycles": 0,
-            "DataAvailable": false,
-            "LocationType": 0
-        }\
-        """;
+        "{\n"
+            + "    \"LocationTypeSpecified\": 1,\n"
+            + "    \"Reserved1\": 0,\n"
+            + "    \"Duration\": 0.0,\n"
+            + "    \"Cycles\": 0,\n"
+            + "    \"DataAvailable\": false,\n"
+            + "    \"LocationType\": 0\n"
+            + "}";
 
     JsonObject scanSettings = JsonParser.parseString(json).getAsJsonObject();
 

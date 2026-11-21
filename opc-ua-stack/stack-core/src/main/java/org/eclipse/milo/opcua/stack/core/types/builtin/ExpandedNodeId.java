@@ -896,6 +896,24 @@ public final class ExpandedNodeId {
       public ServerUri(String serverUri) {
         this.serverUri = serverUri;
       }
+
+      @Override
+      public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ServerUri)) return false;
+        ServerUri other = (ServerUri) o;
+        return java.util.Objects.equals(serverUri, other.serverUri);
+      }
+
+      @Override
+      public int hashCode() {
+        return java.util.Objects.hash(serverUri);
+      }
+
+      @Override
+      public String toString() {
+        return "ServerUri[" + serverUri + "]";
+      }
 }
 
     static ServerReference of(long serverIndex) {

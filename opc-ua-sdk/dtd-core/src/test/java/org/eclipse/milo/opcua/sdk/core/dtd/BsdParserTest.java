@@ -12,7 +12,7 @@ package org.eclipse.milo.opcua.sdk.core.dtd;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 import java.io.InputStream;
 import org.junit.jupiter.api.Test;
 

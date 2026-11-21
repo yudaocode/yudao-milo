@@ -101,7 +101,7 @@
 
     <!-- Test Dependency Versions -->
     <junit.version>5.13.4</junit.version>
-    <mockito.version>5.24.0</mockito.version>
+    <mockito.version>4.11.0</mockito.version>
   </properties>
 
   <profiles>
@@ -417,6 +417,7 @@
           <configuration>
             <source>8</source>
             <target>8</target>
+            <release>8</release>
           </configuration>
         </plugin>
 

@@ -240,7 +240,7 @@ public final class StatusCode {
       return bits;
     }
 
-    DataValueInfoBits(int bits) {
+    public DataValueInfoBits(int bits) {
       this.bits = bits;
     }
 
@@ -375,6 +375,18 @@ public final class StatusCode {
       return new StringJoiner(", ", DataValueInfoBits.class.getSimpleName() + "[", "]")
           .add("bits=" + Integer.toBinaryString(bits).substring(0, 10))
           .toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+      if (this == o) return true;
+      if (!(o instanceof DataValueInfoBits)) return false;
+      return bits == ((DataValueInfoBits) o).bits;
+    }
+
+    @Override
+    public int hashCode() {
+      return Integer.hashCode(bits);
     }
   }
 

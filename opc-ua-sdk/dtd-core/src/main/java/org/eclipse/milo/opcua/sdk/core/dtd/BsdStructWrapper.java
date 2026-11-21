@@ -56,4 +56,23 @@ public final class BsdStructWrapper<T> implements UaStructuredType {
   public String getTypeName() {
     return dataType.getBrowseName().getName();
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof BsdStructWrapper)) return false;
+    BsdStructWrapper<?> other = (BsdStructWrapper<?>) o;
+    return java.util.Objects.equals(dataType, other.dataType)
+        && java.util.Objects.equals(object, other.object);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(dataType, object);
+  }
+
+  @Override
+  public String toString() {
+    return "BsdStructWrapper[dataType=" + dataType + ", object=" + object + "]";
+  }
 }

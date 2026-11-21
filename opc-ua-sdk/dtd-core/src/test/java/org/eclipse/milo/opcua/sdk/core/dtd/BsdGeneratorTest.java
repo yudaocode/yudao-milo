@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.sdk.core.dtd;
 
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 import java.io.ByteArrayOutputStream;
 import org.junit.jupiter.api.Test;
 import org.opcfoundation.opcua.binaryschema.TypeDictionary;
@@ -21,7 +21,7 @@ class BsdGeneratorTest {
   void generate() throws JAXBException {
     TypeDictionary typeDictionary = BsdParser.parseBuiltinTypeDictionary();
 
-    var outputStream = new ByteArrayOutputStream();
+    ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     BsdGenerator.generate(typeDictionary, outputStream);
   }
 }

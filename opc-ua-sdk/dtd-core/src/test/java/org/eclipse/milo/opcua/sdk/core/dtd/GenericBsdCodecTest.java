@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.sdk.core.dtd;
 
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 import org.eclipse.milo.opcua.sdk.core.dtd.generic.Struct;
 import org.eclipse.milo.opcua.sdk.core.dtd.generic.StructCodec;
 import org.eclipse.milo.opcua.stack.core.types.builtin.NodeId;
