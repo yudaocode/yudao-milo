@@ -71,7 +71,7 @@
                     <include>org.eclipse.milo:${project.artifactId}</include>
                   </includes>
                   <excludes>
-                    <exclude>org.eclipse.milo:milo-guava-dependencies</exclude>
+                    <exclude>cn.iocoder.boot:yudao-milo-guava-dependencies</exclude>
                   </excludes>
                 </artifactSet>
                 <relocations>

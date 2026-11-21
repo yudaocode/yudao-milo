@@ -129,7 +129,7 @@
             <configuration combine.self="override">
               <artifactSet>
                 <includes>
-                  <include>org.eclipse.milo:milo-guava-dependencies</include>
+                  <include>cn.iocoder.boot:yudao-milo-guava-dependencies</include>
                 </includes>
               </artifactSet>
               <relocations>
@@ -140,7 +140,7 @@
               </relocations>
               <filters>
                 <filter>
-                  <artifact>org.eclipse.milo:milo-guava-dependencies</artifact>
+                  <artifact>cn.iocoder.boot:yudao-milo-guava-dependencies</artifact>
                   <excludes>
                     <exclude>META-INF/MANIFEST.MF</exclude>
                     <exclude>module-info.class</exclude>
