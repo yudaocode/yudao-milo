@@ -572,8 +572,8 @@ public class OpcUaXmlSerializationTest {
     }
 
     assertEquals(
-        value.absolute(new NamespaceTable()).orElseThrow(),
-        decoded.absolute(new NamespaceTable()).orElseThrow());
+        value.absolute(new NamespaceTable()).get(),
+        decoded.absolute(new NamespaceTable()).get());
   }
 
   private static Stream<Arguments> expandedNodeIdArguments() {

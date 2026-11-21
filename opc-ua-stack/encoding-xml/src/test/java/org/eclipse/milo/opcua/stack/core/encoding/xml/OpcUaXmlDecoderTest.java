@@ -164,19 +164,7 @@ public class OpcUaXmlDecoderTest {
   @Test
   void decodeVariantValue() throws Exception {
     String xml =
-"""
-<ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd"\
- xmlns:xsd="http://www.w3.org/2001/XMLSchema"\
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ExtensionObject><TypeId><Identifier>i=297</Identifier>
-         \
- </TypeId><Body><Argument><Name>BreakLockStatus</Name><DataType><Identifier>i=6</Identifier>
-              </DataType><ValueRank>-1</ValueRank><ArrayDimensions/><Description\
- xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" p5:nil="true"/>
-            </Argument>
-          </Body>
-        </ExtensionObject>
-      </ListOfExtensionObject>
-""";
+"<ListOfExtensionObject xmlns=\"http://opcfoundation.org/UA/2008/02/Types.xsd\"\\\n xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\\\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><ExtensionObject><TypeId><Identifier>i=297</Identifier>\n         \\\n </TypeId><Body><Argument><Name>BreakLockStatus</Name><DataType><Identifier>i=6</Identifier>\n              </DataType><ValueRank>-1</ValueRank><ArrayDimensions/><Description\\\n xmlns:p5=\"http://www.w3.org/2001/XMLSchema-instance\" p5:nil=\"true\"/>\n            </Argument>\n          </Body>\n        </ExtensionObject>\n      </ListOfExtensionObject>\n";
 
     OpcUaXmlDecoder decoder =
         new OpcUaXmlDecoder(DefaultEncodingContext.INSTANCE).setInput(new StringReader(xml));
@@ -216,11 +204,7 @@ public class OpcUaXmlDecoderTest {
         "<Boolean xmlns=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">false</Boolean>";
 
     String whitespaceXml =
-        """
-        <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            true   \s
-        </Boolean>
-        """;
+        "<Boolean xmlns=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n    true   \\s\n</Boolean>\n";
 
     return Stream.of(
         Arguments.of(trueXml, "Boolean", true),

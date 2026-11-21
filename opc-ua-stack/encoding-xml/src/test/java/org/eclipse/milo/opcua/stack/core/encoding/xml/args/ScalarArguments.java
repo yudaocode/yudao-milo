@@ -32,178 +32,118 @@ public class ScalarArguments {
     return Stream.of(
         Arguments.of(
             false,
-            """
-            <Test>false</Test>
-            """),
+            "<Test>false</Test>\n"),
         Arguments.of(
             true,
-            """
-            <Test>true</Test>
-            """));
+            "<Test>true</Test>\n"));
   }
 
   public static Stream<Arguments> sByteArguments() {
     return Stream.of(
         Arguments.of(
             Byte.MIN_VALUE,
-            """
-            <Test>-128</Test>
-            """),
+            "<Test>-128</Test>\n"),
         Arguments.of(
             (byte) 0,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             Byte.MAX_VALUE,
-            """
-            <Test>127</Test>
-            """));
+            "<Test>127</Test>\n"));
   }
 
   public static Stream<Arguments> int16Arguments() {
     return Stream.of(
         Arguments.of(
             Short.MIN_VALUE,
-            """
-            <Test>-32768</Test>
-            """),
+            "<Test>-32768</Test>\n"),
         Arguments.of(
             (short) 0,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             Short.MAX_VALUE,
-            """
-            <Test>32767</Test>
-            """));
+            "<Test>32767</Test>\n"));
   }
 
   public static Stream<Arguments> int32Arguments() {
     return Stream.of(
         Arguments.of(
             Integer.MIN_VALUE,
-            """
-            <Test>-2147483648</Test>
-            """),
+            "<Test>-2147483648</Test>\n"),
         Arguments.of(
             0,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             Integer.MAX_VALUE,
-            """
-            <Test>2147483647</Test>
-            """));
+            "<Test>2147483647</Test>\n"));
   }
 
   public static Stream<Arguments> int64Arguments() {
     return Stream.of(
         Arguments.of(
             Long.MIN_VALUE,
-            """
-            <Test>-9223372036854775808</Test>
-            """),
+            "<Test>-9223372036854775808</Test>\n"),
         Arguments.of(
             0L,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             Long.MAX_VALUE,
-            """
-            <Test>9223372036854775807</Test>
-            """));
+            "<Test>9223372036854775807</Test>\n"));
   }
 
   public static Stream<Arguments> byteArguments() {
     return Stream.of(
         Arguments.of(
             UByte.MIN,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             UByte.MAX,
-            """
-            <Test>255</Test>
-            """));
+            "<Test>255</Test>\n"));
   }
 
   public static Stream<Arguments> uInt16Arguments() {
     return Stream.of(
         Arguments.of(
             UShort.MIN,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             UShort.MAX,
-            """
-            <Test>65535</Test>
-            """));
+            "<Test>65535</Test>\n"));
   }
 
   public static Stream<Arguments> uInt32Arguments() {
     return Stream.of(
         Arguments.of(
             UInteger.MIN,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             UInteger.MAX,
-            """
-            <Test>4294967295</Test>
-            """));
+            "<Test>4294967295</Test>\n"));
   }
 
   public static Stream<Arguments> uInt64Arguments() {
     return Stream.of(
         Arguments.of(
             ULong.MIN,
-            """
-            <Test>0</Test>
-            """),
+            "<Test>0</Test>\n"),
         Arguments.of(
             ULong.MAX,
-            """
-            <Test>18446744073709551615</Test>
-            """));
+            "<Test>18446744073709551615</Test>\n"));
   }
 
   public static Stream<Arguments> nodeIdArguments() {
     return Stream.of(
         Arguments.of(
             new NodeId(0, 123),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>i=123</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>i=123</uax:Identifier>\n</Test>\n"),
         Arguments.of(
             new NodeId(1, "Hello"),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>ns=1;s=Hello</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>ns=1;s=Hello</uax:Identifier>\n</Test>\n"),
         Arguments.of(
             new NodeId(2, UUID.fromString("12345678-1234-1234-1234-123456789012")),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>ns=2;g=12345678-1234-1234-1234-123456789012</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>ns=2;g=12345678-1234-1234-1234-123456789012</uax:Identifier>\n</Test>\n"),
         Arguments.of(
             new NodeId(3, ByteString.of(new byte[] {1, 2, 3, 4})),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>ns=3;b=AQIDBA==</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>ns=3;b=AQIDBA==</uax:Identifier>\n</Test>\n"),
         Arguments.of(null, ""));
   }
 
@@ -212,37 +152,19 @@ public class ScalarArguments {
         // LocalizedText with both locale and text
         Arguments.of(
             new LocalizedText("en-US", "Hello, World!"),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Locale>en-US</uax:Locale>
-              <uax:Text>Hello, World!</uax:Text>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Locale>en-US</uax:Locale>\n  <uax:Text>Hello, World!</uax:Text>\n</Test>\n"),
         // LocalizedText with only locale
         Arguments.of(
             new LocalizedText("en-US", ""),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Locale>en-US</uax:Locale>
-              <uax:Text></uax:Text>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Locale>en-US</uax:Locale>\n  <uax:Text></uax:Text>\n</Test>\n"),
         // LocalizedText with only text
         Arguments.of(
             new LocalizedText("", "Hello, World!"),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <uax:Locale></uax:Locale>
-              <uax:Text>Hello, World!</uax:Text>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n<uax:Locale></uax:Locale>\n  <uax:Text>Hello, World!</uax:Text>\n</Test>\n"),
         // LocalizedText with null locale and text
         Arguments.of(
             LocalizedText.NULL_VALUE,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n</Test>\n"),
         // null LocalizedText
         Arguments.of(null, ""));
   }
@@ -252,33 +174,23 @@ public class ScalarArguments {
         // Normal DateTime
         Arguments.of(
             new DateTime(Instant.parse("2023-01-01T12:34:56Z")),
-            """
-            <Test>2023-01-01T12:34:56Z</Test>
-            """),
+            "<Test>2023-01-01T12:34:56Z</Test>\n"),
         // MIN_DATE_TIME
         Arguments.of(
             DateTime.MIN_DATE_TIME,
-            """
-            <Test>0001-01-01T00:00:00Z</Test>
-            """),
+            "<Test>0001-01-01T00:00:00Z</Test>\n"),
         // MAX_DATE_TIME
         Arguments.of(
             DateTime.MAX_DATE_TIME,
-            """
-            <Test>9999-12-31T23:59:59Z</Test>
-            """),
+            "<Test>9999-12-31T23:59:59Z</Test>\n"),
         // NULL_VALUE
         Arguments.of(
             DateTime.NULL_VALUE,
-            """
-            <Test>1601-01-01T00:00:00Z</Test>
-            """),
+            "<Test>1601-01-01T00:00:00Z</Test>\n"),
         // null value
         Arguments.of(
             null,
-            """
-            <Test></Test>
-            """));
+            "<Test></Test>\n"));
   }
 
   public static Stream<Arguments> guidArguments() {
@@ -286,21 +198,15 @@ public class ScalarArguments {
         // Normal UUID
         Arguments.of(
             UUID.fromString("12345678-1234-1234-1234-123456789012"),
-            """
-            <Test>12345678-1234-1234-1234-123456789012</Test>
-            """),
+            "<Test>12345678-1234-1234-1234-123456789012</Test>\n"),
         // Zero UUID
         Arguments.of(
             new UUID(0L, 0L),
-            """
-            <Test>00000000-0000-0000-0000-000000000000</Test>
-            """),
+            "<Test>00000000-0000-0000-0000-000000000000</Test>\n"),
         // null value
         Arguments.of(
             null,
-            """
-            <Test></Test>
-            """));
+            "<Test></Test>\n"));
   }
 
   public static Stream<Arguments> byteStringArguments() {
@@ -308,21 +214,15 @@ public class ScalarArguments {
         // Normal ByteString with data
         Arguments.of(
             ByteString.of(new byte[] {1, 2, 3, 4}),
-            """
-            <Test>AQIDBA==</Test>
-            """),
+            "<Test>AQIDBA==</Test>\n"),
         // Empty ByteString
         Arguments.of(
             ByteString.of(new byte[0]),
-            """
-            <Test></Test>
-            """),
+            "<Test></Test>\n"),
         // Null ByteString
         Arguments.of(
             ByteString.NULL_VALUE,
-            """
-            <Test></Test>
-            """),
+            "<Test></Test>\n"),
         // null value
         Arguments.of(null, ""));
   }
@@ -332,55 +232,31 @@ public class ScalarArguments {
         // ExpandedNodeId with numeric identifier
         Arguments.of(
             ExpandedNodeId.of(0, 123L),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>i=123</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>i=123</uax:Identifier>\n</Test>\n"),
         // ExpandedNodeId with string identifier
         Arguments.of(
             ExpandedNodeId.of(UShort.valueOf(1), "Hello"),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>ns=1;s=Hello</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>ns=1;s=Hello</uax:Identifier>\n</Test>\n"),
         // ExpandedNodeId with UUID identifier
         Arguments.of(
             ExpandedNodeId.of(
                 UShort.valueOf(2), UUID.fromString("12345678-1234-1234-1234-123456789012")),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>ns=2;g=12345678-1234-1234-1234-123456789012</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>ns=2;g=12345678-1234-1234-1234-123456789012</uax:Identifier>\n</Test>\n"),
         // ExpandedNodeId with ByteString identifier
         Arguments.of(
             ExpandedNodeId.of(UShort.valueOf(3), ByteString.of(new byte[] {1, 2, 3, 4})),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>ns=3;b=AQIDBA==</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>ns=3;b=AQIDBA==</uax:Identifier>\n</Test>\n"),
         // ExpandedNodeId with namespace URI
         Arguments.of(
             ExpandedNodeId.of("http://example.org/UA/", 123L),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>nsu=http://example.org/UA/;i=123</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>nsu=http://example.org/UA/;i=123</uax:Identifier>\n</Test>\n"),
         // ExpandedNodeId with server index
         Arguments.of(
             new ExpandedNodeId(
                 ExpandedNodeId.ServerReference.of(2),
                 ExpandedNodeId.NamespaceReference.of(1),
                 UInteger.valueOf(123)),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Identifier>svr=2;ns=1;i=123</uax:Identifier>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Identifier>svr=2;ns=1;i=123</uax:Identifier>\n</Test>\n"),
         // null ExpandedNodeId
         Arguments.of(null, ""));
   }
@@ -390,27 +266,15 @@ public class ScalarArguments {
         // Good status code
         Arguments.of(
             StatusCode.GOOD,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Code>0</uax:Code>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Code>0</uax:Code>\n</Test>\n"),
         // Bad status code
         Arguments.of(
             StatusCode.BAD,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Code>2147483648</uax:Code>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Code>2147483648</uax:Code>\n</Test>\n"),
         // Specific status code
         Arguments.of(
             new StatusCode(StatusCodes.Bad_InternalError),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Code>2147614720</uax:Code>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Code>2147614720</uax:Code>\n</Test>\n"),
         // null StatusCode
         Arguments.of(null, ""));
   }
@@ -420,38 +284,19 @@ public class ScalarArguments {
         // Normal QualifiedName with namespace index and name
         Arguments.of(
             new QualifiedName(1, "TestName"),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:NamespaceIndex>1</uax:NamespaceIndex>
-              <uax:Name>TestName</uax:Name>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:NamespaceIndex>1</uax:NamespaceIndex>\n  <uax:Name>TestName</uax:Name>\n</Test>\n"),
         // QualifiedName with namespace index 0 (default namespace)
         Arguments.of(
             new QualifiedName(0, "DefaultNamespace"),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:NamespaceIndex>0</uax:NamespaceIndex>
-              <uax:Name>DefaultNamespace</uax:Name>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:NamespaceIndex>0</uax:NamespaceIndex>\n  <uax:Name>DefaultNamespace</uax:Name>\n</Test>\n"),
         // QualifiedName with empty name
         Arguments.of(
             new QualifiedName(2, ""),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:NamespaceIndex>2</uax:NamespaceIndex>
-              <uax:Name></uax:Name>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:NamespaceIndex>2</uax:NamespaceIndex>\n  <uax:Name></uax:Name>\n</Test>\n"),
         // NULL_VALUE QualifiedName
         Arguments.of(
             QualifiedName.NULL_VALUE,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:NamespaceIndex>0</uax:NamespaceIndex>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:NamespaceIndex>0</uax:NamespaceIndex>\n</Test>\n"),
         // null QualifiedName
         Arguments.of(null, ""));
   }
@@ -461,39 +306,27 @@ public class ScalarArguments {
         // Regular float value
         Arguments.of(
             3.14f,
-            """
-            <Test>3.14</Test>
-            """),
+            "<Test>3.14</Test>\n"),
         // Minimum value
         Arguments.of(
             Float.MIN_VALUE,
-            """
-            <Test>1.4E-45</Test>
-            """),
+            "<Test>1.4E-45</Test>\n"),
         // Maximum value
         Arguments.of(
             Float.MAX_VALUE,
-            """
-            <Test>3.4028235E38</Test>
-            """),
+            "<Test>3.4028235E38</Test>\n"),
         // Negative infinity
         Arguments.of(
             Float.NEGATIVE_INFINITY,
-            """
-            <Test>-INF</Test>
-            """),
+            "<Test>-INF</Test>\n"),
         // Positive infinity
         Arguments.of(
             Float.POSITIVE_INFINITY,
-            """
-            <Test>INF</Test>
-            """),
+            "<Test>INF</Test>\n"),
         // NaN
         Arguments.of(
             Float.NaN,
-            """
-            <Test>NaN</Test>
-            """));
+            "<Test>NaN</Test>\n"));
   }
 
   public static Stream<Arguments> doubleArguments() {
@@ -501,39 +334,27 @@ public class ScalarArguments {
         // Regular double value
         Arguments.of(
             3.14159265359,
-            """
-            <Test>3.14159265359</Test>
-            """),
+            "<Test>3.14159265359</Test>\n"),
         // Minimum value
         Arguments.of(
             Double.MIN_VALUE,
-            """
-            <Test>4.9E-324</Test>
-            """),
+            "<Test>4.9E-324</Test>\n"),
         // Maximum value
         Arguments.of(
             Double.MAX_VALUE,
-            """
-            <Test>1.7976931348623157E308</Test>
-            """),
+            "<Test>1.7976931348623157E308</Test>\n"),
         // Negative infinity
         Arguments.of(
             Double.NEGATIVE_INFINITY,
-            """
-            <Test>-INF</Test>
-            """),
+            "<Test>-INF</Test>\n"),
         // Positive infinity
         Arguments.of(
             Double.POSITIVE_INFINITY,
-            """
-            <Test>INF</Test>
-            """),
+            "<Test>INF</Test>\n"),
         // NaN
         Arguments.of(
             Double.NaN,
-            """
-            <Test>NaN</Test>
-            """));
+            "<Test>NaN</Test>\n"));
   }
 
   public static Stream<Arguments> extensionObjectArguments() {
@@ -544,36 +365,14 @@ public class ScalarArguments {
                 new DefaultEncodingContext(),
                 new XVType(1.0, 2.0f),
                 OpcUaDefaultXmlEncoding.getInstance()),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-              <uax:TypeId>
-                <uax:Identifier>i=12082</uax:Identifier>
-              </uax:TypeId>
-              <uax:Body>
-                <uax:XVType>
-                  <uax:X>1.0</uax:X>
-                  <uax:Value>2.0</uax:Value>
-                </uax:XVType>
-              </uax:Body>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <uax:TypeId>\n    <uax:Identifier>i=12082</uax:Identifier>\n  </uax:TypeId>\n  <uax:Body>\n    <uax:XVType>\n      <uax:X>1.0</uax:X>\n      <uax:Value>2.0</uax:Value>\n    </uax:XVType>\n  </uax:Body>\n</Test>\n"),
         // ExtensionObject containing Binary-encoded XVType
         Arguments.of(
             ExtensionObject.encode(
                 new DefaultEncodingContext(),
                 new XVType(1.0, 2.0f),
                 OpcUaDefaultBinaryEncoding.getInstance()),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:TypeId>
-                <uax:Identifier>i=12090</uax:Identifier>
-              </uax:TypeId>
-              <uax:Body>
-                <uax:ByteString>AAAAAAAA8D8AAABA</uax:ByteString>
-              </uax:Body>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:TypeId>\n    <uax:Identifier>i=12090</uax:Identifier>\n  </uax:TypeId>\n  <uax:Body>\n    <uax:ByteString>AAAAAAAA8D8AAABA</uax:ByteString>\n  </uax:Body>\n</Test>\n"),
         // null ExtensionObject
         Arguments.of(null, ""));
   }
@@ -594,22 +393,7 @@ public class ScalarArguments {
                 sourcePicoseconds,
                 serverTime,
                 serverPicoseconds),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Value>
-                <uax:Value>
-                  <uax:Boolean>true</uax:Boolean>
-                </uax:Value>
-              </uax:Value>
-              <uax:StatusCode>
-                <uax:Code>2147483648</uax:Code>
-              </uax:StatusCode>
-              <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>
-              <uax:SourcePicoseconds>1000</uax:SourcePicoseconds>
-              <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>
-              <uax:ServerPicoseconds>2000</uax:ServerPicoseconds>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Value>\n    <uax:Value>\n      <uax:Boolean>true</uax:Boolean>\n    </uax:Value>\n  </uax:Value>\n  <uax:StatusCode>\n    <uax:Code>2147483648</uax:Code>\n  </uax:StatusCode>\n  <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>\n  <uax:SourcePicoseconds>1000</uax:SourcePicoseconds>\n  <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>\n  <uax:ServerPicoseconds>2000</uax:ServerPicoseconds>\n</Test>\n"),
         // Null source timestamp and picoseconds
         Arguments.of(
             new DataValue(
@@ -619,20 +403,7 @@ public class ScalarArguments {
                 null,
                 serverTime,
                 serverPicoseconds),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Value>
-                <uax:Value>
-                  <uax:Boolean>true</uax:Boolean>
-                </uax:Value>
-              </uax:Value>
-              <uax:StatusCode>
-                <uax:Code>2147483648</uax:Code>
-              </uax:StatusCode>
-              <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>
-              <uax:ServerPicoseconds>2000</uax:ServerPicoseconds>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Value>\n    <uax:Value>\n      <uax:Boolean>true</uax:Boolean>\n    </uax:Value>\n  </uax:Value>\n  <uax:StatusCode>\n    <uax:Code>2147483648</uax:Code>\n  </uax:StatusCode>\n  <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>\n  <uax:ServerPicoseconds>2000</uax:ServerPicoseconds>\n</Test>\n"),
         // Null server timestamp and picoseconds
         Arguments.of(
             new DataValue(
@@ -642,38 +413,12 @@ public class ScalarArguments {
                 sourcePicoseconds,
                 null,
                 null),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Value>
-                <uax:Value>
-                  <uax:Boolean>true</uax:Boolean>
-                </uax:Value>
-              </uax:Value>
-              <uax:StatusCode>
-                <uax:Code>2147483648</uax:Code>
-              </uax:StatusCode>
-              <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>
-              <uax:SourcePicoseconds>1000</uax:SourcePicoseconds>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Value>\n    <uax:Value>\n      <uax:Boolean>true</uax:Boolean>\n    </uax:Value>\n  </uax:Value>\n  <uax:StatusCode>\n    <uax:Code>2147483648</uax:Code>\n  </uax:StatusCode>\n  <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>\n  <uax:SourcePicoseconds>1000</uax:SourcePicoseconds>\n</Test>\n"),
         // Null source and server picoseconds
         Arguments.of(
             new DataValue(
                 Variant.of(true), new StatusCode(0x80000000L), sourceTime, null, serverTime, null),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Value>
-                <uax:Value>
-                  <uax:Boolean>true</uax:Boolean>
-                </uax:Value>
-              </uax:Value>
-              <uax:StatusCode>
-                <uax:Code>2147483648</uax:Code>
-              </uax:StatusCode>
-              <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>
-              <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Value>\n    <uax:Value>\n      <uax:Boolean>true</uax:Boolean>\n    </uax:Value>\n  </uax:Value>\n  <uax:StatusCode>\n    <uax:Code>2147483648</uax:Code>\n  </uax:StatusCode>\n  <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>\n  <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>\n</Test>\n"),
         // Good status code (should not appear in XML)
         Arguments.of(
             new DataValue(
@@ -683,31 +428,11 @@ public class ScalarArguments {
                 sourcePicoseconds,
                 serverTime,
                 serverPicoseconds),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Value>
-                <uax:Value>
-                  <uax:Boolean>true</uax:Boolean>
-                </uax:Value>
-              </uax:Value>
-              <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>
-              <uax:SourcePicoseconds>1000</uax:SourcePicoseconds>
-              <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>
-              <uax:ServerPicoseconds>2000</uax:ServerPicoseconds>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Value>\n    <uax:Value>\n      <uax:Boolean>true</uax:Boolean>\n    </uax:Value>\n  </uax:Value>\n  <uax:SourceTimestamp>2020-01-01T00:00:00Z</uax:SourceTimestamp>\n  <uax:SourcePicoseconds>1000</uax:SourcePicoseconds>\n  <uax:ServerTimestamp>2020-01-02T00:00:00Z</uax:ServerTimestamp>\n  <uax:ServerPicoseconds>2000</uax:ServerPicoseconds>\n</Test>\n"),
         // Only value
         Arguments.of(
             new DataValue(Variant.of(true), StatusCode.GOOD, null, null, null, null),
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:Value>
-                <uax:Value>
-                  <uax:Boolean>true</uax:Boolean>
-                </uax:Value>
-              </uax:Value>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:Value>\n    <uax:Value>\n      <uax:Boolean>true</uax:Boolean>\n    </uax:Value>\n  </uax:Value>\n</Test>\n"),
         // Null DataValue
         Arguments.of(null, ""));
   }
@@ -717,15 +442,11 @@ public class ScalarArguments {
         // Regular string
         Arguments.of(
             "Hello, World!",
-            """
-            <Test>Hello, World!</Test>
-            """),
+            "<Test>Hello, World!</Test>\n"),
         // Empty string
         Arguments.of(
             "",
-            """
-            <Test></Test>
-            """),
+            "<Test></Test>\n"),
         // null string
         Arguments.of(null, ""));
   }
@@ -735,28 +456,20 @@ public class ScalarArguments {
         // Normal XmlElement with a simple XML fragment
         Arguments.of(
             XmlElement.of("<SimpleElement>Hello, World!</SimpleElement>"),
-            """
-            <Test><SimpleElement>Hello, World!</SimpleElement></Test>
-            """),
+            "<Test><SimpleElement>Hello, World!</SimpleElement></Test>\n"),
         // XmlElement with a complex XML fragment
         Arguments.of(
             XmlElement.of(
                 "<ComplexElement><Child1>Value1</Child1><Child2>Value2</Child2></ComplexElement>"),
-            """
-            <Test><ComplexElement><Child1>Value1</Child1><Child2>Value2</Child2></ComplexElement></Test>
-            """),
+            "<Test><ComplexElement><Child1>Value1</Child1><Child2>Value2</Child2></ComplexElement></Test>\n"),
         // XmlElement with an empty element
         Arguments.of(
             XmlElement.of("<Empty></Empty>"),
-            """
-            <Test><Empty></Empty></Test>
-            """),
+            "<Test><Empty></Empty></Test>\n"),
         // NULL_VALUE XmlElement
         Arguments.of(
             XmlElement.NULL_VALUE,
-            """
-            <Test></Test>
-            """),
+            "<Test></Test>\n"),
         // null XmlElement
         Arguments.of(null, ""));
   }
@@ -775,62 +488,19 @@ public class ScalarArguments {
         // DiagnosticInfo with all fields
         Arguments.of(
             diagnosticInfo1,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:SymbolicId>2</uax:SymbolicId>
-              <uax:NamespaceUri>1</uax:NamespaceUri>
-              <uax:Locale>3</uax:Locale>
-              <uax:LocalizedText>4</uax:LocalizedText>
-              <uax:AdditionalInfo>Additional Info</uax:AdditionalInfo>
-              <uax:InnerStatusCode>
-                <uax:Code>5</uax:Code>
-              </uax:InnerStatusCode>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:SymbolicId>2</uax:SymbolicId>\n  <uax:NamespaceUri>1</uax:NamespaceUri>\n  <uax:Locale>3</uax:Locale>\n  <uax:LocalizedText>4</uax:LocalizedText>\n  <uax:AdditionalInfo>Additional Info</uax:AdditionalInfo>\n  <uax:InnerStatusCode>\n    <uax:Code>5</uax:Code>\n  </uax:InnerStatusCode>\n</Test>\n"),
         // DiagnosticInfo with only AdditionalInfo
         Arguments.of(
             diagnosticInfo2,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:SymbolicId>-1</uax:SymbolicId>
-              <uax:NamespaceUri>-1</uax:NamespaceUri>
-              <uax:Locale>-1</uax:Locale>
-              <uax:LocalizedText>-1</uax:LocalizedText>
-              <uax:AdditionalInfo>Only Additional Info</uax:AdditionalInfo>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:SymbolicId>-1</uax:SymbolicId>\n  <uax:NamespaceUri>-1</uax:NamespaceUri>\n  <uax:Locale>-1</uax:Locale>\n  <uax:LocalizedText>-1</uax:LocalizedText>\n  <uax:AdditionalInfo>Only Additional Info</uax:AdditionalInfo>\n</Test>\n"),
         // DiagnosticInfo with nested DiagnosticInfo
         Arguments.of(
             diagnosticInfo3,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:SymbolicId>-1</uax:SymbolicId>
-              <uax:NamespaceUri>-1</uax:NamespaceUri>
-              <uax:Locale>-1</uax:Locale>
-              <uax:LocalizedText>-1</uax:LocalizedText>
-              <uax:InnerDiagnosticInfo>
-                <uax:SymbolicId>2</uax:SymbolicId>
-                <uax:NamespaceUri>1</uax:NamespaceUri>
-                <uax:Locale>3</uax:Locale>
-                <uax:LocalizedText>4</uax:LocalizedText>
-                <uax:AdditionalInfo>Additional Info</uax:AdditionalInfo>
-                <uax:InnerStatusCode>
-                  <uax:Code>5</uax:Code>
-                </uax:InnerStatusCode>
-              </uax:InnerDiagnosticInfo>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:SymbolicId>-1</uax:SymbolicId>\n  <uax:NamespaceUri>-1</uax:NamespaceUri>\n  <uax:Locale>-1</uax:Locale>\n  <uax:LocalizedText>-1</uax:LocalizedText>\n  <uax:InnerDiagnosticInfo>\n    <uax:SymbolicId>2</uax:SymbolicId>\n    <uax:NamespaceUri>1</uax:NamespaceUri>\n    <uax:Locale>3</uax:Locale>\n    <uax:LocalizedText>4</uax:LocalizedText>\n    <uax:AdditionalInfo>Additional Info</uax:AdditionalInfo>\n    <uax:InnerStatusCode>\n      <uax:Code>5</uax:Code>\n    </uax:InnerStatusCode>\n  </uax:InnerDiagnosticInfo>\n</Test>\n"),
         // NULL_VALUE DiagnosticInfo
         Arguments.of(
             DiagnosticInfo.NULL_VALUE,
-            """
-            <Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-              <uax:SymbolicId>-1</uax:SymbolicId>
-              <uax:NamespaceUri>-1</uax:NamespaceUri>
-              <uax:Locale>-1</uax:Locale>
-              <uax:LocalizedText>-1</uax:LocalizedText>
-            </Test>
-            """),
+            "<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\">\n  <uax:SymbolicId>-1</uax:SymbolicId>\n  <uax:NamespaceUri>-1</uax:NamespaceUri>\n  <uax:Locale>-1</uax:Locale>\n  <uax:LocalizedText>-1</uax:LocalizedText>\n</Test>\n"),
         // null DiagnosticInfo
         Arguments.of(null, ""));
   }

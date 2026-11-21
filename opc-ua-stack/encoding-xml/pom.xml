@@ -90,4 +90,32 @@
     </plugins>
   </build>
 
+  <profiles>
+    <profile>
+      <id>jdk8-test-exclusions</id>
+      <activation>
+        <jdk>[1.8,1.9)</jdk>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+              <testExcludes>
+                <testExclude>**/OpcUaXmlSerializationTest.java</testExclude>
+                <testExclude>**/OpcUaXmlEncoderScalarTest.java</testExclude>
+                <testExclude>**/OpcUaXmlEncoderArrayTest.java</testExclude>
+                <testExclude>**/OpcUaXmlEncoderMatrixTest.java</testExclude>
+                <testExclude>**/OpcUaDefaultXmlEncodingTest.java</testExclude>
+                <testExclude>**/OpcUaXmlDecoderTest.java</testExclude>
+                <testExclude>**/OpcUaXmlEncoderTest.java</testExclude>
+              </testExcludes>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
 </project>

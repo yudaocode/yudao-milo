@@ -65,25 +65,7 @@ class OpcUaXmlEncoderTest {
     }
 
     var expected =
-"""
-<Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <uax:Value>
-    <uax:ExtensionObject>
-      <uax:TypeId>
-        <uax:Identifier>i=18853</uax:Identifier>
-      </uax:TypeId>
-      <uax:Body>
-        <uax:ThreeDVector>
-          <uax:X>1.0</uax:X>
-          <uax:Y>2.0</uax:Y>
-          <uax:Z>3.0</uax:Z>
-        </uax:ThreeDVector>
-      </uax:Body>
-    </uax:ExtensionObject>
-  </uax:Value>
-</Test>
-""";
+"<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <uax:Value>\n    <uax:ExtensionObject>\n      <uax:TypeId>\n        <uax:Identifier>i=18853</uax:Identifier>\n      </uax:TypeId>\n      <uax:Body>\n        <uax:ThreeDVector>\n          <uax:X>1.0</uax:X>\n          <uax:Y>2.0</uax:Y>\n          <uax:Z>3.0</uax:Z>\n        </uax:ThreeDVector>\n      </uax:Body>\n    </uax:ExtensionObject>\n  </uax:Value>\n</Test>\n";
 
     Diff diff = DiffBuilder.compare(expected).withTest(actual).ignoreWhitespace().build();
 
@@ -103,12 +85,7 @@ class OpcUaXmlEncoderTest {
     }
 
     var expected =
-"""
-<Test xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <uax:Value xsi:nil="true" />
-</Test>
-""";
+"<Test xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <uax:Value xsi:nil=\"true\" />\n</Test>\n";
 
     Diff diff = DiffBuilder.compare(expected).withTest(actual).ignoreWhitespace().build();
 

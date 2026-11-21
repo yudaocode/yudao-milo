@@ -29,13 +29,7 @@ public class StructArguments {
         Arguments.of(
             "XVType",
             new XVType(1.0, 2.0f),
-            """
-            <XVType xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-              <uax:X>1.0</uax:X>
-              <uax:Value>2.0</uax:Value>
-            </XVType>
-            """),
+            "<XVType xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <uax:X>1.0</uax:X>\n  <uax:Value>2.0</uax:Value>\n</XVType>\n"),
 
         // Argument
         Arguments.of(
@@ -46,21 +40,7 @@ public class StructArguments {
                 -1,
                 null,
                 LocalizedText.english("Description")),
-            """
-            <Argument xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-              <uax:Name>ArgumentName</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=1</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions xsi:nil="true"></uax:ArrayDimensions>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Description</uax:Text>
-              </uax:Description>
-            </Argument>
-            """),
+            "<Argument xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <uax:Name>ArgumentName</uax:Name>\n  <uax:DataType>\n    <uax:Identifier>i=1</uax:Identifier>\n  </uax:DataType>\n  <uax:ValueRank>-1</uax:ValueRank>\n  <uax:ArrayDimensions xsi:nil=\"true\"></uax:ArrayDimensions>\n  <uax:Description>\n    <uax:Locale>en</uax:Locale>\n    <uax:Text>Description</uax:Text>\n  </uax:Description>\n</Argument>\n"),
 
         // BuildInfo
         Arguments.of(
@@ -72,16 +52,6 @@ public class StructArguments {
                 "1.0.0",
                 "12345",
                 new DateTime(Instant.parse("2023-01-01T00:00:00Z"))),
-            """
-            <BuildInfo xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-              <uax:ProductUri>urn:example:product</uax:ProductUri>
-              <uax:ManufacturerName>Example Manufacturer</uax:ManufacturerName>
-              <uax:ProductName>Example Product</uax:ProductName>
-              <uax:SoftwareVersion>1.0.0</uax:SoftwareVersion>
-              <uax:BuildNumber>12345</uax:BuildNumber>
-              <uax:BuildDate>2023-01-01T00:00:00Z</uax:BuildDate>
-            </BuildInfo>
-            """));
+            "<BuildInfo xmlns:uax=\"http://opcfoundation.org/UA/2008/02/Types.xsd\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <uax:ProductUri>urn:example:product</uax:ProductUri>\n  <uax:ManufacturerName>Example Manufacturer</uax:ManufacturerName>\n  <uax:ProductName>Example Product</uax:ProductName>\n  <uax:SoftwareVersion>1.0.0</uax:SoftwareVersion>\n  <uax:BuildNumber>12345</uax:BuildNumber>\n  <uax:BuildDate>2023-01-01T00:00:00Z</uax:BuildDate>\n</BuildInfo>\n"));
   }
 }

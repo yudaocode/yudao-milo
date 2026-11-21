@@ -50,7 +50,7 @@ public class OpcUaXmlEncoderMatrixTest {
   void encodeMatrixOfStructuredType(Matrix matrix, String expected) throws Exception {
     String actual;
     try (var encoder = new OpcUaXmlEncoder(context)) {
-      encoder.encodeStructMatrix("Test", matrix, matrix.getDataTypeId().orElseThrow());
+      encoder.encodeStructMatrix("Test", matrix, matrix.getDataTypeId().get());
 
       actual = encoder.getOutputString();
     }
