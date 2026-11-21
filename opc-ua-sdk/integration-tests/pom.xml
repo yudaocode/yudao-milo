@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-sdk</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-opc-ua-sdk</artifactId>
     <version>1.2.0-RC3-preview-20261121-jdk8</version>
   </parent>
 
   <name>Milo :: Integration Tests</name>
 
-  <artifactId>milo-integration-tests</artifactId>
+  <artifactId>yudao-milo-jdk8-integration-tests</artifactId>
 
   <properties>
     <javaModuleName>org.eclipse.milo.opcua.sdk.tests.integration</javaModuleName>
@@ -30,39 +30,39 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-sdk-client</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-sdk-client</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-dtd-reader</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-dtd-reader</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <!-- No test uses it directly. It is here so OsgiManifestIT checks its packaged bundle. -->
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-dtd-manager</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-dtd-manager</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-sdk-server</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-sdk-server</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-encoding-xml</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-encoding-xml</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-encoding-json</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-encoding-json</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

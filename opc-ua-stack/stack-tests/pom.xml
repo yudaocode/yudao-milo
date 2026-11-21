@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-stack</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-opc-ua-stack</artifactId>
     <version>1.2.0-RC3-preview-20261121-jdk8</version>
   </parent>
 
   <name>Milo :: Stack Tests</name>
 
-  <artifactId>milo-stack-tests</artifactId>
+  <artifactId>yudao-milo-jdk8-stack-tests</artifactId>
 
   <properties>
     <javaModuleName>org.eclipse.milo.opcua.stack.tests</javaModuleName>
@@ -30,8 +30,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-transport</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-transport</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-sdk</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-opc-ua-sdk</artifactId>
     <version>1.2.0-RC3-preview-20261121-jdk8</version>
   </parent>
 
   <name>Milo :: DTD Manager</name>
 
-  <artifactId>milo-dtd-manager</artifactId>
+  <artifactId>yudao-milo-jdk8-dtd-manager</artifactId>
 
   <properties>
     <javaModuleName>org.eclipse.milo.opcua.sdk.dtd.manager</javaModuleName>
@@ -30,13 +30,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-dtd-core</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-dtd-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-sdk-server</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-sdk-server</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>
