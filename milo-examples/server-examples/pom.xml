@@ -17,7 +17,7 @@
   <parent>
     <groupId>cn.iocoder.boot</groupId>
     <artifactId>yudao-milo-examples</artifactId>
-    <version>1.2.0-RC3-preview-20261121</version>
+    <version>1.2.0-RC3-preview-20261123</version>
   </parent>
 
   <name>Milo :: Server Examples</name>

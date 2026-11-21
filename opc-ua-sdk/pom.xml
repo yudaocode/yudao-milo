@@ -17,7 +17,7 @@
   <parent>
     <groupId>cn.iocoder.boot</groupId>
     <artifactId>yudao-milo</artifactId>
-    <version>1.2.0-RC3-preview-20261121</version>
+    <version>1.2.0-RC3-preview-20261123</version>
   </parent>
 
   <name>Milo :: OPC UA SDK</name>
@@ -131,8 +131,9 @@
           <extensions>true</extensions>
           <configuration>
             <publishingServerId>central</publishingServerId>
-            <autoPublish>true</autoPublish>
-            <waitUntil>published</waitUntil>
+              <skipUpload>${central.skipUpload}</skipUpload>
+            <autoPublish>false</autoPublish>
+            <waitUntil>validated</waitUntil>
             <centralSnapshotsUrl>https://central.sonatype.com/repository/maven-snapshots/</centralSnapshotsUrl>
           </configuration>
         </plugin>
