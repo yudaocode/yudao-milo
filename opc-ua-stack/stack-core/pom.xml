@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-stack</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-opc-ua-stack</artifactId>
     <version>1.1.8-jdk8</version>
   </parent>
 
   <name>Milo :: Stack Core</name>
 
-  <artifactId>milo-stack-core</artifactId>
+  <artifactId>yudao-milo-jdk8-stack-core</artifactId>
 
   <properties>
     <javaModuleName>org.eclipse.milo.opcua.stack.core</javaModuleName>
@@ -40,8 +40,8 @@
       <version>${bouncycastle.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-guava-dependencies</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-guava-dependencies</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8</artifactId>
     <version>1.1.8-jdk8</version>
   </parent>
 
   <name>Milo :: Examples</name>
 
-  <artifactId>milo-examples</artifactId>
+  <artifactId>yudao-milo-jdk8-examples</artifactId>
   <packaging>pom</packaging>
 
   <modules>

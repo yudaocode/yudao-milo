@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-examples</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-examples</artifactId>
     <version>1.1.8-jdk8</version>
   </parent>
 
   <name>Milo :: Client Examples</name>
 
-  <artifactId>milo-client-examples</artifactId>
+  <artifactId>yudao-milo-jdk8-client-examples</artifactId>
 
   <properties>
     <javaModuleName>org.eclipse.milo.examples.client</javaModuleName>
@@ -30,18 +30,18 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-sdk-client</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-sdk-client</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-dtd-reader</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-dtd-reader</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-server-examples</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-server-examples</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

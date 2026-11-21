@@ -16,8 +16,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8</artifactId>
     <version>1.1.8-jdk8</version>
   </parent>
 
@@ -26,65 +26,65 @@
     Milo artifacts.
   </description>
 
-  <artifactId>milo-bom</artifactId>
+  <artifactId>yudao-milo-jdk8-bom</artifactId>
   <packaging>pom</packaging>
 
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-dtd-core</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-dtd-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-dtd-manager</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-dtd-manager</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-dtd-reader</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-dtd-reader</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-sdk-client</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-sdk-client</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-sdk-core</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-sdk-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-sdk-server</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-sdk-server</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-encoding-json</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-encoding-json</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-encoding-xml</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-encoding-xml</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-guava-dependencies</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-guava-dependencies</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-stack-core</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-stack-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.milo</groupId>
-        <artifactId>milo-transport</artifactId>
+        <groupId>cn.iocoder.boot</groupId>
+        <artifactId>yudao-milo-jdk8-transport</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-stack</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-opc-ua-stack</artifactId>
     <version>1.1.8-jdk8</version>
   </parent>
 
   <name>Milo :: Encoding XML</name>
 
-  <artifactId>milo-encoding-xml</artifactId>
+  <artifactId>yudao-milo-jdk8-encoding-xml</artifactId>
 
   <properties>
     <javaModuleName>org.eclipse.milo.opcua.stack.encoding.xml</javaModuleName>
@@ -30,8 +30,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-stack-core</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-stack-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

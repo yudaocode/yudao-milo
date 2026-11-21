@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-stack</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-opc-ua-stack</artifactId>
     <version>1.1.8-jdk8</version>
   </parent>
 
   <name>Milo :: Transport Websocket</name>
 
-  <artifactId>milo-transport-websocket</artifactId>
+  <artifactId>yudao-milo-jdk8-transport-websocket</artifactId>
   <version>0.1-SNAPSHOT</version>
 
   <properties>
@@ -31,13 +31,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-stack-core</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-stack-core</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-transport</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-transport</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>

@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-sdk</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-jdk8-opc-ua-sdk</artifactId>
     <version>1.1.8-jdk8</version>
   </parent>
 
   <name>Milo :: Codec JSON</name>
 
-  <artifactId>milo-codec-json</artifactId>
+  <artifactId>yudao-milo-jdk8-codec-json</artifactId>
   <version>0.1-SNAPSHOT</version>
 
   <properties>
@@ -49,13 +49,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-sdk-core</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-sdk-core</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-encoding-json</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-jdk8-encoding-json</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
 
