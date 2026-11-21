@@ -17,7 +17,7 @@
   <parent>
     <groupId>cn.iocoder.boot</groupId>
     <artifactId>yudao-milo-jdk8-opc-ua-sdk</artifactId>
-    <version>1.1.8-jdk8</version>
+    <version>1.2.0-RC3-preview-20261123-jdk8</version>
   </parent>
 
   <name>Milo :: SDK Client</name>

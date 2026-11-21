@@ -18,7 +18,7 @@
   <parent>
     <groupId>cn.iocoder.boot</groupId>
     <artifactId>yudao-milo-jdk8</artifactId>
-    <version>1.1.8-jdk8</version>
+    <version>1.2.0-RC3-preview-20261123-jdk8</version>
   </parent>
 
   <name>Milo :: Bill of Materials</name>
