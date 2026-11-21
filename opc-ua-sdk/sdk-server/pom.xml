@@ -17,7 +17,7 @@
   <parent>
     <groupId>org.eclipse.milo</groupId>
     <artifactId>milo-opc-ua-sdk</artifactId>
-    <version>1.1.8-jdk8</version>
+    <version>1.2.0-RC3-preview-20261121-jdk8</version>
   </parent>
 
   <name>Milo :: SDK Server</name>
