@@ -85,7 +85,7 @@ public class DeleteNodesRequest extends Structure implements UaRequestMessageTyp
       return false;
     }
     DeleteNodesRequest that = (DeleteNodesRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getNodesToDelete(), that.getNodesToDelete());
     return eqb.build();
@@ -93,7 +93,7 @@ public class DeleteNodesRequest extends Structure implements UaRequestMessageTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getNodesToDelete());
     return hcb.build();
@@ -101,7 +101,7 @@ public class DeleteNodesRequest extends Structure implements UaRequestMessageTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DeleteNodesRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DeleteNodesRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("nodesToDelete=" + java.util.Arrays.toString(getNodesToDelete()));
     return joiner.toString();

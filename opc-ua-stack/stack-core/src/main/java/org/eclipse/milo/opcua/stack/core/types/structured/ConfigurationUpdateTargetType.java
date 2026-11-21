@@ -85,7 +85,7 @@ public class ConfigurationUpdateTargetType extends Structure implements UaStruct
       return false;
     }
     ConfigurationUpdateTargetType that = (ConfigurationUpdateTargetType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getPath(), that.getPath());
     eqb.append(getUpdateType(), that.getUpdateType());
     return eqb.build();
@@ -93,7 +93,7 @@ public class ConfigurationUpdateTargetType extends Structure implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPath());
     hcb.append(getUpdateType());
     return hcb.build();
@@ -101,7 +101,7 @@ public class ConfigurationUpdateTargetType extends Structure implements UaStruct
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ConfigurationUpdateTargetType.class.getSimpleName() + "[", "]");
     joiner.add("path='" + getPath() + "'");
     joiner.add("updateType=" + getUpdateType());

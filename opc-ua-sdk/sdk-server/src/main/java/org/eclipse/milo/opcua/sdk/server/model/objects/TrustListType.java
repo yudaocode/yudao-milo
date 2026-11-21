@@ -117,7 +117,7 @@ public interface TrustListType extends FileType {
                   "Masks",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -136,7 +136,7 @@ public interface TrustListType extends FileType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -181,7 +181,7 @@ public interface TrustListType extends FileType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -200,7 +200,7 @@ public interface TrustListType extends FileType {
                   "ApplyChangesRequired",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -243,7 +243,7 @@ public interface TrustListType extends FileType {
                   "Certificate",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -251,7 +251,7 @@ public interface TrustListType extends FileType {
                   "IsTrustedCertificate",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -299,7 +299,7 @@ public interface TrustListType extends FileType {
                   "Thumbprint",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -307,7 +307,7 @@ public interface TrustListType extends FileType {
                   "IsTrustedCertificate",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

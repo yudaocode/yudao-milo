@@ -66,18 +66,28 @@ public enum NodeClass implements UaEnumeratedType {
   }
 
   public static @Nullable NodeClass from(int value) {
-    return switch (value) {
-      case 0 -> Unspecified;
-      case 1 -> Object;
-      case 2 -> Variable;
-      case 4 -> Method;
-      case 8 -> ObjectType;
-      case 16 -> VariableType;
-      case 32 -> ReferenceType;
-      case 64 -> DataType;
-      case 128 -> View;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Unspecified;
+      case 1:
+        return Object;
+      case 2:
+        return Variable;
+      case 4:
+        return Method;
+      case 8:
+        return ObjectType;
+      case 16:
+        return VariableType;
+      case 32:
+        return ReferenceType;
+      case 64:
+        return DataType;
+      case 128:
+        return View;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

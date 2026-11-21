@@ -105,7 +105,7 @@ public class CallMethodResult extends Structure implements UaStructuredType {
       return false;
     }
     CallMethodResult that = (CallMethodResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getInputArgumentResults(), that.getInputArgumentResults());
     eqb.append(getInputArgumentDiagnosticInfos(), that.getInputArgumentDiagnosticInfos());
@@ -115,7 +115,7 @@ public class CallMethodResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getInputArgumentResults());
     hcb.append(getInputArgumentDiagnosticInfos());
@@ -125,7 +125,7 @@ public class CallMethodResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CallMethodResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CallMethodResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("inputArgumentResults=" + java.util.Arrays.toString(getInputArgumentResults()));
     joiner.add(

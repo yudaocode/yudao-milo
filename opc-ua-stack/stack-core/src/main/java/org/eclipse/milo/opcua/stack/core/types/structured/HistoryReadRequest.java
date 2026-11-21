@@ -112,7 +112,7 @@ public class HistoryReadRequest extends Structure implements UaRequestMessageTyp
       return false;
     }
     HistoryReadRequest that = (HistoryReadRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getHistoryReadDetails(), that.getHistoryReadDetails());
     eqb.append(getTimestampsToReturn(), that.getTimestampsToReturn());
@@ -123,7 +123,7 @@ public class HistoryReadRequest extends Structure implements UaRequestMessageTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getHistoryReadDetails());
     hcb.append(getTimestampsToReturn());
@@ -134,7 +134,7 @@ public class HistoryReadRequest extends Structure implements UaRequestMessageTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryReadRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryReadRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("historyReadDetails=" + getHistoryReadDetails());
     joiner.add("timestampsToReturn=" + getTimestampsToReturn());

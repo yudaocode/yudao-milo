@@ -338,23 +338,32 @@ public class Matrix {
 
   private int elementsHash() {
     // Primitive array hashes match their boxed equivalents without allocating a boxed array.
-    if (flatArray instanceof Object[] array) {
+    if (flatArray instanceof Object[]) {
+      Object[] array = (Object[]) flatArray;
       return Arrays.deepHashCode(array);
-    } else if (flatArray instanceof boolean[] array) {
+    } else if (flatArray instanceof boolean[]) {
+      boolean[] array = (boolean[]) flatArray;
       return Arrays.hashCode(array);
-    } else if (flatArray instanceof byte[] array) {
+    } else if (flatArray instanceof byte[]) {
+      byte[] array = (byte[]) flatArray;
       return Arrays.hashCode(array);
-    } else if (flatArray instanceof short[] array) {
+    } else if (flatArray instanceof short[]) {
+      short[] array = (short[]) flatArray;
       return Arrays.hashCode(array);
-    } else if (flatArray instanceof int[] array) {
+    } else if (flatArray instanceof int[]) {
+      int[] array = (int[]) flatArray;
       return Arrays.hashCode(array);
-    } else if (flatArray instanceof long[] array) {
+    } else if (flatArray instanceof long[]) {
+      long[] array = (long[]) flatArray;
       return Arrays.hashCode(array);
-    } else if (flatArray instanceof float[] array) {
+    } else if (flatArray instanceof float[]) {
+      float[] array = (float[]) flatArray;
       return Arrays.hashCode(array);
-    } else if (flatArray instanceof double[] array) {
+    } else if (flatArray instanceof double[]) {
+      double[] array = (double[]) flatArray;
       return Arrays.hashCode(array);
-    } else if (flatArray instanceof char[] array) {
+    } else if (flatArray instanceof char[]) {
+      char[] array = (char[]) flatArray;
       return Arrays.hashCode(array);
     } else {
       return Objects.hashCode(flatArray);

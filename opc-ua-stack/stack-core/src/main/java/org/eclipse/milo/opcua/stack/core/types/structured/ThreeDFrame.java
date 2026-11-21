@@ -89,7 +89,7 @@ public class ThreeDFrame extends Frame implements UaStructuredType {
       return false;
     }
     ThreeDFrame that = (ThreeDFrame) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getCartesianCoordinates(), that.getCartesianCoordinates());
     eqb.append(getOrientation(), that.getOrientation());
     return eqb.build();
@@ -97,7 +97,7 @@ public class ThreeDFrame extends Frame implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getCartesianCoordinates());
     hcb.append(getOrientation());
     return hcb.build();
@@ -105,7 +105,7 @@ public class ThreeDFrame extends Frame implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ThreeDFrame.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ThreeDFrame.class.getSimpleName() + "[", "]");
     joiner.add("cartesianCoordinates=" + getCartesianCoordinates());
     joiner.add("orientation=" + getOrientation());
     return joiner.toString();

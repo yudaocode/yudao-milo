@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.security;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.stack.core.util.DigestUtil.sha1;
 
@@ -182,7 +183,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public List<X509CRL> getIssuerCrls() {
     readWriteLock.readLock().lock();
     try {
-      return List.copyOf(issuerCrls);
+      return Java8Collections.listCopyOf(issuerCrls);
     } finally {
       readWriteLock.readLock().unlock();
     }
@@ -192,7 +193,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public List<X509CRL> getTrustedCrls() {
     readWriteLock.readLock().lock();
     try {
-      return List.copyOf(trustedCrls);
+      return Java8Collections.listCopyOf(trustedCrls);
     } finally {
       readWriteLock.readLock().unlock();
     }
@@ -202,7 +203,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public List<X509Certificate> getIssuerCertificates() {
     readWriteLock.readLock().lock();
     try {
-      return List.copyOf(issuerCertificates);
+      return Java8Collections.listCopyOf(issuerCertificates);
     } finally {
       readWriteLock.readLock().unlock();
     }
@@ -212,7 +213,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public List<X509Certificate> getTrustedCertificates() {
     readWriteLock.readLock().lock();
     try {
-      return List.copyOf(trustedCertificates);
+      return Java8Collections.listCopyOf(trustedCertificates);
     } finally {
       readWriteLock.readLock().unlock();
     }
@@ -222,7 +223,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public void setIssuerCrls(List<X509CRL> issuerCrls) {
     readWriteLock.writeLock().lock();
     try {
-      Set<X509CRL> oldSet = Set.copyOf(this.issuerCrls);
+      Set<X509CRL> oldSet = Java8Collections.setCopyOf(this.issuerCrls);
 
       this.issuerCrls.clear();
       this.issuerCrls.addAll(issuerCrls);
@@ -241,7 +242,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public void setTrustedCrls(List<X509CRL> trustedCrls) {
     readWriteLock.writeLock().lock();
     try {
-      Set<X509CRL> oldSet = Set.copyOf(this.trustedCrls);
+      Set<X509CRL> oldSet = Java8Collections.setCopyOf(this.trustedCrls);
 
       this.trustedCrls.clear();
       this.trustedCrls.addAll(trustedCrls);
@@ -260,7 +261,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public void setIssuerCertificates(List<X509Certificate> issuerCertificates) {
     readWriteLock.writeLock().lock();
     try {
-      Set<X509Certificate> oldSet = Set.copyOf(this.issuerCertificates);
+      Set<X509Certificate> oldSet = Java8Collections.setCopyOf(this.issuerCertificates);
 
       this.issuerCertificates.clear();
       this.issuerCertificates.addAll(issuerCertificates);
@@ -279,7 +280,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public void setTrustedCertificates(List<X509Certificate> trustedCertificates) {
     readWriteLock.writeLock().lock();
     try {
-      Set<X509Certificate> oldSet = Set.copyOf(this.trustedCertificates);
+      Set<X509Certificate> oldSet = Java8Collections.setCopyOf(this.trustedCertificates);
 
       this.trustedCertificates.clear();
       this.trustedCertificates.addAll(trustedCertificates);
@@ -322,7 +323,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public boolean removeIssuerCertificate(ByteString thumbprint) {
     readWriteLock.writeLock().lock();
     try {
-      deleteCertificatesFromDir(Set.of(thumbprint), issuerCertsDir);
+      deleteCertificatesFromDir(Java8Collections.setOf(thumbprint), issuerCertsDir);
 
       return remove(thumbprint, issuerCertificates);
     } finally {
@@ -334,7 +335,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
   public boolean removeTrustedCertificate(ByteString thumbprint) {
     readWriteLock.writeLock().lock();
     try {
-      deleteCertificatesFromDir(Set.of(thumbprint), trustedCertsDir);
+      deleteCertificatesFromDir(Java8Collections.setOf(thumbprint), trustedCertsDir);
 
       return remove(thumbprint, trustedCertificates);
     } finally {
@@ -374,8 +375,8 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
     try {
       issuerCertificates.clear();
 
-      try (var files = Files.list(issuerCertsDir)) {
-        files.flatMap(c -> decodeCertificateFile(c).stream()).forEach(issuerCertificates::add);
+      try (java.util.stream.Stream<java.nio.file.Path> files = Files.list(issuerCertsDir)) {
+        files.forEach(c -> decodeCertificateFile(c).ifPresent(issuerCertificates::add));
       }
     } catch (IOException e) {
       LOGGER.warn("Error synchronizing issuer certs", e);
@@ -391,8 +392,8 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
     try {
       issuerCrls.clear();
 
-      try (var files = Files.list(issuerCrlDir)) {
-        files.flatMap(c -> decodeCrlFile(c).stream()).forEach(issuerCrls::addAll);
+      try (java.util.stream.Stream<java.nio.file.Path> files = Files.list(issuerCrlDir)) {
+        files.forEach(c -> decodeCrlFile(c).ifPresent(issuerCrls::addAll));
       }
     } catch (IOException e) {
       LOGGER.warn("Error synchronizing issuer CRLs", e);
@@ -408,8 +409,8 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
     try {
       trustedCertificates.clear();
 
-      try (var files = Files.list(trustedCertsDir)) {
-        files.flatMap(c -> decodeCertificateFile(c).stream()).forEach(trustedCertificates::add);
+      try (java.util.stream.Stream<java.nio.file.Path> files = Files.list(trustedCertsDir)) {
+        files.forEach(c -> decodeCertificateFile(c).ifPresent(trustedCertificates::add));
       }
     } catch (IOException e) {
       LOGGER.warn("Error synchronizing trusted certs", e);
@@ -425,8 +426,8 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
     try {
       trustedCrls.clear();
 
-      try (var files = Files.list(trustedCrlDir)) {
-        files.flatMap(c -> decodeCrlFile(c).stream()).forEach(trustedCrls::addAll);
+      try (java.util.stream.Stream<java.nio.file.Path> files = Files.list(trustedCrlDir)) {
+        files.forEach(c -> decodeCrlFile(c).ifPresent(trustedCrls::addAll));
       }
     } catch (IOException e) {
       LOGGER.warn("Error synchronizing trusted CRLs", e);
@@ -495,8 +496,8 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
       return;
     }
 
-    try (var files = Files.list(directory)) {
-      for (Path file : files.toList()) {
+    try (java.util.stream.Stream<java.nio.file.Path> files = Files.list(directory)) {
+      for (Path file : files.collect(java.util.stream.Collectors.toList())) {
         boolean matches =
             decodeCertificateFile(file)
                 .map(certificate -> thumbprints.contains(thumbprintOf(certificate)))
@@ -546,10 +547,10 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
       return;
     }
 
-    try (var files = Files.list(directory)) {
-      for (Path file : files.toList()) {
-        List<X509CRL> contents = decodeCrlFile(file).orElse(List.of());
-        List<X509CRL> retained = contents.stream().filter(crl -> !removed.contains(crl)).toList();
+    try (java.util.stream.Stream<java.nio.file.Path> files = Files.list(directory)) {
+      for (Path file : files.collect(java.util.stream.Collectors.toList())) {
+        List<X509CRL> contents = decodeCrlFile(file).orElse(java.util.Collections.<X509CRL>emptyList());
+        List<X509CRL> retained = contents.stream().filter(crl -> !removed.contains(crl)).collect(java.util.stream.Collectors.toList());
 
         if (retained.size() == contents.size()) {
           continue;
@@ -583,7 +584,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
         Files.setPosixFilePermissions(temporary, Files.getPosixFilePermissions(file));
       }
 
-      try (var output = new FileOutputStream(temporary.toFile())) {
+      try (java.io.FileOutputStream output = new FileOutputStream(temporary.toFile())) {
         for (X509CRL crl : crls) {
           output.write(crl.getEncoded());
         }
@@ -633,7 +634,7 @@ public class FileBasedTrustListManager implements TrustListManager, Closeable {
     Path trustedCrlDir = trustedDir.resolve("crl");
     ensureDirectoryExists(trustedCrlDir);
 
-    var trustListManager =
+    org.eclipse.milo.opcua.stack.core.security.FileBasedTrustListManager trustListManager =
         new FileBasedTrustListManager(issuerCertsDir, issuerCrlDir, trustedCertsDir, trustedCrlDir);
 
     trustListManager.initialize();

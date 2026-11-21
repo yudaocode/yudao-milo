@@ -126,7 +126,7 @@ public class ModifySubscriptionRequest extends Structure implements UaRequestMes
       return false;
     }
     ModifySubscriptionRequest that = (ModifySubscriptionRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getRequestedPublishingInterval(), that.getRequestedPublishingInterval());
@@ -139,7 +139,7 @@ public class ModifySubscriptionRequest extends Structure implements UaRequestMes
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getSubscriptionId());
     hcb.append(getRequestedPublishingInterval());
@@ -152,7 +152,7 @@ public class ModifySubscriptionRequest extends Structure implements UaRequestMes
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ModifySubscriptionRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ModifySubscriptionRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("subscriptionId=" + getSubscriptionId());
     joiner.add("requestedPublishingInterval=" + getRequestedPublishingInterval());

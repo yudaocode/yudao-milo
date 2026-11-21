@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.typetree;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.util.ArrayList;
@@ -78,7 +80,7 @@ public class DataTypeTreeBuilder {
 
     OperationLimits operationLimits = client.getOperationLimits();
 
-    addChildren(List.of(root), client, sessionId, namespaceTable, operationLimits);
+    addChildren(Java8Collections.listOf(root), client, sessionId, namespaceTable, operationLimits);
 
     // Final check: the last batch of requests could have been issued just as the session changed
     // and succeeded against the new session; don't return a tree partially read from another
@@ -134,7 +136,7 @@ public class DataTypeTreeBuilder {
                 .collect(Collectors.toList()),
             operationLimits);
 
-    var childTypes = new ArrayList<Tree<DataType>>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.Tree<org.eclipse.milo.opcua.sdk.core.typetree.DataType>> childTypes = new ArrayList<Tree<DataType>>();
 
     for (int i = 0; i < parentTypes.size(); i++) {
       Tree<DataType> tree = parentTypes.get(i);
@@ -157,7 +159,7 @@ public class DataTypeTreeBuilder {
           && subtypes.size() == encodingReferences.size()
           && subtypes.size() == dataTypeAttributes.size();
 
-      var dataTypes = new ArrayList<ClientDataType>();
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.typetree.ClientDataType> dataTypes = new ArrayList<ClientDataType>();
 
       for (int j = 0; j < subtypes.size(); j++) {
         QualifiedName browseName = subtypes.get(j).getBrowseName();
@@ -169,7 +171,7 @@ public class DataTypeTreeBuilder {
         ClientBrowseUtils.EncodingIds encodingIds =
             ClientBrowseUtils.extractEncodingIds(encodings, namespaceTable);
 
-        var dataType =
+        org.eclipse.milo.opcua.sdk.client.typetree.ClientDataType dataType =
             new ClientDataType(
                 browseName,
                 dataTypeId,
@@ -216,12 +218,12 @@ public class DataTypeTreeBuilder {
       throws UaException {
 
     if (dataTypeIds.isEmpty()) {
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     ClientBrowseUtils.checkSessionUnchanged(client, sessionId);
 
-    var readValueIds = new ArrayList<ReadValueId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId> readValueIds = new ArrayList<ReadValueId>();
 
     for (NodeId dataTypeId : dataTypeIds) {
       readValueIds.add(
@@ -232,7 +234,7 @@ public class DataTypeTreeBuilder {
               dataTypeId, AttributeId.DataTypeDefinition.uid(), null, QualifiedName.NULL_VALUE));
     }
 
-    var attributes = new ArrayList<Attributes>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.typetree.DataTypeTreeBuilder.Attributes> attributes = new ArrayList<Attributes>();
 
     List<DataValue> values =
         ClientBrowseUtils.readWithOperationLimits(client, readValueIds, operationLimits);
@@ -250,7 +252,8 @@ public class DataTypeTreeBuilder {
 
       if (definitionValue.statusCode().isGood()) {
         Object o = definitionValue.value().value();
-        if (o instanceof ExtensionObject xo) {
+        if (o instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) o;
           try {
             Object decoded = xo.decode(client.getStaticEncodingContext());
 
@@ -267,5 +270,21 @@ public class DataTypeTreeBuilder {
     return attributes;
   }
 
-  private record Attributes(Boolean isAbstract, DataTypeDefinition definition) {}
+  private static final class Attributes {
+    private final Boolean isAbstract;
+    private final DataTypeDefinition definition;
+
+    public Boolean isAbstract() {
+      return isAbstract;
+    }
+
+    public DataTypeDefinition definition() {
+      return definition;
+    }
+
+    Attributes(Boolean isAbstract, DataTypeDefinition definition) {
+      this.isAbstract = isAbstract;
+      this.definition = definition;
+    }
+}
 }

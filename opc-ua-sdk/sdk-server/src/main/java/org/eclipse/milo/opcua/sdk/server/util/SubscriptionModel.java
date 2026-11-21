@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.util;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.sdk.core.util.GroupMapCollate.groupMapCollate;
 
 import com.google.common.math.DoubleMath;
@@ -120,7 +122,7 @@ public class SubscriptionModel extends AbstractLifecycle {
    * @return a copy of the {@link DataItem}s in this {@link SubscriptionModel}.
    */
   public List<DataItem> getDataItems() {
-    return List.copyOf(itemSet);
+    return Java8Collections.listCopyOf(itemSet);
   }
 
   private void reschedule() {
@@ -137,7 +139,7 @@ public class SubscriptionModel extends AbstractLifecycle {
 
                   return new ScheduledUpdate(samplingInterval, items);
                 })
-            .toList();
+            .collect(Collectors.toList());
 
     schedule.forEach(ScheduledUpdate::cancel);
     schedule.clear();
@@ -182,7 +184,7 @@ public class SubscriptionModel extends AbstractLifecycle {
                             .map(MonitoredItem::getReadValueId)
                             .collect(Collectors.toList());
 
-                    var context = new ReadContext(server, session);
+                    org.eclipse.milo.opcua.sdk.server.AddressSpace.ReadContext context = new ReadContext(server, session);
 
                     return addressSpace.read(context, 0d, TimestampsToReturn.Both, readValueIds);
                   });

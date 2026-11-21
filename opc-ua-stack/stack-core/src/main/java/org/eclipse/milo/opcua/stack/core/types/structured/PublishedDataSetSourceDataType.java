@@ -54,7 +54,7 @@ public abstract class PublishedDataSetSourceDataType extends Structure implement
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PublishedDataSetSourceDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

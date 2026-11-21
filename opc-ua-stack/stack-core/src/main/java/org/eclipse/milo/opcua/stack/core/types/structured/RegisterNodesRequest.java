@@ -84,7 +84,7 @@ public class RegisterNodesRequest extends Structure implements UaRequestMessageT
       return false;
     }
     RegisterNodesRequest that = (RegisterNodesRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getNodesToRegister(), that.getNodesToRegister());
     return eqb.build();
@@ -92,7 +92,7 @@ public class RegisterNodesRequest extends Structure implements UaRequestMessageT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getNodesToRegister());
     return hcb.build();
@@ -100,7 +100,7 @@ public class RegisterNodesRequest extends Structure implements UaRequestMessageT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RegisterNodesRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RegisterNodesRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("nodesToRegister=" + java.util.Arrays.toString(getNodesToRegister()));
     return joiner.toString();

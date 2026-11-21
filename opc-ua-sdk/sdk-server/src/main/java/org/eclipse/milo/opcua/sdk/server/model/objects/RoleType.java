@@ -144,7 +144,7 @@ public interface RoleType extends BaseObjectType {
                   "Rule",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15634")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -189,7 +189,7 @@ public interface RoleType extends BaseObjectType {
                   "Rule",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15634")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -234,7 +234,7 @@ public interface RoleType extends BaseObjectType {
                   "ApplicationUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -279,7 +279,7 @@ public interface RoleType extends BaseObjectType {
                   "ApplicationUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -324,7 +324,7 @@ public interface RoleType extends BaseObjectType {
                   "Endpoint",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15528")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -369,7 +369,7 @@ public interface RoleType extends BaseObjectType {
                   "Endpoint",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15528")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.typetree;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.util.ArrayList;
@@ -69,7 +71,7 @@ public class ObjectTypeTreeBuilder {
 
     OperationLimits operationLimits = client.getOperationLimits();
 
-    addChildren(List.of(root), client, sessionId, namespaceTable, operationLimits);
+    addChildren(Java8Collections.listOf(root), client, sessionId, namespaceTable, operationLimits);
 
     // Final check: the last batch of requests could have been issued just as the session changed
     // and succeeded against the new session; don't return a tree partially read from another
@@ -125,7 +127,7 @@ public class ObjectTypeTreeBuilder {
                 .collect(Collectors.toList()),
             operationLimits);
 
-    var childTypes = new ArrayList<Tree<ObjectType>>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.Tree<org.eclipse.milo.opcua.sdk.core.typetree.ObjectType>> childTypes = new ArrayList<Tree<ObjectType>>();
 
     for (int i = 0; i < parentTypes.size(); i++) {
       Tree<ObjectType> tree = parentTypes.get(i);
@@ -143,14 +145,14 @@ public class ObjectTypeTreeBuilder {
 
       assert subtypes.size() == objectTypeIds.size() && subtypes.size() == isAbstractValues.size();
 
-      var objectTypes = new ArrayList<ClientObjectType>();
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.typetree.ClientObjectType> objectTypes = new ArrayList<ClientObjectType>();
 
       for (int j = 0; j < subtypes.size(); j++) {
         QualifiedName browseName = subtypes.get(j).getBrowseName();
         NodeId objectTypeId = objectTypeIds.get(j);
         Boolean isAbstract = isAbstractValues.get(j);
 
-        var objectType = new ClientObjectType(browseName, objectTypeId, isAbstract);
+        org.eclipse.milo.opcua.sdk.client.typetree.ClientObjectType objectType = new ClientObjectType(browseName, objectTypeId, isAbstract);
 
         objectTypes.add(objectType);
 
@@ -177,12 +179,12 @@ public class ObjectTypeTreeBuilder {
       throws UaException {
 
     if (objectTypeIds.isEmpty()) {
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     ClientBrowseUtils.checkSessionUnchanged(client, sessionId);
 
-    var readValueIds = new ArrayList<ReadValueId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId> readValueIds = new ArrayList<ReadValueId>();
 
     for (NodeId objectTypeId : objectTypeIds) {
       readValueIds.add(
@@ -190,7 +192,7 @@ public class ObjectTypeTreeBuilder {
               objectTypeId, AttributeId.IsAbstract.uid(), null, QualifiedName.NULL_VALUE));
     }
 
-    var isAbstractValues = new ArrayList<Boolean>();
+    java.util.ArrayList<java.lang.Boolean> isAbstractValues = new ArrayList<Boolean>();
 
     List<DataValue> values =
         ClientBrowseUtils.readWithOperationLimits(client, readValueIds, operationLimits);

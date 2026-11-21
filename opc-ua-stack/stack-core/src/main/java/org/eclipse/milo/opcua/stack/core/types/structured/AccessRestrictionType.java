@@ -55,7 +55,7 @@ public class AccessRestrictionType extends OptionSetUI16<AccessRestrictionType.F
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AccessRestrictionType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AccessRestrictionType.class.getSimpleName() + "[", "]");
     joiner.add("signingRequired=" + getSigningRequired());
     joiner.add("encryptionRequired=" + getEncryptionRequired());
     joiner.add("sessionRequired=" + getSessionRequired());

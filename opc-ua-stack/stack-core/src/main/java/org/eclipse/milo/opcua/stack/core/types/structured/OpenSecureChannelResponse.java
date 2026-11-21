@@ -98,7 +98,7 @@ public class OpenSecureChannelResponse extends Structure implements UaResponseMe
       return false;
     }
     OpenSecureChannelResponse that = (OpenSecureChannelResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getServerProtocolVersion(), that.getServerProtocolVersion());
     eqb.append(getSecurityToken(), that.getSecurityToken());
@@ -108,7 +108,7 @@ public class OpenSecureChannelResponse extends Structure implements UaResponseMe
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getServerProtocolVersion());
     hcb.append(getSecurityToken());
@@ -118,7 +118,7 @@ public class OpenSecureChannelResponse extends Structure implements UaResponseMe
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", OpenSecureChannelResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", OpenSecureChannelResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("serverProtocolVersion=" + getServerProtocolVersion());
     joiner.add("securityToken=" + getSecurityToken());

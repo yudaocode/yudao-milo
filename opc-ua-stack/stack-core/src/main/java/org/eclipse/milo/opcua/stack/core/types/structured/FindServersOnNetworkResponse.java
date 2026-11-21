@@ -95,7 +95,7 @@ public class FindServersOnNetworkResponse extends Structure implements UaRespons
       return false;
     }
     FindServersOnNetworkResponse that = (FindServersOnNetworkResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getLastCounterResetTime(), that.getLastCounterResetTime());
     eqb.append(getServers(), that.getServers());
@@ -104,7 +104,7 @@ public class FindServersOnNetworkResponse extends Structure implements UaRespons
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getLastCounterResetTime());
     hcb.append(getServers());
@@ -113,7 +113,7 @@ public class FindServersOnNetworkResponse extends Structure implements UaRespons
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", FindServersOnNetworkResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("lastCounterResetTime=" + getLastCounterResetTime());

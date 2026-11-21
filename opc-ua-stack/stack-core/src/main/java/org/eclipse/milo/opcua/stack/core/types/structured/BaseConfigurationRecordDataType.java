@@ -82,7 +82,7 @@ public abstract class BaseConfigurationRecordDataType extends Structure
       return false;
     }
     BaseConfigurationRecordDataType that = (BaseConfigurationRecordDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getRecordProperties(), that.getRecordProperties());
     return eqb.build();
@@ -90,7 +90,7 @@ public abstract class BaseConfigurationRecordDataType extends Structure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getRecordProperties());
     return hcb.build();
@@ -98,7 +98,7 @@ public abstract class BaseConfigurationRecordDataType extends Structure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", BaseConfigurationRecordDataType.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("recordProperties=" + java.util.Arrays.toString(getRecordProperties()));

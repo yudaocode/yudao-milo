@@ -70,7 +70,7 @@ public class AnonymousIdentityToken extends UserIdentityToken implements UaStruc
       return false;
     }
     AnonymousIdentityToken that = (AnonymousIdentityToken) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     return eqb.build();
   }
@@ -82,7 +82,7 @@ public class AnonymousIdentityToken extends UserIdentityToken implements UaStruc
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AnonymousIdentityToken.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AnonymousIdentityToken.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

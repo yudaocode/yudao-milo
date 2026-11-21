@@ -10,7 +10,11 @@
 
 package org.eclipse.milo.opcua.sdk.client.typetree;
 
-import static java.util.Objects.requireNonNullElse;
+import java.util.stream.Collectors;
+
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.util.ArrayList;
@@ -105,7 +109,7 @@ final class ClientBrowseUtils {
       throws UaException {
 
     if (readValueIds.isEmpty()) {
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     LOGGER.debug("readWithOperationLimits: {}", readValueIds.size());
@@ -132,8 +136,7 @@ final class ClientBrowseUtils {
           if (results == null || results.length != partitionList.size()) {
             throw new UaException(
                 StatusCodes.Bad_UnexpectedError,
-                "Read returned %s results, expected %s"
-                    .formatted(results == null ? "null" : results.length, partitionList.size()));
+                String.format("Read returned %s results, expected %s", results == null ? "null" : results.length, partitionList.size()));
           }
 
           return Arrays.asList(results);
@@ -154,7 +157,7 @@ final class ClientBrowseUtils {
       throws UaException {
 
     if (browseDescriptions.isEmpty()) {
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     LOGGER.debug("browseWithOperationLimits: {}", browseDescriptions.size());
@@ -177,7 +180,7 @@ final class ClientBrowseUtils {
   private static <T, R> List<R> executeWithOperationLimit(
       List<T> inputs, int partitionSize, PartitionOperation<T, R> operation) throws UaException {
 
-    var results = new ArrayList<R>(inputs.size());
+    java.util.ArrayList<R> results = new ArrayList<R>(inputs.size());
 
     int index = 0;
     int currentPartitionSize = partitionSize;
@@ -232,7 +235,7 @@ final class ClientBrowseUtils {
       OpcUaClient client, List<BrowseDescription> browseDescriptions) throws UaException {
 
     if (browseDescriptions.isEmpty()) {
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     List<BrowseResult> browseResults = client.browse(browseDescriptions);
@@ -262,15 +265,14 @@ final class ClientBrowseUtils {
     if (browseResults.size() != browseDescriptions.size()) {
       throw new UaException(
           StatusCodes.Bad_UnexpectedError,
-          "Browse returned %d results, expected %d"
-              .formatted(browseResults.size(), browseDescriptions.size()));
+          String.format("Browse returned %d results, expected %d", browseResults.size(), browseDescriptions.size()));
     }
 
-    final var referenceDescriptionLists = new ArrayList<List<ReferenceDescription>>();
+    final ArrayList<List<ReferenceDescription>> referenceDescriptionLists = new ArrayList<List<ReferenceDescription>>();
 
     for (BrowseResult result : browseResults) {
       if (result.getStatusCode().isGood()) {
-        var references = new ArrayList<ReferenceDescription>();
+        java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReferenceDescription> references = new ArrayList<ReferenceDescription>();
 
         ReferenceDescription[] refs =
             requireNonNullElse(result.getReferences(), new ReferenceDescription[0]);
@@ -282,7 +284,7 @@ final class ClientBrowseUtils {
 
         referenceDescriptionLists.add(references);
       } else {
-        referenceDescriptionLists.add(List.of());
+        referenceDescriptionLists.add(Java8Collections.listOf());
       }
     }
 
@@ -300,19 +302,19 @@ final class ClientBrowseUtils {
   static List<ReferenceDescription> maybeBrowseNext(
       OpcUaClient client, @Nullable ByteString continuationPoint) throws UaException {
 
-    var references = new ArrayList<ReferenceDescription>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReferenceDescription> references = new ArrayList<ReferenceDescription>();
 
     int iterations = 0;
 
     while (continuationPoint != null && continuationPoint.isNotNull()) {
       if (++iterations > MAX_BROWSE_NEXT_ITERATIONS) {
-        var limitException =
+        org.eclipse.milo.opcua.stack.core.UaException limitException =
             new UaException(
                 StatusCodes.Bad_UnexpectedError,
-                "BrowseNext did not complete after %d calls".formatted(MAX_BROWSE_NEXT_ITERATIONS));
+                String.format("BrowseNext did not complete after %d calls", MAX_BROWSE_NEXT_ITERATIONS));
 
         try {
-          client.browseNext(true, List.of(continuationPoint));
+          client.browseNext(true, Java8Collections.listOf(continuationPoint));
         } catch (UaException e) {
           limitException.addSuppressed(e);
         }
@@ -320,7 +322,7 @@ final class ClientBrowseUtils {
         throw limitException;
       }
 
-      BrowseNextResponse response = client.browseNext(false, List.of(continuationPoint));
+      BrowseNextResponse response = client.browseNext(false, Java8Collections.listOf(continuationPoint));
 
       BrowseResult[] results = response.getResults();
       if (results == null || results.length == 0) {
@@ -332,7 +334,7 @@ final class ClientBrowseUtils {
       ReferenceDescription[] rds =
           requireNonNullElse(result.getReferences(), new ReferenceDescription[0]);
 
-      references.addAll(List.of(rds));
+      references.addAll(Java8Collections.listOf(rds));
 
       continuationPoint = result.getContinuationPoint();
     }
@@ -363,16 +365,35 @@ final class ClientBrowseUtils {
                         false,
                         uint(NodeClass.Object.getValue()),
                         uint(BrowseResultMask.All.getValue())))
-            .toList();
+            .collect(Collectors.toList());
 
     return browseWithOperationLimits(client, browseDescriptions, limits);
   }
 
   /** The encoding Node ids of a DataType, extracted from its HasEncoding references. */
-  record EncodingIds(
-      @Nullable NodeId binaryEncodingId,
-      @Nullable NodeId xmlEncodingId,
-      @Nullable NodeId jsonEncodingId) {}
+  static final class EncodingIds {
+    private final @Nullable NodeId binaryEncodingId;
+    private final @Nullable NodeId xmlEncodingId;
+    private final @Nullable NodeId jsonEncodingId;
+
+    public @Nullable NodeId binaryEncodingId() {
+      return binaryEncodingId;
+    }
+
+    public @Nullable NodeId xmlEncodingId() {
+      return xmlEncodingId;
+    }
+
+    public @Nullable NodeId jsonEncodingId() {
+      return jsonEncodingId;
+    }
+
+    EncodingIds(@Nullable NodeId binaryEncodingId, @Nullable NodeId xmlEncodingId, @Nullable NodeId jsonEncodingId) {
+      this.binaryEncodingId = binaryEncodingId;
+      this.xmlEncodingId = xmlEncodingId;
+      this.jsonEncodingId = jsonEncodingId;
+    }
+}
 
   /**
    * Extract the Default Binary/XML/JSON encoding Node ids from a DataType Node's HasEncoding
@@ -427,7 +448,8 @@ final class ClientBrowseUtils {
     NodeId binaryEncodingId = dataType.getBinaryEncodingId();
 
     if (binaryEncodingId == null
-        && dataType.getDataTypeDefinition() instanceof StructureDefinition definition) {
+        && dataType.getDataTypeDefinition() instanceof StructureDefinition) {
+      StructureDefinition definition = (StructureDefinition) dataType.getDataTypeDefinition();
 
       binaryEncodingId = definition.getDefaultEncodingId();
     }

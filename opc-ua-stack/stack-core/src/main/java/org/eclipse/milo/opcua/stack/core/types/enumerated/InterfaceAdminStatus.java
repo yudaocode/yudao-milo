@@ -48,12 +48,16 @@ public enum InterfaceAdminStatus implements UaEnumeratedType {
   }
 
   public static @Nullable InterfaceAdminStatus from(int value) {
-    return switch (value) {
-      case 0 -> Up;
-      case 1 -> Down;
-      case 2 -> Testing;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Up;
+      case 1:
+        return Down;
+      case 2:
+        return Testing;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

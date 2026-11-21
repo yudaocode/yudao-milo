@@ -32,7 +32,8 @@ final class NodeIdConversions {
 
   @Nullable
   static Object convert(@NonNull Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof NodeId nodeId) {
+    if (o instanceof NodeId) {
+      NodeId nodeId = (NodeId) o;
       return implicit
           ? implicitConversion(nodeId, targetType)
           : explicitConversion(nodeId, targetType);

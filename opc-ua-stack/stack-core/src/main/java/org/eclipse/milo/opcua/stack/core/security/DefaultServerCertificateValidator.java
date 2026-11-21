@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.security;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.stack.core.util.validation.CertificateValidationUtil.buildTrustedCertPath;
 import static org.eclipse.milo.opcua.stack.core.util.validation.CertificateValidationUtil.validateTrustedCertPath;
@@ -62,7 +63,7 @@ public class DefaultServerCertificateValidator implements CertificateValidator {
       CertificateQuarantine certificateQuarantine) {
 
     this.trustListManager = trustListManager;
-    this.validationChecks = Set.copyOf(validationChecks);
+    this.validationChecks = Java8Collections.setCopyOf(validationChecks);
     this.certificateQuarantine = certificateQuarantine;
   }
 

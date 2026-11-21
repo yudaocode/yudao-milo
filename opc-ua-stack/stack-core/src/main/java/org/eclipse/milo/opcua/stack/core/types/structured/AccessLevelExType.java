@@ -81,7 +81,7 @@ public class AccessLevelExType extends OptionSetUI32<AccessLevelExType.Field> {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AccessLevelExType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AccessLevelExType.class.getSimpleName() + "[", "]");
     joiner.add("currentRead=" + getCurrentRead());
     joiner.add("currentWrite=" + getCurrentWrite());
     joiner.add("historyRead=" + getHistoryRead());

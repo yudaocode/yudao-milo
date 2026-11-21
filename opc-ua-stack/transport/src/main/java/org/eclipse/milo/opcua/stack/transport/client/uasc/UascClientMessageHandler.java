@@ -308,7 +308,8 @@ public class UascClientMessageHandler extends ByteToMessageCodec<UascRequest> {
         binaryDecoder.setBuffer(messageBuffer);
         UaMessageType message = binaryDecoder.decodeMessage(null);
 
-        if (message instanceof ServiceFault serviceFault) {
+        if (message instanceof ServiceFault) {
+      ServiceFault serviceFault = (ServiceFault) message;
           UascResponse response =
               UascResponse.failure(
                   decodedMessage.getRequestId(), new UaServiceFaultException(serviceFault));
@@ -480,7 +481,7 @@ public class UascClientMessageHandler extends ByteToMessageCodec<UascRequest> {
     SecurityKeysListener listener = application.getSecurityKeysListener();
 
     if (listener != null && newKeys != null) {
-      var keyset =
+      org.eclipse.milo.opcua.stack.core.channel.SecurityKeyset keyset =
           new SecurityKeyset(
               secureChannel.getChannelId(),
               newToken.getTokenId().longValue(),
@@ -589,11 +590,11 @@ public class UascClientMessageHandler extends ByteToMessageCodec<UascRequest> {
 
     secureChannel.setLocalNonce(clientNonce);
 
-    var header =
+    org.eclipse.milo.opcua.stack.core.types.structured.RequestHeader header =
         new RequestHeader(
             null, DateTime.now(), uint(0), uint(0), null, application.getRequestTimeout(), null);
 
-    var request =
+    org.eclipse.milo.opcua.stack.core.types.structured.OpenSecureChannelRequest request =
         new OpenSecureChannelRequest(
             header,
             uint(PROTOCOL_VERSION),

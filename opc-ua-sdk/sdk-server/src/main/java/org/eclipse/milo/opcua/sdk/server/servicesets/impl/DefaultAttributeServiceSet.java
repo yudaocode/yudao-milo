@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.sdk.server.servicesets.impl;
 
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.sdk.core.util.GroupMapCollate.groupMapCollate;
 
 import java.util.Collections;
@@ -157,7 +157,7 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
     Map<ReadValueId, AccessResult> accessResults =
         server.getAccessController().checkReadAccess(session, nodesToRead);
 
-    var diagnosticsContext = new DiagnosticsContext<ReadValueId>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId> diagnosticsContext = new DiagnosticsContext<ReadValueId>();
 
     List<DataValue> values =
         groupMapCollate(
@@ -165,10 +165,11 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
             accessResults::get,
             accessResult ->
                 group -> {
-                  if (accessResult instanceof AccessResult.Denied denied) {
+                  if (accessResult instanceof AccessResult.Denied) {
+      AccessResult.Denied denied = (AccessResult.Denied) accessResult;
                     return Collections.nCopies(group.size(), new DataValue(denied.statusCode()));
                   } else {
-                    var readContext =
+                    org.eclipse.milo.opcua.sdk.server.AddressSpace.ReadContext readContext =
                         new ReadContext(
                             server,
                             session,
@@ -191,7 +192,7 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
 
     ResponseHeader header = createResponseHeader(request);
 
-    return new ReadResponse(header, values.toArray(DataValue[]::new), diagnosticInfos);
+    return new ReadResponse(header, values.toArray(new DataValue[0]), diagnosticInfos);
   }
 
   private HistoryReadResponse historyRead(HistoryReadRequest request, Session session)
@@ -210,9 +211,9 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
       throw new UaException(StatusCodes.Bad_TimestampsToReturnInvalid);
     }
 
-    var diagnosticsContext = new DiagnosticsContext<HistoryReadValueId>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.HistoryReadValueId> diagnosticsContext = new DiagnosticsContext<HistoryReadValueId>();
 
-    var historyReadContext =
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.HistoryReadContext historyReadContext =
         new HistoryReadContext(
             server,
             session,
@@ -234,7 +235,7 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
     DiagnosticInfo[] diagnosticInfos = diagnosticsContext.getDiagnosticInfos(nodesToRead);
 
     return new HistoryReadResponse(
-        header, results.toArray(HistoryReadResult[]::new), diagnosticInfos);
+        header, results.toArray(new HistoryReadResult[0]), diagnosticInfos);
   }
 
   private WriteResponse write(WriteRequest request, Session session) throws UaException {
@@ -251,7 +252,7 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
     Map<WriteValue, AccessResult> accessResults =
         server.getAccessController().checkWriteAccess(session, nodesToWrite);
 
-    var diagnosticsContext = new DiagnosticsContext<WriteValue>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.WriteValue> diagnosticsContext = new DiagnosticsContext<WriteValue>();
 
     List<StatusCode> results =
         groupMapCollate(
@@ -259,10 +260,11 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
             accessResults::get,
             accessResult ->
                 group -> {
-                  if (accessResult instanceof AccessResult.Denied denied) {
+                  if (accessResult instanceof AccessResult.Denied) {
+      AccessResult.Denied denied = (AccessResult.Denied) accessResult;
                     return Collections.nCopies(group.size(), denied.statusCode());
                   } else {
-                    var writeContext =
+                    org.eclipse.milo.opcua.sdk.server.AddressSpace.WriteContext writeContext =
                         new WriteContext(
                             server,
                             session,
@@ -279,12 +281,12 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
 
     DiagnosticInfo[] diagnosticInfos = diagnosticsContext.getDiagnosticInfos(nodesToWrite);
 
-    return new WriteResponse(header, results.toArray(StatusCode[]::new), diagnosticInfos);
+    return new WriteResponse(header, results.toArray(new StatusCode[0]), diagnosticInfos);
   }
 
   private HistoryUpdateResponse historyUpdate(HistoryUpdateRequest request, Session session)
       throws UaException {
-    var historyUpdateDetails =
+    ExtensionObject[] historyUpdateDetails =
         requireNonNullElse(request.getHistoryUpdateDetails(), new ExtensionObject[0]);
 
     List<HistoryUpdateDetails> historyUpdateDetailsList =
@@ -301,9 +303,9 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var diagnosticsContext = new DiagnosticsContext<HistoryUpdateDetails>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.HistoryUpdateDetails> diagnosticsContext = new DiagnosticsContext<HistoryUpdateDetails>();
 
-    var historyUpdateContext =
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.HistoryUpdateContext historyUpdateContext =
         new HistoryUpdateContext(
             server,
             session,
@@ -323,6 +325,6 @@ public class DefaultAttributeServiceSet extends AbstractServiceSet implements At
         diagnosticsContext.getDiagnosticInfos(historyUpdateDetailsList);
 
     return new HistoryUpdateResponse(
-        header, results.toArray(HistoryUpdateResult[]::new), diagnosticInfos);
+        header, results.toArray(new HistoryUpdateResult[0]), diagnosticInfos);
   }
 }

@@ -111,7 +111,7 @@ public class UserTokenPolicy extends Structure implements UaStructuredType {
       return false;
     }
     UserTokenPolicy that = (UserTokenPolicy) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getPolicyId(), that.getPolicyId());
     eqb.append(getTokenType(), that.getTokenType());
     eqb.append(getIssuedTokenType(), that.getIssuedTokenType());
@@ -122,7 +122,7 @@ public class UserTokenPolicy extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPolicyId());
     hcb.append(getTokenType());
     hcb.append(getIssuedTokenType());
@@ -133,7 +133,7 @@ public class UserTokenPolicy extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UserTokenPolicy.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UserTokenPolicy.class.getSimpleName() + "[", "]");
     joiner.add("policyId='" + getPolicyId() + "'");
     joiner.add("tokenType=" + getTokenType());
     joiner.add("issuedTokenType='" + getIssuedTokenType() + "'");

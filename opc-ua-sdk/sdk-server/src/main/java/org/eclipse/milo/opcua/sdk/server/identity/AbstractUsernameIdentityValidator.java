@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.identity;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.Set;
@@ -30,7 +32,7 @@ public abstract class AbstractUsernameIdentityValidator extends AbstractIdentity
 
   @Override
   public Set<UserTokenType> getSupportedTokenTypes() {
-    return Set.of(UserTokenType.UserName);
+    return Java8Collections.setOf(UserTokenType.UserName);
   }
 
   @Override

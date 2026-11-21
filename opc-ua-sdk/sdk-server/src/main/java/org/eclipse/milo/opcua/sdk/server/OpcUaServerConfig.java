@@ -163,7 +163,7 @@ public interface OpcUaServerConfig {
    * @return a {@link OpcUaServerConfigBuilder} pre-populated with values from {@code config}.
    */
   static OpcUaServerConfigBuilder copy(OpcUaServerConfig config) {
-    var builder = new OpcUaServerConfigBuilder();
+    org.eclipse.milo.opcua.sdk.server.OpcUaServerConfigBuilder builder = new OpcUaServerConfigBuilder();
 
     builder.setEndpoints(config.getEndpoints());
     builder.setApplicationName(config.getApplicationName());

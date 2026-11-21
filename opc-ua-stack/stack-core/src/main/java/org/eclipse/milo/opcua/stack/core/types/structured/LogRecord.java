@@ -137,7 +137,7 @@ public class LogRecord extends Structure implements UaStructuredType {
       return false;
     }
     LogRecord that = (LogRecord) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTime(), that.getTime());
     eqb.append(getSeverity(), that.getSeverity());
     eqb.append(getEventType(), that.getEventType());
@@ -151,7 +151,7 @@ public class LogRecord extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTime());
     hcb.append(getSeverity());
     hcb.append(getEventType());
@@ -165,7 +165,7 @@ public class LogRecord extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LogRecord.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LogRecord.class.getSimpleName() + "[", "]");
     joiner.add("time=" + getTime());
     joiner.add("severity=" + getSeverity());
     joiner.add("eventType=" + getEventType());

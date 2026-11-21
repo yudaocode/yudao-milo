@@ -81,7 +81,7 @@ public abstract class BaseConfigurationDataType extends Structure implements UaS
       return false;
     }
     BaseConfigurationDataType that = (BaseConfigurationDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getConfigurationVersion(), that.getConfigurationVersion());
     eqb.append(getConfigurationProperties(), that.getConfigurationProperties());
     return eqb.build();
@@ -89,7 +89,7 @@ public abstract class BaseConfigurationDataType extends Structure implements UaS
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getConfigurationVersion());
     hcb.append(getConfigurationProperties());
     return hcb.build();
@@ -97,7 +97,7 @@ public abstract class BaseConfigurationDataType extends Structure implements UaS
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", BaseConfigurationDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", BaseConfigurationDataType.class.getSimpleName() + "[", "]");
     joiner.add("configurationVersion=" + getConfigurationVersion());
     joiner.add(
         "configurationProperties=" + java.util.Arrays.toString(getConfigurationProperties()));

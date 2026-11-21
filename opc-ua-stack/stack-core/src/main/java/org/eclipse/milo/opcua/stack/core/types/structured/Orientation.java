@@ -54,7 +54,7 @@ public abstract class Orientation extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", Orientation.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", Orientation.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

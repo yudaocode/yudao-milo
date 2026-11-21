@@ -111,7 +111,7 @@ public class AxisInformation extends Structure implements UaStructuredType {
       return false;
     }
     AxisInformation that = (AxisInformation) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getEngineeringUnits(), that.getEngineeringUnits());
     eqb.append(getEuRange(), that.getEuRange());
     eqb.append(getTitle(), that.getTitle());
@@ -122,7 +122,7 @@ public class AxisInformation extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEngineeringUnits());
     hcb.append(getEuRange());
     hcb.append(getTitle());
@@ -133,7 +133,7 @@ public class AxisInformation extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AxisInformation.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AxisInformation.class.getSimpleName() + "[", "]");
     joiner.add("engineeringUnits=" + getEngineeringUnits());
     joiner.add("euRange=" + getEuRange());
     joiner.add("title=" + getTitle());

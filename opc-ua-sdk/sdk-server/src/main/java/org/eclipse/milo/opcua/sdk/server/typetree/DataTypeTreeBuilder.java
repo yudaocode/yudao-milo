@@ -9,6 +9,9 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.typetree;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
+import java.util.stream.Collectors;
 
 import java.util.List;
 import org.eclipse.milo.opcua.sdk.core.Reference;
@@ -37,9 +40,9 @@ public class DataTypeTreeBuilder {
    */
   public static DataTypeTree build(OpcUaServer server) {
     UaNode rootNode =
-        server.getAddressSpaceManager().getManagedNode(NodeIds.BaseDataType).orElseThrow();
+        server.getAddressSpaceManager().getManagedNode(NodeIds.BaseDataType).get();
 
-    var tree =
+    org.eclipse.milo.opcua.stack.core.util.Tree<org.eclipse.milo.opcua.sdk.core.typetree.DataType> tree =
         new Tree<DataType>(null, new ServerDataType((UaDataTypeNode) rootNode, null, null, null));
 
     addChildren(tree, server);
@@ -60,8 +63,8 @@ public class DataTypeTreeBuilder {
     List<UaNode> childNodes =
         references.stream()
             .flatMap(
-                r -> server.getAddressSpaceManager().getManagedNode(r.getTargetNodeId()).stream())
-            .toList();
+                r -> Java8Collections.optionalStream(server.getAddressSpaceManager().getManagedNode(r.getTargetNodeId())))
+            .collect(Collectors.toList());
 
     for (UaNode childNode : childNodes) {
       UaDataTypeNode dataTypeNode = (UaDataTypeNode) childNode;

@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.core;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.EnumSet;
 import java.util.Set;
 import org.eclipse.milo.opcua.stack.core.AttributeId;
@@ -43,7 +45,7 @@ public enum WriteMask {
   AccessRestrictions(1 << 24),
   AccessLevelEx(1 << 25);
 
-  public static final Set<WriteMask> NONE = Set.of();
+  public static final Set<WriteMask> NONE = Java8Collections.setOf();
 
   private final int value;
 
@@ -70,35 +72,61 @@ public enum WriteMask {
   }
 
   public static WriteMask forAttribute(AttributeId attributeId) {
-    return switch (attributeId) {
-      case AccessLevel -> org.eclipse.milo.opcua.sdk.core.WriteMask.AccessLevel;
-      case ArrayDimensions -> org.eclipse.milo.opcua.sdk.core.WriteMask.ArrayDimensions;
-      case BrowseName -> org.eclipse.milo.opcua.sdk.core.WriteMask.BrowseName;
-      case ContainsNoLoops -> org.eclipse.milo.opcua.sdk.core.WriteMask.ContainsNoLoops;
-      case DataType -> org.eclipse.milo.opcua.sdk.core.WriteMask.DataType;
-      case Description -> org.eclipse.milo.opcua.sdk.core.WriteMask.Description;
-      case DisplayName -> org.eclipse.milo.opcua.sdk.core.WriteMask.DisplayName;
-      case EventNotifier -> org.eclipse.milo.opcua.sdk.core.WriteMask.EventNotifier;
-      case Executable -> org.eclipse.milo.opcua.sdk.core.WriteMask.Executable;
-      case Historizing -> org.eclipse.milo.opcua.sdk.core.WriteMask.Historizing;
-      case InverseName -> org.eclipse.milo.opcua.sdk.core.WriteMask.InverseName;
-      case IsAbstract -> org.eclipse.milo.opcua.sdk.core.WriteMask.IsAbstract;
-      case MinimumSamplingInterval ->
-          org.eclipse.milo.opcua.sdk.core.WriteMask.MinimumSamplingInterval;
-      case NodeClass -> org.eclipse.milo.opcua.sdk.core.WriteMask.NodeClass;
-      case NodeId -> org.eclipse.milo.opcua.sdk.core.WriteMask.NodeId;
-      case Symmetric -> org.eclipse.milo.opcua.sdk.core.WriteMask.Symmetric;
-      case UserAccessLevel -> org.eclipse.milo.opcua.sdk.core.WriteMask.UserAccessLevel;
-      case UserExecutable -> org.eclipse.milo.opcua.sdk.core.WriteMask.UserExecutable;
-      case UserWriteMask -> org.eclipse.milo.opcua.sdk.core.WriteMask.UserWriteMask;
-      case Value -> org.eclipse.milo.opcua.sdk.core.WriteMask.ValueForVariableType;
-      case ValueRank -> org.eclipse.milo.opcua.sdk.core.WriteMask.ValueRank;
-      case WriteMask -> org.eclipse.milo.opcua.sdk.core.WriteMask.WriteMask;
-      case RolePermissions -> org.eclipse.milo.opcua.sdk.core.WriteMask.RolePermissions;
-      case AccessRestrictions -> org.eclipse.milo.opcua.sdk.core.WriteMask.AccessRestrictions;
-      case AccessLevelEx -> org.eclipse.milo.opcua.sdk.core.WriteMask.AccessLevelEx;
-      case DataTypeDefinition -> org.eclipse.milo.opcua.sdk.core.WriteMask.DataTypeDefinition;
-      default -> throw new IllegalArgumentException("unknown AttributeId: " + attributeId);
-    };
+    switch ((attributeId)) {
+      case AccessLevel:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.AccessLevel;
+      case ArrayDimensions:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.ArrayDimensions;
+      case BrowseName:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.BrowseName;
+      case ContainsNoLoops:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.ContainsNoLoops;
+      case DataType:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.DataType;
+      case Description:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.Description;
+      case DisplayName:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.DisplayName;
+      case EventNotifier:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.EventNotifier;
+      case Executable:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.Executable;
+      case Historizing:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.Historizing;
+      case InverseName:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.InverseName;
+      case IsAbstract:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.IsAbstract;
+      case MinimumSamplingInterval:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.MinimumSamplingInterval;
+      case NodeClass:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.NodeClass;
+      case NodeId:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.NodeId;
+      case Symmetric:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.Symmetric;
+      case UserAccessLevel:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.UserAccessLevel;
+      case UserExecutable:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.UserExecutable;
+      case UserWriteMask:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.UserWriteMask;
+      case Value:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.ValueForVariableType;
+      case ValueRank:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.ValueRank;
+      case WriteMask:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.WriteMask;
+      case RolePermissions:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.RolePermissions;
+      case AccessRestrictions:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.AccessRestrictions;
+      case AccessLevelEx:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.AccessLevelEx;
+      case DataTypeDefinition:
+        return org.eclipse.milo.opcua.sdk.core.WriteMask.DataTypeDefinition;
+      default:
+        throw new IllegalArgumentException("unknown AttributeId: " + attributeId);
+    }
   }
 }

@@ -114,7 +114,7 @@ public interface UserManagementType extends BaseObjectType {
                   "UserName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -122,7 +122,7 @@ public interface UserManagementType extends BaseObjectType {
                   "Password",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -130,7 +130,7 @@ public interface UserManagementType extends BaseObjectType {
                   "UserConfiguration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=24279")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -138,7 +138,7 @@ public interface UserManagementType extends BaseObjectType {
                   "Description",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -190,7 +190,7 @@ public interface UserManagementType extends BaseObjectType {
                   "UserName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -198,7 +198,7 @@ public interface UserManagementType extends BaseObjectType {
                   "ModifyPassword",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -206,7 +206,7 @@ public interface UserManagementType extends BaseObjectType {
                   "Password",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -214,7 +214,7 @@ public interface UserManagementType extends BaseObjectType {
                   "ModifyUserConfiguration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -222,7 +222,7 @@ public interface UserManagementType extends BaseObjectType {
                   "UserConfiguration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=24279")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -230,7 +230,7 @@ public interface UserManagementType extends BaseObjectType {
                   "ModifyDescription",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -238,7 +238,7 @@ public interface UserManagementType extends BaseObjectType {
                   "Description",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -304,7 +304,7 @@ public interface UserManagementType extends BaseObjectType {
                   "UserName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -349,7 +349,7 @@ public interface UserManagementType extends BaseObjectType {
                   "OldPassword",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -357,7 +357,7 @@ public interface UserManagementType extends BaseObjectType {
                   "NewPassword",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

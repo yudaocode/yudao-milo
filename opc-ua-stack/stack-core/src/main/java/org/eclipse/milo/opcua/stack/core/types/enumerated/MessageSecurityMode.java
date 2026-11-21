@@ -47,13 +47,18 @@ public enum MessageSecurityMode implements UaEnumeratedType {
   }
 
   public static @Nullable MessageSecurityMode from(int value) {
-    return switch (value) {
-      case 0 -> Invalid;
-      case 1 -> None;
-      case 2 -> Sign;
-      case 3 -> SignAndEncrypt;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Invalid;
+      case 1:
+        return None;
+      case 2:
+        return Sign;
+      case 3:
+        return SignAndEncrypt;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

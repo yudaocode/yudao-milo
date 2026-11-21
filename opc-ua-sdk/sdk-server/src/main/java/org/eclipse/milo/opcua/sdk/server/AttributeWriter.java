@@ -81,7 +81,8 @@ public class AttributeWriter {
       // This Attribute shall not be writeable.
       return new StatusCode(StatusCodes.Bad_NotWritable);
     } else if (attributeId == AttributeId.Value) {
-      if (node instanceof UaVariableNode variableNode) {
+      if (node instanceof UaVariableNode) {
+      UaVariableNode variableNode = (UaVariableNode) node;
         AccessLevelExType accessLevelEx = variableNode.getAccessLevelEx();
 
         if (accessLevelEx != null) {
@@ -94,7 +95,8 @@ public class AttributeWriter {
             return new StatusCode(StatusCodes.Bad_NotWritable);
           }
         }
-      } else if (node instanceof UaVariableTypeNode variableTypeNode) {
+      } else if (node instanceof UaVariableTypeNode) {
+      UaVariableTypeNode variableTypeNode = (UaVariableTypeNode) node;
         EnumSet<WriteMask> writeMasks = WriteMask.fromMask(variableTypeNode.getWriteMask());
 
         if (!writeMasks.contains(WriteMask.ValueForVariableType)) {
@@ -120,15 +122,18 @@ public class AttributeWriter {
         NumericRange range = NumericRange.parse(indexRange);
 
         Object currentValue = node.getAttribute(AccessContext.INTERNAL, attributeId);
-        if (currentValue instanceof DataValue dataValue) {
+        if (currentValue instanceof DataValue) {
+      DataValue dataValue = (DataValue) currentValue;
           currentValue = dataValue.value().value();
         }
-        if (currentValue instanceof Matrix matrix) {
+        if (currentValue instanceof Matrix) {
+      Matrix matrix = (Matrix) currentValue;
           currentValue = matrix.nestedArrayValue();
         }
 
         Object updateValue = updateVariant.value();
-        if (updateValue instanceof Matrix matrix) {
+        if (updateValue instanceof Matrix) {
+      Matrix matrix = (Matrix) updateValue;
           updateValue = matrix.nestedArrayValue();
         }
 
@@ -225,14 +230,22 @@ public class AttributeWriter {
       throw new UaException(StatusCodes.Bad_TypeMismatch);
     }
 
-    return switch (attributeId) {
-      case NodeClass -> convertNodeClass(value);
-      case AccessRestrictions -> convertAccessRestrictions(value);
-      case AccessLevelEx -> convertAccessLevelEx(value);
-      case DataTypeDefinition -> convertDataTypeDefinition(nodeContext, value);
-      case RolePermissions, UserRolePermissions -> convertRolePermissions(nodeContext, value);
-      default -> validateAttributeValue(attributeId, value);
-    };
+    switch ((attributeId)) {
+      case NodeClass:
+        return convertNodeClass(value);
+      case AccessRestrictions:
+        return convertAccessRestrictions(value);
+      case AccessLevelEx:
+        return convertAccessLevelEx(value);
+      case DataTypeDefinition:
+        return convertDataTypeDefinition(nodeContext, value);
+      case RolePermissions:
+
+      case UserRolePermissions:
+        return convertRolePermissions(nodeContext, value);
+      default:
+        return validateAttributeValue(attributeId, value);
+    }
   }
 
   private static Object validateAttributeValue(AttributeId attributeId, Object value)
@@ -247,30 +260,72 @@ public class AttributeWriter {
   }
 
   private static Class<?> getAttributeValueType(AttributeId attributeId) {
-    return switch (attributeId) {
-      case NodeId, DataType -> NodeId.class;
-      case NodeClass -> NodeClass.class;
-      case BrowseName -> QualifiedName.class;
-      case DisplayName, Description, InverseName -> LocalizedText.class;
-      case WriteMask, UserWriteMask -> UInteger.class;
-      case IsAbstract, Symmetric, ContainsNoLoops, Historizing, Executable, UserExecutable ->
-          Boolean.class;
-      case EventNotifier, AccessLevel, UserAccessLevel -> UByte.class;
-      case Value -> DataValue.class;
-      case ValueRank -> Integer.class;
-      case ArrayDimensions -> UInteger[].class;
-      case MinimumSamplingInterval -> Double.class;
-      case DataTypeDefinition -> DataTypeDefinition.class;
-      case RolePermissions, UserRolePermissions -> RolePermissionType[].class;
-      case AccessRestrictions -> AccessRestrictionType.class;
-      case AccessLevelEx -> AccessLevelExType.class;
-    };
+    switch ((attributeId)) {
+      case NodeId:
+
+      case DataType:
+        return NodeId.class;
+      case NodeClass:
+        return NodeClass.class;
+      case BrowseName:
+        return QualifiedName.class;
+      case DisplayName:
+
+      case Description:
+
+      case InverseName:
+        return LocalizedText.class;
+      case WriteMask:
+
+      case UserWriteMask:
+        return UInteger.class;
+      case IsAbstract:
+
+      case Symmetric:
+
+      case ContainsNoLoops:
+
+      case Historizing:
+
+      case Executable:
+
+      case UserExecutable:
+        return Boolean.class;
+      case EventNotifier:
+
+      case AccessLevel:
+
+      case UserAccessLevel:
+        return UByte.class;
+      case Value:
+        return DataValue.class;
+      case ValueRank:
+        return Integer.class;
+      case ArrayDimensions:
+        return UInteger[].class;
+      case MinimumSamplingInterval:
+        return Double.class;
+      case DataTypeDefinition:
+        return DataTypeDefinition.class;
+      case RolePermissions:
+
+      case UserRolePermissions:
+        return RolePermissionType[].class;
+      case AccessRestrictions:
+        return AccessRestrictionType.class;
+      case AccessLevelEx:
+        return AccessLevelExType.class;
+      default:
+        throw new IllegalArgumentException("attributeId=" + attributeId);
+    }
   }
 
   private static NodeClass convertNodeClass(Object value) throws UaException {
-    if (value instanceof NodeClass nodeClass) {
+    if (value instanceof NodeClass) {
+      NodeClass nodeClass = (NodeClass) value;
       return nodeClass;
-    } else if (value instanceof Integer i) {
+    } else if (value instanceof Integer) {
+      Integer i = (Integer) value;
       NodeClass nodeClass = NodeClass.from(i);
       if (nodeClass != null) {
         return nodeClass;
@@ -281,9 +336,11 @@ public class AttributeWriter {
   }
 
   private static AccessRestrictionType convertAccessRestrictions(Object value) throws UaException {
-    if (value instanceof AccessRestrictionType accessRestrictionType) {
+    if (value instanceof AccessRestrictionType) {
+      AccessRestrictionType accessRestrictionType = (AccessRestrictionType) value;
       return accessRestrictionType;
-    } else if (value instanceof UShort uShort) {
+    } else if (value instanceof UShort) {
+      UShort uShort = (UShort) value;
       return new AccessRestrictionType(uShort);
     }
 
@@ -291,9 +348,11 @@ public class AttributeWriter {
   }
 
   private static AccessLevelExType convertAccessLevelEx(Object value) throws UaException {
-    if (value instanceof AccessLevelExType accessLevelExType) {
+    if (value instanceof AccessLevelExType) {
+      AccessLevelExType accessLevelExType = (AccessLevelExType) value;
       return accessLevelExType;
-    } else if (value instanceof UInteger uInteger) {
+    } else if (value instanceof UInteger) {
+      UInteger uInteger = (UInteger) value;
       return new AccessLevelExType(uInteger);
     }
 
@@ -303,11 +362,14 @@ public class AttributeWriter {
   private static DataTypeDefinition convertDataTypeDefinition(
       UaNodeContext nodeContext, Object value) throws UaException {
 
-    if (value instanceof DataTypeDefinition dataTypeDefinition) {
+    if (value instanceof DataTypeDefinition) {
+      DataTypeDefinition dataTypeDefinition = (DataTypeDefinition) value;
       return dataTypeDefinition;
-    } else if (value instanceof ExtensionObject extensionObject) {
+    } else if (value instanceof ExtensionObject) {
+      ExtensionObject extensionObject = (ExtensionObject) value;
       UaStructuredType decoded = decodeExtensionObject(nodeContext, extensionObject);
-      if (decoded instanceof DataTypeDefinition dataTypeDefinition) {
+      if (decoded instanceof DataTypeDefinition) {
+      DataTypeDefinition dataTypeDefinition = (DataTypeDefinition) decoded;
         return dataTypeDefinition;
       }
     }
@@ -318,14 +380,17 @@ public class AttributeWriter {
   private static RolePermissionType[] convertRolePermissions(
       UaNodeContext nodeContext, Object value) throws UaException {
 
-    if (value instanceof RolePermissionType[] rolePermissions) {
+    if (value instanceof RolePermissionType[]) {
+      RolePermissionType[] rolePermissions = (RolePermissionType[]) value;
       return rolePermissions;
-    } else if (value instanceof ExtensionObject[] extensionObjects) {
+    } else if (value instanceof ExtensionObject[]) {
+      ExtensionObject[] extensionObjects = (ExtensionObject[]) value;
       RolePermissionType[] rolePermissions = new RolePermissionType[extensionObjects.length];
 
       for (int i = 0; i < extensionObjects.length; i++) {
         UaStructuredType decoded = decodeExtensionObject(nodeContext, extensionObjects[i]);
-        if (decoded instanceof RolePermissionType rolePermission) {
+        if (decoded instanceof RolePermissionType) {
+      RolePermissionType rolePermission = (RolePermissionType) decoded;
           rolePermissions[i] = rolePermission;
         } else {
           throw new UaException(StatusCodes.Bad_TypeMismatch);
@@ -362,7 +427,8 @@ public class AttributeWriter {
       }
     }
 
-    if (o instanceof Matrix matrix) {
+    if (o instanceof Matrix) {
+      Matrix matrix = (Matrix) o;
       o = matrix.nestedArrayValue();
     }
 
@@ -383,7 +449,7 @@ public class AttributeWriter {
 
     // Part 4, 5.11.4.2: a written value must be the same type or a subtype of the
     // Attribute's DataType; for Value, that DataType is defined by the DataType Attribute.
-    if (valueDataType.isEmpty() && expectedClass != Variant.class) {
+    if (!valueDataType.isPresent() && expectedClass != Variant.class) {
       throw new UaException(StatusCodes.Bad_TypeMismatch);
     }
 
@@ -407,7 +473,8 @@ public class AttributeWriter {
     if (!dataTypeTree.isAssignable(dataType, valueClass)) {
       // Part 4, 5.11.4.2 and Part 6, 5.1.5: ByteString is structurally equivalent
       // to a one-dimensional Byte array and must be accepted when Byte[] is expected.
-      if (o instanceof ByteString byteString && expectedClass == UByte.class) {
+      if (o instanceof ByteString && expectedClass == UByte.class) {
+        ByteString byteString = (ByteString) o;
         return new DataValue(
             new Variant(byteString.uBytes()),
             value.statusCode(),
@@ -432,7 +499,8 @@ public class AttributeWriter {
     Object o = variant.value();
     if (o == null) return;
 
-    if (o instanceof Matrix matrix) {
+    if (o instanceof Matrix) {
+      Matrix matrix = (Matrix) o;
       o = matrix.nestedArrayValue();
     }
 

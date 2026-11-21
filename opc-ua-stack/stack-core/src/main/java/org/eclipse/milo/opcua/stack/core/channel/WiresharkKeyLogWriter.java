@@ -17,7 +17,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
-import java.util.HexFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,7 +35,9 @@ public class WiresharkKeyLogWriter implements SecurityKeysListener, Closeable {
 
   private static final Logger logger = LoggerFactory.getLogger(WiresharkKeyLogWriter.class);
 
-  private static final HexFormat HEX = HexFormat.of().withUpperCase();
+  private static final String HEX = "0123456789ABCDEF";
+
+  private static String toHex(byte[] bytes) { StringBuilder b = new StringBuilder(bytes.length * 2); for (byte x : bytes) b.append(HEX.charAt((x >>> 4) & 15)).append(HEX.charAt(x & 15)); return b.toString(); }
 
   private final BufferedWriter writer;
   private boolean closed = false;
@@ -67,16 +68,16 @@ public class WiresharkKeyLogWriter implements SecurityKeysListener, Closeable {
       String suffix = keyset.channelId() + "_" + keyset.tokenId();
 
       writer.write(
-          "client_iv_" + suffix + ": " + HEX.formatHex(keyset.clientInitializationVector()));
+          "client_iv_" + suffix + ": " + toHex(keyset.clientInitializationVector()));
       writer.newLine();
-      writer.write("client_key_" + suffix + ": " + HEX.formatHex(keyset.clientEncryptionKey()));
+      writer.write("client_key_" + suffix + ": " + toHex(keyset.clientEncryptionKey()));
       writer.newLine();
       writer.write("client_siglen_" + suffix + ": " + keyset.signatureSize());
       writer.newLine();
       writer.write(
-          "server_iv_" + suffix + ": " + HEX.formatHex(keyset.serverInitializationVector()));
+          "server_iv_" + suffix + ": " + toHex(keyset.serverInitializationVector()));
       writer.newLine();
-      writer.write("server_key_" + suffix + ": " + HEX.formatHex(keyset.serverEncryptionKey()));
+      writer.write("server_key_" + suffix + ": " + toHex(keyset.serverEncryptionKey()));
       writer.newLine();
       writer.write("server_siglen_" + suffix + ": " + keyset.signatureSize());
       writer.newLine();

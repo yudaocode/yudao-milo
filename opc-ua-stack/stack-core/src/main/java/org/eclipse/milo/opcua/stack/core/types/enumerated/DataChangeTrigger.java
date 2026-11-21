@@ -45,12 +45,16 @@ public enum DataChangeTrigger implements UaEnumeratedType {
   }
 
   public static @Nullable DataChangeTrigger from(int value) {
-    return switch (value) {
-      case 0 -> Status;
-      case 1 -> StatusValue;
-      case 2 -> StatusValueTimestamp;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Status;
+      case 1:
+        return StatusValue;
+      case 2:
+        return StatusValueTimestamp;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

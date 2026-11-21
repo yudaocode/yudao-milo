@@ -195,7 +195,7 @@ public class UascServerHelloHandler extends ByteToMessageDecoder implements Head
     long localMaxMessageSize =
         Math.min(localReceiveBufferSize * localMaxChunkCount, encodingLimits.getMaxMessageSize());
 
-    var channelParameters =
+    org.eclipse.milo.opcua.stack.core.channel.ChannelParameters channelParameters =
         new ChannelParameters(
             Ints.saturatedCast(localMaxMessageSize),
             Ints.saturatedCast(localReceiveBufferSize),
@@ -206,7 +206,7 @@ public class UascServerHelloHandler extends ByteToMessageDecoder implements Head
             Ints.saturatedCast(remoteSendBufferSize),
             Ints.saturatedCast(remoteMaxChunkCount));
 
-    var asymmetricHandler =
+    org.eclipse.milo.opcua.stack.transport.server.uasc.UascServerAsymmetricHandler asymmetricHandler =
         new UascServerAsymmetricHandler(config, application, transportProfile, channelParameters);
 
     ctx.pipeline().addLast(asymmetricHandler);

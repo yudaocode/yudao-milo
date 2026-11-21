@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.nodes;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.sdk.core.Reference.ALWAYS_GENERATES_EVENT_PREDICATE;
 import static org.eclipse.milo.opcua.sdk.core.Reference.HAS_MODELLING_RULE_PREDICATE;
@@ -130,11 +131,14 @@ public class UaMethodNode extends UaNode implements MethodNode {
 
   @Override
   public synchronized Object getAttribute(AttributeId attributeId) {
-    return switch (attributeId) {
-      case Executable -> executable;
-      case UserExecutable -> userExecutable;
-      default -> super.getAttribute(attributeId);
-    };
+    switch ((attributeId)) {
+      case Executable:
+        return executable;
+      case UserExecutable:
+        return userExecutable;
+      default:
+        return super.getAttribute(attributeId);
+    }
   }
 
   @Override
@@ -159,7 +163,7 @@ public class UaMethodNode extends UaNode implements MethodNode {
   public List<Node> getPropertyNodes() {
     return getReferences().stream()
         .filter(HAS_PROPERTY_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 
@@ -179,7 +183,7 @@ public class UaMethodNode extends UaNode implements MethodNode {
   public List<Node> getAlwaysGeneratesEventNodes() {
     return getReferences().stream()
         .filter(ALWAYS_GENERATES_EVENT_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 

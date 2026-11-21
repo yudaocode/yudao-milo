@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server;
 
+import java.util.stream.Collectors;
+
 import static java.util.stream.Collectors.groupingBy;
 import static org.eclipse.milo.opcua.sdk.core.util.GroupMapCollate.groupMapCollate;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
@@ -163,24 +165,25 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
             nodeId -> getAddressSpace(asx -> asx.getFilter().filterBrowse(server, nodeId)),
             (AddressSpace asx) ->
                 group -> {
-                  var ctx = new BrowseContext(server, context.getSession().orElse(null));
+                  org.eclipse.milo.opcua.sdk.server.AddressSpace.BrowseContext ctx = new BrowseContext(server, context.getSession().orElse(null));
 
                   return asx.browse(ctx, view, group);
                 });
 
-    final var finalResults = new ArrayList<ReferenceResult>();
+    final ArrayList<ReferenceResult> finalResults = new ArrayList<ReferenceResult>();
 
     for (int i = 0; i < initialResults.size(); i++) {
       NodeId nodeId = nodeIds.get(i);
       ReferenceResult initialResult = initialResults.get(i);
 
-      if (initialResult instanceof ReferenceList rl) {
-        final var references = new LinkedHashSet<>(rl.references());
+      if (initialResult instanceof ReferenceList) {
+      ReferenceList rl = (ReferenceList) initialResult;
+        final LinkedHashSet<Reference> references = new LinkedHashSet<Reference>(rl.references());
 
         // Gather additional references from all AddressSpaces except
         // the first, which is the one we called browse on above.
 
-        var browseContext = new BrowseContext(getServer(), context.getSession().orElse(null));
+        org.eclipse.milo.opcua.sdk.server.AddressSpace.BrowseContext browseContext = new BrowseContext(getServer(), context.getSession().orElse(null));
 
         AddressSpaceFragment first =
             getAddressSpace(asx -> asx.getFilter().filterBrowse(server, nodeId));
@@ -193,7 +196,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
           }
         }
 
-        finalResults.add(ReferenceResult.of(new ArrayList<>(references)));
+        finalResults.add(ReferenceResult.of(new ArrayList<Reference>(references)));
       } else {
         finalResults.add(initialResult);
       }
@@ -204,17 +207,17 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
 
   @Override
   public ReferenceList gather(BrowseContext context, ViewDescription view, NodeId nodeId) {
-    var referenceStreams = new ArrayList<Stream<Reference>>();
+    java.util.ArrayList<java.util.stream.Stream<org.eclipse.milo.opcua.sdk.core.Reference>> referenceStreams = new ArrayList<Stream<Reference>>();
 
     for (AddressSpace asx : addressSpaces) {
-      var browseContext = new BrowseContext(server, context.getSession().orElse(null));
+      org.eclipse.milo.opcua.sdk.server.AddressSpace.BrowseContext browseContext = new BrowseContext(server, context.getSession().orElse(null));
 
       ReferenceList result = asx.gather(browseContext, view, nodeId);
       referenceStreams.add(result.references().stream());
     }
 
     List<Reference> references =
-        referenceStreams.stream().flatMap(Function.identity()).distinct().toList();
+        referenceStreams.stream().flatMap(Function.identity()).distinct().collect(Collectors.toList());
 
     return ReferenceResult.of(references);
   }
@@ -226,7 +229,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
         nodeId -> getAddressSpace(asx -> asx.getFilter().filterRegisterNode(server, nodeId)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.RegisterNodesContext ctx =
                   new RegisterNodesContext(
                       server,
                       context.getSession().orElse(null),
@@ -246,7 +249,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
         nodeId -> getAddressSpace(asx -> asx.getFilter().filterUnregisterNode(server, nodeId)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.UnregisterNodesContext ctx =
                   new UnregisterNodesContext(
                       server,
                       context.getSession().orElse(null),
@@ -282,7 +285,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
         readValueId -> getAddressSpace(asx -> asx.getFilter().filterRead(server, readValueId)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.ReadContext ctx =
                   new ReadContext(
                       server,
                       context.getSession().orElse(null),
@@ -303,7 +306,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
         writeValue -> getAddressSpace(asx -> asx.getFilter().filterWrite(server, writeValue)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.WriteContext ctx =
                   new WriteContext(
                       server,
                       context.getSession().orElse(null),
@@ -333,7 +336,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
             getAddressSpace(asx -> asx.getFilter().filterHistoryRead(server, readValueId)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.HistoryReadContext ctx =
                   new HistoryReadContext(
                       server,
                       context.getSession().orElse(null),
@@ -356,7 +359,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
             getAddressSpace(asx -> asx.getFilter().filterHistoryUpdate(server, updateDetails)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.HistoryUpdateContext ctx =
                   new HistoryUpdateContext(
                       server,
                       context.getSession().orElse(null),
@@ -381,7 +384,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
         request -> getAddressSpace(asx -> asx.getFilter().filterCall(server, request)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.CallContext ctx =
                   new CallContext(
                       server,
                       context.getSession().orElse(null),
@@ -558,7 +561,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
             getAddressSpace(asx -> asx.getFilter().filterAddNodes(server, addNodesItem)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.AddNodesContext ctx =
                   new AddNodesContext(
                       server,
                       context.getSession().orElse(null),
@@ -580,7 +583,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
             getAddressSpace(asx -> asx.getFilter().filterDeleteNodes(server, deleteNodesItem)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.DeleteNodesContext ctx =
                   new DeleteNodesContext(
                       server,
                       context.getSession().orElse(null),
@@ -602,7 +605,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
             getAddressSpace(asx -> asx.getFilter().filterAddReferences(server, addReferencesItem)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.AddReferencesContext ctx =
                   new AddReferencesContext(
                       server,
                       context.getSession().orElse(null),
@@ -625,7 +628,7 @@ public class AddressSpaceComposite implements AddressSpaceFragment {
                 asx -> asx.getFilter().filterDeleteReferences(server, deleteReferencesItem)),
         (AddressSpace asx) ->
             group -> {
-              var ctx =
+              org.eclipse.milo.opcua.sdk.server.AddressSpace.DeleteReferencesContext ctx =
                   new DeleteReferencesContext(
                       server,
                       context.getSession().orElse(null),

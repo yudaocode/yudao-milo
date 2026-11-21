@@ -83,7 +83,7 @@ public class ObjectTypeAttributes extends NodeAttributes implements UaStructured
       return false;
     }
     ObjectTypeAttributes that = (ObjectTypeAttributes) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getIsAbstract(), that.getIsAbstract());
     return eqb.build();
@@ -91,7 +91,7 @@ public class ObjectTypeAttributes extends NodeAttributes implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getIsAbstract());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -99,7 +99,7 @@ public class ObjectTypeAttributes extends NodeAttributes implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ObjectTypeAttributes.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ObjectTypeAttributes.class.getSimpleName() + "[", "]");
     joiner.add("isAbstract=" + getIsAbstract());
     return joiner.toString();
   }

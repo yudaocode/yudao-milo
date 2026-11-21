@@ -99,7 +99,7 @@ public class DeleteRawModifiedDetails extends HistoryUpdateDetails implements Ua
       return false;
     }
     DeleteRawModifiedDetails that = (DeleteRawModifiedDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getIsDeleteModified(), that.getIsDeleteModified());
     eqb.append(getStartTime(), that.getStartTime());
@@ -109,7 +109,7 @@ public class DeleteRawModifiedDetails extends HistoryUpdateDetails implements Ua
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getIsDeleteModified());
     hcb.append(getStartTime());
@@ -119,7 +119,7 @@ public class DeleteRawModifiedDetails extends HistoryUpdateDetails implements Ua
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DeleteRawModifiedDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DeleteRawModifiedDetails.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("isDeleteModified=" + getIsDeleteModified());
     joiner.add("startTime=" + getStartTime());

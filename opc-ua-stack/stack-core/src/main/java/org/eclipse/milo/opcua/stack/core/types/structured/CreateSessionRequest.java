@@ -143,7 +143,7 @@ public class CreateSessionRequest extends Structure implements UaRequestMessageT
       return false;
     }
     CreateSessionRequest that = (CreateSessionRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getClientDescription(), that.getClientDescription());
     eqb.append(getServerUri(), that.getServerUri());
@@ -158,7 +158,7 @@ public class CreateSessionRequest extends Structure implements UaRequestMessageT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getClientDescription());
     hcb.append(getServerUri());
@@ -173,7 +173,7 @@ public class CreateSessionRequest extends Structure implements UaRequestMessageT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CreateSessionRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CreateSessionRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("clientDescription=" + getClientDescription());
     joiner.add("serverUri='" + getServerUri() + "'");

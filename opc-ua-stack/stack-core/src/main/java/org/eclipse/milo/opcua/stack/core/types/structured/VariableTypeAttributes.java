@@ -117,7 +117,7 @@ public class VariableTypeAttributes extends NodeAttributes implements UaStructur
       return false;
     }
     VariableTypeAttributes that = (VariableTypeAttributes) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getValue(), that.getValue());
     eqb.append(getDataType(), that.getDataType());
@@ -129,7 +129,7 @@ public class VariableTypeAttributes extends NodeAttributes implements UaStructur
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getValue());
     hcb.append(getDataType());
     hcb.append(getValueRank());
@@ -141,7 +141,7 @@ public class VariableTypeAttributes extends NodeAttributes implements UaStructur
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", VariableTypeAttributes.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", VariableTypeAttributes.class.getSimpleName() + "[", "]");
     joiner.add("value=" + getValue());
     joiner.add("dataType=" + getDataType());
     joiner.add("valueRank=" + getValueRank());

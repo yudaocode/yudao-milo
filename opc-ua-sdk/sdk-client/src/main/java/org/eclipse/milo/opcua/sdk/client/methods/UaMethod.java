@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.methods;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.Objects.requireNonNull;
 
 import java.util.List;
@@ -99,7 +101,9 @@ public class UaMethod {
     try {
       return callAsync(inputs).get();
     } catch (ExecutionException | InterruptedException e) {
-      if (UaException.extract(e).orElse(null) instanceof UaMethodException mx) {
+      UaException extracted = UaException.extract(e).orElse(null);
+      if (extracted instanceof UaMethodException) {
+        UaMethodException mx = (UaMethodException) extracted;
         throw new UaMethodException(
             mx.getCause(),
             mx.getStatusCode(),
@@ -121,10 +125,10 @@ public class UaMethod {
    *     completes exceptionally if an operation- or service-level error occurs.
    */
   public CompletableFuture<Variant[]> callAsync(Variant[] inputs) {
-    var request = new CallMethodRequest(objectNode.getNodeId(), methodNode.getNodeId(), inputs);
+    org.eclipse.milo.opcua.stack.core.types.structured.CallMethodRequest request = new CallMethodRequest(objectNode.getNodeId(), methodNode.getNodeId(), inputs);
 
     return client
-        .callAsync(List.of(request))
+        .callAsync(Java8Collections.listOf(request))
         .thenApply(response -> requireNonNull(response.getResults())[0])
         .thenCompose(
             result -> {
@@ -133,7 +137,7 @@ public class UaMethod {
               if (statusCode.isGood()) {
                 return CompletableFuture.completedFuture(result.getOutputArguments());
               } else {
-                return CompletableFuture.failedFuture(
+                return Java8Collections.failedFuture(
                     new UaMethodException(
                         statusCode,
                         result.getInputArgumentResults(),

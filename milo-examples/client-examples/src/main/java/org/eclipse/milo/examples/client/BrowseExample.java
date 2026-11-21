@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.examples.client;
 
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.util.concurrent.CompletableFuture;

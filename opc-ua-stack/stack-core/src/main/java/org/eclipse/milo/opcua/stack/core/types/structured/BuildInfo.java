@@ -119,7 +119,7 @@ public class BuildInfo extends Structure implements UaStructuredType {
       return false;
     }
     BuildInfo that = (BuildInfo) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getProductUri(), that.getProductUri());
     eqb.append(getManufacturerName(), that.getManufacturerName());
     eqb.append(getProductName(), that.getProductName());
@@ -131,7 +131,7 @@ public class BuildInfo extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getProductUri());
     hcb.append(getManufacturerName());
     hcb.append(getProductName());
@@ -143,7 +143,7 @@ public class BuildInfo extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", BuildInfo.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", BuildInfo.class.getSimpleName() + "[", "]");
     joiner.add("productUri='" + getProductUri() + "'");
     joiner.add("manufacturerName='" + getManufacturerName() + "'");
     joiner.add("productName='" + getProductName() + "'");

@@ -8,5 +8,5 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 
-@Deprecated(forRemoval = true, since = "1.0.0")
+@Deprecated
 package org.eclipse.milo.opcua.sdk.server.dtd;

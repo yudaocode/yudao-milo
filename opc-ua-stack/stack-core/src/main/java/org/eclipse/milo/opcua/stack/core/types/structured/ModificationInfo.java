@@ -94,7 +94,7 @@ public class ModificationInfo extends Structure implements UaStructuredType {
       return false;
     }
     ModificationInfo that = (ModificationInfo) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getModificationTime(), that.getModificationTime());
     eqb.append(getUpdateType(), that.getUpdateType());
     eqb.append(getUserName(), that.getUserName());
@@ -103,7 +103,7 @@ public class ModificationInfo extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getModificationTime());
     hcb.append(getUpdateType());
     hcb.append(getUserName());
@@ -112,7 +112,7 @@ public class ModificationInfo extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ModificationInfo.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ModificationInfo.class.getSimpleName() + "[", "]");
     joiner.add("modificationTime=" + getModificationTime());
     joiner.add("updateType=" + getUpdateType());
     joiner.add("userName='" + getUserName() + "'");

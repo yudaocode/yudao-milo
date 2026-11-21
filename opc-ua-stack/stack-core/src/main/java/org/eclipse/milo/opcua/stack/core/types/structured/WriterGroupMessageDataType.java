@@ -54,7 +54,7 @@ public abstract class WriterGroupMessageDataType extends Structure implements Ua
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", WriterGroupMessageDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

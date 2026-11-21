@@ -83,7 +83,7 @@ public class XVType extends Structure implements UaStructuredType {
       return false;
     }
     XVType that = (XVType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getX(), that.getX());
     eqb.append(getValue(), that.getValue());
     return eqb.build();
@@ -91,7 +91,7 @@ public class XVType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getX());
     hcb.append(getValue());
     return hcb.build();
@@ -99,7 +99,7 @@ public class XVType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", XVType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", XVType.class.getSimpleName() + "[", "]");
     joiner.add("x=" + getX());
     joiner.add("value=" + getValue());
     return joiner.toString();

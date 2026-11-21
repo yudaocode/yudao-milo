@@ -120,12 +120,16 @@ public class UaReferenceTypeNode extends UaNode implements ReferenceTypeNode {
 
   @Override
   public synchronized Object getAttribute(AttributeId attributeId) {
-    return switch (attributeId) {
-      case IsAbstract -> isAbstract;
-      case Symmetric -> symmetric;
-      case InverseName -> inverseName;
-      default -> super.getAttribute(attributeId);
-    };
+    switch ((attributeId)) {
+      case IsAbstract:
+        return isAbstract;
+      case Symmetric:
+        return symmetric;
+      case InverseName:
+        return inverseName;
+      default:
+        return super.getAttribute(attributeId);
+    }
   }
 
   @Override

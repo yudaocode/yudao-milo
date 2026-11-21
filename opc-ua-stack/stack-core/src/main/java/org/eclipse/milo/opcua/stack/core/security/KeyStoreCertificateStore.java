@@ -72,7 +72,7 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
       File keyStoreFile = settings.keyStorePath.toAbsolutePath().toFile();
 
       if (keyStoreFile.exists()) {
-        try (var inputStream = new FileInputStream(keyStoreFile)) {
+        try (java.io.FileInputStream inputStream = new FileInputStream(keyStoreFile)) {
           keyStore.load(inputStream, settings.getKeyStorePassword.get());
         }
 
@@ -153,7 +153,7 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
                   .map(c -> (X509Certificate) c)
                   .toArray(X509Certificate[]::new);
 
-          var entry = new Entry((PrivateKey) key, x509CertificateChain);
+          org.eclipse.milo.opcua.stack.core.security.CertificateStore.Entry entry = new Entry((PrivateKey) key, x509CertificateChain);
 
           entries.putIfAbsent(alias, entry);
 
@@ -185,7 +185,8 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
 
         KeyStore.Entry entry = keyStore.getEntry(alias, new KeyStore.PasswordProtection(password));
 
-        if (entry instanceof KeyStore.PrivateKeyEntry privateKeyEntry) {
+        if (entry instanceof KeyStore.PrivateKeyEntry) {
+      KeyStore.PrivateKeyEntry privateKeyEntry = (KeyStore.PrivateKeyEntry) entry;
           keyStore.deleteEntry(alias);
           entries.remove(alias);
 
@@ -292,7 +293,7 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
     try {
       copyPosixFilePermissions(keyStorePath, tempPath);
 
-      try (var outputStream = new FileOutputStream(tempPath.toFile())) {
+      try (java.io.FileOutputStream outputStream = new FileOutputStream(tempPath.toFile())) {
         keyStore.store(outputStream, settings.getKeyStorePassword.get());
 
         // Force the contents to disk before the move, so a crash can't leave the moved-into-place
@@ -446,8 +447,9 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
       return true;
     }
 
-    return event.context() instanceof Path context
-        && watchedDirectory.resolve(context).equals(keyStorePath);
+    if (!(event.context() instanceof Path)) return false;
+    Path context = (Path) event.context();
+    return watchedDirectory.resolve(context).equals(keyStorePath);
   }
 
   /**
@@ -463,7 +465,7 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
     try {
       KeyStore reloaded = KeyStore.getInstance("pkcs12");
 
-      try (var inputStream = new FileInputStream(keyStorePath.toFile())) {
+      try (java.io.FileInputStream inputStream = new FileInputStream(keyStorePath.toFile())) {
         reloaded.load(inputStream, settings.getKeyStorePassword.get());
       }
 
@@ -491,7 +493,7 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
    * @throws Exception if an error occurs while initializing the {@link KeyStoreCertificateStore}.
    */
   public static KeyStoreCertificateStore createAndInitialize(Settings settings) throws Exception {
-    var store = new KeyStoreCertificateStore(settings);
+    org.eclipse.milo.opcua.stack.core.security.KeyStoreCertificateStore store = new KeyStoreCertificateStore(settings);
     store.initialize();
     return store;
   }

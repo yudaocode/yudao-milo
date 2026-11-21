@@ -39,16 +39,16 @@ public class JsonOptionSetCodec extends GenericDataTypeCodec<JsonStruct> {
     ByteString value = decoder.decodeByteString("Value");
     ByteString validBits = decoder.decodeByteString("ValidBits");
 
-    var valueArray = new JsonArray();
+    com.google.gson.JsonArray valueArray = new JsonArray();
     for (byte b : value.bytesOrEmpty()) {
       valueArray.add(JsonConversions.fromSByte(b));
     }
-    var validBitsArray = new JsonArray();
+    com.google.gson.JsonArray validBitsArray = new JsonArray();
     for (byte b : validBits.bytesOrEmpty()) {
       validBitsArray.add(JsonConversions.fromSByte(b));
     }
 
-    var jsonObject = new JsonObject();
+    com.google.gson.JsonObject jsonObject = new JsonObject();
     jsonObject.add("Value", valueArray);
     jsonObject.add("ValidBits", validBitsArray);
 

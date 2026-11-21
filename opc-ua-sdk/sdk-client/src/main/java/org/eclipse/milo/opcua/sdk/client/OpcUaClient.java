@@ -10,7 +10,9 @@
 
 package org.eclipse.milo.opcua.sdk.client;
 
-import static java.util.Objects.requireNonNullElse;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.sdk.client.session.SessionFsm.SessionInitializer;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
@@ -188,7 +190,7 @@ public class OpcUaClient {
    */
   public static OpcUaClient create(OpcUaClientConfig config) throws UaException {
     OpcTcpClientTransportConfig transportConfig = OpcTcpClientTransportConfig.newBuilder().build();
-    var transport = new OpcTcpClientTransport(transportConfig);
+    org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransport transport = new OpcTcpClientTransport(transportConfig);
 
     return new OpcUaClient(config, transport);
   }
@@ -206,7 +208,7 @@ public class OpcUaClient {
       OpcUaClientConfig config, Consumer<OpcTcpClientTransportConfigBuilder> configureTransport)
       throws UaException {
 
-    var transportConfigBuilder = OpcTcpClientTransportConfig.newBuilder();
+    org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransportConfigBuilder transportConfigBuilder = OpcTcpClientTransportConfig.newBuilder();
     configureTransport.accept(transportConfigBuilder);
 
     OpcTcpClientTransportConfig transportConfig = transportConfigBuilder.build();
@@ -290,7 +292,7 @@ public class OpcUaClient {
 
       OpcUaClientConfig clientConfig = clientConfigBuilder.build();
 
-      var transport = new OpcTcpClientTransport(transportConfigBuilder.build());
+      org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransport transport = new OpcTcpClientTransport(transportConfigBuilder.build());
 
       return new OpcUaClient(clientConfig, transport);
     } catch (ExecutionException e) {
@@ -567,11 +569,10 @@ public class OpcUaClient {
               DataValue[] results = response.getResults();
 
               if (results == null || results.length != nodeIds.length) {
-                return CompletableFuture.failedFuture(
+                return Java8Collections.failedFuture(
                     new UaException(
                         StatusCodes.Bad_UnexpectedError,
-                        "Read returned %s results, expected %s"
-                            .formatted(results == null ? "null" : results.length, nodeIds.length)));
+                        String.format("Read returned %s results, expected %s", results == null ? "null" : results.length, nodeIds.length)));
               }
 
               String[][] values = new String[results.length][];
@@ -720,7 +721,7 @@ public class OpcUaClient {
   }
 
   public List<OpcUaSubscription> getSubscriptions() {
-    return List.copyOf(subscriptions.values());
+    return Java8Collections.listCopyOf(subscriptions.values());
   }
 
   public PublishingManager getPublishingManager() {
@@ -1321,7 +1322,7 @@ public class OpcUaClient {
   public DataValue readValue(double maxAge, TimestampsToReturn timestampsToReturn, NodeId nodeId)
       throws UaException {
 
-    return readValues(maxAge, timestampsToReturn, List.of(nodeId)).get(0);
+    return readValues(maxAge, timestampsToReturn, Java8Collections.listOf(nodeId)).get(0);
   }
 
   /**
@@ -1372,7 +1373,7 @@ public class OpcUaClient {
     return getSessionAsync()
         .thenCompose(
             session -> {
-              var request =
+              org.eclipse.milo.opcua.stack.core.types.structured.ReadRequest request =
                   new ReadRequest(
                       newRequestHeader(session.getAuthenticationToken()),
                       maxAge,
@@ -1491,7 +1492,7 @@ public class OpcUaClient {
    */
   public CompletableFuture<List<StatusCode>> writeValuesAsync(
       List<NodeId> nodeIds, List<DataValue> values) {
-    var writeValues = new ArrayList<WriteValue>(nodeIds.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.WriteValue> writeValues = new ArrayList<WriteValue>(nodeIds.size());
 
     for (int i = 0; i < nodeIds.size(); i++) {
       NodeId nodeId = nodeIds.get(i);
@@ -1525,7 +1526,7 @@ public class OpcUaClient {
       throws UaException {
 
     try {
-      var future =
+      java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.core.types.structured.HistoryReadResponse> future =
           historyReadAsync(
               historyReadDetails, timestampsToReturn, releaseContinuationPoints, nodesToRead);
 
@@ -2869,7 +2870,7 @@ public class OpcUaClient {
    *     https://reference.opcfoundation.org/Core/Part4/v105/docs/5.8.2</a>
    */
   public CompletableFuture<BrowseResult> browseAsync(BrowseDescription nodeToBrowse) {
-    return browseAsync(List.of(nodeToBrowse)).thenApply(rs -> rs.get(0));
+    return browseAsync(Java8Collections.listOf(nodeToBrowse)).thenApply(rs -> rs.get(0));
   }
 
   /**
@@ -2881,7 +2882,7 @@ public class OpcUaClient {
    *     https://reference.opcfoundation.org/Core/Part4/v105/docs/5.8.2</a>
    */
   public CompletableFuture<List<BrowseResult>> browseAsync(List<BrowseDescription> nodesToBrowse) {
-    var viewDescription = new ViewDescription(NodeId.NULL_VALUE, DateTime.MIN_VALUE, uint(0));
+    org.eclipse.milo.opcua.stack.core.types.structured.ViewDescription viewDescription = new ViewDescription(NodeId.NULL_VALUE, DateTime.MIN_VALUE, uint(0));
 
     return browseAsync(viewDescription, uint(0), nodesToBrowse)
         .thenApply(r -> Lists.ofNullable(r.getResults()));

@@ -103,7 +103,7 @@ public class SimpleAttributeOperand extends FilterOperand implements UaStructure
       return false;
     }
     SimpleAttributeOperand that = (SimpleAttributeOperand) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTypeDefinitionId(), that.getTypeDefinitionId());
     eqb.append(getBrowsePath(), that.getBrowsePath());
     eqb.append(getAttributeId(), that.getAttributeId());
@@ -113,7 +113,7 @@ public class SimpleAttributeOperand extends FilterOperand implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTypeDefinitionId());
     hcb.append(getBrowsePath());
     hcb.append(getAttributeId());
@@ -123,7 +123,7 @@ public class SimpleAttributeOperand extends FilterOperand implements UaStructure
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SimpleAttributeOperand.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SimpleAttributeOperand.class.getSimpleName() + "[", "]");
     joiner.add("typeDefinitionId=" + getTypeDefinitionId());
     joiner.add("browsePath=" + java.util.Arrays.toString(getBrowsePath()));
     joiner.add("attributeId=" + getAttributeId());

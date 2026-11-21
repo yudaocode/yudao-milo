@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.security;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.stack.core.util.DigestUtil.sha1;
 
@@ -20,6 +21,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.cert.X509Certificate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -62,10 +64,9 @@ public class FileBasedCertificateQuarantine implements CertificateQuarantine {
     File[] files = rejectedDir.listFiles();
     if (files == null) files = new File[0];
 
-    return List.copyOf(
-        Arrays.stream(files)
-            .flatMap(cert -> decodeCertificateFile(cert).stream())
-            .collect(Collectors.toList()));
+    List<X509Certificate> result = new ArrayList<>();
+    for (File file : files) decodeCertificateFile(file).ifPresent(result::add);
+    return result;
   }
 
   @Override

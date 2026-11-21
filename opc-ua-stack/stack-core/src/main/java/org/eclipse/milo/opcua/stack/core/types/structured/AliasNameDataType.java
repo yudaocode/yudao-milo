@@ -85,7 +85,7 @@ public class AliasNameDataType extends Structure implements UaStructuredType {
       return false;
     }
     AliasNameDataType that = (AliasNameDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAliasName(), that.getAliasName());
     eqb.append(getReferencedNodes(), that.getReferencedNodes());
     return eqb.build();
@@ -93,7 +93,7 @@ public class AliasNameDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAliasName());
     hcb.append(getReferencedNodes());
     return hcb.build();
@@ -101,7 +101,7 @@ public class AliasNameDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AliasNameDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AliasNameDataType.class.getSimpleName() + "[", "]");
     joiner.add("aliasName=" + getAliasName());
     joiner.add("referencedNodes=" + java.util.Arrays.toString(getReferencedNodes()));
     return joiner.toString();

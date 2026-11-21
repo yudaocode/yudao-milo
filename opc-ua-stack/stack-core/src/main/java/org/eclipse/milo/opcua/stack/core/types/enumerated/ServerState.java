@@ -55,17 +55,26 @@ public enum ServerState implements UaEnumeratedType {
   }
 
   public static @Nullable ServerState from(int value) {
-    return switch (value) {
-      case 0 -> Running;
-      case 1 -> Failed;
-      case 2 -> NoConfiguration;
-      case 3 -> Suspended;
-      case 4 -> Shutdown;
-      case 5 -> Test;
-      case 6 -> CommunicationFault;
-      case 7 -> Unknown;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Running;
+      case 1:
+        return Failed;
+      case 2:
+        return NoConfiguration;
+      case 3:
+        return Suspended;
+      case 4:
+        return Shutdown;
+      case 5:
+        return Test;
+      case 6:
+        return CommunicationFault;
+      case 7:
+        return Unknown;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

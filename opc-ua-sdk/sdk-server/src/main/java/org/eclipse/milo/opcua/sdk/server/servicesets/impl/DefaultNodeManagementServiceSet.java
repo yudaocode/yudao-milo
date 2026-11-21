@@ -137,9 +137,9 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var diagnosticsContext = new DiagnosticsContext<AddNodesItem>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.AddNodesItem> diagnosticsContext = new DiagnosticsContext<AddNodesItem>();
 
-    var addNodesContext =
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.AddNodesContext addNodesContext =
         new AddNodesContext(
             server,
             session,
@@ -155,7 +155,7 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
 
     ResponseHeader header = createResponseHeader(request);
 
-    return new AddNodesResponse(header, results.toArray(AddNodesResult[]::new), diagnosticInfos);
+    return new AddNodesResponse(header, results.toArray(new AddNodesResult[0]), diagnosticInfos);
   }
 
   private DeleteNodesResponse deleteNodes(DeleteNodesRequest request, Session session)
@@ -172,7 +172,7 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var diagnosticsContext = new DiagnosticsContext<DeleteNodesItem>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.DeleteNodesItem> diagnosticsContext = new DiagnosticsContext<DeleteNodesItem>();
 
     Map<DeleteNodesItem, AccessResult> accessResults =
         server.getAccessController().checkDeleteNodesAccess(session, nodesToDelete);
@@ -183,10 +183,11 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
             accessResults::get,
             accessResult ->
                 group -> {
-                  if (accessResult instanceof AccessResult.Denied denied) {
+                  if (accessResult instanceof AccessResult.Denied) {
+      AccessResult.Denied denied = (AccessResult.Denied) accessResult;
                     return Collections.nCopies(group.size(), denied.statusCode());
                   } else {
-                    var deleteNodesContext =
+                    org.eclipse.milo.opcua.sdk.server.AddressSpace.DeleteNodesContext deleteNodesContext =
                         new DeleteNodesContext(
                             server,
                             session,
@@ -203,7 +204,7 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
 
     ResponseHeader header = createResponseHeader(request);
 
-    return new DeleteNodesResponse(header, results.toArray(StatusCode[]::new), diagnosticInfos);
+    return new DeleteNodesResponse(header, results.toArray(new StatusCode[0]), diagnosticInfos);
   }
 
   private AddReferencesResponse addReferences(AddReferencesRequest request, Session session)
@@ -220,7 +221,7 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var diagnosticsContext = new DiagnosticsContext<AddReferencesItem>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.AddReferencesItem> diagnosticsContext = new DiagnosticsContext<AddReferencesItem>();
 
     Map<AddReferencesItem, AccessResult> accessResults =
         server.getAccessController().checkAddReferencesAccess(session, referencesToAdd);
@@ -231,10 +232,11 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
             accessResults::get,
             accessResult ->
                 group -> {
-                  if (accessResult instanceof AccessResult.Denied denied) {
+                  if (accessResult instanceof AccessResult.Denied) {
+      AccessResult.Denied denied = (AccessResult.Denied) accessResult;
                     return Collections.nCopies(group.size(), denied.statusCode());
                   } else {
-                    var addReferencesContext =
+                    org.eclipse.milo.opcua.sdk.server.AddressSpace.AddReferencesContext addReferencesContext =
                         new AddReferencesContext(
                             server,
                             session,
@@ -271,7 +273,7 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var diagnosticsContext = new DiagnosticsContext<DeleteReferencesItem>();
+    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.DeleteReferencesItem> diagnosticsContext = new DiagnosticsContext<DeleteReferencesItem>();
 
     Map<DeleteReferencesItem, AccessResult> accessResults =
         server.getAccessController().checkDeleteReferencesAccess(session, referencesToDelete);
@@ -282,10 +284,11 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
             accessResults::get,
             accessResult ->
                 group -> {
-                  if (accessResult instanceof AccessResult.Denied denied) {
+                  if (accessResult instanceof AccessResult.Denied) {
+      AccessResult.Denied denied = (AccessResult.Denied) accessResult;
                     return Collections.nCopies(group.size(), denied.statusCode());
                   } else {
-                    var deleteReferencesContext =
+                    org.eclipse.milo.opcua.sdk.server.AddressSpace.DeleteReferencesContext deleteReferencesContext =
                         new DeleteReferencesContext(
                             server,
                             session,
@@ -305,6 +308,6 @@ public class DefaultNodeManagementServiceSet implements NodeManagementServiceSet
     ResponseHeader header = createResponseHeader(request);
 
     return new DeleteReferencesResponse(
-        header, results.toArray(StatusCode[]::new), diagnosticInfos);
+        header, results.toArray(new StatusCode[0]), diagnosticInfos);
   }
 }

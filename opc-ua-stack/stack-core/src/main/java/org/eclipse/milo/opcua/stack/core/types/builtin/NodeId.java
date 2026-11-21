@@ -149,7 +149,7 @@ public final class NodeId {
     this.identifier = identifier;
   }
 
-  NodeId(@NonNull UShort namespaceIndex, @NonNull Object identifier) {
+  public NodeId(@NonNull UShort namespaceIndex, @NonNull Object identifier) {
     checkNotNull(namespaceIndex);
     checkNotNull(identifier);
 
@@ -184,13 +184,17 @@ public final class NodeId {
    * @see ExpandedNodeId#isRelative()
    */
   public ExpandedNodeId expanded() {
-    if (identifier instanceof UInteger id) {
+    if (identifier instanceof UInteger) {
+      UInteger id = (UInteger) identifier;
       return ExpandedNodeId.of(namespaceIndex, id);
-    } else if (identifier instanceof String id) {
+    } else if (identifier instanceof String) {
+      String id = (String) identifier;
       return ExpandedNodeId.of(namespaceIndex, id);
-    } else if (identifier instanceof UUID id) {
+    } else if (identifier instanceof UUID) {
+      UUID id = (UUID) identifier;
       return ExpandedNodeId.of(namespaceIndex, id);
-    } else if (identifier instanceof ByteString id) {
+    } else if (identifier instanceof ByteString) {
+      ByteString id = (ByteString) identifier;
       return ExpandedNodeId.of(namespaceIndex, id);
     } else {
       throw new IllegalStateException("identifier: " + identifier);
@@ -212,13 +216,17 @@ public final class NodeId {
       throw new IllegalStateException("namespace index=" + namespaceIndex + " not found");
     }
 
-    if (identifier instanceof UInteger id) {
+    if (identifier instanceof UInteger) {
+      UInteger id = (UInteger) identifier;
       return ExpandedNodeId.of(namespaceUri, id);
-    } else if (identifier instanceof String id) {
+    } else if (identifier instanceof String) {
+      String id = (String) identifier;
       return ExpandedNodeId.of(namespaceUri, id);
-    } else if (identifier instanceof UUID id) {
+    } else if (identifier instanceof UUID) {
+      UUID id = (UUID) identifier;
       return ExpandedNodeId.of(namespaceUri, id);
-    } else if (identifier instanceof ByteString id) {
+    } else if (identifier instanceof ByteString) {
+      ByteString id = (ByteString) identifier;
       return ExpandedNodeId.of(namespaceUri, id);
     } else {
       throw new IllegalStateException("identifier: " + identifier);

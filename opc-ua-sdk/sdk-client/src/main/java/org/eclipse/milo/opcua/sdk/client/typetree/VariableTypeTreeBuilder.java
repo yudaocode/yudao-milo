@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.typetree;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.util.ArrayList;
@@ -79,7 +81,7 @@ public class VariableTypeTreeBuilder {
 
     OperationLimits operationLimits = client.getOperationLimits();
 
-    addChildren(List.of(root), client, sessionId, namespaceTable, operationLimits);
+    addChildren(Java8Collections.listOf(root), client, sessionId, namespaceTable, operationLimits);
 
     // Final check: the last batch of requests could have been issued just as the session changed
     // and succeeded against the new session; don't return a tree partially read from another
@@ -135,7 +137,7 @@ public class VariableTypeTreeBuilder {
                 .collect(Collectors.toList()),
             operationLimits);
 
-    var childTypes = new ArrayList<Tree<VariableType>>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.Tree<org.eclipse.milo.opcua.sdk.core.typetree.VariableType>> childTypes = new ArrayList<Tree<VariableType>>();
 
     for (int i = 0; i < parentTypes.size(); i++) {
       Tree<VariableType> tree = parentTypes.get(i);
@@ -154,14 +156,14 @@ public class VariableTypeTreeBuilder {
       assert subtypes.size() == variableTypeIds.size()
           && subtypes.size() == variableTypeAttributes.size();
 
-      var variableTypes = new ArrayList<ClientVariableType>();
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.typetree.ClientVariableType> variableTypes = new ArrayList<ClientVariableType>();
 
       for (int j = 0; j < subtypes.size(); j++) {
         QualifiedName browseName = subtypes.get(j).getBrowseName();
         NodeId variableTypeId = variableTypeIds.get(j);
         Attributes attributes = variableTypeAttributes.get(j);
 
-        var variableType =
+        org.eclipse.milo.opcua.sdk.client.typetree.ClientVariableType variableType =
             new ClientVariableType(
                 browseName,
                 variableTypeId,
@@ -196,12 +198,12 @@ public class VariableTypeTreeBuilder {
       throws UaException {
 
     if (variableTypeIds.isEmpty()) {
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     ClientBrowseUtils.checkSessionUnchanged(client, sessionId);
 
-    var readValueIds = new ArrayList<ReadValueId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId> readValueIds = new ArrayList<ReadValueId>();
 
     for (NodeId variableTypeId : variableTypeIds) {
       readValueIds.add(
@@ -220,7 +222,7 @@ public class VariableTypeTreeBuilder {
               variableTypeId, AttributeId.ArrayDimensions.uid(), null, QualifiedName.NULL_VALUE));
     }
 
-    var attributes = new ArrayList<Attributes>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.typetree.VariableTypeTreeBuilder.Attributes> attributes = new ArrayList<Attributes>();
 
     List<DataValue> values =
         ClientBrowseUtils.readWithOperationLimits(client, readValueIds, operationLimits);
@@ -264,10 +266,39 @@ public class VariableTypeTreeBuilder {
     return attributes;
   }
 
-  private record Attributes(
-      Boolean isAbstract,
-      DataValue value,
-      NodeId dataType,
-      Integer valueRank,
-      @Nullable UInteger[] arrayDimensions) {}
+  private static final class Attributes {
+    private final Boolean isAbstract;
+    private final DataValue value;
+    private final NodeId dataType;
+    private final Integer valueRank;
+    private final @Nullable UInteger[] arrayDimensions;
+
+    public Boolean isAbstract() {
+      return isAbstract;
+    }
+
+    public DataValue value() {
+      return value;
+    }
+
+    public NodeId dataType() {
+      return dataType;
+    }
+
+    public Integer valueRank() {
+      return valueRank;
+    }
+
+    public @Nullable UInteger[] arrayDimensions() {
+      return arrayDimensions;
+    }
+
+    Attributes(Boolean isAbstract, DataValue value, NodeId dataType, Integer valueRank, @Nullable UInteger[] arrayDimensions) {
+      this.isAbstract = isAbstract;
+      this.value = value;
+      this.dataType = dataType;
+      this.valueRank = valueRank;
+      this.arrayDimensions = arrayDimensions;
+    }
+}
 }

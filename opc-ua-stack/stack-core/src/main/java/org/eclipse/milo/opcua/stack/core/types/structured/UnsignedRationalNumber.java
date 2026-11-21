@@ -83,7 +83,7 @@ public class UnsignedRationalNumber extends Structure implements UaStructuredTyp
       return false;
     }
     UnsignedRationalNumber that = (UnsignedRationalNumber) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNumerator(), that.getNumerator());
     eqb.append(getDenominator(), that.getDenominator());
     return eqb.build();
@@ -91,7 +91,7 @@ public class UnsignedRationalNumber extends Structure implements UaStructuredTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNumerator());
     hcb.append(getDenominator());
     return hcb.build();
@@ -99,7 +99,7 @@ public class UnsignedRationalNumber extends Structure implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UnsignedRationalNumber.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UnsignedRationalNumber.class.getSimpleName() + "[", "]");
     joiner.add("numerator=" + getNumerator());
     joiner.add("denominator=" + getDenominator());
     return joiner.toString();

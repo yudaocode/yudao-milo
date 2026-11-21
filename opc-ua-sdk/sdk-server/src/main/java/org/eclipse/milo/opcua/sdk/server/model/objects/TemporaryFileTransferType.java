@@ -71,7 +71,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "GenerateOptions",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=24")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -90,7 +90,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "FileNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -98,7 +98,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -106,7 +106,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "CompletionStateMachine",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -159,7 +159,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "GenerateOptions",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=24")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -178,7 +178,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "FileNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -186,7 +186,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -233,7 +233,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -252,7 +252,7 @@ public interface TemporaryFileTransferType extends BaseObjectType {
                   "CompletionStateMachine",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

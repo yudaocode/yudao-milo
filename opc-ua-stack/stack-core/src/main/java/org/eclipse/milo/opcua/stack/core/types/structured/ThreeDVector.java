@@ -95,7 +95,7 @@ public class ThreeDVector extends Vector implements UaStructuredType {
       return false;
     }
     ThreeDVector that = (ThreeDVector) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getX(), that.getX());
     eqb.append(getY(), that.getY());
     eqb.append(getZ(), that.getZ());
@@ -104,7 +104,7 @@ public class ThreeDVector extends Vector implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getX());
     hcb.append(getY());
     hcb.append(getZ());
@@ -113,7 +113,7 @@ public class ThreeDVector extends Vector implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ThreeDVector.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ThreeDVector.class.getSimpleName() + "[", "]");
     joiner.add("x=" + getX());
     joiner.add("y=" + getY());
     joiner.add("z=" + getZ());

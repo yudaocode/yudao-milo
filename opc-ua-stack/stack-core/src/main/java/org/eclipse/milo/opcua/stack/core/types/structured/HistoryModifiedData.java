@@ -80,7 +80,7 @@ public class HistoryModifiedData extends HistoryData implements UaStructuredType
       return false;
     }
     HistoryModifiedData that = (HistoryModifiedData) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getModificationInfos(), that.getModificationInfos());
     return eqb.build();
@@ -88,7 +88,7 @@ public class HistoryModifiedData extends HistoryData implements UaStructuredType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getModificationInfos());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -96,7 +96,7 @@ public class HistoryModifiedData extends HistoryData implements UaStructuredType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryModifiedData.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryModifiedData.class.getSimpleName() + "[", "]");
     joiner.add("modificationInfos=" + java.util.Arrays.toString(getModificationInfos()));
     return joiner.toString();
   }

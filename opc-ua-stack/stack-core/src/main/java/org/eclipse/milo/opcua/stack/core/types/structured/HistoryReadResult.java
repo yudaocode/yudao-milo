@@ -94,7 +94,7 @@ public class HistoryReadResult extends Structure implements UaStructuredType {
       return false;
     }
     HistoryReadResult that = (HistoryReadResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getContinuationPoint(), that.getContinuationPoint());
     eqb.append(getHistoryData(), that.getHistoryData());
@@ -103,7 +103,7 @@ public class HistoryReadResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getContinuationPoint());
     hcb.append(getHistoryData());
@@ -112,7 +112,7 @@ public class HistoryReadResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryReadResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryReadResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("continuationPoint=" + getContinuationPoint());
     joiner.add("historyData=" + getHistoryData());

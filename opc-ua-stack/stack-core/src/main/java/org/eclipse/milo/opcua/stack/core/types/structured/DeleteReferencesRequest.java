@@ -85,7 +85,7 @@ public class DeleteReferencesRequest extends Structure implements UaRequestMessa
       return false;
     }
     DeleteReferencesRequest that = (DeleteReferencesRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getReferencesToDelete(), that.getReferencesToDelete());
     return eqb.build();
@@ -93,7 +93,7 @@ public class DeleteReferencesRequest extends Structure implements UaRequestMessa
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getReferencesToDelete());
     return hcb.build();
@@ -101,7 +101,7 @@ public class DeleteReferencesRequest extends Structure implements UaRequestMessa
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DeleteReferencesRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DeleteReferencesRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("referencesToDelete=" + java.util.Arrays.toString(getReferencesToDelete()));
     return joiner.toString();

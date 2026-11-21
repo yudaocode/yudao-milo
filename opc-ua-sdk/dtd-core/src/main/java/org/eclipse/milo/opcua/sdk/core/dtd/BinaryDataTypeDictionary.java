@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.core.dtd;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -62,7 +64,7 @@ public class BinaryDataTypeDictionary implements DataTypeDictionary {
 
   @Override
   public List<Type> getTypes() {
-    return List.copyOf(types.values());
+    return Java8Collections.listCopyOf(types.values());
   }
 
   public @Nullable TypeDescription getTypeDescription(String description) {

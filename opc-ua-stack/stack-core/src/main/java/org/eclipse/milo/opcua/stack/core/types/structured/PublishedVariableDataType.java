@@ -136,7 +136,7 @@ public class PublishedVariableDataType extends Structure implements UaStructured
       return false;
     }
     PublishedVariableDataType that = (PublishedVariableDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getPublishedVariable(), that.getPublishedVariable());
     eqb.append(getAttributeId(), that.getAttributeId());
     eqb.append(getSamplingIntervalHint(), that.getSamplingIntervalHint());
@@ -150,7 +150,7 @@ public class PublishedVariableDataType extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPublishedVariable());
     hcb.append(getAttributeId());
     hcb.append(getSamplingIntervalHint());
@@ -164,7 +164,7 @@ public class PublishedVariableDataType extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PublishedVariableDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PublishedVariableDataType.class.getSimpleName() + "[", "]");
     joiner.add("publishedVariable=" + getPublishedVariable());
     joiner.add("attributeId=" + getAttributeId());
     joiner.add("samplingIntervalHint=" + getSamplingIntervalHint());

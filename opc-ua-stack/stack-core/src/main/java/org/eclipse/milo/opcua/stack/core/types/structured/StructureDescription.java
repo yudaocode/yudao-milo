@@ -79,7 +79,7 @@ public class StructureDescription extends DataTypeDescription implements UaStruc
       return false;
     }
     StructureDescription that = (StructureDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getStructureDefinition(), that.getStructureDefinition());
     return eqb.build();
@@ -87,7 +87,7 @@ public class StructureDescription extends DataTypeDescription implements UaStruc
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStructureDefinition());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -95,7 +95,7 @@ public class StructureDescription extends DataTypeDescription implements UaStruc
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", StructureDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", StructureDescription.class.getSimpleName() + "[", "]");
     joiner.add("structureDefinition=" + getStructureDefinition());
     return joiner.toString();
   }

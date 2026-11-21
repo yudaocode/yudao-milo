@@ -126,7 +126,7 @@ public class CreateSubscriptionRequest extends Structure implements UaRequestMes
       return false;
     }
     CreateSubscriptionRequest that = (CreateSubscriptionRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getRequestedPublishingInterval(), that.getRequestedPublishingInterval());
     eqb.append(getRequestedLifetimeCount(), that.getRequestedLifetimeCount());
@@ -139,7 +139,7 @@ public class CreateSubscriptionRequest extends Structure implements UaRequestMes
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getRequestedPublishingInterval());
     hcb.append(getRequestedLifetimeCount());
@@ -152,7 +152,7 @@ public class CreateSubscriptionRequest extends Structure implements UaRequestMes
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CreateSubscriptionRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CreateSubscriptionRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("requestedPublishingInterval=" + getRequestedPublishingInterval());
     joiner.add("requestedLifetimeCount=" + getRequestedLifetimeCount());

@@ -148,7 +148,7 @@ public class JsonActionMetaDataMessage extends Structure implements UaStructured
       return false;
     }
     JsonActionMetaDataMessage that = (JsonActionMetaDataMessage) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMessageId(), that.getMessageId());
     eqb.append(getMessageType(), that.getMessageType());
     eqb.append(getPublisherId(), that.getPublisherId());
@@ -164,7 +164,7 @@ public class JsonActionMetaDataMessage extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMessageId());
     hcb.append(getMessageType());
     hcb.append(getPublisherId());
@@ -180,7 +180,7 @@ public class JsonActionMetaDataMessage extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", JsonActionMetaDataMessage.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", JsonActionMetaDataMessage.class.getSimpleName() + "[", "]");
     joiner.add("messageId='" + getMessageId() + "'");
     joiner.add("messageType='" + getMessageType() + "'");
     joiner.add("publisherId='" + getPublisherId() + "'");

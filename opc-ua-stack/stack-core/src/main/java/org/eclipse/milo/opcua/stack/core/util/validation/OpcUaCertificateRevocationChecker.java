@@ -52,7 +52,7 @@ public class OpcUaCertificateRevocationChecker extends PKIXRevocationChecker {
     this.parameters = parameters;
     this.validationChecks = validationChecks;
 
-    var options = new HashSet<Option>();
+    java.util.HashSet<java.security.cert.PKIXRevocationChecker.Option> options = new HashSet<Option>();
     options.add(Option.NO_FALLBACK);
     options.add(Option.PREFER_CRLS);
 

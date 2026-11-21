@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.nodes;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.sdk.core.Reference.HAS_COMPONENT_PREDICATE;
 import static org.eclipse.milo.opcua.sdk.core.Reference.HAS_MODELLING_RULE_PREDICATE;
@@ -313,24 +314,28 @@ public class UaVariableNode extends UaNode implements VariableNode {
 
   @Override
   public synchronized Object getAttribute(AttributeId attributeId) {
-    return switch (attributeId) {
-      case Value ->
-          // The value is being directly from the field/memory.
-          // We "know the value to be accurate" at this point, so apply
-          // a new timestamp to the value.
-          // This ensures that when static values are read they have a
-          // current value for serverTimestamp.
-          value.copy(b -> b.setServerTime(DateTime.now()));
-      case DataType -> dataType;
-      case ValueRank -> valueRank;
-      case ArrayDimensions -> arrayDimensions;
-      case AccessLevel -> accessLevel;
-      case UserAccessLevel -> userAccessLevel;
-      case MinimumSamplingInterval -> minimumSamplingInterval;
-      case Historizing -> historizing;
-      case AccessLevelEx -> accessLevelEx;
-      default -> super.getAttribute(attributeId);
-    };
+    switch ((attributeId)) {
+      case Value:
+        return value.copy(b -> b.setServerTime(DateTime.now()));
+      case DataType:
+        return dataType;
+      case ValueRank:
+        return valueRank;
+      case ArrayDimensions:
+        return arrayDimensions;
+      case AccessLevel:
+        return accessLevel;
+      case UserAccessLevel:
+        return userAccessLevel;
+      case MinimumSamplingInterval:
+        return minimumSamplingInterval;
+      case Historizing:
+        return historizing;
+      case AccessLevelEx:
+        return accessLevelEx;
+      default:
+        return super.getAttribute(attributeId);
+    }
   }
 
   @Override
@@ -396,14 +401,14 @@ public class UaVariableNode extends UaNode implements VariableNode {
   public List<Node> getPropertyNodes() {
     return getReferences().stream()
         .filter(HAS_PROPERTY_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 
   public List<Node> getComponentNodes() {
     return getReferences().stream()
         .filter(HAS_COMPONENT_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 

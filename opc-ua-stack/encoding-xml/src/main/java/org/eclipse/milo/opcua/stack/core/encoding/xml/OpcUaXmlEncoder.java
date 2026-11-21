@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.stack.core.encoding.xml;
 
-import jakarta.xml.bind.DatatypeConverter;
+import javax.xml.bind.DatatypeConverter;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.ArrayDeque;
@@ -361,7 +361,7 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
   private void encodeStringValue(String field, String value, boolean isArrayElement) {
     if (beginField(field, value == null, true, isArrayElement)) {
       try {
-        if (value != null && !value.isBlank()) {
+        if (value != null && !value.trim().isEmpty()) {
           xmlStreamWriter.writeCharacters(value);
         }
       } catch (XMLStreamException e) {
@@ -538,7 +538,8 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           return;
         }
 
-        if (value instanceof ExtensionObject.Xml xml) {
+        if (value instanceof ExtensionObject.Xml) {
+      ExtensionObject.Xml xml = (ExtensionObject.Xml) value;
           NodeId typeId = xml.getEncodingOrTypeId();
 
           encodeNodeId("TypeId", typeId);
@@ -547,7 +548,8 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           XmlSerializationUtil.writeXmlFragment(
               xmlStreamWriter, xml.getBody().getFragmentOrEmpty());
           xmlStreamWriter.writeEndElement();
-        } else if (value instanceof ExtensionObject.Binary binary) {
+        } else if (value instanceof ExtensionObject.Binary) {
+      ExtensionObject.Binary binary = (ExtensionObject.Binary) value;
           NodeId typeId = binary.getEncodingOrTypeId();
 
           encodeNodeId("TypeId", typeId);
@@ -647,7 +649,8 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
     }
 
     Class<?> valueClass;
-    if (value instanceof Matrix m) {
+    if (value instanceof Matrix) {
+      Matrix m = (Matrix) value;
       if (m.getElements() == null) return;
       valueClass = ArrayUtil.getType(m.getElements());
     } else {
@@ -663,26 +666,19 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
       typeHint = TypeHint.OPTION_SET;
     }
 
-    int typeId =
-        switch (typeHint) {
-          case ENUM -> OpcUaDataType.Int32.getTypeId();
-          case STRUCT -> OpcUaDataType.ExtensionObject.getTypeId();
-          case OPTION_SET -> {
-            if (OptionSetUI8.class.isAssignableFrom(valueClass)) {
-              yield OpcUaDataType.Byte.getTypeId();
-            } else if (OptionSetUI16.class.isAssignableFrom(valueClass)) {
-              yield OpcUaDataType.UInt16.getTypeId();
-            } else if (OptionSetUI32.class.isAssignableFrom(valueClass)) {
-              yield OpcUaDataType.UInt32.getTypeId();
-            } else if (OptionSetUI64.class.isAssignableFrom(valueClass)) {
-              yield OpcUaDataType.UInt64.getTypeId();
-            } else {
-              throw new UaSerializationException(
-                  StatusCodes.Bad_EncodingError, "unknown OptionSet type: " + valueClass);
-            }
-          }
-          default -> OpcUaDataType.getBuiltinTypeId(valueClass);
-        };
+    int typeId;
+    switch (typeHint) {
+      case ENUM: typeId = OpcUaDataType.Int32.getTypeId(); break;
+      case STRUCT: typeId = OpcUaDataType.ExtensionObject.getTypeId(); break;
+      case OPTION_SET:
+        if (OptionSetUI8.class.isAssignableFrom(valueClass)) typeId = OpcUaDataType.Byte.getTypeId();
+        else if (OptionSetUI16.class.isAssignableFrom(valueClass)) typeId = OpcUaDataType.UInt16.getTypeId();
+        else if (OptionSetUI32.class.isAssignableFrom(valueClass)) typeId = OpcUaDataType.UInt32.getTypeId();
+        else if (OptionSetUI64.class.isAssignableFrom(valueClass)) typeId = OpcUaDataType.UInt64.getTypeId();
+        else throw new UaSerializationException(StatusCodes.Bad_EncodingError, "unknown OptionSet type: " + valueClass);
+        break;
+      default: typeId = OpcUaDataType.getBuiltinTypeId(valueClass);
+    }
 
     OpcUaDataType dataType = OpcUaDataType.fromTypeId(typeId);
     if (dataType == null) {
@@ -694,9 +690,11 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
     try {
       if (value.getClass().isArray()) {
         switch (typeHint) {
-          case BUILTIN -> encodeBuiltinTypeArrayValue(value, dataType);
-          case ENUM -> {
-            if (value instanceof UaEnumeratedType[] array) {
+          case BUILTIN:
+encodeBuiltinTypeArrayValue(value, dataType);
+          case ENUM: {
+            if (value instanceof UaEnumeratedType[]) {
+      UaEnumeratedType[] array = (UaEnumeratedType[]) value;
               Integer[] values = new Integer[array.length];
               for (int i = 0; i < array.length; i++) {
                 values[i] = array[i].getValue();
@@ -704,8 +702,9 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
               encodeBuiltinTypeArrayValue(values, OpcUaDataType.Int32);
             }
           }
-          case STRUCT -> {
-            if (value instanceof UaStructuredType[] array) {
+          case STRUCT: {
+            if (value instanceof UaStructuredType[]) {
+      UaStructuredType[] array = (UaStructuredType[]) value;
               ExtensionObject[] xos = new ExtensionObject[array.length];
               for (int i = 0; i < array.length; i++) {
                 UaStructuredType structValue = array[i];
@@ -716,26 +715,30 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
               encodeBuiltinTypeArrayValue(xos, OpcUaDataType.ExtensionObject);
             }
           }
-          case OPTION_SET -> {
-            if (value instanceof OptionSetUI8<?>[] array) {
+          case OPTION_SET: {
+            if (value instanceof OptionSetUI8<?>[]) {
+      OptionSetUI8<?>[] array = (OptionSetUI8<?>[]) value;
               UByte[] values = new UByte[array.length];
               for (int i = 0; i < array.length; i++) {
                 values[i] = array[i].getValue();
               }
               encodeBuiltinTypeArrayValue(values, OpcUaDataType.Byte);
-            } else if (value instanceof OptionSetUI16<?>[] array) {
+            } else if (value instanceof OptionSetUI16<?>[]) {
+      OptionSetUI16<?>[] array = (OptionSetUI16<?>[]) value;
               UShort[] values = new UShort[array.length];
               for (int i = 0; i < array.length; i++) {
                 values[i] = array[i].getValue();
               }
               encodeBuiltinTypeArrayValue(values, OpcUaDataType.UInt16);
-            } else if (value instanceof OptionSetUI32<?>[] array) {
+            } else if (value instanceof OptionSetUI32<?>[]) {
+      OptionSetUI32<?>[] array = (OptionSetUI32<?>[]) value;
               UInteger[] values = new UInteger[array.length];
               for (int i = 0; i < array.length; i++) {
                 values[i] = array[i].getValue();
               }
               encodeBuiltinTypeArrayValue(values, OpcUaDataType.UInt32);
-            } else if (value instanceof OptionSetUI64<?>[] array) {
+            } else if (value instanceof OptionSetUI64<?>[]) {
+      OptionSetUI64<?>[] array = (OptionSetUI64<?>[]) value;
               ULong[] values = new ULong[array.length];
               for (int i = 0; i < array.length; i++) {
                 values[i] = array[i].getValue();
@@ -747,18 +750,21 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
             }
           }
         }
-      } else if (value instanceof Matrix matrix) {
+      } else if (value instanceof Matrix) {
+      Matrix matrix = (Matrix) value;
         switch (typeHint) {
-          case BUILTIN -> encodeMatrix("Matrix", matrix);
-          case ENUM -> {
+          case BUILTIN:
+encodeMatrix("Matrix", matrix);
+          case ENUM: {
             Matrix transformed =
                 matrix.transform(
                     e -> ((UaEnumeratedType) e).getValue(), Integer.class, OpcUaDataType.Int32);
             encodeMatrix("Matrix", transformed);
           }
-          case STRUCT -> encodeStructMatrix("Matrix", matrix, matrix.getDataTypeId().orElseThrow());
-          case OPTION_SET -> {
-            OpcUaDataType optionSetDataType = matrix.getDataType().orElseThrow();
+          case STRUCT:
+encodeStructMatrix("Matrix", matrix, matrix.getDataTypeId().get());
+          case OPTION_SET: {
+            OpcUaDataType optionSetDataType = matrix.getDataType().get();
             Matrix transformed =
                 matrix.transform(
                     os -> ((OptionSetUInteger<?>) os).getValue(),
@@ -769,18 +775,19 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
         }
       } else {
         switch (typeHint) {
-          case BUILTIN -> encodeBuiltinTypeValue(value, dataType);
-          case ENUM -> {
+          case BUILTIN:
+encodeBuiltinTypeValue(value, dataType);
+          case ENUM: {
             UaEnumeratedType enumValue = (UaEnumeratedType) value;
             encodeBuiltinTypeValue(enumValue.getValue(), OpcUaDataType.Int32);
           }
-          case STRUCT -> {
+          case STRUCT: {
             UaStructuredType structValue = (UaStructuredType) value;
-            var xo =
+            ExtensionObject xo =
                 ExtensionObject.encode(context, structValue, OpcUaDefaultXmlEncoding.getInstance());
             encodeBuiltinTypeValue(xo, OpcUaDataType.ExtensionObject);
           }
-          case OPTION_SET -> {
+          case OPTION_SET: {
             OptionSetUInteger<?> optionSet = (OptionSetUInteger<?>) value;
             encodeBuiltinTypeValue(optionSet.getValue(), dataType);
           }
@@ -793,38 +800,64 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
 
   private void encodeBuiltinTypeValue(Object value, OpcUaDataType dataType) {
     switch (dataType) {
-      case Boolean -> encodeBoolean("Boolean", (Boolean) value);
-      case Byte -> encodeByte("Byte", (UByte) value);
-      case SByte -> encodeSByte("SByte", (Byte) value);
-      case Int16 -> encodeInt16("Int16", (Short) value);
-      case UInt16 -> encodeUInt16("UInt16", (UShort) value);
-      case Int32 -> encodeInt32("Int32", (Integer) value);
-      case UInt32 -> encodeUInt32("UInt32", (UInteger) value);
-      case Int64 -> encodeInt64("Int64", (Long) value);
-      case UInt64 -> encodeUInt64("UInt64", (ULong) value);
-      case Float -> encodeFloat("Float", (Float) value);
-      case Double -> encodeDouble("Double", (Double) value);
-      case String -> encodeString("String", (String) value);
-      case DateTime -> encodeDateTime("DateTime", (DateTime) value);
-      case Guid -> encodeGuid("Guid", (UUID) value);
-      case ByteString -> encodeByteString("ByteString", (ByteString) value);
-      case XmlElement -> encodeXmlElement("XmlElement", (XmlElement) value);
-      case NodeId -> encodeNodeId("NodeId", (NodeId) value);
-      case ExpandedNodeId -> encodeExpandedNodeId("ExpandedNodeId", (ExpandedNodeId) value);
-      case StatusCode -> encodeStatusCode("StatusCode", (StatusCode) value);
-      case QualifiedName -> encodeQualifiedName("QualifiedName", (QualifiedName) value);
-      case LocalizedText -> encodeLocalizedText("LocalizedText", (LocalizedText) value);
-      case ExtensionObject -> encodeExtensionObject("ExtensionObject", (ExtensionObject) value);
-      case DataValue -> encodeDataValue("DataValue", (DataValue) value);
-      case Variant -> encodeVariant("Variant", (Variant) value);
-      case DiagnosticInfo -> encodeDiagnosticInfo("DiagnosticInfo", (DiagnosticInfo) value);
+      case Boolean:
+encodeBoolean("Boolean", (Boolean) value);
+      case Byte:
+encodeByte("Byte", (UByte) value);
+      case SByte:
+encodeSByte("SByte", (Byte) value);
+      case Int16:
+encodeInt16("Int16", (Short) value);
+      case UInt16:
+encodeUInt16("UInt16", (UShort) value);
+      case Int32:
+encodeInt32("Int32", (Integer) value);
+      case UInt32:
+encodeUInt32("UInt32", (UInteger) value);
+      case Int64:
+encodeInt64("Int64", (Long) value);
+      case UInt64:
+encodeUInt64("UInt64", (ULong) value);
+      case Float:
+encodeFloat("Float", (Float) value);
+      case Double:
+encodeDouble("Double", (Double) value);
+      case String:
+encodeString("String", (String) value);
+      case DateTime:
+encodeDateTime("DateTime", (DateTime) value);
+      case Guid:
+encodeGuid("Guid", (UUID) value);
+      case ByteString:
+encodeByteString("ByteString", (ByteString) value);
+      case XmlElement:
+encodeXmlElement("XmlElement", (XmlElement) value);
+      case NodeId:
+encodeNodeId("NodeId", (NodeId) value);
+      case ExpandedNodeId:
+encodeExpandedNodeId("ExpandedNodeId", (ExpandedNodeId) value);
+      case StatusCode:
+encodeStatusCode("StatusCode", (StatusCode) value);
+      case QualifiedName:
+encodeQualifiedName("QualifiedName", (QualifiedName) value);
+      case LocalizedText:
+encodeLocalizedText("LocalizedText", (LocalizedText) value);
+      case ExtensionObject:
+encodeExtensionObject("ExtensionObject", (ExtensionObject) value);
+      case DataValue:
+encodeDataValue("DataValue", (DataValue) value);
+      case Variant:
+encodeVariant("Variant", (Variant) value);
+      case DiagnosticInfo:
+encodeDiagnosticInfo("DiagnosticInfo", (DiagnosticInfo) value);
     }
   }
 
   private void encodeBuiltinTypeArrayValue(Object value, OpcUaDataType dataType) {
     switch (dataType) {
-      case Boolean -> {
-        if (value instanceof boolean[] primitiveArray) {
+      case Boolean: {
+        if (value instanceof boolean[]) {
+      boolean[] primitiveArray = (boolean[]) value;
           Boolean[] boxedArray = new Boolean[primitiveArray.length];
           for (int i = 0; i < primitiveArray.length; i++) {
             boxedArray[i] = primitiveArray[i];
@@ -834,9 +867,11 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           encodeBooleanArray("ListOfBoolean", (Boolean[]) value);
         }
       }
-      case Byte -> encodeByteArray("ListOfByte", (UByte[]) value);
-      case SByte -> {
-        if (value instanceof byte[] primitiveArray) {
+      case Byte:
+encodeByteArray("ListOfByte", (UByte[]) value);
+      case SByte: {
+        if (value instanceof byte[]) {
+      byte[] primitiveArray = (byte[]) value;
           Byte[] boxedArray = new Byte[primitiveArray.length];
           for (int i = 0; i < primitiveArray.length; i++) {
             boxedArray[i] = primitiveArray[i];
@@ -846,8 +881,9 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           encodeSByteArray("ListOfSByte", (Byte[]) value);
         }
       }
-      case Int16 -> {
-        if (value instanceof short[] primitiveArray) {
+      case Int16: {
+        if (value instanceof short[]) {
+      short[] primitiveArray = (short[]) value;
           Short[] boxedArray = new Short[primitiveArray.length];
           for (int i = 0; i < primitiveArray.length; i++) {
             boxedArray[i] = primitiveArray[i];
@@ -857,9 +893,11 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           encodeInt16Array("ListOfInt16", (Short[]) value);
         }
       }
-      case UInt16 -> encodeUInt16Array("ListOfUInt16", (UShort[]) value);
-      case Int32 -> {
-        if (value instanceof int[] primitiveArray) {
+      case UInt16:
+encodeUInt16Array("ListOfUInt16", (UShort[]) value);
+      case Int32: {
+        if (value instanceof int[]) {
+      int[] primitiveArray = (int[]) value;
           Integer[] boxedArray = new Integer[primitiveArray.length];
           for (int i = 0; i < primitiveArray.length; i++) {
             boxedArray[i] = primitiveArray[i];
@@ -869,9 +907,11 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           encodeInt32Array("ListOfInt32", (Integer[]) value);
         }
       }
-      case UInt32 -> encodeUInt32Array("ListOfUInt32", (UInteger[]) value);
-      case Int64 -> {
-        if (value instanceof long[] primitiveArray) {
+      case UInt32:
+encodeUInt32Array("ListOfUInt32", (UInteger[]) value);
+      case Int64: {
+        if (value instanceof long[]) {
+      long[] primitiveArray = (long[]) value;
           Long[] boxedArray = new Long[primitiveArray.length];
           for (int i = 0; i < primitiveArray.length; i++) {
             boxedArray[i] = primitiveArray[i];
@@ -881,9 +921,11 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           encodeInt64Array("ListOfInt64", (Long[]) value);
         }
       }
-      case UInt64 -> encodeUInt64Array("ListOfUInt64", (ULong[]) value);
-      case Float -> {
-        if (value instanceof float[] primitiveArray) {
+      case UInt64:
+encodeUInt64Array("ListOfUInt64", (ULong[]) value);
+      case Float: {
+        if (value instanceof float[]) {
+      float[] primitiveArray = (float[]) value;
           Float[] boxedArray = new Float[primitiveArray.length];
           for (int i = 0; i < primitiveArray.length; i++) {
             boxedArray[i] = primitiveArray[i];
@@ -893,8 +935,9 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           encodeFloatArray("ListOfFloat", (Float[]) value);
         }
       }
-      case Double -> {
-        if (value instanceof double[] primitiveArray) {
+      case Double: {
+        if (value instanceof double[]) {
+      double[] primitiveArray = (double[]) value;
           Double[] boxedArray = new Double[primitiveArray.length];
           for (int i = 0; i < primitiveArray.length; i++) {
             boxedArray[i] = primitiveArray[i];
@@ -904,24 +947,33 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
           encodeDoubleArray("ListOfDouble", (Double[]) value);
         }
       }
-      case String -> encodeStringArray("ListOfString", (String[]) value);
-      case DateTime -> encodeDateTimeArray("ListOfDateTime", (DateTime[]) value);
-      case Guid -> encodeGuidArray("ListOfGuid", (UUID[]) value);
-      case ByteString -> encodeByteStringArray("ListOfByteString", (ByteString[]) value);
-      case XmlElement -> encodeXmlElementArray("ListOfXmlElement", (XmlElement[]) value);
-      case NodeId -> encodeNodeIdArray("ListOfNodeId", (NodeId[]) value);
-      case ExpandedNodeId ->
+      case String:
+encodeStringArray("ListOfString", (String[]) value);
+      case DateTime:
+encodeDateTimeArray("ListOfDateTime", (DateTime[]) value);
+      case Guid:
+encodeGuidArray("ListOfGuid", (UUID[]) value);
+      case ByteString:
+encodeByteStringArray("ListOfByteString", (ByteString[]) value);
+      case XmlElement:
+encodeXmlElementArray("ListOfXmlElement", (XmlElement[]) value);
+      case NodeId:
+encodeNodeIdArray("ListOfNodeId", (NodeId[]) value);
+      case ExpandedNodeId:
           encodeExpandedNodeIdArray("ListOfExpandedNodeId", (ExpandedNodeId[]) value);
-      case StatusCode -> encodeStatusCodeArray("ListOfStatusCode", (StatusCode[]) value);
-      case QualifiedName ->
+      case StatusCode:
+encodeStatusCodeArray("ListOfStatusCode", (StatusCode[]) value);
+      case QualifiedName:
           encodeQualifiedNameArray("ListOfQualifiedName", (QualifiedName[]) value);
-      case LocalizedText ->
+      case LocalizedText:
           encodeLocalizedTextArray("ListOfLocalizedText", (LocalizedText[]) value);
-      case ExtensionObject ->
+      case ExtensionObject:
           encodeExtensionObjectArray("ListOfExtensionObject", (ExtensionObject[]) value);
-      case DataValue -> encodeDataValueArray("ListOfDataValue", (DataValue[]) value);
-      case Variant -> encodeVariantArray("ListOfVariant", (Variant[]) value);
-      case DiagnosticInfo ->
+      case DataValue:
+encodeDataValueArray("ListOfDataValue", (DataValue[]) value);
+      case Variant:
+encodeVariantArray("ListOfVariant", (Variant[]) value);
+      case DiagnosticInfo:
           encodeDiagnosticInfoArray("ListOfDiagnosticInfo", (DiagnosticInfo[]) value);
     }
   }
@@ -1650,208 +1702,240 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
 
           xmlStreamWriter.writeStartElement(Namespaces.OPC_UA_XSD, "Elements");
 
-          OpcUaDataType dataType = value.getDataType().orElseThrow();
+          OpcUaDataType dataType = value.getDataType().get();
           Object elements = value.getElements();
 
           switch (dataType) {
-            case Boolean -> {
-              if (elements instanceof boolean[] array) {
+            case Boolean: {
+              if (elements instanceof boolean[]) {
+      boolean[] array = (boolean[]) elements;
                 for (boolean element : array) {
                   encodeBoolean("Boolean", element);
                 }
-              } else if (elements instanceof Boolean[] array) {
+              } else if (elements instanceof Boolean[]) {
+      Boolean[] array = (Boolean[]) elements;
                 for (Boolean element : array) {
                   encodeBoolean("Boolean", element);
                 }
               }
             }
-            case Byte -> {
-              if (elements instanceof UByte[] array) {
+            case Byte: {
+              if (elements instanceof UByte[]) {
+      UByte[] array = (UByte[]) elements;
                 for (UByte element : array) {
                   encodeByte("Byte", element);
                 }
               }
             }
-            case SByte -> {
-              if (elements instanceof byte[] array) {
+            case SByte: {
+              if (elements instanceof byte[]) {
+      byte[] array = (byte[]) elements;
                 for (byte element : array) {
                   encodeSByte("SByte", element);
                 }
-              } else if (elements instanceof Byte[] array) {
+              } else if (elements instanceof Byte[]) {
+      Byte[] array = (Byte[]) elements;
                 for (Byte element : array) {
                   encodeSByte("SByte", element);
                 }
               }
             }
-            case Int16 -> {
-              if (elements instanceof short[] array) {
+            case Int16: {
+              if (elements instanceof short[]) {
+      short[] array = (short[]) elements;
                 for (short element : array) {
                   encodeInt16("Int16", element);
                 }
-              } else if (elements instanceof Short[] array) {
+              } else if (elements instanceof Short[]) {
+      Short[] array = (Short[]) elements;
                 for (Short element : array) {
                   encodeInt16("Int16", element);
                 }
               }
             }
-            case UInt16 -> {
-              if (elements instanceof UShort[] array) {
+            case UInt16: {
+              if (elements instanceof UShort[]) {
+      UShort[] array = (UShort[]) elements;
                 for (UShort element : array) {
                   encodeUInt16("UInt16", element);
                 }
               }
             }
-            case Int32 -> {
-              if (elements instanceof int[] array) {
+            case Int32: {
+              if (elements instanceof int[]) {
+      int[] array = (int[]) elements;
                 for (int element : array) {
                   encodeInt32("Int32", element);
                 }
-              } else if (elements instanceof Integer[] array) {
+              } else if (elements instanceof Integer[]) {
+      Integer[] array = (Integer[]) elements;
                 for (Integer element : array) {
                   encodeInt32("Int32", element);
                 }
               }
             }
-            case UInt32 -> {
-              if (elements instanceof UInteger[] array) {
+            case UInt32: {
+              if (elements instanceof UInteger[]) {
+      UInteger[] array = (UInteger[]) elements;
                 for (UInteger element : array) {
                   encodeUInt32("UInt32", element);
                 }
               }
             }
-            case Int64 -> {
-              if (elements instanceof long[] array) {
+            case Int64: {
+              if (elements instanceof long[]) {
+      long[] array = (long[]) elements;
                 for (long element : array) {
                   encodeInt64("Int64", element);
                 }
-              } else if (elements instanceof Long[] array) {
+              } else if (elements instanceof Long[]) {
+      Long[] array = (Long[]) elements;
                 for (Long element : array) {
                   encodeInt64("Int64", element);
                 }
               }
             }
-            case UInt64 -> {
-              if (elements instanceof ULong[] array) {
+            case UInt64: {
+              if (elements instanceof ULong[]) {
+      ULong[] array = (ULong[]) elements;
                 for (ULong element : array) {
                   encodeUInt64("UInt64", element);
                 }
               }
             }
-            case Float -> {
-              if (elements instanceof float[] array) {
+            case Float: {
+              if (elements instanceof float[]) {
+      float[] array = (float[]) elements;
                 for (float element : array) {
                   encodeFloat("Float", element);
                 }
-              } else if (elements instanceof Float[] array) {
+              } else if (elements instanceof Float[]) {
+      Float[] array = (Float[]) elements;
                 for (Float element : array) {
                   encodeFloat("Float", element);
                 }
               }
             }
-            case Double -> {
-              if (elements instanceof double[] array) {
+            case Double: {
+              if (elements instanceof double[]) {
+      double[] array = (double[]) elements;
                 for (double element : array) {
                   encodeDouble("Double", element);
                 }
-              } else if (elements instanceof Double[] array) {
+              } else if (elements instanceof Double[]) {
+      Double[] array = (Double[]) elements;
                 for (Double element : array) {
                   encodeDouble("Double", element);
                 }
               }
             }
-            case String -> {
-              if (elements instanceof String[] array) {
+            case String: {
+              if (elements instanceof String[]) {
+      String[] array = (String[]) elements;
                 for (String element : array) {
                   encodeString("String", element);
                 }
               }
             }
-            case DateTime -> {
-              if (elements instanceof DateTime[] array) {
+            case DateTime: {
+              if (elements instanceof DateTime[]) {
+      DateTime[] array = (DateTime[]) elements;
                 for (DateTime element : array) {
                   encodeDateTime("DateTime", element);
                 }
               }
             }
-            case Guid -> {
-              if (elements instanceof UUID[] array) {
+            case Guid: {
+              if (elements instanceof UUID[]) {
+      UUID[] array = (UUID[]) elements;
                 for (UUID element : array) {
                   encodeGuid("Guid", element);
                 }
               }
             }
-            case ByteString -> {
-              if (elements instanceof ByteString[] array) {
+            case ByteString: {
+              if (elements instanceof ByteString[]) {
+      ByteString[] array = (ByteString[]) elements;
                 for (ByteString element : array) {
                   encodeByteString("ByteString", element);
                 }
               }
             }
-            case XmlElement -> {
-              if (elements instanceof XmlElement[] array) {
+            case XmlElement: {
+              if (elements instanceof XmlElement[]) {
+      XmlElement[] array = (XmlElement[]) elements;
                 for (XmlElement element : array) {
                   encodeXmlElement("XmlElement", element);
                 }
               }
             }
-            case NodeId -> {
-              if (elements instanceof NodeId[] array) {
+            case NodeId: {
+              if (elements instanceof NodeId[]) {
+      NodeId[] array = (NodeId[]) elements;
                 for (NodeId element : array) {
                   encodeNodeId("NodeId", element);
                 }
               }
             }
-            case ExpandedNodeId -> {
-              if (elements instanceof ExpandedNodeId[] array) {
+            case ExpandedNodeId: {
+              if (elements instanceof ExpandedNodeId[]) {
+      ExpandedNodeId[] array = (ExpandedNodeId[]) elements;
                 for (ExpandedNodeId element : array) {
                   encodeExpandedNodeId("ExpandedNodeId", element);
                 }
               }
             }
-            case StatusCode -> {
-              if (elements instanceof StatusCode[] array) {
+            case StatusCode: {
+              if (elements instanceof StatusCode[]) {
+      StatusCode[] array = (StatusCode[]) elements;
                 for (StatusCode element : array) {
                   encodeStatusCode("StatusCode", element);
                 }
               }
             }
-            case QualifiedName -> {
-              if (elements instanceof QualifiedName[] array) {
+            case QualifiedName: {
+              if (elements instanceof QualifiedName[]) {
+      QualifiedName[] array = (QualifiedName[]) elements;
                 for (QualifiedName element : array) {
                   encodeQualifiedName("QualifiedName", element);
                 }
               }
             }
-            case LocalizedText -> {
-              if (elements instanceof LocalizedText[] array) {
+            case LocalizedText: {
+              if (elements instanceof LocalizedText[]) {
+      LocalizedText[] array = (LocalizedText[]) elements;
                 for (LocalizedText element : array) {
                   encodeLocalizedText("LocalizedText", element);
                 }
               }
             }
-            case ExtensionObject -> {
-              if (elements instanceof ExtensionObject[] array) {
+            case ExtensionObject: {
+              if (elements instanceof ExtensionObject[]) {
+      ExtensionObject[] array = (ExtensionObject[]) elements;
                 for (ExtensionObject element : array) {
                   encodeExtensionObject("ExtensionObject", element);
                 }
               }
             }
-            case DataValue -> {
-              if (elements instanceof DataValue[] array) {
+            case DataValue: {
+              if (elements instanceof DataValue[]) {
+      DataValue[] array = (DataValue[]) elements;
                 for (DataValue element : array) {
                   encodeDataValue("DataValue", element);
                 }
               }
             }
-            case Variant -> {
-              if (elements instanceof Variant[] array) {
+            case Variant: {
+              if (elements instanceof Variant[]) {
+      Variant[] array = (Variant[]) elements;
                 for (Variant element : array) {
                   encodeVariant("Variant", element);
                 }
               }
             }
-            case DiagnosticInfo -> {
-              if (elements instanceof DiagnosticInfo[] array) {
+            case DiagnosticInfo: {
+              if (elements instanceof DiagnosticInfo[]) {
+      DiagnosticInfo[] array = (DiagnosticInfo[]) elements;
                 for (DiagnosticInfo element : array) {
                   encodeDiagnosticInfo("DiagnosticInfo", element);
                 }
@@ -1884,7 +1968,8 @@ public class OpcUaXmlEncoder implements UaEncoder, AutoCloseable {
                   + context.getEncodingLimits().getMaxRecursionDepth());
         }
 
-        if (value != null && value.getElements() instanceof UaEnumeratedType[] elements) {
+        if (value != null && value.getElements() instanceof UaEnumeratedType[]) {
+          UaEnumeratedType[] elements = (UaEnumeratedType[]) value.getElements();
           Integer[] dimensions = new Integer[value.getDimensions().length];
           for (int i = 0; i < dimensions.length; i++) {
             dimensions[i] = value.getDimensions()[i];

@@ -11,7 +11,7 @@
 package org.eclipse.milo.sdk.core.types.json;
 
 import static java.util.Objects.requireNonNull;
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -88,17 +88,26 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
   @Override
   public JsonStruct decodeType(EncodingContext context, UaDecoder decoder)
       throws UaSerializationException {
-    return switch (definition.getStructureType()) {
-      case Structure, StructureWithOptionalFields, StructureWithSubtypedValues ->
-          decodeStruct(decoder);
-      case Union, UnionWithSubtypedValues -> decodeUnion(decoder);
-    };
+    switch ((definition.getStructureType())) {
+      case Structure:
+
+      case StructureWithOptionalFields:
+
+      case StructureWithSubtypedValues:
+        return decodeStruct(decoder);
+      case Union:
+
+      case UnionWithSubtypedValues:
+        return decodeUnion(decoder);
+      default:
+        throw new IllegalArgumentException("structureType=" + definition.getStructureType());
+    }
   }
 
   private JsonStruct decodeStruct(UaDecoder decoder) throws UaSerializationException {
-    var jsonObject = new JsonObject();
+    com.google.gson.JsonObject jsonObject = new JsonObject();
 
-    var switchField = 0xFFFFFFFFL;
+    long switchField = 0xFFFFFFFFL;
     if (definition.getStructureType() == StructureType.StructureWithOptionalFields) {
       switchField = decoder.decodeUInt32("SwitchField").longValue();
     }
@@ -122,7 +131,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
       }
     }
 
-    var metadata = new JsonObject();
+    com.google.gson.JsonObject metadata = new JsonObject();
     metadata.addProperty("dataTypeId", dataType.getNodeId().toParseableString());
     jsonObject.add("__metadata", metadata);
 
@@ -134,9 +143,9 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
     StructureField[] fields = requireNonNullElse(definition.getFields(), new StructureField[0]);
 
     if (switchField == 0) {
-      var jsonObject = new JsonObject();
+      com.google.gson.JsonObject jsonObject = new JsonObject();
 
-      var metadata = new JsonObject();
+      com.google.gson.JsonObject metadata = new JsonObject();
       metadata.addProperty("dataTypeId", dataType.getNodeId().toParseableString());
       jsonObject.add("__metadata", metadata);
 
@@ -145,10 +154,10 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
       StructureField field = fields[switchField - 1];
       JsonElement value = decodeFieldValue(decoder, field);
 
-      var jsonObject = new JsonObject();
+      com.google.gson.JsonObject jsonObject = new JsonObject();
       jsonObject.add(requireNonNull(field.getName()), value);
 
-      var metadata = new JsonObject();
+      com.google.gson.JsonObject metadata = new JsonObject();
       metadata.addProperty("dataTypeId", dataType.getNodeId().toParseableString());
       jsonObject.add("__metadata", metadata);
 
@@ -190,13 +199,13 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
       if (hint instanceof OpcUaDataType) {
         return decodeBuiltinDataTypeArray(decoder, fieldName, (OpcUaDataType) hint);
       } else if (hint instanceof EnumHint) {
-        var array = new JsonArray();
+        com.google.gson.JsonArray array = new JsonArray();
         for (int value : decoder.decodeEnumArray(fieldName)) {
           array.add(value);
         }
         return array;
       } else if (hint instanceof StructHint) {
-        var array = new JsonArray();
+        com.google.gson.JsonArray array = new JsonArray();
 
         if (dataTypeId.equals(NodeIds.Structure) || fieldAllowsSubtyping(field)) {
           for (ExtensionObject value : decoder.decodeExtensionObjectArray(fieldName)) {
@@ -257,37 +266,58 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
 
   private static JsonElement decodeBuiltinDataType(
       UaDecoder decoder, String fieldName, OpcUaDataType dataType) {
-    return switch (dataType) {
-      case Boolean -> JsonConversions.fromBoolean(decoder.decodeBoolean(fieldName));
-      case SByte -> JsonConversions.fromSByte(decoder.decodeSByte(fieldName));
-      case Byte -> JsonConversions.fromByte(decoder.decodeByte(fieldName));
-      case Int16 -> JsonConversions.fromInt16(decoder.decodeInt16(fieldName));
-      case UInt16 -> JsonConversions.fromUInt16(decoder.decodeUInt16(fieldName));
-      case Int32 -> JsonConversions.fromInt32(decoder.decodeInt32(fieldName));
-      case UInt32 -> JsonConversions.fromUInt32(decoder.decodeUInt32(fieldName));
-      case Int64 -> JsonConversions.fromInt64(decoder.decodeInt64(fieldName));
-      case UInt64 -> JsonConversions.fromUInt64(decoder.decodeUInt64(fieldName));
-      case Float -> JsonConversions.fromFloat(decoder.decodeFloat(fieldName));
-      case Double -> JsonConversions.fromDouble(decoder.decodeDouble(fieldName));
-      case String -> JsonConversions.fromString(decoder.decodeString(fieldName));
-      case DateTime -> JsonConversions.fromDateTime(decoder.decodeDateTime(fieldName));
-      case Guid -> JsonConversions.fromGuid(decoder.decodeGuid(fieldName));
-      case ByteString -> JsonConversions.fromByteString(decoder.decodeByteString(fieldName));
-      case XmlElement -> JsonConversions.fromXmlElement(decoder.decodeXmlElement(fieldName));
-      case NodeId -> JsonConversions.fromNodeId(decoder.decodeNodeId(fieldName));
-      case ExpandedNodeId ->
-          JsonConversions.fromExpandedNodeId(decoder.decodeExpandedNodeId(fieldName));
-      case StatusCode -> JsonConversions.fromStatusCode(decoder.decodeStatusCode(fieldName));
-      case QualifiedName ->
-          JsonConversions.fromQualifiedName(decoder.decodeQualifiedName(fieldName));
-      case LocalizedText ->
-          JsonConversions.fromLocalizedText(decoder.decodeLocalizedText(fieldName));
-      case ExtensionObject ->
-          JsonConversions.fromExtensionObject(decoder.decodeExtensionObject(fieldName));
-      case DataValue -> JsonConversions.fromDataValue(decoder.decodeDataValue(fieldName));
-      case Variant -> JsonConversions.fromVariant(decoder.decodeVariant(fieldName));
-      default -> JsonNull.INSTANCE;
-    };
+    switch ((dataType)) {
+      case Boolean:
+        return JsonConversions.fromBoolean(decoder.decodeBoolean(fieldName));
+      case SByte:
+        return JsonConversions.fromSByte(decoder.decodeSByte(fieldName));
+      case Byte:
+        return JsonConversions.fromByte(decoder.decodeByte(fieldName));
+      case Int16:
+        return JsonConversions.fromInt16(decoder.decodeInt16(fieldName));
+      case UInt16:
+        return JsonConversions.fromUInt16(decoder.decodeUInt16(fieldName));
+      case Int32:
+        return JsonConversions.fromInt32(decoder.decodeInt32(fieldName));
+      case UInt32:
+        return JsonConversions.fromUInt32(decoder.decodeUInt32(fieldName));
+      case Int64:
+        return JsonConversions.fromInt64(decoder.decodeInt64(fieldName));
+      case UInt64:
+        return JsonConversions.fromUInt64(decoder.decodeUInt64(fieldName));
+      case Float:
+        return JsonConversions.fromFloat(decoder.decodeFloat(fieldName));
+      case Double:
+        return JsonConversions.fromDouble(decoder.decodeDouble(fieldName));
+      case String:
+        return JsonConversions.fromString(decoder.decodeString(fieldName));
+      case DateTime:
+        return JsonConversions.fromDateTime(decoder.decodeDateTime(fieldName));
+      case Guid:
+        return JsonConversions.fromGuid(decoder.decodeGuid(fieldName));
+      case ByteString:
+        return JsonConversions.fromByteString(decoder.decodeByteString(fieldName));
+      case XmlElement:
+        return JsonConversions.fromXmlElement(decoder.decodeXmlElement(fieldName));
+      case NodeId:
+        return JsonConversions.fromNodeId(decoder.decodeNodeId(fieldName));
+      case ExpandedNodeId:
+        return JsonConversions.fromExpandedNodeId(decoder.decodeExpandedNodeId(fieldName));
+      case StatusCode:
+        return JsonConversions.fromStatusCode(decoder.decodeStatusCode(fieldName));
+      case QualifiedName:
+        return JsonConversions.fromQualifiedName(decoder.decodeQualifiedName(fieldName));
+      case LocalizedText:
+        return JsonConversions.fromLocalizedText(decoder.decodeLocalizedText(fieldName));
+      case ExtensionObject:
+        return JsonConversions.fromExtensionObject(decoder.decodeExtensionObject(fieldName));
+      case DataValue:
+        return JsonConversions.fromDataValue(decoder.decodeDataValue(fieldName));
+      case Variant:
+        return JsonConversions.fromVariant(decoder.decodeVariant(fieldName));
+      default:
+        return JsonNull.INSTANCE;
+    }
   }
 
   private static JsonElement decodeBuiltinDataTypeArray(
@@ -295,7 +325,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
     switch (dataType) {
       case Boolean:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (boolean value : decoder.decodeBooleanArray(fieldName)) {
             array.add(JsonConversions.fromBoolean(value));
           }
@@ -303,7 +333,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case SByte:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (byte value : decoder.decodeSByteArray(fieldName)) {
             array.add(JsonConversions.fromSByte(value));
           }
@@ -311,7 +341,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case Byte:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (UByte value : decoder.decodeByteArray(fieldName)) {
             array.add(JsonConversions.fromByte(value));
           }
@@ -319,7 +349,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case Int16:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (short value : decoder.decodeInt16Array(fieldName)) {
             array.add(JsonConversions.fromInt16(value));
           }
@@ -327,7 +357,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case UInt16:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (UShort value : decoder.decodeUInt16Array(fieldName)) {
             array.add(JsonConversions.fromUInt16(value));
           }
@@ -335,7 +365,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case Int32:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (int value : decoder.decodeInt32Array(fieldName)) {
             array.add(JsonConversions.fromInt32(value));
           }
@@ -343,7 +373,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case UInt32:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (UInteger value : decoder.decodeUInt32Array(fieldName)) {
             array.add(JsonConversions.fromUInt32(value));
           }
@@ -351,7 +381,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case Int64:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (long value : decoder.decodeInt64Array(fieldName)) {
             array.add(JsonConversions.fromInt64(value));
           }
@@ -359,7 +389,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case UInt64:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (ULong value : decoder.decodeUInt64Array(fieldName)) {
             array.add(JsonConversions.fromUInt64(value));
           }
@@ -367,7 +397,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case Float:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (float value : decoder.decodeFloatArray(fieldName)) {
             array.add(JsonConversions.fromFloat(value));
           }
@@ -375,7 +405,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case Double:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (double value : decoder.decodeDoubleArray(fieldName)) {
             array.add(JsonConversions.fromDouble(value));
           }
@@ -383,7 +413,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case String:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (String value : decoder.decodeStringArray(fieldName)) {
             array.add(JsonConversions.fromString(value));
           }
@@ -391,7 +421,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case DateTime:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (DateTime value : decoder.decodeDateTimeArray(fieldName)) {
             array.add(JsonConversions.fromDateTime(value));
           }
@@ -399,7 +429,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case Guid:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (UUID value : decoder.decodeGuidArray(fieldName)) {
             array.add(JsonConversions.fromGuid(value));
           }
@@ -407,7 +437,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case ByteString:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (ByteString value : decoder.decodeByteStringArray(fieldName)) {
             array.add(JsonConversions.fromByteString(value));
           }
@@ -415,7 +445,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case XmlElement:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (XmlElement value : decoder.decodeXmlElementArray(fieldName)) {
             array.add(JsonConversions.fromXmlElement(value));
           }
@@ -423,7 +453,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case NodeId:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (NodeId value : decoder.decodeNodeIdArray(fieldName)) {
             array.add(JsonConversions.fromNodeId(value));
           }
@@ -431,7 +461,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case ExpandedNodeId:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (ExpandedNodeId value : decoder.decodeExpandedNodeIdArray(fieldName)) {
             array.add(JsonConversions.fromExpandedNodeId(value));
           }
@@ -439,7 +469,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case StatusCode:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (StatusCode value : decoder.decodeStatusCodeArray(fieldName)) {
             array.add(JsonConversions.fromStatusCode(value));
           }
@@ -447,7 +477,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case QualifiedName:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (QualifiedName value : decoder.decodeQualifiedNameArray(fieldName)) {
             array.add(JsonConversions.fromQualifiedName(value));
           }
@@ -455,7 +485,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case LocalizedText:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (LocalizedText value : decoder.decodeLocalizedTextArray(fieldName)) {
             array.add(JsonConversions.fromLocalizedText(value));
           }
@@ -463,7 +493,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case ExtensionObject:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (ExtensionObject value : decoder.decodeExtensionObjectArray(fieldName)) {
             array.add(JsonConversions.fromExtensionObject(value));
           }
@@ -471,14 +501,14 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         }
       case DataValue:
         {
-          var array = new JsonArray();
+          com.google.gson.JsonArray array = new JsonArray();
           for (DataValue value : decoder.decodeDataValueArray(fieldName)) {
             array.add(JsonConversions.fromDataValue(value));
           }
           return array;
         }
       case Variant:
-        var array = new JsonArray();
+        com.google.gson.JsonArray array = new JsonArray();
         for (Variant value : decoder.decodeVariantArray(fieldName)) {
           array.add(JsonConversions.fromVariant(value));
         }
@@ -502,7 +532,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
 
   private static JsonElement decodeBuiltinDataTypeMatrix(
       Object flatArray, OpcUaDataType dataType, int[] dimensions, int offset) {
-    var jsonArray = new JsonArray();
+    JsonArray jsonArray = new JsonArray();
 
     if (dimensions.length == 1) {
       for (int i = 0; i < dimensions[0]; i++) {
@@ -541,7 +571,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
       int[] dimensions,
       int offset) {
 
-    var jsonArray = new JsonArray();
+    JsonArray jsonArray = new JsonArray();
 
     if (dimensions.length == 1) {
       for (int i = 0; i < dimensions[0]; i++) {
@@ -602,7 +632,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
   private void encodeStruct(UaEncoder encoder, JsonStruct value) {
     StructureField[] fields = requireNonNullElse(definition.getFields(), new StructureField[0]);
 
-    var switchField = 0L;
+    long switchField = 0L;
     if (definition.getStructureType() == StructureType.StructureWithOptionalFields) {
       int optionalFieldIndex = 0;
       for (StructureField field : fields) {
@@ -667,11 +697,11 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
           JsonObject metadata = jsonObject.getAsJsonObject("__metadata");
           NodeId concreteDataTypeId =
               NodeId.parse(metadata.getAsJsonPrimitive("dataTypeId").getAsString());
-          var struct = new JsonStruct(dataTypeTree.getDataType(concreteDataTypeId), jsonObject);
-          var xo = ExtensionObject.encode(encoder.getEncodingContext(), struct);
+          org.eclipse.milo.sdk.core.types.json.JsonStruct struct = new JsonStruct(dataTypeTree.getDataType(concreteDataTypeId), jsonObject);
+          org.eclipse.milo.opcua.stack.core.types.builtin.ExtensionObject xo = ExtensionObject.encode(encoder.getEncodingContext(), struct);
           encoder.encodeExtensionObject(fieldName, xo);
         } else {
-          var struct = new JsonStruct(dataTypeTree.getDataType(dataTypeId), jsonObject);
+          org.eclipse.milo.sdk.core.types.json.JsonStruct struct = new JsonStruct(dataTypeTree.getDataType(dataTypeId), jsonObject);
           encoder.encodeStruct(fieldName, struct, dataTypeId);
         }
       } else {
@@ -691,7 +721,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         encoder.encodeEnumArray(fieldName, enumValues);
       } else if (hint instanceof StructHint) {
         if (dataTypeId.equals(NodeIds.Structure) || fieldAllowsSubtyping(field)) {
-          var xoArray = new ExtensionObject[jsonArray.size()];
+          org.eclipse.milo.opcua.stack.core.types.builtin.ExtensionObject[] xoArray = new ExtensionObject[jsonArray.size()];
 
           NodeId concreteDataTypeId = dataTypeId;
           if (!jsonArray.isEmpty()) {
@@ -702,13 +732,13 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
 
           for (int i = 0; i < jsonArray.size(); i++) {
             JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();
-            var struct = new JsonStruct(dataTypeTree.getDataType(concreteDataTypeId), jsonObject);
+            org.eclipse.milo.sdk.core.types.json.JsonStruct struct = new JsonStruct(dataTypeTree.getDataType(concreteDataTypeId), jsonObject);
             xoArray[i] = ExtensionObject.encode(encoder.getEncodingContext(), struct);
           }
 
           encoder.encodeExtensionObjectArray(fieldName, xoArray);
         } else {
-          var structArray = new JsonStruct[jsonArray.size()];
+          org.eclipse.milo.sdk.core.types.json.JsonStruct[] structArray = new JsonStruct[jsonArray.size()];
 
           for (int i = 0; i < jsonArray.size(); i++) {
             JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();
@@ -726,11 +756,11 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
       Object hint = getHint(field);
       if (hint instanceof OpcUaDataType) {
         Object[] flatArray = encodeBuiltinDataTypeMatrix((OpcUaDataType) hint, jsonArray);
-        var matrix = new Matrix(flatArray, getDimensions(jsonArray), (OpcUaDataType) hint);
+        org.eclipse.milo.opcua.stack.core.types.builtin.Matrix matrix = new Matrix(flatArray, getDimensions(jsonArray), (OpcUaDataType) hint);
         encoder.encodeMatrix(fieldName, matrix);
       } else if (hint instanceof EnumHint) {
         Object[] flatArray = encodeEnumMatrix(dataTypeId.expanded(), jsonArray);
-        var matrix =
+        org.eclipse.milo.opcua.stack.core.types.builtin.Matrix matrix =
             new Matrix(
                 flatArray, getDimensions(jsonArray), OpcUaDataType.Int32, dataTypeId.expanded());
         encoder.encodeEnumMatrix(fieldName, matrix);
@@ -738,7 +768,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         if (dataTypeId.equals(NodeIds.Structure) || fieldAllowsSubtyping(field)) {
           Object[] flatArray =
               encodeStructMatrix(encoder.getEncodingContext(), dataTypeTree, jsonArray, true);
-          var matrix =
+          org.eclipse.milo.opcua.stack.core.types.builtin.Matrix matrix =
               new Matrix(
                   flatArray,
                   getDimensions(jsonArray),
@@ -748,7 +778,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
         } else {
           Object[] flatArray =
               encodeStructMatrix(encoder.getEncodingContext(), dataTypeTree, jsonArray, false);
-          var matrix =
+          org.eclipse.milo.opcua.stack.core.types.builtin.Matrix matrix =
               new Matrix(
                   flatArray,
                   getDimensions(jsonArray),
@@ -1073,10 +1103,10 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
   }
 
   static Object[] encodeBuiltinDataTypeMatrix(OpcUaDataType dataType, JsonArray jsonArray) {
-    var elements = new ArrayList<>();
+    java.util.ArrayList<java.lang.Object> elements = new ArrayList<>();
 
     for (int i = 0; i < jsonArray.size(); i++) {
-      var element = jsonArray.get(i);
+      com.google.gson.JsonElement element = jsonArray.get(i);
       if (element.isJsonArray()) {
         Collections.addAll(
             elements, encodeBuiltinDataTypeMatrix(dataType, element.getAsJsonArray()));
@@ -1089,14 +1119,14 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
   }
 
   static Object[] encodeEnumMatrix(ExpandedNodeId dataTypeId, JsonArray jsonArray) {
-    var elements = new ArrayList<>();
+    java.util.ArrayList<java.lang.Object> elements = new ArrayList<>();
 
     for (int i = 0; i < jsonArray.size(); i++) {
-      var element = jsonArray.get(i);
+      com.google.gson.JsonElement element = jsonArray.get(i);
       if (element.isJsonArray()) {
         Collections.addAll(elements, encodeEnumMatrix(dataTypeId, element.getAsJsonArray()));
       } else {
-        var wrapper = new JsonEnumWrapper(element.getAsInt(), dataTypeId);
+        org.eclipse.milo.sdk.core.types.json.JsonStructCodec.JsonEnumWrapper wrapper = new JsonEnumWrapper(element.getAsInt(), dataTypeId);
         elements.add(wrapper);
       }
     }
@@ -1110,12 +1140,12 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
       JsonArray jsonArray,
       boolean encodeExtensionObject) {
 
-    var elements = new ArrayList<>();
+    java.util.ArrayList<java.lang.Object> elements = new ArrayList<>();
 
     DataType dataType = null;
 
     for (int i = 0; i < jsonArray.size(); i++) {
-      var element = jsonArray.get(i);
+      com.google.gson.JsonElement element = jsonArray.get(i);
       if (element.isJsonArray()) {
         Collections.addAll(
             elements,
@@ -1128,10 +1158,10 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
           dataType = dataTypeTree.getDataType(NodeId.parse(dataTypeId));
         }
 
-        var struct = new JsonStruct(dataType, element.getAsJsonObject());
+        org.eclipse.milo.sdk.core.types.json.JsonStruct struct = new JsonStruct(dataType, element.getAsJsonObject());
 
         if (encodeExtensionObject) {
-          var xo = ExtensionObject.encode(context, struct);
+          org.eclipse.milo.opcua.stack.core.types.builtin.ExtensionObject xo = ExtensionObject.encode(context, struct);
           elements.add(xo);
         } else {
           elements.add(struct);
@@ -1143,7 +1173,7 @@ public class JsonStructCodec extends GenericDataTypeCodec<JsonStruct> {
   }
 
   static int[] getDimensions(JsonArray array) {
-    var dimensions = new ArrayList<Integer>();
+    java.util.ArrayList<java.lang.Integer> dimensions = new ArrayList<Integer>();
     dimensions.add(array.size());
     while (!array.isEmpty() && array.get(0).isJsonArray()) {
       array = array.get(0).getAsJsonArray();

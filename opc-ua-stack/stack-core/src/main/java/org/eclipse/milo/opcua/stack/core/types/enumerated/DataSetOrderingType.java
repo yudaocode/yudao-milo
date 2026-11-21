@@ -45,12 +45,16 @@ public enum DataSetOrderingType implements UaEnumeratedType {
   }
 
   public static @Nullable DataSetOrderingType from(int value) {
-    return switch (value) {
-      case 0 -> Undefined;
-      case 1 -> AscendingWriterId;
-      case 2 -> AscendingWriterIdSingle;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Undefined;
+      case 1:
+        return AscendingWriterId;
+      case 2:
+        return AscendingWriterIdSingle;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

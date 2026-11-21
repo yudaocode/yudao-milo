@@ -92,7 +92,7 @@ public class CallMethodRequest extends Structure implements UaStructuredType {
       return false;
     }
     CallMethodRequest that = (CallMethodRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getObjectId(), that.getObjectId());
     eqb.append(getMethodId(), that.getMethodId());
     eqb.append(getInputArguments(), that.getInputArguments());
@@ -101,7 +101,7 @@ public class CallMethodRequest extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getObjectId());
     hcb.append(getMethodId());
     hcb.append(getInputArguments());
@@ -110,7 +110,7 @@ public class CallMethodRequest extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CallMethodRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CallMethodRequest.class.getSimpleName() + "[", "]");
     joiner.add("objectId=" + getObjectId());
     joiner.add("methodId=" + getMethodId());
     joiner.add("inputArguments=" + java.util.Arrays.toString(getInputArguments()));

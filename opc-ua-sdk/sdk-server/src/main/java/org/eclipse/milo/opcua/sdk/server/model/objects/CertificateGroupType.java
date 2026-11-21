@@ -91,7 +91,7 @@ public interface CertificateGroupType extends BaseObjectType {
                   "Certificates",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

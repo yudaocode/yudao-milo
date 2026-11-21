@@ -290,7 +290,8 @@ public abstract class AbstractBsdCodec<StructureT, MemberT> implements BinaryDat
 
     DataTypeDictionary dictionary = context.getDataTypeManager().getTypeDictionary(namespaceUri);
 
-    if (dictionary instanceof BinaryDataTypeDictionary binaryDictionary) {
+    if (dictionary instanceof BinaryDataTypeDictionary) {
+      BinaryDataTypeDictionary binaryDictionary = (BinaryDataTypeDictionary) dictionary;
       TypeDescription typeDescription = binaryDictionary.getTypeDescription(description);
 
       if (typeDescription instanceof StructuredType) {
@@ -331,15 +332,18 @@ public abstract class AbstractBsdCodec<StructureT, MemberT> implements BinaryDat
 
     DataTypeDictionary dictionary = context.getDataTypeManager().getTypeDictionary(namespaceUri);
 
-    if (dictionary instanceof BinaryDataTypeDictionary binaryDictionary) {
+    if (dictionary instanceof BinaryDataTypeDictionary) {
+      BinaryDataTypeDictionary binaryDictionary = (BinaryDataTypeDictionary) dictionary;
       TypeDescription typeDescription = binaryDictionary.getTypeDescription(description);
 
-      if (typeDescription instanceof StructuredType structuredType) {
+      if (typeDescription instanceof StructuredType) {
+      StructuredType structuredType = (StructuredType) typeDescription;
         DataTypeCodec codec = dictionary.getCodec(description);
 
         if (codec != null) {
           UaStructuredType structValue;
-          if (value instanceof UaStructuredType uaStruct) {
+          if (value instanceof UaStructuredType) {
+      UaStructuredType uaStruct = (UaStructuredType) value;
             structValue = uaStruct;
           } else {
             // The parent codec produced a non-UaStructuredType representation
@@ -475,17 +479,23 @@ public abstract class AbstractBsdCodec<StructureT, MemberT> implements BinaryDat
 
   private static boolean compareToSwitchValue(
       long controlValue, SwitchOperand switchOperand, long switchValue) {
-    return switch (switchOperand) {
-      case EQUALS -> controlValue == switchValue;
-      case NOT_EQUAL -> controlValue != switchValue;
-      case GREATER_THAN -> controlValue > switchValue;
-      case GREATER_THAN_OR_EQUAL -> controlValue >= switchValue;
-      case LESS_THAN -> controlValue < switchValue;
-      case LESS_THAN_OR_EQUAL -> controlValue <= switchValue;
-      default ->
-          throw new UaSerializationException(
+    switch ((switchOperand)) {
+      case EQUALS:
+        return controlValue == switchValue;
+      case NOT_EQUAL:
+        return controlValue != switchValue;
+      case GREATER_THAN:
+        return controlValue > switchValue;
+      case GREATER_THAN_OR_EQUAL:
+        return controlValue >= switchValue;
+      case LESS_THAN:
+        return controlValue < switchValue;
+      case LESS_THAN_OR_EQUAL:
+        return controlValue <= switchValue;
+      default:
+        throw new UaSerializationException(
               StatusCodes.Bad_InternalError, "unknown SwitchOperand: " + switchOperand);
-    };
+    }
   }
 
   private static boolean fieldIsScalar(FieldType field) {
@@ -493,74 +503,140 @@ public abstract class AbstractBsdCodec<StructureT, MemberT> implements BinaryDat
   }
 
   private static Function<OpcUaBinaryDecoder, Object> getReader(String typeName) {
-    return switch (typeName) {
-      case "Boolean" -> OpcUaBinaryDecoder::decodeBoolean;
-      case "SByte" -> OpcUaBinaryDecoder::decodeSByte;
-      case "Int16" -> OpcUaBinaryDecoder::decodeInt16;
-      case "Int32" -> OpcUaBinaryDecoder::decodeInt32;
-      case "Int64" -> OpcUaBinaryDecoder::decodeInt64;
-      case "Byte" -> OpcUaBinaryDecoder::decodeByte;
-      case "UInt16" -> OpcUaBinaryDecoder::decodeUInt16;
-      case "UInt32" -> OpcUaBinaryDecoder::decodeUInt32;
-      case "UInt64" -> OpcUaBinaryDecoder::decodeUInt64;
-      case "Float" -> OpcUaBinaryDecoder::decodeFloat;
-      case "Double" -> OpcUaBinaryDecoder::decodeDouble;
-      case "String" -> OpcUaBinaryDecoder::decodeString;
-      case "DateTime" -> OpcUaBinaryDecoder::decodeDateTime;
-      case "Guid" -> OpcUaBinaryDecoder::decodeGuid;
-      case "ByteString" -> OpcUaBinaryDecoder::decodeByteString;
-      case "XmlElement" -> OpcUaBinaryDecoder::decodeXmlElement;
-      case "NodeId" -> OpcUaBinaryDecoder::decodeNodeId;
-      case "ExpandedNodeId" -> OpcUaBinaryDecoder::decodeExpandedNodeId;
-      case "StatusCode" -> OpcUaBinaryDecoder::decodeStatusCode;
-      case "QualifiedName" -> OpcUaBinaryDecoder::decodeQualifiedName;
-      case "LocalizedText" -> OpcUaBinaryDecoder::decodeLocalizedText;
-      case "ExtensionObject" -> OpcUaBinaryDecoder::decodeExtensionObject;
-      case "DataValue" -> OpcUaBinaryDecoder::decodeDataValue;
-      case "Variant" -> OpcUaBinaryDecoder::decodeVariant;
-      case "DiagnosticInfo" -> OpcUaBinaryDecoder::decodeDiagnosticInfo;
-      case "Bit" -> OpcUaBinaryDecoder::decodeBit;
-      case "Char" -> OpcUaBinaryDecoder::decodeCharacter;
-      case "CharArray" -> OpcUaBinaryDecoder::decodeUtf8CharArray;
-      case "WideChar" -> OpcUaBinaryDecoder::decodeWideChar;
-      case "WideCharArray", "WideString" -> OpcUaBinaryDecoder::decodeUtf16CharArray;
-      default -> null;
-    };
+    switch ((typeName)) {
+      case "Boolean":
+        return OpcUaBinaryDecoder::decodeBoolean;
+      case "SByte":
+        return OpcUaBinaryDecoder::decodeSByte;
+      case "Int16":
+        return OpcUaBinaryDecoder::decodeInt16;
+      case "Int32":
+        return OpcUaBinaryDecoder::decodeInt32;
+      case "Int64":
+        return OpcUaBinaryDecoder::decodeInt64;
+      case "Byte":
+        return OpcUaBinaryDecoder::decodeByte;
+      case "UInt16":
+        return OpcUaBinaryDecoder::decodeUInt16;
+      case "UInt32":
+        return OpcUaBinaryDecoder::decodeUInt32;
+      case "UInt64":
+        return OpcUaBinaryDecoder::decodeUInt64;
+      case "Float":
+        return OpcUaBinaryDecoder::decodeFloat;
+      case "Double":
+        return OpcUaBinaryDecoder::decodeDouble;
+      case "String":
+        return OpcUaBinaryDecoder::decodeString;
+      case "DateTime":
+        return OpcUaBinaryDecoder::decodeDateTime;
+      case "Guid":
+        return OpcUaBinaryDecoder::decodeGuid;
+      case "ByteString":
+        return OpcUaBinaryDecoder::decodeByteString;
+      case "XmlElement":
+        return OpcUaBinaryDecoder::decodeXmlElement;
+      case "NodeId":
+        return OpcUaBinaryDecoder::decodeNodeId;
+      case "ExpandedNodeId":
+        return OpcUaBinaryDecoder::decodeExpandedNodeId;
+      case "StatusCode":
+        return OpcUaBinaryDecoder::decodeStatusCode;
+      case "QualifiedName":
+        return OpcUaBinaryDecoder::decodeQualifiedName;
+      case "LocalizedText":
+        return OpcUaBinaryDecoder::decodeLocalizedText;
+      case "ExtensionObject":
+        return OpcUaBinaryDecoder::decodeExtensionObject;
+      case "DataValue":
+        return OpcUaBinaryDecoder::decodeDataValue;
+      case "Variant":
+        return OpcUaBinaryDecoder::decodeVariant;
+      case "DiagnosticInfo":
+        return OpcUaBinaryDecoder::decodeDiagnosticInfo;
+      case "Bit":
+        return OpcUaBinaryDecoder::decodeBit;
+      case "Char":
+        return OpcUaBinaryDecoder::decodeCharacter;
+      case "CharArray":
+        return OpcUaBinaryDecoder::decodeUtf8CharArray;
+      case "WideChar":
+        return OpcUaBinaryDecoder::decodeWideChar;
+      case "WideCharArray":
+
+      case "WideString":
+        return OpcUaBinaryDecoder::decodeUtf16CharArray;
+      default:
+        return null;
+    }
   }
 
   private static BiConsumer<OpcUaBinaryEncoder, Object> getWriter(String typeName) {
-    return switch (typeName) {
-      case "Boolean" -> (w, v) -> w.encodeBoolean((Boolean) v);
-      case "SByte" -> (w, v) -> w.encodeSByte((Byte) v);
-      case "Int16" -> (w, v) -> w.encodeInt16((Short) v);
-      case "Int32" -> (w, v) -> w.encodeInt32((Integer) v);
-      case "Int64" -> (w, v) -> w.encodeInt64((Long) v);
-      case "Byte" -> (w, v) -> w.encodeByte((UByte) v);
-      case "UInt16" -> (w, v) -> w.encodeUInt16((UShort) v);
-      case "UInt32" -> (w, v) -> w.encodeUInt32((UInteger) v);
-      case "UInt64" -> (w, v) -> w.encodeUInt64((ULong) v);
-      case "Float" -> (w, v) -> w.encodeFloat((Float) v);
-      case "Double" -> (w, v) -> w.encodeDouble((Double) v);
-      case "String" -> (w, v) -> w.encodeString((String) v);
-      case "DateTime" -> (w, v) -> w.encodeDateTime((DateTime) v);
-      case "Guid" -> (w, v) -> w.encodeGuid((UUID) v);
-      case "ByteString" -> (w, v) -> w.encodeByteString((ByteString) v);
-      case "XmlElement" -> (w, v) -> w.encodeXmlElement((XmlElement) v);
-      case "NodeId" -> (w, v) -> w.encodeNodeId((NodeId) v);
-      case "ExpandedNodeId" -> (w, v) -> w.encodeExpandedNodeId((ExpandedNodeId) v);
-      case "StatusCode" -> (w, v) -> w.encodeStatusCode((StatusCode) v);
-      case "QualifiedName" -> (w, v) -> w.encodeQualifiedName((QualifiedName) v);
-      case "LocalizedText" -> (w, v) -> w.encodeLocalizedText((LocalizedText) v);
-      case "ExtensionObject" -> (w, v) -> w.encodeExtensionObject((ExtensionObject) v);
-      case "DataValue" -> (w, v) -> w.encodeDataValue((DataValue) v);
-      case "Variant" -> (w, v) -> w.encodeVariant((Variant) v);
-      case "DiagnosticInfo" -> (w, v) -> w.encodeDiagnosticInfo((DiagnosticInfo) v);
-      case "Bit" -> (w, v) -> w.encodeBit((Integer) v);
-      case "Char" -> (w, v) -> w.encodeCharacter((Character) v);
-      case "CharArray" -> (w, v) -> w.encodeUtf8CharArray((String) v);
-      case "WideChar" -> (w, v) -> w.encodeWideChar((Character) v);
-      case "WideCharArray", "WideString" -> (w, v) -> w.encodeUtf16CharArray((String) v);
-      default -> null;
-    };
+    switch ((typeName)) {
+      case "Boolean":
+        return (w, v) -> w.encodeBoolean((Boolean) v);
+      case "SByte":
+        return (w, v) -> w.encodeSByte((Byte) v);
+      case "Int16":
+        return (w, v) -> w.encodeInt16((Short) v);
+      case "Int32":
+        return (w, v) -> w.encodeInt32((Integer) v);
+      case "Int64":
+        return (w, v) -> w.encodeInt64((Long) v);
+      case "Byte":
+        return (w, v) -> w.encodeByte((UByte) v);
+      case "UInt16":
+        return (w, v) -> w.encodeUInt16((UShort) v);
+      case "UInt32":
+        return (w, v) -> w.encodeUInt32((UInteger) v);
+      case "UInt64":
+        return (w, v) -> w.encodeUInt64((ULong) v);
+      case "Float":
+        return (w, v) -> w.encodeFloat((Float) v);
+      case "Double":
+        return (w, v) -> w.encodeDouble((Double) v);
+      case "String":
+        return (w, v) -> w.encodeString((String) v);
+      case "DateTime":
+        return (w, v) -> w.encodeDateTime((DateTime) v);
+      case "Guid":
+        return (w, v) -> w.encodeGuid((UUID) v);
+      case "ByteString":
+        return (w, v) -> w.encodeByteString((ByteString) v);
+      case "XmlElement":
+        return (w, v) -> w.encodeXmlElement((XmlElement) v);
+      case "NodeId":
+        return (w, v) -> w.encodeNodeId((NodeId) v);
+      case "ExpandedNodeId":
+        return (w, v) -> w.encodeExpandedNodeId((ExpandedNodeId) v);
+      case "StatusCode":
+        return (w, v) -> w.encodeStatusCode((StatusCode) v);
+      case "QualifiedName":
+        return (w, v) -> w.encodeQualifiedName((QualifiedName) v);
+      case "LocalizedText":
+        return (w, v) -> w.encodeLocalizedText((LocalizedText) v);
+      case "ExtensionObject":
+        return (w, v) -> w.encodeExtensionObject((ExtensionObject) v);
+      case "DataValue":
+        return (w, v) -> w.encodeDataValue((DataValue) v);
+      case "Variant":
+        return (w, v) -> w.encodeVariant((Variant) v);
+      case "DiagnosticInfo":
+        return (w, v) -> w.encodeDiagnosticInfo((DiagnosticInfo) v);
+      case "Bit":
+        return (w, v) -> w.encodeBit((Integer) v);
+      case "Char":
+        return (w, v) -> w.encodeCharacter((Character) v);
+      case "CharArray":
+        return (w, v) -> w.encodeUtf8CharArray((String) v);
+      case "WideChar":
+        return (w, v) -> w.encodeWideChar((Character) v);
+      case "WideCharArray":
+
+      case "WideString":
+        return (w, v) -> w.encodeUtf16CharArray((String) v);
+      default:
+        return null;
+    }
   }
 }

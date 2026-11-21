@@ -99,7 +99,7 @@ public class ReadValueId extends Structure implements UaStructuredType {
       return false;
     }
     ReadValueId that = (ReadValueId) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getAttributeId(), that.getAttributeId());
     eqb.append(getIndexRange(), that.getIndexRange());
@@ -109,7 +109,7 @@ public class ReadValueId extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getAttributeId());
     hcb.append(getIndexRange());
@@ -119,7 +119,7 @@ public class ReadValueId extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadValueId.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadValueId.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("attributeId=" + getAttributeId());
     joiner.add("indexRange='" + getIndexRange() + "'");

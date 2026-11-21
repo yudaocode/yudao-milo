@@ -135,7 +135,7 @@ public class RegisteredServer extends Structure implements UaStructuredType {
       return false;
     }
     RegisteredServer that = (RegisteredServer) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getServerUri(), that.getServerUri());
     eqb.append(getProductUri(), that.getProductUri());
     eqb.append(getServerNames(), that.getServerNames());
@@ -149,7 +149,7 @@ public class RegisteredServer extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getServerUri());
     hcb.append(getProductUri());
     hcb.append(getServerNames());
@@ -163,7 +163,7 @@ public class RegisteredServer extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RegisteredServer.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RegisteredServer.class.getSimpleName() + "[", "]");
     joiner.add("serverUri='" + getServerUri() + "'");
     joiner.add("productUri='" + getProductUri() + "'");
     joiner.add("serverNames=" + java.util.Arrays.toString(getServerNames()));

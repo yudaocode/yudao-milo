@@ -49,14 +49,20 @@ public enum TimestampsToReturn implements UaEnumeratedType {
   }
 
   public static @Nullable TimestampsToReturn from(int value) {
-    return switch (value) {
-      case 0 -> Source;
-      case 1 -> Server;
-      case 2 -> Both;
-      case 3 -> Neither;
-      case 4 -> Invalid;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Source;
+      case 1:
+        return Server;
+      case 2:
+        return Both;
+      case 3:
+        return Neither;
+      case 4:
+        return Invalid;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

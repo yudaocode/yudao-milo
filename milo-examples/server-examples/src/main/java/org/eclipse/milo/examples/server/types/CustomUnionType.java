@@ -107,21 +107,26 @@ public class CustomUnionType extends Union implements UaStructuredType {
     @Override
     public CustomUnionType decodeType(EncodingContext context, UaDecoder decoder) {
       UInteger switchValue = decoder.decodeUInt32("SwitchValue");
-      return switch (switchValue.intValue()) {
-        case 0 -> CustomUnionType.ofNull();
-        case 1 -> {
+      switch ((switchValue.intValue())) {
+      case 0:
+        return CustomUnionType.ofNull();
+      case 1:
+        {
           UInteger foo = decoder.decodeUInt32("foo");
-          yield CustomUnionType.ofFoo(foo);
-        }
-        case 2 -> {
+          return CustomUnionType.ofFoo(foo);
+
+          }
+      case 2:
+        {
           String bar = decoder.decodeString("bar");
-          yield CustomUnionType.ofBar(bar);
-        }
-        default ->
-            throw new UaSerializationException(
+          return CustomUnionType.ofBar(bar);
+
+          }
+      default:
+        throw new UaSerializationException(
                 StatusCodes.Bad_DecodingError,
                 "unknown field in Union CustomUnionType: " + switchValue);
-      };
+    }
     }
 
     @Override

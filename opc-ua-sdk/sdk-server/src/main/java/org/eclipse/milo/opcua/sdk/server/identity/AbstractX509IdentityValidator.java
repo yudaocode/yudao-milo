@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.identity;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import com.google.common.primitives.Bytes;
 import java.security.cert.X509Certificate;
 import java.util.Set;
@@ -32,7 +34,7 @@ public abstract class AbstractX509IdentityValidator extends AbstractIdentityVali
 
   @Override
   public Set<UserTokenType> getSupportedTokenTypes() {
-    return Set.of(UserTokenType.Certificate);
+    return Java8Collections.setOf(UserTokenType.Certificate);
   }
 
   @Override

@@ -167,7 +167,7 @@ public class JsonActionResponseMessage extends Structure implements UaStructured
       return false;
     }
     JsonActionResponseMessage that = (JsonActionResponseMessage) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDataSetWriterId(), that.getDataSetWriterId());
     eqb.append(getActionTargetId(), that.getActionTargetId());
     eqb.append(getDataSetWriterName(), that.getDataSetWriterName());
@@ -185,7 +185,7 @@ public class JsonActionResponseMessage extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDataSetWriterId());
     hcb.append(getActionTargetId());
     hcb.append(getDataSetWriterName());
@@ -203,7 +203,7 @@ public class JsonActionResponseMessage extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", JsonActionResponseMessage.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", JsonActionResponseMessage.class.getSimpleName() + "[", "]");
     joiner.add("dataSetWriterId=" + getDataSetWriterId());
     joiner.add("actionTargetId=" + getActionTargetId());
     joiner.add("dataSetWriterName='" + getDataSetWriterName() + "'");

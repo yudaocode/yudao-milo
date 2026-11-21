@@ -78,21 +78,21 @@ public class HistoryEventFieldList extends Structure implements UaStructuredType
       return false;
     }
     HistoryEventFieldList that = (HistoryEventFieldList) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getEventFields(), that.getEventFields());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEventFields());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryEventFieldList.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryEventFieldList.class.getSimpleName() + "[", "]");
     joiner.add("eventFields=" + java.util.Arrays.toString(getEventFields()));
     return joiner.toString();
   }

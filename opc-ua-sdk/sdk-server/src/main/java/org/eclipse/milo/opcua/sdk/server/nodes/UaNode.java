@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.nodes;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.lang.reflect.Array;
@@ -228,21 +230,31 @@ public abstract class UaNode implements UaServerNode {
    * @return the value for {@code attributeId}.
    */
   public synchronized Object getAttribute(AttributeId attributeId) {
-    return switch (attributeId) {
-      case NodeId -> nodeId;
-      case NodeClass -> nodeClass;
-      case BrowseName -> browseName;
-      case DisplayName -> displayName;
-      case Description -> description;
-      case WriteMask -> writeMask;
-      case UserWriteMask -> userWriteMask;
-      case RolePermissions -> rolePermissions;
-      case UserRolePermissions -> userRolePermissions;
-      case AccessRestrictions -> accessRestrictions;
-      default ->
-          throw new UaRuntimeException(
+    switch ((attributeId)) {
+      case NodeId:
+        return nodeId;
+      case NodeClass:
+        return nodeClass;
+      case BrowseName:
+        return browseName;
+      case DisplayName:
+        return displayName;
+      case Description:
+        return description;
+      case WriteMask:
+        return writeMask;
+      case UserWriteMask:
+        return userWriteMask;
+      case RolePermissions:
+        return rolePermissions;
+      case UserRolePermissions:
+        return userRolePermissions;
+      case AccessRestrictions:
+        return accessRestrictions;
+      default:
+        throw new UaRuntimeException(
               StatusCodes.Bad_AttributeIdInvalid, "AttributeId: " + attributeId);
-    };
+    }
   }
 
   /**
@@ -350,7 +362,7 @@ public abstract class UaNode implements UaServerNode {
 
   @Override
   public List<Reference> getReferences() {
-    return List.copyOf(
+    return Java8Collections.listCopyOf(
         context.getServer().getAddressSpaceManager().getManagedReferences(getNodeId()));
   }
 
@@ -385,9 +397,11 @@ public abstract class UaNode implements UaServerNode {
       try {
         Object v = getProperty(browseName).orElse(null);
 
-        if (v instanceof ExtensionObject xo) {
+        if (v instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) v;
           v = xo.decode(context.getServer().getStaticEncodingContext());
-        } else if (v instanceof ExtensionObject[] xos) {
+        } else if (v instanceof ExtensionObject[]) {
+      ExtensionObject[] xos = (ExtensionObject[]) v;
           Object array = Array.newInstance(property.getJavaType().getComponentType(), xos.length);
 
           for (int i = 0; i < xos.length; i++) {
@@ -395,13 +409,15 @@ public abstract class UaNode implements UaServerNode {
           }
 
           v = array;
-        } else if (v instanceof Matrix matrix
-            && matrix.getElements() instanceof ExtensionObject[]) {
+        } else if (v instanceof Matrix
+            && ((Matrix) v).getElements() instanceof ExtensionObject[]) {
+          Matrix matrix = (Matrix) v;
 
           v =
               matrix.transform(
                   e -> {
-                    if (e instanceof ExtensionObject xo) {
+                    if (e instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) e;
                       return xo.decode(context.getServer().getStaticEncodingContext());
                     } else {
                       return e;
@@ -504,7 +520,7 @@ public abstract class UaNode implements UaServerNode {
     Node node =
         getReferences().stream()
             .filter(Reference.HAS_PROPERTY_PREDICATE)
-            .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+            .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
             .filter(n -> n.getBrowseName().equals(browseName))
             .findFirst()
             .orElse(null);
@@ -568,7 +584,7 @@ public abstract class UaNode implements UaServerNode {
 
     return getReferences().stream()
         .filter(referencePredicate)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .filter(nodePredicate)
         .filter(n -> n.getBrowseName().equals(browseName))
         .findFirst();
@@ -592,7 +608,7 @@ public abstract class UaNode implements UaServerNode {
 
     return getReferences().stream()
         .filter(referencePredicate)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .filter(nodePredicate)
         .filter(
             n -> {
@@ -626,7 +642,7 @@ public abstract class UaNode implements UaServerNode {
         (ObjectNode)
             getReferences().stream()
                 .filter(Reference.HAS_COMPONENT_PREDICATE)
-                .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+                .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
                 .filter(
                     n ->
                         n.getNodeClass() == NodeClass.Object
@@ -656,7 +672,7 @@ public abstract class UaNode implements UaServerNode {
         (VariableNode)
             getReferences().stream()
                 .filter(Reference.HAS_COMPONENT_PREDICATE)
-                .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+                .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
                 .filter(
                     n ->
                         n.getNodeClass() == NodeClass.Variable

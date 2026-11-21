@@ -98,7 +98,7 @@ public class ApplicationIdentityDataType extends BaseConfigurationRecordDataType
       return false;
     }
     ApplicationIdentityDataType that = (ApplicationIdentityDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getApplicationUri(), that.getApplicationUri());
     eqb.append(getApplicationNames(), that.getApplicationNames());
@@ -108,7 +108,7 @@ public class ApplicationIdentityDataType extends BaseConfigurationRecordDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getApplicationUri());
     hcb.append(getApplicationNames());
     hcb.append(getAdditionalServers());
@@ -118,7 +118,7 @@ public class ApplicationIdentityDataType extends BaseConfigurationRecordDataType
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ApplicationIdentityDataType.class.getSimpleName() + "[", "]");
     joiner.add("applicationUri='" + getApplicationUri() + "'");
     joiner.add("applicationNames=" + java.util.Arrays.toString(getApplicationNames()));

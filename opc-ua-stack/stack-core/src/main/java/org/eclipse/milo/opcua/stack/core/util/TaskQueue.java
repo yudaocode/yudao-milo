@@ -129,7 +129,7 @@ public final class TaskQueue {
         return null;
       }
 
-      var callback = new CompletableFuture<Unit>();
+      java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.core.util.Unit> callback = new CompletableFuture<Unit>();
       taskQueue.add(new TaskWrapper(task, callback));
 
       maybePollAndExecute();
@@ -174,13 +174,13 @@ public final class TaskQueue {
     taskQueueLock.lock();
     try {
       if (shutdown) {
-        return List.of();
+        return Java8Collections.listOf();
       }
 
       shutdown = true;
 
       if (taskQueue.isEmpty() && pending == 0) {
-        return List.of();
+        return Java8Collections.listOf();
       }
 
       if (awaitQuiescence) {
@@ -532,7 +532,7 @@ public final class TaskQueue {
     }
 
     List<TaskWrapper> getTasks() {
-      var tasks = new ArrayList<TaskWrapper>();
+      java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.TaskQueue.TaskWrapper> tasks = new ArrayList<TaskWrapper>();
       tasks.addAll(critical);
       tasks.addAll(elevated);
       tasks.addAll(regular);

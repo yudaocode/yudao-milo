@@ -13,6 +13,8 @@ package org.eclipse.milo.opcua.sdk.core.types;
 import java.util.LinkedHashMap;
 
 class PrettyToString {
+  private static String repeat(String value, int count) { StringBuilder b = new StringBuilder(); for (int i=0;i<count;i++) b.append(value); return b.toString(); }
+
 
   private PrettyToString() {}
 
@@ -27,8 +29,8 @@ class PrettyToString {
   }
 
   private static String toStringPretty(DynamicStructType struct, int indentLevel) {
-    String indent = "  ".repeat(indentLevel);
-    String childIndent = "  ".repeat(indentLevel + 1);
+    String indent = repeat("  ", indentLevel);
+    String childIndent = repeat("  ", indentLevel + 1);
     StringBuilder sb = new StringBuilder();
 
     sb.append(DynamicStructType.class.getSimpleName()).append("[\n");
@@ -53,10 +55,10 @@ class PrettyToString {
   private static void joinMembersPretty(
       LinkedHashMap<String, Object> members, StringBuilder sb, int indentLevel) {
 
-    String indent = "  ".repeat(indentLevel);
+    String indent = repeat("  ", indentLevel);
     boolean first = true;
 
-    for (var entry : members.entrySet()) {
+    for (java.util.Map.Entry<java.lang.String,java.lang.Object> entry : members.entrySet()) {
       String key = entry.getKey();
       Object value = entry.getValue();
 
@@ -67,7 +69,8 @@ class PrettyToString {
 
       sb.append(indent).append(key).append("=");
 
-      if (value instanceof DynamicStructType struct) {
+      if (value instanceof DynamicStructType) {
+      DynamicStructType struct = (DynamicStructType) value;
         sb.append(toStringPretty(struct, indentLevel));
       } else if (value instanceof DynamicEnumType
           || value instanceof DynamicUnionType
@@ -86,7 +89,7 @@ class PrettyToString {
   }
 
   private static void formatArray(Object[] array, StringBuilder sb, int indentLevel) {
-    String indent = "  ".repeat(indentLevel + 1);
+    String indent = repeat("  ", indentLevel + 1);
 
     sb.append("[\n");
 
@@ -95,7 +98,8 @@ class PrettyToString {
 
       sb.append(indent);
 
-      if (value instanceof DynamicStructType struct) {
+      if (value instanceof DynamicStructType) {
+      DynamicStructType struct = (DynamicStructType) value;
         sb.append(toStringPretty(struct, indentLevel + 1));
       } else {
         sb.append(value);
@@ -108,6 +112,6 @@ class PrettyToString {
       sb.append("\n");
     }
 
-    sb.append("  ".repeat(indentLevel)).append("]");
+    sb.append(repeat("  ", indentLevel)).append("]");
   }
 }

@@ -68,7 +68,7 @@ public interface AcknowledgeableConditionType extends ConditionType {
                   "EventId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The identifier for the event to comment.")),
@@ -76,7 +76,7 @@ public interface AcknowledgeableConditionType extends ConditionType {
                   "Comment",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The comment to add to the condition."))
@@ -124,7 +124,7 @@ public interface AcknowledgeableConditionType extends ConditionType {
                   "EventId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The identifier for the event to comment.")),
@@ -132,7 +132,7 @@ public interface AcknowledgeableConditionType extends ConditionType {
                   "Comment",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The comment to add to the condition."))

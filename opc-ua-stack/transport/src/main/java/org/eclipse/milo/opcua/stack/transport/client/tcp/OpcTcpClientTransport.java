@@ -10,9 +10,11 @@
 
 package org.eclipse.milo.opcua.stack.transport.client.tcp;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
-import com.digitalpetri.fsm.FsmContext;
+import com.digitalpetri.strictmachine.FsmContext;
 import com.digitalpetri.netty.fsm.ChannelActions;
 import com.digitalpetri.netty.fsm.ChannelFsm;
 import com.digitalpetri.netty.fsm.ChannelFsmConfig;
@@ -88,10 +90,10 @@ public class OpcTcpClientTransport extends AbstractUascClientTransport {
             .setExecutor(config.getExecutor())
             .setScheduler(config.getScheduledExecutor())
             .setLoggerName(CHANNEL_FSM_LOGGER_NAME)
-            .setLoggingContext(Map.of("instance-id", instanceId))
+            .setLoggingContext(Java8Collections.mapOf("instance-id", instanceId))
             .build();
 
-    var factory = new ChannelFsmFactory(fsmConfig);
+    com.digitalpetri.netty.fsm.ChannelFsmFactory factory = new ChannelFsmFactory(fsmConfig);
 
     channelFsm = factory.newChannelFsm();
   }
@@ -131,9 +133,9 @@ public class OpcTcpClientTransport extends AbstractUascClientTransport {
       ClientApplicationContext application =
           (ClientApplicationContext) ctx.get(KEY_CLIENT_APPLICATION);
 
-      var handshakeFuture = new CompletableFuture<ClientSecureChannel>();
+      java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.transport.client.uasc.ClientSecureChannel> handshakeFuture = new CompletableFuture<ClientSecureChannel>();
 
-      var bootstrap = new Bootstrap();
+      io.netty.bootstrap.Bootstrap bootstrap = new Bootstrap();
 
       bootstrap
           .channel(NioSocketChannel.class)
@@ -147,7 +149,7 @@ public class OpcTcpClientTransport extends AbstractUascClientTransport {
               new ChannelInitializer<SocketChannel>() {
                 @Override
                 protected void initChannel(SocketChannel ch) {
-                  var acknowledgeHandler =
+                  org.eclipse.milo.opcua.stack.transport.client.uasc.UascClientAcknowledgeHandler acknowledgeHandler =
                       new UascClientAcknowledgeHandler(
                           config, application, requestId::getAndIncrement, handshakeFuture);
 
@@ -192,7 +194,7 @@ public class OpcTcpClientTransport extends AbstractUascClientTransport {
 
     @Override
     public CompletableFuture<Void> disconnect(FsmContext<State, Event> ctx, Channel channel) {
-      var disconnectFuture = new CompletableFuture<Void>();
+      java.util.concurrent.CompletableFuture<java.lang.Void> disconnectFuture = new CompletableFuture<Void>();
 
       TimerTask onTimeout =
           t ->
@@ -219,7 +221,7 @@ public class OpcTcpClientTransport extends AbstractUascClientTransport {
                 }
               });
 
-      var requestHeader =
+      org.eclipse.milo.opcua.stack.core.types.structured.RequestHeader requestHeader =
           new RequestHeader(
               NodeId.NULL_VALUE, DateTime.now(), uint(0), uint(0), null, uint(0), null);
 

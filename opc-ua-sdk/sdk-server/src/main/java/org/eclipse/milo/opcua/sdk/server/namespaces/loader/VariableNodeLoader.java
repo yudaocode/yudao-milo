@@ -65,7 +65,7 @@ class VariableNodeLoader {
   }
 
   void loadNode0() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 104),
@@ -96,7 +96,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 105),
@@ -127,7 +127,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 106),
@@ -158,7 +158,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 107),
@@ -189,7 +189,7 @@ class VariableNodeLoader {
   }
 
   void loadNode4() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15001),
@@ -221,7 +221,7 @@ class VariableNodeLoader {
   }
 
   void loadNode5() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12169),
@@ -259,7 +259,7 @@ class VariableNodeLoader {
   }
 
   void loadNode6() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15958),
@@ -296,7 +296,7 @@ class VariableNodeLoader {
   }
 
   void loadNode7() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15959),
@@ -333,7 +333,7 @@ class VariableNodeLoader {
   }
 
   void loadNode8() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15960),
@@ -370,7 +370,7 @@ class VariableNodeLoader {
   }
 
   void loadNode9() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15961),
@@ -407,7 +407,7 @@ class VariableNodeLoader {
   }
 
   void loadNode10() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15962),
@@ -444,7 +444,7 @@ class VariableNodeLoader {
   }
 
   void loadNode11() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15963),
@@ -482,7 +482,7 @@ class VariableNodeLoader {
   }
 
   void loadNode12() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15964),
@@ -519,7 +519,7 @@ class VariableNodeLoader {
   }
 
   void loadNode13() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16134),
@@ -549,7 +549,7 @@ class VariableNodeLoader {
   }
 
   void loadNode14() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16135),
@@ -579,7 +579,7 @@ class VariableNodeLoader {
   }
 
   void loadNode15() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16136),
@@ -609,7 +609,7 @@ class VariableNodeLoader {
   }
 
   void loadNode16() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32408),
@@ -646,7 +646,7 @@ class VariableNodeLoader {
   }
 
   void loadNode17() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3068),
@@ -673,7 +673,7 @@ class VariableNodeLoader {
   }
 
   void loadNode18() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12170),
@@ -700,7 +700,7 @@ class VariableNodeLoader {
   }
 
   void loadNode19() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3067),
@@ -727,7 +727,7 @@ class VariableNodeLoader {
   }
 
   void loadNode20() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3069),
@@ -754,7 +754,7 @@ class VariableNodeLoader {
   }
 
   void loadNode21() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3070),
@@ -781,7 +781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode22() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11433),
@@ -808,7 +808,7 @@ class VariableNodeLoader {
   }
 
   void loadNode23() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11498),
@@ -835,7 +835,7 @@ class VariableNodeLoader {
   }
 
   void loadNode24() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15002),
@@ -862,7 +862,7 @@ class VariableNodeLoader {
   }
 
   void loadNode25() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12908),
@@ -889,7 +889,7 @@ class VariableNodeLoader {
   }
 
   void loadNode26() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11512),
@@ -916,7 +916,7 @@ class VariableNodeLoader {
   }
 
   void loadNode27() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11513),
@@ -943,7 +943,7 @@ class VariableNodeLoader {
   }
 
   void loadNode28() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24501),
@@ -970,7 +970,7 @@ class VariableNodeLoader {
   }
 
   void loadNode29() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11432),
@@ -997,7 +997,7 @@ class VariableNodeLoader {
   }
 
   void loadNode30() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3071),
@@ -1024,7 +1024,7 @@ class VariableNodeLoader {
   }
 
   void loadNode31() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12745),
@@ -1051,7 +1051,7 @@ class VariableNodeLoader {
   }
 
   void loadNode32() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32750),
@@ -1078,7 +1078,7 @@ class VariableNodeLoader {
   }
 
   void loadNode33() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3072),
@@ -1105,7 +1105,7 @@ class VariableNodeLoader {
   }
 
   void loadNode34() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3073),
@@ -1132,7 +1132,7 @@ class VariableNodeLoader {
   }
 
   void loadNode35() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17605),
@@ -1159,7 +1159,7 @@ class VariableNodeLoader {
   }
 
   void loadNode36() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2005),
@@ -1191,7 +1191,7 @@ class VariableNodeLoader {
   }
 
   void loadNode37() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2006),
@@ -1223,7 +1223,7 @@ class VariableNodeLoader {
   }
 
   void loadNode38() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15003),
@@ -1255,7 +1255,7 @@ class VariableNodeLoader {
   }
 
   void loadNode39() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ServerStatusTypeNode node =
         new ServerStatusTypeNode(
             this.context,
             new NodeId(0, 2007),
@@ -1306,7 +1306,7 @@ class VariableNodeLoader {
   }
 
   void loadNode40() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3074),
@@ -1338,7 +1338,7 @@ class VariableNodeLoader {
   }
 
   void loadNode41() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3075),
@@ -1370,7 +1370,7 @@ class VariableNodeLoader {
   }
 
   void loadNode42() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3076),
@@ -1402,7 +1402,7 @@ class VariableNodeLoader {
   }
 
   void loadNode43() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BuildInfoTypeNode node =
         new BuildInfoTypeNode(
             this.context,
             new NodeId(0, 3077),
@@ -1453,7 +1453,7 @@ class VariableNodeLoader {
   }
 
   void loadNode44() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3078),
@@ -1485,7 +1485,7 @@ class VariableNodeLoader {
   }
 
   void loadNode45() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3079),
@@ -1517,7 +1517,7 @@ class VariableNodeLoader {
   }
 
   void loadNode46() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3080),
@@ -1549,7 +1549,7 @@ class VariableNodeLoader {
   }
 
   void loadNode47() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3081),
@@ -1581,7 +1581,7 @@ class VariableNodeLoader {
   }
 
   void loadNode48() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3082),
@@ -1613,7 +1613,7 @@ class VariableNodeLoader {
   }
 
   void loadNode49() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3083),
@@ -1645,7 +1645,7 @@ class VariableNodeLoader {
   }
 
   void loadNode50() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3084),
@@ -1677,7 +1677,7 @@ class VariableNodeLoader {
   }
 
   void loadNode51() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3085),
@@ -1709,7 +1709,7 @@ class VariableNodeLoader {
   }
 
   void loadNode52() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2008),
@@ -1741,7 +1741,7 @@ class VariableNodeLoader {
   }
 
   void loadNode53() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2742),
@@ -1773,7 +1773,7 @@ class VariableNodeLoader {
   }
 
   void loadNode54() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12882),
@@ -1805,7 +1805,7 @@ class VariableNodeLoader {
   }
 
   void loadNode55() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17612),
@@ -1837,7 +1837,7 @@ class VariableNodeLoader {
   }
 
   void loadNode56() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3086),
@@ -1869,7 +1869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode57() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3087),
@@ -1901,7 +1901,7 @@ class VariableNodeLoader {
   }
 
   void loadNode58() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3088),
@@ -1933,7 +1933,7 @@ class VariableNodeLoader {
   }
 
   void loadNode59() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3089),
@@ -1965,7 +1965,7 @@ class VariableNodeLoader {
   }
 
   void loadNode60() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3090),
@@ -1997,7 +1997,7 @@ class VariableNodeLoader {
   }
 
   void loadNode61() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3091),
@@ -2029,7 +2029,7 @@ class VariableNodeLoader {
   }
 
   void loadNode62() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3092),
@@ -2061,7 +2061,7 @@ class VariableNodeLoader {
   }
 
   void loadNode63() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ServerDiagnosticsSummaryTypeNode node =
         new ServerDiagnosticsSummaryTypeNode(
             this.context,
             new NodeId(0, 3095),
@@ -2130,7 +2130,7 @@ class VariableNodeLoader {
   }
 
   void loadNode64() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3096),
@@ -2162,7 +2162,7 @@ class VariableNodeLoader {
   }
 
   void loadNode65() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3097),
@@ -2194,7 +2194,7 @@ class VariableNodeLoader {
   }
 
   void loadNode66() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3098),
@@ -2226,7 +2226,7 @@ class VariableNodeLoader {
   }
 
   void loadNode67() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3099),
@@ -2258,7 +2258,7 @@ class VariableNodeLoader {
   }
 
   void loadNode68() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3100),
@@ -2290,7 +2290,7 @@ class VariableNodeLoader {
   }
 
   void loadNode69() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3101),
@@ -2322,7 +2322,7 @@ class VariableNodeLoader {
   }
 
   void loadNode70() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3102),
@@ -2354,7 +2354,7 @@ class VariableNodeLoader {
   }
 
   void loadNode71() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3104),
@@ -2386,7 +2386,7 @@ class VariableNodeLoader {
   }
 
   void loadNode72() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3105),
@@ -2418,7 +2418,7 @@ class VariableNodeLoader {
   }
 
   void loadNode73() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3106),
@@ -2450,7 +2450,7 @@ class VariableNodeLoader {
   }
 
   void loadNode74() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3107),
@@ -2482,7 +2482,7 @@ class VariableNodeLoader {
   }
 
   void loadNode75() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3108),
@@ -2514,7 +2514,7 @@ class VariableNodeLoader {
   }
 
   void loadNode76() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SubscriptionDiagnosticsArrayTypeNode node =
         new SubscriptionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 3110),
@@ -2547,7 +2547,7 @@ class VariableNodeLoader {
   }
 
   void loadNode77() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionDiagnosticsArrayTypeNode node =
         new SessionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 3112),
@@ -2580,7 +2580,7 @@ class VariableNodeLoader {
   }
 
   void loadNode78() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionSecurityDiagnosticsArrayTypeNode node =
         new SessionSecurityDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 3113),
@@ -2613,7 +2613,7 @@ class VariableNodeLoader {
   }
 
   void loadNode79() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3114),
@@ -2645,7 +2645,7 @@ class VariableNodeLoader {
   }
 
   void loadNode80() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3115),
@@ -2677,7 +2677,7 @@ class VariableNodeLoader {
   }
 
   void loadNode81() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11490),
@@ -2716,7 +2716,7 @@ class VariableNodeLoader {
   }
 
   void loadNode82() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11491),
@@ -2756,7 +2756,7 @@ class VariableNodeLoader {
   }
 
   void loadNode83() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12872),
@@ -2795,7 +2795,7 @@ class VariableNodeLoader {
   }
 
   void loadNode84() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12747),
@@ -2835,7 +2835,7 @@ class VariableNodeLoader {
   }
 
   void loadNode85() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12748),
@@ -2874,7 +2874,7 @@ class VariableNodeLoader {
   }
 
   void loadNode86() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12884),
@@ -2914,7 +2914,7 @@ class VariableNodeLoader {
   }
 
   void loadNode87() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2014),
@@ -2946,7 +2946,7 @@ class VariableNodeLoader {
   }
 
   void loadNode88() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2016),
@@ -2978,7 +2978,7 @@ class VariableNodeLoader {
   }
 
   void loadNode89() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2017),
@@ -3010,7 +3010,7 @@ class VariableNodeLoader {
   }
 
   void loadNode90() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2732),
@@ -3042,7 +3042,7 @@ class VariableNodeLoader {
   }
 
   void loadNode91() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2733),
@@ -3074,7 +3074,7 @@ class VariableNodeLoader {
   }
 
   void loadNode92() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2734),
@@ -3106,7 +3106,7 @@ class VariableNodeLoader {
   }
 
   void loadNode93() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19809),
@@ -3138,7 +3138,7 @@ class VariableNodeLoader {
   }
 
   void loadNode94() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3049),
@@ -3170,7 +3170,7 @@ class VariableNodeLoader {
   }
 
   void loadNode95() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11549),
@@ -3202,7 +3202,7 @@ class VariableNodeLoader {
   }
 
   void loadNode96() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11550),
@@ -3234,7 +3234,7 @@ class VariableNodeLoader {
   }
 
   void loadNode97() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12910),
@@ -3266,7 +3266,7 @@ class VariableNodeLoader {
   }
 
   void loadNode98() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ServerVendorCapabilityTypeNode node =
         new ServerVendorCapabilityTypeNode(
             this.context,
             new NodeId(0, 11562),
@@ -3300,7 +3300,7 @@ class VariableNodeLoader {
   }
 
   void loadNode99() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16297),
@@ -3340,7 +3340,7 @@ class VariableNodeLoader {
   }
 
   void loadNode100() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16298),
@@ -3379,7 +3379,7 @@ class VariableNodeLoader {
   }
 
   void loadNode101() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16300),
@@ -3418,7 +3418,7 @@ class VariableNodeLoader {
   }
 
   void loadNode102() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24088),
@@ -3450,7 +3450,7 @@ class VariableNodeLoader {
   }
 
   void loadNode103() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24089),
@@ -3482,7 +3482,7 @@ class VariableNodeLoader {
   }
 
   void loadNode104() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24090),
@@ -3514,7 +3514,7 @@ class VariableNodeLoader {
   }
 
   void loadNode105() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24091),
@@ -3546,7 +3546,7 @@ class VariableNodeLoader {
   }
 
   void loadNode106() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24103),
@@ -3578,7 +3578,7 @@ class VariableNodeLoader {
   }
 
   void loadNode107() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24092),
@@ -3610,7 +3610,7 @@ class VariableNodeLoader {
   }
 
   void loadNode108() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24093),
@@ -3642,7 +3642,7 @@ class VariableNodeLoader {
   }
 
   void loadNode109() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 31770),
@@ -3674,7 +3674,7 @@ class VariableNodeLoader {
   }
 
   void loadNode110() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24094),
@@ -3706,7 +3706,7 @@ class VariableNodeLoader {
   }
 
   void loadNode111() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ServerDiagnosticsSummaryTypeNode node =
         new ServerDiagnosticsSummaryTypeNode(
             this.context,
             new NodeId(0, 2021),
@@ -3775,7 +3775,7 @@ class VariableNodeLoader {
   }
 
   void loadNode112() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3116),
@@ -3807,7 +3807,7 @@ class VariableNodeLoader {
   }
 
   void loadNode113() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3117),
@@ -3839,7 +3839,7 @@ class VariableNodeLoader {
   }
 
   void loadNode114() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3118),
@@ -3871,7 +3871,7 @@ class VariableNodeLoader {
   }
 
   void loadNode115() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3119),
@@ -3903,7 +3903,7 @@ class VariableNodeLoader {
   }
 
   void loadNode116() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3120),
@@ -3935,7 +3935,7 @@ class VariableNodeLoader {
   }
 
   void loadNode117() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3121),
@@ -3967,7 +3967,7 @@ class VariableNodeLoader {
   }
 
   void loadNode118() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3122),
@@ -3999,7 +3999,7 @@ class VariableNodeLoader {
   }
 
   void loadNode119() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3124),
@@ -4031,7 +4031,7 @@ class VariableNodeLoader {
   }
 
   void loadNode120() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3125),
@@ -4063,7 +4063,7 @@ class VariableNodeLoader {
   }
 
   void loadNode121() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3126),
@@ -4095,7 +4095,7 @@ class VariableNodeLoader {
   }
 
   void loadNode122() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3127),
@@ -4127,7 +4127,7 @@ class VariableNodeLoader {
   }
 
   void loadNode123() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3128),
@@ -4159,7 +4159,7 @@ class VariableNodeLoader {
   }
 
   void loadNode124() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SamplingIntervalDiagnosticsArrayTypeNode node =
         new SamplingIntervalDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 2022),
@@ -4192,7 +4192,7 @@ class VariableNodeLoader {
   }
 
   void loadNode125() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SubscriptionDiagnosticsArrayTypeNode node =
         new SubscriptionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 2023),
@@ -4225,7 +4225,7 @@ class VariableNodeLoader {
   }
 
   void loadNode126() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionDiagnosticsArrayTypeNode node =
         new SessionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 3129),
@@ -4258,7 +4258,7 @@ class VariableNodeLoader {
   }
 
   void loadNode127() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionSecurityDiagnosticsArrayTypeNode node =
         new SessionSecurityDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 3130),
@@ -4291,7 +4291,7 @@ class VariableNodeLoader {
   }
 
   void loadNode128() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2025),
@@ -4323,7 +4323,7 @@ class VariableNodeLoader {
   }
 
   void loadNode129() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionDiagnosticsArrayTypeNode node =
         new SessionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 2027),
@@ -4356,7 +4356,7 @@ class VariableNodeLoader {
   }
 
   void loadNode130() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionSecurityDiagnosticsArrayTypeNode node =
         new SessionSecurityDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 2028),
@@ -4389,7 +4389,7 @@ class VariableNodeLoader {
   }
 
   void loadNode131() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionDiagnosticsVariableTypeNode node =
         new SessionDiagnosticsVariableTypeNode(
             this.context,
             new NodeId(0, 12098),
@@ -4551,7 +4551,7 @@ class VariableNodeLoader {
   }
 
   void loadNode132() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12099),
@@ -4583,7 +4583,7 @@ class VariableNodeLoader {
   }
 
   void loadNode133() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12100),
@@ -4615,7 +4615,7 @@ class VariableNodeLoader {
   }
 
   void loadNode134() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12101),
@@ -4647,7 +4647,7 @@ class VariableNodeLoader {
   }
 
   void loadNode135() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12102),
@@ -4679,7 +4679,7 @@ class VariableNodeLoader {
   }
 
   void loadNode136() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12103),
@@ -4711,7 +4711,7 @@ class VariableNodeLoader {
   }
 
   void loadNode137() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12104),
@@ -4743,7 +4743,7 @@ class VariableNodeLoader {
   }
 
   void loadNode138() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12105),
@@ -4775,7 +4775,7 @@ class VariableNodeLoader {
   }
 
   void loadNode139() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12106),
@@ -4807,7 +4807,7 @@ class VariableNodeLoader {
   }
 
   void loadNode140() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12107),
@@ -4839,7 +4839,7 @@ class VariableNodeLoader {
   }
 
   void loadNode141() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12108),
@@ -4871,7 +4871,7 @@ class VariableNodeLoader {
   }
 
   void loadNode142() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12109),
@@ -4903,7 +4903,7 @@ class VariableNodeLoader {
   }
 
   void loadNode143() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12110),
@@ -4935,7 +4935,7 @@ class VariableNodeLoader {
   }
 
   void loadNode144() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12111),
@@ -4967,7 +4967,7 @@ class VariableNodeLoader {
   }
 
   void loadNode145() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12112),
@@ -4999,7 +4999,7 @@ class VariableNodeLoader {
   }
 
   void loadNode146() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12113),
@@ -5031,7 +5031,7 @@ class VariableNodeLoader {
   }
 
   void loadNode147() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12114),
@@ -5063,7 +5063,7 @@ class VariableNodeLoader {
   }
 
   void loadNode148() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12115),
@@ -5095,7 +5095,7 @@ class VariableNodeLoader {
   }
 
   void loadNode149() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12116),
@@ -5127,7 +5127,7 @@ class VariableNodeLoader {
   }
 
   void loadNode150() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12117),
@@ -5159,7 +5159,7 @@ class VariableNodeLoader {
   }
 
   void loadNode151() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12118),
@@ -5191,7 +5191,7 @@ class VariableNodeLoader {
   }
 
   void loadNode152() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12119),
@@ -5223,7 +5223,7 @@ class VariableNodeLoader {
   }
 
   void loadNode153() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12120),
@@ -5255,7 +5255,7 @@ class VariableNodeLoader {
   }
 
   void loadNode154() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12121),
@@ -5287,7 +5287,7 @@ class VariableNodeLoader {
   }
 
   void loadNode155() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12122),
@@ -5319,7 +5319,7 @@ class VariableNodeLoader {
   }
 
   void loadNode156() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12123),
@@ -5351,7 +5351,7 @@ class VariableNodeLoader {
   }
 
   void loadNode157() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12124),
@@ -5383,7 +5383,7 @@ class VariableNodeLoader {
   }
 
   void loadNode158() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12125),
@@ -5415,7 +5415,7 @@ class VariableNodeLoader {
   }
 
   void loadNode159() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12126),
@@ -5447,7 +5447,7 @@ class VariableNodeLoader {
   }
 
   void loadNode160() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12127),
@@ -5479,7 +5479,7 @@ class VariableNodeLoader {
   }
 
   void loadNode161() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12128),
@@ -5511,7 +5511,7 @@ class VariableNodeLoader {
   }
 
   void loadNode162() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12129),
@@ -5543,7 +5543,7 @@ class VariableNodeLoader {
   }
 
   void loadNode163() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12130),
@@ -5575,7 +5575,7 @@ class VariableNodeLoader {
   }
 
   void loadNode164() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12131),
@@ -5607,7 +5607,7 @@ class VariableNodeLoader {
   }
 
   void loadNode165() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12132),
@@ -5639,7 +5639,7 @@ class VariableNodeLoader {
   }
 
   void loadNode166() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12133),
@@ -5671,7 +5671,7 @@ class VariableNodeLoader {
   }
 
   void loadNode167() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12134),
@@ -5703,7 +5703,7 @@ class VariableNodeLoader {
   }
 
   void loadNode168() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12135),
@@ -5735,7 +5735,7 @@ class VariableNodeLoader {
   }
 
   void loadNode169() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12136),
@@ -5767,7 +5767,7 @@ class VariableNodeLoader {
   }
 
   void loadNode170() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12137),
@@ -5799,7 +5799,7 @@ class VariableNodeLoader {
   }
 
   void loadNode171() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12138),
@@ -5831,7 +5831,7 @@ class VariableNodeLoader {
   }
 
   void loadNode172() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12139),
@@ -5863,7 +5863,7 @@ class VariableNodeLoader {
   }
 
   void loadNode173() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12140),
@@ -5895,7 +5895,7 @@ class VariableNodeLoader {
   }
 
   void loadNode174() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12141),
@@ -5927,7 +5927,7 @@ class VariableNodeLoader {
   }
 
   void loadNode175() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionSecurityDiagnosticsTypeNode node =
         new SessionSecurityDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 12142),
@@ -5987,7 +5987,7 @@ class VariableNodeLoader {
   }
 
   void loadNode176() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12143),
@@ -6019,7 +6019,7 @@ class VariableNodeLoader {
   }
 
   void loadNode177() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12144),
@@ -6051,7 +6051,7 @@ class VariableNodeLoader {
   }
 
   void loadNode178() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12145),
@@ -6083,7 +6083,7 @@ class VariableNodeLoader {
   }
 
   void loadNode179() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12146),
@@ -6115,7 +6115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode180() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12147),
@@ -6147,7 +6147,7 @@ class VariableNodeLoader {
   }
 
   void loadNode181() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12148),
@@ -6179,7 +6179,7 @@ class VariableNodeLoader {
   }
 
   void loadNode182() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12149),
@@ -6211,7 +6211,7 @@ class VariableNodeLoader {
   }
 
   void loadNode183() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12150),
@@ -6243,7 +6243,7 @@ class VariableNodeLoader {
   }
 
   void loadNode184() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12151),
@@ -6275,7 +6275,7 @@ class VariableNodeLoader {
   }
 
   void loadNode185() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SubscriptionDiagnosticsArrayTypeNode node =
         new SubscriptionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 12152),
@@ -6308,7 +6308,7 @@ class VariableNodeLoader {
   }
 
   void loadNode186() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionDiagnosticsVariableTypeNode node =
         new SessionDiagnosticsVariableTypeNode(
             this.context,
             new NodeId(0, 2030),
@@ -6470,7 +6470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode187() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3131),
@@ -6502,7 +6502,7 @@ class VariableNodeLoader {
   }
 
   void loadNode188() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3132),
@@ -6534,7 +6534,7 @@ class VariableNodeLoader {
   }
 
   void loadNode189() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3133),
@@ -6566,7 +6566,7 @@ class VariableNodeLoader {
   }
 
   void loadNode190() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3134),
@@ -6598,7 +6598,7 @@ class VariableNodeLoader {
   }
 
   void loadNode191() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3135),
@@ -6630,7 +6630,7 @@ class VariableNodeLoader {
   }
 
   void loadNode192() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3136),
@@ -6662,7 +6662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode193() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3137),
@@ -6694,7 +6694,7 @@ class VariableNodeLoader {
   }
 
   void loadNode194() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3138),
@@ -6726,7 +6726,7 @@ class VariableNodeLoader {
   }
 
   void loadNode195() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3139),
@@ -6758,7 +6758,7 @@ class VariableNodeLoader {
   }
 
   void loadNode196() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3140),
@@ -6790,7 +6790,7 @@ class VariableNodeLoader {
   }
 
   void loadNode197() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3141),
@@ -6822,7 +6822,7 @@ class VariableNodeLoader {
   }
 
   void loadNode198() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3142),
@@ -6854,7 +6854,7 @@ class VariableNodeLoader {
   }
 
   void loadNode199() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3143),
@@ -6886,7 +6886,7 @@ class VariableNodeLoader {
   }
 
   void loadNode200() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8898),
@@ -6918,7 +6918,7 @@ class VariableNodeLoader {
   }
 
   void loadNode201() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 11891),
@@ -6950,7 +6950,7 @@ class VariableNodeLoader {
   }
 
   void loadNode202() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3151),
@@ -6982,7 +6982,7 @@ class VariableNodeLoader {
   }
 
   void loadNode203() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3152),
@@ -7014,7 +7014,7 @@ class VariableNodeLoader {
   }
 
   void loadNode204() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3153),
@@ -7046,7 +7046,7 @@ class VariableNodeLoader {
   }
 
   void loadNode205() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3154),
@@ -7078,7 +7078,7 @@ class VariableNodeLoader {
   }
 
   void loadNode206() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3155),
@@ -7110,7 +7110,7 @@ class VariableNodeLoader {
   }
 
   void loadNode207() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3156),
@@ -7142,7 +7142,7 @@ class VariableNodeLoader {
   }
 
   void loadNode208() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3157),
@@ -7174,7 +7174,7 @@ class VariableNodeLoader {
   }
 
   void loadNode209() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3158),
@@ -7206,7 +7206,7 @@ class VariableNodeLoader {
   }
 
   void loadNode210() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3159),
@@ -7238,7 +7238,7 @@ class VariableNodeLoader {
   }
 
   void loadNode211() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3160),
@@ -7270,7 +7270,7 @@ class VariableNodeLoader {
   }
 
   void loadNode212() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3161),
@@ -7302,7 +7302,7 @@ class VariableNodeLoader {
   }
 
   void loadNode213() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3162),
@@ -7334,7 +7334,7 @@ class VariableNodeLoader {
   }
 
   void loadNode214() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3163),
@@ -7366,7 +7366,7 @@ class VariableNodeLoader {
   }
 
   void loadNode215() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3164),
@@ -7398,7 +7398,7 @@ class VariableNodeLoader {
   }
 
   void loadNode216() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3165),
@@ -7430,7 +7430,7 @@ class VariableNodeLoader {
   }
 
   void loadNode217() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3166),
@@ -7462,7 +7462,7 @@ class VariableNodeLoader {
   }
 
   void loadNode218() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3167),
@@ -7494,7 +7494,7 @@ class VariableNodeLoader {
   }
 
   void loadNode219() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3168),
@@ -7526,7 +7526,7 @@ class VariableNodeLoader {
   }
 
   void loadNode220() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3169),
@@ -7558,7 +7558,7 @@ class VariableNodeLoader {
   }
 
   void loadNode221() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3170),
@@ -7590,7 +7590,7 @@ class VariableNodeLoader {
   }
 
   void loadNode222() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3171),
@@ -7622,7 +7622,7 @@ class VariableNodeLoader {
   }
 
   void loadNode223() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3172),
@@ -7654,7 +7654,7 @@ class VariableNodeLoader {
   }
 
   void loadNode224() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3173),
@@ -7686,7 +7686,7 @@ class VariableNodeLoader {
   }
 
   void loadNode225() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3174),
@@ -7718,7 +7718,7 @@ class VariableNodeLoader {
   }
 
   void loadNode226() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3175),
@@ -7750,7 +7750,7 @@ class VariableNodeLoader {
   }
 
   void loadNode227() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3176),
@@ -7782,7 +7782,7 @@ class VariableNodeLoader {
   }
 
   void loadNode228() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3177),
@@ -7814,7 +7814,7 @@ class VariableNodeLoader {
   }
 
   void loadNode229() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3178),
@@ -7846,7 +7846,7 @@ class VariableNodeLoader {
   }
 
   void loadNode230() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionSecurityDiagnosticsTypeNode node =
         new SessionSecurityDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 2031),
@@ -7906,7 +7906,7 @@ class VariableNodeLoader {
   }
 
   void loadNode231() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3179),
@@ -7938,7 +7938,7 @@ class VariableNodeLoader {
   }
 
   void loadNode232() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3180),
@@ -7970,7 +7970,7 @@ class VariableNodeLoader {
   }
 
   void loadNode233() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3181),
@@ -8002,7 +8002,7 @@ class VariableNodeLoader {
   }
 
   void loadNode234() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3182),
@@ -8034,7 +8034,7 @@ class VariableNodeLoader {
   }
 
   void loadNode235() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3183),
@@ -8066,7 +8066,7 @@ class VariableNodeLoader {
   }
 
   void loadNode236() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3184),
@@ -8098,7 +8098,7 @@ class VariableNodeLoader {
   }
 
   void loadNode237() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3185),
@@ -8130,7 +8130,7 @@ class VariableNodeLoader {
   }
 
   void loadNode238() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3186),
@@ -8162,7 +8162,7 @@ class VariableNodeLoader {
   }
 
   void loadNode239() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3187),
@@ -8194,7 +8194,7 @@ class VariableNodeLoader {
   }
 
   void loadNode240() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SubscriptionDiagnosticsArrayTypeNode node =
         new SubscriptionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 2032),
@@ -8227,7 +8227,7 @@ class VariableNodeLoader {
   }
 
   void loadNode241() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19303),
@@ -8259,7 +8259,7 @@ class VariableNodeLoader {
   }
 
   void loadNode242() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2035),
@@ -8291,7 +8291,7 @@ class VariableNodeLoader {
   }
 
   void loadNode243() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32410),
@@ -8323,7 +8323,7 @@ class VariableNodeLoader {
   }
 
   void loadNode244() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2038),
@@ -8355,7 +8355,7 @@ class VariableNodeLoader {
   }
 
   void loadNode245() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2037),
@@ -8387,7 +8387,7 @@ class VariableNodeLoader {
   }
 
   void loadNode246() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2040),
@@ -8419,7 +8419,7 @@ class VariableNodeLoader {
   }
 
   void loadNode247() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11948),
@@ -8451,7 +8451,7 @@ class VariableNodeLoader {
   }
 
   void loadNode248() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32413),
@@ -8483,7 +8483,7 @@ class VariableNodeLoader {
   }
 
   void loadNode249() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32415),
@@ -8515,7 +8515,7 @@ class VariableNodeLoader {
   }
 
   void loadNode250() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32418),
@@ -8553,7 +8553,7 @@ class VariableNodeLoader {
   }
 
   void loadNode251() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11565),
@@ -8585,7 +8585,7 @@ class VariableNodeLoader {
   }
 
   void loadNode252() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12161),
@@ -8617,7 +8617,7 @@ class VariableNodeLoader {
   }
 
   void loadNode253() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12162),
@@ -8649,7 +8649,7 @@ class VariableNodeLoader {
   }
 
   void loadNode254() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11567),
@@ -8681,7 +8681,7 @@ class VariableNodeLoader {
   }
 
   void loadNode255() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12163),
@@ -8713,7 +8713,7 @@ class VariableNodeLoader {
   }
 
   void loadNode256() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12164),
@@ -8745,7 +8745,7 @@ class VariableNodeLoader {
   }
 
   void loadNode257() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11569),
@@ -8777,7 +8777,7 @@ class VariableNodeLoader {
   }
 
   void loadNode258() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11570),
@@ -8809,7 +8809,7 @@ class VariableNodeLoader {
   }
 
   void loadNode259() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11571),
@@ -8841,7 +8841,7 @@ class VariableNodeLoader {
   }
 
   void loadNode260() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11572),
@@ -8873,7 +8873,7 @@ class VariableNodeLoader {
   }
 
   void loadNode261() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11573),
@@ -8905,7 +8905,7 @@ class VariableNodeLoader {
   }
 
   void loadNode262() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11574),
@@ -8937,7 +8937,7 @@ class VariableNodeLoader {
   }
 
   void loadNode263() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11576),
@@ -8969,7 +8969,7 @@ class VariableNodeLoader {
   }
 
   void loadNode264() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12686),
@@ -9001,7 +9001,7 @@ class VariableNodeLoader {
   }
 
   void loadNode265() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12687),
@@ -9033,7 +9033,7 @@ class VariableNodeLoader {
   }
 
   void loadNode266() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11579),
@@ -9065,7 +9065,7 @@ class VariableNodeLoader {
   }
 
   void loadNode267() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13341),
@@ -9097,7 +9097,7 @@ class VariableNodeLoader {
   }
 
   void loadNode268() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24244),
@@ -9129,7 +9129,7 @@ class VariableNodeLoader {
   }
 
   void loadNode269() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25200),
@@ -9161,7 +9161,7 @@ class VariableNodeLoader {
   }
 
   void loadNode270() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11581),
@@ -9200,7 +9200,7 @@ class VariableNodeLoader {
   }
 
   void loadNode271() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11582),
@@ -9239,7 +9239,7 @@ class VariableNodeLoader {
   }
 
   void loadNode272() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11584),
@@ -9278,7 +9278,7 @@ class VariableNodeLoader {
   }
 
   void loadNode273() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11586),
@@ -9318,7 +9318,7 @@ class VariableNodeLoader {
   }
 
   void loadNode274() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11587),
@@ -9357,7 +9357,7 @@ class VariableNodeLoader {
   }
 
   void loadNode275() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11589),
@@ -9397,7 +9397,7 @@ class VariableNodeLoader {
   }
 
   void loadNode276() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11591),
@@ -9436,7 +9436,7 @@ class VariableNodeLoader {
   }
 
   void loadNode277() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11592),
@@ -9475,7 +9475,7 @@ class VariableNodeLoader {
   }
 
   void loadNode278() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11594),
@@ -9515,7 +9515,7 @@ class VariableNodeLoader {
   }
 
   void loadNode279() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11617),
@@ -9547,7 +9547,7 @@ class VariableNodeLoader {
   }
 
   void loadNode280() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11618),
@@ -9579,7 +9579,7 @@ class VariableNodeLoader {
   }
 
   void loadNode281() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11619),
@@ -9611,7 +9611,7 @@ class VariableNodeLoader {
   }
 
   void loadNode282() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11620),
@@ -9643,7 +9643,7 @@ class VariableNodeLoader {
   }
 
   void loadNode283() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11621),
@@ -9675,7 +9675,7 @@ class VariableNodeLoader {
   }
 
   void loadNode284() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11622),
@@ -9707,7 +9707,7 @@ class VariableNodeLoader {
   }
 
   void loadNode285() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11623),
@@ -9739,7 +9739,7 @@ class VariableNodeLoader {
   }
 
   void loadNode286() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11625),
@@ -9771,7 +9771,7 @@ class VariableNodeLoader {
   }
 
   void loadNode287() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12690),
@@ -9803,7 +9803,7 @@ class VariableNodeLoader {
   }
 
   void loadNode288() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12691),
@@ -9835,7 +9835,7 @@ class VariableNodeLoader {
   }
 
   void loadNode289() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11628),
@@ -9867,7 +9867,7 @@ class VariableNodeLoader {
   }
 
   void loadNode290() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11630),
@@ -9906,7 +9906,7 @@ class VariableNodeLoader {
   }
 
   void loadNode291() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11631),
@@ -9945,7 +9945,7 @@ class VariableNodeLoader {
   }
 
   void loadNode292() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11633),
@@ -9984,7 +9984,7 @@ class VariableNodeLoader {
   }
 
   void loadNode293() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11635),
@@ -10024,7 +10024,7 @@ class VariableNodeLoader {
   }
 
   void loadNode294() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11636),
@@ -10063,7 +10063,7 @@ class VariableNodeLoader {
   }
 
   void loadNode295() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11638),
@@ -10103,7 +10103,7 @@ class VariableNodeLoader {
   }
 
   void loadNode296() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11640),
@@ -10142,7 +10142,7 @@ class VariableNodeLoader {
   }
 
   void loadNode297() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11641),
@@ -10181,7 +10181,7 @@ class VariableNodeLoader {
   }
 
   void loadNode298() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11643),
@@ -10221,7 +10221,7 @@ class VariableNodeLoader {
   }
 
   void loadNode299() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16137),
@@ -10253,7 +10253,7 @@ class VariableNodeLoader {
   }
 
   void loadNode300() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16138),
@@ -10285,7 +10285,7 @@ class VariableNodeLoader {
   }
 
   void loadNode301() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16139),
@@ -10317,7 +10317,7 @@ class VariableNodeLoader {
   }
 
   void loadNode302() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25267),
@@ -10349,7 +10349,7 @@ class VariableNodeLoader {
   }
 
   void loadNode303() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32419),
@@ -10381,7 +10381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode304() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11647),
@@ -10413,7 +10413,7 @@ class VariableNodeLoader {
   }
 
   void loadNode305() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11648),
@@ -10445,7 +10445,7 @@ class VariableNodeLoader {
   }
 
   void loadNode306() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11649),
@@ -10477,7 +10477,7 @@ class VariableNodeLoader {
   }
 
   void loadNode307() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11650),
@@ -10509,7 +10509,7 @@ class VariableNodeLoader {
   }
 
   void loadNode308() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11651),
@@ -10541,7 +10541,7 @@ class VariableNodeLoader {
   }
 
   void loadNode309() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11652),
@@ -10573,7 +10573,7 @@ class VariableNodeLoader {
   }
 
   void loadNode310() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11653),
@@ -10605,7 +10605,7 @@ class VariableNodeLoader {
   }
 
   void loadNode311() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2042),
@@ -10637,7 +10637,7 @@ class VariableNodeLoader {
   }
 
   void loadNode312() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2043),
@@ -10669,7 +10669,7 @@ class VariableNodeLoader {
   }
 
   void loadNode313() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2044),
@@ -10701,7 +10701,7 @@ class VariableNodeLoader {
   }
 
   void loadNode314() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2045),
@@ -10733,7 +10733,7 @@ class VariableNodeLoader {
   }
 
   void loadNode315() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2046),
@@ -10765,7 +10765,7 @@ class VariableNodeLoader {
   }
 
   void loadNode316() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2047),
@@ -10797,7 +10797,7 @@ class VariableNodeLoader {
   }
 
   void loadNode317() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3190),
@@ -10829,7 +10829,7 @@ class VariableNodeLoader {
   }
 
   void loadNode318() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2050),
@@ -10861,7 +10861,7 @@ class VariableNodeLoader {
   }
 
   void loadNode319() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2051),
@@ -10893,7 +10893,7 @@ class VariableNodeLoader {
   }
 
   void loadNode320() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 31771),
@@ -10925,7 +10925,7 @@ class VariableNodeLoader {
   }
 
   void loadNode321() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 31772),
@@ -10957,7 +10957,7 @@ class VariableNodeLoader {
   }
 
   void loadNode322() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 31773),
@@ -10989,7 +10989,7 @@ class VariableNodeLoader {
   }
 
   void loadNode323() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 31774),
@@ -11021,7 +11021,7 @@ class VariableNodeLoader {
   }
 
   void loadNode324() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2053),
@@ -11053,7 +11053,7 @@ class VariableNodeLoader {
   }
 
   void loadNode325() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2054),
@@ -11085,7 +11085,7 @@ class VariableNodeLoader {
   }
 
   void loadNode326() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2055),
@@ -11117,7 +11117,7 @@ class VariableNodeLoader {
   }
 
   void loadNode327() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2056),
@@ -11149,7 +11149,7 @@ class VariableNodeLoader {
   }
 
   void loadNode328() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2057),
@@ -11181,7 +11181,7 @@ class VariableNodeLoader {
   }
 
   void loadNode329() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19811),
@@ -11213,7 +11213,7 @@ class VariableNodeLoader {
   }
 
   void loadNode330() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17615),
@@ -11245,7 +11245,7 @@ class VariableNodeLoader {
   }
 
   void loadNode331() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2745),
@@ -11277,7 +11277,7 @@ class VariableNodeLoader {
   }
 
   void loadNode332() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2061),
@@ -11309,7 +11309,7 @@ class VariableNodeLoader {
   }
 
   void loadNode333() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2746),
@@ -11341,7 +11341,7 @@ class VariableNodeLoader {
   }
 
   void loadNode334() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2062),
@@ -11373,7 +11373,7 @@ class VariableNodeLoader {
   }
 
   void loadNode335() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2063),
@@ -11405,7 +11405,7 @@ class VariableNodeLoader {
   }
 
   void loadNode336() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2065),
@@ -11437,7 +11437,7 @@ class VariableNodeLoader {
   }
 
   void loadNode337() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2066),
@@ -11469,7 +11469,7 @@ class VariableNodeLoader {
   }
 
   void loadNode338() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24135),
@@ -11501,7 +11501,7 @@ class VariableNodeLoader {
   }
 
   void loadNode339() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2070),
@@ -11533,7 +11533,7 @@ class VariableNodeLoader {
   }
 
   void loadNode340() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2072),
@@ -11565,7 +11565,7 @@ class VariableNodeLoader {
   }
 
   void loadNode341() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2073),
@@ -11597,7 +11597,7 @@ class VariableNodeLoader {
   }
 
   void loadNode342() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2747),
@@ -11629,7 +11629,7 @@ class VariableNodeLoader {
   }
 
   void loadNode343() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2074),
@@ -11661,7 +11661,7 @@ class VariableNodeLoader {
   }
 
   void loadNode344() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2749),
@@ -11693,7 +11693,7 @@ class VariableNodeLoader {
   }
 
   void loadNode345() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2076),
@@ -11725,7 +11725,7 @@ class VariableNodeLoader {
   }
 
   void loadNode346() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2077),
@@ -11757,7 +11757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode347() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11485),
@@ -11789,7 +11789,7 @@ class VariableNodeLoader {
   }
 
   void loadNode348() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19304),
@@ -11821,7 +11821,7 @@ class VariableNodeLoader {
   }
 
   void loadNode349() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2079),
@@ -11853,7 +11853,7 @@ class VariableNodeLoader {
   }
 
   void loadNode350() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2081),
@@ -11885,7 +11885,7 @@ class VariableNodeLoader {
   }
 
   void loadNode351() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2083),
@@ -11917,7 +11917,7 @@ class VariableNodeLoader {
   }
 
   void loadNode352() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2084),
@@ -11949,7 +11949,7 @@ class VariableNodeLoader {
   }
 
   void loadNode353() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2092),
@@ -11981,7 +11981,7 @@ class VariableNodeLoader {
   }
 
   void loadNode354() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2094),
@@ -12013,7 +12013,7 @@ class VariableNodeLoader {
   }
 
   void loadNode355() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2096),
@@ -12045,7 +12045,7 @@ class VariableNodeLoader {
   }
 
   void loadNode356() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2098),
@@ -12077,7 +12077,7 @@ class VariableNodeLoader {
   }
 
   void loadNode357() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2750),
@@ -12109,7 +12109,7 @@ class VariableNodeLoader {
   }
 
   void loadNode358() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2101),
@@ -12141,7 +12141,7 @@ class VariableNodeLoader {
   }
 
   void loadNode359() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2102),
@@ -12173,7 +12173,7 @@ class VariableNodeLoader {
   }
 
   void loadNode360() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2103),
@@ -12205,7 +12205,7 @@ class VariableNodeLoader {
   }
 
   void loadNode361() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2751),
@@ -12237,7 +12237,7 @@ class VariableNodeLoader {
   }
 
   void loadNode362() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2128),
@@ -12269,7 +12269,7 @@ class VariableNodeLoader {
   }
 
   void loadNode363() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19305),
@@ -12301,7 +12301,7 @@ class VariableNodeLoader {
   }
 
   void loadNode364() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2129),
@@ -12333,7 +12333,7 @@ class VariableNodeLoader {
   }
 
   void loadNode365() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19306),
@@ -12365,7 +12365,7 @@ class VariableNodeLoader {
   }
 
   void loadNode366() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11696),
@@ -12397,7 +12397,7 @@ class VariableNodeLoader {
   }
 
   void loadNode367() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2134),
@@ -12429,7 +12429,7 @@ class VariableNodeLoader {
   }
 
   void loadNode368() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2739),
@@ -12461,7 +12461,7 @@ class VariableNodeLoader {
   }
 
   void loadNode369() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12502),
@@ -12493,7 +12493,7 @@ class VariableNodeLoader {
   }
 
   void loadNode370() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12503),
@@ -12525,7 +12525,7 @@ class VariableNodeLoader {
   }
 
   void loadNode371() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23908),
@@ -12557,7 +12557,7 @@ class VariableNodeLoader {
   }
 
   void loadNode372() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23994),
@@ -12589,7 +12589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode373() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23995),
@@ -12621,7 +12621,7 @@ class VariableNodeLoader {
   }
 
   void loadNode374() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23998),
@@ -12653,7 +12653,7 @@ class VariableNodeLoader {
   }
 
   void loadNode375() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23999),
@@ -12685,7 +12685,7 @@ class VariableNodeLoader {
   }
 
   void loadNode376() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25684),
@@ -12717,7 +12717,7 @@ class VariableNodeLoader {
   }
 
   void loadNode377() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2139),
@@ -12749,7 +12749,7 @@ class VariableNodeLoader {
   }
 
   void loadNode378() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2140),
@@ -12781,7 +12781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode379() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2141),
@@ -12813,7 +12813,7 @@ class VariableNodeLoader {
   }
 
   void loadNode380() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BuildInfoTypeNode node =
         new BuildInfoTypeNode(
             this.context,
             new NodeId(0, 2142),
@@ -12864,7 +12864,7 @@ class VariableNodeLoader {
   }
 
   void loadNode381() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3698),
@@ -12896,7 +12896,7 @@ class VariableNodeLoader {
   }
 
   void loadNode382() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3699),
@@ -12928,7 +12928,7 @@ class VariableNodeLoader {
   }
 
   void loadNode383() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3700),
@@ -12960,7 +12960,7 @@ class VariableNodeLoader {
   }
 
   void loadNode384() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3701),
@@ -12992,7 +12992,7 @@ class VariableNodeLoader {
   }
 
   void loadNode385() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3702),
@@ -13024,7 +13024,7 @@ class VariableNodeLoader {
   }
 
   void loadNode386() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3703),
@@ -13056,7 +13056,7 @@ class VariableNodeLoader {
   }
 
   void loadNode387() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2752),
@@ -13088,7 +13088,7 @@ class VariableNodeLoader {
   }
 
   void loadNode388() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2753),
@@ -13120,7 +13120,7 @@ class VariableNodeLoader {
   }
 
   void loadNode389() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3052),
@@ -13152,7 +13152,7 @@ class VariableNodeLoader {
   }
 
   void loadNode390() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3053),
@@ -13184,7 +13184,7 @@ class VariableNodeLoader {
   }
 
   void loadNode391() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3054),
@@ -13216,7 +13216,7 @@ class VariableNodeLoader {
   }
 
   void loadNode392() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3055),
@@ -13248,7 +13248,7 @@ class VariableNodeLoader {
   }
 
   void loadNode393() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3056),
@@ -13280,7 +13280,7 @@ class VariableNodeLoader {
   }
 
   void loadNode394() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3057),
@@ -13312,7 +13312,7 @@ class VariableNodeLoader {
   }
 
   void loadNode395() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2151),
@@ -13344,7 +13344,7 @@ class VariableNodeLoader {
   }
 
   void loadNode396() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2152),
@@ -13376,7 +13376,7 @@ class VariableNodeLoader {
   }
 
   void loadNode397() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2153),
@@ -13408,7 +13408,7 @@ class VariableNodeLoader {
   }
 
   void loadNode398() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2154),
@@ -13440,7 +13440,7 @@ class VariableNodeLoader {
   }
 
   void loadNode399() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2155),
@@ -13472,7 +13472,7 @@ class VariableNodeLoader {
   }
 
   void loadNode400() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2156),
@@ -13504,7 +13504,7 @@ class VariableNodeLoader {
   }
 
   void loadNode401() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2157),
@@ -13536,7 +13536,7 @@ class VariableNodeLoader {
   }
 
   void loadNode402() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2159),
@@ -13568,7 +13568,7 @@ class VariableNodeLoader {
   }
 
   void loadNode403() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2160),
@@ -13600,7 +13600,7 @@ class VariableNodeLoader {
   }
 
   void loadNode404() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2161),
@@ -13632,7 +13632,7 @@ class VariableNodeLoader {
   }
 
   void loadNode405() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2162),
@@ -13664,7 +13664,7 @@ class VariableNodeLoader {
   }
 
   void loadNode406() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2163),
@@ -13696,7 +13696,7 @@ class VariableNodeLoader {
   }
 
   void loadNode407() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SamplingIntervalDiagnosticsTypeNode node =
         new SamplingIntervalDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 12779),
@@ -13741,7 +13741,7 @@ class VariableNodeLoader {
   }
 
   void loadNode408() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12780),
@@ -13773,7 +13773,7 @@ class VariableNodeLoader {
   }
 
   void loadNode409() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12781),
@@ -13805,7 +13805,7 @@ class VariableNodeLoader {
   }
 
   void loadNode410() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12782),
@@ -13837,7 +13837,7 @@ class VariableNodeLoader {
   }
 
   void loadNode411() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12783),
@@ -13869,7 +13869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode412() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2166),
@@ -13901,7 +13901,7 @@ class VariableNodeLoader {
   }
 
   void loadNode413() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 11697),
@@ -13933,7 +13933,7 @@ class VariableNodeLoader {
   }
 
   void loadNode414() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 11698),
@@ -13965,7 +13965,7 @@ class VariableNodeLoader {
   }
 
   void loadNode415() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 11699),
@@ -13997,7 +13997,7 @@ class VariableNodeLoader {
   }
 
   void loadNode416() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SubscriptionDiagnosticsTypeNode node =
         new SubscriptionDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 12784),
@@ -14123,7 +14123,7 @@ class VariableNodeLoader {
   }
 
   void loadNode417() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12785),
@@ -14155,7 +14155,7 @@ class VariableNodeLoader {
   }
 
   void loadNode418() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12786),
@@ -14187,7 +14187,7 @@ class VariableNodeLoader {
   }
 
   void loadNode419() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12787),
@@ -14219,7 +14219,7 @@ class VariableNodeLoader {
   }
 
   void loadNode420() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12788),
@@ -14251,7 +14251,7 @@ class VariableNodeLoader {
   }
 
   void loadNode421() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12789),
@@ -14283,7 +14283,7 @@ class VariableNodeLoader {
   }
 
   void loadNode422() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12790),
@@ -14315,7 +14315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode423() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12791),
@@ -14347,7 +14347,7 @@ class VariableNodeLoader {
   }
 
   void loadNode424() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12792),
@@ -14379,7 +14379,7 @@ class VariableNodeLoader {
   }
 
   void loadNode425() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12793),
@@ -14411,7 +14411,7 @@ class VariableNodeLoader {
   }
 
   void loadNode426() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12794),
@@ -14443,7 +14443,7 @@ class VariableNodeLoader {
   }
 
   void loadNode427() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12795),
@@ -14475,7 +14475,7 @@ class VariableNodeLoader {
   }
 
   void loadNode428() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12796),
@@ -14507,7 +14507,7 @@ class VariableNodeLoader {
   }
 
   void loadNode429() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12797),
@@ -14539,7 +14539,7 @@ class VariableNodeLoader {
   }
 
   void loadNode430() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12798),
@@ -14571,7 +14571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode431() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12799),
@@ -14603,7 +14603,7 @@ class VariableNodeLoader {
   }
 
   void loadNode432() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12800),
@@ -14635,7 +14635,7 @@ class VariableNodeLoader {
   }
 
   void loadNode433() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12801),
@@ -14667,7 +14667,7 @@ class VariableNodeLoader {
   }
 
   void loadNode434() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12802),
@@ -14699,7 +14699,7 @@ class VariableNodeLoader {
   }
 
   void loadNode435() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12803),
@@ -14731,7 +14731,7 @@ class VariableNodeLoader {
   }
 
   void loadNode436() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12804),
@@ -14763,7 +14763,7 @@ class VariableNodeLoader {
   }
 
   void loadNode437() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12805),
@@ -14795,7 +14795,7 @@ class VariableNodeLoader {
   }
 
   void loadNode438() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12806),
@@ -14827,7 +14827,7 @@ class VariableNodeLoader {
   }
 
   void loadNode439() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12807),
@@ -14859,7 +14859,7 @@ class VariableNodeLoader {
   }
 
   void loadNode440() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12808),
@@ -14891,7 +14891,7 @@ class VariableNodeLoader {
   }
 
   void loadNode441() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12809),
@@ -14923,7 +14923,7 @@ class VariableNodeLoader {
   }
 
   void loadNode442() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12810),
@@ -14955,7 +14955,7 @@ class VariableNodeLoader {
   }
 
   void loadNode443() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12811),
@@ -14987,7 +14987,7 @@ class VariableNodeLoader {
   }
 
   void loadNode444() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12812),
@@ -15019,7 +15019,7 @@ class VariableNodeLoader {
   }
 
   void loadNode445() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12813),
@@ -15051,7 +15051,7 @@ class VariableNodeLoader {
   }
 
   void loadNode446() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12814),
@@ -15083,7 +15083,7 @@ class VariableNodeLoader {
   }
 
   void loadNode447() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12815),
@@ -15115,7 +15115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode448() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2173),
@@ -15147,7 +15147,7 @@ class VariableNodeLoader {
   }
 
   void loadNode449() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2174),
@@ -15179,7 +15179,7 @@ class VariableNodeLoader {
   }
 
   void loadNode450() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2175),
@@ -15211,7 +15211,7 @@ class VariableNodeLoader {
   }
 
   void loadNode451() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2176),
@@ -15243,7 +15243,7 @@ class VariableNodeLoader {
   }
 
   void loadNode452() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2177),
@@ -15275,7 +15275,7 @@ class VariableNodeLoader {
   }
 
   void loadNode453() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8888),
@@ -15307,7 +15307,7 @@ class VariableNodeLoader {
   }
 
   void loadNode454() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2179),
@@ -15339,7 +15339,7 @@ class VariableNodeLoader {
   }
 
   void loadNode455() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2180),
@@ -15371,7 +15371,7 @@ class VariableNodeLoader {
   }
 
   void loadNode456() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2181),
@@ -15403,7 +15403,7 @@ class VariableNodeLoader {
   }
 
   void loadNode457() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2182),
@@ -15435,7 +15435,7 @@ class VariableNodeLoader {
   }
 
   void loadNode458() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2183),
@@ -15467,7 +15467,7 @@ class VariableNodeLoader {
   }
 
   void loadNode459() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2184),
@@ -15499,7 +15499,7 @@ class VariableNodeLoader {
   }
 
   void loadNode460() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2185),
@@ -15531,7 +15531,7 @@ class VariableNodeLoader {
   }
 
   void loadNode461() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2186),
@@ -15563,7 +15563,7 @@ class VariableNodeLoader {
   }
 
   void loadNode462() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2187),
@@ -15595,7 +15595,7 @@ class VariableNodeLoader {
   }
 
   void loadNode463() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2188),
@@ -15627,7 +15627,7 @@ class VariableNodeLoader {
   }
 
   void loadNode464() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2189),
@@ -15659,7 +15659,7 @@ class VariableNodeLoader {
   }
 
   void loadNode465() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2190),
@@ -15691,7 +15691,7 @@ class VariableNodeLoader {
   }
 
   void loadNode466() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2191),
@@ -15723,7 +15723,7 @@ class VariableNodeLoader {
   }
 
   void loadNode467() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2998),
@@ -15755,7 +15755,7 @@ class VariableNodeLoader {
   }
 
   void loadNode468() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2193),
@@ -15787,7 +15787,7 @@ class VariableNodeLoader {
   }
 
   void loadNode469() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8889),
@@ -15819,7 +15819,7 @@ class VariableNodeLoader {
   }
 
   void loadNode470() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8890),
@@ -15851,7 +15851,7 @@ class VariableNodeLoader {
   }
 
   void loadNode471() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8891),
@@ -15883,7 +15883,7 @@ class VariableNodeLoader {
   }
 
   void loadNode472() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8892),
@@ -15915,7 +15915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode473() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8893),
@@ -15947,7 +15947,7 @@ class VariableNodeLoader {
   }
 
   void loadNode474() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8894),
@@ -15979,7 +15979,7 @@ class VariableNodeLoader {
   }
 
   void loadNode475() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8895),
@@ -16011,7 +16011,7 @@ class VariableNodeLoader {
   }
 
   void loadNode476() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8896),
@@ -16043,7 +16043,7 @@ class VariableNodeLoader {
   }
 
   void loadNode477() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8897),
@@ -16075,7 +16075,7 @@ class VariableNodeLoader {
   }
 
   void loadNode478() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8902),
@@ -16107,7 +16107,7 @@ class VariableNodeLoader {
   }
 
   void loadNode479() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionDiagnosticsVariableTypeNode node =
         new SessionDiagnosticsVariableTypeNode(
             this.context,
             new NodeId(0, 12816),
@@ -16269,7 +16269,7 @@ class VariableNodeLoader {
   }
 
   void loadNode480() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12817),
@@ -16301,7 +16301,7 @@ class VariableNodeLoader {
   }
 
   void loadNode481() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12818),
@@ -16333,7 +16333,7 @@ class VariableNodeLoader {
   }
 
   void loadNode482() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12819),
@@ -16365,7 +16365,7 @@ class VariableNodeLoader {
   }
 
   void loadNode483() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12820),
@@ -16397,7 +16397,7 @@ class VariableNodeLoader {
   }
 
   void loadNode484() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12821),
@@ -16429,7 +16429,7 @@ class VariableNodeLoader {
   }
 
   void loadNode485() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12822),
@@ -16461,7 +16461,7 @@ class VariableNodeLoader {
   }
 
   void loadNode486() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12823),
@@ -16493,7 +16493,7 @@ class VariableNodeLoader {
   }
 
   void loadNode487() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12824),
@@ -16525,7 +16525,7 @@ class VariableNodeLoader {
   }
 
   void loadNode488() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12825),
@@ -16557,7 +16557,7 @@ class VariableNodeLoader {
   }
 
   void loadNode489() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12826),
@@ -16589,7 +16589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode490() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12827),
@@ -16621,7 +16621,7 @@ class VariableNodeLoader {
   }
 
   void loadNode491() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12828),
@@ -16653,7 +16653,7 @@ class VariableNodeLoader {
   }
 
   void loadNode492() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12829),
@@ -16685,7 +16685,7 @@ class VariableNodeLoader {
   }
 
   void loadNode493() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12830),
@@ -16717,7 +16717,7 @@ class VariableNodeLoader {
   }
 
   void loadNode494() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12831),
@@ -16749,7 +16749,7 @@ class VariableNodeLoader {
   }
 
   void loadNode495() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12832),
@@ -16781,7 +16781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode496() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12833),
@@ -16813,7 +16813,7 @@ class VariableNodeLoader {
   }
 
   void loadNode497() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12834),
@@ -16845,7 +16845,7 @@ class VariableNodeLoader {
   }
 
   void loadNode498() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12835),
@@ -16877,7 +16877,7 @@ class VariableNodeLoader {
   }
 
   void loadNode499() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12836),
@@ -16909,7 +16909,7 @@ class VariableNodeLoader {
   }
 
   void loadNode500() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12837),
@@ -16941,7 +16941,7 @@ class VariableNodeLoader {
   }
 
   void loadNode501() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12838),
@@ -16973,7 +16973,7 @@ class VariableNodeLoader {
   }
 
   void loadNode502() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12839),
@@ -17005,7 +17005,7 @@ class VariableNodeLoader {
   }
 
   void loadNode503() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12840),
@@ -17037,7 +17037,7 @@ class VariableNodeLoader {
   }
 
   void loadNode504() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12841),
@@ -17069,7 +17069,7 @@ class VariableNodeLoader {
   }
 
   void loadNode505() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12842),
@@ -17101,7 +17101,7 @@ class VariableNodeLoader {
   }
 
   void loadNode506() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12843),
@@ -17133,7 +17133,7 @@ class VariableNodeLoader {
   }
 
   void loadNode507() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12844),
@@ -17165,7 +17165,7 @@ class VariableNodeLoader {
   }
 
   void loadNode508() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12845),
@@ -17197,7 +17197,7 @@ class VariableNodeLoader {
   }
 
   void loadNode509() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12846),
@@ -17229,7 +17229,7 @@ class VariableNodeLoader {
   }
 
   void loadNode510() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12847),
@@ -17261,7 +17261,7 @@ class VariableNodeLoader {
   }
 
   void loadNode511() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12848),
@@ -17293,7 +17293,7 @@ class VariableNodeLoader {
   }
 
   void loadNode512() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12849),
@@ -17325,7 +17325,7 @@ class VariableNodeLoader {
   }
 
   void loadNode513() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12850),
@@ -17357,7 +17357,7 @@ class VariableNodeLoader {
   }
 
   void loadNode514() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12851),
@@ -17389,7 +17389,7 @@ class VariableNodeLoader {
   }
 
   void loadNode515() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12852),
@@ -17421,7 +17421,7 @@ class VariableNodeLoader {
   }
 
   void loadNode516() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12853),
@@ -17453,7 +17453,7 @@ class VariableNodeLoader {
   }
 
   void loadNode517() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12854),
@@ -17485,7 +17485,7 @@ class VariableNodeLoader {
   }
 
   void loadNode518() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12855),
@@ -17517,7 +17517,7 @@ class VariableNodeLoader {
   }
 
   void loadNode519() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12856),
@@ -17549,7 +17549,7 @@ class VariableNodeLoader {
   }
 
   void loadNode520() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12857),
@@ -17581,7 +17581,7 @@ class VariableNodeLoader {
   }
 
   void loadNode521() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12858),
@@ -17613,7 +17613,7 @@ class VariableNodeLoader {
   }
 
   void loadNode522() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12859),
@@ -17645,7 +17645,7 @@ class VariableNodeLoader {
   }
 
   void loadNode523() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2198),
@@ -17677,7 +17677,7 @@ class VariableNodeLoader {
   }
 
   void loadNode524() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2199),
@@ -17709,7 +17709,7 @@ class VariableNodeLoader {
   }
 
   void loadNode525() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2200),
@@ -17741,7 +17741,7 @@ class VariableNodeLoader {
   }
 
   void loadNode526() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2201),
@@ -17773,7 +17773,7 @@ class VariableNodeLoader {
   }
 
   void loadNode527() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2202),
@@ -17805,7 +17805,7 @@ class VariableNodeLoader {
   }
 
   void loadNode528() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2203),
@@ -17837,7 +17837,7 @@ class VariableNodeLoader {
   }
 
   void loadNode529() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2204),
@@ -17869,7 +17869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode530() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3050),
@@ -17901,7 +17901,7 @@ class VariableNodeLoader {
   }
 
   void loadNode531() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2205),
@@ -17933,7 +17933,7 @@ class VariableNodeLoader {
   }
 
   void loadNode532() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2206),
@@ -17965,7 +17965,7 @@ class VariableNodeLoader {
   }
 
   void loadNode533() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2207),
@@ -17997,7 +17997,7 @@ class VariableNodeLoader {
   }
 
   void loadNode534() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2208),
@@ -18029,7 +18029,7 @@ class VariableNodeLoader {
   }
 
   void loadNode535() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2209),
@@ -18061,7 +18061,7 @@ class VariableNodeLoader {
   }
 
   void loadNode536() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 8900),
@@ -18093,7 +18093,7 @@ class VariableNodeLoader {
   }
 
   void loadNode537() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 11892),
@@ -18125,7 +18125,7 @@ class VariableNodeLoader {
   }
 
   void loadNode538() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2217),
@@ -18157,7 +18157,7 @@ class VariableNodeLoader {
   }
 
   void loadNode539() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2218),
@@ -18189,7 +18189,7 @@ class VariableNodeLoader {
   }
 
   void loadNode540() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2219),
@@ -18221,7 +18221,7 @@ class VariableNodeLoader {
   }
 
   void loadNode541() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2220),
@@ -18253,7 +18253,7 @@ class VariableNodeLoader {
   }
 
   void loadNode542() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2221),
@@ -18285,7 +18285,7 @@ class VariableNodeLoader {
   }
 
   void loadNode543() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2222),
@@ -18317,7 +18317,7 @@ class VariableNodeLoader {
   }
 
   void loadNode544() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2223),
@@ -18349,7 +18349,7 @@ class VariableNodeLoader {
   }
 
   void loadNode545() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2224),
@@ -18381,7 +18381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode546() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2225),
@@ -18413,7 +18413,7 @@ class VariableNodeLoader {
   }
 
   void loadNode547() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2226),
@@ -18445,7 +18445,7 @@ class VariableNodeLoader {
   }
 
   void loadNode548() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2227),
@@ -18477,7 +18477,7 @@ class VariableNodeLoader {
   }
 
   void loadNode549() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2228),
@@ -18509,7 +18509,7 @@ class VariableNodeLoader {
   }
 
   void loadNode550() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2229),
@@ -18541,7 +18541,7 @@ class VariableNodeLoader {
   }
 
   void loadNode551() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2230),
@@ -18573,7 +18573,7 @@ class VariableNodeLoader {
   }
 
   void loadNode552() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2231),
@@ -18605,7 +18605,7 @@ class VariableNodeLoader {
   }
 
   void loadNode553() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2232),
@@ -18637,7 +18637,7 @@ class VariableNodeLoader {
   }
 
   void loadNode554() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2233),
@@ -18669,7 +18669,7 @@ class VariableNodeLoader {
   }
 
   void loadNode555() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2234),
@@ -18701,7 +18701,7 @@ class VariableNodeLoader {
   }
 
   void loadNode556() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2235),
@@ -18733,7 +18733,7 @@ class VariableNodeLoader {
   }
 
   void loadNode557() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2236),
@@ -18765,7 +18765,7 @@ class VariableNodeLoader {
   }
 
   void loadNode558() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2237),
@@ -18797,7 +18797,7 @@ class VariableNodeLoader {
   }
 
   void loadNode559() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2238),
@@ -18829,7 +18829,7 @@ class VariableNodeLoader {
   }
 
   void loadNode560() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2239),
@@ -18861,7 +18861,7 @@ class VariableNodeLoader {
   }
 
   void loadNode561() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2240),
@@ -18893,7 +18893,7 @@ class VariableNodeLoader {
   }
 
   void loadNode562() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2241),
@@ -18925,7 +18925,7 @@ class VariableNodeLoader {
   }
 
   void loadNode563() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2242),
@@ -18957,7 +18957,7 @@ class VariableNodeLoader {
   }
 
   void loadNode564() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2730),
@@ -18989,7 +18989,7 @@ class VariableNodeLoader {
   }
 
   void loadNode565() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2731),
@@ -19021,7 +19021,7 @@ class VariableNodeLoader {
   }
 
   void loadNode566() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionSecurityDiagnosticsTypeNode node =
         new SessionSecurityDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 12860),
@@ -19081,7 +19081,7 @@ class VariableNodeLoader {
   }
 
   void loadNode567() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12861),
@@ -19113,7 +19113,7 @@ class VariableNodeLoader {
   }
 
   void loadNode568() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12862),
@@ -19145,7 +19145,7 @@ class VariableNodeLoader {
   }
 
   void loadNode569() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12863),
@@ -19177,7 +19177,7 @@ class VariableNodeLoader {
   }
 
   void loadNode570() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12864),
@@ -19209,7 +19209,7 @@ class VariableNodeLoader {
   }
 
   void loadNode571() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12865),
@@ -19241,7 +19241,7 @@ class VariableNodeLoader {
   }
 
   void loadNode572() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12866),
@@ -19273,7 +19273,7 @@ class VariableNodeLoader {
   }
 
   void loadNode573() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12867),
@@ -19305,7 +19305,7 @@ class VariableNodeLoader {
   }
 
   void loadNode574() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12868),
@@ -19337,7 +19337,7 @@ class VariableNodeLoader {
   }
 
   void loadNode575() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 12869),
@@ -19369,7 +19369,7 @@ class VariableNodeLoader {
   }
 
   void loadNode576() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2245),
@@ -19401,7 +19401,7 @@ class VariableNodeLoader {
   }
 
   void loadNode577() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2246),
@@ -19433,7 +19433,7 @@ class VariableNodeLoader {
   }
 
   void loadNode578() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2247),
@@ -19465,7 +19465,7 @@ class VariableNodeLoader {
   }
 
   void loadNode579() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2248),
@@ -19497,7 +19497,7 @@ class VariableNodeLoader {
   }
 
   void loadNode580() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2249),
@@ -19529,7 +19529,7 @@ class VariableNodeLoader {
   }
 
   void loadNode581() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2250),
@@ -19561,7 +19561,7 @@ class VariableNodeLoader {
   }
 
   void loadNode582() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2251),
@@ -19593,7 +19593,7 @@ class VariableNodeLoader {
   }
 
   void loadNode583() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2252),
@@ -19625,7 +19625,7 @@ class VariableNodeLoader {
   }
 
   void loadNode584() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3058),
@@ -19657,7 +19657,7 @@ class VariableNodeLoader {
   }
 
   void loadNode585() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11488),
@@ -19689,7 +19689,7 @@ class VariableNodeLoader {
   }
 
   void loadNode586() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11701),
@@ -19721,7 +19721,7 @@ class VariableNodeLoader {
   }
 
   void loadNode587() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17632),
@@ -19753,7 +19753,7 @@ class VariableNodeLoader {
   }
 
   void loadNode588() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17633),
@@ -19785,7 +19785,7 @@ class VariableNodeLoader {
   }
 
   void loadNode589() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16312),
@@ -19817,7 +19817,7 @@ class VariableNodeLoader {
   }
 
   void loadNode590() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17988),
@@ -19849,7 +19849,7 @@ class VariableNodeLoader {
   }
 
   void loadNode591() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17989),
@@ -19881,7 +19881,7 @@ class VariableNodeLoader {
   }
 
   void loadNode592() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17990),
@@ -19913,7 +19913,7 @@ class VariableNodeLoader {
   }
 
   void loadNode593() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2254),
@@ -19950,7 +19950,7 @@ class VariableNodeLoader {
   }
 
   void loadNode594() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2255),
@@ -19987,7 +19987,7 @@ class VariableNodeLoader {
   }
 
   void loadNode595() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15004),
@@ -20024,7 +20024,7 @@ class VariableNodeLoader {
   }
 
   void loadNode596() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ServerStatusTypeNode node =
         new ServerStatusTypeNode(
             this.context,
             new NodeId(0, 2256),
@@ -20080,7 +20080,7 @@ class VariableNodeLoader {
   }
 
   void loadNode597() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2257),
@@ -20117,7 +20117,7 @@ class VariableNodeLoader {
   }
 
   void loadNode598() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2258),
@@ -20154,7 +20154,7 @@ class VariableNodeLoader {
   }
 
   void loadNode599() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2259),
@@ -20191,7 +20191,7 @@ class VariableNodeLoader {
   }
 
   void loadNode600() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BuildInfoTypeNode node =
         new BuildInfoTypeNode(
             this.context,
             new NodeId(0, 2260),
@@ -20247,7 +20247,7 @@ class VariableNodeLoader {
   }
 
   void loadNode601() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2262),
@@ -20284,7 +20284,7 @@ class VariableNodeLoader {
   }
 
   void loadNode602() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2263),
@@ -20321,7 +20321,7 @@ class VariableNodeLoader {
   }
 
   void loadNode603() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2261),
@@ -20358,7 +20358,7 @@ class VariableNodeLoader {
   }
 
   void loadNode604() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2264),
@@ -20395,7 +20395,7 @@ class VariableNodeLoader {
   }
 
   void loadNode605() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2265),
@@ -20432,7 +20432,7 @@ class VariableNodeLoader {
   }
 
   void loadNode606() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2266),
@@ -20469,7 +20469,7 @@ class VariableNodeLoader {
   }
 
   void loadNode607() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2992),
@@ -20506,7 +20506,7 @@ class VariableNodeLoader {
   }
 
   void loadNode608() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2993),
@@ -20543,7 +20543,7 @@ class VariableNodeLoader {
   }
 
   void loadNode609() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2267),
@@ -20580,7 +20580,7 @@ class VariableNodeLoader {
   }
 
   void loadNode610() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2994),
@@ -20617,7 +20617,7 @@ class VariableNodeLoader {
   }
 
   void loadNode611() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12885),
@@ -20654,7 +20654,7 @@ class VariableNodeLoader {
   }
 
   void loadNode612() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17634),
@@ -20691,7 +20691,7 @@ class VariableNodeLoader {
   }
 
   void loadNode613() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2269),
@@ -20728,7 +20728,7 @@ class VariableNodeLoader {
   }
 
   void loadNode614() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2271),
@@ -20765,7 +20765,7 @@ class VariableNodeLoader {
   }
 
   void loadNode615() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2272),
@@ -20802,7 +20802,7 @@ class VariableNodeLoader {
   }
 
   void loadNode616() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2735),
@@ -20839,7 +20839,7 @@ class VariableNodeLoader {
   }
 
   void loadNode617() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2736),
@@ -20876,7 +20876,7 @@ class VariableNodeLoader {
   }
 
   void loadNode618() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2737),
@@ -20913,7 +20913,7 @@ class VariableNodeLoader {
   }
 
   void loadNode619() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3704),
@@ -20950,7 +20950,7 @@ class VariableNodeLoader {
   }
 
   void loadNode620() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11702),
@@ -20987,7 +20987,7 @@ class VariableNodeLoader {
   }
 
   void loadNode621() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11703),
@@ -21024,7 +21024,7 @@ class VariableNodeLoader {
   }
 
   void loadNode622() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12911),
@@ -21061,7 +21061,7 @@ class VariableNodeLoader {
   }
 
   void loadNode623() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11705),
@@ -21098,7 +21098,7 @@ class VariableNodeLoader {
   }
 
   void loadNode624() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12165),
@@ -21135,7 +21135,7 @@ class VariableNodeLoader {
   }
 
   void loadNode625() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12166),
@@ -21172,7 +21172,7 @@ class VariableNodeLoader {
   }
 
   void loadNode626() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11707),
@@ -21209,7 +21209,7 @@ class VariableNodeLoader {
   }
 
   void loadNode627() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12167),
@@ -21246,7 +21246,7 @@ class VariableNodeLoader {
   }
 
   void loadNode628() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12168),
@@ -21283,7 +21283,7 @@ class VariableNodeLoader {
   }
 
   void loadNode629() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11709),
@@ -21320,7 +21320,7 @@ class VariableNodeLoader {
   }
 
   void loadNode630() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11710),
@@ -21357,7 +21357,7 @@ class VariableNodeLoader {
   }
 
   void loadNode631() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11711),
@@ -21394,7 +21394,7 @@ class VariableNodeLoader {
   }
 
   void loadNode632() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11712),
@@ -21431,7 +21431,7 @@ class VariableNodeLoader {
   }
 
   void loadNode633() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11713),
@@ -21468,7 +21468,7 @@ class VariableNodeLoader {
   }
 
   void loadNode634() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11714),
@@ -21505,7 +21505,7 @@ class VariableNodeLoader {
   }
 
   void loadNode635() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16302),
@@ -21546,7 +21546,7 @@ class VariableNodeLoader {
   }
 
   void loadNode636() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16303),
@@ -21586,7 +21586,7 @@ class VariableNodeLoader {
   }
 
   void loadNode637() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16305),
@@ -21626,7 +21626,7 @@ class VariableNodeLoader {
   }
 
   void loadNode638() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24095),
@@ -21663,7 +21663,7 @@ class VariableNodeLoader {
   }
 
   void loadNode639() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24096),
@@ -21700,7 +21700,7 @@ class VariableNodeLoader {
   }
 
   void loadNode640() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24097),
@@ -21737,7 +21737,7 @@ class VariableNodeLoader {
   }
 
   void loadNode641() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24098),
@@ -21774,7 +21774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode642() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24104),
@@ -21811,7 +21811,7 @@ class VariableNodeLoader {
   }
 
   void loadNode643() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24099),
@@ -21848,7 +21848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode644() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24100),
@@ -21885,7 +21885,7 @@ class VariableNodeLoader {
   }
 
   void loadNode645() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 31916),
@@ -21922,7 +21922,7 @@ class VariableNodeLoader {
   }
 
   void loadNode646() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24101),
@@ -21959,7 +21959,7 @@ class VariableNodeLoader {
   }
 
   void loadNode647() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ServerDiagnosticsSummaryTypeNode node =
         new ServerDiagnosticsSummaryTypeNode(
             this.context,
             new NodeId(0, 2275),
@@ -22033,7 +22033,7 @@ class VariableNodeLoader {
   }
 
   void loadNode648() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2276),
@@ -22070,7 +22070,7 @@ class VariableNodeLoader {
   }
 
   void loadNode649() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2277),
@@ -22107,7 +22107,7 @@ class VariableNodeLoader {
   }
 
   void loadNode650() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2278),
@@ -22144,7 +22144,7 @@ class VariableNodeLoader {
   }
 
   void loadNode651() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2279),
@@ -22181,7 +22181,7 @@ class VariableNodeLoader {
   }
 
   void loadNode652() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3705),
@@ -22218,7 +22218,7 @@ class VariableNodeLoader {
   }
 
   void loadNode653() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2281),
@@ -22255,7 +22255,7 @@ class VariableNodeLoader {
   }
 
   void loadNode654() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2282),
@@ -22292,7 +22292,7 @@ class VariableNodeLoader {
   }
 
   void loadNode655() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2284),
@@ -22329,7 +22329,7 @@ class VariableNodeLoader {
   }
 
   void loadNode656() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2285),
@@ -22366,7 +22366,7 @@ class VariableNodeLoader {
   }
 
   void loadNode657() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2286),
@@ -22403,7 +22403,7 @@ class VariableNodeLoader {
   }
 
   void loadNode658() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2287),
@@ -22440,7 +22440,7 @@ class VariableNodeLoader {
   }
 
   void loadNode659() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2288),
@@ -22477,7 +22477,7 @@ class VariableNodeLoader {
   }
 
   void loadNode660() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SamplingIntervalDiagnosticsArrayTypeNode node =
         new SamplingIntervalDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 2289),
@@ -22515,7 +22515,7 @@ class VariableNodeLoader {
   }
 
   void loadNode661() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SubscriptionDiagnosticsArrayTypeNode node =
         new SubscriptionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 2290),
@@ -22553,7 +22553,7 @@ class VariableNodeLoader {
   }
 
   void loadNode662() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionDiagnosticsArrayTypeNode node =
         new SessionDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 3707),
@@ -22591,7 +22591,7 @@ class VariableNodeLoader {
   }
 
   void loadNode663() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SessionSecurityDiagnosticsArrayTypeNode node =
         new SessionSecurityDiagnosticsArrayTypeNode(
             this.context,
             new NodeId(0, 3708),
@@ -22625,7 +22625,7 @@ class VariableNodeLoader {
   }
 
   void loadNode664() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2294),
@@ -22662,7 +22662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode665() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3709),
@@ -22699,7 +22699,7 @@ class VariableNodeLoader {
   }
 
   void loadNode666() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11313),
@@ -22736,7 +22736,7 @@ class VariableNodeLoader {
   }
 
   void loadNode667() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11493),
@@ -22780,7 +22780,7 @@ class VariableNodeLoader {
   }
 
   void loadNode668() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11494),
@@ -22825,7 +22825,7 @@ class VariableNodeLoader {
   }
 
   void loadNode669() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12874),
@@ -22869,7 +22869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode670() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12750),
@@ -22914,7 +22914,7 @@ class VariableNodeLoader {
   }
 
   void loadNode671() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12751),
@@ -22958,7 +22958,7 @@ class VariableNodeLoader {
   }
 
   void loadNode672() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12887),
@@ -23001,7 +23001,7 @@ class VariableNodeLoader {
   }
 
   void loadNode673() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11312),
@@ -23028,7 +23028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode674() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11314),
@@ -23055,7 +23055,7 @@ class VariableNodeLoader {
   }
 
   void loadNode675() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14415),
@@ -23082,7 +23082,7 @@ class VariableNodeLoader {
   }
 
   void loadNode676() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11193),
@@ -23112,7 +23112,7 @@ class VariableNodeLoader {
   }
 
   void loadNode677() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11242),
@@ -23142,7 +23142,7 @@ class VariableNodeLoader {
   }
 
   void loadNode678() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11273),
@@ -23172,7 +23172,7 @@ class VariableNodeLoader {
   }
 
   void loadNode679() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11274),
@@ -23202,7 +23202,7 @@ class VariableNodeLoader {
   }
 
   void loadNode680() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11196),
@@ -23232,7 +23232,7 @@ class VariableNodeLoader {
   }
 
   void loadNode681() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11197),
@@ -23262,7 +23262,7 @@ class VariableNodeLoader {
   }
 
   void loadNode682() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11198),
@@ -23292,7 +23292,7 @@ class VariableNodeLoader {
   }
 
   void loadNode683() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11199),
@@ -23322,7 +23322,7 @@ class VariableNodeLoader {
   }
 
   void loadNode684() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11200),
@@ -23352,7 +23352,7 @@ class VariableNodeLoader {
   }
 
   void loadNode685() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11281),
@@ -23382,7 +23382,7 @@ class VariableNodeLoader {
   }
 
   void loadNode686() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11282),
@@ -23412,7 +23412,7 @@ class VariableNodeLoader {
   }
 
   void loadNode687() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11283),
@@ -23442,7 +23442,7 @@ class VariableNodeLoader {
   }
 
   void loadNode688() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11502),
@@ -23472,7 +23472,7 @@ class VariableNodeLoader {
   }
 
   void loadNode689() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11275),
@@ -23502,7 +23502,7 @@ class VariableNodeLoader {
   }
 
   void loadNode690() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19091),
@@ -23532,7 +23532,7 @@ class VariableNodeLoader {
   }
 
   void loadNode691() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19821),
@@ -23565,7 +23565,7 @@ class VariableNodeLoader {
   }
 
   void loadNode692() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19823),
@@ -23598,7 +23598,7 @@ class VariableNodeLoader {
   }
 
   void loadNode693() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.StateVariableTypeNode node =
         new StateVariableTypeNode(
             this.context,
             new NodeId(0, 2769),
@@ -23634,7 +23634,7 @@ class VariableNodeLoader {
   }
 
   void loadNode694() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3720),
@@ -23666,7 +23666,7 @@ class VariableNodeLoader {
   }
 
   void loadNode695() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TransitionVariableTypeNode node =
         new TransitionVariableTypeNode(
             this.context,
             new NodeId(0, 2770),
@@ -23702,7 +23702,7 @@ class VariableNodeLoader {
   }
 
   void loadNode696() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3724),
@@ -23734,7 +23734,7 @@ class VariableNodeLoader {
   }
 
   void loadNode697() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2756),
@@ -23766,7 +23766,7 @@ class VariableNodeLoader {
   }
 
   void loadNode698() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2757),
@@ -23798,7 +23798,7 @@ class VariableNodeLoader {
   }
 
   void loadNode699() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2758),
@@ -23830,7 +23830,7 @@ class VariableNodeLoader {
   }
 
   void loadNode700() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2759),
@@ -23862,7 +23862,7 @@ class VariableNodeLoader {
   }
 
   void loadNode701() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2763),
@@ -23894,7 +23894,7 @@ class VariableNodeLoader {
   }
 
   void loadNode702() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2764),
@@ -23926,7 +23926,7 @@ class VariableNodeLoader {
   }
 
   void loadNode703() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2765),
@@ -23958,7 +23958,7 @@ class VariableNodeLoader {
   }
 
   void loadNode704() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2766),
@@ -23990,7 +23990,7 @@ class VariableNodeLoader {
   }
 
   void loadNode705() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11456),
@@ -24022,7 +24022,7 @@ class VariableNodeLoader {
   }
 
   void loadNode706() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteStateVariableTypeNode node =
         new FiniteStateVariableTypeNode(
             this.context,
             new NodeId(0, 2772),
@@ -24058,7 +24058,7 @@ class VariableNodeLoader {
   }
 
   void loadNode707() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3728),
@@ -24090,7 +24090,7 @@ class VariableNodeLoader {
   }
 
   void loadNode708() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteTransitionVariableTypeNode node =
         new FiniteTransitionVariableTypeNode(
             this.context,
             new NodeId(0, 2773),
@@ -24126,7 +24126,7 @@ class VariableNodeLoader {
   }
 
   void loadNode709() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3732),
@@ -24158,7 +24158,7 @@ class VariableNodeLoader {
   }
 
   void loadNode710() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17635),
@@ -24190,7 +24190,7 @@ class VariableNodeLoader {
   }
 
   void loadNode711() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17636),
@@ -24222,7 +24222,7 @@ class VariableNodeLoader {
   }
 
   void loadNode712() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2761),
@@ -24254,7 +24254,7 @@ class VariableNodeLoader {
   }
 
   void loadNode713() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2768),
@@ -24286,7 +24286,7 @@ class VariableNodeLoader {
   }
 
   void loadNode714() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2308),
@@ -24318,7 +24318,7 @@ class VariableNodeLoader {
   }
 
   void loadNode715() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2312),
@@ -24350,7 +24350,7 @@ class VariableNodeLoader {
   }
 
   void loadNode716() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15129),
@@ -24382,7 +24382,7 @@ class VariableNodeLoader {
   }
 
   void loadNode717() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17712),
@@ -24414,7 +24414,7 @@ class VariableNodeLoader {
   }
 
   void loadNode718() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17713),
@@ -24446,7 +24446,7 @@ class VariableNodeLoader {
   }
 
   void loadNode719() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17715),
@@ -24478,7 +24478,7 @@ class VariableNodeLoader {
   }
 
   void loadNode720() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18769),
@@ -24510,7 +24510,7 @@ class VariableNodeLoader {
   }
 
   void loadNode721() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18770),
@@ -24542,7 +24542,7 @@ class VariableNodeLoader {
   }
 
   void loadNode722() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18771),
@@ -24574,7 +24574,7 @@ class VariableNodeLoader {
   }
 
   void loadNode723() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18773),
@@ -24606,7 +24606,7 @@ class VariableNodeLoader {
   }
 
   void loadNode724() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18776),
@@ -24638,7 +24638,7 @@ class VariableNodeLoader {
   }
 
   void loadNode725() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18777),
@@ -24670,7 +24670,7 @@ class VariableNodeLoader {
   }
 
   void loadNode726() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18778),
@@ -24702,7 +24702,7 @@ class VariableNodeLoader {
   }
 
   void loadNode727() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18780),
@@ -24734,7 +24734,7 @@ class VariableNodeLoader {
   }
 
   void loadNode728() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18783),
@@ -24766,7 +24766,7 @@ class VariableNodeLoader {
   }
 
   void loadNode729() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18784),
@@ -24798,7 +24798,7 @@ class VariableNodeLoader {
   }
 
   void loadNode730() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18785),
@@ -24830,7 +24830,7 @@ class VariableNodeLoader {
   }
 
   void loadNode731() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.CartesianCoordinatesTypeNode node =
         new CartesianCoordinatesTypeNode(
             this.context,
             new NodeId(0, 18801),
@@ -24863,7 +24863,7 @@ class VariableNodeLoader {
   }
 
   void loadNode732() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.OrientationTypeNode node =
         new OrientationTypeNode(
             this.context,
             new NodeId(0, 18787),
@@ -24896,7 +24896,7 @@ class VariableNodeLoader {
   }
 
   void loadNode733() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18788),
@@ -24928,7 +24928,7 @@ class VariableNodeLoader {
   }
 
   void loadNode734() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18789),
@@ -24960,7 +24960,7 @@ class VariableNodeLoader {
   }
 
   void loadNode735() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18790),
@@ -24992,7 +24992,7 @@ class VariableNodeLoader {
   }
 
   void loadNode736() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ThreeDCartesianCoordinatesTypeNode node =
         new ThreeDCartesianCoordinatesTypeNode(
             this.context,
             new NodeId(0, 18796),
@@ -25034,7 +25034,7 @@ class VariableNodeLoader {
   }
 
   void loadNode737() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18798),
@@ -25066,7 +25066,7 @@ class VariableNodeLoader {
   }
 
   void loadNode738() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18799),
@@ -25098,7 +25098,7 @@ class VariableNodeLoader {
   }
 
   void loadNode739() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18800),
@@ -25130,7 +25130,7 @@ class VariableNodeLoader {
   }
 
   void loadNode740() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ThreeDOrientationTypeNode node =
         new ThreeDOrientationTypeNode(
             this.context,
             new NodeId(0, 18792),
@@ -25172,7 +25172,7 @@ class VariableNodeLoader {
   }
 
   void loadNode741() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19074),
@@ -25204,7 +25204,7 @@ class VariableNodeLoader {
   }
 
   void loadNode742() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19075),
@@ -25236,7 +25236,7 @@ class VariableNodeLoader {
   }
 
   void loadNode743() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19076),
@@ -25268,7 +25268,7 @@ class VariableNodeLoader {
   }
 
   void loadNode744() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32432),
@@ -25300,7 +25300,7 @@ class VariableNodeLoader {
   }
 
   void loadNode745() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseVariableTypeNode node =
         new BaseVariableTypeNode(
             this.context,
             new NodeId(0, 32433),
@@ -25333,7 +25333,7 @@ class VariableNodeLoader {
   }
 
   void loadNode746() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseVariableTypeNode node =
         new BaseVariableTypeNode(
             this.context,
             new NodeId(0, 15014),
@@ -25366,7 +25366,7 @@ class VariableNodeLoader {
   }
 
   void loadNode747() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TransitionVariableTypeNode node =
         new TransitionVariableTypeNode(
             this.context,
             new NodeId(0, 2774),
@@ -25402,7 +25402,7 @@ class VariableNodeLoader {
   }
 
   void loadNode748() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3754),
@@ -25434,7 +25434,7 @@ class VariableNodeLoader {
   }
 
   void loadNode749() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.StateVariableTypeNode node =
         new StateVariableTypeNode(
             this.context,
             new NodeId(0, 2775),
@@ -25470,7 +25470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode750() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3746),
@@ -25502,7 +25502,7 @@ class VariableNodeLoader {
   }
 
   void loadNode751() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.StateVariableTypeNode node =
         new StateVariableTypeNode(
             this.context,
             new NodeId(0, 2776),
@@ -25538,7 +25538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode752() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3750),
@@ -25570,7 +25570,7 @@ class VariableNodeLoader {
   }
 
   void loadNode753() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2777),
@@ -25602,7 +25602,7 @@ class VariableNodeLoader {
   }
 
   void loadNode754() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2778),
@@ -25634,7 +25634,7 @@ class VariableNodeLoader {
   }
 
   void loadNode755() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11940),
@@ -25672,7 +25672,7 @@ class VariableNodeLoader {
   }
 
   void loadNode756() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13356),
@@ -25711,7 +25711,7 @@ class VariableNodeLoader {
   }
 
   void loadNode757() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13357),
@@ -25750,7 +25750,7 @@ class VariableNodeLoader {
   }
 
   void loadNode758() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13359),
@@ -25790,7 +25790,7 @@ class VariableNodeLoader {
   }
 
   void loadNode759() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13360),
@@ -25830,7 +25830,7 @@ class VariableNodeLoader {
   }
 
   void loadNode760() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17719),
@@ -25869,7 +25869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode761() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13364),
@@ -25909,7 +25909,7 @@ class VariableNodeLoader {
   }
 
   void loadNode762() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13365),
@@ -25948,7 +25948,7 @@ class VariableNodeLoader {
   }
 
   void loadNode763() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13367),
@@ -25980,7 +25980,7 @@ class VariableNodeLoader {
   }
 
   void loadNode764() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13368),
@@ -26012,7 +26012,7 @@ class VariableNodeLoader {
   }
 
   void loadNode765() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13369),
@@ -26044,7 +26044,7 @@ class VariableNodeLoader {
   }
 
   void loadNode766() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13370),
@@ -26076,7 +26076,7 @@ class VariableNodeLoader {
   }
 
   void loadNode767() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13373),
@@ -26115,7 +26115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode768() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13374),
@@ -26154,7 +26154,7 @@ class VariableNodeLoader {
   }
 
   void loadNode769() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13376),
@@ -26193,7 +26193,7 @@ class VariableNodeLoader {
   }
 
   void loadNode770() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13378),
@@ -26233,7 +26233,7 @@ class VariableNodeLoader {
   }
 
   void loadNode771() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13379),
@@ -26272,7 +26272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode772() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13381),
@@ -26312,7 +26312,7 @@ class VariableNodeLoader {
   }
 
   void loadNode773() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13383),
@@ -26351,7 +26351,7 @@ class VariableNodeLoader {
   }
 
   void loadNode774() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13384),
@@ -26390,7 +26390,7 @@ class VariableNodeLoader {
   }
 
   void loadNode775() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13386),
@@ -26430,7 +26430,7 @@ class VariableNodeLoader {
   }
 
   void loadNode776() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13388),
@@ -26469,7 +26469,7 @@ class VariableNodeLoader {
   }
 
   void loadNode777() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13389),
@@ -26508,7 +26508,7 @@ class VariableNodeLoader {
   }
 
   void loadNode778() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13391),
@@ -26548,7 +26548,7 @@ class VariableNodeLoader {
   }
 
   void loadNode779() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13392),
@@ -26588,7 +26588,7 @@ class VariableNodeLoader {
   }
 
   void loadNode780() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13394),
@@ -26627,7 +26627,7 @@ class VariableNodeLoader {
   }
 
   void loadNode781() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13396),
@@ -26667,7 +26667,7 @@ class VariableNodeLoader {
   }
 
   void loadNode782() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13397),
@@ -26706,7 +26706,7 @@ class VariableNodeLoader {
   }
 
   void loadNode783() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16349),
@@ -26743,7 +26743,7 @@ class VariableNodeLoader {
   }
 
   void loadNode784() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16350),
@@ -26780,7 +26780,7 @@ class VariableNodeLoader {
   }
 
   void loadNode785() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16352),
@@ -26818,7 +26818,7 @@ class VariableNodeLoader {
   }
 
   void loadNode786() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16353),
@@ -26856,7 +26856,7 @@ class VariableNodeLoader {
   }
 
   void loadNode787() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16355),
@@ -26893,7 +26893,7 @@ class VariableNodeLoader {
   }
 
   void loadNode788() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16357),
@@ -26931,7 +26931,7 @@ class VariableNodeLoader {
   }
 
   void loadNode789() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16358),
@@ -26968,7 +26968,7 @@ class VariableNodeLoader {
   }
 
   void loadNode790() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15745),
@@ -27000,7 +27000,7 @@ class VariableNodeLoader {
   }
 
   void loadNode791() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15747),
@@ -27039,7 +27039,7 @@ class VariableNodeLoader {
   }
 
   void loadNode792() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15748),
@@ -27079,7 +27079,7 @@ class VariableNodeLoader {
   }
 
   void loadNode793() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16359),
@@ -27118,7 +27118,7 @@ class VariableNodeLoader {
   }
 
   void loadNode794() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15750),
@@ -27158,7 +27158,7 @@ class VariableNodeLoader {
   }
 
   void loadNode795() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15752),
@@ -27197,7 +27197,7 @@ class VariableNodeLoader {
   }
 
   void loadNode796() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15753),
@@ -27236,7 +27236,7 @@ class VariableNodeLoader {
   }
 
   void loadNode797() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteStateVariableTypeNode node =
         new FiniteStateVariableTypeNode(
             this.context,
             new NodeId(0, 15755),
@@ -27272,7 +27272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode798() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15756),
@@ -27304,7 +27304,7 @@ class VariableNodeLoader {
   }
 
   void loadNode799() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15816),
@@ -27343,7 +27343,7 @@ class VariableNodeLoader {
   }
 
   void loadNode800() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15818),
@@ -27382,7 +27382,7 @@ class VariableNodeLoader {
   }
 
   void loadNode801() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15820),
@@ -27421,7 +27421,7 @@ class VariableNodeLoader {
   }
 
   void loadNode802() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15822),
@@ -27460,7 +27460,7 @@ class VariableNodeLoader {
   }
 
   void loadNode803() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15824),
@@ -27499,7 +27499,7 @@ class VariableNodeLoader {
   }
 
   void loadNode804() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15826),
@@ -27538,7 +27538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode805() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15828),
@@ -27577,7 +27577,7 @@ class VariableNodeLoader {
   }
 
   void loadNode806() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15830),
@@ -27616,7 +27616,7 @@ class VariableNodeLoader {
   }
 
   void loadNode807() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15832),
@@ -27655,7 +27655,7 @@ class VariableNodeLoader {
   }
 
   void loadNode808() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15834),
@@ -27694,7 +27694,7 @@ class VariableNodeLoader {
   }
 
   void loadNode809() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15836),
@@ -27733,7 +27733,7 @@ class VariableNodeLoader {
   }
 
   void loadNode810() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15838),
@@ -27772,7 +27772,7 @@ class VariableNodeLoader {
   }
 
   void loadNode811() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15840),
@@ -27811,7 +27811,7 @@ class VariableNodeLoader {
   }
 
   void loadNode812() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15842),
@@ -27850,7 +27850,7 @@ class VariableNodeLoader {
   }
 
   void loadNode813() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16162),
@@ -27882,7 +27882,7 @@ class VariableNodeLoader {
   }
 
   void loadNode814() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15998),
@@ -27922,7 +27922,7 @@ class VariableNodeLoader {
   }
 
   void loadNode815() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15999),
@@ -27961,7 +27961,7 @@ class VariableNodeLoader {
   }
 
   void loadNode816() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16001),
@@ -28000,7 +28000,7 @@ class VariableNodeLoader {
   }
 
   void loadNode817() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16173),
@@ -28032,7 +28032,7 @@ class VariableNodeLoader {
   }
 
   void loadNode818() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15410),
@@ -28064,7 +28064,7 @@ class VariableNodeLoader {
   }
 
   void loadNode819() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16174),
@@ -28096,7 +28096,7 @@ class VariableNodeLoader {
   }
 
   void loadNode820() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15411),
@@ -28128,7 +28128,7 @@ class VariableNodeLoader {
   }
 
   void loadNode821() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16175),
@@ -28160,7 +28160,7 @@ class VariableNodeLoader {
   }
 
   void loadNode822() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24139),
@@ -28192,7 +28192,7 @@ class VariableNodeLoader {
   }
 
   void loadNode823() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15625),
@@ -28231,7 +28231,7 @@ class VariableNodeLoader {
   }
 
   void loadNode824() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15627),
@@ -28270,7 +28270,7 @@ class VariableNodeLoader {
   }
 
   void loadNode825() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16177),
@@ -28309,7 +28309,7 @@ class VariableNodeLoader {
   }
 
   void loadNode826() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16179),
@@ -28348,7 +28348,7 @@ class VariableNodeLoader {
   }
 
   void loadNode827() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16181),
@@ -28387,7 +28387,7 @@ class VariableNodeLoader {
   }
 
   void loadNode828() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16183),
@@ -28426,7 +28426,7 @@ class VariableNodeLoader {
   }
 
   void loadNode829() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15633),
@@ -28464,7 +28464,7 @@ class VariableNodeLoader {
   }
 
   void loadNode830() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16192),
@@ -28497,7 +28497,7 @@ class VariableNodeLoader {
   }
 
   void loadNode831() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16203),
@@ -28530,7 +28530,7 @@ class VariableNodeLoader {
   }
 
   void loadNode832() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18626),
@@ -28563,7 +28563,7 @@ class VariableNodeLoader {
   }
 
   void loadNode833() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16214),
@@ -28596,7 +28596,7 @@ class VariableNodeLoader {
   }
 
   void loadNode834() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15416),
@@ -28629,7 +28629,7 @@ class VariableNodeLoader {
   }
 
   void loadNode835() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16215),
@@ -28662,7 +28662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode836() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15417),
@@ -28695,7 +28695,7 @@ class VariableNodeLoader {
   }
 
   void loadNode837() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16216),
@@ -28728,7 +28728,7 @@ class VariableNodeLoader {
   }
 
   void loadNode838() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24142),
@@ -28761,7 +28761,7 @@ class VariableNodeLoader {
   }
 
   void loadNode839() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15673),
@@ -28801,7 +28801,7 @@ class VariableNodeLoader {
   }
 
   void loadNode840() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15675),
@@ -28841,7 +28841,7 @@ class VariableNodeLoader {
   }
 
   void loadNode841() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16218),
@@ -28881,7 +28881,7 @@ class VariableNodeLoader {
   }
 
   void loadNode842() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16220),
@@ -28921,7 +28921,7 @@ class VariableNodeLoader {
   }
 
   void loadNode843() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16222),
@@ -28961,7 +28961,7 @@ class VariableNodeLoader {
   }
 
   void loadNode844() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16224),
@@ -29001,7 +29001,7 @@ class VariableNodeLoader {
   }
 
   void loadNode845() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16225),
@@ -29034,7 +29034,7 @@ class VariableNodeLoader {
   }
 
   void loadNode846() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15418),
@@ -29067,7 +29067,7 @@ class VariableNodeLoader {
   }
 
   void loadNode847() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16226),
@@ -29100,7 +29100,7 @@ class VariableNodeLoader {
   }
 
   void loadNode848() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15423),
@@ -29133,7 +29133,7 @@ class VariableNodeLoader {
   }
 
   void loadNode849() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16227),
@@ -29166,7 +29166,7 @@ class VariableNodeLoader {
   }
 
   void loadNode850() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24143),
@@ -29199,7 +29199,7 @@ class VariableNodeLoader {
   }
 
   void loadNode851() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15685),
@@ -29239,7 +29239,7 @@ class VariableNodeLoader {
   }
 
   void loadNode852() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15687),
@@ -29279,7 +29279,7 @@ class VariableNodeLoader {
   }
 
   void loadNode853() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16229),
@@ -29319,7 +29319,7 @@ class VariableNodeLoader {
   }
 
   void loadNode854() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16231),
@@ -29359,7 +29359,7 @@ class VariableNodeLoader {
   }
 
   void loadNode855() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16233),
@@ -29399,7 +29399,7 @@ class VariableNodeLoader {
   }
 
   void loadNode856() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16235),
@@ -29439,7 +29439,7 @@ class VariableNodeLoader {
   }
 
   void loadNode857() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16236),
@@ -29472,7 +29472,7 @@ class VariableNodeLoader {
   }
 
   void loadNode858() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15424),
@@ -29505,7 +29505,7 @@ class VariableNodeLoader {
   }
 
   void loadNode859() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16237),
@@ -29538,7 +29538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode860() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15425),
@@ -29571,7 +29571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode861() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16238),
@@ -29604,7 +29604,7 @@ class VariableNodeLoader {
   }
 
   void loadNode862() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24144),
@@ -29637,7 +29637,7 @@ class VariableNodeLoader {
   }
 
   void loadNode863() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16042),
@@ -29677,7 +29677,7 @@ class VariableNodeLoader {
   }
 
   void loadNode864() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16044),
@@ -29717,7 +29717,7 @@ class VariableNodeLoader {
   }
 
   void loadNode865() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16240),
@@ -29757,7 +29757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode866() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16242),
@@ -29797,7 +29797,7 @@ class VariableNodeLoader {
   }
 
   void loadNode867() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16244),
@@ -29837,7 +29837,7 @@ class VariableNodeLoader {
   }
 
   void loadNode868() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16246),
@@ -29877,7 +29877,7 @@ class VariableNodeLoader {
   }
 
   void loadNode869() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16247),
@@ -29910,7 +29910,7 @@ class VariableNodeLoader {
   }
 
   void loadNode870() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15426),
@@ -29943,7 +29943,7 @@ class VariableNodeLoader {
   }
 
   void loadNode871() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16248),
@@ -29976,7 +29976,7 @@ class VariableNodeLoader {
   }
 
   void loadNode872() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15427),
@@ -30009,7 +30009,7 @@ class VariableNodeLoader {
   }
 
   void loadNode873() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16249),
@@ -30042,7 +30042,7 @@ class VariableNodeLoader {
   }
 
   void loadNode874() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24145),
@@ -30075,7 +30075,7 @@ class VariableNodeLoader {
   }
 
   void loadNode875() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15697),
@@ -30115,7 +30115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode876() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15699),
@@ -30155,7 +30155,7 @@ class VariableNodeLoader {
   }
 
   void loadNode877() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16251),
@@ -30195,7 +30195,7 @@ class VariableNodeLoader {
   }
 
   void loadNode878() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16253),
@@ -30235,7 +30235,7 @@ class VariableNodeLoader {
   }
 
   void loadNode879() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16255),
@@ -30275,7 +30275,7 @@ class VariableNodeLoader {
   }
 
   void loadNode880() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16257),
@@ -30315,7 +30315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode881() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16269),
@@ -30348,7 +30348,7 @@ class VariableNodeLoader {
   }
 
   void loadNode882() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15428),
@@ -30381,7 +30381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode883() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16270),
@@ -30414,7 +30414,7 @@ class VariableNodeLoader {
   }
 
   void loadNode884() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15429),
@@ -30447,7 +30447,7 @@ class VariableNodeLoader {
   }
 
   void loadNode885() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16271),
@@ -30480,7 +30480,7 @@ class VariableNodeLoader {
   }
 
   void loadNode886() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24146),
@@ -30513,7 +30513,7 @@ class VariableNodeLoader {
   }
 
   void loadNode887() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15721),
@@ -30553,7 +30553,7 @@ class VariableNodeLoader {
   }
 
   void loadNode888() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15723),
@@ -30593,7 +30593,7 @@ class VariableNodeLoader {
   }
 
   void loadNode889() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16273),
@@ -30633,7 +30633,7 @@ class VariableNodeLoader {
   }
 
   void loadNode890() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16275),
@@ -30673,7 +30673,7 @@ class VariableNodeLoader {
   }
 
   void loadNode891() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16277),
@@ -30713,7 +30713,7 @@ class VariableNodeLoader {
   }
 
   void loadNode892() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16279),
@@ -30753,7 +30753,7 @@ class VariableNodeLoader {
   }
 
   void loadNode893() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16258),
@@ -30786,7 +30786,7 @@ class VariableNodeLoader {
   }
 
   void loadNode894() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15430),
@@ -30819,7 +30819,7 @@ class VariableNodeLoader {
   }
 
   void loadNode895() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16259),
@@ -30852,7 +30852,7 @@ class VariableNodeLoader {
   }
 
   void loadNode896() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15527),
@@ -30885,7 +30885,7 @@ class VariableNodeLoader {
   }
 
   void loadNode897() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16260),
@@ -30918,7 +30918,7 @@ class VariableNodeLoader {
   }
 
   void loadNode898() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24147),
@@ -30951,7 +30951,7 @@ class VariableNodeLoader {
   }
 
   void loadNode899() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15709),
@@ -30991,7 +30991,7 @@ class VariableNodeLoader {
   }
 
   void loadNode900() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15711),
@@ -31031,7 +31031,7 @@ class VariableNodeLoader {
   }
 
   void loadNode901() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16262),
@@ -31071,7 +31071,7 @@ class VariableNodeLoader {
   }
 
   void loadNode902() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16264),
@@ -31111,7 +31111,7 @@ class VariableNodeLoader {
   }
 
   void loadNode903() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16266),
@@ -31151,7 +31151,7 @@ class VariableNodeLoader {
   }
 
   void loadNode904() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16268),
@@ -31191,7 +31191,7 @@ class VariableNodeLoader {
   }
 
   void loadNode905() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25566),
@@ -31224,7 +31224,7 @@ class VariableNodeLoader {
   }
 
   void loadNode906() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25567),
@@ -31257,7 +31257,7 @@ class VariableNodeLoader {
   }
 
   void loadNode907() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25568),
@@ -31290,7 +31290,7 @@ class VariableNodeLoader {
   }
 
   void loadNode908() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25569),
@@ -31323,7 +31323,7 @@ class VariableNodeLoader {
   }
 
   void loadNode909() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25570),
@@ -31356,7 +31356,7 @@ class VariableNodeLoader {
   }
 
   void loadNode910() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25571),
@@ -31389,7 +31389,7 @@ class VariableNodeLoader {
   }
 
   void loadNode911() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25573),
@@ -31429,7 +31429,7 @@ class VariableNodeLoader {
   }
 
   void loadNode912() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25575),
@@ -31469,7 +31469,7 @@ class VariableNodeLoader {
   }
 
   void loadNode913() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25577),
@@ -31509,7 +31509,7 @@ class VariableNodeLoader {
   }
 
   void loadNode914() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25579),
@@ -31549,7 +31549,7 @@ class VariableNodeLoader {
   }
 
   void loadNode915() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25581),
@@ -31589,7 +31589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode916() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25583),
@@ -31629,7 +31629,7 @@ class VariableNodeLoader {
   }
 
   void loadNode917() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25604),
@@ -31662,7 +31662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode918() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25605),
@@ -31695,7 +31695,7 @@ class VariableNodeLoader {
   }
 
   void loadNode919() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25606),
@@ -31728,7 +31728,7 @@ class VariableNodeLoader {
   }
 
   void loadNode920() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25607),
@@ -31761,7 +31761,7 @@ class VariableNodeLoader {
   }
 
   void loadNode921() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25608),
@@ -31794,7 +31794,7 @@ class VariableNodeLoader {
   }
 
   void loadNode922() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25609),
@@ -31827,7 +31827,7 @@ class VariableNodeLoader {
   }
 
   void loadNode923() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25611),
@@ -31867,7 +31867,7 @@ class VariableNodeLoader {
   }
 
   void loadNode924() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25613),
@@ -31907,7 +31907,7 @@ class VariableNodeLoader {
   }
 
   void loadNode925() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25615),
@@ -31947,7 +31947,7 @@ class VariableNodeLoader {
   }
 
   void loadNode926() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25617),
@@ -31987,7 +31987,7 @@ class VariableNodeLoader {
   }
 
   void loadNode927() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25619),
@@ -32027,7 +32027,7 @@ class VariableNodeLoader {
   }
 
   void loadNode928() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25621),
@@ -32067,7 +32067,7 @@ class VariableNodeLoader {
   }
 
   void loadNode929() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25585),
@@ -32100,7 +32100,7 @@ class VariableNodeLoader {
   }
 
   void loadNode930() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25586),
@@ -32133,7 +32133,7 @@ class VariableNodeLoader {
   }
 
   void loadNode931() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25587),
@@ -32166,7 +32166,7 @@ class VariableNodeLoader {
   }
 
   void loadNode932() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25588),
@@ -32199,7 +32199,7 @@ class VariableNodeLoader {
   }
 
   void loadNode933() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25589),
@@ -32232,7 +32232,7 @@ class VariableNodeLoader {
   }
 
   void loadNode934() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25590),
@@ -32265,7 +32265,7 @@ class VariableNodeLoader {
   }
 
   void loadNode935() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25592),
@@ -32305,7 +32305,7 @@ class VariableNodeLoader {
   }
 
   void loadNode936() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25594),
@@ -32345,7 +32345,7 @@ class VariableNodeLoader {
   }
 
   void loadNode937() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25596),
@@ -32385,7 +32385,7 @@ class VariableNodeLoader {
   }
 
   void loadNode938() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25598),
@@ -32425,7 +32425,7 @@ class VariableNodeLoader {
   }
 
   void loadNode939() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25600),
@@ -32465,7 +32465,7 @@ class VariableNodeLoader {
   }
 
   void loadNode940() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25602),
@@ -32505,7 +32505,7 @@ class VariableNodeLoader {
   }
 
   void loadNode941() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23501),
@@ -32532,7 +32532,7 @@ class VariableNodeLoader {
   }
 
   void loadNode942() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23517),
@@ -32564,7 +32564,7 @@ class VariableNodeLoader {
   }
 
   void loadNode943() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23521),
@@ -32596,7 +32596,7 @@ class VariableNodeLoader {
   }
 
   void loadNode944() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23525),
@@ -32628,7 +32628,7 @@ class VariableNodeLoader {
   }
 
   void loadNode945() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2366),
@@ -32660,7 +32660,7 @@ class VariableNodeLoader {
   }
 
   void loadNode946() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2367),
@@ -32692,7 +32692,7 @@ class VariableNodeLoader {
   }
 
   void loadNode947() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17567),
@@ -32724,7 +32724,7 @@ class VariableNodeLoader {
   }
 
   void loadNode948() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23904),
@@ -32756,7 +32756,7 @@ class VariableNodeLoader {
   }
 
   void loadNode949() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17568),
@@ -32788,7 +32788,7 @@ class VariableNodeLoader {
   }
 
   void loadNode950() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23905),
@@ -32820,7 +32820,7 @@ class VariableNodeLoader {
   }
 
   void loadNode951() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17569),
@@ -32852,7 +32852,7 @@ class VariableNodeLoader {
   }
 
   void loadNode952() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2369),
@@ -32884,7 +32884,7 @@ class VariableNodeLoader {
   }
 
   void loadNode953() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23907),
@@ -32916,7 +32916,7 @@ class VariableNodeLoader {
   }
 
   void loadNode954() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17502),
@@ -32948,7 +32948,7 @@ class VariableNodeLoader {
   }
 
   void loadNode955() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17575),
@@ -32980,7 +32980,7 @@ class VariableNodeLoader {
   }
 
   void loadNode956() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23927),
@@ -33012,7 +33012,7 @@ class VariableNodeLoader {
   }
 
   void loadNode957() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2374),
@@ -33044,7 +33044,7 @@ class VariableNodeLoader {
   }
 
   void loadNode958() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2375),
@@ -33076,7 +33076,7 @@ class VariableNodeLoader {
   }
 
   void loadNode959() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2377),
@@ -33108,7 +33108,7 @@ class VariableNodeLoader {
   }
 
   void loadNode960() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11241),
@@ -33140,7 +33140,7 @@ class VariableNodeLoader {
   }
 
   void loadNode961() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11461),
@@ -33172,7 +33172,7 @@ class VariableNodeLoader {
   }
 
   void loadNode962() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12024),
@@ -33204,7 +33204,7 @@ class VariableNodeLoader {
   }
 
   void loadNode963() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12025),
@@ -33236,7 +33236,7 @@ class VariableNodeLoader {
   }
 
   void loadNode964() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12026),
@@ -33268,7 +33268,7 @@ class VariableNodeLoader {
   }
 
   void loadNode965() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12027),
@@ -33300,7 +33300,7 @@ class VariableNodeLoader {
   }
 
   void loadNode966() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12028),
@@ -33332,7 +33332,7 @@ class VariableNodeLoader {
   }
 
   void loadNode967() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12037),
@@ -33364,7 +33364,7 @@ class VariableNodeLoader {
   }
 
   void loadNode968() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12046),
@@ -33396,7 +33396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode969() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12055),
@@ -33428,7 +33428,7 @@ class VariableNodeLoader {
   }
 
   void loadNode970() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12056),
@@ -33460,7 +33460,7 @@ class VariableNodeLoader {
   }
 
   void loadNode971() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12065),
@@ -33492,7 +33492,7 @@ class VariableNodeLoader {
   }
 
   void loadNode972() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12066),
@@ -33524,7 +33524,7 @@ class VariableNodeLoader {
   }
 
   void loadNode973() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12067),
@@ -33556,7 +33556,7 @@ class VariableNodeLoader {
   }
 
   void loadNode974() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12076),
@@ -33588,7 +33588,7 @@ class VariableNodeLoader {
   }
 
   void loadNode975() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32437),
@@ -33625,7 +33625,7 @@ class VariableNodeLoader {
   }
 
   void loadNode976() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32441),
@@ -33657,7 +33657,7 @@ class VariableNodeLoader {
   }
 
   void loadNode977() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32443),
@@ -33689,7 +33689,7 @@ class VariableNodeLoader {
   }
 
   void loadNode978() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32445),
@@ -33721,7 +33721,7 @@ class VariableNodeLoader {
   }
 
   void loadNode979() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32446),
@@ -33753,7 +33753,7 @@ class VariableNodeLoader {
   }
 
   void loadNode980() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32588),
@@ -33785,7 +33785,7 @@ class VariableNodeLoader {
   }
 
   void loadNode981() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32590),
@@ -33817,7 +33817,7 @@ class VariableNodeLoader {
   }
 
   void loadNode982() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32461),
@@ -33849,7 +33849,7 @@ class VariableNodeLoader {
   }
 
   void loadNode983() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32463),
@@ -33881,7 +33881,7 @@ class VariableNodeLoader {
   }
 
   void loadNode984() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32465),
@@ -33913,7 +33913,7 @@ class VariableNodeLoader {
   }
 
   void loadNode985() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32472),
@@ -33945,7 +33945,7 @@ class VariableNodeLoader {
   }
 
   void loadNode986() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32473),
@@ -33977,7 +33977,7 @@ class VariableNodeLoader {
   }
 
   void loadNode987() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32474),
@@ -34009,7 +34009,7 @@ class VariableNodeLoader {
   }
 
   void loadNode988() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32476),
@@ -34041,7 +34041,7 @@ class VariableNodeLoader {
   }
 
   void loadNode989() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32478),
@@ -34073,7 +34073,7 @@ class VariableNodeLoader {
   }
 
   void loadNode990() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32479),
@@ -34105,7 +34105,7 @@ class VariableNodeLoader {
   }
 
   void loadNode991() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32480),
@@ -34137,7 +34137,7 @@ class VariableNodeLoader {
   }
 
   void loadNode992() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32483),
@@ -34169,7 +34169,7 @@ class VariableNodeLoader {
   }
 
   void loadNode993() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32485),
@@ -34201,7 +34201,7 @@ class VariableNodeLoader {
   }
 
   void loadNode994() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32496),
@@ -34233,7 +34233,7 @@ class VariableNodeLoader {
   }
 
   void loadNode995() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 8996),
@@ -34265,7 +34265,7 @@ class VariableNodeLoader {
   }
 
   void loadNode996() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9000),
@@ -34297,7 +34297,7 @@ class VariableNodeLoader {
   }
 
   void loadNode997() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9001),
@@ -34329,7 +34329,7 @@ class VariableNodeLoader {
   }
 
   void loadNode998() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11110),
@@ -34361,7 +34361,7 @@ class VariableNodeLoader {
   }
 
   void loadNode999() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11111),
@@ -34393,7 +34393,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1000() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9003),
@@ -34425,7 +34425,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1001() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11112),
@@ -34457,7 +34457,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1002() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11113),
@@ -34489,7 +34489,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1003() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16363),
@@ -34521,7 +34521,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1004() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16364),
@@ -34553,7 +34553,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1005() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9009),
@@ -34585,7 +34585,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1006() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9010),
@@ -34617,7 +34617,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1007() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3874),
@@ -34649,7 +34649,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1008() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32060),
@@ -34679,7 +34679,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1009() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9011),
@@ -34730,7 +34730,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1010() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9012),
@@ -34762,7 +34762,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1011() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9015),
@@ -34794,7 +34794,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1012() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9016),
@@ -34826,7 +34826,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1013() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9017),
@@ -34858,7 +34858,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1014() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9018),
@@ -34895,7 +34895,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1015() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9019),
@@ -34932,7 +34932,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1016() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 9020),
@@ -34968,7 +34968,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1017() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9021),
@@ -35000,7 +35000,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1018() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 9022),
@@ -35036,7 +35036,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1019() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9023),
@@ -35068,7 +35068,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1020() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 9024),
@@ -35104,7 +35104,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1021() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9025),
@@ -35136,7 +35136,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1022() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9026),
@@ -35168,7 +35168,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1023() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9030),
@@ -35208,7 +35208,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1024() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3876),
@@ -35248,7 +35248,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1025() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12913),
@@ -35288,7 +35288,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1026() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9035),
@@ -35327,7 +35327,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1027() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9036),
@@ -35359,7 +35359,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1028() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9055),
@@ -35407,7 +35407,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1029() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9056),
@@ -35439,7 +35439,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1030() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9060),
@@ -35471,7 +35471,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1031() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9062),
@@ -35508,7 +35508,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1032() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9063),
@@ -35545,7 +35545,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1033() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2831),
@@ -35577,7 +35577,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1034() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9064),
@@ -35609,7 +35609,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1035() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9065),
@@ -35641,7 +35641,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1036() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9066),
@@ -35673,7 +35673,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1037() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9067),
@@ -35705,7 +35705,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1038() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9068),
@@ -35737,7 +35737,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1039() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9070),
@@ -35776,7 +35776,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1040() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24313),
@@ -35816,7 +35816,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1041() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9073),
@@ -35858,7 +35858,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1042() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9074),
@@ -35890,7 +35890,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1043() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9093),
@@ -35938,7 +35938,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1044() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9094),
@@ -35970,7 +35970,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1045() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9098),
@@ -36002,7 +36002,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1046() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9100),
@@ -36039,7 +36039,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1047() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9101),
@@ -36076,7 +36076,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1048() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9102),
@@ -36124,7 +36124,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1049() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9103),
@@ -36156,7 +36156,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1050() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9107),
@@ -36188,7 +36188,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1051() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9109),
@@ -36225,7 +36225,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1052() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9110),
@@ -36262,7 +36262,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1053() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9112),
@@ -36302,7 +36302,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1054() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9114),
@@ -36342,7 +36342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1055() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9118),
@@ -36387,7 +36387,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1056() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9119),
@@ -36419,7 +36419,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1057() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9160),
@@ -36473,7 +36473,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1058() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9161),
@@ -36505,7 +36505,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1059() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9164),
@@ -36537,7 +36537,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1060() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9165),
@@ -36569,7 +36569,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1061() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9166),
@@ -36601,7 +36601,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1062() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9167),
@@ -36638,7 +36638,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1063() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9168),
@@ -36675,7 +36675,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1064() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11120),
@@ -36707,7 +36707,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1065() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9169),
@@ -36755,7 +36755,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1066() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9170),
@@ -36787,7 +36787,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1067() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9174),
@@ -36819,7 +36819,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1068() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9176),
@@ -36856,7 +36856,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1069() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9177),
@@ -36893,7 +36893,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1070() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 16371),
@@ -36938,7 +36938,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1071() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16372),
@@ -36970,7 +36970,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1072() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16376),
@@ -37002,7 +37002,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1073() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16378),
@@ -37039,7 +37039,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1074() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16379),
@@ -37076,7 +37076,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1075() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteStateVariableTypeNode node =
         new FiniteStateVariableTypeNode(
             this.context,
             new NodeId(0, 9179),
@@ -37112,7 +37112,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1076() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9180),
@@ -37144,7 +37144,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1077() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteTransitionVariableTypeNode node =
         new FiniteTransitionVariableTypeNode(
             this.context,
             new NodeId(0, 9184),
@@ -37183,7 +37183,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1078() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9185),
@@ -37215,7 +37215,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1079() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9188),
@@ -37247,7 +37247,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1080() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9189),
@@ -37279,7 +37279,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1081() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9214),
@@ -37318,7 +37318,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1082() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9215),
@@ -37350,7 +37350,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1083() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9216),
@@ -37382,7 +37382,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1084() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16389),
@@ -37414,7 +37414,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1085() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.AudioVariableTypeNode node =
         new AudioVariableTypeNode(
             this.context,
             new NodeId(0, 16390),
@@ -37447,7 +37447,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1086() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 16380),
@@ -37492,7 +37492,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1087() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16381),
@@ -37524,7 +37524,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1088() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16385),
@@ -37556,7 +37556,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1089() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16387),
@@ -37593,7 +37593,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1090() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16388),
@@ -37630,7 +37630,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1091() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16395),
@@ -37662,7 +37662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1092() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16396),
@@ -37694,7 +37694,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1093() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 16397),
@@ -37726,7 +37726,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1094() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 18190),
@@ -37771,7 +37771,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1095() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18191),
@@ -37803,7 +37803,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1096() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18195),
@@ -37835,7 +37835,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1097() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18197),
@@ -37872,7 +37872,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1098() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18198),
@@ -37909,7 +37909,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1099() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16400),
@@ -37941,7 +37941,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1100() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 16401),
@@ -37973,7 +37973,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1101() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24317),
@@ -38012,7 +38012,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1102() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24319),
@@ -38051,7 +38051,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1103() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24321),
@@ -38090,7 +38090,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1104() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24323),
@@ -38129,7 +38129,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1105() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24325),
@@ -38168,7 +38168,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1106() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25154),
@@ -38207,7 +38207,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1107() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16407),
@@ -38239,7 +38239,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1108() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16408),
@@ -38271,7 +38271,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1109() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16409),
@@ -38303,7 +38303,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1110() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16410),
@@ -38335,7 +38335,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1111() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16411),
@@ -38367,7 +38367,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1112() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16412),
@@ -38399,7 +38399,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1113() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16414),
@@ -38431,7 +38431,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1114() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16415),
@@ -38463,7 +38463,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1115() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16416),
@@ -38495,7 +38495,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1116() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16417),
@@ -38527,7 +38527,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1117() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16420),
@@ -38559,7 +38559,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1118() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16421),
@@ -38591,7 +38591,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1119() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16422),
@@ -38623,7 +38623,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1120() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 16423),
@@ -38659,7 +38659,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1121() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16424),
@@ -38691,7 +38691,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1122() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 16432),
@@ -38727,7 +38727,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1123() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16433),
@@ -38759,7 +38759,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1124() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 16434),
@@ -38795,7 +38795,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1125() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16435),
@@ -38827,7 +38827,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1126() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 16436),
@@ -38863,7 +38863,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1127() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16437),
@@ -38895,7 +38895,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1128() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16438),
@@ -38927,7 +38927,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1129() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16442),
@@ -38967,7 +38967,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1130() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 16443),
@@ -39003,7 +39003,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1131() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16444),
@@ -39035,7 +39035,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1132() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16462),
@@ -39075,7 +39075,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1133() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 16465),
@@ -39117,7 +39117,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1134() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16466),
@@ -39149,7 +39149,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1135() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16472),
@@ -39186,7 +39186,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1136() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16473),
@@ -39223,7 +39223,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1137() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16474),
@@ -39255,7 +39255,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1138() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16519),
@@ -39287,7 +39287,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1139() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 32226),
@@ -39320,7 +39320,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1140() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19904),
@@ -39352,7 +39352,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1141() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19905),
@@ -39384,7 +39384,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1142() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19906),
@@ -39416,7 +39416,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1143() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19907),
@@ -39448,7 +39448,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1144() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19908),
@@ -39480,7 +39480,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1145() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19909),
@@ -39512,7 +39512,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1146() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19911),
@@ -39544,7 +39544,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1147() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19912),
@@ -39576,7 +39576,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1148() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19913),
@@ -39608,7 +39608,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1149() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19914),
@@ -39640,7 +39640,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1150() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19969),
@@ -39672,7 +39672,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1151() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19970),
@@ -39704,7 +39704,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1152() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19971),
@@ -39736,7 +39736,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1153() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 19972),
@@ -39772,7 +39772,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1154() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19973),
@@ -39804,7 +39804,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1155() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 19981),
@@ -39840,7 +39840,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1156() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20028),
@@ -39872,7 +39872,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1157() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 20029),
@@ -39908,7 +39908,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1158() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20030),
@@ -39940,7 +39940,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1159() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 20031),
@@ -39976,7 +39976,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1160() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20032),
@@ -40008,7 +40008,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1161() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20033),
@@ -40040,7 +40040,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1162() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20037),
@@ -40080,7 +40080,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1163() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 20038),
@@ -40116,7 +40116,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1164() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20039),
@@ -40148,7 +40148,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1165() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23561),
@@ -40188,7 +40188,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1166() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 23579),
@@ -40230,7 +40230,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1167() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23580),
@@ -40262,7 +40262,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1168() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23586),
@@ -40299,7 +40299,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1169() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23587),
@@ -40336,7 +40336,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1170() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23588),
@@ -40368,7 +40368,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1171() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23662),
@@ -40400,7 +40400,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1172() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9115),
@@ -40432,7 +40432,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1173() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 6098),
@@ -40471,7 +40471,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1174() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 6100),
@@ -40510,7 +40510,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1175() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 6101),
@@ -40549,7 +40549,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1176() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11322),
@@ -40588,7 +40588,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1177() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11323),
@@ -40627,7 +40627,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1178() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11324),
@@ -40666,7 +40666,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1179() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11325),
@@ -40705,7 +40705,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1180() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11326),
@@ -40744,7 +40744,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1181() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11327),
@@ -40783,7 +40783,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1182() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2991),
@@ -40822,7 +40822,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1183() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24757),
@@ -40862,7 +40862,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1184() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24759),
@@ -40901,7 +40901,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1185() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24761),
@@ -40940,7 +40940,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1186() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11124),
@@ -40972,7 +40972,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1187() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11125),
@@ -41004,7 +41004,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1188() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11126),
@@ -41036,7 +41036,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1189() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11127),
@@ -41068,7 +41068,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1190() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16572),
@@ -41100,7 +41100,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1191() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16573),
@@ -41132,7 +41132,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1192() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16574),
@@ -41164,7 +41164,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1193() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16575),
@@ -41196,7 +41196,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1194() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24770),
@@ -41228,7 +41228,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1195() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24771),
@@ -41260,7 +41260,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1196() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24772),
@@ -41292,7 +41292,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1197() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24773),
@@ -41324,7 +41324,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1198() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24774),
@@ -41356,7 +41356,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1199() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24775),
@@ -41388,7 +41388,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1200() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24776),
@@ -41420,7 +41420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1201() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24777),
@@ -41452,7 +41452,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1202() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9330),
@@ -41491,7 +41491,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1203() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9332),
@@ -41530,7 +41530,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1204() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9334),
@@ -41569,7 +41569,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1205() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9336),
@@ -41608,7 +41608,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1206() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11340),
@@ -41647,7 +41647,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1207() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11341),
@@ -41686,7 +41686,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1208() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11342),
@@ -41725,7 +41725,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1209() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11343),
@@ -41764,7 +41764,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1210() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9398),
@@ -41803,7 +41803,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1211() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9399),
@@ -41835,7 +41835,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1212() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteStateVariableTypeNode node =
         new FiniteStateVariableTypeNode(
             this.context,
             new NodeId(0, 9456),
@@ -41871,7 +41871,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1213() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9457),
@@ -41903,7 +41903,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1214() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteTransitionVariableTypeNode node =
         new FiniteTransitionVariableTypeNode(
             this.context,
             new NodeId(0, 9461),
@@ -41942,7 +41942,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1215() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9462),
@@ -41974,7 +41974,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1216() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9465),
@@ -42006,7 +42006,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1217() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 9963),
@@ -42054,7 +42054,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1218() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9964),
@@ -42086,7 +42086,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1219() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 10020),
@@ -42134,7 +42134,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1220() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10021),
@@ -42166,7 +42166,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1221() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10025),
@@ -42198,7 +42198,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1222() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10027),
@@ -42235,7 +42235,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1223() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10028),
@@ -42272,7 +42272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1224() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 10029),
@@ -42320,7 +42320,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1225() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10030),
@@ -42352,7 +42352,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1226() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10034),
@@ -42384,7 +42384,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1227() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10036),
@@ -42421,7 +42421,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1228() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10037),
@@ -42458,7 +42458,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1229() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 10038),
@@ -42506,7 +42506,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1230() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10039),
@@ -42538,7 +42538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1231() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10043),
@@ -42570,7 +42570,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1232() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10045),
@@ -42607,7 +42607,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1233() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10046),
@@ -42644,7 +42644,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1234() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 10047),
@@ -42692,7 +42692,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1235() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10048),
@@ -42724,7 +42724,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1236() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10052),
@@ -42756,7 +42756,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1237() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10054),
@@ -42793,7 +42793,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1238() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10055),
@@ -42830,7 +42830,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1239() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 10522),
@@ -42862,7 +42862,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1240() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16776),
@@ -42894,7 +42894,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1241() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16858),
@@ -42926,7 +42926,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1242() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 9905),
@@ -42958,7 +42958,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1243() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16817),
@@ -42990,7 +42990,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1244() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16899),
@@ -43022,7 +43022,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1245() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11158),
@@ -43054,7 +43054,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1246() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13325),
@@ -43086,7 +43086,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1247() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14900),
@@ -43118,7 +43118,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1248() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13326),
@@ -43150,7 +43150,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1249() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13327),
@@ -43182,7 +43182,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1250() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17215),
@@ -43214,7 +43214,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1251() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17216),
@@ -43246,7 +43246,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1252() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17217),
@@ -43278,7 +43278,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1253() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17222),
@@ -43310,7 +43310,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1254() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11851),
@@ -43342,7 +43342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1255() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11852),
@@ -43374,7 +43374,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1256() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17223),
@@ -43406,7 +43406,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1257() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11853),
@@ -43438,7 +43438,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1258() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17224),
@@ -43470,7 +43470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1259() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11854),
@@ -43502,7 +43502,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1260() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11855),
@@ -43534,7 +43534,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1261() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17280),
@@ -43566,7 +43566,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1262() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17991),
@@ -43598,7 +43598,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1263() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17281),
@@ -43630,7 +43630,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1264() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17282),
@@ -43662,7 +43662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1265() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.AlarmRateVariableTypeNode node =
         new AlarmRateVariableTypeNode(
             this.context,
             new NodeId(0, 17284),
@@ -43698,7 +43698,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1266() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17285),
@@ -43730,7 +43730,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1267() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.AlarmRateVariableTypeNode node =
         new AlarmRateVariableTypeNode(
             this.context,
             new NodeId(0, 17286),
@@ -43766,7 +43766,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1268() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17287),
@@ -43798,7 +43798,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1269() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17283),
@@ -43830,7 +43830,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1270() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.AlarmRateVariableTypeNode node =
         new AlarmRateVariableTypeNode(
             this.context,
             new NodeId(0, 17288),
@@ -43866,7 +43866,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1271() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17289),
@@ -43898,7 +43898,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1272() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17278),
@@ -43930,7 +43930,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1273() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32245),
@@ -43962,7 +43962,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1274() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32246),
@@ -43994,7 +43994,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1275() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32247),
@@ -44026,7 +44026,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1276() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32248),
@@ -44058,7 +44058,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1277() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32249),
@@ -44090,7 +44090,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1278() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32250),
@@ -44122,7 +44122,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1279() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32252),
@@ -44159,7 +44159,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1280() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteStateVariableTypeNode node =
         new FiniteStateVariableTypeNode(
             this.context,
             new NodeId(0, 3830),
@@ -44198,7 +44198,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1281() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3831),
@@ -44230,7 +44230,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1282() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3833),
@@ -44262,7 +44262,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1283() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteTransitionVariableTypeNode node =
         new FiniteTransitionVariableTypeNode(
             this.context,
             new NodeId(0, 3835),
@@ -44304,7 +44304,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1284() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3836),
@@ -44336,7 +44336,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1285() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3838),
@@ -44368,7 +44368,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1286() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3839),
@@ -44400,7 +44400,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1287() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2392),
@@ -44430,7 +44430,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1288() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2393),
@@ -44462,7 +44462,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1289() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2394),
@@ -44494,7 +44494,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1290() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2395),
@@ -44526,7 +44526,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1291() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2396),
@@ -44556,7 +44556,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1292() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2397),
@@ -44586,7 +44586,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1293() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2398),
@@ -44616,7 +44616,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1294() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ProgramDiagnostic2TypeNode node =
         new ProgramDiagnostic2TypeNode(
             this.context,
             new NodeId(0, 2399),
@@ -44685,7 +44685,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1295() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3840),
@@ -44717,7 +44717,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1296() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3841),
@@ -44749,7 +44749,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1297() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3842),
@@ -44781,7 +44781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1298() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3843),
@@ -44813,7 +44813,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1299() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3844),
@@ -44845,7 +44845,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1300() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3845),
@@ -44877,7 +44877,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1301() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3846),
@@ -44909,7 +44909,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1302() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3847),
@@ -44941,7 +44941,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1303() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15038),
@@ -44973,7 +44973,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1304() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15040),
@@ -45005,7 +45005,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1305() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3848),
@@ -45037,7 +45037,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1306() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 3849),
@@ -45069,7 +45069,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1307() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2407),
@@ -45108,7 +45108,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1308() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2401),
@@ -45147,7 +45147,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1309() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2403),
@@ -45186,7 +45186,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1310() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2405),
@@ -45225,7 +45225,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1311() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2409),
@@ -45264,7 +45264,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1312() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2411),
@@ -45303,7 +45303,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1313() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2413),
@@ -45342,7 +45342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1314() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2415),
@@ -45381,7 +45381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1315() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2417),
@@ -45420,7 +45420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1316() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2419),
@@ -45459,7 +45459,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1317() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2421),
@@ -45498,7 +45498,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1318() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2423),
@@ -45537,7 +45537,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1319() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2425),
@@ -45576,7 +45576,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1320() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 2379),
@@ -45608,7 +45608,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1321() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11875),
@@ -45640,7 +45640,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1322() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.FiniteTransitionVariableTypeNode node =
         new FiniteTransitionVariableTypeNode(
             this.context,
             new NodeId(0, 3825),
@@ -45676,7 +45676,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1323() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3826),
@@ -45708,7 +45708,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1324() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2381),
@@ -45740,7 +45740,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1325() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2382),
@@ -45772,7 +45772,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1326() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2383),
@@ -45804,7 +45804,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1327() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2384),
@@ -45836,7 +45836,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1328() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2385),
@@ -45868,7 +45868,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1329() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2386),
@@ -45900,7 +45900,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1330() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2387),
@@ -45932,7 +45932,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1331() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2388),
@@ -45964,7 +45964,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1332() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2389),
@@ -45996,7 +45996,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1333() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2390),
@@ -46028,7 +46028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1334() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15384),
@@ -46060,7 +46060,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1335() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15385),
@@ -46092,7 +46092,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1336() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15386),
@@ -46124,7 +46124,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1337() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15387),
@@ -46156,7 +46156,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1338() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15388),
@@ -46188,7 +46188,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1339() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15389),
@@ -46220,7 +46220,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1340() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15390),
@@ -46252,7 +46252,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1341() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15391),
@@ -46284,7 +46284,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1342() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15392),
@@ -46316,7 +46316,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1343() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15393),
@@ -46348,7 +46348,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1344() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15394),
@@ -46380,7 +46380,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1345() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15395),
@@ -46412,7 +46412,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1346() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11214),
@@ -46439,7 +46439,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1347() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11168),
@@ -46471,7 +46471,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1348() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11169),
@@ -46503,7 +46503,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1349() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11170),
@@ -46535,7 +46535,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1350() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11171),
@@ -46567,7 +46567,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1351() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2323),
@@ -46599,7 +46599,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1352() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2324),
@@ -46631,7 +46631,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1353() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2325),
@@ -46663,7 +46663,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1354() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2326),
@@ -46695,7 +46695,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1355() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2327),
@@ -46727,7 +46727,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1356() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2328),
@@ -46759,7 +46759,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1357() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11499),
@@ -46791,7 +46791,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1358() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11500),
@@ -46823,7 +46823,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1359() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19092),
@@ -46855,7 +46855,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1360() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32619),
@@ -46887,7 +46887,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1361() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32620),
@@ -46919,7 +46919,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1362() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32623),
@@ -46951,7 +46951,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1363() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32624),
@@ -46983,7 +46983,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1364() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18644),
@@ -47015,7 +47015,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1365() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32626),
@@ -47047,7 +47047,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1366() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32627),
@@ -47079,7 +47079,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1367() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32628),
@@ -47111,7 +47111,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1368() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32629),
@@ -47143,7 +47143,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1369() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32630),
@@ -47175,7 +47175,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1370() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32631),
@@ -47207,7 +47207,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1371() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32632),
@@ -47239,7 +47239,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1372() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11204),
@@ -47269,7 +47269,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1373() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11205),
@@ -47299,7 +47299,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1374() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11206),
@@ -47329,7 +47329,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1375() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11207),
@@ -47359,7 +47359,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1376() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11208),
@@ -47389,7 +47389,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1377() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32639),
@@ -47419,7 +47419,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1378() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32640),
@@ -47449,7 +47449,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1379() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32641),
@@ -47479,7 +47479,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1380() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32642),
@@ -47509,7 +47509,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1381() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32644),
@@ -47539,7 +47539,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1382() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32645),
@@ -47569,7 +47569,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1383() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32646),
@@ -47599,7 +47599,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1384() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32647),
@@ -47629,7 +47629,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1385() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32648),
@@ -47659,7 +47659,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1386() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32649),
@@ -47689,7 +47689,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1387() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32650),
@@ -47719,7 +47719,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1388() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32656),
@@ -47749,7 +47749,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1389() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32682),
@@ -47779,7 +47779,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1390() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32752),
@@ -47809,7 +47809,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1391() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32753),
@@ -47839,7 +47839,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1392() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32756),
@@ -47869,7 +47869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1393() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32757),
@@ -47899,7 +47899,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1394() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11215),
@@ -47926,7 +47926,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1395() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2331),
@@ -47958,7 +47958,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1396() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2332),
@@ -47990,7 +47990,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1397() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11268),
@@ -48022,7 +48022,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1398() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11269),
@@ -48054,7 +48054,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1399() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2334),
@@ -48086,7 +48086,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1400() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2335),
@@ -48118,7 +48118,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1401() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2336),
@@ -48150,7 +48150,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1402() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2337),
@@ -48182,7 +48182,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1403() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 2338),
@@ -48214,7 +48214,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1404() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11278),
@@ -48246,7 +48246,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1405() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11279),
@@ -48278,7 +48278,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1406() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11280),
@@ -48310,7 +48310,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1407() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11501),
@@ -48342,7 +48342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1408() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11270),
@@ -48374,7 +48374,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1409() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19094),
@@ -48406,7 +48406,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1410() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3025),
@@ -48438,7 +48438,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1411() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3028),
@@ -48470,7 +48470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1412() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3003),
@@ -48502,7 +48502,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1413() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3029),
@@ -48534,7 +48534,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1414() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3030),
@@ -48566,7 +48566,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1415() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3026),
@@ -48598,7 +48598,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1416() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3031),
@@ -48630,7 +48630,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1417() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3032),
@@ -48662,7 +48662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1418() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3033),
@@ -48694,7 +48694,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1419() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19293),
@@ -48726,7 +48726,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1420() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19294),
@@ -48758,7 +48758,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1421() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19295),
@@ -48790,7 +48790,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1422() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3027),
@@ -48822,7 +48822,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1423() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3015),
@@ -48854,7 +48854,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1424() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3016),
@@ -48886,7 +48886,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1425() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3017),
@@ -48918,7 +48918,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1426() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3034),
@@ -48950,7 +48950,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1427() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3020),
@@ -48982,7 +48982,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1428() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3021),
@@ -49014,7 +49014,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1429() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3023),
@@ -49046,7 +49046,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1430() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 3024),
@@ -49078,7 +49078,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1431() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32821),
@@ -49110,7 +49110,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1432() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32822),
@@ -49142,7 +49142,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1433() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32823),
@@ -49174,7 +49174,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1434() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12542),
@@ -49206,7 +49206,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1435() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19296),
@@ -49238,7 +49238,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1436() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32254),
@@ -49270,7 +49270,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1437() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23563),
@@ -49302,7 +49302,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1438() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12544),
@@ -49341,7 +49341,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1439() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12545),
@@ -49380,7 +49380,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1440() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12705),
@@ -49419,7 +49419,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1441() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12547),
@@ -49458,7 +49458,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1442() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12549),
@@ -49498,7 +49498,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1443() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12551),
@@ -49538,7 +49538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1444() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23565),
@@ -49576,7 +49576,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1445() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12553),
@@ -49614,7 +49614,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1446() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19446),
@@ -49646,7 +49646,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1447() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19447),
@@ -49678,7 +49678,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1448() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19448),
@@ -49710,7 +49710,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1449() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13600),
@@ -49742,7 +49742,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1450() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13601),
@@ -49774,7 +49774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1451() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13602),
@@ -49806,7 +49806,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1452() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13603),
@@ -49838,7 +49838,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1453() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13606),
@@ -49877,7 +49877,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1454() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13607),
@@ -49916,7 +49916,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1455() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13609),
@@ -49955,7 +49955,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1456() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13611),
@@ -49995,7 +49995,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1457() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13612),
@@ -50034,7 +50034,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1458() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13614),
@@ -50074,7 +50074,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1459() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13616),
@@ -50113,7 +50113,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1460() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13617),
@@ -50152,7 +50152,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1461() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13619),
@@ -50192,7 +50192,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1462() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13620),
@@ -50224,7 +50224,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1463() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13622),
@@ -50263,7 +50263,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1464() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13623),
@@ -50302,7 +50302,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1465() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13625),
@@ -50341,7 +50341,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1466() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13626),
@@ -50380,7 +50380,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1467() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13628),
@@ -50420,7 +50420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1468() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13630),
@@ -50460,7 +50460,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1469() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13631),
@@ -50492,7 +50492,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1470() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19398),
@@ -50524,7 +50524,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1471() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19451),
@@ -50556,7 +50556,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1472() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19452),
@@ -50588,7 +50588,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1473() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19453),
@@ -50620,7 +50620,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1474() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19454),
@@ -50652,7 +50652,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1475() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19455),
@@ -50684,7 +50684,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1476() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19456),
@@ -50716,7 +50716,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1477() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19458),
@@ -50748,7 +50748,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1478() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19459),
@@ -50780,7 +50780,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1479() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19460),
@@ -50812,7 +50812,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1480() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19461),
@@ -50844,7 +50844,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1481() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19464),
@@ -50876,7 +50876,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1482() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19465),
@@ -50908,7 +50908,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1483() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19466),
@@ -50940,7 +50940,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1484() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 19467),
@@ -50976,7 +50976,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1485() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19468),
@@ -51008,7 +51008,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1486() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 19476),
@@ -51044,7 +51044,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1487() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19477),
@@ -51076,7 +51076,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1488() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 19478),
@@ -51112,7 +51112,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1489() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19479),
@@ -51144,7 +51144,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1490() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 19480),
@@ -51180,7 +51180,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1491() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19481),
@@ -51212,7 +51212,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1492() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19482),
@@ -51244,7 +51244,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1493() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19486),
@@ -51284,7 +51284,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1494() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 19487),
@@ -51320,7 +51320,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1495() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19488),
@@ -51352,7 +51352,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1496() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19506),
@@ -51392,7 +51392,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1497() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 19509),
@@ -51428,7 +51428,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1498() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19510),
@@ -51460,7 +51460,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1499() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19518),
@@ -51492,7 +51492,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1500() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20101),
@@ -51524,7 +51524,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1501() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20138),
@@ -51556,7 +51556,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1502() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20139),
@@ -51588,7 +51588,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1503() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20141),
@@ -51620,7 +51620,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1504() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20142),
@@ -51652,7 +51652,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1505() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20144),
@@ -51684,7 +51684,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1506() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20145),
@@ -51716,7 +51716,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1507() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20146),
@@ -51748,7 +51748,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1508() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20147),
@@ -51780,7 +51780,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1509() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20148),
@@ -51812,7 +51812,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1510() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20149),
@@ -51844,7 +51844,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1511() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20151),
@@ -51876,7 +51876,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1512() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20152),
@@ -51908,7 +51908,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1513() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20153),
@@ -51940,7 +51940,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1514() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20154),
@@ -51972,7 +51972,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1515() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20157),
@@ -52004,7 +52004,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1516() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20158),
@@ -52036,7 +52036,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1517() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20159),
@@ -52068,7 +52068,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1518() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 20160),
@@ -52104,7 +52104,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1519() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20161),
@@ -52136,7 +52136,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1520() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 20169),
@@ -52172,7 +52172,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1521() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20170),
@@ -52204,7 +52204,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1522() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 20171),
@@ -52240,7 +52240,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1523() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20172),
@@ -52272,7 +52272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1524() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.ConditionVariableTypeNode node =
         new ConditionVariableTypeNode(
             this.context,
             new NodeId(0, 20173),
@@ -52308,7 +52308,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1525() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20174),
@@ -52340,7 +52340,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1526() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20175),
@@ -52372,7 +52372,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1527() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20179),
@@ -52412,7 +52412,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1528() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 20180),
@@ -52448,7 +52448,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1529() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20181),
@@ -52480,7 +52480,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1530() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20199),
@@ -52520,7 +52520,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1531() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.TwoStateVariableTypeNode node =
         new TwoStateVariableTypeNode(
             this.context,
             new NodeId(0, 20202),
@@ -52556,7 +52556,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1532() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20203),
@@ -52588,7 +52588,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1533() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20211),
@@ -52620,7 +52620,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1534() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20249),
@@ -52652,7 +52652,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1535() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20286),
@@ -52684,7 +52684,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1536() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20287),
@@ -52716,7 +52716,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1537() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20288),
@@ -52748,7 +52748,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1538() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20289),
@@ -52780,7 +52780,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1539() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23527),
@@ -52819,7 +52819,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1540() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13816),
@@ -52851,7 +52851,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1541() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13817),
@@ -52883,7 +52883,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1542() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13818),
@@ -52915,7 +52915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1543() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13819),
@@ -52947,7 +52947,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1544() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13822),
@@ -52986,7 +52986,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1545() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13823),
@@ -53025,7 +53025,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1546() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13825),
@@ -53064,7 +53064,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1547() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13827),
@@ -53104,7 +53104,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1548() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13828),
@@ -53143,7 +53143,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1549() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13830),
@@ -53183,7 +53183,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1550() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13832),
@@ -53222,7 +53222,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1551() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13833),
@@ -53261,7 +53261,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1552() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13835),
@@ -53301,7 +53301,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1553() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13836),
@@ -53333,7 +53333,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1554() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13838),
@@ -53372,7 +53372,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1555() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13839),
@@ -53411,7 +53411,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1556() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13841),
@@ -53450,7 +53450,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1557() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13842),
@@ -53489,7 +53489,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1558() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13844),
@@ -53529,7 +53529,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1559() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13846),
@@ -53569,7 +53569,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1560() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13847),
@@ -53601,7 +53601,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1561() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13850),
@@ -53633,7 +53633,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1562() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13851),
@@ -53665,7 +53665,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1563() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13852),
@@ -53697,7 +53697,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1564() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13853),
@@ -53729,7 +53729,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1565() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13856),
@@ -53768,7 +53768,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1566() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13857),
@@ -53807,7 +53807,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1567() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13859),
@@ -53846,7 +53846,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1568() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13861),
@@ -53886,7 +53886,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1569() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13862),
@@ -53925,7 +53925,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1570() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13864),
@@ -53965,7 +53965,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1571() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13866),
@@ -54004,7 +54004,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1572() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13867),
@@ -54043,7 +54043,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1573() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13869),
@@ -54083,7 +54083,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1574() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13870),
@@ -54115,7 +54115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1575() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13872),
@@ -54154,7 +54154,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1576() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13873),
@@ -54193,7 +54193,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1577() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13875),
@@ -54232,7 +54232,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1578() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13876),
@@ -54271,7 +54271,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1579() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13878),
@@ -54311,7 +54311,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1580() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13880),
@@ -54351,7 +54351,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1581() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13881),
@@ -54383,7 +54383,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1582() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13884),
@@ -54415,7 +54415,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1583() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13885),
@@ -54447,7 +54447,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1584() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13886),
@@ -54479,7 +54479,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1585() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13887),
@@ -54511,7 +54511,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1586() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13890),
@@ -54550,7 +54550,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1587() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13891),
@@ -54589,7 +54589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1588() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13893),
@@ -54628,7 +54628,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1589() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13895),
@@ -54668,7 +54668,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1590() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13896),
@@ -54707,7 +54707,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1591() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13898),
@@ -54747,7 +54747,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1592() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13900),
@@ -54786,7 +54786,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1593() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13901),
@@ -54825,7 +54825,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1594() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13903),
@@ -54865,7 +54865,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1595() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13904),
@@ -54897,7 +54897,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1596() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13906),
@@ -54936,7 +54936,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1597() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13907),
@@ -54975,7 +54975,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1598() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13909),
@@ -55014,7 +55014,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1599() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13910),
@@ -55053,7 +55053,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1600() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13912),
@@ -55093,7 +55093,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1601() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13914),
@@ -55133,7 +55133,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1602() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13915),
@@ -55165,7 +55165,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1603() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13918),
@@ -55197,7 +55197,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1604() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13919),
@@ -55229,7 +55229,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1605() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13920),
@@ -55261,7 +55261,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1606() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13921),
@@ -55293,7 +55293,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1607() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13924),
@@ -55332,7 +55332,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1608() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13925),
@@ -55371,7 +55371,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1609() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13927),
@@ -55410,7 +55410,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1610() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13929),
@@ -55450,7 +55450,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1611() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13930),
@@ -55489,7 +55489,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1612() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13932),
@@ -55529,7 +55529,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1613() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13934),
@@ -55568,7 +55568,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1614() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13935),
@@ -55607,7 +55607,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1615() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13937),
@@ -55647,7 +55647,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1616() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13938),
@@ -55679,7 +55679,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1617() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13940),
@@ -55718,7 +55718,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1618() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13941),
@@ -55757,7 +55757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1619() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13943),
@@ -55796,7 +55796,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1620() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13944),
@@ -55835,7 +55835,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1621() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13946),
@@ -55875,7 +55875,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1622() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13948),
@@ -55915,7 +55915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1623() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13949),
@@ -55947,7 +55947,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1624() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15438),
@@ -55979,7 +55979,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1625() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15439),
@@ -56011,7 +56011,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1626() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15503),
@@ -56043,7 +56043,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1627() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15504),
@@ -56075,7 +56075,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1628() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15511),
@@ -56114,7 +56114,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1629() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15506),
@@ -56154,7 +56154,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1630() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15507),
@@ -56194,7 +56194,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1631() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15540),
@@ -56232,7 +56232,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1632() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15542),
@@ -56264,7 +56264,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1633() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15543),
@@ -56296,7 +56296,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1634() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32281),
@@ -56328,7 +56328,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1635() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32287),
@@ -56360,7 +56360,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1636() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32288),
@@ -56392,7 +56392,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1637() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32289),
@@ -56424,7 +56424,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1638() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32290),
@@ -56456,7 +56456,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1639() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32291),
@@ -56488,7 +56488,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1640() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32292),
@@ -56520,7 +56520,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1641() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18525),
@@ -56552,7 +56552,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1642() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18526),
@@ -56584,7 +56584,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1643() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18527),
@@ -56616,7 +56616,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1644() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18528),
@@ -56648,7 +56648,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1645() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18529),
@@ -56680,7 +56680,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1646() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18530),
@@ -56712,7 +56712,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1647() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18531),
@@ -56744,7 +56744,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1648() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18534),
@@ -56784,7 +56784,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1649() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18535),
@@ -56823,7 +56823,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1650() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18542),
@@ -56863,7 +56863,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1651() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18543),
@@ -56902,7 +56902,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1652() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18545),
@@ -56941,7 +56941,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1653() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16710),
@@ -56973,7 +56973,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1654() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16711),
@@ -57005,7 +57005,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1655() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16712),
@@ -57037,7 +57037,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1656() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16713),
@@ -57069,7 +57069,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1657() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16722),
@@ -57108,7 +57108,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1658() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16723),
@@ -57147,7 +57147,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1659() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16725),
@@ -57186,7 +57186,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1660() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16727),
@@ -57226,7 +57226,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1661() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16728),
@@ -57265,7 +57265,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1662() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16730),
@@ -57305,7 +57305,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1663() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16733),
@@ -57344,7 +57344,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1664() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16734),
@@ -57383,7 +57383,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1665() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16736),
@@ -57423,7 +57423,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1666() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16737),
@@ -57455,7 +57455,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1667() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16742),
@@ -57494,7 +57494,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1668() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16743),
@@ -57533,7 +57533,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1669() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16745),
@@ -57572,7 +57572,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1670() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16746),
@@ -57611,7 +57611,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1671() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16748),
@@ -57651,7 +57651,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1672() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16750),
@@ -57691,7 +57691,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1673() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16751),
@@ -57723,7 +57723,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1674() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18592),
@@ -57755,7 +57755,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1675() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15551),
@@ -57787,7 +57787,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1676() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15552),
@@ -57819,7 +57819,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1677() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19414),
@@ -57851,7 +57851,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1678() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19415),
@@ -57883,7 +57883,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1679() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15553),
@@ -57915,7 +57915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1680() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15554),
@@ -57947,7 +57947,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1681() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15555),
@@ -57979,7 +57979,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1682() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19416),
@@ -58011,7 +58011,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1683() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25696),
@@ -58043,7 +58043,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1684() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25724),
@@ -58075,7 +58075,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1685() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25697),
@@ -58107,7 +58107,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1686() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18660),
@@ -58139,7 +58139,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1687() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12708),
@@ -58171,7 +58171,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1688() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12583),
@@ -58203,7 +58203,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1689() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12584),
@@ -58235,7 +58235,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1690() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12585),
@@ -58267,7 +58267,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1691() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23593),
@@ -58299,7 +58299,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1692() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18661),
@@ -58331,7 +58331,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1693() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19308),
@@ -58363,7 +58363,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1694() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12617),
@@ -58403,7 +58403,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1695() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12618),
@@ -58442,7 +58442,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1696() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19338),
@@ -58482,7 +58482,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1697() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19339),
@@ -58521,7 +58521,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1698() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19341),
@@ -58561,7 +58561,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1699() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32297),
@@ -58600,7 +58600,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1700() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32298),
@@ -58640,7 +58640,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1701() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12732),
@@ -58680,7 +58680,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1702() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12733),
@@ -58719,7 +58719,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1703() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12776),
@@ -58758,7 +58758,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1704() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13953),
@@ -58790,7 +58790,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1705() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13954),
@@ -58822,7 +58822,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1706() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13955),
@@ -58854,7 +58854,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1707() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13956),
@@ -58886,7 +58886,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1708() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13959),
@@ -58925,7 +58925,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1709() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13960),
@@ -58964,7 +58964,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1710() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13962),
@@ -59003,7 +59003,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1711() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13964),
@@ -59043,7 +59043,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1712() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13965),
@@ -59082,7 +59082,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1713() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13967),
@@ -59122,7 +59122,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1714() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13969),
@@ -59161,7 +59161,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1715() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13970),
@@ -59200,7 +59200,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1716() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13972),
@@ -59240,7 +59240,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1717() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13973),
@@ -59272,7 +59272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1718() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13975),
@@ -59311,7 +59311,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1719() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13976),
@@ -59350,7 +59350,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1720() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13978),
@@ -59389,7 +59389,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1721() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13979),
@@ -59428,7 +59428,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1722() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13981),
@@ -59468,7 +59468,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1723() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13983),
@@ -59508,7 +59508,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1724() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13984),
@@ -59540,7 +59540,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1725() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32300),
@@ -59572,7 +59572,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1726() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32301),
@@ -59604,7 +59604,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1727() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32302),
@@ -59636,7 +59636,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1728() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32303),
@@ -59668,7 +59668,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1729() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32304),
@@ -59700,7 +59700,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1730() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32305),
@@ -59732,7 +59732,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1731() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15565),
@@ -59764,7 +59764,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1732() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15566),
@@ -59796,7 +59796,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1733() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15567),
@@ -59828,7 +59828,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1734() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15568),
@@ -59860,7 +59860,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1735() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15573),
@@ -59899,7 +59899,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1736() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15574),
@@ -59938,7 +59938,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1737() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15790),
@@ -59977,7 +59977,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1738() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15792),
@@ -60017,7 +60017,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1739() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15804),
@@ -60056,7 +60056,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1740() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15806),
@@ -60096,7 +60096,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1741() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15808),
@@ -60135,7 +60135,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1742() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15809),
@@ -60174,7 +60174,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1743() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15811),
@@ -60214,7 +60214,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1744() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15812),
@@ -60246,7 +60246,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1745() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15813),
@@ -60278,7 +60278,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1746() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15814),
@@ -60310,7 +60310,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1747() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15848),
@@ -60342,7 +60342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1748() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15864),
@@ -60381,7 +60381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1749() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15850),
@@ -60421,7 +60421,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1750() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15851),
@@ -60461,7 +60461,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1751() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16646),
@@ -60493,7 +60493,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1752() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16647),
@@ -60525,7 +60525,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1753() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19420),
@@ -60557,7 +60557,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1754() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19421),
@@ -60589,7 +60589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1755() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16648),
@@ -60621,7 +60621,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1756() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16649),
@@ -60653,7 +60653,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1757() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16650),
@@ -60685,7 +60685,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1758() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19422),
@@ -60717,7 +60717,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1759() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26850),
@@ -60749,7 +60749,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1760() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26851),
@@ -60781,7 +60781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1761() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26852),
@@ -60813,7 +60813,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1762() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26849),
@@ -60845,7 +60845,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1763() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23741),
@@ -60877,7 +60877,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1764() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13735),
@@ -60909,7 +60909,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1765() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13736),
@@ -60941,7 +60941,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1766() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25706),
@@ -60978,7 +60978,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1767() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25725),
@@ -61015,7 +61015,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1768() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25707),
@@ -61052,7 +61052,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1769() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12710),
@@ -61089,7 +61089,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1770() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12639),
@@ -61126,7 +61126,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1771() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12640),
@@ -61163,7 +61163,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1772() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12641),
@@ -61200,7 +61200,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1773() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23597),
@@ -61237,7 +61237,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1774() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13738),
@@ -61278,7 +61278,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1775() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 13739),
@@ -61318,7 +61318,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1776() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12738),
@@ -61359,7 +61359,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1777() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12739),
@@ -61399,7 +61399,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1778() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12778),
@@ -61439,7 +61439,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1779() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12643),
@@ -61472,7 +61472,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1780() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14157),
@@ -61505,7 +61505,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1781() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14158),
@@ -61538,7 +61538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1782() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12646),
@@ -61571,7 +61571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1783() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12648),
@@ -61611,7 +61611,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1784() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12649),
@@ -61651,7 +61651,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1785() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12651),
@@ -61691,7 +61691,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1786() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12653),
@@ -61732,7 +61732,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1787() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12654),
@@ -61772,7 +61772,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1788() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12656),
@@ -61813,7 +61813,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1789() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12658),
@@ -61853,7 +61853,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1790() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12659),
@@ -61893,7 +61893,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1791() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12661),
@@ -61934,7 +61934,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1792() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12662),
@@ -61967,7 +61967,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1793() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12664),
@@ -62007,7 +62007,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1794() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12665),
@@ -62047,7 +62047,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1795() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14160),
@@ -62087,7 +62087,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1796() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12667),
@@ -62127,7 +62127,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1797() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12669),
@@ -62168,7 +62168,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1798() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12671),
@@ -62209,7 +62209,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1799() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14161),
@@ -62242,7 +62242,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1800() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14090),
@@ -62275,7 +62275,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1801() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14091),
@@ -62308,7 +62308,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1802() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14092),
@@ -62341,7 +62341,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1803() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14093),
@@ -62374,7 +62374,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1804() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14096),
@@ -62414,7 +62414,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1805() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14097),
@@ -62454,7 +62454,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1806() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14099),
@@ -62494,7 +62494,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1807() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14101),
@@ -62535,7 +62535,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1808() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14102),
@@ -62575,7 +62575,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1809() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14104),
@@ -62616,7 +62616,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1810() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14106),
@@ -62656,7 +62656,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1811() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14107),
@@ -62696,7 +62696,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1812() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14109),
@@ -62737,7 +62737,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1813() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14110),
@@ -62770,7 +62770,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1814() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14112),
@@ -62810,7 +62810,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1815() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14113),
@@ -62850,7 +62850,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1816() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14115),
@@ -62890,7 +62890,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1817() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14116),
@@ -62930,7 +62930,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1818() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14118),
@@ -62971,7 +62971,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1819() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14120),
@@ -63012,7 +63012,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1820() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14121),
@@ -63045,7 +63045,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1821() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14124),
@@ -63078,7 +63078,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1822() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14125),
@@ -63111,7 +63111,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1823() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14126),
@@ -63144,7 +63144,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1824() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14127),
@@ -63177,7 +63177,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1825() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14130),
@@ -63217,7 +63217,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1826() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14131),
@@ -63257,7 +63257,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1827() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14133),
@@ -63297,7 +63297,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1828() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14135),
@@ -63338,7 +63338,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1829() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14136),
@@ -63378,7 +63378,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1830() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14138),
@@ -63419,7 +63419,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1831() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14140),
@@ -63459,7 +63459,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1832() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14141),
@@ -63499,7 +63499,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1833() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14143),
@@ -63540,7 +63540,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1834() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14144),
@@ -63573,7 +63573,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1835() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14146),
@@ -63613,7 +63613,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1836() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14147),
@@ -63653,7 +63653,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1837() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14149),
@@ -63693,7 +63693,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1838() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14150),
@@ -63733,7 +63733,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1839() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14152),
@@ -63774,7 +63774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1840() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14154),
@@ -63815,7 +63815,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1841() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14155),
@@ -63848,7 +63848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1842() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32337),
@@ -63881,7 +63881,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1843() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32338),
@@ -63914,7 +63914,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1844() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32339),
@@ -63947,7 +63947,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1845() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32340),
@@ -63980,7 +63980,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1846() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32341),
@@ -64013,7 +64013,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1847() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32342),
@@ -64046,7 +64046,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1848() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15893),
@@ -64079,7 +64079,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1849() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15894),
@@ -64112,7 +64112,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1850() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15937),
@@ -64145,7 +64145,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1851() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15938),
@@ -64178,7 +64178,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1852() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16020),
@@ -64218,7 +64218,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1853() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16059),
@@ -64258,7 +64258,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1854() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16061),
@@ -64298,7 +64298,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1855() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16075),
@@ -64339,7 +64339,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1856() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16076),
@@ -64379,7 +64379,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1857() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16102),
@@ -64420,7 +64420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1858() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16122),
@@ -64460,7 +64460,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1859() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16123),
@@ -64500,7 +64500,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1860() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16160),
@@ -64541,7 +64541,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1861() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16283),
@@ -64574,7 +64574,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1862() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16306),
@@ -64607,7 +64607,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1863() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16315),
@@ -64640,7 +64640,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1864() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16316),
@@ -64673,7 +64673,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1865() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16321),
@@ -64713,7 +64713,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1866() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16318),
@@ -64754,7 +64754,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1867() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16319),
@@ -64795,7 +64795,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1868() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16652),
@@ -64828,7 +64828,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1869() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16653),
@@ -64861,7 +64861,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1870() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19442),
@@ -64894,7 +64894,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1871() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19443),
@@ -64927,7 +64927,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1872() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16654),
@@ -64960,7 +64960,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1873() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16655),
@@ -64993,7 +64993,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1874() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16656),
@@ -65026,7 +65026,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1875() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19444),
@@ -65059,7 +65059,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1876() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17512),
@@ -65091,7 +65091,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1877() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17513),
@@ -65123,7 +65123,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1878() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17523),
@@ -65163,7 +65163,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1879() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17524),
@@ -65202,7 +65202,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1880() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17529),
@@ -65243,7 +65243,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1881() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17530),
@@ -65283,7 +65283,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1882() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18069),
@@ -65315,7 +65315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1883() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18165),
@@ -65347,7 +65347,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1884() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18004),
@@ -65379,7 +65379,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1885() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18657),
@@ -65411,7 +65411,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1886() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18005),
@@ -65443,7 +65443,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1887() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17535),
@@ -65483,7 +65483,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1888() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17536),
@@ -65523,7 +65523,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1889() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18007),
@@ -65563,7 +65563,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1890() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18028),
@@ -65595,7 +65595,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1891() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18064),
@@ -65627,7 +65627,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1892() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23558),
@@ -65659,7 +65659,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1893() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23559),
@@ -65691,7 +65691,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1894() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23560),
@@ -65723,7 +65723,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1895() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18072),
@@ -65755,7 +65755,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1896() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17860),
@@ -65787,7 +65787,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1897() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18073),
@@ -65819,7 +65819,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1898() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11188),
@@ -65851,7 +65851,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1899() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11189),
@@ -65883,7 +65883,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1900() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11190),
@@ -65915,7 +65915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1901() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11191),
@@ -65947,7 +65947,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1902() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14648),
@@ -65985,7 +65985,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1903() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15577),
@@ -66022,7 +66022,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1904() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18596),
@@ -66059,7 +66059,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1905() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15584),
@@ -66097,7 +66097,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1906() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15875),
@@ -66134,7 +66134,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1907() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15641),
@@ -66172,7 +66172,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1908() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15643),
@@ -66210,7 +66210,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1909() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15647),
@@ -66248,7 +66248,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1910() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15655),
@@ -66286,7 +66286,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1911() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15659),
@@ -66324,7 +66324,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1912() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15009),
@@ -66362,7 +66362,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1913() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15908),
@@ -66402,7 +66402,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1914() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15909),
@@ -66442,7 +66442,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1915() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15911),
@@ -66481,7 +66481,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1916() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15912),
@@ -66520,7 +66520,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1917() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15915),
@@ -66560,7 +66560,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1918() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15916),
@@ -66600,7 +66600,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1919() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15918),
@@ -66639,7 +66639,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1920() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25279),
@@ -66679,7 +66679,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1921() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25280),
@@ -66718,7 +66718,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1922() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25282),
@@ -66757,7 +66757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1923() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15455),
@@ -66797,7 +66797,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1924() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15456),
@@ -66837,7 +66837,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1925() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15458),
@@ -66876,7 +66876,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1926() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25294),
@@ -66915,7 +66915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1927() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25295),
@@ -66954,7 +66954,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1928() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25297),
@@ -66993,7 +66993,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1929() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25298),
@@ -67025,7 +67025,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1930() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15460),
@@ -67057,7 +67057,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1931() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15010),
@@ -67089,7 +67089,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1932() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15011),
@@ -67121,7 +67121,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1933() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15012),
@@ -67153,7 +67153,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1934() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15043),
@@ -67185,7 +67185,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1935() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15462),
@@ -67225,7 +67225,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1936() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15463),
@@ -67265,7 +67265,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1937() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15465),
@@ -67304,7 +67304,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1938() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25313),
@@ -67343,7 +67343,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1939() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25314),
@@ -67382,7 +67382,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1940() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25316),
@@ -67421,7 +67421,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1941() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25317),
@@ -67453,7 +67453,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1942() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15472),
@@ -67485,7 +67485,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1943() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15046),
@@ -67517,7 +67517,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1944() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15047),
@@ -67549,7 +67549,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1945() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15048),
@@ -67581,7 +67581,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1946() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15056),
@@ -67613,7 +67613,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1947() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25627),
@@ -67645,7 +67645,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1948() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25628),
@@ -67677,7 +67677,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1949() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25629),
@@ -67709,7 +67709,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1950() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25630),
@@ -67741,7 +67741,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1951() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25631),
@@ -67773,7 +67773,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1952() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25634),
@@ -67805,7 +67805,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1953() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25635),
@@ -67837,7 +67837,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1954() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25340),
@@ -67869,7 +67869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1955() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25636),
@@ -67901,7 +67901,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1956() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25637),
@@ -67933,7 +67933,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1957() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25638),
@@ -67965,7 +67965,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1958() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25639),
@@ -67997,7 +67997,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1959() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25640),
@@ -68029,7 +68029,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1960() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25642),
@@ -68068,7 +68068,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1961() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25643),
@@ -68107,7 +68107,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1962() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25645),
@@ -68146,7 +68146,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1963() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25646),
@@ -68185,7 +68185,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1964() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25349),
@@ -68225,7 +68225,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1965() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25350),
@@ -68264,7 +68264,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1966() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25352),
@@ -68303,7 +68303,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1967() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25354),
@@ -68342,7 +68342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1968() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25355),
@@ -68381,7 +68381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1969() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25357),
@@ -68420,7 +68420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1970() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25648),
@@ -68452,7 +68452,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1971() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25649),
@@ -68484,7 +68484,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1972() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25361),
@@ -68516,7 +68516,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1973() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25650),
@@ -68548,7 +68548,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1974() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25651),
@@ -68580,7 +68580,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1975() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25652),
@@ -68612,7 +68612,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1976() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25653),
@@ -68644,7 +68644,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1977() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25654),
@@ -68676,7 +68676,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1978() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25656),
@@ -68715,7 +68715,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1979() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25657),
@@ -68754,7 +68754,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1980() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25659),
@@ -68793,7 +68793,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1981() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25660),
@@ -68832,7 +68832,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1982() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25367),
@@ -68872,7 +68872,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1983() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25368),
@@ -68911,7 +68911,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1984() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25370),
@@ -68950,7 +68950,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1985() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25372),
@@ -68989,7 +68989,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1986() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25373),
@@ -69028,7 +69028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1987() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25375),
@@ -69067,7 +69067,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1988() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14418),
@@ -69099,7 +69099,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1989() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 17292),
@@ -69135,7 +69135,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1990() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17706),
@@ -69167,7 +69167,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1991() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17478),
@@ -69199,7 +69199,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1992() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 15533),
@@ -69235,7 +69235,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1993() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17503),
@@ -69267,7 +69267,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1994() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 14420),
@@ -69299,7 +69299,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1995() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17297),
@@ -69339,7 +69339,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1996() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16599),
@@ -69378,7 +69378,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1997() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16600),
@@ -69417,7 +69417,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1998() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14433),
@@ -69456,7 +69456,7 @@ class VariableNodeLoader {
   }
 
   void loadNode1999() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25404),
@@ -69488,7 +69488,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2000() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25405),
@@ -69520,7 +69520,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2001() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25406),
@@ -69552,7 +69552,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2002() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25407),
@@ -69584,7 +69584,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2003() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25412),
@@ -69623,7 +69623,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2004() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25413),
@@ -69662,7 +69662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2005() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25415),
@@ -69701,7 +69701,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2006() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25417),
@@ -69741,7 +69741,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2007() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25418),
@@ -69780,7 +69780,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2008() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25420),
@@ -69820,7 +69820,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2009() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25422),
@@ -69859,7 +69859,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2010() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25423),
@@ -69898,7 +69898,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2011() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25425),
@@ -69938,7 +69938,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2012() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25427),
@@ -69978,7 +69978,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2013() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25428),
@@ -70018,7 +70018,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2014() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25430),
@@ -70058,7 +70058,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2015() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25431),
@@ -70098,7 +70098,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2016() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15845),
@@ -70130,7 +70130,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2017() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18716),
@@ -70162,7 +70162,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2018() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18717),
@@ -70204,7 +70204,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2019() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18718),
@@ -70236,7 +70236,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2020() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18719),
@@ -70268,7 +70268,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2021() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18720),
@@ -70300,7 +70300,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2022() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18722),
@@ -70342,7 +70342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2023() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18723),
@@ -70374,7 +70374,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2024() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18724),
@@ -70406,7 +70406,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2025() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18725),
@@ -70438,7 +70438,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2026() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18728),
@@ -70470,7 +70470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2027() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18730),
@@ -70512,7 +70512,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2028() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18731),
@@ -70544,7 +70544,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2029() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18732),
@@ -70583,7 +70583,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2030() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18733),
@@ -70622,7 +70622,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2031() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18735),
@@ -70664,7 +70664,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2032() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18736),
@@ -70696,7 +70696,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2033() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18737),
@@ -70735,7 +70735,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2034() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18738),
@@ -70774,7 +70774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2035() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18740),
@@ -70816,7 +70816,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2036() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18741),
@@ -70848,7 +70848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2037() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18742),
@@ -70887,7 +70887,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2038() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18743),
@@ -70926,7 +70926,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2039() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18745),
@@ -70968,7 +70968,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2040() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18746),
@@ -71000,7 +71000,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2041() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18747),
@@ -71039,7 +71039,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2042() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18748),
@@ -71078,7 +71078,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2043() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18750),
@@ -71120,7 +71120,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2044() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18751),
@@ -71152,7 +71152,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2045() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18752),
@@ -71191,7 +71191,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2046() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18753),
@@ -71230,7 +71230,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2047() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 18755),
@@ -71272,7 +71272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2048() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18756),
@@ -71304,7 +71304,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2049() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18757),
@@ -71343,7 +71343,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2050() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18758),
@@ -71382,7 +71382,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2051() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18761),
@@ -71417,7 +71417,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2052() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18762),
@@ -71456,7 +71456,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2053() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18763),
@@ -71491,7 +71491,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2054() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18764),
@@ -71530,7 +71530,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2055() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18765),
@@ -71565,7 +71565,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2056() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18766),
@@ -71604,7 +71604,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2057() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18767),
@@ -71639,7 +71639,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2058() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18768),
@@ -71678,7 +71678,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2059() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23643),
@@ -71710,7 +71710,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2060() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23644),
@@ -71742,7 +71742,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2061() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23645),
@@ -71774,7 +71774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2062() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23646),
@@ -71806,7 +71806,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2063() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23647),
@@ -71838,7 +71838,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2064() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23648),
@@ -71870,7 +71870,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2065() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24009),
@@ -71903,7 +71903,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2066() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17479),
@@ -71935,7 +71935,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2067() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25432),
@@ -71967,7 +71967,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2068() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25433),
@@ -71999,7 +71999,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2069() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32396),
@@ -72031,7 +72031,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2070() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32397),
@@ -72063,7 +72063,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2071() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15216),
@@ -72106,7 +72106,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2072() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15217),
@@ -72149,7 +72149,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2073() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15441),
@@ -72191,7 +72191,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2074() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15442),
@@ -72233,7 +72233,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2075() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15445),
@@ -72274,7 +72274,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2076() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15446),
@@ -72315,7 +72315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2077() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15448),
@@ -72355,7 +72355,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2078() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25442),
@@ -72396,7 +72396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2079() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25443),
@@ -72436,7 +72436,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2080() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25445),
@@ -72476,7 +72476,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2081() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17365),
@@ -72521,7 +72521,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2082() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17367),
@@ -72561,7 +72561,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2083() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17368),
@@ -72601,7 +72601,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2084() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17370),
@@ -72641,7 +72641,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2085() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25452),
@@ -72676,7 +72676,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2086() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25453),
@@ -72711,7 +72711,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2087() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25454),
@@ -72746,7 +72746,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2088() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25455),
@@ -72781,7 +72781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2089() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25460),
@@ -72823,7 +72823,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2090() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25461),
@@ -72865,7 +72865,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2091() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25463),
@@ -72907,7 +72907,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2092() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25465),
@@ -72950,7 +72950,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2093() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25466),
@@ -72992,7 +72992,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2094() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25468),
@@ -73033,7 +73033,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2095() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25470),
@@ -73075,7 +73075,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2096() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25471),
@@ -73117,7 +73117,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2097() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25473),
@@ -73160,7 +73160,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2098() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25475),
@@ -73201,7 +73201,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2099() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25476),
@@ -73242,7 +73242,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2100() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25478),
@@ -73283,7 +73283,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2101() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25479),
@@ -73324,7 +73324,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2102() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17406),
@@ -73354,7 +73354,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2103() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17410),
@@ -73384,7 +73384,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2104() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17411),
@@ -73424,7 +73424,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2105() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17412),
@@ -73454,7 +73454,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2106() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17413),
@@ -73484,7 +73484,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2107() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17414),
@@ -73514,7 +73514,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2108() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17416),
@@ -73554,7 +73554,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2109() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17417),
@@ -73584,7 +73584,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2110() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17418),
@@ -73614,7 +73614,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2111() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17419),
@@ -73644,7 +73644,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2112() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17422),
@@ -73674,7 +73674,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2113() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17424),
@@ -73714,7 +73714,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2114() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17425),
@@ -73744,7 +73744,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2115() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17426),
@@ -73781,7 +73781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2116() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17429),
@@ -73818,7 +73818,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2117() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17431),
@@ -73858,7 +73858,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2118() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17432),
@@ -73888,7 +73888,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2119() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17433),
@@ -73925,7 +73925,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2120() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17434),
@@ -73962,7 +73962,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2121() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17436),
@@ -74002,7 +74002,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2122() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17437),
@@ -74032,7 +74032,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2123() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17438),
@@ -74069,7 +74069,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2124() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17439),
@@ -74106,7 +74106,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2125() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17441),
@@ -74146,7 +74146,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2126() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17442),
@@ -74176,7 +74176,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2127() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17443),
@@ -74213,7 +74213,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2128() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17444),
@@ -74250,7 +74250,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2129() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17446),
@@ -74290,7 +74290,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2130() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17447),
@@ -74320,7 +74320,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2131() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17448),
@@ -74357,7 +74357,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2132() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17449),
@@ -74394,7 +74394,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2133() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17451),
@@ -74434,7 +74434,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2134() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17452),
@@ -74464,7 +74464,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2135() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17453),
@@ -74501,7 +74501,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2136() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17454),
@@ -74538,7 +74538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2137() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17458),
@@ -74571,7 +74571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2138() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17459),
@@ -74608,7 +74608,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2139() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17460),
@@ -74641,7 +74641,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2140() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17461),
@@ -74678,7 +74678,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2141() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17462),
@@ -74711,7 +74711,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2142() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17463),
@@ -74748,7 +74748,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2143() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17464),
@@ -74781,7 +74781,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2144() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17466),
@@ -74818,7 +74818,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2145() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23679),
@@ -74848,7 +74848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2146() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23680),
@@ -74878,7 +74878,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2147() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23681),
@@ -74908,7 +74908,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2148() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23682),
@@ -74938,7 +74938,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2149() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23683),
@@ -74968,7 +74968,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2150() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23684),
@@ -74998,7 +74998,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2151() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32398),
@@ -75028,7 +75028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2152() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32839),
@@ -75058,7 +75058,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2153() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32840),
@@ -75088,7 +75088,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2154() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32841),
@@ -75118,7 +75118,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2155() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32842),
@@ -75148,7 +75148,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2156() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32399),
@@ -75178,7 +75178,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2157() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32400),
@@ -75208,7 +75208,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2158() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32401),
@@ -75238,7 +75238,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2159() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32402),
@@ -75268,7 +75268,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2160() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32843),
@@ -75298,7 +75298,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2161() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17481),
@@ -75328,7 +75328,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2162() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25480),
@@ -75358,7 +75358,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2163() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25481),
@@ -75388,7 +75388,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2164() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32403),
@@ -75418,7 +75418,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2165() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32404),
@@ -75448,7 +75448,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2166() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25506),
@@ -75488,7 +75488,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2167() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25507),
@@ -75528,7 +75528,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2168() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25509),
@@ -75568,7 +75568,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2169() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25510),
@@ -75608,7 +75608,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2170() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25518),
@@ -75646,7 +75646,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2171() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16720),
@@ -75678,7 +75678,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2172() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16721),
@@ -75710,7 +75710,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2173() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17482),
@@ -75742,7 +75742,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2174() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15224),
@@ -75774,7 +75774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2175() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14519),
@@ -75806,7 +75806,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2176() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15229),
@@ -75838,7 +75838,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2177() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16759),
@@ -75870,7 +75870,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2178() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25521),
@@ -75902,7 +75902,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2179() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15483),
@@ -75942,7 +75942,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2180() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15484),
@@ -75981,7 +75981,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2181() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15486),
@@ -76020,7 +76020,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2182() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15490),
@@ -76053,7 +76053,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2183() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15492),
@@ -76093,7 +76093,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2184() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15493),
@@ -76132,7 +76132,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2185() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15495),
@@ -76171,7 +76171,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2186() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14548),
@@ -76203,7 +76203,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2187() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14556),
@@ -76243,7 +76243,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2188() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14557),
@@ -76283,7 +76283,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2189() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14559),
@@ -76323,7 +76323,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2190() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14560),
@@ -76363,7 +76363,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2191() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14586),
@@ -76395,7 +76395,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2192() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14587),
@@ -76427,7 +76427,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2193() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14588),
@@ -76459,7 +76459,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2194() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15053),
@@ -76499,7 +76499,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2195() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15517),
@@ -76538,7 +76538,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2196() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14480),
@@ -76578,7 +76578,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2197() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14481),
@@ -76618,7 +76618,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2198() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14483),
@@ -76658,7 +76658,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2199() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14484),
@@ -76698,7 +76698,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2200() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16843),
@@ -76738,7 +76738,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2201() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16853),
@@ -76778,7 +76778,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2202() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16882),
@@ -76818,7 +76818,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2203() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16883),
@@ -76857,7 +76857,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2204() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14486),
@@ -76896,7 +76896,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2205() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16894),
@@ -76935,7 +76935,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2206() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16922),
@@ -76974,7 +76974,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2207() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16924),
@@ -77013,7 +77013,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2208() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14489),
@@ -77045,7 +77045,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2209() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15221),
@@ -77077,7 +77077,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2210() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14494),
@@ -77117,7 +77117,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2211() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14495),
@@ -77157,7 +77157,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2212() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14497),
@@ -77197,7 +77197,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2213() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14498),
@@ -77237,7 +77237,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2214() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16958),
@@ -77277,7 +77277,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2215() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16959),
@@ -77317,7 +77317,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2216() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16961),
@@ -77357,7 +77357,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2217() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16971),
@@ -77396,7 +77396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2218() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14500),
@@ -77435,7 +77435,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2219() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16995),
@@ -77474,7 +77474,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2220() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 16996),
@@ -77513,7 +77513,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2221() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17007),
@@ -77552,7 +77552,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2222() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14595),
@@ -77584,7 +77584,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2223() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 17306),
@@ -77620,7 +77620,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2224() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17710),
@@ -77652,7 +77652,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2225() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17485),
@@ -77684,7 +77684,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2226() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 17202),
@@ -77720,7 +77720,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2227() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17576),
@@ -77752,7 +77752,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2228() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17311),
@@ -77784,7 +77784,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2229() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17204),
@@ -77816,7 +77816,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2230() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17486),
@@ -77848,7 +77848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2231() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17315),
@@ -77880,7 +77880,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2232() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17214),
@@ -77912,7 +77912,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2233() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17318),
@@ -77944,7 +77944,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2234() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17319),
@@ -77976,7 +77976,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2235() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17321),
@@ -78008,7 +78008,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2236() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17322),
@@ -78040,7 +78040,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2237() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17558),
@@ -78072,7 +78072,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2238() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17326),
@@ -78104,7 +78104,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2239() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17302),
@@ -78136,7 +78136,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2240() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17487),
@@ -78168,7 +78168,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2241() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17330),
@@ -78200,7 +78200,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2242() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 14601),
@@ -78232,7 +78232,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2243() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19242),
@@ -78264,7 +78264,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2244() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19243),
@@ -78306,7 +78306,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2245() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19244),
@@ -78338,7 +78338,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2246() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19245),
@@ -78370,7 +78370,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2247() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19246),
@@ -78402,7 +78402,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2248() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19248),
@@ -78444,7 +78444,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2249() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19249),
@@ -78476,7 +78476,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2250() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19250),
@@ -78508,7 +78508,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2251() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19251),
@@ -78540,7 +78540,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2252() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19254),
@@ -78572,7 +78572,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2253() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19256),
@@ -78614,7 +78614,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2254() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19257),
@@ -78646,7 +78646,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2255() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19258),
@@ -78685,7 +78685,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2256() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19259),
@@ -78724,7 +78724,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2257() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19261),
@@ -78766,7 +78766,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2258() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19262),
@@ -78798,7 +78798,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2259() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19263),
@@ -78837,7 +78837,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2260() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19264),
@@ -78876,7 +78876,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2261() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19266),
@@ -78918,7 +78918,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2262() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19267),
@@ -78950,7 +78950,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2263() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19268),
@@ -78989,7 +78989,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2264() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19269),
@@ -79028,7 +79028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2265() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19271),
@@ -79070,7 +79070,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2266() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19272),
@@ -79102,7 +79102,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2267() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19273),
@@ -79141,7 +79141,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2268() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19274),
@@ -79180,7 +79180,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2269() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19276),
@@ -79222,7 +79222,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2270() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19277),
@@ -79254,7 +79254,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2271() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19278),
@@ -79293,7 +79293,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2272() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19279),
@@ -79332,7 +79332,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2273() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19281),
@@ -79374,7 +79374,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2274() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19282),
@@ -79406,7 +79406,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2275() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19283),
@@ -79445,7 +79445,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2276() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19284),
@@ -79484,7 +79484,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2277() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19287),
@@ -79519,7 +79519,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2278() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19288),
@@ -79558,7 +79558,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2279() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17428),
@@ -79597,7 +79597,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2280() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17456),
@@ -79636,7 +79636,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2281() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17507),
@@ -79675,7 +79675,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2282() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17508),
@@ -79714,7 +79714,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2283() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14226),
@@ -79753,7 +79753,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2284() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15926),
@@ -79785,7 +79785,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2285() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15927),
@@ -79817,7 +79817,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2286() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15928),
@@ -79849,7 +79849,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2287() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17724),
@@ -79881,7 +79881,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2288() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17488),
@@ -79913,7 +79913,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2289() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15266),
@@ -79945,7 +79945,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2290() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17736),
@@ -79977,7 +79977,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2291() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17737),
@@ -80009,7 +80009,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2292() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17738),
@@ -80041,7 +80041,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2293() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17739),
@@ -80073,7 +80073,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2294() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17740),
@@ -80105,7 +80105,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2295() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17559),
@@ -80137,7 +80137,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2296() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17744),
@@ -80169,7 +80169,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2297() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17745),
@@ -80201,7 +80201,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2298() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17490),
@@ -80233,7 +80233,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2299() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17750),
@@ -80265,7 +80265,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2300() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17813),
@@ -80297,7 +80297,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2301() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17814),
@@ -80339,7 +80339,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2302() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17815),
@@ -80371,7 +80371,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2303() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17816),
@@ -80403,7 +80403,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2304() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17817),
@@ -80435,7 +80435,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2305() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17819),
@@ -80477,7 +80477,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2306() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17820),
@@ -80509,7 +80509,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2307() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17821),
@@ -80541,7 +80541,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2308() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17822),
@@ -80573,7 +80573,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2309() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17825),
@@ -80605,7 +80605,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2310() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17827),
@@ -80647,7 +80647,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2311() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17828),
@@ -80679,7 +80679,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2312() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17829),
@@ -80718,7 +80718,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2313() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17830),
@@ -80757,7 +80757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2314() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17832),
@@ -80799,7 +80799,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2315() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17833),
@@ -80831,7 +80831,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2316() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17834),
@@ -80870,7 +80870,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2317() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17835),
@@ -80909,7 +80909,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2318() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17837),
@@ -80951,7 +80951,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2319() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17838),
@@ -80983,7 +80983,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2320() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17839),
@@ -81022,7 +81022,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2321() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17840),
@@ -81061,7 +81061,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2322() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17842),
@@ -81103,7 +81103,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2323() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17843),
@@ -81135,7 +81135,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2324() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17844),
@@ -81174,7 +81174,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2325() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17845),
@@ -81213,7 +81213,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2326() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17847),
@@ -81255,7 +81255,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2327() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17848),
@@ -81287,7 +81287,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2328() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17849),
@@ -81326,7 +81326,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2329() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17850),
@@ -81365,7 +81365,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2330() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17853),
@@ -81407,7 +81407,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2331() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17854),
@@ -81439,7 +81439,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2332() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17855),
@@ -81478,7 +81478,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2333() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17856),
@@ -81517,7 +81517,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2334() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17859),
@@ -81559,7 +81559,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2335() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17864),
@@ -81591,7 +81591,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2336() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17871),
@@ -81630,7 +81630,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2337() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17872),
@@ -81669,7 +81669,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2338() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17874),
@@ -81711,7 +81711,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2339() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17878),
@@ -81743,7 +81743,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2340() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17885),
@@ -81782,7 +81782,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2341() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17892),
@@ -81821,7 +81821,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2342() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 17900),
@@ -81863,7 +81863,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2343() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17901),
@@ -81895,7 +81895,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2344() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17902),
@@ -81934,7 +81934,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2345() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17903),
@@ -81973,7 +81973,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2346() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17913),
@@ -82008,7 +82008,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2347() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17920),
@@ -82047,7 +82047,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2348() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 17927),
@@ -82082,7 +82082,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2349() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17934),
@@ -82121,7 +82121,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2350() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17976),
@@ -82160,7 +82160,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2351() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17987),
@@ -82199,7 +82199,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2352() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17993),
@@ -82238,7 +82238,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2353() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18077),
@@ -82270,7 +82270,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2354() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18078),
@@ -82302,7 +82302,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2355() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18079),
@@ -82334,7 +82334,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2356() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18080),
@@ -82366,7 +82366,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2357() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18081),
@@ -82398,7 +82398,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2358() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18082),
@@ -82430,7 +82430,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2359() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17560),
@@ -82462,7 +82462,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2360() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17562),
@@ -82494,7 +82494,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2361() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17492),
@@ -82526,7 +82526,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2362() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18089),
@@ -82558,7 +82558,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2363() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 21016),
@@ -82590,7 +82590,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2364() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21017),
@@ -82632,7 +82632,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2365() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21018),
@@ -82664,7 +82664,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2366() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21019),
@@ -82696,7 +82696,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2367() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21020),
@@ -82728,7 +82728,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2368() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21022),
@@ -82770,7 +82770,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2369() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21023),
@@ -82802,7 +82802,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2370() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21024),
@@ -82834,7 +82834,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2371() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21025),
@@ -82866,7 +82866,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2372() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 21028),
@@ -82898,7 +82898,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2373() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21030),
@@ -82940,7 +82940,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2374() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21031),
@@ -82972,7 +82972,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2375() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21032),
@@ -83011,7 +83011,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2376() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21033),
@@ -83050,7 +83050,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2377() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21035),
@@ -83092,7 +83092,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2378() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21036),
@@ -83124,7 +83124,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2379() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21037),
@@ -83163,7 +83163,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2380() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21038),
@@ -83202,7 +83202,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2381() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21040),
@@ -83244,7 +83244,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2382() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21041),
@@ -83276,7 +83276,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2383() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21042),
@@ -83315,7 +83315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2384() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21043),
@@ -83354,7 +83354,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2385() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21045),
@@ -83396,7 +83396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2386() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21046),
@@ -83428,7 +83428,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2387() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21047),
@@ -83467,7 +83467,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2388() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21048),
@@ -83506,7 +83506,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2389() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21050),
@@ -83548,7 +83548,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2390() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21051),
@@ -83580,7 +83580,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2391() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21052),
@@ -83619,7 +83619,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2392() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21053),
@@ -83658,7 +83658,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2393() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21055),
@@ -83700,7 +83700,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2394() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21056),
@@ -83732,7 +83732,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2395() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21057),
@@ -83771,7 +83771,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2396() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21058),
@@ -83810,7 +83810,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2397() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 21061),
@@ -83852,7 +83852,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2398() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21062),
@@ -83884,7 +83884,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2399() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21063),
@@ -83923,7 +83923,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2400() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21064),
@@ -83962,7 +83962,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2401() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 21076),
@@ -83997,7 +83997,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2402() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21077),
@@ -84036,7 +84036,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2403() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 21078),
@@ -84071,7 +84071,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2404() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21079),
@@ -84110,7 +84110,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2405() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21083),
@@ -84149,7 +84149,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2406() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21084),
@@ -84188,7 +84188,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2407() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21086),
@@ -84227,7 +84227,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2408() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21092),
@@ -84259,7 +84259,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2409() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21093),
@@ -84291,7 +84291,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2410() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21094),
@@ -84323,7 +84323,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2411() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17493),
@@ -84355,7 +84355,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2412() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15300),
@@ -84387,7 +84387,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2413() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19551),
@@ -84419,7 +84419,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2414() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19552),
@@ -84461,7 +84461,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2415() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19553),
@@ -84493,7 +84493,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2416() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19554),
@@ -84525,7 +84525,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2417() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19555),
@@ -84557,7 +84557,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2418() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19557),
@@ -84599,7 +84599,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2419() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19558),
@@ -84631,7 +84631,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2420() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19559),
@@ -84663,7 +84663,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2421() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19560),
@@ -84695,7 +84695,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2422() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19563),
@@ -84727,7 +84727,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2423() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19565),
@@ -84769,7 +84769,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2424() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19566),
@@ -84801,7 +84801,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2425() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19567),
@@ -84840,7 +84840,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2426() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19568),
@@ -84879,7 +84879,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2427() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19570),
@@ -84921,7 +84921,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2428() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19571),
@@ -84953,7 +84953,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2429() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19572),
@@ -84992,7 +84992,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2430() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19573),
@@ -85031,7 +85031,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2431() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19575),
@@ -85073,7 +85073,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2432() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19576),
@@ -85105,7 +85105,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2433() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19577),
@@ -85144,7 +85144,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2434() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19578),
@@ -85183,7 +85183,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2435() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19580),
@@ -85225,7 +85225,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2436() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19581),
@@ -85257,7 +85257,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2437() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19582),
@@ -85296,7 +85296,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2438() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19583),
@@ -85335,7 +85335,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2439() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19585),
@@ -85377,7 +85377,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2440() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19586),
@@ -85409,7 +85409,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2441() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19587),
@@ -85448,7 +85448,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2442() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19588),
@@ -85487,7 +85487,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2443() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19590),
@@ -85529,7 +85529,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2444() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19591),
@@ -85561,7 +85561,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2445() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19592),
@@ -85600,7 +85600,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2446() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19593),
@@ -85639,7 +85639,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2447() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19596),
@@ -85681,7 +85681,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2448() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19597),
@@ -85713,7 +85713,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2449() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19598),
@@ -85752,7 +85752,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2450() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19599),
@@ -85791,7 +85791,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2451() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21097),
@@ -85823,7 +85823,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2452() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21098),
@@ -85855,7 +85855,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2453() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21099),
@@ -85887,7 +85887,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2454() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21100),
@@ -85919,7 +85919,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2455() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21101),
@@ -85951,7 +85951,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2456() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21102),
@@ -85983,7 +85983,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2457() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17563),
@@ -86015,7 +86015,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2458() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17564),
@@ -86047,7 +86047,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2459() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15932),
@@ -86079,7 +86079,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2460() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15933),
@@ -86111,7 +86111,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2461() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15934),
@@ -86143,7 +86143,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2462() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17494),
@@ -86175,7 +86175,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2463() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 15308),
@@ -86207,7 +86207,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2464() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19610),
@@ -86239,7 +86239,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2465() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19611),
@@ -86281,7 +86281,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2466() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19612),
@@ -86313,7 +86313,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2467() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19613),
@@ -86345,7 +86345,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2468() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19614),
@@ -86377,7 +86377,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2469() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19616),
@@ -86419,7 +86419,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2470() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19617),
@@ -86451,7 +86451,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2471() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19618),
@@ -86483,7 +86483,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2472() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19619),
@@ -86515,7 +86515,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2473() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19622),
@@ -86547,7 +86547,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2474() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19624),
@@ -86589,7 +86589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2475() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19625),
@@ -86621,7 +86621,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2476() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19626),
@@ -86660,7 +86660,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2477() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19627),
@@ -86699,7 +86699,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2478() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19629),
@@ -86741,7 +86741,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2479() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19630),
@@ -86773,7 +86773,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2480() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19631),
@@ -86812,7 +86812,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2481() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19632),
@@ -86851,7 +86851,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2482() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19634),
@@ -86893,7 +86893,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2483() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19635),
@@ -86925,7 +86925,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2484() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19636),
@@ -86964,7 +86964,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2485() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19637),
@@ -87003,7 +87003,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2486() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19639),
@@ -87045,7 +87045,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2487() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19640),
@@ -87077,7 +87077,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2488() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19641),
@@ -87116,7 +87116,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2489() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19642),
@@ -87155,7 +87155,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2490() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19644),
@@ -87197,7 +87197,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2491() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19645),
@@ -87229,7 +87229,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2492() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19646),
@@ -87268,7 +87268,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2493() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19647),
@@ -87307,7 +87307,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2494() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19649),
@@ -87349,7 +87349,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2495() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19650),
@@ -87381,7 +87381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2496() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19651),
@@ -87420,7 +87420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2497() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19652),
@@ -87459,7 +87459,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2498() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19655),
@@ -87501,7 +87501,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2499() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19656),
@@ -87533,7 +87533,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2500() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19657),
@@ -87572,7 +87572,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2501() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19658),
@@ -87611,7 +87611,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2502() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17387),
@@ -87651,7 +87651,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2503() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17388),
@@ -87690,7 +87690,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2504() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17390),
@@ -87730,7 +87730,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2505() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17391),
@@ -87769,7 +87769,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2506() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15114),
@@ -87801,7 +87801,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2507() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15116),
@@ -87841,7 +87841,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2508() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15117),
@@ -87880,7 +87880,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2509() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15119),
@@ -87920,7 +87920,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2510() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15120),
@@ -87959,7 +87959,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2511() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23798),
@@ -87998,7 +87998,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2512() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23799),
@@ -88037,7 +88037,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2513() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23801),
@@ -88076,7 +88076,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2514() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23803),
@@ -88115,7 +88115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2515() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23804),
@@ -88154,7 +88154,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2516() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23806),
@@ -88193,7 +88193,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2517() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23809),
@@ -88225,7 +88225,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2518() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23810),
@@ -88257,7 +88257,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2519() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23812),
@@ -88296,7 +88296,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2520() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23813),
@@ -88335,7 +88335,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2521() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23815),
@@ -88374,7 +88374,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2522() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23817),
@@ -88413,7 +88413,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2523() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23818),
@@ -88452,7 +88452,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2524() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23820),
@@ -88491,7 +88491,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2525() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23830),
@@ -88523,7 +88523,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2526() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23831),
@@ -88555,7 +88555,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2527() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 14644),
@@ -88587,7 +88587,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2528() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19678),
@@ -88619,7 +88619,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2529() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19679),
@@ -88661,7 +88661,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2530() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19680),
@@ -88693,7 +88693,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2531() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19681),
@@ -88725,7 +88725,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2532() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19682),
@@ -88757,7 +88757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2533() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19684),
@@ -88799,7 +88799,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2534() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19685),
@@ -88831,7 +88831,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2535() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19686),
@@ -88863,7 +88863,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2536() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19687),
@@ -88895,7 +88895,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2537() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19690),
@@ -88927,7 +88927,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2538() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19692),
@@ -88969,7 +88969,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2539() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19693),
@@ -89001,7 +89001,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2540() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19694),
@@ -89040,7 +89040,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2541() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19695),
@@ -89079,7 +89079,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2542() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19697),
@@ -89121,7 +89121,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2543() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19698),
@@ -89153,7 +89153,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2544() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19699),
@@ -89192,7 +89192,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2545() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19700),
@@ -89231,7 +89231,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2546() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19702),
@@ -89273,7 +89273,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2547() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19703),
@@ -89305,7 +89305,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2548() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19704),
@@ -89344,7 +89344,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2549() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19705),
@@ -89383,7 +89383,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2550() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19707),
@@ -89425,7 +89425,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2551() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19708),
@@ -89457,7 +89457,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2552() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19709),
@@ -89496,7 +89496,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2553() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19710),
@@ -89535,7 +89535,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2554() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19712),
@@ -89577,7 +89577,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2555() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19713),
@@ -89609,7 +89609,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2556() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19714),
@@ -89648,7 +89648,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2557() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19715),
@@ -89687,7 +89687,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2558() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19717),
@@ -89729,7 +89729,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2559() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19718),
@@ -89761,7 +89761,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2560() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19719),
@@ -89800,7 +89800,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2561() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19720),
@@ -89839,7 +89839,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2562() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19724),
@@ -89876,7 +89876,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2563() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19726),
@@ -89908,7 +89908,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2564() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19727),
@@ -89940,7 +89940,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2565() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19728),
@@ -89972,7 +89972,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2566() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19729),
@@ -90004,7 +90004,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2567() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19731),
@@ -90041,7 +90041,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2568() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19778),
@@ -90076,7 +90076,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2569() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19779),
@@ -90115,7 +90115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2570() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19780),
@@ -90150,7 +90150,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2571() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19781),
@@ -90189,7 +90189,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2572() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19782),
@@ -90224,7 +90224,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2573() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19783),
@@ -90263,7 +90263,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2574() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19784),
@@ -90298,7 +90298,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2575() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19785),
@@ -90337,7 +90337,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2576() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19832),
@@ -90372,7 +90372,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2577() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19833),
@@ -90411,7 +90411,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2578() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19880),
@@ -90453,7 +90453,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2579() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19881),
@@ -90485,7 +90485,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2580() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19882),
@@ -90524,7 +90524,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2581() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19883),
@@ -90563,7 +90563,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2582() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19885),
@@ -90605,7 +90605,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2583() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19886),
@@ -90637,7 +90637,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2584() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19887),
@@ -90676,7 +90676,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2585() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19888),
@@ -90715,7 +90715,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2586() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19890),
@@ -90757,7 +90757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2587() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19891),
@@ -90789,7 +90789,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2588() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19892),
@@ -90828,7 +90828,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2589() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19893),
@@ -90867,7 +90867,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2590() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19895),
@@ -90902,7 +90902,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2591() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19896),
@@ -90941,7 +90941,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2592() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19897),
@@ -90976,7 +90976,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2593() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19898),
@@ -91015,7 +91015,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2594() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19899),
@@ -91050,7 +91050,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2595() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19900),
@@ -91089,7 +91089,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2596() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19901),
@@ -91124,7 +91124,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2597() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19902),
@@ -91163,7 +91163,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2598() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19949),
@@ -91205,7 +91205,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2599() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19950),
@@ -91237,7 +91237,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2600() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19951),
@@ -91276,7 +91276,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2601() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19952),
@@ -91315,7 +91315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2602() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19954),
@@ -91357,7 +91357,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2603() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19955),
@@ -91389,7 +91389,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2604() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19956),
@@ -91428,7 +91428,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2605() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19957),
@@ -91467,7 +91467,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2606() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 19959),
@@ -91509,7 +91509,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2607() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19960),
@@ -91541,7 +91541,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2608() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19961),
@@ -91580,7 +91580,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2609() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19962),
@@ -91619,7 +91619,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2610() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19964),
@@ -91654,7 +91654,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2611() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19965),
@@ -91693,7 +91693,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2612() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19966),
@@ -91728,7 +91728,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2613() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19967),
@@ -91767,7 +91767,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2614() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 20014),
@@ -91809,7 +91809,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2615() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20015),
@@ -91841,7 +91841,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2616() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20016),
@@ -91880,7 +91880,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2617() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20017),
@@ -91919,7 +91919,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2618() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20019),
@@ -91954,7 +91954,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2619() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20020),
@@ -91993,7 +91993,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2620() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20021),
@@ -92028,7 +92028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2621() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20022),
@@ -92067,7 +92067,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2622() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20023),
@@ -92102,7 +92102,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2623() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20024),
@@ -92141,7 +92141,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2624() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20025),
@@ -92176,7 +92176,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2625() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20026),
@@ -92215,7 +92215,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2626() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 20073),
@@ -92257,7 +92257,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2627() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20074),
@@ -92289,7 +92289,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2628() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20075),
@@ -92328,7 +92328,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2629() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20076),
@@ -92367,7 +92367,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2630() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PubSubDiagnosticsCounterTypeNode node =
         new PubSubDiagnosticsCounterTypeNode(
             this.context,
             new NodeId(0, 20078),
@@ -92409,7 +92409,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2631() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20079),
@@ -92441,7 +92441,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2632() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20080),
@@ -92480,7 +92480,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2633() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20081),
@@ -92519,7 +92519,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2634() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20083),
@@ -92554,7 +92554,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2635() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20084),
@@ -92593,7 +92593,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2636() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20085),
@@ -92628,7 +92628,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2637() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20086),
@@ -92667,7 +92667,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2638() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20087),
@@ -92702,7 +92702,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2639() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20088),
@@ -92741,7 +92741,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2640() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20089),
@@ -92776,7 +92776,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2641() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20090),
@@ -92815,7 +92815,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2642() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20091),
@@ -92850,7 +92850,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2643() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20092),
@@ -92889,7 +92889,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2644() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 20093),
@@ -92924,7 +92924,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2645() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 20094),
@@ -92963,7 +92963,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2646() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23833),
@@ -92995,7 +92995,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2647() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23834),
@@ -93027,7 +93027,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2648() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23835),
@@ -93059,7 +93059,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2649() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23836),
@@ -93091,7 +93091,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2650() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23837),
@@ -93123,7 +93123,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2651() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23838),
@@ -93155,7 +93155,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2652() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32651),
@@ -93187,7 +93187,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2653() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32844),
@@ -93219,7 +93219,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2654() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32845),
@@ -93251,7 +93251,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2655() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32846),
@@ -93283,7 +93283,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2656() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32847),
@@ -93315,7 +93315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2657() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32652),
@@ -93347,7 +93347,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2658() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32653),
@@ -93379,7 +93379,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2659() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32654),
@@ -93411,7 +93411,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2660() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32655),
@@ -93443,7 +93443,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2661() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32848),
@@ -93475,7 +93475,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2662() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15545),
@@ -93507,7 +93507,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2663() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15546),
@@ -93539,7 +93539,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2664() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15547),
@@ -93571,7 +93571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2665() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15561),
@@ -93603,7 +93603,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2666() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15562),
@@ -93635,7 +93635,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2667() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15576),
@@ -93667,7 +93667,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2668() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21106),
@@ -93699,7 +93699,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2669() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21107),
@@ -93731,7 +93731,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2670() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21108),
@@ -93763,7 +93763,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2671() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21109),
@@ -93795,7 +93795,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2672() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21110),
@@ -93827,7 +93827,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2673() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21112),
@@ -93859,7 +93859,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2674() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21113),
@@ -93891,7 +93891,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2675() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21114),
@@ -93923,7 +93923,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2676() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21115),
@@ -93955,7 +93955,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2677() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21117),
@@ -93987,7 +93987,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2678() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21119),
@@ -94019,7 +94019,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2679() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17477),
@@ -94051,7 +94051,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2680() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21120),
@@ -94083,7 +94083,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2681() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21121),
@@ -94115,7 +94115,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2682() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21122),
@@ -94147,7 +94147,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2683() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21123),
@@ -94179,7 +94179,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2684() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21124),
@@ -94211,7 +94211,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2685() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21125),
@@ -94243,7 +94243,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2686() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21127),
@@ -94275,7 +94275,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2687() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21129),
@@ -94307,7 +94307,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2688() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21131),
@@ -94339,7 +94339,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2689() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21132),
@@ -94371,7 +94371,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2690() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 15154),
@@ -94407,7 +94407,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2691() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17579),
@@ -94439,7 +94439,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2692() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23839),
@@ -94471,7 +94471,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2693() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23840),
@@ -94503,7 +94503,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2694() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25525),
@@ -94535,7 +94535,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2695() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25526),
@@ -94567,7 +94567,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2696() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21134),
@@ -94599,7 +94599,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2697() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21135),
@@ -94631,7 +94631,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2698() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 23843),
@@ -94667,7 +94667,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2699() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23844),
@@ -94699,7 +94699,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2700() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25527),
@@ -94731,7 +94731,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2701() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23847),
@@ -94763,7 +94763,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2702() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23848),
@@ -94795,7 +94795,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2703() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23849),
@@ -94827,7 +94827,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2704() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 24018),
@@ -94863,7 +94863,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2705() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24019),
@@ -94895,7 +94895,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2706() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25528),
@@ -94927,7 +94927,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2707() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24022),
@@ -94959,7 +94959,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2708() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24023),
@@ -94991,7 +94991,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2709() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15156),
@@ -95023,7 +95023,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2710() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15178),
@@ -95055,7 +95055,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2711() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21137),
@@ -95087,7 +95087,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2712() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15246),
@@ -95119,7 +95119,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2713() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15247),
@@ -95151,7 +95151,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2714() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15249),
@@ -95183,7 +95183,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2715() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21139),
@@ -95215,7 +95215,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2716() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21140),
@@ -95247,7 +95247,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2717() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15250),
@@ -95279,7 +95279,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2718() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15251),
@@ -95311,7 +95311,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2719() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15330),
@@ -95343,7 +95343,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2720() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21141),
@@ -95375,7 +95375,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2721() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21143),
@@ -95407,7 +95407,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2722() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15334),
@@ -95439,7 +95439,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2723() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15419),
@@ -95471,7 +95471,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2724() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15420),
@@ -95503,7 +95503,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2725() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 21144),
@@ -95535,7 +95535,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2726() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.SelectionListTypeNode node =
         new SelectionListTypeNode(
             this.context,
             new NodeId(0, 21146),
@@ -95571,7 +95571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2727() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 17582),
@@ -95603,7 +95603,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2728() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 21149),
@@ -95635,7 +95635,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2729() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23460),
@@ -95675,7 +95675,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2730() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23461),
@@ -95714,7 +95714,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2731() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23931),
@@ -95754,7 +95754,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2732() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23935),
@@ -95793,7 +95793,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2733() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32849),
@@ -95825,7 +95825,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2734() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23937),
@@ -95865,7 +95865,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2735() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23959),
@@ -95904,7 +95904,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2736() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23961),
@@ -95944,7 +95944,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2737() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23962),
@@ -95983,7 +95983,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2738() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23463),
@@ -96023,7 +96023,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2739() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23464),
@@ -96062,7 +96062,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2740() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23964),
@@ -96102,7 +96102,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2741() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23971),
@@ -96141,7 +96141,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2742() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32850),
@@ -96173,7 +96173,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2743() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23973),
@@ -96213,7 +96213,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2744() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23974),
@@ -96252,7 +96252,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2745() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23976),
@@ -96292,7 +96292,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2746() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23986),
@@ -96331,7 +96331,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2747() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24499),
@@ -96361,7 +96361,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2748() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24500),
@@ -96391,7 +96391,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2749() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23477),
@@ -96429,7 +96429,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2750() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23478),
@@ -96466,7 +96466,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2751() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32852),
@@ -96496,7 +96496,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2752() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23486),
@@ -96534,7 +96534,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2753() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23487),
@@ -96571,7 +96571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2754() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23495),
@@ -96609,7 +96609,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2755() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 23496),
@@ -96646,7 +96646,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2756() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24265),
@@ -96678,7 +96678,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2757() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24266),
@@ -96710,7 +96710,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2758() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24267),
@@ -96742,7 +96742,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2759() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24268),
@@ -96774,7 +96774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2760() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24270),
@@ -96814,7 +96814,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2761() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24272),
@@ -96854,7 +96854,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2762() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24274),
@@ -96893,7 +96893,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2763() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24276),
@@ -96933,7 +96933,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2764() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24278),
@@ -96971,7 +96971,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2765() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24280),
@@ -97009,7 +97009,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2766() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24301),
@@ -97042,7 +97042,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2767() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24302),
@@ -97077,7 +97077,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2768() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24303),
@@ -97112,7 +97112,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2769() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24291),
@@ -97147,7 +97147,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2770() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24305),
@@ -97188,7 +97188,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2771() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24307),
@@ -97229,7 +97229,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2772() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24309),
@@ -97269,7 +97269,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2773() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24311),
@@ -97312,7 +97312,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2774() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19082),
@@ -97344,7 +97344,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2775() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19083),
@@ -97376,7 +97376,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2776() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19090),
@@ -97408,7 +97408,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2777() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26872),
@@ -97440,7 +97440,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2778() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26874),
@@ -97479,7 +97479,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2779() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26876),
@@ -97518,7 +97518,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2780() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 27997),
@@ -97550,7 +97550,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2781() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 27998),
@@ -97582,7 +97582,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2782() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 27999),
@@ -97614,7 +97614,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2783() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28000),
@@ -97646,7 +97646,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2784() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28001),
@@ -97678,7 +97678,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2785() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28002),
@@ -97710,7 +97710,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2786() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28003),
@@ -97742,7 +97742,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2787() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28006),
@@ -97782,7 +97782,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2788() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28007),
@@ -97821,7 +97821,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2789() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28011),
@@ -97861,7 +97861,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2790() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28012),
@@ -97900,7 +97900,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2791() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 28014),
@@ -97939,7 +97939,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2792() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26882),
@@ -97971,7 +97971,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2793() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26883),
@@ -98003,7 +98003,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2794() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26884),
@@ -98035,7 +98035,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2795() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26885),
@@ -98067,7 +98067,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2796() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26890),
@@ -98106,7 +98106,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2797() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26891),
@@ -98145,7 +98145,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2798() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26893),
@@ -98184,7 +98184,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2799() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26895),
@@ -98224,7 +98224,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2800() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26896),
@@ -98263,7 +98263,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2801() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26898),
@@ -98303,7 +98303,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2802() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26900),
@@ -98342,7 +98342,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2803() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26901),
@@ -98381,7 +98381,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2804() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26903),
@@ -98421,7 +98421,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2805() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26904),
@@ -98453,7 +98453,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2806() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26908),
@@ -98492,7 +98492,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2807() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26909),
@@ -98531,7 +98531,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2808() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26911),
@@ -98570,7 +98570,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2809() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26912),
@@ -98609,7 +98609,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2810() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26914),
@@ -98649,7 +98649,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2811() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26916),
@@ -98689,7 +98689,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2812() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 26917),
@@ -98721,7 +98721,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2813() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 27996),
@@ -98753,7 +98753,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2814() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 29879),
@@ -98783,7 +98783,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2815() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 29881),
@@ -98820,7 +98820,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2816() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24149),
@@ -98852,7 +98852,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2817() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24150),
@@ -98884,7 +98884,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2818() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24151),
@@ -98916,7 +98916,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2819() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.AnalogUnitTypeNode node =
         new AnalogUnitTypeNode(
             this.context,
             new NodeId(0, 24152),
@@ -98952,7 +98952,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2820() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24157),
@@ -98992,7 +98992,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2821() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.AnalogUnitTypeNode node =
         new AnalogUnitTypeNode(
             this.context,
             new NodeId(0, 24159),
@@ -99028,7 +99028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2822() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24164),
@@ -99068,7 +99068,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2823() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24165),
@@ -99100,7 +99100,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2824() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24166),
@@ -99132,7 +99132,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2825() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24234),
@@ -99164,7 +99164,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2826() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24168),
@@ -99196,7 +99196,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2827() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 25219),
@@ -99228,7 +99228,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2828() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24170),
@@ -99260,7 +99260,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2829() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24171),
@@ -99292,7 +99292,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2830() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24172),
@@ -99324,7 +99324,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2831() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24174),
@@ -99356,7 +99356,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2832() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24175),
@@ -99388,7 +99388,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2833() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24176),
@@ -99420,7 +99420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2834() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24177),
@@ -99452,7 +99452,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2835() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24178),
@@ -99484,7 +99484,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2836() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24180),
@@ -99516,7 +99516,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2837() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24181),
@@ -99548,7 +99548,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2838() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24182),
@@ -99580,7 +99580,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2839() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24184),
@@ -99612,7 +99612,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2840() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24185),
@@ -99644,7 +99644,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2841() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24186),
@@ -99676,7 +99676,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2842() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24187),
@@ -99708,7 +99708,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2843() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24189),
@@ -99740,7 +99740,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2844() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24190),
@@ -99772,7 +99772,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2845() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24194),
@@ -99804,7 +99804,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2846() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24198),
@@ -99836,7 +99836,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2847() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24200),
@@ -99868,7 +99868,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2848() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24201),
@@ -99900,7 +99900,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2849() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24203),
@@ -99932,7 +99932,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2850() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24204),
@@ -99964,7 +99964,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2851() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24206),
@@ -99996,7 +99996,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2852() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24207),
@@ -100028,7 +100028,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2853() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24208),
@@ -100060,7 +100060,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2854() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 24209),
@@ -100092,7 +100092,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2855() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24235),
@@ -100130,7 +100130,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2856() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24236),
@@ -100168,7 +100168,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2857() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24237),
@@ -100206,7 +100206,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2858() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24238),
@@ -100244,7 +100244,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2859() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24239),
@@ -100282,7 +100282,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2860() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24240),
@@ -100320,7 +100320,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2861() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24241),
@@ -100358,7 +100358,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2862() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24242),
@@ -100396,7 +100396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2863() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18948),
@@ -100434,7 +100434,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2864() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18950),
@@ -100472,7 +100472,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2865() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18952),
@@ -100510,7 +100510,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2866() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18957),
@@ -100548,7 +100548,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2867() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18966),
@@ -100578,7 +100578,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2868() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18967),
@@ -100608,7 +100608,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2869() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18968),
@@ -100638,7 +100638,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2870() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18969),
@@ -100668,7 +100668,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2871() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 25222),
@@ -100700,7 +100700,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2872() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 25223),
@@ -100732,7 +100732,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2873() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 25224),
@@ -100764,7 +100764,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2874() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.AnalogUnitTypeNode node =
         new AnalogUnitTypeNode(
             this.context,
             new NodeId(0, 25225),
@@ -100800,7 +100800,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2875() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25252),
@@ -100840,7 +100840,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2876() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25228),
@@ -100872,7 +100872,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2877() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25230),
@@ -100912,7 +100912,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2878() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 25232),
@@ -100952,7 +100952,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2879() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18975),
@@ -100984,7 +100984,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2880() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18976),
@@ -101016,7 +101016,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2881() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18977),
@@ -101048,7 +101048,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2882() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18978),
@@ -101080,7 +101080,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2883() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18979),
@@ -101112,7 +101112,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2884() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18981),
@@ -101144,7 +101144,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2885() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18982),
@@ -101176,7 +101176,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2886() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18983),
@@ -101208,7 +101208,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2887() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18984),
@@ -101240,7 +101240,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2888() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18989),
@@ -101272,7 +101272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2889() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18990),
@@ -101304,7 +101304,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2890() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18991),
@@ -101336,7 +101336,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2891() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 18992),
@@ -101368,7 +101368,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2892() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18997),
@@ -101400,7 +101400,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2893() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18998),
@@ -101432,7 +101432,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2894() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 18999),
@@ -101464,7 +101464,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2895() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19000),
@@ -101496,7 +101496,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2896() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19001),
@@ -101528,7 +101528,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2897() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19003),
@@ -101560,7 +101560,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2898() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19004),
@@ -101592,7 +101592,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2899() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19005),
@@ -101624,7 +101624,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2900() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19006),
@@ -101656,7 +101656,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2901() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19007),
@@ -101688,7 +101688,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2902() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19008),
@@ -101720,7 +101720,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2903() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19010),
@@ -101752,7 +101752,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2904() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19011),
@@ -101784,7 +101784,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2905() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19012),
@@ -101816,7 +101816,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2906() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19013),
@@ -101848,7 +101848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2907() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19014),
@@ -101880,7 +101880,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2908() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19015),
@@ -101912,7 +101912,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2909() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19018),
@@ -101944,7 +101944,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2910() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19019),
@@ -101976,7 +101976,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2911() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19020),
@@ -102008,7 +102008,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2912() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19021),
@@ -102040,7 +102040,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2913() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19022),
@@ -102072,7 +102072,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2914() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19023),
@@ -102104,7 +102104,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2915() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19034),
@@ -102136,7 +102136,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2916() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19035),
@@ -102168,7 +102168,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2917() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19036),
@@ -102200,7 +102200,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2918() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19037),
@@ -102232,7 +102232,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2919() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19038),
@@ -102264,7 +102264,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2920() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19039),
@@ -102296,7 +102296,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2921() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19040),
@@ -102328,7 +102328,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2922() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19041),
@@ -102360,7 +102360,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2923() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19042),
@@ -102392,7 +102392,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2924() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19043),
@@ -102424,7 +102424,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2925() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19044),
@@ -102456,7 +102456,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2926() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19045),
@@ -102488,7 +102488,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2927() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19046),
@@ -102520,7 +102520,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2928() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19047),
@@ -102552,7 +102552,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2929() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19078),
@@ -102584,7 +102584,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2930() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 32658),
@@ -102616,7 +102616,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2931() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.BaseDataVariableTypeNode node =
         new BaseDataVariableTypeNode(
             this.context,
             new NodeId(0, 19825),
@@ -102648,7 +102648,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2932() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19826),
@@ -102680,7 +102680,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2933() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19827),
@@ -102712,7 +102712,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2934() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19828),
@@ -102744,7 +102744,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2935() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19829),
@@ -102776,7 +102776,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2936() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19830),
@@ -102808,7 +102808,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2937() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19835),
@@ -102840,7 +102840,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2938() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19836),
@@ -102872,7 +102872,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2939() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19837),
@@ -102904,7 +102904,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2940() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19838),
@@ -102936,7 +102936,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2941() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19840),
@@ -102975,7 +102975,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2942() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19841),
@@ -103014,7 +103014,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2943() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19354),
@@ -103054,7 +103054,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2944() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19355),
@@ -103094,7 +103094,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2945() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19356),
@@ -103126,7 +103126,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2946() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19357),
@@ -103158,7 +103158,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2947() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19744),
@@ -103190,7 +103190,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2948() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24373),
@@ -103229,7 +103229,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2949() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19750),
@@ -103267,7 +103267,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2950() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19363),
@@ -103299,7 +103299,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2951() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19364),
@@ -103331,7 +103331,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2952() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19365),
@@ -103363,7 +103363,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2953() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19366),
@@ -103395,7 +103395,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2954() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 24376),
@@ -103427,7 +103427,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2955() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19374),
@@ -103465,7 +103465,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2956() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19375),
@@ -103503,7 +103503,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2957() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19376),
@@ -103533,7 +103533,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2958() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19377),
@@ -103563,7 +103563,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2959() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 19751),
@@ -103593,7 +103593,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2960() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7591),
@@ -103630,7 +103630,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2961() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11878),
@@ -103668,7 +103668,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2962() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15030),
@@ -103706,7 +103706,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2963() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15032),
@@ -103744,7 +103744,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2964() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15407),
@@ -103782,7 +103782,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2965() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15034),
@@ -103820,7 +103820,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2966() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15035),
@@ -103858,7 +103858,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2967() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 14528),
@@ -103896,7 +103896,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2968() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7597),
@@ -103934,7 +103934,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2969() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7595),
@@ -103971,7 +103971,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2970() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7596),
@@ -104009,7 +104009,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2971() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7598),
@@ -104046,7 +104046,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2972() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11881),
@@ -104084,7 +104084,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2973() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15036),
@@ -104122,7 +104122,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2974() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7605),
@@ -104160,7 +104160,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2975() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11884),
@@ -104198,7 +104198,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2976() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 11885),
@@ -104236,7 +104236,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2977() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7611),
@@ -104274,7 +104274,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2978() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7612),
@@ -104312,7 +104312,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2979() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 12078),
@@ -104349,7 +104349,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2980() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7614),
@@ -104387,7 +104387,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2981() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDictionaryTypeNode node =
         new DataTypeDictionaryTypeNode(
             this.context,
             new NodeId(0, 7617),
@@ -105019,7 +105019,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2982() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 7619),
@@ -105056,7 +105056,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2983() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15037),
@@ -105093,7 +105093,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2984() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12770),
@@ -105130,7 +105130,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2985() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14873),
@@ -105167,7 +105167,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2986() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 17538),
@@ -105204,7 +105204,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2987() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 17550),
@@ -105241,7 +105241,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2988() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15734),
@@ -105278,7 +105278,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2989() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32423),
@@ -105315,7 +105315,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2990() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18824),
@@ -105352,7 +105352,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2991() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18827),
@@ -105389,7 +105389,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2992() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18830),
@@ -105426,7 +105426,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2993() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18833),
@@ -105463,7 +105463,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2994() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18836),
@@ -105500,7 +105500,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2995() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18839),
@@ -105537,7 +105537,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2996() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18842),
@@ -105574,7 +105574,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2997() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18845),
@@ -105611,7 +105611,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2998() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18848),
@@ -105648,7 +105648,7 @@ class VariableNodeLoader {
   }
 
   void loadNode2999() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15738),
@@ -105685,7 +105685,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3000() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23514),
@@ -105722,7 +105722,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3001() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24340),
@@ -105759,7 +105759,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3002() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32563),
@@ -105796,7 +105796,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3003() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32566),
@@ -105833,7 +105833,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3004() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32569),
@@ -105870,7 +105870,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3005() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12681),
@@ -105907,7 +105907,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3006() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16548),
@@ -105944,7 +105944,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3007() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16551),
@@ -105981,7 +105981,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3008() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16554),
@@ -106018,7 +106018,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3009() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16557),
@@ -106055,7 +106055,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3010() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32383),
@@ -106092,7 +106092,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3011() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23756),
@@ -106129,7 +106129,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3012() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16567),
@@ -106166,7 +106166,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3013() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16570),
@@ -106203,7 +106203,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3014() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16578),
@@ -106240,7 +106240,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3015() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16581),
@@ -106277,7 +106277,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3016() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16584),
@@ -106314,7 +106314,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3017() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23732),
@@ -106351,7 +106351,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3018() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23759),
@@ -106388,7 +106388,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3019() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15741),
@@ -106425,7 +106425,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3020() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14855),
@@ -106462,7 +106462,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3021() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15599),
@@ -106499,7 +106499,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3022() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15602),
@@ -106536,7 +106536,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3023() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15501),
@@ -106573,7 +106573,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3024() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15521),
@@ -106610,7 +106610,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3025() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24111),
@@ -106647,7 +106647,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3026() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24114),
@@ -106684,7 +106684,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3027() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24117),
@@ -106721,7 +106721,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3028() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14849),
@@ -106758,7 +106758,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3029() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14852),
@@ -106795,7 +106795,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3030() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14876),
@@ -106832,7 +106832,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3031() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15766),
@@ -106869,7 +106869,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3032() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15769),
@@ -106906,7 +106906,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3033() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14324),
@@ -106943,7 +106943,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3034() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15772),
@@ -106980,7 +106980,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3035() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15775),
@@ -107017,7 +107017,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3036() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25533),
@@ -107054,7 +107054,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3037() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18601),
@@ -107091,7 +107091,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3038() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18604),
@@ -107128,7 +107128,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3039() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18607),
@@ -107165,7 +107165,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3040() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18931),
@@ -107202,7 +107202,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3041() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15778),
@@ -107239,7 +107239,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3042() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15781),
@@ -107276,7 +107276,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3043() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15784),
@@ -107313,7 +107313,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3044() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15787),
@@ -107350,7 +107350,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3045() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21156),
@@ -107387,7 +107387,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3046() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15793),
@@ -107424,7 +107424,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3047() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15854),
@@ -107461,7 +107461,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3048() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15857),
@@ -107498,7 +107498,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3049() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15860),
@@ -107535,7 +107535,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3050() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21159),
@@ -107572,7 +107572,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3051() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21162),
@@ -107609,7 +107609,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3052() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21165),
@@ -107646,7 +107646,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3053() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15866),
@@ -107683,7 +107683,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3054() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15869),
@@ -107720,7 +107720,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3055() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15872),
@@ -107757,7 +107757,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3056() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15877),
@@ -107794,7 +107794,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3057() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15880),
@@ -107831,7 +107831,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3058() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15883),
@@ -107868,7 +107868,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3059() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15886),
@@ -107905,7 +107905,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3060() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21002),
@@ -107942,7 +107942,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3061() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15889),
@@ -107979,7 +107979,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3062() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21168),
@@ -108016,7 +108016,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3063() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23870),
@@ -108053,7 +108053,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3064() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23873),
@@ -108090,7 +108090,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3065() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23876),
@@ -108127,7 +108127,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3066() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25536),
@@ -108164,7 +108164,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3067() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23879),
@@ -108201,7 +108201,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3068() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15895),
@@ -108238,7 +108238,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3069() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15898),
@@ -108275,7 +108275,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3070() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15919),
@@ -108312,7 +108312,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3071() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15922),
@@ -108349,7 +108349,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3072() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15925),
@@ -108386,7 +108386,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3073() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15931),
@@ -108423,7 +108423,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3074() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23882),
@@ -108460,7 +108460,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3075() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23885),
@@ -108497,7 +108497,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3076() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23888),
@@ -108534,7 +108534,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3077() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23897),
@@ -108571,7 +108571,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3078() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23900),
@@ -108608,7 +108608,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3079() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 17469),
@@ -108645,7 +108645,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3080() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23909),
@@ -108682,7 +108682,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3081() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21171),
@@ -108719,7 +108719,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3082() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23912),
@@ -108756,7 +108756,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3083() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23915),
@@ -108793,7 +108793,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3084() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18934),
@@ -108830,7 +108830,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3085() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15524),
@@ -108867,7 +108867,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3086() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15940),
@@ -108904,7 +108904,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3087() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15943),
@@ -108941,7 +108941,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3088() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15946),
@@ -108978,7 +108978,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3089() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25539),
@@ -109015,7 +109015,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3090() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25542),
@@ -109052,7 +109052,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3091() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23502),
@@ -109089,7 +109089,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3092() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24343),
@@ -109126,7 +109126,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3093() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24346),
@@ -109163,7 +109163,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3094() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24349),
@@ -109200,7 +109200,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3095() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24293),
@@ -109237,7 +109237,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3096() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25240),
@@ -109274,7 +109274,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3097() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19085),
@@ -109311,7 +109311,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3098() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19088),
@@ -109348,7 +109348,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3099() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19097),
@@ -109385,7 +109385,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3100() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32663),
@@ -109422,7 +109422,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3101() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32666),
@@ -109459,7 +109459,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3102() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19380),
@@ -109496,7 +109496,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3103() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19760),
@@ -109533,7 +109533,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3104() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19763),
@@ -109570,7 +109570,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3105() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19766),
@@ -109607,7 +109607,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3106() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19769),
@@ -109644,7 +109644,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3107() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16131),
@@ -109681,7 +109681,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3108() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18178),
@@ -109718,7 +109718,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3109() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18181),
@@ -109755,7 +109755,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3110() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18184),
@@ -109792,7 +109792,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3111() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18187),
@@ -109829,7 +109829,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3112() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7650),
@@ -109866,7 +109866,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3113() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7656),
@@ -109903,7 +109903,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3114() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14870),
@@ -109940,7 +109940,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3115() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12767),
@@ -109977,7 +109977,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3116() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8914),
@@ -110014,7 +110014,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3117() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7665),
@@ -110051,7 +110051,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3118() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12213),
@@ -110088,7 +110088,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3119() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7662),
@@ -110125,7 +110125,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3120() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7668),
@@ -110162,7 +110162,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3121() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7782),
@@ -110199,7 +110199,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3122() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12902),
@@ -110236,7 +110236,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3123() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12905),
@@ -110273,7 +110273,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3124() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7698),
@@ -110310,7 +110310,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3125() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24481),
@@ -110347,7 +110347,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3126() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7671),
@@ -110384,7 +110384,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3127() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7674),
@@ -110421,7 +110421,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3128() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7677),
@@ -110458,7 +110458,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3129() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7680),
@@ -110495,7 +110495,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3130() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7683),
@@ -110532,7 +110532,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3131() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7728),
@@ -110569,7 +110569,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3132() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7731),
@@ -110606,7 +110606,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3133() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7734),
@@ -110643,7 +110643,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3134() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7737),
@@ -110680,7 +110680,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3135() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12718),
@@ -110717,7 +110717,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3136() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12721),
@@ -110754,7 +110754,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3137() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7686),
@@ -110791,7 +110791,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3138() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7929),
@@ -110828,7 +110828,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3139() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7932),
@@ -110865,7 +110865,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3140() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7935),
@@ -110902,7 +110902,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3141() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7938),
@@ -110939,7 +110939,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3142() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7941),
@@ -110976,7 +110976,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3143() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7944),
@@ -111013,7 +111013,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3144() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7947),
@@ -111050,7 +111050,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3145() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15018),
@@ -111087,7 +111087,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3146() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8004),
@@ -111124,7 +111124,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3147() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32826),
@@ -111161,7 +111161,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3148() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8067),
@@ -111198,7 +111198,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3149() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8073),
@@ -111235,7 +111235,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3150() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8076),
@@ -111272,7 +111272,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3151() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8172),
@@ -111309,7 +111309,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3152() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7692),
@@ -111346,7 +111346,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3153() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8208),
@@ -111383,7 +111383,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3154() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 11959),
@@ -111420,7 +111420,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3155() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 11962),
@@ -111457,7 +111457,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3156() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8211),
@@ -111494,7 +111494,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3157() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8214),
@@ -111531,7 +111531,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3158() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8217),
@@ -111568,7 +111568,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3159() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8220),
@@ -111605,7 +111605,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3160() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8223),
@@ -111642,7 +111642,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3161() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8226),
@@ -111679,7 +111679,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3162() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 7659),
@@ -111716,7 +111716,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3163() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8229),
@@ -111753,7 +111753,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3164() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8232),
@@ -111790,7 +111790,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3165() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8235),
@@ -111827,7 +111827,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3166() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8238),
@@ -111864,7 +111864,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3167() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8241),
@@ -111901,7 +111901,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3168() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12183),
@@ -111938,7 +111938,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3169() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12186),
@@ -111975,7 +111975,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3170() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12091),
@@ -112012,7 +112012,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3171() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12094),
@@ -112049,7 +112049,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3172() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8247),
@@ -112086,7 +112086,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3173() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24035),
@@ -112123,7 +112123,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3174() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8244),
@@ -112160,7 +112160,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3175() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDictionaryTypeNode node =
         new DataTypeDictionaryTypeNode(
             this.context,
             new NodeId(0, 8252),
@@ -112804,7 +112804,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3176() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 8254),
@@ -112841,7 +112841,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3177() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.PropertyTypeNode node =
         new PropertyTypeNode(
             this.context,
             new NodeId(0, 15039),
@@ -112878,7 +112878,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3178() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12762),
@@ -112915,7 +112915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3179() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14829),
@@ -112952,7 +112952,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3180() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 17542),
@@ -112989,7 +112989,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3181() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 17554),
@@ -113026,7 +113026,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3182() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16024),
@@ -113063,7 +113063,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3183() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32427),
@@ -113100,7 +113100,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3184() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18860),
@@ -113137,7 +113137,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3185() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18863),
@@ -113174,7 +113174,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3186() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18866),
@@ -113211,7 +113211,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3187() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18869),
@@ -113248,7 +113248,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3188() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19049),
@@ -113285,7 +113285,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3189() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19052),
@@ -113322,7 +113322,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3190() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19055),
@@ -113359,7 +113359,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3191() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19058),
@@ -113396,7 +113396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3192() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19061),
@@ -113433,7 +113433,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3193() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15730),
@@ -113470,7 +113470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3194() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23522),
@@ -113507,7 +113507,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3195() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24356),
@@ -113544,7 +113544,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3196() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32575),
@@ -113581,7 +113581,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3197() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32578),
@@ -113618,7 +113618,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3198() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32581),
@@ -113655,7 +113655,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3199() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12677),
@@ -113692,7 +113692,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3200() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16597),
@@ -113729,7 +113729,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3201() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16604),
@@ -113766,7 +113766,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3202() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16607),
@@ -113803,7 +113803,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3203() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16610),
@@ -113840,7 +113840,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3204() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32387),
@@ -113877,7 +113877,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3205() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23764),
@@ -113914,7 +113914,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3206() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16617),
@@ -113951,7 +113951,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3207() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16620),
@@ -113988,7 +113988,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3208() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16623),
@@ -114025,7 +114025,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3209() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16626),
@@ -114062,7 +114062,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3210() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16629),
@@ -114099,7 +114099,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3211() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23736),
@@ -114136,7 +114136,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3212() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23773),
@@ -114174,7 +114174,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3213() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16027),
@@ -114211,7 +114211,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3214() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14811),
@@ -114248,7 +114248,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3215() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15591),
@@ -114285,7 +114285,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3216() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15594),
@@ -114322,7 +114322,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3217() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15585),
@@ -114359,7 +114359,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3218() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15588),
@@ -114396,7 +114396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3219() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24123),
@@ -114433,7 +114433,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3220() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24126),
@@ -114470,7 +114470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3221() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24129),
@@ -114507,7 +114507,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3222() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14805),
@@ -114544,7 +114544,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3223() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14808),
@@ -114581,7 +114581,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3224() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14832),
@@ -114618,7 +114618,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3225() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16030),
@@ -114655,7 +114655,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3226() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16033),
@@ -114692,7 +114692,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3227() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14320),
@@ -114729,7 +114729,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3228() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16037),
@@ -114766,7 +114766,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3229() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16040),
@@ -114803,7 +114803,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3230() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25549),
@@ -114841,7 +114841,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3231() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18613),
@@ -114878,7 +114878,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3232() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18616),
@@ -114915,7 +114915,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3233() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18619),
@@ -114952,7 +114952,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3234() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18939),
@@ -114989,7 +114989,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3235() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16047),
@@ -115026,7 +115026,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3236() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16050),
@@ -115063,7 +115063,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3237() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16053),
@@ -115100,7 +115100,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3238() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16056),
@@ -115137,7 +115137,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3239() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21180),
@@ -115174,7 +115174,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3240() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16062),
@@ -115211,7 +115211,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3241() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16065),
@@ -115248,7 +115248,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3242() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16068),
@@ -115285,7 +115285,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3243() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16071),
@@ -115322,7 +115322,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3244() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21183),
@@ -115359,7 +115359,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3245() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21186),
@@ -115396,7 +115396,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3246() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21189),
@@ -115433,7 +115433,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3247() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16077),
@@ -115470,7 +115470,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3248() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16080),
@@ -115507,7 +115507,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3249() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16083),
@@ -115544,7 +115544,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3250() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16086),
@@ -115581,7 +115581,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3251() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16089),
@@ -115618,7 +115618,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3252() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16092),
@@ -115655,7 +115655,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3253() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16095),
@@ -115692,7 +115692,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3254() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14835),
@@ -115729,7 +115729,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3255() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16098),
@@ -115766,7 +115766,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3256() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21192),
@@ -115803,7 +115803,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3257() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23938),
@@ -115841,7 +115841,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3258() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23941),
@@ -115879,7 +115879,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3259() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23944),
@@ -115916,7 +115916,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3260() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25552),
@@ -115953,7 +115953,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3261() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23947),
@@ -115990,7 +115990,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3262() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16104),
@@ -116027,7 +116027,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3263() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16107),
@@ -116064,7 +116064,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3264() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16110),
@@ -116101,7 +116101,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3265() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16113),
@@ -116138,7 +116138,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3266() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16116),
@@ -116175,7 +116175,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3267() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16119),
@@ -116212,7 +116212,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3268() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23950),
@@ -116249,7 +116249,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3269() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23953),
@@ -116286,7 +116286,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3270() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23956),
@@ -116323,7 +116323,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3271() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23965),
@@ -116360,7 +116360,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3272() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23968),
@@ -116397,7 +116397,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3273() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 17473),
@@ -116435,7 +116435,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3274() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23977),
@@ -116473,7 +116473,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3275() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 21195),
@@ -116511,7 +116511,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3276() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23980),
@@ -116549,7 +116549,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3277() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23983),
@@ -116587,7 +116587,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3278() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18942),
@@ -116624,7 +116624,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3279() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15640),
@@ -116661,7 +116661,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3280() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16125),
@@ -116699,7 +116699,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3281() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16144),
@@ -116737,7 +116737,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3282() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16147),
@@ -116775,7 +116775,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3283() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25555),
@@ -116812,7 +116812,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3284() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25558),
@@ -116849,7 +116849,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3285() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 23508),
@@ -116886,7 +116886,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3286() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24359),
@@ -116923,7 +116923,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3287() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24362),
@@ -116960,7 +116960,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3288() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24365),
@@ -116997,7 +116997,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3289() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24297),
@@ -117034,7 +117034,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3290() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 25244),
@@ -117071,7 +117071,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3291() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19103),
@@ -117108,7 +117108,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3292() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19106),
@@ -117145,7 +117145,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3293() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19291),
@@ -117182,7 +117182,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3294() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32671),
@@ -117219,7 +117219,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3295() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32674),
@@ -117256,7 +117256,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3296() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19384),
@@ -117293,7 +117293,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3297() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19790),
@@ -117330,7 +117330,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3298() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19793),
@@ -117367,7 +117367,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3299() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19796),
@@ -117404,7 +117404,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3300() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 19799),
@@ -117441,7 +117441,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3301() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 16127),
@@ -117478,7 +117478,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3302() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18166),
@@ -117515,7 +117515,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3303() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18169),
@@ -117552,7 +117552,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3304() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18172),
@@ -117589,7 +117589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3305() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 18175),
@@ -117626,7 +117626,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3306() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8285),
@@ -117663,7 +117663,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3307() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8291),
@@ -117700,7 +117700,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3308() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 14826),
@@ -117737,7 +117737,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3309() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12759),
@@ -117774,7 +117774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3310() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8918),
@@ -117811,7 +117811,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3311() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8300),
@@ -117848,7 +117848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3312() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12201),
@@ -117885,7 +117885,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3313() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8297),
@@ -117922,7 +117922,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3314() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8303),
@@ -117959,7 +117959,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3315() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8417),
@@ -117996,7 +117996,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3316() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12894),
@@ -118033,7 +118033,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3317() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12897),
@@ -118070,7 +118070,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3318() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8333),
@@ -118107,7 +118107,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3319() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24496),
@@ -118144,7 +118144,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3320() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8306),
@@ -118181,7 +118181,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3321() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8309),
@@ -118218,7 +118218,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3322() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8312),
@@ -118255,7 +118255,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3323() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8315),
@@ -118292,7 +118292,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3324() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8318),
@@ -118329,7 +118329,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3325() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8363),
@@ -118366,7 +118366,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3326() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8366),
@@ -118403,7 +118403,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3327() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8369),
@@ -118440,7 +118440,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3328() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8372),
@@ -118477,7 +118477,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3329() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12712),
@@ -118514,7 +118514,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3330() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12715),
@@ -118551,7 +118551,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3331() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8321),
@@ -118588,7 +118588,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3332() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8564),
@@ -118625,7 +118625,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3333() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8567),
@@ -118662,7 +118662,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3334() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8570),
@@ -118699,7 +118699,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3335() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8573),
@@ -118736,7 +118736,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3336() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8576),
@@ -118773,7 +118773,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3337() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8579),
@@ -118810,7 +118810,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3338() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8582),
@@ -118847,7 +118847,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3339() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 15021),
@@ -118884,7 +118884,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3340() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8639),
@@ -118921,7 +118921,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3341() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 32830),
@@ -118958,7 +118958,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3342() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8702),
@@ -118995,7 +118995,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3343() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8708),
@@ -119032,7 +119032,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3344() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8711),
@@ -119069,7 +119069,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3345() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8807),
@@ -119106,7 +119106,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3346() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8327),
@@ -119143,7 +119143,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3347() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8843),
@@ -119180,7 +119180,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3348() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 11951),
@@ -119217,7 +119217,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3349() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 11954),
@@ -119254,7 +119254,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3350() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8846),
@@ -119292,7 +119292,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3351() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8849),
@@ -119329,7 +119329,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3352() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8852),
@@ -119366,7 +119366,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3353() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8855),
@@ -119403,7 +119403,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3354() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8858),
@@ -119441,7 +119441,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3355() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8861),
@@ -119478,7 +119478,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3356() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8294),
@@ -119515,7 +119515,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3357() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8864),
@@ -119552,7 +119552,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3358() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8867),
@@ -119589,7 +119589,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3359() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8870),
@@ -119626,7 +119626,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3360() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8873),
@@ -119663,7 +119663,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3361() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8876),
@@ -119700,7 +119700,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3362() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12175),
@@ -119737,7 +119737,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3363() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12178),
@@ -119774,7 +119774,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3364() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12083),
@@ -119811,7 +119811,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3365() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 12086),
@@ -119848,7 +119848,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3366() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8882),
@@ -119885,7 +119885,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3367() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 24039),
@@ -119922,7 +119922,7 @@ class VariableNodeLoader {
   }
 
   void loadNode3368() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.variables.DataTypeDescriptionTypeNode node =
         new DataTypeDescriptionTypeNode(
             this.context,
             new NodeId(0, 8879),

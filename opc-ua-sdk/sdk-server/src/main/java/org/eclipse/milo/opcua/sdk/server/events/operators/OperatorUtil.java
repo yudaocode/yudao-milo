@@ -146,11 +146,15 @@ final class OperatorUtil {
       // Float/Double elements by bit pattern (Float.equals/Double.equals) and contradict the IEEE
       // equality the scalar path below implements.
       return arraysEqual(operand0, operand1);
-    } else if (operand0 instanceof Float f0 && operand1 instanceof Float f1) {
+    } else if (operand0 instanceof Float && operand1 instanceof Float) {
+      Float f0 = (Float) operand0;
+      Float f1 = (Float) operand1;
       // IEEE floating-point equality: NaN is never equal to itself and +0.0 equals -0.0, unlike
       // Float.equals/Objects.equals which compare bit patterns.
       return f0.floatValue() == f1.floatValue();
-    } else if (operand0 instanceof Double d0 && operand1 instanceof Double d1) {
+    } else if (operand0 instanceof Double && operand1 instanceof Double) {
+      Double d0 = (Double) operand0;
+      Double d1 = (Double) operand1;
       return d0.doubleValue() == d1.doubleValue();
     } else {
       return Objects.equals(operand0, operand1);
@@ -221,18 +225,38 @@ final class OperatorUtil {
   @Nullable
   static Integer compareOrdered(OpcUaDataType dataType, Object operand0, Object operand1) {
 
-    if (operand0 instanceof Number n0 && operand1 instanceof Number n1) {
-      return switch (dataType) {
-        case SByte, Byte, Int16, UInt16, Int32, UInt32, Int64 ->
-            Long.compare(n0.longValue(), n1.longValue());
-        case UInt64 -> Long.compareUnsigned(n0.longValue(), n1.longValue());
-        case Float -> compareFloat(n0.floatValue(), n1.floatValue());
-        case Double -> compareDouble(n0.doubleValue(), n1.doubleValue());
-        default -> null;
-      };
+    if (operand0 instanceof Number && operand1 instanceof Number) {
+      Number n0 = (Number) operand0;
+      Number n1 = (Number) operand1;
+      switch ((dataType)) {
+      case SByte:
+
+      case Byte:
+
+      case Int16:
+
+      case UInt16:
+
+      case Int32:
+
+      case UInt32:
+
+      case Int64:
+        return Long.compare(n0.longValue(), n1.longValue());
+      case UInt64:
+        return Long.compareUnsigned(n0.longValue(), n1.longValue());
+      case Float:
+        return compareFloat(n0.floatValue(), n1.floatValue());
+      case Double:
+        return compareDouble(n0.doubleValue(), n1.doubleValue());
+      default:
+        return null;
+    }
     } else if (dataType == OpcUaDataType.DateTime
-        && operand0 instanceof DateTime dt0
-        && operand1 instanceof DateTime dt1) {
+        && operand0 instanceof DateTime
+        && operand1 instanceof DateTime) {
+      DateTime dt0 = (DateTime) operand0;
+      DateTime dt1 = (DateTime) operand1;
 
       return Long.compare(dt0.utcTime(), dt1.utcTime());
     } else {
@@ -295,7 +319,9 @@ final class OperatorUtil {
       return null;
     }
 
-    if (operand0 instanceof Number n0 && operand1 instanceof Number n1) {
+    if (operand0 instanceof Number && operand1 instanceof Number) {
+      Number n0 = (Number) operand0;
+      Number n1 = (Number) operand1;
       // Bitwise operators use the largest operand size from Part 4 Table 118, not the general data
       // precedence table used by comparison/equality operators.
       OpcUaDataType targetType = largestIntegerType(dt0, dt1);
@@ -333,12 +359,13 @@ final class OperatorUtil {
   static Boolean toBoolean(@Nullable Object value) {
     value = toScalarIfSingleElementArray(value);
 
-    if (value instanceof Boolean b) {
+    if (value instanceof Boolean) {
+      Boolean b = (Boolean) value;
       return b;
     } else if (value != null) {
       Object converted = convert(value, OpcUaDataType.Boolean);
 
-      return converted instanceof Boolean b ? b : null;
+      return converted instanceof Boolean ? (Boolean) converted : null;
     } else {
       return null;
     }
@@ -401,10 +428,26 @@ final class OperatorUtil {
 
   @SuppressWarnings("BooleanMethodIsAlwaysInverted")
   private static boolean isIntegerType(OpcUaDataType dataType) {
-    return switch (dataType) {
-      case SByte, Byte, Int16, UInt16, Int32, UInt32, Int64, UInt64 -> true;
-      default -> false;
-    };
+    switch ((dataType)) {
+      case SByte:
+
+      case Byte:
+
+      case Int16:
+
+      case UInt16:
+
+      case Int32:
+
+      case UInt32:
+
+      case Int64:
+
+      case UInt64:
+        return true;
+      default:
+        return false;
+    }
   }
 
   private static OpcUaDataType largestIntegerType(
@@ -424,58 +467,147 @@ final class OperatorUtil {
   }
 
   private static int integerBitWidth(OpcUaDataType dataType) {
-    return switch (dataType) {
-      case SByte, Byte -> 8;
-      case Int16, UInt16 -> 16;
-      case Int32, UInt32 -> 32;
-      case Int64, UInt64 -> 64;
-      default -> throw new IllegalArgumentException("not an integer data type: " + dataType);
-    };
+    switch ((dataType)) {
+      case SByte:
+
+      case Byte:
+        return 8;
+      case Int16:
+
+      case UInt16:
+        return 16;
+      case Int32:
+
+      case UInt32:
+        return 32;
+      case Int64:
+
+      case UInt64:
+        return 64;
+      default:
+        throw new IllegalArgumentException("not an integer data type: " + dataType);
+    }
   }
 
   private static boolean isUnsignedIntegerType(OpcUaDataType dataType) {
-    return switch (dataType) {
-      case Byte, UInt16, UInt32, UInt64 -> true;
-      default -> false;
-    };
+    switch ((dataType)) {
+      case Byte:
+
+      case UInt16:
+
+      case UInt32:
+
+      case UInt64:
+        return true;
+      default:
+        return false;
+    }
   }
 
   private static OpcUaDataType signedIntegerType(int bitWidth) {
-    return switch (bitWidth) {
-      case 8 -> OpcUaDataType.SByte;
-      case 16 -> OpcUaDataType.Int16;
-      case 32 -> OpcUaDataType.Int32;
-      case 64 -> OpcUaDataType.Int64;
-      default -> throw new IllegalArgumentException("invalid integer bit width: " + bitWidth);
-    };
+    switch ((bitWidth)) {
+      case 8:
+        return OpcUaDataType.SByte;
+      case 16:
+        return OpcUaDataType.Int16;
+      case 32:
+        return OpcUaDataType.Int32;
+      case 64:
+        return OpcUaDataType.Int64;
+      default:
+        throw new IllegalArgumentException("invalid integer bit width: " + bitWidth);
+    }
   }
 
   private static OpcUaDataType unsignedIntegerType(int bitWidth) {
-    return switch (bitWidth) {
-      case 8 -> OpcUaDataType.Byte;
-      case 16 -> OpcUaDataType.UInt16;
-      case 32 -> OpcUaDataType.UInt32;
-      case 64 -> OpcUaDataType.UInt64;
-      default -> throw new IllegalArgumentException("invalid integer bit width: " + bitWidth);
-    };
+    switch ((bitWidth)) {
+      case 8:
+        return OpcUaDataType.Byte;
+      case 16:
+        return OpcUaDataType.UInt16;
+      case 32:
+        return OpcUaDataType.UInt32;
+      case 64:
+        return OpcUaDataType.UInt64;
+      default:
+        throw new IllegalArgumentException("invalid integer bit width: " + bitWidth);
+    }
   }
 
   private static Object castBitwiseResult(OpcUaDataType dataType, long result) {
-    return switch (dataType) {
-      case SByte -> (byte) result;
-      case Byte -> ubyte((short) (result & 0xffL));
-      case Int16 -> (short) result;
-      case UInt16 -> ushort((int) (result & 0xffffL));
-      case Int32 -> (int) result;
-      case UInt32 -> uint(result & 0xffffffffL);
-      case Int64 -> result;
-      case UInt64 -> ulong(result);
-      default -> throw new IllegalArgumentException("not an integer data type: " + dataType);
-    };
+    switch ((dataType)) {
+      case SByte:
+        return (byte) result;
+      case Byte:
+        return ubyte((short) (result & 0xffL));
+      case Int16:
+        return (short) result;
+      case UInt16:
+        return ushort((int) (result & 0xffffL));
+      case Int32:
+        return (int) result;
+      case UInt32:
+        return uint(result & 0xffffffffL);
+      case Int64:
+        return result;
+      case UInt64:
+        return ulong(result);
+      default:
+        throw new IllegalArgumentException("not an integer data type: " + dataType);
+    }
   }
 
-  record BinaryOperands(OpcUaDataType dataType, Object operand0, Object operand1) {}
+  static final class BinaryOperands {
+    private final OpcUaDataType dataType;
+    private final Object operand0;
+    private final Object operand1;
 
-  record TernaryOperands(
-      OpcUaDataType dataType, Object operand0, Object operand1, Object operand2) {}
+    public OpcUaDataType dataType() {
+      return dataType;
+    }
+
+    public Object operand0() {
+      return operand0;
+    }
+
+    public Object operand1() {
+      return operand1;
+    }
+
+    BinaryOperands(OpcUaDataType dataType, Object operand0, Object operand1) {
+      this.dataType = dataType;
+      this.operand0 = operand0;
+      this.operand1 = operand1;
+    }
+}
+
+  static final class TernaryOperands {
+    private final OpcUaDataType dataType;
+    private final Object operand0;
+    private final Object operand1;
+    private final Object operand2;
+
+    public OpcUaDataType dataType() {
+      return dataType;
+    }
+
+    public Object operand0() {
+      return operand0;
+    }
+
+    public Object operand1() {
+      return operand1;
+    }
+
+    public Object operand2() {
+      return operand2;
+    }
+
+    TernaryOperands(OpcUaDataType dataType, Object operand0, Object operand1, Object operand2) {
+      this.dataType = dataType;
+      this.operand0 = operand0;
+      this.operand1 = operand1;
+      this.operand2 = operand2;
+    }
+}
 }

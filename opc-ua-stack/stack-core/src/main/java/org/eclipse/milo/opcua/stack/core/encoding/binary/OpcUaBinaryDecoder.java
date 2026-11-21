@@ -510,36 +510,61 @@ public class OpcUaBinaryDecoder implements UaDecoder {
   }
 
   private Object decodeBuiltinType(int typeId) throws UaSerializationException {
-    return switch (typeId) {
-      case 1 -> decodeBoolean();
-      case 2 -> decodeSByte();
-      case 3 -> decodeByte();
-      case 4 -> decodeInt16();
-      case 5 -> decodeUInt16();
-      case 6 -> decodeInt32();
-      case 7 -> decodeUInt32();
-      case 8 -> decodeInt64();
-      case 9 -> decodeUInt64();
-      case 10 -> decodeFloat();
-      case 11 -> decodeDouble();
-      case 12 -> decodeString();
-      case 13 -> decodeDateTime();
-      case 14 -> decodeGuid();
-      case 15 -> decodeByteString();
-      case 16 -> decodeXmlElement();
-      case 17 -> decodeNodeId();
-      case 18 -> decodeExpandedNodeId();
-      case 19 -> decodeStatusCode();
-      case 20 -> decodeQualifiedName();
-      case 21 -> decodeLocalizedText();
-      case 22 -> decodeExtensionObject();
-      case 23 -> decodeDataValue();
-      case 24 -> decodeVariant();
-      case 25 -> decodeDiagnosticInfo();
-      default ->
-          throw new UaSerializationException(
+    switch ((typeId)) {
+      case 1:
+        return decodeBoolean();
+      case 2:
+        return decodeSByte();
+      case 3:
+        return decodeByte();
+      case 4:
+        return decodeInt16();
+      case 5:
+        return decodeUInt16();
+      case 6:
+        return decodeInt32();
+      case 7:
+        return decodeUInt32();
+      case 8:
+        return decodeInt64();
+      case 9:
+        return decodeUInt64();
+      case 10:
+        return decodeFloat();
+      case 11:
+        return decodeDouble();
+      case 12:
+        return decodeString();
+      case 13:
+        return decodeDateTime();
+      case 14:
+        return decodeGuid();
+      case 15:
+        return decodeByteString();
+      case 16:
+        return decodeXmlElement();
+      case 17:
+        return decodeNodeId();
+      case 18:
+        return decodeExpandedNodeId();
+      case 19:
+        return decodeStatusCode();
+      case 20:
+        return decodeQualifiedName();
+      case 21:
+        return decodeLocalizedText();
+      case 22:
+        return decodeExtensionObject();
+      case 23:
+        return decodeDataValue();
+      case 24:
+        return decodeVariant();
+      case 25:
+        return decodeDiagnosticInfo();
+      default:
+        throw new UaSerializationException(
               StatusCodes.Bad_DecodingError, "unknown builtin type: " + typeId);
-    };
+    }
   }
 
   /**
@@ -557,186 +582,236 @@ public class OpcUaBinaryDecoder implements UaDecoder {
    * @throws UaSerializationException if {@code typeId} is not a builtin type id.
    */
   private Object decodeBuiltinTypeArray(int typeId, int length) throws UaSerializationException {
-    return switch (typeId) {
-      case 1 -> {
+    switch ((typeId)) {
+      case 1:
+        {
         Boolean[] values = new Boolean[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeBoolean();
         }
-        yield values;
-      }
-      case 2 -> {
+        return values;
+
+        }
+      case 2:
+        {
         Byte[] values = new Byte[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeSByte();
         }
-        yield values;
-      }
-      case 3 -> {
+        return values;
+
+        }
+      case 3:
+        {
         UByte[] values = new UByte[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeByte();
         }
-        yield values;
-      }
-      case 4 -> {
+        return values;
+
+        }
+      case 4:
+        {
         Short[] values = new Short[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeInt16();
         }
-        yield values;
-      }
-      case 5 -> {
+        return values;
+
+        }
+      case 5:
+        {
         UShort[] values = new UShort[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeUInt16();
         }
-        yield values;
-      }
-      case 6 -> {
+        return values;
+
+        }
+      case 6:
+        {
         Integer[] values = new Integer[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeInt32();
         }
-        yield values;
-      }
-      case 7 -> {
+        return values;
+
+        }
+      case 7:
+        {
         UInteger[] values = new UInteger[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeUInt32();
         }
-        yield values;
-      }
-      case 8 -> {
+        return values;
+
+        }
+      case 8:
+        {
         Long[] values = new Long[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeInt64();
         }
-        yield values;
-      }
-      case 9 -> {
+        return values;
+
+        }
+      case 9:
+        {
         ULong[] values = new ULong[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeUInt64();
         }
-        yield values;
-      }
-      case 10 -> {
+        return values;
+
+        }
+      case 10:
+        {
         Float[] values = new Float[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeFloat();
         }
-        yield values;
-      }
-      case 11 -> {
+        return values;
+
+        }
+      case 11:
+        {
         Double[] values = new Double[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeDouble();
         }
-        yield values;
-      }
-      case 12 -> {
+        return values;
+
+        }
+      case 12:
+        {
         String[] values = new String[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeString();
         }
-        yield values;
-      }
-      case 13 -> {
+        return values;
+
+        }
+      case 13:
+        {
         DateTime[] values = new DateTime[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeDateTime();
         }
-        yield values;
-      }
-      case 14 -> {
+        return values;
+
+        }
+      case 14:
+        {
         UUID[] values = new UUID[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeGuid();
         }
-        yield values;
-      }
-      case 15 -> {
+        return values;
+
+        }
+      case 15:
+        {
         ByteString[] values = new ByteString[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeByteString();
         }
-        yield values;
-      }
-      case 16 -> {
+        return values;
+
+        }
+      case 16:
+        {
         XmlElement[] values = new XmlElement[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeXmlElement();
         }
-        yield values;
-      }
-      case 17 -> {
+        return values;
+
+        }
+      case 17:
+        {
         NodeId[] values = new NodeId[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeNodeId();
         }
-        yield values;
-      }
-      case 18 -> {
+        return values;
+
+        }
+      case 18:
+        {
         ExpandedNodeId[] values = new ExpandedNodeId[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeExpandedNodeId();
         }
-        yield values;
-      }
-      case 19 -> {
+        return values;
+
+        }
+      case 19:
+        {
         StatusCode[] values = new StatusCode[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeStatusCode();
         }
-        yield values;
-      }
-      case 20 -> {
+        return values;
+
+        }
+      case 20:
+        {
         QualifiedName[] values = new QualifiedName[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeQualifiedName();
         }
-        yield values;
-      }
-      case 21 -> {
+        return values;
+
+        }
+      case 21:
+        {
         LocalizedText[] values = new LocalizedText[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeLocalizedText();
         }
-        yield values;
-      }
-      case 22 -> {
+        return values;
+
+        }
+      case 22:
+        {
         ExtensionObject[] values = new ExtensionObject[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeExtensionObject();
         }
-        yield values;
-      }
-      case 23 -> {
+        return values;
+
+        }
+      case 23:
+        {
         DataValue[] values = new DataValue[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeDataValue();
         }
-        yield values;
-      }
-      case 24 -> {
+        return values;
+
+        }
+      case 24:
+        {
         Variant[] values = new Variant[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeVariant();
         }
-        yield values;
-      }
-      case 25 -> {
+        return values;
+
+        }
+      case 25:
+        {
         DiagnosticInfo[] values = new DiagnosticInfo[length];
         for (int i = 0; i < length; i++) {
           values[i] = decodeDiagnosticInfo();
         }
-        yield values;
-      }
-      default ->
-          throw new UaSerializationException(
+        return values;
+
+        }
+      default:
+        throw new UaSerializationException(
               StatusCodes.Bad_DecodingError, "unknown builtin type: " + typeId);
-    };
+    }
   }
 
   @Override

@@ -45,12 +45,16 @@ public enum ActionState implements UaEnumeratedType {
   }
 
   public static @Nullable ActionState from(int value) {
-    return switch (value) {
-      case 0 -> Idle;
-      case 1 -> Executing;
-      case 2 -> Done;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Idle;
+      case 1:
+        return Executing;
+      case 2:
+        return Done;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

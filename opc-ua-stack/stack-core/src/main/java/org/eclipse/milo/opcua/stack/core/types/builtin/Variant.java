@@ -45,7 +45,17 @@ import org.jspecify.annotations.Nullable;
  * @param value the value this Variant holds.
  */
 @NullMarked
-public record Variant(@Nullable Object value) {
+public final class Variant {
+  private final @Nullable Object value;
+
+  public @Nullable Object value() {
+    return value;
+  }
+
+  public Variant(@Nullable Object value) {
+    this.value = value;
+  }
+
 
   public static final Variant NULL_VALUE = new Variant(null);
 
@@ -200,7 +210,7 @@ public record Variant(@Nullable Object value) {
    * @return a new Variant containing {@code value}.
    */
   public static Variant of(@Nullable Object value) {
-    var variant = new Variant(value);
+    org.eclipse.milo.opcua.stack.core.types.builtin.Variant variant = new Variant(value);
 
     if (value != null) {
       boolean clazzIsArray = value.getClass().isArray();

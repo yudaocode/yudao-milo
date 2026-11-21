@@ -84,7 +84,7 @@ public class PortableNodeId extends Structure implements UaStructuredType {
       return false;
     }
     PortableNodeId that = (PortableNodeId) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNamespaceUri(), that.getNamespaceUri());
     eqb.append(getIdentifier(), that.getIdentifier());
     return eqb.build();
@@ -92,7 +92,7 @@ public class PortableNodeId extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNamespaceUri());
     hcb.append(getIdentifier());
     return hcb.build();
@@ -100,7 +100,7 @@ public class PortableNodeId extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PortableNodeId.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PortableNodeId.class.getSimpleName() + "[", "]");
     joiner.add("namespaceUri='" + getNamespaceUri() + "'");
     joiner.add("identifier=" + getIdentifier());
     return joiner.toString();

@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.identity;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.Iterator;
 import java.util.List;
 import org.eclipse.milo.opcua.stack.core.types.builtin.ByteString;
@@ -28,11 +30,11 @@ public class CompositeProvider implements IdentityProvider {
   private final List<IdentityProvider> providers;
 
   public CompositeProvider(IdentityProvider... providers) {
-    this.providers = List.of(providers);
+    this.providers = Java8Collections.listOf(providers);
   }
 
   public CompositeProvider(List<IdentityProvider> providers) {
-    this.providers = List.copyOf(providers);
+    this.providers = Java8Collections.listCopyOf(providers);
   }
 
   @Override

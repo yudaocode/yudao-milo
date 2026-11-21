@@ -47,13 +47,18 @@ public enum IdType implements UaEnumeratedType {
   }
 
   public static @Nullable IdType from(int value) {
-    return switch (value) {
-      case 0 -> Numeric;
-      case 1 -> String;
-      case 2 -> Guid;
-      case 3 -> Opaque;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Numeric;
+      case 1:
+        return String;
+      case 2:
+        return Guid;
+      case 3:
+        return Opaque;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

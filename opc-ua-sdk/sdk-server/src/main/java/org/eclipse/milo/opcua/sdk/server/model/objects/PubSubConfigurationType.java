@@ -57,7 +57,7 @@ public interface PubSubConfigurationType extends FileType {
                   "TransportProfileUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -65,7 +65,7 @@ public interface PubSubConfigurationType extends FileType {
                   "NumReqWriterGroupIds",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -73,7 +73,7 @@ public interface PubSubConfigurationType extends FileType {
                   "NumReqDataSetWriterIds",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -92,7 +92,7 @@ public interface PubSubConfigurationType extends FileType {
                   "DefaultPublisherId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=24")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -100,7 +100,7 @@ public interface PubSubConfigurationType extends FileType {
                   "WriterGroupIds",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -108,7 +108,7 @@ public interface PubSubConfigurationType extends FileType {
                   "DataSetWriterIds",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -172,7 +172,7 @@ public interface PubSubConfigurationType extends FileType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -180,7 +180,7 @@ public interface PubSubConfigurationType extends FileType {
                   "RequireCompleteUpdate",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -188,7 +188,7 @@ public interface PubSubConfigurationType extends FileType {
                   "ConfigurationReferences",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=25519")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -207,7 +207,7 @@ public interface PubSubConfigurationType extends FileType {
                   "ChangesApplied",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -215,7 +215,7 @@ public interface PubSubConfigurationType extends FileType {
                   "ReferencesResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -223,7 +223,7 @@ public interface PubSubConfigurationType extends FileType {
                   "ConfigurationValues",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=25520")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -231,7 +231,7 @@ public interface PubSubConfigurationType extends FileType {
                   "ConfigurationObjects",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.types.builtin;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.util.Optional;
 import java.util.Set;
@@ -17,7 +18,17 @@ import org.eclipse.milo.opcua.stack.core.StatusCodes;
 import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger;
 import org.jspecify.annotations.NonNull;
 
-public record StatusCode(long value) {
+public final class StatusCode {
+  private final long value;
+
+  public long value() {
+    return value;
+  }
+
+  public StatusCode(long value) {
+    this.value = value;
+  }
+
 
   private static final long SEVERITY_MASK = 0xC0000000L;
   private static final long SEVERITY_GOOD = 0x00000000L;
@@ -26,7 +37,7 @@ public record StatusCode(long value) {
 
   /** StatusCodes that are considered security-related errors for the purpose of diagnostics. */
   private static final Set<Long> SECURITY_ERRORS =
-      Set.of(
+      Java8Collections.setOf(
           StatusCodes.Bad_UserSignatureInvalid,
           StatusCodes.Bad_UserAccessDenied,
           StatusCodes.Bad_SecurityPolicyRejected,
@@ -163,10 +174,10 @@ public record StatusCode(long value) {
 
   @Override
   public @NonNull String toString() {
-    var joiner = new StringJoiner(", ", StatusCode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", StatusCode.class.getSimpleName() + "[", "]");
 
     StatusCodes.lookup(value).ifPresent(nameAndDesc -> joiner.add("name=" + nameAndDesc[0]));
-    joiner.add("value=0x%08X".formatted(value)).add("quality=" + quality(this));
+    joiner.add(String.format("value=0x%08X", value)).add("quality=" + quality(this));
 
     return joiner.toString();
   }
@@ -222,7 +233,17 @@ public record StatusCode(long value) {
    * Additional information bits that qualify the StatusCode when the {@link InfoType} is {@link
    * InfoType#DataValue}.
    */
-  public record DataValueInfoBits(int bits) implements InfoBits {
+  public static final class DataValueInfoBits implements InfoBits {
+    private final int bits;
+
+    public int bits() {
+      return bits;
+    }
+
+    DataValueInfoBits(int bits) {
+      this.bits = bits;
+    }
+
 
     /**
      * @return the limit bits associated with the data value.

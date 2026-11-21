@@ -26,7 +26,7 @@ public class UsernameIdentityValidator extends AbstractUsernameIdentityValidator
   protected Identity.@Nullable UsernameIdentity authenticateUsernamePassword(
       Session session, String username, String password) {
 
-    var challenge = new AuthenticationChallenge(username, password);
+    org.eclipse.milo.opcua.sdk.server.identity.UsernameIdentityValidator.AuthenticationChallenge challenge = new AuthenticationChallenge(username, password);
 
     return predicate.test(challenge) ? new DefaultUsernameIdentity(username) : null;
   }

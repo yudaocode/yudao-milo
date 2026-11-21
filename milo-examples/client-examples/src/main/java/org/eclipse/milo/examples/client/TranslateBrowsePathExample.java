@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.examples.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static java.util.Objects.requireNonNull;
 
@@ -43,7 +44,7 @@ public class TranslateBrowsePathExample implements ClientExample {
 
     TranslateBrowsePathsToNodeIdsResponse response =
         client.translateBrowsePaths(
-            List.of(
+            Java8Collections.listOf(
                 new BrowsePath(
                     NodeIds.ObjectsFolder,
                     new RelativePath(

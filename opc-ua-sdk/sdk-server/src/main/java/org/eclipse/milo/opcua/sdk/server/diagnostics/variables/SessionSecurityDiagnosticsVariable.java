@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.diagnostics.variables;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.sdk.server.diagnostics.variables.Util.diagnosticValueFilter;
 import static org.eclipse.milo.opcua.sdk.server.diagnostics.variables.Util.roleBasedUserAccessLevelFilter;
 import static org.eclipse.milo.opcua.sdk.server.diagnostics.variables.Util.roleBasedUserRolePermissionsFilter;
@@ -86,7 +88,7 @@ public class SessionSecurityDiagnosticsVariable extends AbstractLifecycle {
 
       // Value access is reflected in UserAccessLevel; UserRolePermissions supplies the same
       // session-specific policy to authorization checks for other node operations such as Browse.
-      List.of(
+      Java8Collections.listOf(
               node,
               node.getSessionIdNode(),
               node.getClientUserIdOfSessionNode(),

@@ -98,7 +98,7 @@ public interface PublishedEventsType extends PublishedDataSetType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -106,7 +106,7 @@ public interface PublishedEventsType extends PublishedDataSetType {
                   "FieldNameAliases",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -114,7 +114,7 @@ public interface PublishedEventsType extends PublishedDataSetType {
                   "PromotedFields",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -122,7 +122,7 @@ public interface PublishedEventsType extends PublishedDataSetType {
                   "SelectedFields",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=601")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -141,7 +141,7 @@ public interface PublishedEventsType extends PublishedDataSetType {
                   "NewConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

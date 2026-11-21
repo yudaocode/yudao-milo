@@ -84,7 +84,7 @@ public class GenericAttributeValue extends Structure implements UaStructuredType
       return false;
     }
     GenericAttributeValue that = (GenericAttributeValue) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAttributeId(), that.getAttributeId());
     eqb.append(getValue(), that.getValue());
     return eqb.build();
@@ -92,7 +92,7 @@ public class GenericAttributeValue extends Structure implements UaStructuredType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAttributeId());
     hcb.append(getValue());
     return hcb.build();
@@ -100,7 +100,7 @@ public class GenericAttributeValue extends Structure implements UaStructuredType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", GenericAttributeValue.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", GenericAttributeValue.class.getSimpleName() + "[", "]");
     joiner.add("attributeId=" + getAttributeId());
     joiner.add("value=" + getValue());
     return joiner.toString();

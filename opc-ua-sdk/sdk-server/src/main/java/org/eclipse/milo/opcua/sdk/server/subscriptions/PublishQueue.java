@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.subscriptions;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -44,7 +46,7 @@ public class PublishQueue {
   }
 
   public synchronized void addRequest(PendingPublish pending) {
-    List<WaitingSubscription> waitingSubscriptions = List.copyOf(waitList.values());
+    List<WaitingSubscription> waitingSubscriptions = Java8Collections.listCopyOf(waitList.values());
 
     if (waitingSubscriptions.isEmpty()) {
       pendingQueue.add(pending);

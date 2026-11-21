@@ -54,7 +54,7 @@ public abstract class WriterGroupTransportDataType extends Structure implements 
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", WriterGroupTransportDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

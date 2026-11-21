@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.sdk.server.items;
 
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.ushort;
 

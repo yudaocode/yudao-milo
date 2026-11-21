@@ -23,7 +23,29 @@ import org.eclipse.milo.opcua.stack.core.util.NonceUtil;
  * @param references the references that were not returned in the initial Browse service call.
  * @param max the maximum number of references specified in the original Browse service call.
  */
-public record ContinuationPoint(ByteString id, List<ReferenceDescription> references, int max) {
+public final class ContinuationPoint {
+  private final ByteString id;
+  private final List<ReferenceDescription> references;
+  private final int max;
+
+  public ByteString id() {
+    return id;
+  }
+
+  public List<ReferenceDescription> references() {
+    return references;
+  }
+
+  public int max() {
+    return max;
+  }
+
+  public ContinuationPoint(ByteString id, List<ReferenceDescription> references, int max) {
+    this.id = id;
+    this.references = references;
+    this.max = max;
+  }
+
 
   public ContinuationPoint(List<ReferenceDescription> references, int max) {
     this(NonceUtil.generateNonce(16), references, max);

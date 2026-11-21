@@ -318,7 +318,7 @@ public class SubscriptionDiagnosticsDataType extends Structure implements UaStru
       return false;
     }
     SubscriptionDiagnosticsDataType that = (SubscriptionDiagnosticsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSessionId(), that.getSessionId());
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getPriority(), that.getPriority());
@@ -355,7 +355,7 @@ public class SubscriptionDiagnosticsDataType extends Structure implements UaStru
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSessionId());
     hcb.append(getSubscriptionId());
     hcb.append(getPriority());
@@ -392,7 +392,7 @@ public class SubscriptionDiagnosticsDataType extends Structure implements UaStru
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", SubscriptionDiagnosticsDataType.class.getSimpleName() + "[", "]");
     joiner.add("sessionId=" + getSessionId());
     joiner.add("subscriptionId=" + getSubscriptionId());

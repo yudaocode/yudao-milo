@@ -51,13 +51,18 @@ public enum PerformUpdateType implements UaEnumeratedType {
   }
 
   public static @Nullable PerformUpdateType from(int value) {
-    return switch (value) {
-      case 1 -> Insert;
-      case 2 -> Replace;
-      case 3 -> Update;
-      case 4 -> Remove;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return Insert;
+      case 2:
+        return Replace;
+      case 3:
+        return Update;
+      case 4:
+        return Remove;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

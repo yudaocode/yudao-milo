@@ -133,7 +133,7 @@ public class AttributeWriteMask extends OptionSetUI32<AttributeWriteMask.Field> 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AttributeWriteMask.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AttributeWriteMask.class.getSimpleName() + "[", "]");
     joiner.add("accessLevel=" + getAccessLevel());
     joiner.add("arrayDimensions=" + getArrayDimensions());
     joiner.add("browseName=" + getBrowseName());

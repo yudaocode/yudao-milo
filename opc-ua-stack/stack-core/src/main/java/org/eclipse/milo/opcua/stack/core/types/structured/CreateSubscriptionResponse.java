@@ -109,7 +109,7 @@ public class CreateSubscriptionResponse extends Structure implements UaResponseM
       return false;
     }
     CreateSubscriptionResponse that = (CreateSubscriptionResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getRevisedPublishingInterval(), that.getRevisedPublishingInterval());
@@ -120,7 +120,7 @@ public class CreateSubscriptionResponse extends Structure implements UaResponseM
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getSubscriptionId());
     hcb.append(getRevisedPublishingInterval());
@@ -131,7 +131,7 @@ public class CreateSubscriptionResponse extends Structure implements UaResponseM
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", CreateSubscriptionResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("subscriptionId=" + getSubscriptionId());

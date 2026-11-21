@@ -29,11 +29,24 @@ import org.jspecify.annotations.Nullable;
  * @param name the name portion of the QualifiedName.
  */
 @NullMarked
-public record QualifiedName(UShort namespaceIndex, @Nullable String name) {
+public final class QualifiedName {
+  private final UShort namespaceIndex;
+  private final @Nullable String name;
+
+  public UShort namespaceIndex() {
+    return namespaceIndex;
+  }
+
+  public @Nullable String name() {
+    return name;
+  }
+
 
   public static final QualifiedName NULL_VALUE = new QualifiedName(ushort(0), null);
 
-  public QualifiedName {
+  public QualifiedName(UShort namespaceIndex, @Nullable String name) {
+  this.namespaceIndex = namespaceIndex;
+  this.name = name;
     Preconditions.checkNotNull(namespaceIndex);
     Preconditions.checkArgument(name == null || name.length() <= 512, "name");
   }

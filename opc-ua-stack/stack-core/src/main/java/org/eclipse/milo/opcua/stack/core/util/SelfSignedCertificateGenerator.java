@@ -10,7 +10,6 @@
 
 package org.eclipse.milo.opcua.stack.core.util;
 
-import static java.util.Objects.requireNonNullElse;
 
 import java.math.BigInteger;
 import java.security.KeyPair;
@@ -93,8 +92,8 @@ public class SelfSignedCertificateGenerator {
     X500NameBuilder nameBuilder = new X500NameBuilder();
 
     // Common Name and Organization are required attributes.
-    nameBuilder.addRDN(BCStyle.CN, requireNonNullElse(commonName, "not configured"));
-    nameBuilder.addRDN(BCStyle.O, requireNonNullElse(organization, "not configured"));
+    nameBuilder.addRDN(BCStyle.CN, commonName != null ? commonName : "not configured");
+    nameBuilder.addRDN(BCStyle.O, organization != null ? organization : "not configured");
 
     // Optional attributes; only add if non-null and non-empty.
 

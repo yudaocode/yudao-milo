@@ -84,7 +84,7 @@ public class AddNodesResult extends Structure implements UaStructuredType {
       return false;
     }
     AddNodesResult that = (AddNodesResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getAddedNodeId(), that.getAddedNodeId());
     return eqb.build();
@@ -92,7 +92,7 @@ public class AddNodesResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getAddedNodeId());
     return hcb.build();
@@ -100,7 +100,7 @@ public class AddNodesResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AddNodesResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AddNodesResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("addedNodeId=" + getAddedNodeId());
     return joiner.toString();

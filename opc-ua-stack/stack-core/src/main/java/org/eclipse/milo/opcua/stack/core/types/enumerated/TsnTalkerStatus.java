@@ -48,12 +48,16 @@ public enum TsnTalkerStatus implements UaEnumeratedType {
   }
 
   public static @Nullable TsnTalkerStatus from(int value) {
-    return switch (value) {
-      case 0 -> None;
-      case 1 -> Ready;
-      case 2 -> Failed;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return None;
+      case 1:
+        return Ready;
+      case 2:
+        return Failed;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

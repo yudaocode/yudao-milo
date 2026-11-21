@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.subscriptions;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.Objects.requireNonNull;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.ubyte;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
@@ -337,7 +339,7 @@ public class OpcUaSubscription {
 
     synchronized (lifecycleLock) {
       if (syncState != SyncState.INITIAL) {
-        return CompletableFuture.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
+        return Java8Collections.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
       }
 
       if (maxKeepAliveCount == null) {
@@ -414,7 +416,7 @@ public class OpcUaSubscription {
     // sends a request belongs in that critical section.
     deleteAbandonedSubscription(response.getSubscriptionId());
 
-    return CompletableFuture.failedFuture(
+    return Java8Collections.failedFuture(
         new UaException(
             StatusCodes.Bad_InvalidState, "the Subscription was reset while it was being created"));
   }
@@ -465,14 +467,14 @@ public class OpcUaSubscription {
 
     synchronized (lifecycleLock) {
       if (syncState == SyncState.INITIAL) {
-        return CompletableFuture.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
+        return Java8Collections.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
       } else if (syncState != SyncState.UNSYNCHRONIZED) {
         return CompletableFuture.completedFuture(Unit.VALUE);
       }
 
       serverState = this.serverState;
       if (serverState == null) {
-        return CompletableFuture.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
+        return Java8Collections.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
       }
 
       diff = modifications;
@@ -528,7 +530,7 @@ public class OpcUaSubscription {
 
     synchronized (lifecycleLock) {
       if (this.incarnation != incarnation) {
-        return CompletableFuture.failedFuture(
+        return Java8Collections.failedFuture(
             new UaException(
                 StatusCodes.Bad_InvalidState,
                 "the Subscription was reset while it was being modified"));
@@ -639,14 +641,14 @@ public class OpcUaSubscription {
 
       serverState = this.serverState;
       if (serverState == null) {
-        return CompletableFuture.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
+        return Java8Collections.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
       }
 
       incarnation = this.incarnation;
     }
 
     return client
-        .deleteSubscriptionsAsync(List.of(serverState.getSubscriptionId()))
+        .deleteSubscriptionsAsync(Java8Collections.listOf(serverState.getSubscriptionId()))
         .thenCompose(response -> applyDeleteResponse(response, incarnation));
   }
 
@@ -675,7 +677,7 @@ public class OpcUaSubscription {
 
     return result.isGood()
         ? CompletableFuture.completedFuture(Unit.VALUE)
-        : CompletableFuture.failedFuture(new UaException(result));
+        : Java8Collections.failedFuture(new UaException(result));
   }
 
   /**
@@ -696,7 +698,7 @@ public class OpcUaSubscription {
   private CompletionStage<Unit> runTransition(Supplier<CompletionStage<Unit>> transition) {
     // Completed to hand the transition slot to this transition: below if nothing else holds it, or
     // by endTransition() once the transition ahead of it is finished.
-    var slot = new CompletableFuture<Unit>();
+    java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.core.util.Unit> slot = new CompletableFuture<Unit>();
 
     boolean claimed;
 
@@ -770,7 +772,8 @@ public class OpcUaSubscription {
 
       // Rethrown rather than wrapped when it is already a UaException: the blocking and the
       // asynchronous form of a transition must report the same StatusCode and the same message.
-      if (cause instanceof UaException uaException) {
+      if (cause instanceof UaException) {
+      UaException uaException = (UaException) cause;
         throw uaException;
       } else {
         throw new UaException(cause);
@@ -798,7 +801,7 @@ public class OpcUaSubscription {
     logger.debug("id={}, deleting Subscription abandoned by a concurrent reset()", subscriptionId);
 
     client
-        .deleteSubscriptionsAsync(List.of(subscriptionId))
+        .deleteSubscriptionsAsync(Java8Collections.listOf(subscriptionId))
         .whenComplete(
             (response, ex) -> {
               if (ex != null) {
@@ -913,7 +916,7 @@ public class OpcUaSubscription {
     if (Stream.of(deleteResults, modifyResults, createResults)
         .flatMap(List::stream)
         .anyMatch(
-            r -> !r.serviceResult().isGood() || !r.operationResult().orElseThrow().isGood())) {
+            r -> !r.serviceResult().isGood() || !r.operationResult().get().isGood())) {
 
       throw new MonitoredItemSynchronizationException(
           "failed to synchronize one or more MonitoredItems",
@@ -979,7 +982,7 @@ public class OpcUaSubscription {
     if (context == null) {
       logger.debug("Bad_InvalidState: subscription not created yet");
 
-      var serviceOperationsResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationsResults =
           new ArrayList<MonitoredItemServiceOperationResult>(itemsToCreate.size());
       for (OpcUaMonitoredItem item : itemsToCreate) {
         serviceOperationsResults.add(
@@ -1023,7 +1026,7 @@ public class OpcUaSubscription {
             "CreateMonitoredItems", results == null ? null : results.length, partition.size());
       }
 
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(results.length);
 
       synchronized (lifecycleLock) {
@@ -1051,7 +1054,7 @@ public class OpcUaSubscription {
         }
       }
 
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       for (OpcUaMonitoredItem item : partition) {
@@ -1087,7 +1090,7 @@ public class OpcUaSubscription {
 
     MonitoredItemOperationContext context = getMonitoredItemOperationContext();
     if (context == null) {
-      var serviceOperationsResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationsResults =
           new ArrayList<MonitoredItemServiceOperationResult>(itemsToModify.size());
       for (OpcUaMonitoredItem item : itemsToModify) {
         serviceOperationsResults.add(
@@ -1131,7 +1134,7 @@ public class OpcUaSubscription {
             "ModifyMonitoredItems", results == null ? null : results.length, partition.size());
       }
 
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(results.length);
 
       synchronized (lifecycleLock) {
@@ -1159,7 +1162,7 @@ public class OpcUaSubscription {
         }
       }
 
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       for (OpcUaMonitoredItem item : partition) {
@@ -1196,7 +1199,7 @@ public class OpcUaSubscription {
             return false;
           });
 
-      itemsToDelete = List.copyOf(this.itemsToDelete);
+      itemsToDelete = Java8Collections.listCopyOf(this.itemsToDelete);
     }
 
     if (itemsToDelete.isEmpty()) {
@@ -1211,7 +1214,7 @@ public class OpcUaSubscription {
 
     MonitoredItemOperationContext context = getMonitoredItemOperationContext();
     if (context == null) {
-      var serviceOperationsResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationsResults =
           new ArrayList<MonitoredItemServiceOperationResult>(itemsToDelete.size());
       for (OpcUaMonitoredItem item : itemsToDelete) {
         serviceOperationsResults.add(
@@ -1230,9 +1233,9 @@ public class OpcUaSubscription {
       MonitoredItemOperationContext context, List<OpcUaMonitoredItem> partition) {
 
     // Server state may be cleared concurrently, so read each item id only once.
-    var monitoredItemIds = new ArrayList<UInteger>(partition.size());
-    var itemIds = new ArrayList<Optional<UInteger>>(partition.size());
-    var clientHandles = new ArrayList<Optional<UInteger>>(partition.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger> monitoredItemIds = new ArrayList<UInteger>(partition.size());
+    java.util.ArrayList<java.util.Optional<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger>> itemIds = new ArrayList<Optional<UInteger>>(partition.size());
+    java.util.ArrayList<java.util.Optional<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger>> clientHandles = new ArrayList<Optional<UInteger>>(partition.size());
 
     synchronized (lifecycleLock) {
       if (incarnation != context.incarnation()) {
@@ -1251,7 +1254,7 @@ public class OpcUaSubscription {
     }
 
     if (monitoredItemIds.isEmpty()) {
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       for (OpcUaMonitoredItem item : partition) {
@@ -1280,7 +1283,7 @@ public class OpcUaSubscription {
             monitoredItemIds.size());
       }
 
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       synchronized (lifecycleLock) {
@@ -1316,7 +1319,7 @@ public class OpcUaSubscription {
         }
       }
 
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       for (int i = 0; i < partition.size(); i++) {
@@ -1357,7 +1360,7 @@ public class OpcUaSubscription {
       item.applyDeleteResult(result);
 
       if (readded) {
-        UInteger handle = clientHandle.orElseThrow();
+        UInteger handle = clientHandle.get();
         item.setClientHandle(handle);
       }
 
@@ -1374,7 +1377,7 @@ public class OpcUaSubscription {
       MonitoredItemOperationContext context,
       Function<List<OpcUaMonitoredItem>, MonitoredItemPartitionAttempt> operation) {
 
-    var serviceOperationResults = new ArrayList<MonitoredItemServiceOperationResult>(items.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults = new ArrayList<MonitoredItemServiceOperationResult>(items.size());
 
     long partitionGeneration = monitoredItemPartitionGeneration;
     int partitionSize = getMonitoredItemPartitionSize().intValue();
@@ -1439,7 +1442,7 @@ public class OpcUaSubscription {
   private static MonitoredItemPartitionAttempt invalidStateAttempt(
       List<OpcUaMonitoredItem> items, int operationCount) {
 
-    var results = new ArrayList<MonitoredItemServiceOperationResult>(items.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> results = new ArrayList<MonitoredItemServiceOperationResult>(items.size());
     StatusCode statusCode = new StatusCode(StatusCodes.Bad_InvalidState);
 
     for (OpcUaMonitoredItem item : items) {
@@ -1454,8 +1457,7 @@ public class OpcUaSubscription {
 
     return new UaException(
         StatusCodes.Bad_UnexpectedError,
-        "%s returned %s results, expected %s"
-            .formatted(serviceName, actual == null ? "null" : actual, expected));
+        String.format("%s returned %s results, expected %s", serviceName, actual == null ? "null" : actual, expected));
   }
 
   private UInteger getMonitoredItemPartitionSize() {
@@ -1480,12 +1482,47 @@ public class OpcUaSubscription {
         });
   }
 
-  private record MonitoredItemPartitionAttempt(
-      List<MonitoredItemServiceOperationResult> results,
-      @Nullable StatusCode serviceResult,
-      int operationCount) {}
+  private static final class MonitoredItemPartitionAttempt {
+    private final List<MonitoredItemServiceOperationResult> results;
+    private final @Nullable StatusCode serviceResult;
+    private final int operationCount;
 
-  private record MonitoredItemOperationContext(ServerState serverState, long incarnation) {}
+    public List<MonitoredItemServiceOperationResult> results() {
+      return results;
+    }
+
+    public @Nullable StatusCode serviceResult() {
+      return serviceResult;
+    }
+
+    public int operationCount() {
+      return operationCount;
+    }
+
+    MonitoredItemPartitionAttempt(List<MonitoredItemServiceOperationResult> results, @Nullable StatusCode serviceResult, int operationCount) {
+      this.results = results;
+      this.serviceResult = serviceResult;
+      this.operationCount = operationCount;
+    }
+}
+
+  private static final class MonitoredItemOperationContext {
+    private final ServerState serverState;
+    private final long incarnation;
+
+    public ServerState serverState() {
+      return serverState;
+    }
+
+    public long incarnation() {
+      return incarnation;
+    }
+
+    MonitoredItemOperationContext(ServerState serverState, long incarnation) {
+      this.serverState = serverState;
+      this.incarnation = incarnation;
+    }
+}
 
   // endregion
 
@@ -1512,7 +1549,7 @@ public class OpcUaSubscription {
 
     MonitoredItemOperationContext context = getMonitoredItemOperationContext();
     if (context == null) {
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(monitoredItems.size());
       for (OpcUaMonitoredItem item : monitoredItems) {
         serviceOperationResults.add(
@@ -1534,8 +1571,8 @@ public class OpcUaSubscription {
       List<OpcUaMonitoredItem> partition) {
 
     // Server state may be cleared concurrently, so read each item id only once.
-    var monitoredItemIds = new ArrayList<UInteger>(partition.size());
-    var itemIds = new ArrayList<Optional<UInteger>>(partition.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger> monitoredItemIds = new ArrayList<UInteger>(partition.size());
+    java.util.ArrayList<java.util.Optional<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger>> itemIds = new ArrayList<Optional<UInteger>>(partition.size());
 
     synchronized (lifecycleLock) {
       if (incarnation != context.incarnation()) {
@@ -1551,7 +1588,7 @@ public class OpcUaSubscription {
     }
 
     if (monitoredItemIds.isEmpty()) {
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       for (OpcUaMonitoredItem item : partition) {
@@ -1579,7 +1616,7 @@ public class OpcUaSubscription {
             "SetMonitoringMode", results == null ? null : results.length, monitoredItemIds.size());
       }
 
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       synchronized (lifecycleLock) {
@@ -1611,7 +1648,7 @@ public class OpcUaSubscription {
       return new MonitoredItemPartitionAttempt(
           serviceOperationResults, null, monitoredItemIds.size());
     } catch (UaException e) {
-      var serviceOperationResults =
+      java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.MonitoredItemServiceOperationResult> serviceOperationResults =
           new ArrayList<MonitoredItemServiceOperationResult>(partition.size());
 
       synchronized (lifecycleLock) {
@@ -1692,12 +1729,12 @@ public class OpcUaSubscription {
 
     synchronized (lifecycleLock) {
       if (syncState == SyncState.INITIAL) {
-        return CompletableFuture.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
+        return Java8Collections.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
       }
 
       serverState = this.serverState;
       if (serverState == null) {
-        return CompletableFuture.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
+        return Java8Collections.failedFuture(new UaException(StatusCodes.Bad_InvalidState));
       }
 
       incarnation = this.incarnation;
@@ -1706,7 +1743,7 @@ public class OpcUaSubscription {
     ServerState previousState = serverState;
 
     return client
-        .setPublishingModeAsync(enabled, List.of(serverState.getSubscriptionId()))
+        .setPublishingModeAsync(enabled, Java8Collections.listOf(serverState.getSubscriptionId()))
         .thenCompose(
             response ->
                 applySetPublishingModeResponse(response, previousState, enabled, incarnation));
@@ -1734,14 +1771,14 @@ public class OpcUaSubscription {
 
     synchronized (lifecycleLock) {
       if (this.incarnation != incarnation) {
-        return CompletableFuture.failedFuture(
+        return Java8Collections.failedFuture(
             new UaException(
                 StatusCodes.Bad_InvalidState,
                 "the Subscription was reset while its publishing mode was being set"));
       }
 
       if (!result.isGood()) {
-        return CompletableFuture.failedFuture(new UaException(result));
+        return Java8Collections.failedFuture(new UaException(result));
       }
 
       this.serverState =
@@ -1823,7 +1860,7 @@ public class OpcUaSubscription {
    * @return a List of the MonitoredItems belonging to this Subscription.
    */
   public List<OpcUaMonitoredItem> getMonitoredItems() {
-    return List.copyOf(monitoredItems.values());
+    return Java8Collections.listCopyOf(monitoredItems.values());
   }
 
   /**
@@ -2405,8 +2442,8 @@ public class OpcUaSubscription {
   }
 
   void notifyDataReceived(MonitoredItemNotification[] notifications) {
-    var items = new ArrayList<OpcUaMonitoredItem>(notifications.length);
-    var values = new ArrayList<DataValue>(notifications.length);
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaMonitoredItem> items = new ArrayList<OpcUaMonitoredItem>(notifications.length);
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.DataValue> values = new ArrayList<DataValue>(notifications.length);
 
     for (MonitoredItemNotification notification : notifications) {
       UInteger clientHandle = notification.getClientHandle();
@@ -2441,8 +2478,8 @@ public class OpcUaSubscription {
   }
 
   void notifyEventsReceived(EventFieldList[] events) {
-    var items = new ArrayList<OpcUaMonitoredItem>(events.length);
-    var eventValuesList = new ArrayList<Variant[]>(events.length);
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaMonitoredItem> items = new ArrayList<OpcUaMonitoredItem>(events.length);
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.Variant[]> eventValuesList = new ArrayList<Variant[]>(events.length);
 
     for (EventFieldList event : events) {
       UInteger clientHandle = event.getClientHandle();

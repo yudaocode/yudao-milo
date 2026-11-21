@@ -85,7 +85,7 @@ public class StatusResult extends Structure implements UaStructuredType {
       return false;
     }
     StatusResult that = (StatusResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getDiagnosticInfo(), that.getDiagnosticInfo());
     return eqb.build();
@@ -93,7 +93,7 @@ public class StatusResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getDiagnosticInfo());
     return hcb.build();
@@ -101,7 +101,7 @@ public class StatusResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", StatusResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", StatusResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("diagnosticInfo=" + getDiagnosticInfo());
     return joiner.toString();

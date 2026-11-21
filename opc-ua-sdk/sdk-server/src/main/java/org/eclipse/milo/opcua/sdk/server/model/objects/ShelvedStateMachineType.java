@@ -90,7 +90,7 @@ public interface ShelvedStateMachineType extends FiniteStateMachineType {
                   "ShelvingTime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -135,7 +135,7 @@ public interface ShelvedStateMachineType extends FiniteStateMachineType {
                   "ShelvingTime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -143,7 +143,7 @@ public interface ShelvedStateMachineType extends FiniteStateMachineType {
                   "Comment",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -218,7 +218,7 @@ public interface ShelvedStateMachineType extends FiniteStateMachineType {
                   "Comment",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -290,7 +290,7 @@ public interface ShelvedStateMachineType extends FiniteStateMachineType {
                   "Comment",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

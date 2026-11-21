@@ -99,7 +99,7 @@ public class ReadEventDetails extends HistoryReadDetails implements UaStructured
       return false;
     }
     ReadEventDetails that = (ReadEventDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNumValuesPerNode(), that.getNumValuesPerNode());
     eqb.append(getStartTime(), that.getStartTime());
     eqb.append(getEndTime(), that.getEndTime());
@@ -109,7 +109,7 @@ public class ReadEventDetails extends HistoryReadDetails implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNumValuesPerNode());
     hcb.append(getStartTime());
     hcb.append(getEndTime());
@@ -119,7 +119,7 @@ public class ReadEventDetails extends HistoryReadDetails implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadEventDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadEventDetails.class.getSimpleName() + "[", "]");
     joiner.add("numValuesPerNode=" + getNumValuesPerNode());
     joiner.add("startTime=" + getStartTime());
     joiner.add("endTime=" + getEndTime());

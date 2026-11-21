@@ -77,21 +77,21 @@ public class ReceiveQosPriorityDataType extends ReceiveQosDataType implements Ua
       return false;
     }
     ReceiveQosPriorityDataType that = (ReceiveQosPriorityDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getPriorityLabel(), that.getPriorityLabel());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPriorityLabel());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ReceiveQosPriorityDataType.class.getSimpleName() + "[", "]");
     joiner.add("priorityLabel='" + getPriorityLabel() + "'");
     return joiner.toString();

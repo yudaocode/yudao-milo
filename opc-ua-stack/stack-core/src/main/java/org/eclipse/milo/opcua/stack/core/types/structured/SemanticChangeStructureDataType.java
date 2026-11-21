@@ -83,7 +83,7 @@ public class SemanticChangeStructureDataType extends Structure implements UaStru
       return false;
     }
     SemanticChangeStructureDataType that = (SemanticChangeStructureDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAffected(), that.getAffected());
     eqb.append(getAffectedType(), that.getAffectedType());
     return eqb.build();
@@ -91,7 +91,7 @@ public class SemanticChangeStructureDataType extends Structure implements UaStru
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAffected());
     hcb.append(getAffectedType());
     return hcb.build();
@@ -99,7 +99,7 @@ public class SemanticChangeStructureDataType extends Structure implements UaStru
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", SemanticChangeStructureDataType.class.getSimpleName() + "[", "]");
     joiner.add("affected=" + getAffected());
     joiner.add("affectedType=" + getAffectedType());

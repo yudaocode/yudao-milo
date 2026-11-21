@@ -37,7 +37,8 @@ final class GuidConversions {
 
   @Nullable
   static Object convert(@NonNull Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof UUID uuid) {
+    if (o instanceof UUID) {
+      UUID uuid = (UUID) o;
       return implicit ? implicitConversion(uuid, targetType) : explicitConversion(uuid, targetType);
     } else {
       return null;

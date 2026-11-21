@@ -94,7 +94,7 @@ public class SetPublishingModeRequest extends Structure implements UaRequestMess
       return false;
     }
     SetPublishingModeRequest that = (SetPublishingModeRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getPublishingEnabled(), that.getPublishingEnabled());
     eqb.append(getSubscriptionIds(), that.getSubscriptionIds());
@@ -103,7 +103,7 @@ public class SetPublishingModeRequest extends Structure implements UaRequestMess
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getPublishingEnabled());
     hcb.append(getSubscriptionIds());
@@ -112,7 +112,7 @@ public class SetPublishingModeRequest extends Structure implements UaRequestMess
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SetPublishingModeRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SetPublishingModeRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("publishingEnabled=" + getPublishingEnabled());
     joiner.add("subscriptionIds=" + java.util.Arrays.toString(getSubscriptionIds()));

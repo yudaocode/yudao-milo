@@ -57,7 +57,7 @@ public interface SubscribedDataSetFolderType extends FolderType {
                   "SubscribedDataSet",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=23600")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -76,7 +76,7 @@ public interface SubscribedDataSetFolderType extends FolderType {
                   "SubscribedDataSetNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -120,7 +120,7 @@ public interface SubscribedDataSetFolderType extends FolderType {
                   "SubscribedDataSetNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -167,7 +167,7 @@ public interface SubscribedDataSetFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -186,7 +186,7 @@ public interface SubscribedDataSetFolderType extends FolderType {
                   "DataSetFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -229,7 +229,7 @@ public interface SubscribedDataSetFolderType extends FolderType {
                   "DataSetFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

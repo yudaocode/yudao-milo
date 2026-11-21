@@ -95,7 +95,7 @@ public class ThreeDCartesianCoordinates extends CartesianCoordinates implements 
       return false;
     }
     ThreeDCartesianCoordinates that = (ThreeDCartesianCoordinates) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getX(), that.getX());
     eqb.append(getY(), that.getY());
     eqb.append(getZ(), that.getZ());
@@ -104,7 +104,7 @@ public class ThreeDCartesianCoordinates extends CartesianCoordinates implements 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getX());
     hcb.append(getY());
     hcb.append(getZ());
@@ -113,7 +113,7 @@ public class ThreeDCartesianCoordinates extends CartesianCoordinates implements 
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ThreeDCartesianCoordinates.class.getSimpleName() + "[", "]");
     joiner.add("x=" + getX());
     joiner.add("y=" + getY());

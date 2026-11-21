@@ -86,7 +86,7 @@ public class SubscribedDataSetMirrorDataType extends SubscribedDataSetDataType
       return false;
     }
     SubscribedDataSetMirrorDataType that = (SubscribedDataSetMirrorDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getParentNodeName(), that.getParentNodeName());
     eqb.append(getRolePermissions(), that.getRolePermissions());
     return eqb.build();
@@ -94,7 +94,7 @@ public class SubscribedDataSetMirrorDataType extends SubscribedDataSetDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getParentNodeName());
     hcb.append(getRolePermissions());
     return hcb.build();
@@ -102,7 +102,7 @@ public class SubscribedDataSetMirrorDataType extends SubscribedDataSetDataType
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", SubscribedDataSetMirrorDataType.class.getSimpleName() + "[", "]");
     joiner.add("parentNodeName='" + getParentNodeName() + "'");
     joiner.add("rolePermissions=" + java.util.Arrays.toString(getRolePermissions()));

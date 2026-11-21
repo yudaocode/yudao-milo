@@ -41,7 +41,7 @@ class XmlSerializationUtil {
       return name;
     }
 
-    var sb = new StringBuilder(name.length());
+    StringBuilder sb = new StringBuilder(name.length());
 
     // Rule 1: Replace characters not permitted by the XML DataEncoding
 

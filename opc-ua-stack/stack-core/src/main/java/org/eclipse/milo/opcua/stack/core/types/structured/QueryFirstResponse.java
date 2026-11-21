@@ -120,7 +120,7 @@ public class QueryFirstResponse extends Structure implements UaResponseMessageTy
       return false;
     }
     QueryFirstResponse that = (QueryFirstResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getQueryDataSets(), that.getQueryDataSets());
     eqb.append(getContinuationPoint(), that.getContinuationPoint());
@@ -132,7 +132,7 @@ public class QueryFirstResponse extends Structure implements UaResponseMessageTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getQueryDataSets());
     hcb.append(getContinuationPoint());
@@ -144,7 +144,7 @@ public class QueryFirstResponse extends Structure implements UaResponseMessageTy
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", QueryFirstResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", QueryFirstResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("queryDataSets=" + java.util.Arrays.toString(getQueryDataSets()));
     joiner.add("continuationPoint=" + getContinuationPoint());

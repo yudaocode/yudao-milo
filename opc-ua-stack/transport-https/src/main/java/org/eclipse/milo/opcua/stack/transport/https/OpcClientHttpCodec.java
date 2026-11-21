@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.stack.transport.https;
 
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -74,7 +74,7 @@ public class OpcClientHttpCodec extends MessageToMessageCodec<HttpResponse, UaRe
     switch (transportProfile) {
       case HTTPS_UABINARY:
         {
-          var encoder = new OpcUaBinaryEncoder(application.getEncodingContext());
+          OpcUaBinaryEncoder encoder = new OpcUaBinaryEncoder(application.getEncodingContext());
           encoder.setBuffer(content);
           encoder.encodeMessage(null, requestMessage);
           break;
@@ -115,7 +115,8 @@ public class OpcClientHttpCodec extends MessageToMessageCodec<HttpResponse, UaRe
 
     logger.trace("channelRead0: {}", httpResponse);
 
-    if (httpResponse instanceof FullHttpResponse fullHttpResponse) {
+    if (httpResponse instanceof FullHttpResponse) {
+      FullHttpResponse fullHttpResponse = (FullHttpResponse) httpResponse;
       String contentType = httpResponse.headers().get(HttpHeaderNames.CONTENT_TYPE);
 
       ByteBuf content = fullHttpResponse.content();
@@ -130,7 +131,7 @@ public class OpcClientHttpCodec extends MessageToMessageCodec<HttpResponse, UaRe
                   StatusCodes.Bad_DecodingError, "unexpected content-type: " + contentType);
             }
 
-            var decoder = new OpcUaBinaryDecoder(application.getEncodingContext());
+            OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(application.getEncodingContext());
             decoder.setBuffer(content);
             responseMessage = (UaResponseMessageType) decoder.decodeMessage(null);
             break;

@@ -45,7 +45,7 @@ public class UserConfigurationMask extends OptionSetUI32<UserConfigurationMask.F
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UserConfigurationMask.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UserConfigurationMask.class.getSimpleName() + "[", "]");
     joiner.add("noDelete=" + getNoDelete());
     joiner.add("disabled=" + getDisabled());
     joiner.add("noChangeByUser=" + getNoChangeByUser());

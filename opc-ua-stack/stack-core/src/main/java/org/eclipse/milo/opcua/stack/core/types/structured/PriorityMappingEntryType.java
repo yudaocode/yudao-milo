@@ -103,7 +103,7 @@ public class PriorityMappingEntryType extends Structure implements UaStructuredT
       return false;
     }
     PriorityMappingEntryType that = (PriorityMappingEntryType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMappingUri(), that.getMappingUri());
     eqb.append(getPriorityLabel(), that.getPriorityLabel());
     eqb.append(getPriorityValuePcp(), that.getPriorityValuePcp());
@@ -113,7 +113,7 @@ public class PriorityMappingEntryType extends Structure implements UaStructuredT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMappingUri());
     hcb.append(getPriorityLabel());
     hcb.append(getPriorityValuePcp());
@@ -123,7 +123,7 @@ public class PriorityMappingEntryType extends Structure implements UaStructuredT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PriorityMappingEntryType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PriorityMappingEntryType.class.getSimpleName() + "[", "]");
     joiner.add("mappingUri='" + getMappingUri() + "'");
     joiner.add("priorityLabel='" + getPriorityLabel() + "'");
     joiner.add("priorityValuePcp=" + getPriorityValuePcp());

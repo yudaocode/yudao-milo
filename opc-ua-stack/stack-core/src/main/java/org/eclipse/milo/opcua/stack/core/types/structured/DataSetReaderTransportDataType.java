@@ -54,7 +54,7 @@ public abstract class DataSetReaderTransportDataType extends Structure implement
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", DataSetReaderTransportDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

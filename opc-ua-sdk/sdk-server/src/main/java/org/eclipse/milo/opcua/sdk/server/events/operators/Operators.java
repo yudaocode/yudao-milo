@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.events.operators;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.Set;
 import org.eclipse.milo.opcua.sdk.server.events.FilterContext;
 import org.eclipse.milo.opcua.sdk.server.events.OperatorContext;
@@ -41,7 +43,7 @@ public class Operators {
   public static final OfType OF_TYPE = new OfType();
 
   public static final Operator<Object> UNSUPPORTED =
-      new Operator<>() {
+      new Operator<Object>() {
         @Nullable
         @Override
         public Object apply(
@@ -59,7 +61,7 @@ public class Operators {
       };
 
   public static final Set<FilterOperator> SUPPORTED_OPERATORS =
-      Set.of(
+      Java8Collections.setOf(
           FilterOperator.Equals,
           FilterOperator.IsNull,
           FilterOperator.GreaterThan,

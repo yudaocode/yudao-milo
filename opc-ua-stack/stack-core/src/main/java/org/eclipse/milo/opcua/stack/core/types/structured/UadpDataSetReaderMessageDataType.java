@@ -144,7 +144,7 @@ public class UadpDataSetReaderMessageDataType extends DataSetReaderMessageDataTy
       return false;
     }
     UadpDataSetReaderMessageDataType that = (UadpDataSetReaderMessageDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getGroupVersion(), that.getGroupVersion());
     eqb.append(getNetworkMessageNumber(), that.getNetworkMessageNumber());
     eqb.append(getDataSetOffset(), that.getDataSetOffset());
@@ -159,7 +159,7 @@ public class UadpDataSetReaderMessageDataType extends DataSetReaderMessageDataTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getGroupVersion());
     hcb.append(getNetworkMessageNumber());
     hcb.append(getDataSetOffset());
@@ -174,7 +174,7 @@ public class UadpDataSetReaderMessageDataType extends DataSetReaderMessageDataTy
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", UadpDataSetReaderMessageDataType.class.getSimpleName() + "[", "]");
     joiner.add("groupVersion=" + getGroupVersion());
     joiner.add("networkMessageNumber=" + getNetworkMessageNumber());

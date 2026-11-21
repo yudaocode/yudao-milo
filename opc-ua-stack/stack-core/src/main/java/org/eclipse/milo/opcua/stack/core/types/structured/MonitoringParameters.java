@@ -110,7 +110,7 @@ public class MonitoringParameters extends Structure implements UaStructuredType 
       return false;
     }
     MonitoringParameters that = (MonitoringParameters) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getClientHandle(), that.getClientHandle());
     eqb.append(getSamplingInterval(), that.getSamplingInterval());
     eqb.append(getFilter(), that.getFilter());
@@ -121,7 +121,7 @@ public class MonitoringParameters extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getClientHandle());
     hcb.append(getSamplingInterval());
     hcb.append(getFilter());
@@ -132,7 +132,7 @@ public class MonitoringParameters extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", MonitoringParameters.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", MonitoringParameters.class.getSimpleName() + "[", "]");
     joiner.add("clientHandle=" + getClientHandle());
     joiner.add("samplingInterval=" + getSamplingInterval());
     joiner.add("filter=" + getFilter());

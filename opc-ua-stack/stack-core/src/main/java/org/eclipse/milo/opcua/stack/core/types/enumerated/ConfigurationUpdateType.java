@@ -57,13 +57,18 @@ public enum ConfigurationUpdateType implements UaEnumeratedType {
   }
 
   public static @Nullable ConfigurationUpdateType from(int value) {
-    return switch (value) {
-      case 1 -> Insert;
-      case 2 -> Replace;
-      case 3 -> InsertOrReplace;
-      case 4 -> Delete;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return Insert;
+      case 2:
+        return Replace;
+      case 3:
+        return InsertOrReplace;
+      case 4:
+        return Delete;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

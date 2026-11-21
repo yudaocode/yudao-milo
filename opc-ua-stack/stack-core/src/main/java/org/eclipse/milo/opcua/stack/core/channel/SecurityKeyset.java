@@ -22,37 +22,53 @@ package org.eclipse.milo.opcua.stack.core.channel;
  * @param serverInitializationVector the server-to-client initialization vector.
  * @param signatureSize the HMAC output length in bytes (20 for SHA-1, 32 for SHA-256).
  */
-public record SecurityKeyset(
-    long channelId,
-    long tokenId,
-    byte[] clientEncryptionKey,
-    byte[] clientInitializationVector,
-    byte[] serverEncryptionKey,
-    byte[] serverInitializationVector,
-    int signatureSize) {
-  public SecurityKeyset {
+public final class SecurityKeyset {
+  private final long channelId;
+  private final long tokenId;
+  private final byte[] clientEncryptionKey;
+  private final byte[] clientInitializationVector;
+  private final byte[] serverEncryptionKey;
+  private final byte[] serverInitializationVector;
+  private final int signatureSize;
+
+  public long channelId() {
+    return channelId;
+  }
+
+  public long tokenId() {
+    return tokenId;
+  }
+
+  public int signatureSize() {
+    return signatureSize;
+  }
+
+  public SecurityKeyset(long channelId, long tokenId, byte[] clientEncryptionKey, byte[] clientInitializationVector, byte[] serverEncryptionKey, byte[] serverInitializationVector, int signatureSize) {
+  this.channelId = channelId;
+  this.tokenId = tokenId;
+  this.clientEncryptionKey = clientEncryptionKey;
+  this.clientInitializationVector = clientInitializationVector;
+  this.serverEncryptionKey = serverEncryptionKey;
+  this.serverInitializationVector = serverInitializationVector;
+  this.signatureSize = signatureSize;
     clientEncryptionKey = clientEncryptionKey.clone();
     clientInitializationVector = clientInitializationVector.clone();
     serverEncryptionKey = serverEncryptionKey.clone();
     serverInitializationVector = serverInitializationVector.clone();
   }
 
-  @Override
   public byte[] clientEncryptionKey() {
     return clientEncryptionKey.clone();
   }
 
-  @Override
   public byte[] clientInitializationVector() {
     return clientInitializationVector.clone();
   }
 
-  @Override
   public byte[] serverEncryptionKey() {
     return serverEncryptionKey.clone();
   }
 
-  @Override
   public byte[] serverInitializationVector() {
     return serverInitializationVector.clone();
   }

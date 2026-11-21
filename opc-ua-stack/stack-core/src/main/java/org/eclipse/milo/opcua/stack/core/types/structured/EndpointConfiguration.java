@@ -137,7 +137,7 @@ public class EndpointConfiguration extends Structure implements UaStructuredType
       return false;
     }
     EndpointConfiguration that = (EndpointConfiguration) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getOperationTimeout(), that.getOperationTimeout());
     eqb.append(getUseBinaryEncoding(), that.getUseBinaryEncoding());
     eqb.append(getMaxStringLength(), that.getMaxStringLength());
@@ -152,7 +152,7 @@ public class EndpointConfiguration extends Structure implements UaStructuredType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getOperationTimeout());
     hcb.append(getUseBinaryEncoding());
     hcb.append(getMaxStringLength());
@@ -167,7 +167,7 @@ public class EndpointConfiguration extends Structure implements UaStructuredType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EndpointConfiguration.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EndpointConfiguration.class.getSimpleName() + "[", "]");
     joiner.add("operationTimeout=" + getOperationTimeout());
     joiner.add("useBinaryEncoding=" + getUseBinaryEncoding());
     joiner.add("maxStringLength=" + getMaxStringLength());

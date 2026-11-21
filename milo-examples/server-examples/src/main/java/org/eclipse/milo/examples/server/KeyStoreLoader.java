@@ -72,7 +72,7 @@ class KeyStoreLoader {
       // Get as many hostnames and IP addresses as we can listed in the certificate.
       Set<String> hostnames =
           Sets.union(
-              Set.of(HostnameUtil.getHostname()), HostnameUtil.getHostnames("0.0.0.0", false));
+              java.util.Collections.singleton(HostnameUtil.getHostname()), HostnameUtil.getHostnames("0.0.0.0", false));
 
       for (String hostname : hostnames) {
         if (IP_ADDR_PATTERN.matcher(hostname).matches()) {

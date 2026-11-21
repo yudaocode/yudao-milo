@@ -51,15 +51,22 @@ public enum RedundancySupport implements UaEnumeratedType {
   }
 
   public static @Nullable RedundancySupport from(int value) {
-    return switch (value) {
-      case 0 -> None;
-      case 1 -> Cold;
-      case 2 -> Warm;
-      case 3 -> Hot;
-      case 4 -> Transparent;
-      case 5 -> HotAndMirrored;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return None;
+      case 1:
+        return Cold;
+      case 2:
+        return Warm;
+      case 3:
+        return Hot;
+      case 4:
+        return Transparent;
+      case 5:
+        return HotAndMirrored;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

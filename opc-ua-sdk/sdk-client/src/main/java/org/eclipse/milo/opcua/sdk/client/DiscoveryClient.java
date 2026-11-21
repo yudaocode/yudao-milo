@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.ubyte;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
@@ -185,7 +186,7 @@ public class DiscoveryClient {
   public CompletableFuture<RegisterServerResponse> registerServer(RegisteredServer server) {
     RequestHeader header = newRequestHeader(NodeId.NULL_VALUE, uint(60_000));
 
-    var request = new RegisterServerRequest(header, server);
+    org.eclipse.milo.opcua.stack.core.types.structured.RegisterServerRequest request = new RegisterServerRequest(header, server);
 
     return transport.sendRequestMessage(request).thenApply(RegisterServerResponse.class::cast);
   }
@@ -237,7 +238,7 @@ public class DiscoveryClient {
     customizer.accept(configBuilder);
 
     OpcTcpClientTransportConfig config = configBuilder.build();
-    var transport = new OpcTcpClientTransport(config);
+    org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransport transport = new OpcTcpClientTransport(config);
 
     DiscoveryClient discoveryClient = new DiscoveryClient(endpoint, transport);
 
@@ -273,7 +274,7 @@ public class DiscoveryClient {
 
     String profileUri;
 
-    switch (Objects.requireNonNullElse(scheme, "").toLowerCase()) {
+    switch (Java8Collections.requireNonNullElse(scheme, "").toLowerCase()) {
       case "opc.tcp":
         profileUri = Stack.TCP_UASC_UABINARY_TRANSPORT_URI;
         break;
@@ -318,7 +319,7 @@ public class DiscoveryClient {
     customizer.accept(configBuilder);
 
     OpcTcpClientTransportConfig config = configBuilder.build();
-    var transport = new OpcTcpClientTransport(config);
+    org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransport transport = new OpcTcpClientTransport(config);
 
     DiscoveryClient discoveryClient = new DiscoveryClient(endpoint, transport);
 

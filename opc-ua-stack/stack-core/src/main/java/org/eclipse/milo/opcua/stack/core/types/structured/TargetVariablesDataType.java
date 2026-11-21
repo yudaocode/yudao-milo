@@ -77,21 +77,21 @@ public class TargetVariablesDataType extends SubscribedDataSetDataType implement
       return false;
     }
     TargetVariablesDataType that = (TargetVariablesDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTargetVariables(), that.getTargetVariables());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTargetVariables());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TargetVariablesDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TargetVariablesDataType.class.getSimpleName() + "[", "]");
     joiner.add("targetVariables=" + java.util.Arrays.toString(getTargetVariables()));
     return joiner.toString();
   }

@@ -109,7 +109,7 @@ public class ViewNode extends InstanceNode implements UaStructuredType {
       return false;
     }
     ViewNode that = (ViewNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getContainsNoLoops(), that.getContainsNoLoops());
     eqb.append(getEventNotifier(), that.getEventNotifier());
@@ -118,7 +118,7 @@ public class ViewNode extends InstanceNode implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getContainsNoLoops());
     hcb.append(getEventNotifier());
     hcb.appendSuper(super.hashCode());
@@ -127,7 +127,7 @@ public class ViewNode extends InstanceNode implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ViewNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ViewNode.class.getSimpleName() + "[", "]");
     joiner.add("containsNoLoops=" + getContainsNoLoops());
     joiner.add("eventNotifier=" + getEventNotifier());
     return joiner.toString();

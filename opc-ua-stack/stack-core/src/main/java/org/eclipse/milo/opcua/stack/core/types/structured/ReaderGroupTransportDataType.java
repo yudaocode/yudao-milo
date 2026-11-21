@@ -54,7 +54,7 @@ public abstract class ReaderGroupTransportDataType extends Structure implements 
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ReaderGroupTransportDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

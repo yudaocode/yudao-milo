@@ -51,7 +51,7 @@ public interface KeyCredentialConfigurationFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -59,7 +59,7 @@ public interface KeyCredentialConfigurationFolderType extends FolderType {
                   "ResourceUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -67,7 +67,7 @@ public interface KeyCredentialConfigurationFolderType extends FolderType {
                   "ProfileUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -75,7 +75,7 @@ public interface KeyCredentialConfigurationFolderType extends FolderType {
                   "EndpointUrls",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -94,7 +94,7 @@ public interface KeyCredentialConfigurationFolderType extends FolderType {
                   "CredentialNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

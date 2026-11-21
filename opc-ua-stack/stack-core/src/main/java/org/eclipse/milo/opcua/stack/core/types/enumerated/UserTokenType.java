@@ -47,13 +47,18 @@ public enum UserTokenType implements UaEnumeratedType {
   }
 
   public static @Nullable UserTokenType from(int value) {
-    return switch (value) {
-      case 0 -> Anonymous;
-      case 1 -> UserName;
-      case 2 -> Certificate;
-      case 3 -> IssuedToken;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Anonymous;
+      case 1:
+        return UserName;
+      case 2:
+        return Certificate;
+      case 3:
+        return IssuedToken;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

@@ -128,7 +128,7 @@ public class RequestHeader extends Structure implements UaStructuredType {
       return false;
     }
     RequestHeader that = (RequestHeader) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAuthenticationToken(), that.getAuthenticationToken());
     eqb.append(getTimestamp(), that.getTimestamp());
     eqb.append(getRequestHandle(), that.getRequestHandle());
@@ -141,7 +141,7 @@ public class RequestHeader extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAuthenticationToken());
     hcb.append(getTimestamp());
     hcb.append(getRequestHandle());
@@ -154,7 +154,7 @@ public class RequestHeader extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RequestHeader.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RequestHeader.class.getSimpleName() + "[", "]");
     joiner.add("authenticationToken=" + getAuthenticationToken());
     joiner.add("timestamp=" + getTimestamp());
     joiner.add("requestHandle=" + getRequestHandle());

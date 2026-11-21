@@ -58,7 +58,8 @@ final class StatusCodeConversions {
 
   @Nullable
   static Object convert(@NonNull Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof StatusCode s) {
+    if (o instanceof StatusCode) {
+      StatusCode s = (StatusCode) o;
       return implicit ? implicitConversion(s, targetType) : explicitConversion(s, targetType);
     } else {
       return null;

@@ -103,7 +103,7 @@ public class AliasNameVerboseDataType extends Structure implements UaStructuredT
       return false;
     }
     AliasNameVerboseDataType that = (AliasNameVerboseDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAliasName(), that.getAliasName());
     eqb.append(getReferencedNodes(), that.getReferencedNodes());
     eqb.append(getServerUris(), that.getServerUris());
@@ -113,7 +113,7 @@ public class AliasNameVerboseDataType extends Structure implements UaStructuredT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAliasName());
     hcb.append(getReferencedNodes());
     hcb.append(getServerUris());
@@ -123,7 +123,7 @@ public class AliasNameVerboseDataType extends Structure implements UaStructuredT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AliasNameVerboseDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AliasNameVerboseDataType.class.getSimpleName() + "[", "]");
     joiner.add("aliasName=" + getAliasName());
     joiner.add("referencedNodes=" + java.util.Arrays.toString(getReferencedNodes()));
     joiner.add("serverUris=" + java.util.Arrays.toString(getServerUris()));

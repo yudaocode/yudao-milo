@@ -9,6 +9,9 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.typetree;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
+import java.util.stream.Collectors;
 
 import java.util.List;
 import org.eclipse.milo.opcua.sdk.core.Reference;
@@ -36,9 +39,9 @@ public class VariableTypeTreeBuilder {
    */
   public static VariableTypeTree build(OpcUaServer server) {
     UaNode rootNode =
-        server.getAddressSpaceManager().getManagedNode(NodeIds.BaseVariableType).orElseThrow();
+        server.getAddressSpaceManager().getManagedNode(NodeIds.BaseVariableType).get();
 
-    var tree = new Tree<VariableType>(null, new ServerVariableType((UaVariableTypeNode) rootNode));
+    org.eclipse.milo.opcua.stack.core.util.Tree<org.eclipse.milo.opcua.sdk.core.typetree.VariableType> tree = new Tree<VariableType>(null, new ServerVariableType((UaVariableTypeNode) rootNode));
 
     addChildren(tree, server);
 
@@ -58,8 +61,8 @@ public class VariableTypeTreeBuilder {
     List<UaNode> childNodes =
         references.stream()
             .flatMap(
-                r -> server.getAddressSpaceManager().getManagedNode(r.getTargetNodeId()).stream())
-            .toList();
+                r -> Java8Collections.optionalStream(server.getAddressSpaceManager().getManagedNode(r.getTargetNodeId())))
+            .collect(Collectors.toList());
 
     for (UaNode childNode : childNodes) {
       UaVariableTypeNode variableTypeNode = (UaVariableTypeNode) childNode;

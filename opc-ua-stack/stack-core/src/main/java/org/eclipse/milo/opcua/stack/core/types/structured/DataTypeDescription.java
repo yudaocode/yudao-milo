@@ -80,7 +80,7 @@ public abstract class DataTypeDescription extends Structure implements UaStructu
       return false;
     }
     DataTypeDescription that = (DataTypeDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDataTypeId(), that.getDataTypeId());
     eqb.append(getName(), that.getName());
     return eqb.build();
@@ -88,7 +88,7 @@ public abstract class DataTypeDescription extends Structure implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDataTypeId());
     hcb.append(getName());
     return hcb.build();
@@ -96,7 +96,7 @@ public abstract class DataTypeDescription extends Structure implements UaStructu
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataTypeDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataTypeDescription.class.getSimpleName() + "[", "]");
     joiner.add("dataTypeId=" + getDataTypeId());
     joiner.add("name=" + getName());
     return joiner.toString();

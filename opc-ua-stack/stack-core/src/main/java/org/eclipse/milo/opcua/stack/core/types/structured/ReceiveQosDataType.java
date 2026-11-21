@@ -54,7 +54,7 @@ public abstract class ReceiveQosDataType extends QosDataType implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReceiveQosDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReceiveQosDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

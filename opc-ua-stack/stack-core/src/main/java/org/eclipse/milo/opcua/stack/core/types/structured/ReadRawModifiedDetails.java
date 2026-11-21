@@ -110,7 +110,7 @@ public class ReadRawModifiedDetails extends HistoryReadDetails implements UaStru
       return false;
     }
     ReadRawModifiedDetails that = (ReadRawModifiedDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getIsReadModified(), that.getIsReadModified());
     eqb.append(getStartTime(), that.getStartTime());
     eqb.append(getEndTime(), that.getEndTime());
@@ -121,7 +121,7 @@ public class ReadRawModifiedDetails extends HistoryReadDetails implements UaStru
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getIsReadModified());
     hcb.append(getStartTime());
     hcb.append(getEndTime());
@@ -132,7 +132,7 @@ public class ReadRawModifiedDetails extends HistoryReadDetails implements UaStru
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadRawModifiedDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadRawModifiedDetails.class.getSimpleName() + "[", "]");
     joiner.add("isReadModified=" + getIsReadModified());
     joiner.add("startTime=" + getStartTime());
     joiner.add("endTime=" + getEndTime());

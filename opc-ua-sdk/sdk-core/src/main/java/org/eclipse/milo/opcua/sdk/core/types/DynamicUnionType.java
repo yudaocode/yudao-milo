@@ -112,10 +112,10 @@ public final class DynamicUnionType extends DynamicType implements UaStructuredT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DynamicUnionType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DynamicUnionType.class.getSimpleName() + "[", "]");
     joiner.add("dataType=" + dataType.getNodeId().toParseableString());
     if (value != null) {
-      joiner.add("%s=%s".formatted(value.fieldName(), value.fieldValue()));
+      joiner.add(String.format("%s=%s", value.fieldName(), value.fieldValue()));
     } else {
       joiner.add("null");
     }
@@ -128,8 +128,21 @@ public final class DynamicUnionType extends DynamicType implements UaStructuredT
    * @param fieldName the field name.
    * @param fieldValue the field's value.
    */
-  public record UnionValue(String fieldName, Object fieldValue) {
-    public UnionValue {
+  public static final class UnionValue {
+    private final String fieldName;
+    private final Object fieldValue;
+
+    public String fieldName() {
+      return fieldName;
+    }
+
+    public Object fieldValue() {
+      return fieldValue;
+    }
+
+    public UnionValue(String fieldName, Object fieldValue) {
+    this.fieldName = fieldName;
+    this.fieldValue = fieldValue;
       requireNonNull(fieldName);
       requireNonNull(fieldValue);
     }

@@ -134,7 +134,8 @@ final class DoubleConversions {
 
   @Nullable
   static Object convert(@Nullable Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof Double d) {
+    if (o instanceof Double) {
+      Double d = (Double) o;
       return implicit ? implicitConversion(d, targetType) : explicitConversion(d, targetType);
     } else {
       return null;

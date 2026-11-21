@@ -77,21 +77,21 @@ public class HistoryEvent extends Structure implements UaStructuredType {
       return false;
     }
     HistoryEvent that = (HistoryEvent) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getEvents(), that.getEvents());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEvents());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryEvent.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryEvent.class.getSimpleName() + "[", "]");
     joiner.add("events=" + java.util.Arrays.toString(getEvents()));
     return joiner.toString();
   }

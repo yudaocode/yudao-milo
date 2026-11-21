@@ -60,16 +60,24 @@ public enum InterfaceOperStatus implements UaEnumeratedType {
   }
 
   public static @Nullable InterfaceOperStatus from(int value) {
-    return switch (value) {
-      case 0 -> Up;
-      case 1 -> Down;
-      case 2 -> Testing;
-      case 3 -> Unknown;
-      case 4 -> Dormant;
-      case 5 -> NotPresent;
-      case 6 -> LowerLayerDown;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Up;
+      case 1:
+        return Down;
+      case 2:
+        return Testing;
+      case 3:
+        return Unknown;
+      case 4:
+        return Dormant;
+      case 5:
+        return NotPresent;
+      case 6:
+        return LowerLayerDown;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

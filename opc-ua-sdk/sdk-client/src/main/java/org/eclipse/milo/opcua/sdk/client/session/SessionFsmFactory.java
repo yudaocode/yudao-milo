@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.session;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.Objects.requireNonNull;
 import static java.util.concurrent.CompletableFuture.completedFuture;
 import static org.eclipse.milo.opcua.sdk.client.session.SessionFsm.KEY_CHANNEL_FSM_TRANSITION_LISTENER;
@@ -27,10 +29,10 @@ import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.complete;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedFuture;
 
-import com.digitalpetri.fsm.Fsm;
-import com.digitalpetri.fsm.FsmContext;
-import com.digitalpetri.fsm.dsl.ActionContext;
-import com.digitalpetri.fsm.dsl.FsmBuilder;
+import com.digitalpetri.strictmachine.Fsm;
+import com.digitalpetri.strictmachine.FsmContext;
+import com.digitalpetri.strictmachine.dsl.ActionContext;
+import com.digitalpetri.strictmachine.dsl.FsmBuilder;
 import com.digitalpetri.netty.fsm.ChannelFsm;
 import com.google.common.collect.Streams;
 import com.google.common.primitives.Bytes;
@@ -134,10 +136,9 @@ public class SessionFsmFactory {
 
     FsmBuilder<State, Event> builder =
         new FsmBuilder<>(
-            SessionFsm.LOGGER_NAME,
-            Map.of("instance-id", String.valueOf(instanceId)),
             client.getTransport().getConfig().getExecutor(),
-            instanceId);
+            SessionFsm.LOGGER_NAME,
+            Java8Collections.mapOf("instance-id", String.valueOf(instanceId)));
 
     configureSessionFsm(builder, client);
 
@@ -756,7 +757,8 @@ public class SessionFsmFactory {
 
               if (listener != null) {
                 OpcClientTransport clientTransport = client.getTransport();
-                if (clientTransport instanceof OpcTcpClientTransport tcpClientTransport) {
+                if (clientTransport instanceof OpcTcpClientTransport) {
+      OpcTcpClientTransport tcpClientTransport = (OpcTcpClientTransport) clientTransport;
                   tcpClientTransport.getChannelFsm().removeTransitionListener(listener);
                 }
               }
@@ -1183,7 +1185,8 @@ public class SessionFsmFactory {
   private static boolean isTransportDisconnectedForGood(OpcUaClient client) {
     OpcClientTransport transport = client.getTransport();
 
-    if (transport instanceof OpcTcpClientTransport tcpClientTransport) {
+    if (transport instanceof OpcTcpClientTransport) {
+      OpcTcpClientTransport tcpClientTransport = (OpcTcpClientTransport) transport;
       return tcpClientTransport.getChannelFsm().getState()
           == com.digitalpetri.netty.fsm.State.NotConnected;
     } else {
@@ -1199,7 +1202,7 @@ public class SessionFsmFactory {
   }
 
   private static MDCCloseable putInstanceId(FsmContext<State, Event> ctx) {
-    return MDC.putCloseable("instance-id", ctx.getUserContext().toString());
+    return MDC.putCloseable("instance-id", String.valueOf(ctx.getInstanceId()));
   }
 
   private static MDCCloseable putSessionId(OpcUaSession session) {
@@ -1415,8 +1418,8 @@ public class SessionFsmFactory {
                     validateSessionEndpoints(
                         endpoint.getTransportProfileUri(),
                         client.getConfig().getDiscoveryEndpoints(),
-                        List.of(
-                            Objects.requireNonNullElse(
+                        Java8Collections.listOf(
+                            Java8Collections.requireNonNullElse(
                                 response.getServerEndpoints(), new EndpointDescription[0])));
                   }
 
@@ -1461,7 +1464,7 @@ public class SessionFsmFactory {
     List<EndpointDescription> filteredDiscoveryEndpoints =
         discoveryEndpoints.stream()
             .filter(e -> Objects.equals(transportProfileUri, e.getTransportProfileUri()))
-            .toList();
+            .collect(Collectors.toList());
 
     List<EndpointDescription> filteredSessionEndpoints =
         sessionEndpoints.stream()
@@ -1586,7 +1589,7 @@ public class SessionFsmFactory {
       UserIdentityToken userIdentityToken = signedIdentityToken.getToken();
       SignatureData userTokenSignature = signedIdentityToken.getSignature();
 
-      var request =
+      org.eclipse.milo.opcua.stack.core.types.structured.ActivateSessionRequest request =
           new ActivateSessionRequest(
               client.newRequestHeader(session.getAuthenticationToken()),
               buildClientSignature(client.getConfig(), serverNonce),
@@ -1633,12 +1636,28 @@ public class SessionFsmFactory {
     // can disappear between the snapshot above and the request below; deriving the ids separately
     // would leave the results indexed against a list the request was not built from, shifting every
     // position at or after a dropped Subscription.
-    record Transferable(OpcUaSubscription subscription, UInteger subscriptionId) {}
+    final class Transferable {
+      private final OpcUaSubscription subscription;
+      private final UInteger subscriptionId;
+
+      public OpcUaSubscription subscription() {
+        return subscription;
+      }
+
+      public UInteger subscriptionId() {
+        return subscriptionId;
+      }
+
+      Transferable(OpcUaSubscription subscription, UInteger subscriptionId) {
+        this.subscription = subscription;
+        this.subscriptionId = subscriptionId;
+      }
+}
 
     List<Transferable> transferable =
         subscriptions.stream()
-            .flatMap(s -> s.getSubscriptionId().map(id -> new Transferable(s, id)).stream())
-            .toList();
+            .flatMap(s -> Java8Collections.optionalStream(s.getSubscriptionId().map(id -> new Transferable(s, id))))
+            .collect(Collectors.toList());
 
     if (transferable.isEmpty()) {
       return completedFuture(Unit.VALUE);

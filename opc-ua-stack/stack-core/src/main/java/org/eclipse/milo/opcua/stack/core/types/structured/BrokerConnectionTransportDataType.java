@@ -86,7 +86,7 @@ public class BrokerConnectionTransportDataType extends ConnectionTransportDataTy
       return false;
     }
     BrokerConnectionTransportDataType that = (BrokerConnectionTransportDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResourceUri(), that.getResourceUri());
     eqb.append(getAuthenticationProfileUri(), that.getAuthenticationProfileUri());
     return eqb.build();
@@ -94,7 +94,7 @@ public class BrokerConnectionTransportDataType extends ConnectionTransportDataTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResourceUri());
     hcb.append(getAuthenticationProfileUri());
     return hcb.build();
@@ -102,7 +102,7 @@ public class BrokerConnectionTransportDataType extends ConnectionTransportDataTy
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", BrokerConnectionTransportDataType.class.getSimpleName() + "[", "]");
     joiner.add("resourceUri='" + getResourceUri() + "'");
     joiner.add("authenticationProfileUri='" + getAuthenticationProfileUri() + "'");

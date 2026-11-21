@@ -112,7 +112,7 @@ public class SetTriggeringResponse extends Structure implements UaResponseMessag
       return false;
     }
     SetTriggeringResponse that = (SetTriggeringResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getAddResults(), that.getAddResults());
     eqb.append(getAddDiagnosticInfos(), that.getAddDiagnosticInfos());
@@ -123,7 +123,7 @@ public class SetTriggeringResponse extends Structure implements UaResponseMessag
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getAddResults());
     hcb.append(getAddDiagnosticInfos());
@@ -134,7 +134,7 @@ public class SetTriggeringResponse extends Structure implements UaResponseMessag
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SetTriggeringResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SetTriggeringResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("addResults=" + java.util.Arrays.toString(getAddResults()));
     joiner.add("addDiagnosticInfos=" + java.util.Arrays.toString(getAddDiagnosticInfos()));

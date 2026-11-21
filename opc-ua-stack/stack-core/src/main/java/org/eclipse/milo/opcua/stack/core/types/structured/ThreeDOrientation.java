@@ -95,7 +95,7 @@ public class ThreeDOrientation extends Orientation implements UaStructuredType {
       return false;
     }
     ThreeDOrientation that = (ThreeDOrientation) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getA(), that.getA());
     eqb.append(getB(), that.getB());
     eqb.append(getC(), that.getC());
@@ -104,7 +104,7 @@ public class ThreeDOrientation extends Orientation implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getA());
     hcb.append(getB());
     hcb.append(getC());
@@ -113,7 +113,7 @@ public class ThreeDOrientation extends Orientation implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ThreeDOrientation.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ThreeDOrientation.class.getSimpleName() + "[", "]");
     joiner.add("a=" + getA());
     joiner.add("b=" + getB());
     joiner.add("c=" + getC());

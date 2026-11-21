@@ -49,14 +49,20 @@ public enum DiagnosticsLevel implements UaEnumeratedType {
   }
 
   public static @Nullable DiagnosticsLevel from(int value) {
-    return switch (value) {
-      case 0 -> Basic;
-      case 1 -> Advanced;
-      case 2 -> Info;
-      case 3 -> Log;
-      case 4 -> Debug;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Basic;
+      case 1:
+        return Advanced;
+      case 2:
+        return Info;
+      case 3:
+        return Log;
+      case 4:
+        return Debug;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

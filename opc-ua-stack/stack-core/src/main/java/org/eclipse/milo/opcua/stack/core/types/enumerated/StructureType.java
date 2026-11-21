@@ -49,14 +49,20 @@ public enum StructureType implements UaEnumeratedType {
   }
 
   public static @Nullable StructureType from(int value) {
-    return switch (value) {
-      case 0 -> Structure;
-      case 1 -> StructureWithOptionalFields;
-      case 2 -> Union;
-      case 3 -> StructureWithSubtypedValues;
-      case 4 -> UnionWithSubtypedValues;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Structure;
+      case 1:
+        return StructureWithOptionalFields;
+      case 2:
+        return Union;
+      case 3:
+        return StructureWithSubtypedValues;
+      case 4:
+        return UnionWithSubtypedValues;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

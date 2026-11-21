@@ -9,12 +9,13 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.dtd;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -326,7 +327,7 @@ public class BinaryDataTypeDictionaryManager implements Lifecycle {
   }
 
   private File writeDictionaryToFile() throws IOException {
-    String encodedUri = URLEncoder.encode(namespaceUri, StandardCharsets.UTF_8);
+    String encodedUri = URLEncoder.encode(namespaceUri, StandardCharsets.UTF_8.name());
     Path tempFilePath = Files.createTempFile(encodedUri, ".bsd.xml");
 
     try (FileOutputStream fos = new FileOutputStream(tempFilePath.toFile())) {
@@ -561,7 +562,7 @@ public class BinaryDataTypeDictionaryManager implements Lifecycle {
     QualifiedName parentTypeName =
         dataTypeNode.getReferences().stream()
             .filter(Reference.SUBTYPE_OF)
-            .flatMap(r -> addressSpaceManager.getManagedNode(r.getTargetNodeId()).stream())
+            .flatMap(r -> Java8Collections.optionalStream(addressSpaceManager.getManagedNode(r.getTargetNodeId())))
             .findFirst()
             .map(UaNode::getBrowseName)
             .orElse(QualifiedName.NULL_VALUE);
@@ -573,7 +574,7 @@ public class BinaryDataTypeDictionaryManager implements Lifecycle {
     UaNode dataTypeEncodingNode =
         dataTypeNode.getReferences().stream()
             .filter(Reference.HAS_ENCODING_PREDICATE)
-            .flatMap(r -> addressSpaceManager.getManagedNode(r.getTargetNodeId()).stream())
+            .flatMap(r -> Java8Collections.optionalStream(addressSpaceManager.getManagedNode(r.getTargetNodeId())))
             .filter(n -> n.getBrowseName().equals(new QualifiedName(0, "Default Binary")))
             .findFirst()
             .orElse(null);
@@ -583,7 +584,7 @@ public class BinaryDataTypeDictionaryManager implements Lifecycle {
     UaNode dataTypeDescriptionNode =
         dataTypeEncodingNode.getReferences().stream()
             .filter(Reference.HAS_DESCRIPTION_PREDICATE)
-            .flatMap(r -> addressSpaceManager.getManagedNode(r.getTargetNodeId()).stream())
+            .flatMap(r -> Java8Collections.optionalStream(addressSpaceManager.getManagedNode(r.getTargetNodeId())))
             .findFirst()
             .orElse(null);
 
@@ -594,7 +595,7 @@ public class BinaryDataTypeDictionaryManager implements Lifecycle {
     UaNode dictionaryNode =
         dataTypeDescriptionNode.getReferences().stream()
             .filter(Reference.COMPONENT_OF_PREDICATE)
-            .flatMap(r -> addressSpaceManager.getManagedNode(r.getTargetNodeId()).stream())
+            .flatMap(r -> Java8Collections.optionalStream(addressSpaceManager.getManagedNode(r.getTargetNodeId())))
             .findFirst()
             .orElse(null);
 

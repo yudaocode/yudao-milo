@@ -113,7 +113,7 @@ public interface ConfigurationFileType extends FileType {
                   "UpdateId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -160,7 +160,7 @@ public interface ConfigurationFileType extends FileType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -168,7 +168,7 @@ public interface ConfigurationFileType extends FileType {
                   "VersionToUpdate",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=20998")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -176,7 +176,7 @@ public interface ConfigurationFileType extends FileType {
                   "Targets",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15538")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -184,7 +184,7 @@ public interface ConfigurationFileType extends FileType {
                   "RevertAfterTime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -192,7 +192,7 @@ public interface ConfigurationFileType extends FileType {
                   "RestartDelayTime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -211,7 +211,7 @@ public interface ConfigurationFileType extends FileType {
                   "UpdateResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -219,7 +219,7 @@ public interface ConfigurationFileType extends FileType {
                   "NewVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=20998")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -227,7 +227,7 @@ public interface ConfigurationFileType extends FileType {
                   "UpdateId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

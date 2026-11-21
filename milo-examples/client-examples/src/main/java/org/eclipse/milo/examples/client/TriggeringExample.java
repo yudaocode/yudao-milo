@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.examples.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.util.Collections;
 import java.util.List;
@@ -30,7 +31,7 @@ import org.slf4j.LoggerFactory;
 public class TriggeringExample implements ClientExample {
 
   public static void main(String[] args) throws Exception {
-    var example = new TriggeringExample();
+    org.eclipse.milo.examples.client.TriggeringExample example = new TriggeringExample();
 
     new ClientExampleRunner(example).run();
   }
@@ -42,7 +43,7 @@ public class TriggeringExample implements ClientExample {
     client.connect();
 
     // create a subscription @ 1000ms
-    var subscription = new OpcUaSubscription(client);
+    org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaSubscription subscription = new OpcUaSubscription(client);
     subscription.create();
 
     // subscribe to a static value that reports
@@ -53,7 +54,7 @@ public class TriggeringExample implements ClientExample {
             null,
             QualifiedName.NULL_VALUE);
 
-    var reportingItem = new OpcUaMonitoredItem(readValueId1);
+    org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaMonitoredItem reportingItem = new OpcUaMonitoredItem(readValueId1);
     subscription.addMonitoredItem(reportingItem);
 
     // subscribe to a dynamic value that only samples
@@ -64,7 +65,7 @@ public class TriggeringExample implements ClientExample {
             null,
             QualifiedName.NULL_VALUE);
 
-    var samplingItem = new OpcUaMonitoredItem(readValueId2, MonitoringMode.Sampling);
+    org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaMonitoredItem samplingItem = new OpcUaMonitoredItem(readValueId2, MonitoringMode.Sampling);
     samplingItem.setDataValueListener(
         (item, value) -> logger.info("sampling item received value: {}", value));
     subscription.addMonitoredItem(samplingItem);
@@ -72,15 +73,15 @@ public class TriggeringExample implements ClientExample {
     subscription.synchronizeMonitoredItems();
 
     client.setTriggering(
-        subscription.getSubscriptionId().orElseThrow(),
-        reportingItem.getMonitoredItemId().orElseThrow(),
-        List.of(samplingItem.getMonitoredItemId().orElseThrow()),
+        subscription.getSubscriptionId().get(),
+        reportingItem.getMonitoredItemId().get(),
+        Java8Collections.listOf(samplingItem.getMonitoredItemId().get()),
         Collections.emptyList());
 
     // trigger reporting of both by writing to the static item and changing its value
     client.writeValues(
-        List.of(new NodeId(2, "HelloWorld/ScalarTypes/Float")),
-        List.of(new DataValue(Variant.ofFloat(1.0f))));
+        Java8Collections.listOf(new NodeId(2, "HelloWorld/ScalarTypes/Float")),
+        Java8Collections.listOf(new DataValue(Variant.ofFloat(1.0f))));
 
     // let the example run for 5 seconds then terminate
     Thread.sleep(5000);

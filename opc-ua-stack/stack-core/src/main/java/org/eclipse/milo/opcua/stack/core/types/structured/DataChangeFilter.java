@@ -91,7 +91,7 @@ public class DataChangeFilter extends MonitoringFilter implements UaStructuredTy
       return false;
     }
     DataChangeFilter that = (DataChangeFilter) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTrigger(), that.getTrigger());
     eqb.append(getDeadbandType(), that.getDeadbandType());
     eqb.append(getDeadbandValue(), that.getDeadbandValue());
@@ -100,7 +100,7 @@ public class DataChangeFilter extends MonitoringFilter implements UaStructuredTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTrigger());
     hcb.append(getDeadbandType());
     hcb.append(getDeadbandValue());
@@ -109,7 +109,7 @@ public class DataChangeFilter extends MonitoringFilter implements UaStructuredTy
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataChangeFilter.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataChangeFilter.class.getSimpleName() + "[", "]");
     joiner.add("trigger=" + getTrigger());
     joiner.add("deadbandType=" + getDeadbandType());
     joiner.add("deadbandValue=" + getDeadbandValue());

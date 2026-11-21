@@ -118,7 +118,8 @@ final class Int64Conversions {
 
   @Nullable
   static Object convert(@Nullable Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof Long l) {
+    if (o instanceof Long) {
+      Long l = (Long) o;
       return implicit ? implicitConversion(l, targetType) : explicitConversion(l, targetType);
     } else {
       return null;

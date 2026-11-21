@@ -86,12 +86,12 @@ public class OpcHttpClientTransport implements OpcClientTransport {
 
   private CompletableFuture<UaResponseMessageType> sendRequestMessage(
       UaRequestMessageType request, Channel channel) {
-    return CompletableFuture.failedFuture(new RuntimeException("TODO")); // TODO
+    return org.eclipse.milo.opcua.stack.core.util.Java8Collections.failedFuture(new RuntimeException("TODO")); // TODO
   }
 
   private synchronized CompletableFuture<Channel> acquireChannel() {
     if (channelPool == null) {
-      return CompletableFuture.failedFuture(new Exception("not connected"));
+      return org.eclipse.milo.opcua.stack.core.util.Java8Collections.failedFuture(new Exception("not connected"));
     }
 
     CompletableFuture<Channel> future = new CompletableFuture<>();

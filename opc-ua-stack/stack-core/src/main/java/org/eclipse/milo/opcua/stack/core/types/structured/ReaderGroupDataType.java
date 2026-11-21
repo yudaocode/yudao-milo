@@ -111,7 +111,7 @@ public class ReaderGroupDataType extends PubSubGroupDataType implements UaStruct
       return false;
     }
     ReaderGroupDataType that = (ReaderGroupDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getTransportSettings(), that.getTransportSettings());
     eqb.append(getMessageSettings(), that.getMessageSettings());
@@ -121,7 +121,7 @@ public class ReaderGroupDataType extends PubSubGroupDataType implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTransportSettings());
     hcb.append(getMessageSettings());
     hcb.append(getDataSetReaders());
@@ -131,7 +131,7 @@ public class ReaderGroupDataType extends PubSubGroupDataType implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReaderGroupDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReaderGroupDataType.class.getSimpleName() + "[", "]");
     joiner.add("transportSettings=" + getTransportSettings());
     joiner.add("messageSettings=" + getMessageSettings());
     joiner.add("dataSetReaders=" + java.util.Arrays.toString(getDataSetReaders()));

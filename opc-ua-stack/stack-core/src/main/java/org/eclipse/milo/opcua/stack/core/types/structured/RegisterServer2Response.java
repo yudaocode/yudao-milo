@@ -96,7 +96,7 @@ public class RegisterServer2Response extends Structure implements UaResponseMess
       return false;
     }
     RegisterServer2Response that = (RegisterServer2Response) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getConfigurationResults(), that.getConfigurationResults());
     eqb.append(getDiagnosticInfos(), that.getDiagnosticInfos());
@@ -105,7 +105,7 @@ public class RegisterServer2Response extends Structure implements UaResponseMess
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getConfigurationResults());
     hcb.append(getDiagnosticInfos());
@@ -114,7 +114,7 @@ public class RegisterServer2Response extends Structure implements UaResponseMess
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RegisterServer2Response.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RegisterServer2Response.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("configurationResults=" + java.util.Arrays.toString(getConfigurationResults()));
     joiner.add("diagnosticInfos=" + java.util.Arrays.toString(getDiagnosticInfos()));

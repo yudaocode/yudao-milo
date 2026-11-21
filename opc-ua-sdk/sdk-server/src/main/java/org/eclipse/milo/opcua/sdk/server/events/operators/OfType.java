@@ -43,7 +43,8 @@ public class OfType implements Operator<Boolean> {
 
     Object value = context.resolve(operands[0], eventNode);
 
-    if (value instanceof NodeId targetTypeDefinitionId) {
+    if (value instanceof NodeId) {
+      NodeId targetTypeDefinitionId = (NodeId) value;
       NodeId eventTypeDefinitionId = eventNode.getTypeDefinitionNode().getNodeId();
 
       return eventTypeDefinitionId.equals(targetTypeDefinitionId)

@@ -26,7 +26,7 @@ import org.eclipse.milo.opcua.stack.core.types.enumerated.TimestampsToReturn;
 public class IJTReadCustomDataTypeExample implements ClientExample {
 
   public static void main(String[] args) throws Exception {
-    var example = new IJTReadCustomDataTypeExample();
+    org.eclipse.milo.examples.client.IJTReadCustomDataTypeExample example = new IJTReadCustomDataTypeExample();
 
     new ClientExampleRunner(example, false).run();
   }
@@ -38,10 +38,12 @@ public class IJTReadCustomDataTypeExample implements ClientExample {
     NodeId nodeId = NodeId.parse("ns=1;s=TighteningSystem/ResultManagement/Results/Result");
     DataValue value = client.readValue(0, TimestampsToReturn.Both, nodeId);
 
-    if (value.getValue().getValue() instanceof ExtensionObject xo) {
+    if (value.getValue().getValue() instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) value.getValue().getValue();
       Object decoded = xo.decode(client.getDynamicEncodingContext());
 
-      if (decoded instanceof DynamicStructType struct) {
+      if (decoded instanceof DynamicStructType) {
+      DynamicStructType struct = (DynamicStructType) decoded;
         System.out.println(struct.toStringPretty());
       }
     }

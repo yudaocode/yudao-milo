@@ -45,12 +45,16 @@ public enum AxisScaleEnumeration implements UaEnumeratedType {
   }
 
   public static @Nullable AxisScaleEnumeration from(int value) {
-    return switch (value) {
-      case 0 -> Linear;
-      case 1 -> Log;
-      case 2 -> Ln;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Linear;
+      case 1:
+        return Log;
+      case 2:
+        return Ln;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

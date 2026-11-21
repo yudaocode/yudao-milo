@@ -72,21 +72,21 @@ public class CloseSecureChannelRequest extends Structure implements UaRequestMes
       return false;
     }
     CloseSecureChannelRequest that = (CloseSecureChannelRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CloseSecureChannelRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CloseSecureChannelRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     return joiner.toString();
   }

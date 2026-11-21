@@ -84,7 +84,7 @@ public class EphemeralKeyType extends Structure implements UaStructuredType {
       return false;
     }
     EphemeralKeyType that = (EphemeralKeyType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getPublicKey(), that.getPublicKey());
     eqb.append(getSignature(), that.getSignature());
     return eqb.build();
@@ -92,7 +92,7 @@ public class EphemeralKeyType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPublicKey());
     hcb.append(getSignature());
     return hcb.build();
@@ -100,7 +100,7 @@ public class EphemeralKeyType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EphemeralKeyType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EphemeralKeyType.class.getSimpleName() + "[", "]");
     joiner.add("publicKey=" + getPublicKey());
     joiner.add("signature=" + getSignature());
     return joiner.toString();

@@ -54,7 +54,7 @@ public abstract class HistoryUpdateDetails extends Structure implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryUpdateDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryUpdateDetails.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

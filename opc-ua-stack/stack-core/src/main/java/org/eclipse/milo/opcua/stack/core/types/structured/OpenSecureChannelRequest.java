@@ -116,7 +116,7 @@ public class OpenSecureChannelRequest extends Structure implements UaRequestMess
       return false;
     }
     OpenSecureChannelRequest that = (OpenSecureChannelRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getClientProtocolVersion(), that.getClientProtocolVersion());
     eqb.append(getRequestType(), that.getRequestType());
@@ -128,7 +128,7 @@ public class OpenSecureChannelRequest extends Structure implements UaRequestMess
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getClientProtocolVersion());
     hcb.append(getRequestType());
@@ -140,7 +140,7 @@ public class OpenSecureChannelRequest extends Structure implements UaRequestMess
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", OpenSecureChannelRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", OpenSecureChannelRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("clientProtocolVersion=" + getClientProtocolVersion());
     joiner.add("requestType=" + getRequestType());

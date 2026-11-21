@@ -26,7 +26,8 @@ final class LocalizedTextConversions {
 
   @Nullable
   static Object convert(@NonNull Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof LocalizedText text) {
+    if (o instanceof LocalizedText) {
+      LocalizedText text = (LocalizedText) o;
       return implicit ? implicitConversion(text, targetType) : explicitConversion(text, targetType);
     } else {
       return null;

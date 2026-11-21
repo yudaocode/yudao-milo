@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.nodes;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.sdk.core.Reference.HAS_COMPONENT_PREDICATE;
 import static org.eclipse.milo.opcua.sdk.core.Reference.HAS_EVENT_SOURCE_PREDICATE;
@@ -237,7 +238,7 @@ public class UaObjectNode extends UaNode implements ObjectNode {
     NodeId nodeId =
         asm.getManagedReferences(typeDefinitionId).stream()
             .filter(HAS_COMPONENT_PREDICATE.or(HAS_ORDERED_COMPONENT_PREDICATE))
-            .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+            .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
             .filter(
                 n -> (n instanceof UaMethodNode) && Objects.equals(n.getBrowseName(), methodName))
             .findFirst()
@@ -248,7 +249,7 @@ public class UaObjectNode extends UaNode implements ObjectNode {
       NodeId parentTypeId =
           asm.getManagedReferences(typeDefinitionId).stream()
               .filter(Reference.SUBTYPE_OF)
-              .flatMap(r -> r.getTargetNodeId().toNodeId(namespaceTable).stream())
+              .flatMap(r -> Java8Collections.optionalStream(r.getTargetNodeId().toNodeId(namespaceTable)))
               .findFirst()
               .orElse(null);
 
@@ -265,21 +266,21 @@ public class UaObjectNode extends UaNode implements ObjectNode {
   public List<UaNode> getComponentNodes() {
     return getReferences().stream()
         .filter(HAS_COMPONENT_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 
   public List<UaNode> getPropertyNodes() {
     return getReferences().stream()
         .filter(HAS_PROPERTY_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 
   public List<UaMethodNode> getMethodNodes() {
     return getReferences().stream()
         .filter(HAS_COMPONENT_PREDICATE.or(HAS_ORDERED_COMPONENT_PREDICATE))
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .filter(n -> (n instanceof UaMethodNode))
         .map(UaMethodNode.class::cast)
         .collect(Collectors.toList());
@@ -299,21 +300,21 @@ public class UaObjectNode extends UaNode implements ObjectNode {
   public List<Node> getEventSourceNodes() {
     return getReferences().stream()
         .filter(HAS_EVENT_SOURCE_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 
   public List<Node> getNotifierNodes() {
     return getReferences().stream()
         .filter(HAS_NOTIFIER_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 
   public List<Node> getOrganizesNodes() {
     return getReferences().stream()
         .filter(ORGANIZES_PREDICATE)
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .collect(Collectors.toList());
   }
 

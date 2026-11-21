@@ -100,7 +100,8 @@ final class SByteConversions {
 
   @Nullable
   static Object convert(@NonNull Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof Byte b) {
+    if (o instanceof Byte) {
+      Byte b = (Byte) o;
       return implicit ? implicitConversion(b, targetType) : explicitConversion(b, targetType);
     } else {
       return null;

@@ -96,7 +96,7 @@ public class EventFilterResult extends MonitoringFilterResult implements UaStruc
       return false;
     }
     EventFilterResult that = (EventFilterResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSelectClauseResults(), that.getSelectClauseResults());
     eqb.append(getSelectClauseDiagnosticInfos(), that.getSelectClauseDiagnosticInfos());
     eqb.append(getWhereClauseResult(), that.getWhereClauseResult());
@@ -105,7 +105,7 @@ public class EventFilterResult extends MonitoringFilterResult implements UaStruc
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSelectClauseResults());
     hcb.append(getSelectClauseDiagnosticInfos());
     hcb.append(getWhereClauseResult());
@@ -114,7 +114,7 @@ public class EventFilterResult extends MonitoringFilterResult implements UaStruc
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EventFilterResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EventFilterResult.class.getSimpleName() + "[", "]");
     joiner.add("selectClauseResults=" + java.util.Arrays.toString(getSelectClauseResults()));
     joiner.add(
         "selectClauseDiagnosticInfos="

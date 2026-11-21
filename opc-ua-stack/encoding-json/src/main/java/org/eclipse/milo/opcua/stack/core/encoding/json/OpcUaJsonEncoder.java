@@ -555,9 +555,10 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
           value = ExpandedNodeId.NULL_VALUE;
         }
 
-        var sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
-        if (value.server() instanceof ServerIndex index) {
+        if (value.server() instanceof ServerIndex) {
+          ServerIndex index = (ServerIndex) value.server();
           if (index.serverIndex().intValue() != 0) {
             String uri = encodingContext.getServerTable().get(index.serverIndex().intValue());
             if (uri != null) {
@@ -568,14 +569,16 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
                   "server index=" + index.serverIndex() + " not found");
             }
           }
-        } else if (value.server() instanceof ServerUri uri) {
+        } else if (value.server() instanceof ServerUri) {
+          ServerUri uri = (ServerUri) value.server();
           UInteger index = encodingContext.getServerTable().getIndex(uri.serverUri());
           if (index == null || index.intValue() != 0) {
             sb.append("svu=").append(uri.serverUri()).append(";");
           }
         }
 
-        if (value.namespace() instanceof NamespaceIndex index) {
+        if (value.namespace() instanceof NamespaceIndex) {
+          NamespaceIndex index = (NamespaceIndex) value.namespace();
           if (index.namespaceIndex().intValue() != 0) {
             String uri = encodingContext.getNamespaceTable().get(index.namespaceIndex().intValue());
             if (uri != null) {
@@ -586,7 +589,8 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
                   "namespace index=" + index.namespaceIndex() + " not found");
             }
           }
-        } else if (value.namespace() instanceof NamespaceUri uri) {
+        } else if (value.namespace() instanceof NamespaceUri) {
+          NamespaceUri uri = (NamespaceUri) value.namespace();
           if (!uri.namespaceUri().equals(Namespaces.OPC_UA)) {
             sb.append("nsu=").append(uri.namespaceUri()).append(";");
           }
@@ -681,7 +685,7 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
         } else {
           String namespaceUri = encodingContext.getNamespaceTable().get(index);
           if (namespaceUri != null) {
-            jsonWriter.value("nsu=%s;%s".formatted(namespaceUri, value.name()));
+            jsonWriter.value(String.format("nsu=%s;%s", namespaceUri, value.name()));
           } else {
             throw new UaSerializationException(
                 StatusCodes.Bad_EncodingError, "namespace index=" + index + " not found");
@@ -751,12 +755,15 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
           jsonWriter.beginObject();
 
           encodeNodeId("UaTypeId", value.getEncodingOrTypeId());
-          if (value instanceof ExtensionObject.Json xo) {
+          if (value instanceof ExtensionObject.Json) {
+      ExtensionObject.Json xo = (ExtensionObject.Json) value;
             jsonWriter.name("UaBody").jsonValue(xo.getBody());
-          } else if (value instanceof ExtensionObject.Binary xo) {
+          } else if (value instanceof ExtensionObject.Binary) {
+      ExtensionObject.Binary xo = (ExtensionObject.Binary) value;
             jsonWriter.name("UaEncoding").value(1);
             encodeByteString("UaBody", xo.getBody());
-          } else if (value instanceof ExtensionObject.Xml xo) {
+          } else if (value instanceof ExtensionObject.Xml) {
+      ExtensionObject.Xml xo = (ExtensionObject.Xml) value;
             jsonWriter.name("UaEncoding").value(2);
             encodeXmlElement("UaBody", xo.getBody());
           }
@@ -867,7 +874,8 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
 
   private void encodeVariantValue(@NonNull Object value) throws IOException {
     Class<?> valueClass;
-    if (value instanceof Matrix m) {
+    if (value instanceof Matrix) {
+      Matrix m = (Matrix) value;
       if (m.getElements() == null) return;
       valueClass = getClass(m.getElements());
     } else {
@@ -918,7 +926,8 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
       jsonWriter.endArray();
 
       jsonWriter.endObject();
-    } else if (value instanceof Matrix m) {
+    } else if (value instanceof Matrix) {
+      Matrix m = (Matrix) value;
       jsonWriter.beginObject();
 
       jsonWriter.name("UaType").value(typeId);
@@ -1462,7 +1471,7 @@ public class OpcUaJsonEncoder implements UaEncoder, AutoCloseable {
             throw new UaSerializationException(StatusCodes.Bad_EncodingError, e);
           }
         } else {
-          OpcUaDataType dataType = value.getDataType().orElseThrow();
+          OpcUaDataType dataType = value.getDataType().get();
 
           int[] dimensions = value.getDimensions();
 

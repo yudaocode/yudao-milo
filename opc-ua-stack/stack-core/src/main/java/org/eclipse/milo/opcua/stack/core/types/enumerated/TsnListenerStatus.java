@@ -51,13 +51,18 @@ public enum TsnListenerStatus implements UaEnumeratedType {
   }
 
   public static @Nullable TsnListenerStatus from(int value) {
-    return switch (value) {
-      case 0 -> None;
-      case 1 -> Ready;
-      case 2 -> PartialFailed;
-      case 3 -> Failed;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return None;
+      case 1:
+        return Ready;
+      case 2:
+        return PartialFailed;
+      case 3:
+        return Failed;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

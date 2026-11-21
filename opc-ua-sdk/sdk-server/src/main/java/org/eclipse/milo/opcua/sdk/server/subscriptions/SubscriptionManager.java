@@ -10,7 +10,11 @@
 
 package org.eclipse.milo.opcua.sdk.server.subscriptions;
 
-import static java.util.Objects.requireNonNullElse;
+import java.util.stream.Collectors;
+
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static java.util.stream.Collectors.toList;
 import static org.eclipse.milo.opcua.sdk.server.servicesets.AbstractServiceSet.createResponseHeader;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
@@ -183,7 +187,7 @@ public class SubscriptionManager {
 
     UInteger subscriptionId = nextSubscriptionId();
 
-    var subscription =
+    org.eclipse.milo.opcua.sdk.server.subscriptions.Subscription subscription =
         new Subscription(
             this,
             subscriptionId,
@@ -205,7 +209,7 @@ public class SubscriptionManager {
 
     ResponseHeader header = createResponseHeader(request);
 
-    var response =
+    org.eclipse.milo.opcua.stack.core.types.structured.CreateSubscriptionResponse response =
         new CreateSubscriptionResponse(
             header,
             subscriptionId,
@@ -229,7 +233,7 @@ public class SubscriptionManager {
 
     ResponseHeader header = createResponseHeader(request);
 
-    var response =
+    org.eclipse.milo.opcua.stack.core.types.structured.ModifySubscriptionResponse response =
         new ModifySubscriptionResponse(
             header,
             subscription.getPublishingInterval(),
@@ -279,7 +283,7 @@ public class SubscriptionManager {
 
     ResponseHeader header = createResponseHeader(request);
 
-    var response = new DeleteSubscriptionsResponse(header, results, new DiagnosticInfo[0]);
+    org.eclipse.milo.opcua.stack.core.types.structured.DeleteSubscriptionsResponse response = new DeleteSubscriptionsResponse(header, results, new DiagnosticInfo[0]);
 
     while (subscriptions.isEmpty() && publishQueue.isNotEmpty()) {
       PendingPublish pending = publishQueue.poll();
@@ -314,7 +318,7 @@ public class SubscriptionManager {
 
     ResponseHeader header = createResponseHeader(request);
 
-    var response = new SetPublishingModeResponse(header, results, new DiagnosticInfo[0]);
+    org.eclipse.milo.opcua.stack.core.types.structured.SetPublishingModeResponse response = new SetPublishingModeResponse(header, results, new DiagnosticInfo[0]);
 
     return CompletableFuture.completedFuture(response);
   }
@@ -342,7 +346,7 @@ public class SubscriptionManager {
             .getAccessController()
             .checkReadAccess(
                 session,
-                itemsToCreate.stream().map(MonitoredItemCreateRequest::getItemToMonitor).toList());
+                itemsToCreate.stream().map(MonitoredItemCreateRequest::getItemToMonitor).collect(Collectors.toList()));
 
     List<MonitoredItemCreateResult> results =
         GroupMapCollate.groupMapCollate(
@@ -350,8 +354,9 @@ public class SubscriptionManager {
             createRequest -> accessResults.get(createRequest.getItemToMonitor()),
             accessResult ->
                 group -> {
-                  if (accessResult instanceof AccessResult.Denied denied) {
-                    var result =
+                  if (accessResult instanceof AccessResult.Denied) {
+      AccessResult.Denied denied = (AccessResult.Denied) accessResult;
+                    org.eclipse.milo.opcua.stack.core.types.structured.MonitoredItemCreateResult result =
                         new MonitoredItemCreateResult(
                             denied.statusCode(), uint(0), 0.0, uint(0), null);
                     return Collections.nCopies(group.size(), result);
@@ -374,8 +379,8 @@ public class SubscriptionManager {
     // Split requests by filter type to enable targeted attribute reading.
     // Only Percent Deadband requests on Value attributes need the expensive TypeDefinition +
     // EURange lookups, since Percent Deadband filtering only applies to Value attributes.
-    var regularRequests = new ArrayList<MonitoredItemCreateRequest>();
-    var percentDeadbandRequests = new ArrayList<MonitoredItemCreateRequest>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.MonitoredItemCreateRequest> regularRequests = new ArrayList<MonitoredItemCreateRequest>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.MonitoredItemCreateRequest> percentDeadbandRequests = new ArrayList<MonitoredItemCreateRequest>();
 
     for (MonitoredItemCreateRequest request : requests) {
       boolean isValueAttribute =
@@ -394,7 +399,7 @@ public class SubscriptionManager {
     } else {
       regularAttributes =
           readMonitoringAttributes(
-              regularRequests.stream().map(r -> r.getItemToMonitor().getNodeId()).toList());
+              regularRequests.stream().map(r -> r.getItemToMonitor().getNodeId()).collect(Collectors.toList()));
     }
 
     Map<NodeId, AttributesResponse> analogItemAttributes;
@@ -403,10 +408,10 @@ public class SubscriptionManager {
     } else {
       analogItemAttributes =
           readAnalogItemAttributes(
-              percentDeadbandRequests.stream().map(r -> r.getItemToMonitor().getNodeId()).toList());
+              percentDeadbandRequests.stream().map(r -> r.getItemToMonitor().getNodeId()).collect(Collectors.toList()));
     }
 
-    var results = new ArrayList<MonitoredItemCreateResult>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.MonitoredItemCreateResult> results = new ArrayList<MonitoredItemCreateResult>();
     List<BaseMonitoredItem<?>> monitoredItems = new ArrayList<>();
 
     long globalMax = server.getConfig().getLimits().getMaxMonitoredItems().longValue();
@@ -449,7 +454,8 @@ public class SubscriptionManager {
         created = true;
       } catch (Exception e) {
         StatusCode statusCode;
-        if (e instanceof UaException ue) {
+        if (e instanceof UaException) {
+      UaException ue = (UaException) e;
           statusCode = ue.getStatusCode();
         } else {
           logger.error("Unexpected error creating MonitoredItem", e);
@@ -484,7 +490,8 @@ public class SubscriptionManager {
       }
 
       Object filterObject = filterXo.decode(server.getStaticEncodingContext());
-      if (filterObject instanceof DataChangeFilter filter) {
+      if (filterObject instanceof DataChangeFilter) {
+      DataChangeFilter filter = (DataChangeFilter) filterObject;
         DeadbandType deadbandType = DeadbandType.from(filter.getDeadbandType().intValue());
         return deadbandType == DeadbandType.Percent;
       }
@@ -666,9 +673,11 @@ public class SubscriptionManager {
         AttributeId.from(request.getItemToMonitor().getAttributeId())
             .orElseThrow(() -> new UaException(StatusCodes.Bad_AttributeIdInvalid));
 
-    if (attributeResponse instanceof NegativeResponse negativeResponse) {
+    if (attributeResponse instanceof NegativeResponse) {
+      NegativeResponse negativeResponse = (NegativeResponse) attributeResponse;
       throw new UaException(negativeResponse.statusCode());
-    } else if (attributeResponse instanceof AnalogItemAttributes analogItemAttributes) {
+    } else if (attributeResponse instanceof AnalogItemAttributes) {
+      AnalogItemAttributes analogItemAttributes = (AnalogItemAttributes) attributeResponse;
       // AnalogItemAttributes should only be received for Value attribute requests.
       // This is guaranteed by the request splitting logic in createMonitoredItems().
       if (attributeId != AttributeId.Value) {
@@ -687,7 +696,8 @@ public class SubscriptionManager {
 
       return createMonitoredDataItem(
           request, subscription, timestamps, attributeId, monitoringAttributes, euRange);
-    } else if (attributeResponse instanceof MonitoringAttributes monitoringAttributes) {
+    } else if (attributeResponse instanceof MonitoringAttributes) {
+      MonitoringAttributes monitoringAttributes = (MonitoringAttributes) attributeResponse;
       if (attributeId == AttributeId.EventNotifier) {
         return createMonitoredEventItem(request, subscription, timestamps, monitoringAttributes);
       } else {
@@ -704,7 +714,8 @@ public class SubscriptionManager {
       throws UaException {
 
     if (filterObject instanceof MonitoringFilter) {
-      if (filterObject instanceof DataChangeFilter filter) {
+      if (filterObject instanceof DataChangeFilter) {
+      DataChangeFilter filter = (DataChangeFilter) filterObject;
         DeadbandType deadbandType = DeadbandType.from(filter.getDeadbandType().intValue());
 
         if (deadbandType == null) {
@@ -855,7 +866,8 @@ public class SubscriptionManager {
 
     MonitoringAttributes monitoringAttributes;
     AttributesResponse response = attributeResponses.get(nodeId);
-    if (response instanceof NegativeResponse negativeResponse) {
+    if (response instanceof NegativeResponse) {
+      NegativeResponse negativeResponse = (NegativeResponse) response;
       throw new UaException(negativeResponse.statusCode());
     } else {
       monitoringAttributes = (MonitoringAttributes) response;
@@ -911,19 +923,22 @@ public class SubscriptionManager {
 
           // If Percent Deadband is requested and the item doesn't have euRange yet, read it from
           // the address space.
-          if (filterObject instanceof DataChangeFilter dataChangeFilter
-              && monitoredItem instanceof MonitoredDataItem dataItem
+          if (filterObject instanceof DataChangeFilter
+              && monitoredItem instanceof MonitoredDataItem
               && attributeId == AttributeId.Value) {
+            DataChangeFilter dataChangeFilter = (DataChangeFilter) filterObject;
+            MonitoredDataItem dataItem = (MonitoredDataItem) monitoredItem;
             DeadbandType deadbandType =
                 DeadbandType.from(dataChangeFilter.getDeadbandType().intValue());
 
             if (deadbandType == DeadbandType.Percent && dataItem.getEuRange() == null) {
               // Read AnalogItemAttributes to get EURange
               Map<NodeId, AttributesResponse> analogAttrs =
-                  readAnalogItemAttributes(List.of(nodeId));
+                  readAnalogItemAttributes(Java8Collections.listOf(nodeId));
               AttributesResponse analogResponse = analogAttrs.get(nodeId);
 
-              if (analogResponse instanceof AnalogItemAttributes analogItemAttributes) {
+              if (analogResponse instanceof AnalogItemAttributes) {
+      AnalogItemAttributes analogItemAttributes = (AnalogItemAttributes) analogResponse;
                 Range euRange = analogItemAttributes.euRange();
                 if (euRange == null) {
                   throw new UaException(
@@ -931,7 +946,8 @@ public class SubscriptionManager {
                       "Percent Deadband requires AnalogItemType with valid EURange property");
                 }
                 dataItem.setEuRange(euRange);
-              } else if (analogResponse instanceof NegativeResponse negResp) {
+              } else if (analogResponse instanceof NegativeResponse) {
+      NegativeResponse negResp = (NegativeResponse) analogResponse;
                 throw new UaException(negResp.statusCode());
               } else {
                 // Node is not AnalogItemType
@@ -1040,14 +1056,14 @@ public class SubscriptionManager {
                 })
             .collect(toList());
 
-    var context = new ReadContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.ReadContext context = new ReadContext(server, session);
 
     List<DataValue> values =
         server
             .getAddressSpaceManager()
             .read(context, 0.0, TimestampsToReturn.Neither, readValueIds);
 
-    var attributesMap = new HashMap<NodeId, AttributesResponse>();
+    java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId,org.eclipse.milo.opcua.sdk.server.subscriptions.SubscriptionManager.AttributesResponse> attributesMap = new HashMap<NodeId, AttributesResponse>();
 
     for (int i = 0; i < values.size(); i += 4) {
       NodeId nodeId = readValueIds.get(i).getNodeId();
@@ -1066,17 +1082,20 @@ public class SubscriptionManager {
         UByte eventNotifier = null;
         Double minimumSamplingInterval = null;
 
-        if (v1 instanceof UByte b) {
+        if (v1 instanceof UByte) {
+      UByte b = (UByte) v1;
           eventNotifier = b;
         }
-        if (v2 instanceof NodeId id) {
+        if (v2 instanceof NodeId) {
+      NodeId id = (NodeId) v2;
           dataType = id;
         }
-        if (v3 instanceof Double d) {
+        if (v3 instanceof Double) {
+      Double d = (Double) v3;
           minimumSamplingInterval = d;
         }
 
-        var attributes =
+        org.eclipse.milo.opcua.sdk.server.subscriptions.SubscriptionManager.MonitoringAttributes attributes =
             new MonitoringAttributes(nodeClass, eventNotifier, dataType, minimumSamplingInterval);
 
         attributesMap.put(nodeId, attributes);
@@ -1099,11 +1118,11 @@ public class SubscriptionManager {
   private Map<NodeId, AttributesResponse> readAnalogItemAttributes(List<NodeId> nodeIds) {
     Map<NodeId, AttributesResponse> basicAttributes = readMonitoringAttributes(nodeIds);
 
-    List<NodeId> distinctNodeIds = nodeIds.stream().distinct().toList();
+    List<NodeId> distinctNodeIds = nodeIds.stream().distinct().collect(Collectors.toList());
     Map<NodeId, NodeId> typeDefinitions = readTypeDefinitions(distinctNodeIds);
 
-    var analogItemNodeIds = new ArrayList<NodeId>();
-    for (var entry : typeDefinitions.entrySet()) {
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId> analogItemNodeIds = new ArrayList<NodeId>();
+    for (java.util.Map.Entry<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId,org.eclipse.milo.opcua.stack.core.types.builtin.NodeId> entry : typeDefinitions.entrySet()) {
       if (isAnalogItemType(entry.getValue())) {
         analogItemNodeIds.add(entry.getKey());
       }
@@ -1111,15 +1130,17 @@ public class SubscriptionManager {
 
     Map<NodeId, Range> euRanges = readEURanges(analogItemNodeIds);
 
-    var result = new HashMap<NodeId, AttributesResponse>();
+    java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId,org.eclipse.milo.opcua.sdk.server.subscriptions.SubscriptionManager.AttributesResponse> result = new HashMap<NodeId, AttributesResponse>();
 
     for (NodeId nodeId : nodeIds) {
       AttributesResponse attrs = basicAttributes.get(nodeId);
       Range euRange = euRanges.get(nodeId);
 
-      if (attrs instanceof MonitoringAttributes monitoringAttrs) {
+      if (attrs instanceof MonitoringAttributes) {
+      MonitoringAttributes monitoringAttrs = (MonitoringAttributes) attrs;
         result.put(nodeId, new AnalogItemAttributes(monitoringAttrs, euRange));
-      } else if (attrs instanceof NegativeResponse negResp) {
+      } else if (attrs instanceof NegativeResponse) {
+      NegativeResponse negResp = (NegativeResponse) attrs;
         result.put(nodeId, negResp);
       }
     }
@@ -1134,7 +1155,7 @@ public class SubscriptionManager {
    * @return map of nodeId to typeDefinitionId (null if not found).
    */
   private Map<NodeId, NodeId> readTypeDefinitions(List<NodeId> nodeIds) {
-    var browseDescriptions =
+    org.eclipse.milo.opcua.stack.core.types.structured.BrowseDescription[] browseDescriptions =
         nodeIds.stream()
             .map(
                 nodeId ->
@@ -1147,7 +1168,7 @@ public class SubscriptionManager {
                         uint(BrowseResultMask.None.getValue())))
             .toArray(BrowseDescription[]::new);
 
-    var browseRequest =
+    org.eclipse.milo.opcua.stack.core.types.structured.BrowseRequest browseRequest =
         new BrowseRequest(
             new RequestHeader(
                 NodeId.NULL_VALUE, DateTime.now(), uint(0), uint(0), null, uint(0), null),
@@ -1158,7 +1179,7 @@ public class SubscriptionManager {
     List<BrowseResult> results =
         BrowseHelper.browse(server, () -> Optional.of(session), browseRequest);
 
-    var typeDefinitions = new HashMap<NodeId, NodeId>();
+    java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId,org.eclipse.milo.opcua.stack.core.types.builtin.NodeId> typeDefinitions = new HashMap<NodeId, NodeId>();
 
     for (int i = 0; i < results.size(); i++) {
       BrowseResult result = results.get(i);
@@ -1200,10 +1221,10 @@ public class SubscriptionManager {
       return Collections.emptyMap();
     }
 
-    var browsePaths =
+    org.eclipse.milo.opcua.stack.core.types.structured.BrowsePath[] browsePaths =
         analogItemNodeIds.stream().map(this::createEURangeBrowsePath).toArray(BrowsePath[]::new);
 
-    var request =
+    org.eclipse.milo.opcua.stack.core.types.structured.TranslateBrowsePathsToNodeIdsRequest request =
         new TranslateBrowsePathsToNodeIdsRequest(
             new RequestHeader(
                 NodeId.NULL_VALUE, DateTime.now(), uint(0), uint(0), null, uint(0), null),
@@ -1211,15 +1232,15 @@ public class SubscriptionManager {
 
     TranslateBrowsePathsToNodeIdsResponse response;
     try {
-      var helper = new BrowsePathsHelper(() -> Optional.of(session), server);
+      org.eclipse.milo.opcua.sdk.server.servicesets.impl.helpers.BrowsePathsHelper helper = new BrowsePathsHelper(() -> Optional.of(session), server);
       response = helper.translateBrowsePaths(request);
     } catch (UaException e) {
       logger.warn("Failed to translate EURange browse paths", e);
       return Collections.emptyMap();
     }
 
-    var euRangeNodeIds = new ArrayList<NodeId>();
-    var nodeIdMapping = new HashMap<Integer, NodeId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId> euRangeNodeIds = new ArrayList<NodeId>();
+    java.util.HashMap<java.lang.Integer,org.eclipse.milo.opcua.stack.core.types.builtin.NodeId> nodeIdMapping = new HashMap<Integer, NodeId>();
 
     for (int i = 0; i < Objects.requireNonNull(response.getResults()).length; i++) {
       BrowsePathResult result = response.getResults()[i];
@@ -1241,20 +1262,21 @@ public class SubscriptionManager {
     List<ReadValueId> readValueIds =
         euRangeNodeIds.stream()
             .map(id -> new ReadValueId(id, AttributeId.Value.uid(), null, QualifiedName.NULL_VALUE))
-            .toList();
+            .collect(Collectors.toList());
 
-    var context = new ReadContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.ReadContext context = new ReadContext(server, session);
     List<DataValue> values =
         server
             .getAddressSpaceManager()
             .read(context, 0.0, TimestampsToReturn.Neither, readValueIds);
 
-    var euRanges = new HashMap<NodeId, Range>();
+    java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId,org.eclipse.milo.opcua.stack.core.types.structured.Range> euRanges = new HashMap<NodeId, Range>();
     for (int i = 0; i < values.size(); i++) {
       DataValue value = values.get(i);
       if (value.getStatusCode().isGood() && value.getValue().isNotNull()) {
         Object rangeObj = value.getValue().getValue();
-        if (rangeObj instanceof Range range) {
+        if (rangeObj instanceof Range) {
+      Range range = (Range) rangeObj;
           NodeId originalNodeId = nodeIdMapping.get(i);
           euRanges.put(originalNodeId, range);
         }
@@ -1265,7 +1287,7 @@ public class SubscriptionManager {
   }
 
   private BrowsePath createEURangeBrowsePath(NodeId startNodeId) {
-    var element = new RelativePathElement(NodeIds.HasProperty, false, true, EU_RANGE_BROWSE_NAME);
+    org.eclipse.milo.opcua.stack.core.types.structured.RelativePathElement element = new RelativePathElement(NodeIds.HasProperty, false, true, EU_RANGE_BROWSE_NAME);
 
     return new BrowsePath(startNodeId, new RelativePath(new RelativePathElement[] {element}));
   }
@@ -1284,8 +1306,8 @@ public class SubscriptionManager {
       return failedUaFuture(StatusCodes.Bad_NothingToDo);
     }
 
-    var deleteResults = new StatusCode[itemsToDelete.length];
-    var deletedItems = new ArrayList<BaseMonitoredItem<?>>(itemsToDelete.length);
+    org.eclipse.milo.opcua.stack.core.types.builtin.StatusCode[] deleteResults = new StatusCode[itemsToDelete.length];
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.server.items.BaseMonitoredItem<?>> deletedItems = new ArrayList<BaseMonitoredItem<?>>(itemsToDelete.length);
     Set<UInteger> deletedItemIds = new HashSet<>();
 
     synchronized (subscription) {
@@ -1325,7 +1347,7 @@ public class SubscriptionManager {
 
     ResponseHeader header = createResponseHeader(request);
 
-    var response = new DeleteMonitoredItemsResponse(header, deleteResults, new DiagnosticInfo[0]);
+    org.eclipse.milo.opcua.stack.core.types.structured.DeleteMonitoredItemsResponse response = new DeleteMonitoredItemsResponse(header, deleteResults, new DiagnosticInfo[0]);
 
     return CompletableFuture.completedFuture(response);
   }
@@ -1349,8 +1371,8 @@ public class SubscriptionManager {
      */
 
     MonitoringMode monitoringMode = request.getMonitoringMode();
-    var results = new StatusCode[itemsToModify.length];
-    var modified = new ArrayList<MonitoredItem>(itemsToModify.length);
+    org.eclipse.milo.opcua.stack.core.types.builtin.StatusCode[] results = new StatusCode[itemsToModify.length];
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.server.items.MonitoredItem> modified = new ArrayList<MonitoredItem>(itemsToModify.length);
 
     for (int i = 0; i < itemsToModify.length; i++) {
       UInteger itemId = itemsToModify[i];
@@ -1379,7 +1401,7 @@ public class SubscriptionManager {
 
     ResponseHeader header = createResponseHeader(request);
 
-    var response = new SetMonitoringModeResponse(header, results, new DiagnosticInfo[0]);
+    org.eclipse.milo.opcua.stack.core.types.structured.SetMonitoringModeResponse response = new SetMonitoringModeResponse(header, results, new DiagnosticInfo[0]);
 
     return CompletableFuture.completedFuture(response);
   }
@@ -1460,7 +1482,7 @@ public class SubscriptionManager {
     }
 
     ResponseHeader header = createResponseHeader(request);
-    var response = new RepublishResponse(header, notificationMessage);
+    org.eclipse.milo.opcua.stack.core.types.structured.RepublishResponse response = new RepublishResponse(header, notificationMessage);
 
     return CompletableFuture.completedFuture(response);
   }
@@ -1526,7 +1548,7 @@ public class SubscriptionManager {
               .toArray(StatusCode[]::new);
     }
 
-    var response =
+    org.eclipse.milo.opcua.stack.core.types.structured.SetTriggeringResponse response =
         new SetTriggeringResponse(
             createResponseHeader(request),
             addResults,
@@ -1670,8 +1692,8 @@ public class SubscriptionManager {
       Consumer<List<DataItem>> dataItemConsumer,
       Consumer<List<EventItem>> eventItemConsumer) {
 
-    var dataItems = new ArrayList<DataItem>();
-    var eventItems = new ArrayList<EventItem>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.server.items.DataItem> dataItems = new ArrayList<DataItem>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.server.items.EventItem> eventItems = new ArrayList<EventItem>();
 
     for (BaseMonitoredItem<?> item : monitoredItems) {
       if (item instanceof MonitoredDataItem) {
@@ -1703,7 +1725,7 @@ public class SubscriptionManager {
   /**
    * Response from bulk attribute reads for monitored item creation.
    *
-   * <p>This sealed interface represents the results of bulk attribute reads during monitored item
+   * <p>This interface represents the results of bulk attribute reads during monitored item
    * creation. The response type determines which specialized creation method is invoked:
    *
    * <ul>
@@ -1712,7 +1734,7 @@ public class SubscriptionManager {
    *   <li>{@link NegativeResponse} → attribute read failures
    * </ul>
    *
-   * <p>This sealed interface provides type-safe responses that flow through the monitored item
+   * <p>This interface provides type-safe responses that flow through the monitored item
    * creation process. Pattern matching on this type in {@link #createMonitoredItem} determines
    * which specialized creation method to invoke.
    *
@@ -1720,8 +1742,7 @@ public class SubscriptionManager {
    * attribute reads (TypeDefinition + EURange) are only performed for Value attributes with Percent
    * Deadband filters, optimizing the common case where Percent Deadband isn't used.
    */
-  sealed interface AttributesResponse
-      permits MonitoringAttributes, AnalogItemAttributes, NegativeResponse {}
+  interface AttributesResponse {}
 
   /**
    * Standard monitoring attributes read from the address space.
@@ -1738,12 +1759,35 @@ public class SubscriptionManager {
    *   <li>All non-Value attributes
    * </ul>
    */
-  private record MonitoringAttributes(
-      @Nullable NodeClass nodeClass,
-      @Nullable UByte eventNotifier,
-      @Nullable NodeId dataType,
-      @Nullable Double minimumSamplingInterval)
-      implements AttributesResponse {}
+  private static final class MonitoringAttributes implements AttributesResponse {
+    private final @Nullable NodeClass nodeClass;
+    private final @Nullable UByte eventNotifier;
+    private final @Nullable NodeId dataType;
+    private final @Nullable Double minimumSamplingInterval;
+
+    public @Nullable NodeClass nodeClass() {
+      return nodeClass;
+    }
+
+    public @Nullable UByte eventNotifier() {
+      return eventNotifier;
+    }
+
+    public @Nullable NodeId dataType() {
+      return dataType;
+    }
+
+    public @Nullable Double minimumSamplingInterval() {
+      return minimumSamplingInterval;
+    }
+
+    MonitoringAttributes(@Nullable NodeClass nodeClass, @Nullable UByte eventNotifier, @Nullable NodeId dataType, @Nullable Double minimumSamplingInterval) {
+      this.nodeClass = nodeClass;
+      this.eventNotifier = eventNotifier;
+      this.dataType = dataType;
+      this.minimumSamplingInterval = minimumSamplingInterval;
+    }
+}
 
   /**
    * Extended monitoring attributes for AnalogItemType nodes with Percent Deadband filtering.
@@ -1763,9 +1807,23 @@ public class SubscriptionManager {
    * <p>A {@code null} euRange with Percent Deadband will cause {@link #createMonitoredItem} to
    * throw {@link UaException} with {@code Bad_MonitoredItemFilterUnsupported}.
    */
-  private record AnalogItemAttributes(
-      MonitoringAttributes monitoringAttributes, @Nullable Range euRange)
-      implements AttributesResponse {}
+  private static final class AnalogItemAttributes implements AttributesResponse {
+    private final MonitoringAttributes monitoringAttributes;
+    private final @Nullable Range euRange;
+
+    public MonitoringAttributes monitoringAttributes() {
+      return monitoringAttributes;
+    }
+
+    public @Nullable Range euRange() {
+      return euRange;
+    }
+
+    AnalogItemAttributes(MonitoringAttributes monitoringAttributes, @Nullable Range euRange) {
+      this.monitoringAttributes = monitoringAttributes;
+      this.euRange = euRange;
+    }
+}
 
   /**
    * Error response when attribute reads fail.
@@ -1774,5 +1832,15 @@ public class SubscriptionManager {
    * that caused the failure. When received by {@link #createMonitoredItem}, immediately throws
    * {@link UaException} with this status code.
    */
-  private record NegativeResponse(StatusCode statusCode) implements AttributesResponse {}
+  private static final class NegativeResponse implements AttributesResponse {
+    private final StatusCode statusCode;
+
+    public StatusCode statusCode() {
+      return statusCode;
+    }
+
+    NegativeResponse(StatusCode statusCode) {
+      this.statusCode = statusCode;
+    }
+}
 }

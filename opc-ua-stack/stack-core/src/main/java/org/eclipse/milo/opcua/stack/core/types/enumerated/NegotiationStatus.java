@@ -60,14 +60,20 @@ public enum NegotiationStatus implements UaEnumeratedType {
   }
 
   public static @Nullable NegotiationStatus from(int value) {
-    return switch (value) {
-      case 0 -> InProgress;
-      case 1 -> Complete;
-      case 2 -> Failed;
-      case 3 -> Unknown;
-      case 4 -> NoNegotiation;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return InProgress;
+      case 1:
+        return Complete;
+      case 2:
+        return Failed;
+      case 3:
+        return Unknown;
+      case 4:
+        return NoNegotiation;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

@@ -95,7 +95,7 @@ public class ChannelSecurityToken extends Structure implements UaStructuredType 
       return false;
     }
     ChannelSecurityToken that = (ChannelSecurityToken) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getChannelId(), that.getChannelId());
     eqb.append(getTokenId(), that.getTokenId());
     eqb.append(getCreatedAt(), that.getCreatedAt());
@@ -105,7 +105,7 @@ public class ChannelSecurityToken extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getChannelId());
     hcb.append(getTokenId());
     hcb.append(getCreatedAt());
@@ -115,7 +115,7 @@ public class ChannelSecurityToken extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ChannelSecurityToken.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ChannelSecurityToken.class.getSimpleName() + "[", "]");
     joiner.add("channelId=" + getChannelId());
     joiner.add("tokenId=" + getTokenId());
     joiner.add("createdAt=" + getCreatedAt());

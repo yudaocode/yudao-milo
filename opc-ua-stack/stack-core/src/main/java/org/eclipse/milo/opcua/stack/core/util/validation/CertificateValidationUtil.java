@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.util.validation;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import com.google.common.base.Preconditions;
 import java.io.IOException;
@@ -205,7 +206,7 @@ public class CertificateValidationUtil {
       try {
         CertPathValidator certPathValidator = CertPathValidator.getInstance("PKIX", "SUN");
 
-        PKIXParameters parameters = new PKIXParameters(Set.of(trustAnchor));
+        PKIXParameters parameters = new PKIXParameters(Java8Collections.setOf(trustAnchor));
 
         parameters.addCertPathChecker(
             new OpcUaCertificateUsageChecker(certPath, validationChecks, endEntityIsClient));
@@ -238,7 +239,7 @@ public class CertificateValidationUtil {
                 (PKIXRevocationChecker) certPathValidator.getRevocationChecker();
 
             pkixRevocationChecker.setOptions(
-                Set.of(
+                Java8Collections.setOf(
                     PKIXRevocationChecker.Option.NO_FALLBACK,
                     PKIXRevocationChecker.Option.PREFER_CRLS,
                     PKIXRevocationChecker.Option.SOFT_FAIL));
@@ -366,7 +367,7 @@ public class CertificateValidationUtil {
       PKIXBuilderParameters builderParams = new PKIXBuilderParameters(trustAnchors, selector);
 
       // Add a CertStore containing potential intermediate certs
-      var intermediates = new ArrayList<>(certificateChain.subList(1, certificateChain.size()));
+      java.util.ArrayList<java.security.cert.X509Certificate> intermediates = new ArrayList<>(certificateChain.subList(1, certificateChain.size()));
 
       for (X509Certificate c : trustedCertificates) {
         if (certificateIsCa(c) && !certificateIsSelfSigned(c)) {
@@ -508,7 +509,7 @@ public class CertificateValidationUtil {
                         certificate,
                         SUBJECT_ALT_NAME_DNS_NAME,
                         fieldValue ->
-                            (fieldValue instanceof String dnsName) && dnsName.equalsIgnoreCase(n));
+                            (fieldValue instanceof String) && ((String) fieldValue).equalsIgnoreCase(n));
                   } catch (Throwable t) {
                     return false;
                   }
@@ -529,8 +530,8 @@ public class CertificateValidationUtil {
                         certificate,
                         SUBJECT_ALT_NAME_IP_ADDRESS,
                         fieldValue ->
-                            (fieldValue instanceof String s)
-                                && Arrays.equals(address, parseIpAddress(s)));
+                            (fieldValue instanceof String)
+                                && Arrays.equals(address, parseIpAddress((String) fieldValue)));
                   } catch (Throwable t) {
                     return false;
                   }

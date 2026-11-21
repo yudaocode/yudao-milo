@@ -47,7 +47,7 @@ public class Like implements Operator<Boolean> {
    */
   private final Map<String, Object[]> patternCache =
       Collections.synchronizedMap(
-          new LinkedHashMap<>(16, 0.75f, true) {
+          new LinkedHashMap<String, Object[]>(16, 0.75f, true) {
             @Override
             protected boolean removeEldestEntry(Map.Entry<String, Object[]> eldest) {
               return size() > MAX_CACHED_PATTERNS;
@@ -110,12 +110,13 @@ public class Like implements Operator<Boolean> {
   private static String asString(@Nullable Object value) {
     value = OperatorUtil.toScalarIfSingleElementArray(value);
 
-    if (value instanceof String s) {
+    if (value instanceof String) {
+      String s = (String) value;
       return s;
     } else if (value != null) {
       Object converted = ImplicitConversions.convert(value, OpcUaDataType.String);
 
-      return converted instanceof String s ? s : null;
+      return converted instanceof String ? (String) converted : null;
     } else {
       return null;
     }
@@ -137,7 +138,7 @@ public class Like implements Operator<Boolean> {
     int starText = -1; // text index captured when that STAR was entered
 
     while (s < n) {
-      if (t < m && tokens[t] instanceof CharMatcher matcher && matcher.matches(text.charAt(s))) {
+      if (t < m && tokens[t] instanceof CharMatcher && ((CharMatcher) tokens[t]).matches(text.charAt(s))) {
         s++;
         t++;
       } else if (t < m && tokens[t] == STAR) {
@@ -172,22 +173,25 @@ public class Like implements Operator<Boolean> {
       char c = pattern.charAt(i);
 
       switch (c) {
-        case '%' -> {
+        case '%': {
           // Consecutive '%' are semantically identical to a single one; collapse them.
           if (tokens.isEmpty() || tokens.get(tokens.size() - 1) != STAR) {
             tokens.add(STAR);
           }
         }
-        case '_' -> tokens.add((CharMatcher) ch -> true);
-        case '\\' -> {
+        case '_': tokens.add((CharMatcher) ch -> true);
+        case '\\': {
           if (++i >= pattern.length()) {
             throw new IllegalArgumentException("trailing escape");
           }
           char literal = pattern.charAt(i);
           tokens.add((CharMatcher) ch -> ch == literal);
         }
-        case '[' -> i = parseCharacterClass(pattern, i, tokens);
-        default -> tokens.add((CharMatcher) ch -> ch == c);
+        case '[':
+          i = parseCharacterClass(pattern, i, tokens);
+          break;
+        default:
+          tokens.add((CharMatcher) ch -> ch == c);
       }
     }
 

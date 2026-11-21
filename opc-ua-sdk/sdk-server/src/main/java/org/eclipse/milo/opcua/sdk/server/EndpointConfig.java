@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import java.security.cert.X509Certificate;
@@ -56,7 +58,7 @@ public class EndpointConfig {
     this.certificateSupplier = certificateSupplier;
     this.securityPolicy = securityPolicy;
     this.securityMode = securityMode;
-    this.tokenPolicies = List.copyOf(tokenPolicies);
+    this.tokenPolicies = Java8Collections.listCopyOf(tokenPolicies);
 
     validateTokenPolicies();
   }

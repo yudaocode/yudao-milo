@@ -79,7 +79,8 @@ public class OpcUaDefaultBinaryEncoding implements DataTypeEncoding {
 
   @Override
   public UaStructuredType decode(EncodingContext context, ExtensionObject encoded) {
-    if (encoded instanceof ExtensionObject.Binary xo) {
+    if (encoded instanceof ExtensionObject.Binary) {
+      ExtensionObject.Binary xo = (ExtensionObject.Binary) encoded;
       DataTypeCodec codec = context.getDataTypeManager().getCodec(encoded.getEncodingOrTypeId());
 
       if (codec == null) {

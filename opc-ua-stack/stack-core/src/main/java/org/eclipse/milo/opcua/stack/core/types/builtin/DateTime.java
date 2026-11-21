@@ -16,7 +16,17 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Objects;
 
-public record DateTime(long utcTime) {
+public final class DateTime {
+  private final long utcTime;
+
+  public long utcTime() {
+    return utcTime;
+  }
+
+  public DateTime(long utcTime) {
+    this.utcTime = utcTime;
+  }
+
 
   /** Minimum ISO-8601 formatted string. */
   public static final String MIN_ISO_8601_STRING = "0001-01-01T00:00:00Z";

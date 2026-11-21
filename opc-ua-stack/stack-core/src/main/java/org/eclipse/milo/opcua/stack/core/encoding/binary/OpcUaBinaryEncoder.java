@@ -391,17 +391,21 @@ public class OpcUaBinaryEncoder implements UaEncoder {
     int namespaceIndex = 0;
     String namespaceUri = null;
     NamespaceReference namespace = value.namespace();
-    if (namespace instanceof NamespaceUri uri) {
+    if (namespace instanceof NamespaceUri) {
+      NamespaceUri uri = (NamespaceUri) namespace;
       namespaceUri = uri.namespaceUri();
-    } else if (value.namespace() instanceof NamespaceIndex index) {
+    } else if (value.namespace() instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) value.namespace();
       namespaceIndex = index.namespaceIndex().intValue();
     }
 
     UInteger serverIndex = UInteger.MIN;
     ServerReference server = value.server();
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       serverIndex = index.serverIndex();
-    } else if (server instanceof ServerUri uri) {
+    } else if (server instanceof ServerUri) {
+      ServerUri uri = (ServerUri) server;
       serverIndex = context.getServerTable().getIndex(uri.serverUri());
       if (serverIndex == null) {
         throw new UaSerializationException(
@@ -474,15 +478,18 @@ public class OpcUaBinaryEncoder implements UaEncoder {
       encodeNodeId(NodeId.NULL_VALUE);
       buffer.writeByte(0); // No body is encoded
     } else {
-      if (value instanceof ExtensionObject.Binary xo) {
+      if (value instanceof ExtensionObject.Binary) {
+      ExtensionObject.Binary xo = (ExtensionObject.Binary) value;
         encodeNodeId(xo.getEncodingOrTypeId());
         buffer.writeByte(1); // Body is binary encoded
         encodeByteString(xo.getBody());
-      } else if (value instanceof ExtensionObject.Xml xo) {
+      } else if (value instanceof ExtensionObject.Xml) {
+      ExtensionObject.Xml xo = (ExtensionObject.Xml) value;
         encodeNodeId(xo.getEncodingOrTypeId());
         buffer.writeByte(2);
         encodeXmlElement(xo.getBody());
-      } else if (value instanceof ExtensionObject.Json xo) {
+      } else if (value instanceof ExtensionObject.Json) {
+      ExtensionObject.Json xo = (ExtensionObject.Json) value;
         encodeNodeId(xo.getEncodingOrTypeId());
         buffer.writeByte(1);
         encodeByteString(ByteString.of(xo.getBody().getBytes(StandardCharsets.UTF_8)));
@@ -599,7 +606,8 @@ public class OpcUaBinaryEncoder implements UaEncoder {
       boolean optionSet = false;
       Class<?> valueClass;
 
-      if (value instanceof Matrix matrix) {
+      if (value instanceof Matrix) {
+      Matrix matrix = (Matrix) value;
         Object elements = matrix.getElements();
         if (elements == null) {
           buffer.writeByte(0);
@@ -817,135 +825,142 @@ public class OpcUaBinaryEncoder implements UaEncoder {
       throws UaSerializationException {
 
     switch (typeId) {
-      case 1 -> {
-        if (array instanceof boolean[] values) {
+      case 1: {
+        if (array instanceof boolean[]) {
+      boolean[] values = (boolean[]) array;
           for (int i = 0; i < length; i++) buffer.writeBoolean(values[i]);
         } else {
           Boolean[] values = (Boolean[]) array;
           for (int i = 0; i < length; i++) encodeBoolean(values[i]);
         }
       }
-      case 2 -> {
-        if (array instanceof byte[] values) {
+      case 2: {
+        if (array instanceof byte[]) {
+      byte[] values = (byte[]) array;
           for (int i = 0; i < length; i++) buffer.writeByte(values[i]);
         } else {
           Byte[] values = (Byte[]) array;
           for (int i = 0; i < length; i++) encodeSByte(values[i]);
         }
       }
-      case 3 -> {
+      case 3: {
         UByte[] values = (UByte[]) array;
         for (int i = 0; i < length; i++) encodeByte(values[i]);
       }
-      case 4 -> {
-        if (array instanceof short[] values) {
+      case 4: {
+        if (array instanceof short[]) {
+      short[] values = (short[]) array;
           for (int i = 0; i < length; i++) buffer.writeShortLE(values[i]);
         } else {
           Short[] values = (Short[]) array;
           for (int i = 0; i < length; i++) encodeInt16(values[i]);
         }
       }
-      case 5 -> {
+      case 5: {
         UShort[] values = (UShort[]) array;
         for (int i = 0; i < length; i++) encodeUInt16(values[i]);
       }
-      case 6 -> {
-        if (array instanceof int[] values) {
+      case 6: {
+        if (array instanceof int[]) {
+      int[] values = (int[]) array;
           for (int i = 0; i < length; i++) buffer.writeIntLE(values[i]);
         } else {
           Integer[] values = (Integer[]) array;
           for (int i = 0; i < length; i++) encodeInt32(values[i]);
         }
       }
-      case 7 -> {
+      case 7: {
         UInteger[] values = (UInteger[]) array;
         for (int i = 0; i < length; i++) encodeUInt32(values[i]);
       }
-      case 8 -> {
-        if (array instanceof long[] values) {
+      case 8: {
+        if (array instanceof long[]) {
+      long[] values = (long[]) array;
           for (int i = 0; i < length; i++) buffer.writeLongLE(values[i]);
         } else {
           Long[] values = (Long[]) array;
           for (int i = 0; i < length; i++) encodeInt64(values[i]);
         }
       }
-      case 9 -> {
+      case 9: {
         ULong[] values = (ULong[]) array;
         for (int i = 0; i < length; i++) encodeUInt64(values[i]);
       }
-      case 10 -> {
-        if (array instanceof float[] values) {
+      case 10: {
+        if (array instanceof float[]) {
+      float[] values = (float[]) array;
           for (int i = 0; i < length; i++) buffer.writeFloatLE(values[i]);
         } else {
           Float[] values = (Float[]) array;
           for (int i = 0; i < length; i++) encodeFloat(values[i]);
         }
       }
-      case 11 -> {
-        if (array instanceof double[] values) {
+      case 11: {
+        if (array instanceof double[]) {
+      double[] values = (double[]) array;
           for (int i = 0; i < length; i++) buffer.writeDoubleLE(values[i]);
         } else {
           Double[] values = (Double[]) array;
           for (int i = 0; i < length; i++) encodeDouble(values[i]);
         }
       }
-      case 12 -> {
+      case 12: {
         String[] values = (String[]) array;
         for (int i = 0; i < length; i++) encodeString(values[i]);
       }
-      case 13 -> {
+      case 13: {
         DateTime[] values = (DateTime[]) array;
         for (int i = 0; i < length; i++) encodeDateTime(values[i]);
       }
-      case 14 -> {
+      case 14: {
         UUID[] values = (UUID[]) array;
         for (int i = 0; i < length; i++) encodeGuid(values[i]);
       }
-      case 15 -> {
+      case 15: {
         ByteString[] values = (ByteString[]) array;
         for (int i = 0; i < length; i++) encodeByteString(values[i]);
       }
-      case 16 -> {
+      case 16: {
         XmlElement[] values = (XmlElement[]) array;
         for (int i = 0; i < length; i++) encodeXmlElement(values[i]);
       }
-      case 17 -> {
+      case 17: {
         NodeId[] values = (NodeId[]) array;
         for (int i = 0; i < length; i++) encodeNodeId(values[i]);
       }
-      case 18 -> {
+      case 18: {
         ExpandedNodeId[] values = (ExpandedNodeId[]) array;
         for (int i = 0; i < length; i++) encodeExpandedNodeId(values[i]);
       }
-      case 19 -> {
+      case 19: {
         StatusCode[] values = (StatusCode[]) array;
         for (int i = 0; i < length; i++) encodeStatusCode(values[i]);
       }
-      case 20 -> {
+      case 20: {
         QualifiedName[] values = (QualifiedName[]) array;
         for (int i = 0; i < length; i++) encodeQualifiedName(values[i]);
       }
-      case 21 -> {
+      case 21: {
         LocalizedText[] values = (LocalizedText[]) array;
         for (int i = 0; i < length; i++) encodeLocalizedText(values[i]);
       }
-      case 22 -> {
+      case 22: {
         ExtensionObject[] values = (ExtensionObject[]) array;
         for (int i = 0; i < length; i++) encodeExtensionObject(values[i]);
       }
-      case 23 -> {
+      case 23: {
         DataValue[] values = (DataValue[]) array;
         for (int i = 0; i < length; i++) encodeDataValue(values[i]);
       }
-      case 24 -> {
+      case 24: {
         Variant[] values = (Variant[]) array;
         for (int i = 0; i < length; i++) encodeVariant(values[i]);
       }
-      case 25 -> {
+      case 25: {
         DiagnosticInfo[] values = (DiagnosticInfo[]) array;
         for (int i = 0; i < length; i++) encodeDiagnosticInfo(values[i]);
       }
-      default ->
+      default:
           throw new UaSerializationException(
               StatusCodes.Bad_EncodingError, "unknown builtin type: " + typeId);
     }
@@ -1404,7 +1419,7 @@ public class OpcUaBinaryEncoder implements UaEncoder {
       assert length == Arrays.stream(dimensions).reduce(1, (left, right) -> left * right);
 
       int typeId =
-          value.getDataType().orElseThrow().getTypeId(); // won't throw, we checked for null
+          value.getDataType().get().getTypeId(); // won't throw, we checked for null
 
       if (isPlainBuiltinArray(typeId, elements)) {
         encodeBuiltinTypeArray(typeId, elements, length);

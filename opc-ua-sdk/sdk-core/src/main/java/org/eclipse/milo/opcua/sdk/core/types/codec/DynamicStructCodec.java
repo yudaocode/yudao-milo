@@ -11,7 +11,6 @@
 package org.eclipse.milo.opcua.sdk.core.types.codec;
 
 import static java.util.Objects.requireNonNull;
-import static java.util.Objects.requireNonNullElse;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -55,12 +54,16 @@ public class DynamicStructCodec extends GenericDataTypeCodec<DynamicStructType> 
   public DynamicStructType decodeType(EncodingContext context, UaDecoder decoder)
       throws UaSerializationException {
 
-    return switch (definition.getStructureType()) {
-      case Structure, StructureWithOptionalFields, StructureWithSubtypedValues ->
-          decodeStruct(decoder);
-      default ->
-          throw new IllegalArgumentException("StructureType: " + definition.getStructureType());
-    };
+    switch ((definition.getStructureType())) {
+      case Structure:
+
+      case StructureWithOptionalFields:
+
+      case StructureWithSubtypedValues:
+        return decodeStruct(decoder);
+      default:
+        throw new IllegalArgumentException("StructureType: " + definition.getStructureType());
+    }
   }
 
   @Override
@@ -68,9 +71,11 @@ public class DynamicStructCodec extends GenericDataTypeCodec<DynamicStructType> 
       throws UaSerializationException {
 
     switch (definition.getStructureType()) {
-      case Structure, StructureWithOptionalFields, StructureWithSubtypedValues ->
-          encodeStruct(encoder, value);
-      default ->
+      case Structure:
+case StructureWithOptionalFields:
+case StructureWithSubtypedValues:
+encodeStruct(encoder, value);
+      default:
           throw new IllegalArgumentException("StructureType: " + definition.getStructureType());
     }
   }
@@ -83,7 +88,7 @@ public class DynamicStructCodec extends GenericDataTypeCodec<DynamicStructType> 
       encodingMask = decoder.decodeUInt32("EncodingMask").longValue();
     }
 
-    StructureField[] fields = requireNonNullElse(definition.getFields(), new StructureField[0]);
+    StructureField[] fields = definition.getFields() != null ? definition.getFields() : new StructureField[0];
 
     if (definition.getStructureType() == StructureType.StructureWithOptionalFields) {
       int optionalFieldIndex = 0;
@@ -106,9 +111,9 @@ public class DynamicStructCodec extends GenericDataTypeCodec<DynamicStructType> 
   }
 
   private void encodeStruct(UaEncoder encoder, DynamicStructType struct) {
-    StructureField[] fields = requireNonNullElse(definition.getFields(), new StructureField[0]);
+    StructureField[] fields = definition.getFields() != null ? definition.getFields() : new StructureField[0];
 
-    var encodingMask = 0L;
+    long encodingMask = 0L;
     if (definition.getStructureType() == StructureType.StructureWithOptionalFields) {
       int optionalFieldIndex = 0;
       for (StructureField field : fields) {

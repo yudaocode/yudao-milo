@@ -54,7 +54,7 @@ public abstract class ReaderGroupMessageDataType extends Structure implements Ua
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ReaderGroupMessageDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

@@ -144,7 +144,7 @@ public class SessionSecurityDiagnosticsDataType extends Structure implements UaS
       return false;
     }
     SessionSecurityDiagnosticsDataType that = (SessionSecurityDiagnosticsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSessionId(), that.getSessionId());
     eqb.append(getClientUserIdOfSession(), that.getClientUserIdOfSession());
     eqb.append(getClientUserIdHistory(), that.getClientUserIdHistory());
@@ -159,7 +159,7 @@ public class SessionSecurityDiagnosticsDataType extends Structure implements UaS
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSessionId());
     hcb.append(getClientUserIdOfSession());
     hcb.append(getClientUserIdHistory());
@@ -174,7 +174,7 @@ public class SessionSecurityDiagnosticsDataType extends Structure implements UaS
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", SessionSecurityDiagnosticsDataType.class.getSimpleName() + "[", "]");
     joiner.add("sessionId=" + getSessionId());
     joiner.add("clientUserIdOfSession='" + getClientUserIdOfSession() + "'");

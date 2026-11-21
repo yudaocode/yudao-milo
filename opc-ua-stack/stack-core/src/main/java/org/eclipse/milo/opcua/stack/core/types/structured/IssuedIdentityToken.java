@@ -87,7 +87,7 @@ public class IssuedIdentityToken extends UserIdentityToken implements UaStructur
       return false;
     }
     IssuedIdentityToken that = (IssuedIdentityToken) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getTokenData(), that.getTokenData());
     eqb.append(getEncryptionAlgorithm(), that.getEncryptionAlgorithm());
@@ -96,7 +96,7 @@ public class IssuedIdentityToken extends UserIdentityToken implements UaStructur
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTokenData());
     hcb.append(getEncryptionAlgorithm());
     hcb.appendSuper(super.hashCode());
@@ -105,7 +105,7 @@ public class IssuedIdentityToken extends UserIdentityToken implements UaStructur
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", IssuedIdentityToken.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", IssuedIdentityToken.class.getSimpleName() + "[", "]");
     joiner.add("tokenData=" + getTokenData());
     joiner.add("encryptionAlgorithm='" + getEncryptionAlgorithm() + "'");
     return joiner.toString();

@@ -11,7 +11,7 @@
 package org.eclipse.milo.opcua.sdk.client;
 
 import static java.util.Objects.requireNonNull;
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static java.util.concurrent.CompletableFuture.completedFuture;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedFuture;
@@ -1681,11 +1681,13 @@ public class AddressSpace {
       Object o = value.value().value();
 
       try {
-        if (o instanceof ExtensionObject xo) {
+        if (o instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) o;
           Object decoded = xo.decode(context);
 
           return attributeClazz.cast(decoded);
-        } else if (o instanceof ExtensionObject[] xos) {
+        } else if (o instanceof ExtensionObject[]) {
+      ExtensionObject[] xos = (ExtensionObject[]) o;
           Class<?> componentType = attributeClazz.getComponentType();
 
           Object array = Array.newInstance(componentType, xos.length);

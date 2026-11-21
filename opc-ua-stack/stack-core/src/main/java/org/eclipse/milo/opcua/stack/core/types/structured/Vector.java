@@ -54,7 +54,7 @@ public abstract class Vector extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", Vector.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", Vector.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

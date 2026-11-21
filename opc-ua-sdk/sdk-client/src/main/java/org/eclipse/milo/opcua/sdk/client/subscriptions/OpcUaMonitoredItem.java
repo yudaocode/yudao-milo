@@ -638,7 +638,7 @@ public class OpcUaMonitoredItem {
    * @see OpcUaSubscription#synchronizeMonitoredItems()
    */
   public static OpcUaMonitoredItem newDataItem(NodeId nodeId) {
-    var readValueId =
+    org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId readValueId =
         new ReadValueId(nodeId, AttributeId.Value.uid(), null, QualifiedName.NULL_VALUE);
 
     return new OpcUaMonitoredItem(readValueId);
@@ -660,7 +660,7 @@ public class OpcUaMonitoredItem {
    * @see OpcUaSubscription#synchronizeMonitoredItems()
    */
   public static OpcUaMonitoredItem newDataItem(NodeId nodeId, MonitoringMode monitoringMode) {
-    var readValueId =
+    org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId readValueId =
         new ReadValueId(nodeId, AttributeId.Value.uid(), null, QualifiedName.NULL_VALUE);
 
     return new OpcUaMonitoredItem(readValueId, monitoringMode);
@@ -698,10 +698,10 @@ public class OpcUaMonitoredItem {
    * @see OpcUaSubscription#synchronizeMonitoredItems()
    */
   public static OpcUaMonitoredItem newEventItem(NodeId nodeId, @Nullable EventFilter eventFilter) {
-    var readValueId =
+    org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId readValueId =
         new ReadValueId(nodeId, AttributeId.EventNotifier.uid(), null, QualifiedName.NULL_VALUE);
 
-    var item = new OpcUaMonitoredItem(readValueId);
+    org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaMonitoredItem item = new OpcUaMonitoredItem(readValueId);
     item.setSamplingInterval(0.0);
     item.setFilter(eventFilter);
 
@@ -726,10 +726,10 @@ public class OpcUaMonitoredItem {
    */
   public static OpcUaMonitoredItem newEventItem(
       NodeId nodeId, MonitoringMode monitoringMode, @Nullable EventFilter eventFilter) {
-    var readValueId =
+    org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId readValueId =
         new ReadValueId(nodeId, AttributeId.EventNotifier.uid(), null, QualifiedName.NULL_VALUE);
 
-    var item = new OpcUaMonitoredItem(readValueId, monitoringMode);
+    org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaMonitoredItem item = new OpcUaMonitoredItem(readValueId, monitoringMode);
     item.setSamplingInterval(0.0);
     item.setFilter(eventFilter);
 

@@ -19,8 +19,7 @@ import org.eclipse.milo.opcua.stack.core.types.structured.DataTypeDefinition;
  * Base class for an instance of a "dynamic" type, i.e. one that is defined dynamically at runtime
  * as opposed to statically at compile time.
  */
-public abstract sealed class DynamicType implements UaDataType
-    permits DynamicEnumType, DynamicOptionSetType, DynamicStructType, DynamicUnionType {
+public abstract class DynamicType implements UaDataType {
 
   @Override
   public String getTypeName() {

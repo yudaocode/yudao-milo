@@ -85,7 +85,7 @@ public class SignatureData extends Structure implements UaStructuredType {
       return false;
     }
     SignatureData that = (SignatureData) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAlgorithm(), that.getAlgorithm());
     eqb.append(getSignature(), that.getSignature());
     return eqb.build();
@@ -93,7 +93,7 @@ public class SignatureData extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAlgorithm());
     hcb.append(getSignature());
     return hcb.build();
@@ -101,7 +101,7 @@ public class SignatureData extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SignatureData.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SignatureData.class.getSimpleName() + "[", "]");
     joiner.add("algorithm='" + getAlgorithm() + "'");
     joiner.add("signature=" + getSignature());
     return joiner.toString();

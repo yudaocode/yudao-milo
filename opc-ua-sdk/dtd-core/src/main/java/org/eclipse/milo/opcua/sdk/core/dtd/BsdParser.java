@@ -10,8 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.core.dtd;
 
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
 import java.io.InputStream;
 import org.opcfoundation.opcua.binaryschema.ObjectFactory;
 import org.opcfoundation.opcua.binaryschema.TypeDictionary;

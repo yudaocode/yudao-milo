@@ -73,7 +73,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "SecurityGroupName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -81,7 +81,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "KeyLifetime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -89,7 +89,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "SecurityPolicyUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -97,7 +97,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "MaxFutureKeyCount",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -105,7 +105,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "MaxPastKeyCount",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -124,7 +124,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "SecurityGroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -132,7 +132,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "SecurityGroupNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -195,7 +195,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "SecurityGroupNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -242,7 +242,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -261,7 +261,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "SecurityGroupFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -304,7 +304,7 @@ public interface SecurityGroupFolderType extends FolderType {
                   "SecurityGroupFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

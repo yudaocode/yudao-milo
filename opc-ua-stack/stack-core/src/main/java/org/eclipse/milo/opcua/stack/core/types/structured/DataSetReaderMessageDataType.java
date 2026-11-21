@@ -54,7 +54,7 @@ public abstract class DataSetReaderMessageDataType extends Structure implements 
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", DataSetReaderMessageDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

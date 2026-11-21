@@ -21,33 +21,59 @@ public enum TransportProfile {
   WSS_UAJSON;
 
   public static TransportProfile fromUri(String uri) {
-    return switch (uri) {
-      case Stack.TCP_UASC_UABINARY_TRANSPORT_URI -> TCP_UASC_UABINARY;
-      case Stack.HTTPS_UABINARY_TRANSPORT_URI -> HTTPS_UABINARY;
-      case Stack.HTTPS_UAXML_TRANSPORT_URI -> HTTPS_UAXML;
-      case Stack.HTTPS_UAJSON_TRANSPORT_URI -> HTTPS_UAJSON;
-      case Stack.WSS_UASC_UABINARY_TRANSPORT_URI -> WSS_UASC_UABINARY;
-      case Stack.WSS_UAJSON_TRANSPORT_URI -> WSS_UAJSON;
-      default -> throw new IllegalArgumentException("unknown transport: " + uri);
-    };
+    switch ((uri)) {
+      case Stack.TCP_UASC_UABINARY_TRANSPORT_URI:
+        return TCP_UASC_UABINARY;
+      case Stack.HTTPS_UABINARY_TRANSPORT_URI:
+        return HTTPS_UABINARY;
+      case Stack.HTTPS_UAXML_TRANSPORT_URI:
+        return HTTPS_UAXML;
+      case Stack.HTTPS_UAJSON_TRANSPORT_URI:
+        return HTTPS_UAJSON;
+      case Stack.WSS_UASC_UABINARY_TRANSPORT_URI:
+        return WSS_UASC_UABINARY;
+      case Stack.WSS_UAJSON_TRANSPORT_URI:
+        return WSS_UAJSON;
+      default:
+        throw new IllegalArgumentException("unknown transport: " + uri);
+    }
   }
 
   public String getUri() {
-    return switch (this) {
-      case TCP_UASC_UABINARY -> Stack.TCP_UASC_UABINARY_TRANSPORT_URI;
-      case HTTPS_UABINARY -> Stack.HTTPS_UABINARY_TRANSPORT_URI;
-      case HTTPS_UAXML -> Stack.HTTPS_UAXML_TRANSPORT_URI;
-      case HTTPS_UAJSON -> Stack.HTTPS_UAJSON_TRANSPORT_URI;
-      case WSS_UASC_UABINARY -> Stack.WSS_UASC_UABINARY_TRANSPORT_URI;
-      case WSS_UAJSON -> Stack.WSS_UAJSON_TRANSPORT_URI;
-    };
+    switch ((this)) {
+      case TCP_UASC_UABINARY:
+        return Stack.TCP_UASC_UABINARY_TRANSPORT_URI;
+      case HTTPS_UABINARY:
+        return Stack.HTTPS_UABINARY_TRANSPORT_URI;
+      case HTTPS_UAXML:
+        return Stack.HTTPS_UAXML_TRANSPORT_URI;
+      case HTTPS_UAJSON:
+        return Stack.HTTPS_UAJSON_TRANSPORT_URI;
+      case WSS_UASC_UABINARY:
+        return Stack.WSS_UASC_UABINARY_TRANSPORT_URI;
+      case WSS_UAJSON:
+        return Stack.WSS_UAJSON_TRANSPORT_URI;
+      default:
+        throw new IllegalStateException();
+    }
   }
 
   public String getScheme() {
-    return switch (this) {
-      case TCP_UASC_UABINARY -> "opc.tcp";
-      case HTTPS_UABINARY, HTTPS_UAXML, HTTPS_UAJSON -> "https";
-      case WSS_UASC_UABINARY, WSS_UAJSON -> "opc.wss";
-    };
+    switch ((this)) {
+      case TCP_UASC_UABINARY:
+        return "opc.tcp";
+      case HTTPS_UABINARY:
+
+      case HTTPS_UAXML:
+
+      case HTTPS_UAJSON:
+        return "https";
+      case WSS_UASC_UABINARY:
+
+      case WSS_UAJSON:
+        return "opc.wss";
+      default:
+        throw new IllegalStateException();
+    }
   }
 }

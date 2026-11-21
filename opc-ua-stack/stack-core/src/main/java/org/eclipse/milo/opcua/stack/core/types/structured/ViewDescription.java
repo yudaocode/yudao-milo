@@ -91,7 +91,7 @@ public class ViewDescription extends Structure implements UaStructuredType {
       return false;
     }
     ViewDescription that = (ViewDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getViewId(), that.getViewId());
     eqb.append(getTimestamp(), that.getTimestamp());
     eqb.append(getViewVersion(), that.getViewVersion());
@@ -100,7 +100,7 @@ public class ViewDescription extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getViewId());
     hcb.append(getTimestamp());
     hcb.append(getViewVersion());
@@ -109,7 +109,7 @@ public class ViewDescription extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ViewDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ViewDescription.class.getSimpleName() + "[", "]");
     joiner.add("viewId=" + getViewId());
     joiner.add("timestamp=" + getTimestamp());
     joiner.add("viewVersion=" + getViewVersion());

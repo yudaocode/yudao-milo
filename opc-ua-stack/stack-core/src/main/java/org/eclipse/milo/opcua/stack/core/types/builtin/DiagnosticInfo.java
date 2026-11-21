@@ -52,14 +52,53 @@ import org.jspecify.annotations.Nullable;
  * @param innerDiagnosticInfo The diagnostic info associated with the inner StatusCode.
  */
 @NullMarked
-public record DiagnosticInfo(
-    int namespaceUri,
-    int symbolicId,
-    int locale,
-    int localizedText,
-    @Nullable String additionalInfo,
-    @Nullable StatusCode innerStatusCode,
-    @Nullable DiagnosticInfo innerDiagnosticInfo) {
+public final class DiagnosticInfo {
+  private final int namespaceUri;
+  private final int symbolicId;
+  private final int locale;
+  private final int localizedText;
+  private final @Nullable String additionalInfo;
+  private final @Nullable StatusCode innerStatusCode;
+  private final @Nullable DiagnosticInfo innerDiagnosticInfo;
+
+  public int namespaceUri() {
+    return namespaceUri;
+  }
+
+  public int symbolicId() {
+    return symbolicId;
+  }
+
+  public int locale() {
+    return locale;
+  }
+
+  public int localizedText() {
+    return localizedText;
+  }
+
+  public @Nullable String additionalInfo() {
+    return additionalInfo;
+  }
+
+  public @Nullable StatusCode innerStatusCode() {
+    return innerStatusCode;
+  }
+
+  public @Nullable DiagnosticInfo innerDiagnosticInfo() {
+    return innerDiagnosticInfo;
+  }
+
+  public DiagnosticInfo(int namespaceUri, int symbolicId, int locale, int localizedText, @Nullable String additionalInfo, @Nullable StatusCode innerStatusCode, @Nullable DiagnosticInfo innerDiagnosticInfo) {
+    this.namespaceUri = namespaceUri;
+    this.symbolicId = symbolicId;
+    this.locale = locale;
+    this.localizedText = localizedText;
+    this.additionalInfo = additionalInfo;
+    this.innerStatusCode = innerStatusCode;
+    this.innerDiagnosticInfo = innerDiagnosticInfo;
+  }
+
 
   public static final DiagnosticInfo NULL_VALUE =
       new DiagnosticInfo(-1, -1, -1, -1, null, null, null);

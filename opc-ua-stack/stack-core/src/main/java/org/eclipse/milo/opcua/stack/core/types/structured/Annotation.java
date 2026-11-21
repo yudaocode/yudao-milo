@@ -92,7 +92,7 @@ public class Annotation extends Structure implements UaStructuredType {
       return false;
     }
     Annotation that = (Annotation) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMessage(), that.getMessage());
     eqb.append(getUserName(), that.getUserName());
     eqb.append(getAnnotationTime(), that.getAnnotationTime());
@@ -101,7 +101,7 @@ public class Annotation extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMessage());
     hcb.append(getUserName());
     hcb.append(getAnnotationTime());
@@ -110,7 +110,7 @@ public class Annotation extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", Annotation.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", Annotation.class.getSimpleName() + "[", "]");
     joiner.add("message='" + getMessage() + "'");
     joiner.add("userName='" + getUserName() + "'");
     joiner.add("annotationTime=" + getAnnotationTime());

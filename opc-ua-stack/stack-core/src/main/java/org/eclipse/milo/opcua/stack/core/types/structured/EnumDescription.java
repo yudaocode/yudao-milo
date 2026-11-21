@@ -87,7 +87,7 @@ public class EnumDescription extends DataTypeDescription implements UaStructured
       return false;
     }
     EnumDescription that = (EnumDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getEnumDefinition(), that.getEnumDefinition());
     eqb.append(getBuiltInType(), that.getBuiltInType());
@@ -96,7 +96,7 @@ public class EnumDescription extends DataTypeDescription implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEnumDefinition());
     hcb.append(getBuiltInType());
     hcb.appendSuper(super.hashCode());
@@ -105,7 +105,7 @@ public class EnumDescription extends DataTypeDescription implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EnumDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EnumDescription.class.getSimpleName() + "[", "]");
     joiner.add("enumDefinition=" + getEnumDefinition());
     joiner.add("builtInType=" + getBuiltInType());
     return joiner.toString();

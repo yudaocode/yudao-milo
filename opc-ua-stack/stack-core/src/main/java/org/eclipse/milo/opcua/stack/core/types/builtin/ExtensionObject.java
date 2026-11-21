@@ -23,8 +23,7 @@ import org.jspecify.annotations.NullMarked;
 import org.slf4j.LoggerFactory;
 
 @NullMarked
-public abstract sealed class ExtensionObject
-    permits ExtensionObject.Binary, ExtensionObject.Json, ExtensionObject.Xml {
+public abstract class ExtensionObject {
 
   private static final ThreadLocal<Integer> DECODE_DEPTH = ThreadLocal.withInitial(() -> 0);
 
@@ -211,7 +210,7 @@ public abstract sealed class ExtensionObject
   public static ExtensionObject[] encodeArray(EncodingContext context, UaStructuredType[] values)
       throws UaSerializationException {
 
-    var xos = new ExtensionObject[values.length];
+    org.eclipse.milo.opcua.stack.core.types.builtin.ExtensionObject[] xos = new ExtensionObject[values.length];
 
     for (int i = 0; i < values.length; i++) {
       xos[i] = encode(context, values[i]);

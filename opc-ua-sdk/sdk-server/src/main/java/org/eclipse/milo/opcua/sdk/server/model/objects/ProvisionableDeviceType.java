@@ -72,7 +72,7 @@ public interface ProvisionableDeviceType extends BaseObjectType {
                   "Tickets",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=25726")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -112,7 +112,7 @@ public interface ProvisionableDeviceType extends BaseObjectType {
                   "Registrars",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=308")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

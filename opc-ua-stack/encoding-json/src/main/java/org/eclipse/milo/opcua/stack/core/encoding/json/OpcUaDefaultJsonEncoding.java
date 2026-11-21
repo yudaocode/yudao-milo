@@ -58,7 +58,7 @@ public class OpcUaDefaultJsonEncoding implements DataTypeEncoding {
           "no codec registered for typeId=" + typeId.toParseableString());
     }
 
-    try (var encoder = new OpcUaJsonEncoder(context)) {
+    try (org.eclipse.milo.opcua.stack.core.encoding.json.OpcUaJsonEncoder encoder = new OpcUaJsonEncoder(context)) {
       encoder.encodeStruct(null, struct, codec);
 
       return ExtensionObject.of(encoder.getOutputString(), typeId);
@@ -69,7 +69,8 @@ public class OpcUaDefaultJsonEncoding implements DataTypeEncoding {
 
   @Override
   public UaStructuredType decode(EncodingContext context, ExtensionObject encoded) {
-    if (encoded instanceof ExtensionObject.Json xo) {
+    if (encoded instanceof ExtensionObject.Json) {
+      ExtensionObject.Json xo = (ExtensionObject.Json) encoded;
       DataTypeCodec codec = context.getDataTypeManager().getCodec(encoded.getEncodingOrTypeId());
 
       if (codec == null) {
@@ -79,7 +80,7 @@ public class OpcUaDefaultJsonEncoding implements DataTypeEncoding {
                 + encoded.getEncodingOrTypeId().toParseableString());
       }
 
-      var decoder = new OpcUaJsonDecoder(context, xo.getBody());
+      org.eclipse.milo.opcua.stack.core.encoding.json.OpcUaJsonDecoder decoder = new OpcUaJsonDecoder(context, xo.getBody());
 
       return decoder.decodeStruct(null, codec);
     } else {

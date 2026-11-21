@@ -76,7 +76,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "AliasNameSearchPattern",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -84,7 +84,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "ReferenceTypeFilter",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -103,7 +103,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "AliasNodeList",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=23468")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -150,7 +150,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "AliasNameSearchPattern",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -158,7 +158,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "ReferenceTypeFilter",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -177,7 +177,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "AliasNodeList",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=24051")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -224,7 +224,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "AliasNames",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -232,7 +232,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "TargetNodes",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=18")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -240,7 +240,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "TargetServers",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -248,7 +248,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "TargetReferenceType",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -267,7 +267,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "ErrorCodes",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -318,7 +318,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "AliasNames",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -326,7 +326,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "TargetNodes",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=18")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -345,7 +345,7 @@ public interface AliasNameCategoryType extends FolderType {
                   "ErrorCodes",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

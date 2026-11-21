@@ -210,7 +210,7 @@ public class DataSetReaderDataType extends Structure implements UaStructuredType
       return false;
     }
     DataSetReaderDataType that = (DataSetReaderDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getEnabled(), that.getEnabled());
     eqb.append(getPublisherId(), that.getPublisherId());
@@ -233,7 +233,7 @@ public class DataSetReaderDataType extends Structure implements UaStructuredType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getEnabled());
     hcb.append(getPublisherId());
@@ -256,7 +256,7 @@ public class DataSetReaderDataType extends Structure implements UaStructuredType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataSetReaderDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataSetReaderDataType.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("enabled=" + getEnabled());
     joiner.add("publisherId=" + getPublisherId());

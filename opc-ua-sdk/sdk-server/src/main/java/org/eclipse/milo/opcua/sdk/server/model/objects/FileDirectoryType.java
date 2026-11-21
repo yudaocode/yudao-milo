@@ -57,7 +57,7 @@ public interface FileDirectoryType extends FolderType {
                   "DirectoryName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -76,7 +76,7 @@ public interface FileDirectoryType extends FolderType {
                   "DirectoryNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -121,7 +121,7 @@ public interface FileDirectoryType extends FolderType {
                   "FileName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -129,7 +129,7 @@ public interface FileDirectoryType extends FolderType {
                   "RequestFileOpen",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -148,7 +148,7 @@ public interface FileDirectoryType extends FolderType {
                   "FileNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -156,7 +156,7 @@ public interface FileDirectoryType extends FolderType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -203,7 +203,7 @@ public interface FileDirectoryType extends FolderType {
                   "ObjectToDelete",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -250,7 +250,7 @@ public interface FileDirectoryType extends FolderType {
                   "ObjectToMoveOrCopy",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -258,7 +258,7 @@ public interface FileDirectoryType extends FolderType {
                   "TargetDirectory",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -266,7 +266,7 @@ public interface FileDirectoryType extends FolderType {
                   "CreateCopy",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -274,7 +274,7 @@ public interface FileDirectoryType extends FolderType {
                   "NewName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -293,7 +293,7 @@ public interface FileDirectoryType extends FolderType {
                   "NewNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

@@ -111,7 +111,7 @@ public class PublishedDataSetDataType extends Structure implements UaStructuredT
       return false;
     }
     PublishedDataSetDataType that = (PublishedDataSetDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getDataSetFolder(), that.getDataSetFolder());
     eqb.append(getDataSetMetaData(), that.getDataSetMetaData());
@@ -122,7 +122,7 @@ public class PublishedDataSetDataType extends Structure implements UaStructuredT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getDataSetFolder());
     hcb.append(getDataSetMetaData());
@@ -133,7 +133,7 @@ public class PublishedDataSetDataType extends Structure implements UaStructuredT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PublishedDataSetDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PublishedDataSetDataType.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("dataSetFolder=" + java.util.Arrays.toString(getDataSetFolder()));
     joiner.add("dataSetMetaData=" + getDataSetMetaData());

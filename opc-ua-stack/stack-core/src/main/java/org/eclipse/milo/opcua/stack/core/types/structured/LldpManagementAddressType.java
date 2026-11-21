@@ -103,7 +103,7 @@ public class LldpManagementAddressType extends Structure implements UaStructured
       return false;
     }
     LldpManagementAddressType that = (LldpManagementAddressType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAddressSubtype(), that.getAddressSubtype());
     eqb.append(getAddress(), that.getAddress());
     eqb.append(getIfSubtype(), that.getIfSubtype());
@@ -113,7 +113,7 @@ public class LldpManagementAddressType extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAddressSubtype());
     hcb.append(getAddress());
     hcb.append(getIfSubtype());
@@ -123,7 +123,7 @@ public class LldpManagementAddressType extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LldpManagementAddressType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LldpManagementAddressType.class.getSimpleName() + "[", "]");
     joiner.add("addressSubtype=" + getAddressSubtype());
     joiner.add("address='" + getAddress() + "'");
     joiner.add("ifSubtype=" + getIfSubtype());

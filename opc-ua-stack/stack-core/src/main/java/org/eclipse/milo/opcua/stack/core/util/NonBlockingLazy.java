@@ -71,7 +71,7 @@ public final class NonBlockingLazy<T> {
       CompletableFuture<T> existing = ref.get();
 
       if (existing == null) {
-        var future = new CompletableFuture<T>();
+        java.util.concurrent.CompletableFuture<T> future = new CompletableFuture<T>();
 
         if (!ref.compareAndSet(null, future)) {
           continue;
@@ -108,10 +108,12 @@ public final class NonBlockingLazy<T> {
           // the computing thread got null; not held, try computing again
         } catch (CompletionException e) {
           Throwable cause = e.getCause();
-          if (cause instanceof RuntimeException re) {
+          if (cause instanceof RuntimeException) {
+      RuntimeException re = (RuntimeException) cause;
             throw re;
           }
-          if (cause instanceof Error error) {
+          if (cause instanceof Error) {
+      Error error = (Error) cause;
             throw error;
           }
           @SuppressWarnings("unchecked")

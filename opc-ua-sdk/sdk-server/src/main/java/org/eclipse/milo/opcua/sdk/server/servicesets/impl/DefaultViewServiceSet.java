@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.servicesets.impl;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.sdk.server.servicesets.AbstractServiceSet.createResponseHeader;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedUaFuture;
 
@@ -101,7 +103,7 @@ public class DefaultViewServiceSet implements ViewServiceSet {
     Session session = server.getSessionManager().getSession(context, request.getRequestHeader());
 
     try {
-      var browsePathsHelper = new BrowsePathsHelper(() -> Optional.ofNullable(session), server);
+      org.eclipse.milo.opcua.sdk.server.servicesets.impl.helpers.BrowsePathsHelper browsePathsHelper = new BrowsePathsHelper(() -> Optional.ofNullable(session), server);
 
       return browsePathsHelper.translateBrowsePaths(request);
     } catch (Exception e) {
@@ -174,8 +176,8 @@ public class DefaultViewServiceSet implements ViewServiceSet {
 
     ResponseHeader header = createResponseHeader(request);
 
-    var response =
-        new BrowseResponse(header, results.toArray(BrowseResult[]::new), new DiagnosticInfo[0]);
+    org.eclipse.milo.opcua.stack.core.types.structured.BrowseResponse response =
+        new BrowseResponse(header, results.toArray(new BrowseResult[0]), new DiagnosticInfo[0]);
 
     return CompletableFuture.completedFuture(response);
   }
@@ -195,7 +197,7 @@ public class DefaultViewServiceSet implements ViewServiceSet {
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var results = new ArrayList<BrowseResult>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.BrowseResult> results = new ArrayList<BrowseResult>();
 
     for (ByteString bs : continuationPoints) {
       if (request.getReleaseContinuationPoints()) {
@@ -205,10 +207,10 @@ public class DefaultViewServiceSet implements ViewServiceSet {
       }
     }
 
-    var header = createResponseHeader(request);
+    org.eclipse.milo.opcua.stack.core.types.structured.ResponseHeader header = createResponseHeader(request);
 
     return new BrowseNextResponse(
-        header, results.toArray(BrowseResult[]::new), new DiagnosticInfo[0]);
+        header, results.toArray(new BrowseResult[0]), new DiagnosticInfo[0]);
   }
 
   private static BrowseResult release(Session session, ByteString bs) {
@@ -228,7 +230,7 @@ public class DefaultViewServiceSet implements ViewServiceSet {
 
       if (references.size() > max) {
         List<ReferenceDescription> subList = references.subList(0, max);
-        List<ReferenceDescription> current = List.copyOf(subList);
+        List<ReferenceDescription> current = Java8Collections.listCopyOf(subList);
         subList.clear();
 
         session.getBrowseContinuationPoints().put(c.id(), c);
@@ -257,7 +259,7 @@ public class DefaultViewServiceSet implements ViewServiceSet {
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var registerNodesContext = new RegisterNodesContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.RegisterNodesContext registerNodesContext = new RegisterNodesContext(server, session);
 
     List<NodeId> registeredNodeIds =
         server.getAddressSpaceManager().registerNodes(registerNodesContext, nodeIds);
@@ -280,7 +282,7 @@ public class DefaultViewServiceSet implements ViewServiceSet {
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var unregisterNodesContext = new UnregisterNodesContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.UnregisterNodesContext unregisterNodesContext = new UnregisterNodesContext(server, session);
 
     server.getAddressSpaceManager().unregisterNodes(unregisterNodesContext, nodeIds);
 

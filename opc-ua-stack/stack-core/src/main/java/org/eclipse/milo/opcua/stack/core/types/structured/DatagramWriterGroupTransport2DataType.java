@@ -116,7 +116,7 @@ public class DatagramWriterGroupTransport2DataType extends DatagramWriterGroupTr
       return false;
     }
     DatagramWriterGroupTransport2DataType that = (DatagramWriterGroupTransport2DataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getAddress(), that.getAddress());
     eqb.append(getQosCategory(), that.getQosCategory());
@@ -128,7 +128,7 @@ public class DatagramWriterGroupTransport2DataType extends DatagramWriterGroupTr
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAddress());
     hcb.append(getQosCategory());
     hcb.append(getDatagramQos());
@@ -140,7 +140,7 @@ public class DatagramWriterGroupTransport2DataType extends DatagramWriterGroupTr
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", DatagramWriterGroupTransport2DataType.class.getSimpleName() + "[", "]");
     joiner.add("address=" + getAddress());

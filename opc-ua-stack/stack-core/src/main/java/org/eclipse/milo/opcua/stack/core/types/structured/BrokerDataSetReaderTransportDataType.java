@@ -112,7 +112,7 @@ public class BrokerDataSetReaderTransportDataType extends DataSetReaderTransport
       return false;
     }
     BrokerDataSetReaderTransportDataType that = (BrokerDataSetReaderTransportDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getQueueName(), that.getQueueName());
     eqb.append(getResourceUri(), that.getResourceUri());
     eqb.append(getAuthenticationProfileUri(), that.getAuthenticationProfileUri());
@@ -123,7 +123,7 @@ public class BrokerDataSetReaderTransportDataType extends DataSetReaderTransport
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getQueueName());
     hcb.append(getResourceUri());
     hcb.append(getAuthenticationProfileUri());
@@ -134,7 +134,7 @@ public class BrokerDataSetReaderTransportDataType extends DataSetReaderTransport
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", BrokerDataSetReaderTransportDataType.class.getSimpleName() + "[", "]");
     joiner.add("queueName='" + getQueueName() + "'");

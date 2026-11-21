@@ -96,7 +96,7 @@ public class BrowseResult extends Structure implements UaStructuredType {
       return false;
     }
     BrowseResult that = (BrowseResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getContinuationPoint(), that.getContinuationPoint());
     eqb.append(getReferences(), that.getReferences());
@@ -105,7 +105,7 @@ public class BrowseResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getContinuationPoint());
     hcb.append(getReferences());
@@ -114,7 +114,7 @@ public class BrowseResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", BrowseResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", BrowseResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("continuationPoint=" + getContinuationPoint());
     joiner.add("references=" + java.util.Arrays.toString(getReferences()));

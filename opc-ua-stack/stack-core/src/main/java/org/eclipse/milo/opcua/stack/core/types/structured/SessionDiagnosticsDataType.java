@@ -415,7 +415,7 @@ public class SessionDiagnosticsDataType extends Structure implements UaStructure
       return false;
     }
     SessionDiagnosticsDataType that = (SessionDiagnosticsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSessionId(), that.getSessionId());
     eqb.append(getSessionName(), that.getSessionName());
     eqb.append(getClientDescription(), that.getClientDescription());
@@ -465,7 +465,7 @@ public class SessionDiagnosticsDataType extends Structure implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSessionId());
     hcb.append(getSessionName());
     hcb.append(getClientDescription());
@@ -514,7 +514,7 @@ public class SessionDiagnosticsDataType extends Structure implements UaStructure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", SessionDiagnosticsDataType.class.getSimpleName() + "[", "]");
     joiner.add("sessionId=" + getSessionId());
     joiner.add("sessionName='" + getSessionName() + "'");

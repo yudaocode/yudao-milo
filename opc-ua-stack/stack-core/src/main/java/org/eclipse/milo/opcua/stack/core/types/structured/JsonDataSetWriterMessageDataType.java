@@ -77,21 +77,21 @@ public class JsonDataSetWriterMessageDataType extends DataSetWriterMessageDataTy
       return false;
     }
     JsonDataSetWriterMessageDataType that = (JsonDataSetWriterMessageDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDataSetMessageContentMask(), that.getDataSetMessageContentMask());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDataSetMessageContentMask());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", JsonDataSetWriterMessageDataType.class.getSimpleName() + "[", "]");
     joiner.add("dataSetMessageContentMask=" + getDataSetMessageContentMask());
     return joiner.toString();

@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -21,7 +22,7 @@ public class StatusCodes extends StatusCodes0 {
   private static final Map<Long, String[]> DESCRIPTIONS;
 
   static {
-    var descriptions = new HashMap<Long, String[]>();
+    java.util.HashMap<java.lang.Long,java.lang.String[]> descriptions = new HashMap<Long, String[]>();
 
     for (Field f : StatusCodes.class.getFields()) {
       if (f.isAnnotationPresent(Description.class)) {
@@ -36,7 +37,7 @@ public class StatusCodes extends StatusCodes0 {
       }
     }
 
-    DESCRIPTIONS = Map.copyOf(descriptions);
+    DESCRIPTIONS = Java8Collections.mapCopyOf(descriptions);
   }
 
   /**

@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.subscriptions;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.util.ArrayList;
@@ -144,7 +146,7 @@ public class PublishingManager {
 
   // Replace the immutable map only when registration changes. Each Publish request can retain
   // its identity snapshot with one volatile read instead of copying the registry on the hot path.
-  private volatile Map<UInteger, SubscriptionDetails> subscriptionDetails = Map.of();
+  private volatile Map<UInteger, SubscriptionDetails> subscriptionDetails = Java8Collections.mapOf();
 
   /**
    * Incremented every time a Subscription is registered with or unregistered from this manager.
@@ -264,14 +266,14 @@ public class PublishingManager {
         .ifPresent(
             id -> {
               // Construct outside registrationLock because this reads the subscription lifecycle.
-              var details = new SubscriptionDetails(subscription, id, executor);
+              org.eclipse.milo.opcua.sdk.client.subscriptions.PublishingManager.SubscriptionDetails details = new SubscriptionDetails(subscription, id, executor);
               synchronized (registrationLock) {
-                var updated = new HashMap<>(subscriptionDetails);
+                java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger,org.eclipse.milo.opcua.sdk.client.subscriptions.PublishingManager.SubscriptionDetails> updated = new HashMap<>(subscriptionDetails);
                 SubscriptionDetails displaced = updated.put(id, details);
                 if (displaced != null) {
                   displaced.registered = false;
                 }
-                subscriptionDetails = Map.copyOf(updated);
+                subscriptionDetails = Java8Collections.mapCopyOf(updated);
                 subscriptionGeneration.incrementAndGet();
               }
             });
@@ -319,10 +321,10 @@ public class PublishingManager {
         return false;
       }
 
-      var updated = new HashMap<>(subscriptionDetails);
+      java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger,org.eclipse.milo.opcua.sdk.client.subscriptions.PublishingManager.SubscriptionDetails> updated = new HashMap<>(subscriptionDetails);
       updated.remove(details.subscriptionId);
       details.registered = false;
-      subscriptionDetails = Map.copyOf(updated);
+      subscriptionDetails = Java8Collections.mapCopyOf(updated);
       subscriptionGeneration.incrementAndGet();
       return true;
     }
@@ -501,7 +503,7 @@ public class PublishingManager {
    *     is done.
    */
   private CompletableFuture<Unit> recoverSubscriptions(UaSession session, long activation) {
-    List<SubscriptionDetails> details = List.copyOf(subscriptionDetails.values());
+    List<SubscriptionDetails> details = Java8Collections.listCopyOf(subscriptionDetails.values());
 
     if (details.isEmpty()) {
       return CompletableFuture.completedFuture(Unit.VALUE);
@@ -523,13 +525,13 @@ public class PublishingManager {
       return CompletableFuture.completedFuture(Unit.VALUE);
     }
 
-    var futures = new ArrayList<CompletableFuture<Unit>>(details.size());
+    java.util.ArrayList<java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.core.util.Unit>> futures = new ArrayList<CompletableFuture<Unit>>(details.size());
 
     for (SubscriptionDetails d : details) {
       futures.add(recoverSubscription(session, d, activation));
     }
 
-    return CompletableFuture.allOf(futures.toArray(CompletableFuture[]::new))
+    return CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]))
         .handle((unit, ex) -> Unit.VALUE);
   }
 
@@ -549,7 +551,7 @@ public class PublishingManager {
   private CompletableFuture<Unit> recoverSubscription(
       UaSession session, SubscriptionDetails details, long activation) {
 
-    var recovered = new CompletableFuture<Unit>();
+    java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.core.util.Unit> recovered = new CompletableFuture<Unit>();
 
     boolean queued =
         details.processingQueue.execute(
@@ -821,7 +823,7 @@ public class PublishingManager {
   private CompletableFuture<RepublishResponse> republish(
       UaSession session, UInteger subscriptionId, UInteger sequenceNumber) {
 
-    var request =
+    org.eclipse.milo.opcua.stack.core.types.structured.RepublishRequest request =
         new RepublishRequest(
             client.newRequestHeader(session.getAuthenticationToken()),
             subscriptionId,
@@ -835,7 +837,7 @@ public class PublishingManager {
    * @return the legal sequence numbers among them.
    */
   private static Set<Long> legalSequenceNumbers(UInteger[] sequenceNumbers) {
-    var legal = new HashSet<Long>(sequenceNumbers.length);
+    java.util.HashSet<java.lang.Long> legal = new HashSet<Long>(sequenceNumbers.length);
 
     for (UInteger sequenceNumber : sequenceNumbers) {
       if (sequenceNumber != null && SequenceNumbers.isLegal(sequenceNumber.longValue())) {
@@ -878,7 +880,7 @@ public class PublishingManager {
     // Acknowledgements are removed from the Subscription's queue as they are drained into this
     // request, so this request now owns them: if it fails they have to be put back, or the client
     // has silently decided never to acknowledge those NotificationMessages.
-    var drainedAcknowledgements = new ArrayList<DrainedAcknowledgements>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.subscriptions.PublishingManager.DrainedAcknowledgements> drainedAcknowledgements = new ArrayList<DrainedAcknowledgements>();
 
     // Read before the request is built, so that a Subscription registered or unregistered while it
     // is in flight is seen as a change by the failure handler rather than missed.
@@ -890,7 +892,7 @@ public class PublishingManager {
     long activation = sessionActivations.get();
 
     try {
-      var subscriptionAcknowledgements = new ArrayList<SubscriptionAcknowledgement>();
+      java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.SubscriptionAcknowledgement> subscriptionAcknowledgements = new ArrayList<SubscriptionAcknowledgement>();
 
       for (SubscriptionDetails details : subscriptionDetails.values()) {
         List<UInteger> sequenceNumbers;
@@ -900,7 +902,7 @@ public class PublishingManager {
             continue;
           }
 
-          sequenceNumbers = List.copyOf(details.availableAcknowledgements);
+          sequenceNumbers = Java8Collections.listCopyOf(details.availableAcknowledgements);
           details.availableAcknowledgements.clear();
         }
 
@@ -922,7 +924,7 @@ public class PublishingManager {
 
       UInteger requestHandle = requestHeader.getRequestHandle();
 
-      var request =
+      org.eclipse.milo.opcua.stack.core.types.structured.PublishRequest request =
           new PublishRequest(
               requestHeader,
               subscriptionAcknowledgements.toArray(new SubscriptionAcknowledgement[0]));
@@ -946,7 +948,8 @@ public class PublishingManager {
           .sendRequestAsync(request)
           .whenComplete(
               (response, ex) -> {
-                if (response instanceof PublishResponse publishResponse) {
+                if (response instanceof PublishResponse) {
+      PublishResponse publishResponse = (PublishResponse) response;
                   // This handler runs inline on the transport's serial PublishResponse queue (see
                   // AbstractUascClientTransport#handleResponse), which is the only place the order
                   // the Server sent NotificationMessages in still exists. Queueing the work here,
@@ -1102,7 +1105,7 @@ public class PublishingManager {
       List<UInteger> availableAcknowledgements = drained.details().availableAcknowledgements;
 
       synchronized (availableAcknowledgements) {
-        var restored = new ArrayList<UInteger>(drained.sequenceNumbers().size());
+        java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger> restored = new ArrayList<UInteger>(drained.sequenceNumbers().size());
 
         for (UInteger sequenceNumber : drained.sequenceNumbers()) {
           if (!availableAcknowledgements.contains(sequenceNumber)) {
@@ -1284,7 +1287,7 @@ public class PublishingManager {
         details.lastSequenceNumber,
         receivedSequenceNumber);
 
-    List<UInteger> missingSequenceNumbers = List.of();
+    List<UInteger> missingSequenceNumbers = Java8Collections.listOf();
 
     if (SequenceNumbers.isLegal(receivedSequenceNumber)) {
       if (!isKeepAlive) {
@@ -1548,7 +1551,7 @@ public class PublishingManager {
     long expectedSequenceNumber = SequenceNumbers.successor(details.lastSequenceNumber);
 
     if (!SequenceNumbers.isAhead(receivedSequenceNumber, expectedSequenceNumber)) {
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     UInteger subscriptionId = response.getSubscriptionId();
@@ -1606,14 +1609,14 @@ public class PublishingManager {
 
       details.subscription.notifyNotificationDataLost();
 
-      return List.of();
+      return Java8Collections.listOf();
     }
 
     if (dataLost) {
       details.subscription.notifyNotificationDataLost();
     }
 
-    var sequenceNumbers = new ArrayList<UInteger>((int) missingCount);
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger> sequenceNumbers = new ArrayList<UInteger>((int) missingCount);
     long sequenceNumber = firstRecoverable;
 
     for (long i = 0; i < missingCount; i++) {
@@ -1738,7 +1741,7 @@ public class PublishingManager {
       return CompletableFuture.completedFuture(Unit.VALUE);
     }
 
-    var recovery = new Recovery();
+    org.eclipse.milo.opcua.sdk.client.subscriptions.PublishingManager.Recovery recovery = new Recovery();
 
     CompletableFuture<Unit> chain = CompletableFuture.completedFuture(Unit.VALUE);
 
@@ -1881,7 +1884,8 @@ public class PublishingManager {
           if (events != null && events.length > 0) {
             details.subscription.notifyEventsReceived(events);
           }
-        } else if (notification instanceof StatusChangeNotification scn) {
+        } else if (notification instanceof StatusChangeNotification) {
+      StatusChangeNotification scn = (StatusChangeNotification) notification;
           StatusCode status = scn.getStatus();
 
           if (status.value() == StatusCodes.Bad_Timeout) {
@@ -1935,7 +1939,7 @@ public class PublishingManager {
   private UInteger getTimeoutHint() {
     double maxKeepAlive = client.getConfig().getRequestTimeout().doubleValue();
 
-    List<SubscriptionDetails> subscriptions = List.copyOf(subscriptionDetails.values());
+    List<SubscriptionDetails> subscriptions = Java8Collections.listCopyOf(subscriptionDetails.values());
 
     for (SubscriptionDetails details : subscriptions) {
       Optional<Double> revisedPublishingInterval =
@@ -1977,22 +1981,68 @@ public class PublishingManager {
    * @param details the Subscription they were taken from.
    * @param sequenceNumbers the sequence numbers acknowledged, oldest first.
    */
-  private record DrainedAcknowledgements(
-      SubscriptionDetails details, List<UInteger> sequenceNumbers) {}
+  private static final class DrainedAcknowledgements {
+    private final SubscriptionDetails details;
+    private final List<UInteger> sequenceNumbers;
+
+    public SubscriptionDetails details() {
+      return details;
+    }
+
+    public List<UInteger> sequenceNumbers() {
+      return sequenceNumbers;
+    }
+
+    DrainedAcknowledgements(SubscriptionDetails details, List<UInteger> sequenceNumbers) {
+      this.details = details;
+      this.sequenceNumbers = sequenceNumbers;
+    }
+}
 
   /**
    * A finished reconnect recovery: the {@link #sessionActivations} value it belonged to and the
    * Session it ran on, or {@code null} once that Session has become inactive.
    */
-  private record RecoveredActivation(long activation, @Nullable UaSession session) {}
+  private static final class RecoveredActivation {
+    private final long activation;
+    private final @Nullable UaSession session;
+
+    public long activation() {
+      return activation;
+    }
+
+    public @Nullable UaSession session() {
+      return session;
+    }
+
+    RecoveredActivation(long activation, @Nullable UaSession session) {
+      this.activation = activation;
+      this.session = session;
+    }
+}
 
   /**
    * The available sequence numbers returned while transferring a Subscription to one exact Session.
    * Session identity is part of the value so recovery queued for the Session being replaced cannot
    * consume or apply the replacement Session's TransferResult.
    */
-  private record TransferredSequenceNumbers(
-      UaSession session, UInteger @Nullable [] sequenceNumbers) {}
+  private static final class TransferredSequenceNumbers {
+    private final UaSession session;
+    private final UInteger @Nullable [] sequenceNumbers;
+
+    public UaSession session() {
+      return session;
+    }
+
+    public UInteger @Nullable [] sequenceNumbers() {
+      return sequenceNumbers;
+    }
+
+    TransferredSequenceNumbers(UaSession session, UInteger @Nullable [] sequenceNumbers) {
+      this.session = session;
+      this.sequenceNumbers = sequenceNumbers;
+    }
+}
 
   /**
    * How many PublishRequests the Server has been observed to queue for a Session, and what the
@@ -2017,8 +2067,41 @@ public class PublishingManager {
    *     precisely the case a Server that always refuses produces, and would have it probed at a
    *     constant rate.
    */
-  private record PendingPublishCeiling(
-      long activation, long ceiling, long successes, long cooldown, boolean probing) {
+  private static final class PendingPublishCeiling {
+    private final long activation;
+    private final long ceiling;
+    private final long successes;
+    private final long cooldown;
+    private final boolean probing;
+
+    public long activation() {
+      return activation;
+    }
+
+    public long ceiling() {
+      return ceiling;
+    }
+
+    public long successes() {
+      return successes;
+    }
+
+    public long cooldown() {
+      return cooldown;
+    }
+
+    public boolean probing() {
+      return probing;
+    }
+
+    PendingPublishCeiling(long activation, long ceiling, long successes, long cooldown, boolean probing) {
+      this.activation = activation;
+      this.ceiling = ceiling;
+      this.successes = successes;
+      this.cooldown = cooldown;
+      this.probing = probing;
+    }
+
 
     /** No Server has refused a PublishRequest, so only the client's own target applies. */
     static PendingPublishCeiling none(long activation) {

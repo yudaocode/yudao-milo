@@ -54,7 +54,7 @@ public abstract class TransmitQosDataType extends QosDataType implements UaStruc
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TransmitQosDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TransmitQosDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

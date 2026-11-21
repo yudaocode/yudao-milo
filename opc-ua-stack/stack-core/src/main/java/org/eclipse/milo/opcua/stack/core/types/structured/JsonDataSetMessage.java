@@ -158,7 +158,7 @@ public class JsonDataSetMessage extends Structure implements UaStructuredType {
       return false;
     }
     JsonDataSetMessage that = (JsonDataSetMessage) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDataSetWriterId(), that.getDataSetWriterId());
     eqb.append(getDataSetWriterName(), that.getDataSetWriterName());
     eqb.append(getPublisherId(), that.getPublisherId());
@@ -175,7 +175,7 @@ public class JsonDataSetMessage extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDataSetWriterId());
     hcb.append(getDataSetWriterName());
     hcb.append(getPublisherId());
@@ -192,7 +192,7 @@ public class JsonDataSetMessage extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", JsonDataSetMessage.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", JsonDataSetMessage.class.getSimpleName() + "[", "]");
     joiner.add("dataSetWriterId=" + getDataSetWriterId());
     joiner.add("dataSetWriterName='" + getDataSetWriterName() + "'");
     joiner.add("publisherId='" + getPublisherId() + "'");

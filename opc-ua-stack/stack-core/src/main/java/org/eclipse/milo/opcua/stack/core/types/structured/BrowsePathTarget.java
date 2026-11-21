@@ -83,7 +83,7 @@ public class BrowsePathTarget extends Structure implements UaStructuredType {
       return false;
     }
     BrowsePathTarget that = (BrowsePathTarget) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTargetId(), that.getTargetId());
     eqb.append(getRemainingPathIndex(), that.getRemainingPathIndex());
     return eqb.build();
@@ -91,7 +91,7 @@ public class BrowsePathTarget extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTargetId());
     hcb.append(getRemainingPathIndex());
     return hcb.build();
@@ -99,7 +99,7 @@ public class BrowsePathTarget extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", BrowsePathTarget.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", BrowsePathTarget.class.getSimpleName() + "[", "]");
     joiner.add("targetId=" + getTargetId());
     joiner.add("remainingPathIndex=" + getRemainingPathIndex());
     return joiner.toString();

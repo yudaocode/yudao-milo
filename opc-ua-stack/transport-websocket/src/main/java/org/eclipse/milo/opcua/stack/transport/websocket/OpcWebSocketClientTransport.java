@@ -10,10 +10,12 @@
 
 package org.eclipse.milo.opcua.stack.transport.websocket;
 
-import static java.util.Objects.requireNonNullElse;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
-import com.digitalpetri.fsm.FsmContext;
+import com.digitalpetri.strictmachine.FsmContext;
 import com.digitalpetri.netty.fsm.ChannelActions;
 import com.digitalpetri.netty.fsm.ChannelFsm;
 import com.digitalpetri.netty.fsm.ChannelFsmConfig;
@@ -100,10 +102,10 @@ public class OpcWebSocketClientTransport extends AbstractUascClientTransport {
             .setExecutor(Stack.sharedExecutor())
             .setScheduler(Stack.sharedScheduledExecutor())
             .setLoggerName(CHANNEL_FSM_LOGGER_NAME)
-            .setLoggingContext(Map.of("instance-id", String.valueOf(INSTANCE_ID.incrementAndGet())))
+            .setLoggingContext(Java8Collections.mapOf("instance-id", String.valueOf(INSTANCE_ID.incrementAndGet())))
             .build();
 
-    var factory = new ChannelFsmFactory(fsmConfig);
+    ChannelFsmFactory factory = new ChannelFsmFactory(fsmConfig);
 
     channelFsm = factory.newChannelFsm();
   }
@@ -145,9 +147,9 @@ public class OpcWebSocketClientTransport extends AbstractUascClientTransport {
       ClientApplicationContext application =
           (ClientApplicationContext) ctx.get(KEY_CLIENT_APPLICATION);
 
-      var handshakeFuture = new CompletableFuture<ClientSecureChannel>();
+      CompletableFuture<ClientSecureChannel> handshakeFuture = new CompletableFuture<ClientSecureChannel>();
 
-      var bootstrap = new Bootstrap();
+      Bootstrap bootstrap = new Bootstrap();
 
       bootstrap
           .channel(NioSocketChannel.class)
@@ -216,7 +218,7 @@ public class OpcWebSocketClientTransport extends AbstractUascClientTransport {
                   // TODO when/where does the InboundUascResponseHandler get added?
                   // OpcClientWebSocketFrameCodec adds UascClientAcknowledgeHandler when the WS
                   // upgrade is done.
-                  var codec =
+                  OpcClientWebSocketBinaryFrameCodec codec =
                       new OpcClientWebSocketBinaryFrameCodec(
                           config, application, requestId::getAndIncrement, handshakeFuture);
                   channel.pipeline().addLast(codec);
@@ -254,7 +256,7 @@ public class OpcWebSocketClientTransport extends AbstractUascClientTransport {
 
     @Override
     public CompletableFuture<Void> disconnect(FsmContext<State, Event> ctx, Channel channel) {
-      var disconnectFuture = new CompletableFuture<Void>();
+      CompletableFuture<Void> disconnectFuture = new CompletableFuture<Void>();
 
       TimerTask onTimeout =
           t ->
@@ -279,7 +281,7 @@ public class OpcWebSocketClientTransport extends AbstractUascClientTransport {
                 }
               });
 
-      var requestHeader =
+      RequestHeader requestHeader =
           new RequestHeader(
               NodeId.NULL_VALUE, DateTime.now(), uint(0), uint(0), null, uint(0), null);
 

@@ -84,7 +84,7 @@ public class GenericAttributes extends NodeAttributes implements UaStructuredTyp
       return false;
     }
     GenericAttributes that = (GenericAttributes) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getAttributeValues(), that.getAttributeValues());
     return eqb.build();
@@ -92,7 +92,7 @@ public class GenericAttributes extends NodeAttributes implements UaStructuredTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAttributeValues());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -100,7 +100,7 @@ public class GenericAttributes extends NodeAttributes implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", GenericAttributes.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", GenericAttributes.class.getSimpleName() + "[", "]");
     joiner.add("attributeValues=" + java.util.Arrays.toString(getAttributeValues()));
     return joiner.toString();
   }

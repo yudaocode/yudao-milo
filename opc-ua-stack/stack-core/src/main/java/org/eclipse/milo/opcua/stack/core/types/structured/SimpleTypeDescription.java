@@ -87,7 +87,7 @@ public class SimpleTypeDescription extends DataTypeDescription implements UaStru
       return false;
     }
     SimpleTypeDescription that = (SimpleTypeDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getBaseDataType(), that.getBaseDataType());
     eqb.append(getBuiltInType(), that.getBuiltInType());
@@ -96,7 +96,7 @@ public class SimpleTypeDescription extends DataTypeDescription implements UaStru
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getBaseDataType());
     hcb.append(getBuiltInType());
     hcb.appendSuper(super.hashCode());
@@ -105,7 +105,7 @@ public class SimpleTypeDescription extends DataTypeDescription implements UaStru
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SimpleTypeDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SimpleTypeDescription.class.getSimpleName() + "[", "]");
     joiner.add("baseDataType=" + getBaseDataType());
     joiner.add("builtInType=" + getBuiltInType());
     return joiner.toString();

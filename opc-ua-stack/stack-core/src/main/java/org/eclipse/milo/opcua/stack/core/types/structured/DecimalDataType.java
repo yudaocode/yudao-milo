@@ -80,7 +80,7 @@ public class DecimalDataType extends Structure implements UaStructuredType {
       return false;
     }
     DecimalDataType that = (DecimalDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getScale(), that.getScale());
     eqb.append(getValue(), that.getValue());
     return eqb.build();
@@ -88,7 +88,7 @@ public class DecimalDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getScale());
     hcb.append(getValue());
     return hcb.build();
@@ -96,7 +96,7 @@ public class DecimalDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DecimalDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DecimalDataType.class.getSimpleName() + "[", "]");
     joiner.add("scale=" + getScale());
     joiner.add("value=" + getValue());
     return joiner.toString();

@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.events;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -204,7 +205,7 @@ public class EventContentFilter {
       return new ContentFilterResult(new ContentFilterElementResult[0], new DiagnosticInfo[0]);
     }
 
-    var elementResults = new ContentFilterElementResult[filterElements.length];
+    org.eclipse.milo.opcua.stack.core.types.structured.ContentFilterElementResult[] elementResults = new ContentFilterElementResult[filterElements.length];
 
     for (int i = 0; i < filterElements.length; i++) {
       elementResults[i] =
@@ -260,7 +261,8 @@ public class EventContentFilter {
           } catch (ValidationException e) {
             operandStatusCodes[i] = e.getStatusCode();
           }
-        } else if (operand instanceof ElementOperand elementOperand) {
+        } else if (operand instanceof ElementOperand) {
+      ElementOperand elementOperand = (ElementOperand) operand;
           operandStatusCodes[i] =
               validateElementOperand(elementOperand, elementIndex, elementCount);
         } else if (operand instanceof LiteralOperand) {
@@ -373,7 +375,7 @@ public class EventContentFilter {
       return new FilterOperand[0];
     }
 
-    var operands = new FilterOperand[operandXos.length];
+    org.eclipse.milo.opcua.stack.core.types.structured.FilterOperand[] operands = new FilterOperand[operandXos.length];
 
     for (int i = 0; i < operandXos.length; i++) {
       Object decoded;
@@ -384,7 +386,8 @@ public class EventContentFilter {
             StatusCodes.Bad_FilterOperandInvalid, "operand " + i + " could not be decoded", e);
       }
 
-      if (decoded instanceof FilterOperand operand) {
+      if (decoded instanceof FilterOperand) {
+      FilterOperand operand = (FilterOperand) decoded;
         operands[i] = operand;
       } else {
         throw new UaException(
@@ -397,29 +400,46 @@ public class EventContentFilter {
 
   @NonNull
   private static Operator<?> getOperator(@NonNull FilterOperator filterOperator) {
-    return switch (filterOperator) {
-      // Basic FilterOperators
-      case Equals -> Operators.EQUALS;
-      case IsNull -> Operators.IS_NULL;
-      case GreaterThan -> Operators.GREATER_THAN;
-      case LessThan -> Operators.LESS_THAN;
-      case GreaterThanOrEqual -> Operators.GREATER_THAN_OR_EQUAL;
-      case LessThanOrEqual -> Operators.LESS_THAN_OR_EQUAL;
-      case Like -> Operators.LIKE;
-      case Not -> Operators.NOT;
-      case Between -> Operators.BETWEEN;
-      case InList -> Operators.IN_LIST;
-      case And -> Operators.AND;
-      case Or -> Operators.OR;
-      case Cast -> Operators.CAST;
-      case BitwiseAnd -> Operators.BITWISE_AND;
-      case BitwiseOr -> Operators.BITWISE_OR;
-
-      // Complex FilterOperators
-      case InView -> Operators.UNSUPPORTED;
-      case OfType -> Operators.OF_TYPE;
-      case RelatedTo -> Operators.UNSUPPORTED;
-    };
+    switch ((filterOperator)) {
+      case Equals:
+        return Operators.EQUALS;
+      case IsNull:
+        return Operators.IS_NULL;
+      case GreaterThan:
+        return Operators.GREATER_THAN;
+      case LessThan:
+        return Operators.LESS_THAN;
+      case GreaterThanOrEqual:
+        return Operators.GREATER_THAN_OR_EQUAL;
+      case LessThanOrEqual:
+        return Operators.LESS_THAN_OR_EQUAL;
+      case Like:
+        return Operators.LIKE;
+      case Not:
+        return Operators.NOT;
+      case Between:
+        return Operators.BETWEEN;
+      case InList:
+        return Operators.IN_LIST;
+      case And:
+        return Operators.AND;
+      case Or:
+        return Operators.OR;
+      case Cast:
+        return Operators.CAST;
+      case BitwiseAnd:
+        return Operators.BITWISE_AND;
+      case BitwiseOr:
+        return Operators.BITWISE_OR;
+      case InView:
+        return Operators.UNSUPPORTED;
+      case OfType:
+        return Operators.OF_TYPE;
+      case RelatedTo:
+        return Operators.UNSUPPORTED;
+      default:
+        return Operators.UNSUPPORTED;
+    }
   }
 
   @SuppressWarnings("unused")
@@ -523,7 +543,7 @@ public class EventContentFilter {
 
     return addressSpaceManager.getManagedReferences(node.getNodeId()).stream()
         .filter(Reference.SUBTYPE_OF)
-        .flatMap(r -> r.getTargetNodeId().toNodeId(namespaceTable).stream())
+        .flatMap(r -> Java8Collections.optionalStream(r.getTargetNodeId().toNodeId(namespaceTable)))
         .findFirst()
         .flatMap(addressSpaceManager::getManagedNode);
   }
@@ -566,7 +586,8 @@ public class EventContentFilter {
     public Object resolve(FilterOperand operand, BaseEventTypeNode eventNode) throws UaException {
       if (operand instanceof LiteralOperand) {
         return ((LiteralOperand) operand).getValue().value();
-      } else if (operand instanceof ElementOperand elementOperand) {
+      } else if (operand instanceof ElementOperand) {
+      ElementOperand elementOperand = (ElementOperand) operand;
         UInteger index = elementOperand.getIndex();
 
         if (index == null || index.longValue() >= elements.length) {
@@ -601,9 +622,11 @@ public class EventContentFilter {
         elementResults.put(elementIndex, result);
 
         return result.get();
-      } else if (operand instanceof AttributeOperand ao) {
+      } else if (operand instanceof AttributeOperand) {
+      AttributeOperand ao = (AttributeOperand) operand;
         return getAttribute(filterContext, ao, eventNode);
-      } else if (operand instanceof SimpleAttributeOperand sao) {
+      } else if (operand instanceof SimpleAttributeOperand) {
+      SimpleAttributeOperand sao = (SimpleAttributeOperand) operand;
         return getSimpleAttribute(filterContext, sao, eventNode);
       } else {
         throw new UaException(StatusCodes.Bad_FilterOperandInvalid);
@@ -612,7 +635,23 @@ public class EventContentFilter {
   }
 
   /** The outcome of evaluating one ContentFilterElement: a value (possibly null) or a failure. */
-  private record ElementResult(@Nullable Object value, @Nullable UaException failure) {
+  private static final class ElementResult {
+    private final @Nullable Object value;
+    private final @Nullable UaException failure;
+
+    public @Nullable Object value() {
+      return value;
+    }
+
+    public @Nullable UaException failure() {
+      return failure;
+    }
+
+    ElementResult(@Nullable Object value, @Nullable UaException failure) {
+      this.value = value;
+      this.failure = failure;
+    }
+
 
     static ElementResult value(@Nullable Object value) {
       return new ElementResult(value, null);

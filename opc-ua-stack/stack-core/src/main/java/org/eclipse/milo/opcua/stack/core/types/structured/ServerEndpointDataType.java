@@ -117,7 +117,7 @@ public class ServerEndpointDataType extends EndpointDataType implements UaStruct
       return false;
     }
     ServerEndpointDataType that = (ServerEndpointDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getEndpointUrls(), that.getEndpointUrls());
     eqb.append(getSecuritySettingNames(), that.getSecuritySettingNames());
@@ -129,7 +129,7 @@ public class ServerEndpointDataType extends EndpointDataType implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEndpointUrls());
     hcb.append(getSecuritySettingNames());
     hcb.append(getTransportProfileUri());
@@ -141,7 +141,7 @@ public class ServerEndpointDataType extends EndpointDataType implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ServerEndpointDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ServerEndpointDataType.class.getSimpleName() + "[", "]");
     joiner.add("endpointUrls=" + java.util.Arrays.toString(getEndpointUrls()));
     joiner.add("securitySettingNames=" + java.util.Arrays.toString(getSecuritySettingNames()));
     joiner.add("transportProfileUri='" + getTransportProfileUri() + "'");

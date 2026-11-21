@@ -85,7 +85,7 @@ public class NameValuePair extends Structure implements UaStructuredType {
       return false;
     }
     NameValuePair that = (NameValuePair) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getValue(), that.getValue());
     return eqb.build();
@@ -93,7 +93,7 @@ public class NameValuePair extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getValue());
     return hcb.build();
@@ -101,7 +101,7 @@ public class NameValuePair extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NameValuePair.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NameValuePair.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("value=" + getValue());
     return joiner.toString();

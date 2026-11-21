@@ -435,7 +435,7 @@ public class UascServerAsymmetricHandler extends ByteToMessageDecoder implements
               secureChannel, requestId, messageBuffer, MessageType.OpenSecureChannel);
 
       if (!symmetricHandlerAdded) {
-        var symmetricHandler =
+        org.eclipse.milo.opcua.stack.transport.server.uasc.UascServerSymmetricHandler symmetricHandler =
             new UascServerSymmetricHandler(
                 config,
                 application,
@@ -590,7 +590,7 @@ public class UascServerAsymmetricHandler extends ByteToMessageDecoder implements
     SecurityKeysListener listener = application.getSecurityKeysListener();
 
     if (listener != null && newKeys != null) {
-      var keyset =
+      org.eclipse.milo.opcua.stack.core.channel.SecurityKeyset keyset =
           new SecurityKeyset(
               secureChannel.getChannelId(),
               newToken.getTokenId().longValue(),

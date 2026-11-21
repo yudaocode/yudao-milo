@@ -103,7 +103,7 @@ public class MonitoredItemModifyResult extends Structure implements UaStructured
       return false;
     }
     MonitoredItemModifyResult that = (MonitoredItemModifyResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getRevisedSamplingInterval(), that.getRevisedSamplingInterval());
     eqb.append(getRevisedQueueSize(), that.getRevisedQueueSize());
@@ -113,7 +113,7 @@ public class MonitoredItemModifyResult extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getRevisedSamplingInterval());
     hcb.append(getRevisedQueueSize());
@@ -123,7 +123,7 @@ public class MonitoredItemModifyResult extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", MonitoredItemModifyResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", MonitoredItemModifyResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("revisedSamplingInterval=" + getRevisedSamplingInterval());
     joiner.add("revisedQueueSize=" + getRevisedQueueSize());

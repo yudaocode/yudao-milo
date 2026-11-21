@@ -161,7 +161,7 @@ public class WriterGroupDataType extends PubSubGroupDataType implements UaStruct
       return false;
     }
     WriterGroupDataType that = (WriterGroupDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getWriterGroupId(), that.getWriterGroupId());
     eqb.append(getPublishingInterval(), that.getPublishingInterval());
@@ -177,7 +177,7 @@ public class WriterGroupDataType extends PubSubGroupDataType implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getWriterGroupId());
     hcb.append(getPublishingInterval());
     hcb.append(getKeepAliveTime());
@@ -193,7 +193,7 @@ public class WriterGroupDataType extends PubSubGroupDataType implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", WriterGroupDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", WriterGroupDataType.class.getSimpleName() + "[", "]");
     joiner.add("writerGroupId=" + getWriterGroupId());
     joiner.add("publishingInterval=" + getPublishingInterval());
     joiner.add("keepAliveTime=" + getKeepAliveTime());

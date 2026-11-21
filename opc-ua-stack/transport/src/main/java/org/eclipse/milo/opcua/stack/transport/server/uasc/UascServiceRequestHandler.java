@@ -46,7 +46,7 @@ public class UascServiceRequestHandler extends SimpleChannelInboundHandler<UascS
     future.whenComplete(
         ((response, ex) -> {
           if (response != null) {
-            var serviceResponse = new UascServiceResponse(response, serviceRequest.getRequestId());
+            org.eclipse.milo.opcua.stack.transport.server.uasc.UascServiceResponse serviceResponse = new UascServiceResponse(response, serviceRequest.getRequestId());
 
             serviceRequest.getChannel().pipeline().writeAndFlush(serviceResponse);
           } else {
@@ -54,7 +54,7 @@ public class UascServiceRequestHandler extends SimpleChannelInboundHandler<UascS
                 UaException.extractStatusCode(ex)
                     .orElse(new StatusCode(StatusCodes.Bad_UnexpectedError));
 
-            var header =
+            org.eclipse.milo.opcua.stack.core.types.structured.ResponseHeader header =
                 new ResponseHeader(
                     DateTime.now(),
                     serviceRequest.getRequestMessage().getRequestHeader().getRequestHandle(),
@@ -63,7 +63,7 @@ public class UascServiceRequestHandler extends SimpleChannelInboundHandler<UascS
                     null,
                     null);
 
-            var serviceResponse =
+            org.eclipse.milo.opcua.stack.transport.server.uasc.UascServiceResponse serviceResponse =
                 new UascServiceResponse(new ServiceFault(header), serviceRequest.getRequestId());
 
             serviceRequest.getChannel().writeAndFlush(serviceResponse);

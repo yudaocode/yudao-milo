@@ -101,7 +101,7 @@ public class ObjectNode extends InstanceNode implements UaStructuredType {
       return false;
     }
     ObjectNode that = (ObjectNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getEventNotifier(), that.getEventNotifier());
     return eqb.build();
@@ -109,7 +109,7 @@ public class ObjectNode extends InstanceNode implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEventNotifier());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -117,7 +117,7 @@ public class ObjectNode extends InstanceNode implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ObjectNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ObjectNode.class.getSimpleName() + "[", "]");
     joiner.add("eventNotifier=" + getEventNotifier());
     return joiner.toString();
   }

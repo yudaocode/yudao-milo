@@ -77,21 +77,21 @@ public class LiteralOperand extends FilterOperand implements UaStructuredType {
       return false;
     }
     LiteralOperand that = (LiteralOperand) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getValue(), that.getValue());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getValue());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LiteralOperand.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LiteralOperand.class.getSimpleName() + "[", "]");
     joiner.add("value=" + getValue());
     return joiner.toString();
   }

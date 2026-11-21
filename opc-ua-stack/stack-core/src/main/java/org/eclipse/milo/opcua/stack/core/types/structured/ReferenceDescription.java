@@ -127,7 +127,7 @@ public class ReferenceDescription extends Structure implements UaStructuredType 
       return false;
     }
     ReferenceDescription that = (ReferenceDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getReferenceTypeId(), that.getReferenceTypeId());
     eqb.append(getIsForward(), that.getIsForward());
     eqb.append(getNodeId(), that.getNodeId());
@@ -140,7 +140,7 @@ public class ReferenceDescription extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReferenceTypeId());
     hcb.append(getIsForward());
     hcb.append(getNodeId());
@@ -153,7 +153,7 @@ public class ReferenceDescription extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReferenceDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReferenceDescription.class.getSimpleName() + "[", "]");
     joiner.add("referenceTypeId=" + getReferenceTypeId());
     joiner.add("isForward=" + getIsForward());
     joiner.add("nodeId=" + getNodeId());

@@ -84,7 +84,7 @@ public class MonitoredItemNotification extends Structure implements UaStructured
       return false;
     }
     MonitoredItemNotification that = (MonitoredItemNotification) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getClientHandle(), that.getClientHandle());
     eqb.append(getValue(), that.getValue());
     return eqb.build();
@@ -92,7 +92,7 @@ public class MonitoredItemNotification extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getClientHandle());
     hcb.append(getValue());
     return hcb.build();
@@ -100,7 +100,7 @@ public class MonitoredItemNotification extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", MonitoredItemNotification.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", MonitoredItemNotification.class.getSimpleName() + "[", "]");
     joiner.add("clientHandle=" + getClientHandle());
     joiner.add("value=" + getValue());
     return joiner.toString();

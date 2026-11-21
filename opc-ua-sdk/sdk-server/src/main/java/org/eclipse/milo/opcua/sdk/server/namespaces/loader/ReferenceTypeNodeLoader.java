@@ -33,7 +33,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode0() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 31),
@@ -52,7 +52,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode1() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32),
@@ -73,7 +73,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode2() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 33),
@@ -94,7 +94,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode3() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 34),
@@ -115,7 +115,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode4() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 35),
@@ -136,7 +136,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode5() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 36),
@@ -157,7 +157,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode6() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 37),
@@ -178,7 +178,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode7() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 38),
@@ -199,7 +199,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode8() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 39),
@@ -220,7 +220,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode9() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 40),
@@ -241,7 +241,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode10() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 41),
@@ -262,7 +262,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode11() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 3065),
@@ -283,7 +283,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode12() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 44),
@@ -304,7 +304,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode13() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 45),
@@ -325,7 +325,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode14() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 46),
@@ -346,7 +346,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode15() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 47),
@@ -367,7 +367,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode16() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 48),
@@ -388,7 +388,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode17() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 49),
@@ -409,7 +409,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode18() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 51),
@@ -430,7 +430,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode19() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 52),
@@ -451,7 +451,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode20() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 53),
@@ -472,7 +472,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode21() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 54),
@@ -493,7 +493,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode22() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 117),
@@ -514,7 +514,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode23() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 56),
@@ -535,7 +535,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode24() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 24136),
@@ -557,7 +557,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode25() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 24137),
@@ -579,7 +579,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode26() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32407),
@@ -601,7 +601,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode27() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 129),
@@ -622,7 +622,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode28() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 131),
@@ -643,7 +643,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode29() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 23562),
@@ -665,7 +665,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode30() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19814),
@@ -687,7 +687,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode31() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19815),
@@ -709,7 +709,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode32() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19816),
@@ -731,7 +731,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode33() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19817),
@@ -753,7 +753,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode34() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19818),
@@ -775,7 +775,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode35() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19819),
@@ -797,7 +797,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode36() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19846),
@@ -819,7 +819,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode37() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 15112),
@@ -841,7 +841,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode38() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 17597),
@@ -863,7 +863,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode39() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 17603),
@@ -885,7 +885,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode40() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 17604),
@@ -907,7 +907,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode41() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32558),
@@ -929,7 +929,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode42() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32559),
@@ -951,7 +951,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode43() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 9004),
@@ -972,7 +972,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode44() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 9005),
@@ -993,7 +993,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode45() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 16361),
@@ -1015,7 +1015,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode46() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 16362),
@@ -1037,7 +1037,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode47() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32059),
@@ -1059,7 +1059,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode48() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 9006),
@@ -1080,7 +1080,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode49() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 17276),
@@ -1102,7 +1102,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode50() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 17983),
@@ -1124,7 +1124,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode51() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 17984),
@@ -1146,7 +1146,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode52() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 17985),
@@ -1168,7 +1168,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode53() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32633),
@@ -1190,7 +1190,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode54() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32634),
@@ -1212,7 +1212,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode55() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25345),
@@ -1234,7 +1234,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode56() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 14476),
@@ -1256,7 +1256,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode57() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 14936),
@@ -1278,7 +1278,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode58() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 15296),
@@ -1300,7 +1300,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode59() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 18804),
@@ -1322,7 +1322,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode60() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 15297),
@@ -1344,7 +1344,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode61() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 18805),
@@ -1366,7 +1366,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode62() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 23469),
@@ -1388,7 +1388,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode63() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25237),
@@ -1410,7 +1410,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode64() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25238),
@@ -1432,7 +1432,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode65() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25253),
@@ -1454,7 +1454,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode66() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25254),
@@ -1476,7 +1476,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode67() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25255),
@@ -1498,7 +1498,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode68() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25265),
@@ -1520,7 +1520,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode69() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25256),
@@ -1542,7 +1542,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode70() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25257),
@@ -1564,7 +1564,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode71() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25258),
@@ -1586,7 +1586,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode72() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25259),
@@ -1608,7 +1608,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode73() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25260),
@@ -1630,7 +1630,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode74() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25261),
@@ -1652,7 +1652,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode75() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25262),
@@ -1674,7 +1674,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode76() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25263),
@@ -1696,7 +1696,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode77() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 25264),
@@ -1718,7 +1718,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode78() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 32679),
@@ -1740,7 +1740,7 @@ class ReferenceTypeNodeLoader {
   }
 
   void loadNode79() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaReferenceTypeNode node =
         new UaReferenceTypeNode(
             this.context,
             new NodeId(0, 19845),

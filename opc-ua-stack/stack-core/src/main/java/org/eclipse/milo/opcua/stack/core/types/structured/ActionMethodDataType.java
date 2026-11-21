@@ -83,7 +83,7 @@ public class ActionMethodDataType extends Structure implements UaStructuredType 
       return false;
     }
     ActionMethodDataType that = (ActionMethodDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getObjectId(), that.getObjectId());
     eqb.append(getMethodId(), that.getMethodId());
     return eqb.build();
@@ -91,7 +91,7 @@ public class ActionMethodDataType extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getObjectId());
     hcb.append(getMethodId());
     return hcb.build();
@@ -99,7 +99,7 @@ public class ActionMethodDataType extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ActionMethodDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ActionMethodDataType.class.getSimpleName() + "[", "]");
     joiner.add("objectId=" + getObjectId());
     joiner.add("methodId=" + getMethodId());
     return joiner.toString();

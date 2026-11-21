@@ -54,7 +54,7 @@ public class UadpDataSetMessageContentMask
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", UadpDataSetMessageContentMask.class.getSimpleName() + "[", "]");
     joiner.add("timestamp=" + getTimestamp());
     joiner.add("picoSeconds=" + getPicoSeconds());

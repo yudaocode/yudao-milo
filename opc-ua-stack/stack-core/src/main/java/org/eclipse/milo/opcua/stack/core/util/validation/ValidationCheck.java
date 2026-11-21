@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.util.validation;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -59,9 +60,9 @@ public enum ValidationCheck {
    *
    * <p>This set *does* still include {@link #APPLICATION_URI}, which is technically not optional.
    */
-  public static final Set<ValidationCheck> NO_OPTIONAL_CHECKS = Set.of(APPLICATION_URI);
+  public static final Set<ValidationCheck> NO_OPTIONAL_CHECKS = Java8Collections.setOf(APPLICATION_URI);
 
   /** A set the includes all {@link ValidationCheck}s. */
   public static final Set<ValidationCheck> ALL_OPTIONAL_CHECKS =
-      Set.copyOf(EnumSet.allOf(ValidationCheck.class));
+      Java8Collections.setCopyOf(EnumSet.allOf(ValidationCheck.class));
 }

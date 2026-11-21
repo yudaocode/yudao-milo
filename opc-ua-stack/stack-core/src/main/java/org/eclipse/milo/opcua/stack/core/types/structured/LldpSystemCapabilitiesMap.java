@@ -73,7 +73,7 @@ public class LldpSystemCapabilitiesMap extends OptionSetUI32<LldpSystemCapabilit
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LldpSystemCapabilitiesMap.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LldpSystemCapabilitiesMap.class.getSimpleName() + "[", "]");
     joiner.add("other=" + getOther());
     joiner.add("repeater=" + getRepeater());
     joiner.add("bridge=" + getBridge());

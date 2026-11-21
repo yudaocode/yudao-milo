@@ -55,19 +55,30 @@ public enum BrowseResultMask implements UaEnumeratedType {
   }
 
   public static @Nullable BrowseResultMask from(int value) {
-    return switch (value) {
-      case 0 -> None;
-      case 1 -> ReferenceTypeId;
-      case 2 -> IsForward;
-      case 4 -> NodeClass;
-      case 8 -> BrowseName;
-      case 16 -> DisplayName;
-      case 32 -> TypeDefinition;
-      case 63 -> All;
-      case 3 -> ReferenceTypeInfo;
-      case 60 -> TargetInfo;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return None;
+      case 1:
+        return ReferenceTypeId;
+      case 2:
+        return IsForward;
+      case 4:
+        return NodeClass;
+      case 8:
+        return BrowseName;
+      case 16:
+        return DisplayName;
+      case 32:
+        return TypeDefinition;
+      case 63:
+        return All;
+      case 3:
+        return ReferenceTypeInfo;
+      case 60:
+        return TargetInfo;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

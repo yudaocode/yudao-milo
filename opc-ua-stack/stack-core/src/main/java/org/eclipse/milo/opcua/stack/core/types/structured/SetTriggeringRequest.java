@@ -110,7 +110,7 @@ public class SetTriggeringRequest extends Structure implements UaRequestMessageT
       return false;
     }
     SetTriggeringRequest that = (SetTriggeringRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getTriggeringItemId(), that.getTriggeringItemId());
@@ -121,7 +121,7 @@ public class SetTriggeringRequest extends Structure implements UaRequestMessageT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getSubscriptionId());
     hcb.append(getTriggeringItemId());
@@ -132,7 +132,7 @@ public class SetTriggeringRequest extends Structure implements UaRequestMessageT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SetTriggeringRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SetTriggeringRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("subscriptionId=" + getSubscriptionId());
     joiner.add("triggeringItemId=" + getTriggeringItemId());

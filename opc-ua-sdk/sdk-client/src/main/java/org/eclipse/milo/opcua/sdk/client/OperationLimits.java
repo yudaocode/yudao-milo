@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.List;
 import java.util.Optional;
 import org.eclipse.milo.opcua.stack.core.NodeIds;
@@ -166,7 +168,7 @@ public class OperationLimits {
   }
 
   private static final List<NodeId> OPERATION_LIMITS_NODES =
-      List.of(
+      Java8Collections.listOf(
           NodeIds.Server_ServerCapabilities_OperationLimits_MaxNodesPerRead,
           NodeIds.Server_ServerCapabilities_OperationLimits_MaxNodesPerWrite,
           NodeIds.Server_ServerCapabilities_OperationLimits_MaxNodesPerMethodCall,
@@ -202,8 +204,7 @@ public class OperationLimits {
     if (values == null || values.size() != OPERATION_LIMITS_NODES.size()) {
       throw new UaException(
           StatusCodes.Bad_UnexpectedError,
-          "Read returned %s OperationLimits results, expected %s"
-              .formatted(values == null ? "null" : values.size(), OPERATION_LIMITS_NODES.size()));
+          String.format("Read returned %s OperationLimits results, expected %s", values == null ? "null" : values.size(), OPERATION_LIMITS_NODES.size()));
     }
 
     UInteger maxNodesPerRead = toUInteger(values.get(0));
@@ -315,11 +316,13 @@ public class OperationLimits {
       return null;
     }
 
-    if (value instanceof UInteger uInteger) {
+    if (value instanceof UInteger) {
+      UInteger uInteger = (UInteger) value;
       return uInteger;
     }
 
-    if (value instanceof Number number) {
+    if (value instanceof Number) {
+      Number number = (Number) value;
       return UInteger.valueOf(number.longValue());
     }
 

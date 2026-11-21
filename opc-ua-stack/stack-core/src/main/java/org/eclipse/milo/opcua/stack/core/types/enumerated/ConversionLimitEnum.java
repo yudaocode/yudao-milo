@@ -45,12 +45,16 @@ public enum ConversionLimitEnum implements UaEnumeratedType {
   }
 
   public static @Nullable ConversionLimitEnum from(int value) {
-    return switch (value) {
-      case 0 -> NoConversion;
-      case 1 -> Limited;
-      case 2 -> Unlimited;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return NoConversion;
+      case 1:
+        return Limited;
+      case 2:
+        return Unlimited;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

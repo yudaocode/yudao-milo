@@ -97,7 +97,7 @@ public abstract class ManagedAddressSpace implements AddressSpace {
   @Override
   public List<ReferenceResult> browse(
       BrowseContext context, ViewDescription view, List<NodeId> nodeIds) {
-    var results = new ArrayList<ReferenceResult>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.server.AddressSpace.ReferenceResult> results = new ArrayList<ReferenceResult>();
 
     for (NodeId nodeId : nodeIds) {
       if (nodeManager.containsNode(nodeId)) {
@@ -131,7 +131,7 @@ public abstract class ManagedAddressSpace implements AddressSpace {
       TimestampsToReturn timestamps,
       List<ReadValueId> readValueIds) {
 
-    var results = new ArrayList<DataValue>(readValueIds.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.DataValue> results = new ArrayList<DataValue>(readValueIds.size());
 
     for (ReadValueId readValueId : readValueIds) {
       UaServerNode node = nodeManager.get(readValueId.getNodeId());
@@ -164,7 +164,7 @@ public abstract class ManagedAddressSpace implements AddressSpace {
   @Override
   public List<StatusCode> write(WriteContext context, List<WriteValue> writeValues) {
 
-    var results = new ArrayList<StatusCode>(writeValues.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.StatusCode> results = new ArrayList<StatusCode>(writeValues.size());
 
     for (WriteValue writeValue : writeValues) {
       UaServerNode node = nodeManager.get(writeValue.getNodeId());
@@ -202,7 +202,7 @@ public abstract class ManagedAddressSpace implements AddressSpace {
    */
   @Override
   public List<CallMethodResult> call(CallContext context, List<CallMethodRequest> requests) {
-    var results = new ArrayList<CallMethodResult>(requests.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.CallMethodResult> results = new ArrayList<CallMethodResult>(requests.size());
 
     Semaphore semaphore = context.getSession().map(Session::getCallSemaphore).orElse(null);
 
@@ -266,9 +266,11 @@ public abstract class ManagedAddressSpace implements AddressSpace {
 
     UaMethodNode methodNode = null;
 
-    if (node instanceof UaObjectNode objectNode) {
+    if (node instanceof UaObjectNode) {
+      UaObjectNode objectNode = (UaObjectNode) node;
       methodNode = objectNode.findMethodNode(methodId);
-    } else if (node instanceof UaObjectTypeNode objectTypeNode) {
+    } else if (node instanceof UaObjectTypeNode) {
+      UaObjectTypeNode objectTypeNode = (UaObjectTypeNode) node;
       methodNode = objectTypeNode.findMethodNode(methodId);
     }
 

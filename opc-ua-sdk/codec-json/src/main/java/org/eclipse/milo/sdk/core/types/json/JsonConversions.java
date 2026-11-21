@@ -18,7 +18,7 @@ import com.google.gson.JsonPrimitive;
 import java.lang.reflect.Array;
 import java.time.Instant;
 import java.util.Arrays;
-import java.util.HexFormat;
+
 import java.util.UUID;
 import org.eclipse.milo.opcua.stack.core.OpcUaDataType;
 import org.eclipse.milo.opcua.stack.core.types.builtin.ByteString;
@@ -43,6 +43,10 @@ import org.jspecify.annotations.Nullable;
 
 @NullMarked
 public class JsonConversions {
+  private static String toHex(byte[] b){char[] h="0123456789abcdef".toCharArray();char[] o=new char[b.length*2];for(int i=0;i<b.length;i++){o[i*2]=h[(b[i]>>>4)&15];o[i*2+1]=h[b[i]&15];}return new String(o);}
+
+  private static byte[] hexToBytes(String s) { byte[] r = new byte[s.length()/2]; for (int i=0;i<r.length;i++) r[i]=(byte)Integer.parseInt(s.substring(i*2,i*2+2),16); return r; }
+
 
   // region OPC UA to JSON Conversions
 
@@ -57,33 +61,58 @@ public class JsonConversions {
    * @throws IllegalArgumentException if the {@link OpcUaDataType} is not supported.
    */
   public static JsonElement from(Object value, OpcUaDataType dataType) {
-    return switch (dataType) {
-      case Boolean -> fromBoolean((Boolean) value);
-      case SByte -> fromSByte((Byte) value);
-      case Byte -> fromByte((UByte) value);
-      case Int16 -> fromInt16((Short) value);
-      case UInt16 -> fromUInt16((UShort) value);
-      case Int32 -> fromInt32((Integer) value);
-      case UInt32 -> fromUInt32((UInteger) value);
-      case Int64 -> fromInt64((Long) value);
-      case UInt64 -> fromUInt64((ULong) value);
-      case Float -> fromFloat((Float) value);
-      case Double -> fromDouble((Double) value);
-      case String -> fromString((String) value);
-      case DateTime -> fromDateTime((DateTime) value);
-      case Guid -> fromGuid((UUID) value);
-      case ByteString -> fromByteString((ByteString) value);
-      case XmlElement -> fromXmlElement((XmlElement) value);
-      case NodeId -> fromNodeId((NodeId) value);
-      case ExpandedNodeId -> fromExpandedNodeId((ExpandedNodeId) value);
-      case StatusCode -> fromStatusCode((StatusCode) value);
-      case QualifiedName -> fromQualifiedName((QualifiedName) value);
-      case LocalizedText -> fromLocalizedText((LocalizedText) value);
-      case ExtensionObject -> fromExtensionObject((ExtensionObject) value);
-      case DataValue -> fromDataValue((DataValue) value);
-      case Variant -> fromVariant((Variant) value);
-      default -> throw new IllegalArgumentException("dataType: " + dataType);
-    };
+    switch ((dataType)) {
+      case Boolean:
+        return fromBoolean((Boolean) value);
+      case SByte:
+        return fromSByte((Byte) value);
+      case Byte:
+        return fromByte((UByte) value);
+      case Int16:
+        return fromInt16((Short) value);
+      case UInt16:
+        return fromUInt16((UShort) value);
+      case Int32:
+        return fromInt32((Integer) value);
+      case UInt32:
+        return fromUInt32((UInteger) value);
+      case Int64:
+        return fromInt64((Long) value);
+      case UInt64:
+        return fromUInt64((ULong) value);
+      case Float:
+        return fromFloat((Float) value);
+      case Double:
+        return fromDouble((Double) value);
+      case String:
+        return fromString((String) value);
+      case DateTime:
+        return fromDateTime((DateTime) value);
+      case Guid:
+        return fromGuid((UUID) value);
+      case ByteString:
+        return fromByteString((ByteString) value);
+      case XmlElement:
+        return fromXmlElement((XmlElement) value);
+      case NodeId:
+        return fromNodeId((NodeId) value);
+      case ExpandedNodeId:
+        return fromExpandedNodeId((ExpandedNodeId) value);
+      case StatusCode:
+        return fromStatusCode((StatusCode) value);
+      case QualifiedName:
+        return fromQualifiedName((QualifiedName) value);
+      case LocalizedText:
+        return fromLocalizedText((LocalizedText) value);
+      case ExtensionObject:
+        return fromExtensionObject((ExtensionObject) value);
+      case DataValue:
+        return fromDataValue((DataValue) value);
+      case Variant:
+        return fromVariant((Variant) value);
+      default:
+        throw new IllegalArgumentException("dataType: " + dataType);
+    }
   }
 
   public static JsonElement fromBoolean(Boolean value) {
@@ -148,7 +177,7 @@ public class JsonConversions {
 
   public static JsonElement fromByteString(ByteString value) {
     byte[] bs = value.bytesOrEmpty();
-    String hex = HexFormat.of().formatHex(bs);
+    String hex = toHex(bs);
     return new JsonPrimitive(hex);
   }
 
@@ -184,14 +213,14 @@ public class JsonConversions {
   }
 
   public static JsonElement fromLocalizedText(LocalizedText value) {
-    var jsonObject = new JsonObject();
+    com.google.gson.JsonObject jsonObject = new JsonObject();
     jsonObject.addProperty("Locale", value.locale());
     jsonObject.addProperty("Text", value.text());
     return jsonObject;
   }
 
   public static JsonElement fromExtensionObject(ExtensionObject value) {
-    var jsonObject = new JsonObject();
+    com.google.gson.JsonObject jsonObject = new JsonObject();
 
     jsonObject.add("TypeId", fromNodeId(value.getEncodingOrTypeId()));
 
@@ -210,7 +239,7 @@ public class JsonConversions {
   }
 
   public static JsonElement fromDataValue(DataValue value) {
-    var jsonObject = new JsonObject();
+    com.google.gson.JsonObject jsonObject = new JsonObject();
 
     if (value.value().isNotNull()) {
       jsonObject.add("Value", fromVariant(value.value()));
@@ -240,23 +269,24 @@ public class JsonConversions {
       return JsonNull.INSTANCE;
     }
 
-    var jsonObject = new JsonObject();
+    com.google.gson.JsonObject jsonObject = new JsonObject();
 
-    OpcUaDataType dataType = value.getDataType().orElseThrow();
+    OpcUaDataType dataType = value.getDataType().get();
     jsonObject.addProperty("Type", dataType.getTypeId());
 
     if (valueObject.getClass().isArray()) {
       int[] dimensions = ArrayUtil.getDimensions(valueObject);
       assert dimensions.length == 1;
-      var jsonArray = new JsonArray();
+      JsonArray jsonArray = new JsonArray();
       for (int i = 0; i < Array.getLength(valueObject); i++) {
         Object arrayValue = Array.get(valueObject, i);
         jsonArray.add(from(arrayValue, dataType));
       }
       jsonObject.add("Body", jsonArray);
-    } else if (valueObject instanceof Matrix matrix) {
+    } else if (valueObject instanceof Matrix) {
+      Matrix matrix = (Matrix) valueObject;
       Object flatArray = matrix.getElements();
-      var jsonArray = new JsonArray();
+      JsonArray jsonArray = new JsonArray();
       for (int i = 0; i < Array.getLength(flatArray); i++) {
         Object element = Array.get(flatArray, i);
         jsonArray.add(from(element, dataType));
@@ -264,7 +294,7 @@ public class JsonConversions {
       jsonObject.add("Body", jsonArray);
 
       int[] dimensions = matrix.getDimensions();
-      var dimensionsJsonArray = new JsonArray();
+      JsonArray dimensionsJsonArray = new JsonArray();
       Arrays.stream(dimensions).forEach(dimensionsJsonArray::add);
       jsonObject.add("Dimensions", dimensionsJsonArray);
     } else {
@@ -289,37 +319,58 @@ public class JsonConversions {
    * @throws IllegalArgumentException if the {@link OpcUaDataType} is not supported.
    */
   public static Object to(JsonElement element, OpcUaDataType dataType) {
-    return switch (dataType) {
-      case Boolean -> toBoolean(element);
-      case SByte -> toSByte(element);
-      case Byte -> toByte(element);
-      case Int16 -> toInt16(element);
-      case UInt16 -> toUInt16(element);
-      case Int32 -> toInt32(element);
-      case UInt32 -> toUInt32(element);
-      case Int64 -> toInt64(element);
-      case UInt64 -> toUInt64(element);
-      case Float -> toFloat(element);
-      case Double -> toDouble(element);
-      case String -> toString(element);
-      case DateTime -> toDateTime(element);
-      case Guid -> toGuid(element);
-      case ByteString -> toByteString(element);
-      case XmlElement -> toXmlElement(element);
-      case NodeId -> toNodeId(element);
-      case ExpandedNodeId -> toExpandedNodeId(element);
-      case StatusCode -> toStatusCode(element);
-      case QualifiedName -> toQualifiedName(element);
-      case LocalizedText -> toLocalizedText(element);
-      case ExtensionObject -> toExtensionObject(element);
-      case DataValue -> toDataValue(element);
-      case Variant -> toVariant(element);
-      default ->
-          // note: shouldn't be possible to get here.
-          // DiagnosticInfo is not allowed in Variant.
-          // All other types should be handled above.
-          throw new IllegalArgumentException("dataType: " + dataType);
-    };
+    switch ((dataType)) {
+      case Boolean:
+        return toBoolean(element);
+      case SByte:
+        return toSByte(element);
+      case Byte:
+        return toByte(element);
+      case Int16:
+        return toInt16(element);
+      case UInt16:
+        return toUInt16(element);
+      case Int32:
+        return toInt32(element);
+      case UInt32:
+        return toUInt32(element);
+      case Int64:
+        return toInt64(element);
+      case UInt64:
+        return toUInt64(element);
+      case Float:
+        return toFloat(element);
+      case Double:
+        return toDouble(element);
+      case String:
+        return toString(element);
+      case DateTime:
+        return toDateTime(element);
+      case Guid:
+        return toGuid(element);
+      case ByteString:
+        return toByteString(element);
+      case XmlElement:
+        return toXmlElement(element);
+      case NodeId:
+        return toNodeId(element);
+      case ExpandedNodeId:
+        return toExpandedNodeId(element);
+      case StatusCode:
+        return toStatusCode(element);
+      case QualifiedName:
+        return toQualifiedName(element);
+      case LocalizedText:
+        return toLocalizedText(element);
+      case ExtensionObject:
+        return toExtensionObject(element);
+      case DataValue:
+        return toDataValue(element);
+      case Variant:
+        return toVariant(element);
+      default:
+        throw new IllegalArgumentException("dataType: " + dataType);
+    }
   }
 
   public static Boolean toBoolean(JsonElement element) {
@@ -380,7 +431,7 @@ public class JsonConversions {
 
   public static ByteString toByteString(JsonElement element) {
     String hex = element.getAsString();
-    byte[] bs = HexFormat.of().parseHex(hex);
+    byte[] bs = hexToBytes(hex);
     return new ByteString(bs);
   }
 
@@ -446,21 +497,28 @@ public class JsonConversions {
       encoding = jsonObject.get("Encoding").getAsInt();
     }
 
-    return switch (encoding) {
-      case 0 -> {
+    switch ((encoding)) {
+      case 0:
+        {
         String body = jsonObject.get("Body").toString();
-        yield ExtensionObject.of(body, typeId);
-      }
-      case 1 -> {
+        return ExtensionObject.of(body, typeId);
+
+        }
+      case 1:
+        {
         ByteString body = toByteString(jsonObject.get("Body"));
-        yield ExtensionObject.of(body, typeId);
-      }
-      case 2 -> {
+        return ExtensionObject.of(body, typeId);
+
+        }
+      case 2:
+        {
         XmlElement body = toXmlElement(jsonObject.get("Body"));
-        yield ExtensionObject.of(body, typeId);
-      }
-      default -> throw new IllegalArgumentException("unknown encoding: " + encoding);
-    };
+        return ExtensionObject.of(body, typeId);
+
+        }
+      default:
+        throw new IllegalArgumentException("unknown encoding: " + encoding);
+    }
   }
 
   public static DataValue toDataValue(JsonElement element) {

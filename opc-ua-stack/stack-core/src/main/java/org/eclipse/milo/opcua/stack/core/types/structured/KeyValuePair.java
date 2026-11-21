@@ -85,7 +85,7 @@ public class KeyValuePair extends Structure implements UaStructuredType {
       return false;
     }
     KeyValuePair that = (KeyValuePair) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getKey(), that.getKey());
     eqb.append(getValue(), that.getValue());
     return eqb.build();
@@ -93,7 +93,7 @@ public class KeyValuePair extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getKey());
     hcb.append(getValue());
     return hcb.build();
@@ -101,7 +101,7 @@ public class KeyValuePair extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", KeyValuePair.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", KeyValuePair.class.getSimpleName() + "[", "]");
     joiner.add("key=" + getKey());
     joiner.add("value=" + getValue());
     return joiner.toString();

@@ -10,13 +10,13 @@
 
 package org.eclipse.milo.opcua.sdk.core.dtd;
 
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Marshaller;
-import jakarta.xml.bind.PropertyException;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.PropertyException;
 import java.io.OutputStream;
 import org.eclipse.milo.opcua.stack.core.util.Namespaces;
-import org.glassfish.jaxb.runtime.marshaller.NamespacePrefixMapper;
+import com.sun.xml.bind.marshaller.NamespacePrefixMapper;
 import org.opcfoundation.opcua.binaryschema.ObjectFactory;
 import org.opcfoundation.opcua.binaryschema.TypeDictionary;
 import org.slf4j.Logger;

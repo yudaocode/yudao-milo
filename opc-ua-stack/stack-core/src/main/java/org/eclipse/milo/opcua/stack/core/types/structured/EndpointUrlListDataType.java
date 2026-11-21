@@ -77,21 +77,21 @@ public class EndpointUrlListDataType extends Structure implements UaStructuredTy
       return false;
     }
     EndpointUrlListDataType that = (EndpointUrlListDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getEndpointUrlList(), that.getEndpointUrlList());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEndpointUrlList());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EndpointUrlListDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EndpointUrlListDataType.class.getSimpleName() + "[", "]");
     joiner.add("endpointUrlList=" + java.util.Arrays.toString(getEndpointUrlList()));
     return joiner.toString();
   }

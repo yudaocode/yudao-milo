@@ -156,7 +156,8 @@ public final class NumericRange {
         }
 
         return a;
-      } else if (array instanceof String s) {
+      } else if (array instanceof String) {
+      String s = (String) array;
         int length = s.length();
         if (low >= length) {
           if (dimension > 1) {
@@ -167,7 +168,8 @@ public final class NumericRange {
         }
         int to = Math.min(high + 1, length);
         return s.substring(low, to);
-      } else if (array instanceof ByteString bs) {
+      } else if (array instanceof ByteString) {
+      ByteString bs = (ByteString) array;
         int length = bs.length();
         if (low >= length) {
           if (dimension > 1) {
@@ -256,7 +258,8 @@ public final class NumericRange {
         }
 
         return copy;
-      } else if (current instanceof String cs) {
+      } else if (current instanceof String) {
+      String cs = (String) current;
         String us = (String) update;
         int length = cs.length();
         StringBuilder copy = new StringBuilder();
@@ -274,7 +277,8 @@ public final class NumericRange {
         }
 
         return copy.toString();
-      } else if (current instanceof ByteString bs) {
+      } else if (current instanceof ByteString) {
+      ByteString bs = (ByteString) current;
         ByteString us = (ByteString) update;
         int length = bs.length();
         byte[] copy = new byte[length];

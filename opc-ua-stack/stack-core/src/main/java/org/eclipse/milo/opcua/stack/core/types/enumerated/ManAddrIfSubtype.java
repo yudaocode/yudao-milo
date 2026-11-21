@@ -51,13 +51,18 @@ public enum ManAddrIfSubtype implements UaEnumeratedType {
   }
 
   public static @Nullable ManAddrIfSubtype from(int value) {
-    return switch (value) {
-      case 0 -> None;
-      case 1 -> Unknown;
-      case 2 -> PortRef;
-      case 3 -> SystemPortNumber;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return None;
+      case 1:
+        return Unknown;
+      case 2:
+        return PortRef;
+      case 3:
+        return SystemPortNumber;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

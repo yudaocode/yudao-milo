@@ -84,7 +84,7 @@ public class SignedSoftwareCertificate extends Structure implements UaStructured
       return false;
     }
     SignedSoftwareCertificate that = (SignedSoftwareCertificate) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getCertificateData(), that.getCertificateData());
     eqb.append(getSignature(), that.getSignature());
     return eqb.build();
@@ -92,7 +92,7 @@ public class SignedSoftwareCertificate extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getCertificateData());
     hcb.append(getSignature());
     return hcb.build();
@@ -100,7 +100,7 @@ public class SignedSoftwareCertificate extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SignedSoftwareCertificate.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SignedSoftwareCertificate.class.getSimpleName() + "[", "]");
     joiner.add("certificateData=" + getCertificateData());
     joiner.add("signature=" + getSignature());
     return joiner.toString();

@@ -74,16 +74,24 @@ public enum PortIdSubtype implements UaEnumeratedType {
   }
 
   public static @Nullable PortIdSubtype from(int value) {
-    return switch (value) {
-      case 1 -> InterfaceAlias;
-      case 2 -> PortComponent;
-      case 3 -> MacAddress;
-      case 4 -> NetworkAddress;
-      case 5 -> InterfaceName;
-      case 6 -> AgentCircuitId;
-      case 7 -> Local;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return InterfaceAlias;
+      case 2:
+        return PortComponent;
+      case 3:
+        return MacAddress;
+      case 4:
+        return NetworkAddress;
+      case 5:
+        return InterfaceName;
+      case 6:
+        return AgentCircuitId;
+      case 7:
+        return Local;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

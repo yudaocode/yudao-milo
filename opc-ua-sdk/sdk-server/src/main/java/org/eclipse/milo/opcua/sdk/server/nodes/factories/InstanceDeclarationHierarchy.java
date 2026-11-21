@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.nodes.factories;
 
+import java.util.stream.Collectors;
+
 import java.util.List;
 import java.util.Optional;
 import org.eclipse.milo.opcua.sdk.core.Reference;
@@ -108,7 +110,7 @@ public class InstanceDeclarationHierarchy {
       List<Reference> forwardReferences =
           addressSpaceManager.getManagedReferences(typeDefinitionId).stream()
               .filter(Reference::isForward)
-              .toList();
+              .collect(Collectors.toList());
 
       forwardReferences.forEach(
           reference ->

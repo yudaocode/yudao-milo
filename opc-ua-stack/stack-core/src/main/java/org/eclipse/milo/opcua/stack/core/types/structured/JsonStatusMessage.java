@@ -124,7 +124,7 @@ public class JsonStatusMessage extends Structure implements UaStructuredType {
       return false;
     }
     JsonStatusMessage that = (JsonStatusMessage) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMessageId(), that.getMessageId());
     eqb.append(getMessageType(), that.getMessageType());
     eqb.append(getPublisherId(), that.getPublisherId());
@@ -137,7 +137,7 @@ public class JsonStatusMessage extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMessageId());
     hcb.append(getMessageType());
     hcb.append(getPublisherId());
@@ -150,7 +150,7 @@ public class JsonStatusMessage extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", JsonStatusMessage.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", JsonStatusMessage.class.getSimpleName() + "[", "]");
     joiner.add("messageId='" + getMessageId() + "'");
     joiner.add("messageType='" + getMessageType() + "'");
     joiner.add("publisherId='" + getPublisherId() + "'");

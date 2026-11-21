@@ -114,7 +114,8 @@ final class Int32Conversions {
 
   @Nullable
   static Object convert(@Nullable Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof Integer i) {
+    if (o instanceof Integer) {
+      Integer i = (Integer) o;
       return implicit ? implicitConversion(i, targetType) : explicitConversion(i, targetType);
     } else {
       return null;

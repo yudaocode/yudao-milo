@@ -84,7 +84,8 @@ final class BooleanConversions {
 
   @Nullable
   static Object convert(@NonNull Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof Boolean b) {
+    if (o instanceof Boolean) {
+      Boolean b = (Boolean) o;
       return implicit ? implicitConversion(b, targetType) : explicitConversion(b, targetType);
     } else {
       return null;

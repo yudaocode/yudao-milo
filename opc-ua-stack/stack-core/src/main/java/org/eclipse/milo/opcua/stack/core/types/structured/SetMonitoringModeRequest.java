@@ -103,7 +103,7 @@ public class SetMonitoringModeRequest extends Structure implements UaRequestMess
       return false;
     }
     SetMonitoringModeRequest that = (SetMonitoringModeRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getMonitoringMode(), that.getMonitoringMode());
@@ -113,7 +113,7 @@ public class SetMonitoringModeRequest extends Structure implements UaRequestMess
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getSubscriptionId());
     hcb.append(getMonitoringMode());
@@ -123,7 +123,7 @@ public class SetMonitoringModeRequest extends Structure implements UaRequestMess
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SetMonitoringModeRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SetMonitoringModeRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("subscriptionId=" + getSubscriptionId());
     joiner.add("monitoringMode=" + getMonitoringMode());

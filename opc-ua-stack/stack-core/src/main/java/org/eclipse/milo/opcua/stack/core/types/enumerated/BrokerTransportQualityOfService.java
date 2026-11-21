@@ -49,14 +49,20 @@ public enum BrokerTransportQualityOfService implements UaEnumeratedType {
   }
 
   public static @Nullable BrokerTransportQualityOfService from(int value) {
-    return switch (value) {
-      case 0 -> NotSpecified;
-      case 1 -> BestEffort;
-      case 2 -> AtLeastOnce;
-      case 3 -> AtMostOnce;
-      case 4 -> ExactlyOnce;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return NotSpecified;
+      case 1:
+        return BestEffort;
+      case 2:
+        return AtLeastOnce;
+      case 3:
+        return AtMostOnce;
+      case 4:
+        return ExactlyOnce;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

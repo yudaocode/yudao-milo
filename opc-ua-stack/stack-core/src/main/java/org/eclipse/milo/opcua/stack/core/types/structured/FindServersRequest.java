@@ -102,7 +102,7 @@ public class FindServersRequest extends Structure implements UaRequestMessageTyp
       return false;
     }
     FindServersRequest that = (FindServersRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getEndpointUrl(), that.getEndpointUrl());
     eqb.append(getLocaleIds(), that.getLocaleIds());
@@ -112,7 +112,7 @@ public class FindServersRequest extends Structure implements UaRequestMessageTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getEndpointUrl());
     hcb.append(getLocaleIds());
@@ -122,7 +122,7 @@ public class FindServersRequest extends Structure implements UaRequestMessageTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", FindServersRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", FindServersRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("endpointUrl='" + getEndpointUrl() + "'");
     joiner.add("localeIds=" + java.util.Arrays.toString(getLocaleIds()));

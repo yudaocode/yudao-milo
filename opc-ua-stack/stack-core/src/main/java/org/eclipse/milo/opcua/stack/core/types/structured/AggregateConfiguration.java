@@ -110,7 +110,7 @@ public class AggregateConfiguration extends Structure implements UaStructuredTyp
       return false;
     }
     AggregateConfiguration that = (AggregateConfiguration) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getUseServerCapabilitiesDefaults(), that.getUseServerCapabilitiesDefaults());
     eqb.append(getTreatUncertainAsBad(), that.getTreatUncertainAsBad());
     eqb.append(getPercentDataBad(), that.getPercentDataBad());
@@ -121,7 +121,7 @@ public class AggregateConfiguration extends Structure implements UaStructuredTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getUseServerCapabilitiesDefaults());
     hcb.append(getTreatUncertainAsBad());
     hcb.append(getPercentDataBad());
@@ -132,7 +132,7 @@ public class AggregateConfiguration extends Structure implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AggregateConfiguration.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AggregateConfiguration.class.getSimpleName() + "[", "]");
     joiner.add("useServerCapabilitiesDefaults=" + getUseServerCapabilitiesDefaults());
     joiner.add("treatUncertainAsBad=" + getTreatUncertainAsBad());
     joiner.add("percentDataBad=" + getPercentDataBad());

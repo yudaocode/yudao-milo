@@ -54,7 +54,7 @@ public abstract class FilterOperand extends Structure implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", FilterOperand.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", FilterOperand.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.servicesets.impl.helpers;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.stream.Collectors.toList;
 import static org.eclipse.milo.opcua.sdk.server.servicesets.AbstractServiceSet.createResponseHeader;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
@@ -75,7 +77,7 @@ public class BrowsePathsHelper {
       throw new UaException(StatusCodes.Bad_TooManyOperations);
     }
 
-    var results = new ArrayList<BrowsePathResult>(browsePaths.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.BrowsePathResult> results = new ArrayList<BrowsePathResult>(browsePaths.size());
 
     for (BrowsePath browsePath : browsePaths) {
       results.add(translate(browsePath));
@@ -84,7 +86,7 @@ public class BrowsePathsHelper {
     ResponseHeader header = createResponseHeader(request);
 
     return new TranslateBrowsePathsToNodeIdsResponse(
-        header, results.toArray(BrowsePathResult[]::new), new DiagnosticInfo[0]);
+        header, results.toArray(new BrowsePathResult[0]), new DiagnosticInfo[0]);
   }
 
   private BrowsePathResult translate(BrowsePath browsePath) {
@@ -151,7 +153,7 @@ public class BrowsePathsHelper {
         UInteger remaining = nextElements.isEmpty() ? UInteger.MAX : uint(nextElements.size());
 
         nextXni = BrowseUtil.normalize(nextXni, server.getNamespaceTable());
-        return List.of(new BrowsePathTarget(nextXni, remaining));
+        return Java8Collections.listOf(new BrowsePathTarget(nextXni, remaining));
       }
     }
   }
@@ -165,14 +167,15 @@ public class BrowsePathsHelper {
       throw new UaException(StatusCodes.Bad_BrowseNameInvalid);
     }
 
-    var browseContext = new BrowseContext(server, context.getSession().orElse(null));
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.BrowseContext browseContext = new BrowseContext(server, context.getSession().orElse(null));
 
-    var view = new ViewDescription(NodeId.NULL_VALUE, DateTime.NULL_VALUE, UInteger.valueOf(0));
+    org.eclipse.milo.opcua.stack.core.types.structured.ViewDescription view = new ViewDescription(NodeId.NULL_VALUE, DateTime.NULL_VALUE, UInteger.valueOf(0));
 
     AddressSpace.ReferenceResult result =
-        server.getAddressSpaceManager().browse(browseContext, view, List.of(nodeId)).get(0);
+        server.getAddressSpaceManager().browse(browseContext, view, Java8Collections.listOf(nodeId)).get(0);
 
-    if (result instanceof ReferenceList rl) {
+    if (result instanceof ReferenceList) {
+      ReferenceList rl = (ReferenceList) result;
       List<Reference> references = rl.references();
 
       ReferenceTypeTree referenceTypeTree = server.getReferenceTypeTree();
@@ -227,12 +230,13 @@ public class BrowsePathsHelper {
 
     BrowseContext browseContext = new BrowseContext(server, context.getSession().orElse(null));
 
-    var view = new ViewDescription(NodeId.NULL_VALUE, DateTime.NULL_VALUE, UInteger.valueOf(0));
+    org.eclipse.milo.opcua.stack.core.types.structured.ViewDescription view = new ViewDescription(NodeId.NULL_VALUE, DateTime.NULL_VALUE, UInteger.valueOf(0));
 
     AddressSpace.ReferenceResult result =
-        server.getAddressSpaceManager().browse(browseContext, view, List.of(nodeId)).get(0);
+        server.getAddressSpaceManager().browse(browseContext, view, Java8Collections.listOf(nodeId)).get(0);
 
-    if (result instanceof ReferenceList rl) {
+    if (result instanceof ReferenceList) {
+      ReferenceList rl = (ReferenceList) result;
       List<Reference> references = rl.references();
 
       ReferenceTypeTree referenceTypeTree = server.getReferenceTypeTree();
@@ -259,7 +263,7 @@ public class BrowsePathsHelper {
         throw new UaException(StatusCodes.Bad_NoMatch);
       } else {
         List<QualifiedName> browseNames = readTargetBrowseNames(targetNodeIds);
-        var targets = new ArrayList<ExpandedNodeId>();
+        java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.ExpandedNodeId> targets = new ArrayList<ExpandedNodeId>();
 
         for (int i = 0; i < targetNodeIds.size(); i++) {
           ExpandedNodeId targetNodeId = targetNodeIds.get(i);
@@ -277,7 +281,7 @@ public class BrowsePathsHelper {
   }
 
   private List<QualifiedName> readTargetBrowseNames(List<ExpandedNodeId> targetNodeIds) {
-    var browseNames = new ArrayList<QualifiedName>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.QualifiedName> browseNames = new ArrayList<QualifiedName>();
 
     for (ExpandedNodeId xni : targetNodeIds) {
       try {
@@ -286,12 +290,12 @@ public class BrowsePathsHelper {
         ReadValueId readValueId =
             new ReadValueId(nodeId, AttributeId.BrowseName.uid(), null, QualifiedName.NULL_VALUE);
 
-        var context = new ReadContext(server, null);
+        org.eclipse.milo.opcua.sdk.server.AddressSpace.ReadContext context = new ReadContext(server, null);
 
         List<DataValue> values =
             server
                 .getAddressSpaceManager()
-                .read(context, 0.0, TimestampsToReturn.Neither, List.of(readValueId));
+                .read(context, 0.0, TimestampsToReturn.Neither, Java8Collections.listOf(readValueId));
 
         browseNames.add((QualifiedName) values.get(0).value().value());
       } catch (Exception ignored) {

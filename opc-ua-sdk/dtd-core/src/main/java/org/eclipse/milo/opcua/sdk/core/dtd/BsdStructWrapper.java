@@ -14,7 +14,23 @@ import org.eclipse.milo.opcua.sdk.core.typetree.DataType;
 import org.eclipse.milo.opcua.stack.core.types.UaStructuredType;
 import org.eclipse.milo.opcua.stack.core.types.builtin.ExpandedNodeId;
 
-public record BsdStructWrapper<T>(DataType dataType, T object) implements UaStructuredType {
+public final class BsdStructWrapper<T> implements UaStructuredType {
+  private final DataType dataType;
+  private final T object;
+
+  public DataType dataType() {
+    return dataType;
+  }
+
+  public T object() {
+    return object;
+  }
+
+  public BsdStructWrapper(DataType dataType, T object) {
+    this.dataType = dataType;
+    this.object = object;
+  }
+
 
   @Override
   public ExpandedNodeId getTypeId() {

@@ -94,7 +94,7 @@ public class NodeTypeDescription extends Structure implements UaStructuredType {
       return false;
     }
     NodeTypeDescription that = (NodeTypeDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTypeDefinitionNode(), that.getTypeDefinitionNode());
     eqb.append(getIncludeSubTypes(), that.getIncludeSubTypes());
     eqb.append(getDataToReturn(), that.getDataToReturn());
@@ -103,7 +103,7 @@ public class NodeTypeDescription extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTypeDefinitionNode());
     hcb.append(getIncludeSubTypes());
     hcb.append(getDataToReturn());
@@ -112,7 +112,7 @@ public class NodeTypeDescription extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NodeTypeDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NodeTypeDescription.class.getSimpleName() + "[", "]");
     joiner.add("typeDefinitionNode=" + getTypeDefinitionNode());
     joiner.add("includeSubTypes=" + getIncludeSubTypes());
     joiner.add("dataToReturn=" + java.util.Arrays.toString(getDataToReturn()));

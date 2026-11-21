@@ -147,7 +147,7 @@ public interface DialogConditionType extends ConditionType {
                   "SelectedResponse",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=6")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -192,7 +192,7 @@ public interface DialogConditionType extends ConditionType {
                   "SelectedResponse",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=6")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -200,7 +200,7 @@ public interface DialogConditionType extends ConditionType {
                   "Comment",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

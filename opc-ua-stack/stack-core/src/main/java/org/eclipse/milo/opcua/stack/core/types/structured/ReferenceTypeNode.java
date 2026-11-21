@@ -116,7 +116,7 @@ public class ReferenceTypeNode extends TypeNode implements UaStructuredType {
       return false;
     }
     ReferenceTypeNode that = (ReferenceTypeNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getIsAbstract(), that.getIsAbstract());
     eqb.append(getSymmetric(), that.getSymmetric());
@@ -126,7 +126,7 @@ public class ReferenceTypeNode extends TypeNode implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getIsAbstract());
     hcb.append(getSymmetric());
     hcb.append(getInverseName());
@@ -136,7 +136,7 @@ public class ReferenceTypeNode extends TypeNode implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReferenceTypeNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReferenceTypeNode.class.getSimpleName() + "[", "]");
     joiner.add("isAbstract=" + getIsAbstract());
     joiner.add("symmetric=" + getSymmetric());
     joiner.add("inverseName=" + getInverseName());

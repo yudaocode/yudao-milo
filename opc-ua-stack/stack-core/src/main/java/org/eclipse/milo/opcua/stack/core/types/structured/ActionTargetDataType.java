@@ -93,7 +93,7 @@ public class ActionTargetDataType extends Structure implements UaStructuredType 
       return false;
     }
     ActionTargetDataType that = (ActionTargetDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getActionTargetId(), that.getActionTargetId());
     eqb.append(getName(), that.getName());
     eqb.append(getDescription(), that.getDescription());
@@ -102,7 +102,7 @@ public class ActionTargetDataType extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getActionTargetId());
     hcb.append(getName());
     hcb.append(getDescription());
@@ -111,7 +111,7 @@ public class ActionTargetDataType extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ActionTargetDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ActionTargetDataType.class.getSimpleName() + "[", "]");
     joiner.add("actionTargetId=" + getActionTargetId());
     joiner.add("name='" + getName() + "'");
     joiner.add("description=" + getDescription());

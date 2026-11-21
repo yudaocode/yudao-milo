@@ -128,7 +128,7 @@ public class FieldTargetDataType extends Structure implements UaStructuredType {
       return false;
     }
     FieldTargetDataType that = (FieldTargetDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDataSetFieldId(), that.getDataSetFieldId());
     eqb.append(getReceiverIndexRange(), that.getReceiverIndexRange());
     eqb.append(getTargetNodeId(), that.getTargetNodeId());
@@ -141,7 +141,7 @@ public class FieldTargetDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDataSetFieldId());
     hcb.append(getReceiverIndexRange());
     hcb.append(getTargetNodeId());
@@ -154,7 +154,7 @@ public class FieldTargetDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", FieldTargetDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", FieldTargetDataType.class.getSimpleName() + "[", "]");
     joiner.add("dataSetFieldId=" + getDataSetFieldId());
     joiner.add("receiverIndexRange='" + getReceiverIndexRange() + "'");
     joiner.add("targetNodeId=" + getTargetNodeId());

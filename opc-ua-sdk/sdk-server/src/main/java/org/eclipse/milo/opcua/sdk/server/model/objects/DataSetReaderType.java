@@ -243,7 +243,7 @@ public interface DataSetReaderType extends BaseObjectType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -251,7 +251,7 @@ public interface DataSetReaderType extends BaseObjectType {
                   "TargetVariablesToAdd",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14744")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -270,7 +270,7 @@ public interface DataSetReaderType extends BaseObjectType {
                   "AddResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -319,7 +319,7 @@ public interface DataSetReaderType extends BaseObjectType {
                   "ParentNodeName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -327,7 +327,7 @@ public interface DataSetReaderType extends BaseObjectType {
                   "RolePermissions",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=96")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -346,7 +346,7 @@ public interface DataSetReaderType extends BaseObjectType {
                   "ParentNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

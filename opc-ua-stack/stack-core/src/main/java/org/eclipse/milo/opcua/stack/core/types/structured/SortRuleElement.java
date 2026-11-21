@@ -84,7 +84,7 @@ public class SortRuleElement extends Structure implements UaStructuredType {
       return false;
     }
     SortRuleElement that = (SortRuleElement) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSortOrder(), that.getSortOrder());
     eqb.append(getEventField(), that.getEventField());
     return eqb.build();
@@ -92,7 +92,7 @@ public class SortRuleElement extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSortOrder());
     hcb.append(getEventField());
     return hcb.build();
@@ -100,7 +100,7 @@ public class SortRuleElement extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SortRuleElement.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SortRuleElement.class.getSimpleName() + "[", "]");
     joiner.add("sortOrder=" + getSortOrder());
     joiner.add("eventField=" + getEventField());
     return joiner.toString();

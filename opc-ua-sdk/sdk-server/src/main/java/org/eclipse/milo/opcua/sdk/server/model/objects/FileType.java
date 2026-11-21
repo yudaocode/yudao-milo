@@ -165,7 +165,7 @@ public interface FileType extends BaseObjectType {
                   "Mode",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=3")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -184,7 +184,7 @@ public interface FileType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -227,7 +227,7 @@ public interface FileType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -274,7 +274,7 @@ public interface FileType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -282,7 +282,7 @@ public interface FileType extends BaseObjectType {
                   "Length",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=6")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -301,7 +301,7 @@ public interface FileType extends BaseObjectType {
                   "Data",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -346,7 +346,7 @@ public interface FileType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -354,7 +354,7 @@ public interface FileType extends BaseObjectType {
                   "Data",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -404,7 +404,7 @@ public interface FileType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -423,7 +423,7 @@ public interface FileType extends BaseObjectType {
                   "Position",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=9")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -466,7 +466,7 @@ public interface FileType extends BaseObjectType {
                   "FileHandle",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -474,7 +474,7 @@ public interface FileType extends BaseObjectType {
                   "Position",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=9")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

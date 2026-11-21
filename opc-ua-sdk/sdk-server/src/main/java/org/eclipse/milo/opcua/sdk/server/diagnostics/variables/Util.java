@@ -106,11 +106,11 @@ class Util {
     return new AttributeFilter() {
       @Override
       public Object getAttribute(AttributeFilterContext ctx, AttributeId attributeId) {
-        if (attributeId != AttributeId.UserAccessLevel || ctx.getSession().isEmpty()) {
+        if (attributeId != AttributeId.UserAccessLevel || !ctx.getSession().isPresent()) {
           return ctx.getAttribute(attributeId);
         }
 
-        var userAccessLevels =
+        java.util.EnumSet<org.eclipse.milo.opcua.sdk.core.AccessLevel> userAccessLevels =
             AccessLevel.fromValue((UByte) ctx.getAttribute(AttributeId.UserAccessLevel));
         RolePermissionType[] userRolePermissions = getUserRolePermissions(ctx);
 
@@ -146,7 +146,7 @@ class Util {
         } else {
           return ctx.getAttribute(attributeId);
         }
-      }
+      };
     };
   }
 
@@ -157,7 +157,8 @@ class Util {
     ctx.getSession().flatMap(Session::getRoleIds).ifPresent(roleIds::addAll);
 
     Object value = ctx.getAttribute(AttributeId.RolePermissions);
-    if (value instanceof RolePermissionType[] rolePermissions) {
+    if (value instanceof RolePermissionType[]) {
+      RolePermissionType[] rolePermissions = (RolePermissionType[]) value;
       return Stream.of(rolePermissions)
           .filter(rolePermission -> roleIds.contains(rolePermission.getRoleId()))
           .toArray(RolePermissionType[]::new);

@@ -109,7 +109,7 @@ public class NodeAttributes extends Structure implements UaStructuredType {
       return false;
     }
     NodeAttributes that = (NodeAttributes) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSpecifiedAttributes(), that.getSpecifiedAttributes());
     eqb.append(getDisplayName(), that.getDisplayName());
     eqb.append(getDescription(), that.getDescription());
@@ -120,7 +120,7 @@ public class NodeAttributes extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSpecifiedAttributes());
     hcb.append(getDisplayName());
     hcb.append(getDescription());
@@ -131,7 +131,7 @@ public class NodeAttributes extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NodeAttributes.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NodeAttributes.class.getSimpleName() + "[", "]");
     joiner.add("specifiedAttributes=" + getSpecifiedAttributes());
     joiner.add("displayName=" + getDisplayName());
     joiner.add("description=" + getDescription());

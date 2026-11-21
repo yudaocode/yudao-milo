@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.security;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.security.cert.X509CRL;
 import java.security.cert.X509Certificate;
@@ -37,28 +38,28 @@ public class MemoryTrustListManager implements TrustListManager {
   @Override
   public List<X509CRL> getIssuerCrls() {
     synchronized (issuerCrls) {
-      return List.copyOf(issuerCrls);
+      return Java8Collections.listCopyOf(issuerCrls);
     }
   }
 
   @Override
   public List<X509CRL> getTrustedCrls() {
     synchronized (trustedCrls) {
-      return List.copyOf(trustedCrls);
+      return Java8Collections.listCopyOf(trustedCrls);
     }
   }
 
   @Override
   public List<X509Certificate> getIssuerCertificates() {
     synchronized (issuerCertificates) {
-      return List.copyOf(issuerCertificates);
+      return Java8Collections.listCopyOf(issuerCertificates);
     }
   }
 
   @Override
   public List<X509Certificate> getTrustedCertificates() {
     synchronized (trustedCertificates) {
-      return List.copyOf(trustedCertificates);
+      return Java8Collections.listCopyOf(trustedCertificates);
     }
   }
 

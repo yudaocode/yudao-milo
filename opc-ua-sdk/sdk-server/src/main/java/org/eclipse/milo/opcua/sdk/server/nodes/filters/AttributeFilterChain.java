@@ -80,7 +80,7 @@ public class AttributeFilterChain {
     AttributeFilter filter =
         filterIterator.hasNext() ? filterIterator.next() : AttributeFilter.DEFAULT_INSTANCE;
 
-    var ctx = new AttributeFilterContext(session, node, filterIterator);
+    org.eclipse.milo.opcua.sdk.server.nodes.filters.AttributeFilterContext ctx = new AttributeFilterContext(session, node, filterIterator);
 
     Object value = filter.getAttribute(ctx, attributeId);
 
@@ -114,7 +114,7 @@ public class AttributeFilterChain {
     AttributeFilter filter =
         filterIterator.hasNext() ? filterIterator.next() : AttributeFilter.DEFAULT_INSTANCE;
 
-    var ctx = new AttributeFilterContext(session, node, filterIterator);
+    org.eclipse.milo.opcua.sdk.server.nodes.filters.AttributeFilterContext ctx = new AttributeFilterContext(session, node, filterIterator);
 
     Object value = filter.readAttribute(ctx, attributeId);
 
@@ -159,7 +159,7 @@ public class AttributeFilterChain {
     AttributeFilter filter =
         filterIterator.hasNext() ? filterIterator.next() : AttributeFilter.DEFAULT_INSTANCE;
 
-    var ctx = new AttributeFilterContext(session, node, filterIterator);
+    org.eclipse.milo.opcua.sdk.server.nodes.filters.AttributeFilterContext ctx = new AttributeFilterContext(session, node, filterIterator);
 
     filter.setAttribute(ctx, attributeId, value);
   }
@@ -189,7 +189,7 @@ public class AttributeFilterChain {
     AttributeFilter filter =
         filterIterator.hasNext() ? filterIterator.next() : AttributeFilter.DEFAULT_INSTANCE;
 
-    var ctx = new AttributeFilterContext(session, node, filterIterator);
+    org.eclipse.milo.opcua.sdk.server.nodes.filters.AttributeFilterContext ctx = new AttributeFilterContext(session, node, filterIterator);
 
     filter.writeAttribute(ctx, attributeId, value);
   }

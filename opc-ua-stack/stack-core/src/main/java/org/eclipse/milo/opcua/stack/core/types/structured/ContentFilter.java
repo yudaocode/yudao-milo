@@ -77,21 +77,21 @@ public class ContentFilter extends Structure implements UaStructuredType {
       return false;
     }
     ContentFilter that = (ContentFilter) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getElements(), that.getElements());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getElements());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ContentFilter.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ContentFilter.class.getSimpleName() + "[", "]");
     joiner.add("elements=" + java.util.Arrays.toString(getElements()));
     return joiner.toString();
   }

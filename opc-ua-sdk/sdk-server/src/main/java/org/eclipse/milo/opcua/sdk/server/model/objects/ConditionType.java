@@ -267,7 +267,7 @@ public interface ConditionType extends BaseEventType {
                   "EventId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The identifier for the event to comment.")),
@@ -275,7 +275,7 @@ public interface ConditionType extends BaseEventType {
                   "Comment",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The comment to add to the condition."))
@@ -323,7 +323,7 @@ public interface ConditionType extends BaseEventType {
                   "SubscriptionId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=288")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The identifier for the subscription to refresh."))
@@ -368,7 +368,7 @@ public interface ConditionType extends BaseEventType {
                   "SubscriptionId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=288")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The identifier for the subscription to refresh.")),
@@ -376,7 +376,7 @@ public interface ConditionType extends BaseEventType {
                   "MonitoredItemId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=288")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "The identifier for the monitored item to refresh."))

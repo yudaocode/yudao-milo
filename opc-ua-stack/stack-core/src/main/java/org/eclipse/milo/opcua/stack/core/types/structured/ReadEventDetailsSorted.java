@@ -84,7 +84,7 @@ public class ReadEventDetailsSorted extends ReadEventDetails implements UaStruct
       return false;
     }
     ReadEventDetailsSorted that = (ReadEventDetailsSorted) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getSortClause(), that.getSortClause());
     return eqb.build();
@@ -92,7 +92,7 @@ public class ReadEventDetailsSorted extends ReadEventDetails implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSortClause());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -100,7 +100,7 @@ public class ReadEventDetailsSorted extends ReadEventDetails implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadEventDetailsSorted.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadEventDetailsSorted.class.getSimpleName() + "[", "]");
     joiner.add("sortClause=" + java.util.Arrays.toString(getSortClause()));
     return joiner.toString();
   }

@@ -85,7 +85,7 @@ public class MdnsDiscoveryConfiguration extends DiscoveryConfiguration implement
       return false;
     }
     MdnsDiscoveryConfiguration that = (MdnsDiscoveryConfiguration) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMdnsServerName(), that.getMdnsServerName());
     eqb.append(getServerCapabilities(), that.getServerCapabilities());
     return eqb.build();
@@ -93,7 +93,7 @@ public class MdnsDiscoveryConfiguration extends DiscoveryConfiguration implement
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMdnsServerName());
     hcb.append(getServerCapabilities());
     return hcb.build();
@@ -101,7 +101,7 @@ public class MdnsDiscoveryConfiguration extends DiscoveryConfiguration implement
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", MdnsDiscoveryConfiguration.class.getSimpleName() + "[", "]");
     joiner.add("mdnsServerName='" + getMdnsServerName() + "'");
     joiner.add("serverCapabilities=" + java.util.Arrays.toString(getServerCapabilities()));

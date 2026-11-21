@@ -102,7 +102,7 @@ public class ServerOnNetwork extends Structure implements UaStructuredType {
       return false;
     }
     ServerOnNetwork that = (ServerOnNetwork) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRecordId(), that.getRecordId());
     eqb.append(getServerName(), that.getServerName());
     eqb.append(getDiscoveryUrl(), that.getDiscoveryUrl());
@@ -112,7 +112,7 @@ public class ServerOnNetwork extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRecordId());
     hcb.append(getServerName());
     hcb.append(getDiscoveryUrl());
@@ -122,7 +122,7 @@ public class ServerOnNetwork extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ServerOnNetwork.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ServerOnNetwork.class.getSimpleName() + "[", "]");
     joiner.add("recordId=" + getRecordId());
     joiner.add("serverName='" + getServerName() + "'");
     joiner.add("discoveryUrl='" + getDiscoveryUrl() + "'");

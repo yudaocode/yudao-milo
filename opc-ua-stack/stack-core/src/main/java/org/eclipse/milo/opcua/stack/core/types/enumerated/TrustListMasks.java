@@ -57,15 +57,22 @@ public enum TrustListMasks implements UaEnumeratedType {
   }
 
   public static @Nullable TrustListMasks from(int value) {
-    return switch (value) {
-      case 0 -> None;
-      case 1 -> TrustedCertificates;
-      case 2 -> TrustedCrls;
-      case 4 -> IssuerCertificates;
-      case 8 -> IssuerCrls;
-      case 15 -> All;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return None;
+      case 1:
+        return TrustedCertificates;
+      case 2:
+        return TrustedCrls;
+      case 4:
+        return IssuerCertificates;
+      case 8:
+        return IssuerCrls;
+      case 15:
+        return All;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

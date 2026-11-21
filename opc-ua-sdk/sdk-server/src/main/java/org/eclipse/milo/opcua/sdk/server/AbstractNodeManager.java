@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server;
 
+import java.util.stream.Collectors;
+
 import com.google.common.collect.LinkedHashMultiset;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -153,7 +155,7 @@ public class AbstractNodeManager<T extends Node> implements NodeManager<T> {
     LinkedHashMultiset<Reference> references = referenceMap.get(nodeId);
 
     return references != null
-        ? references.stream().filter(filter).toList()
+        ? references.stream().filter(filter).collect(Collectors.toList())
         : Collections.emptyList();
   }
 }

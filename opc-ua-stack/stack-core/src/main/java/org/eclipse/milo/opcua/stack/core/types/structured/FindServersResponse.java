@@ -85,7 +85,7 @@ public class FindServersResponse extends Structure implements UaResponseMessageT
       return false;
     }
     FindServersResponse that = (FindServersResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getServers(), that.getServers());
     return eqb.build();
@@ -93,7 +93,7 @@ public class FindServersResponse extends Structure implements UaResponseMessageT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getServers());
     return hcb.build();
@@ -101,7 +101,7 @@ public class FindServersResponse extends Structure implements UaResponseMessageT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", FindServersResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", FindServersResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("servers=" + java.util.Arrays.toString(getServers()));
     return joiner.toString();

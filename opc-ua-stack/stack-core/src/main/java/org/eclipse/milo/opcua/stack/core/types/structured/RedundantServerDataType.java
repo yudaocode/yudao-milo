@@ -94,7 +94,7 @@ public class RedundantServerDataType extends Structure implements UaStructuredTy
       return false;
     }
     RedundantServerDataType that = (RedundantServerDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getServerId(), that.getServerId());
     eqb.append(getServiceLevel(), that.getServiceLevel());
     eqb.append(getServerState(), that.getServerState());
@@ -103,7 +103,7 @@ public class RedundantServerDataType extends Structure implements UaStructuredTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getServerId());
     hcb.append(getServiceLevel());
     hcb.append(getServerState());
@@ -112,7 +112,7 @@ public class RedundantServerDataType extends Structure implements UaStructuredTy
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RedundantServerDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RedundantServerDataType.class.getSimpleName() + "[", "]");
     joiner.add("serverId='" + getServerId() + "'");
     joiner.add("serviceLevel=" + getServiceLevel());
     joiner.add("serverState=" + getServerState());

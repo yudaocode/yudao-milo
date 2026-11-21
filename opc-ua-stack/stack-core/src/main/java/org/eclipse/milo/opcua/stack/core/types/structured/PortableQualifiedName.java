@@ -84,7 +84,7 @@ public class PortableQualifiedName extends Structure implements UaStructuredType
       return false;
     }
     PortableQualifiedName that = (PortableQualifiedName) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNamespaceUri(), that.getNamespaceUri());
     eqb.append(getName(), that.getName());
     return eqb.build();
@@ -92,7 +92,7 @@ public class PortableQualifiedName extends Structure implements UaStructuredType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNamespaceUri());
     hcb.append(getName());
     return hcb.build();
@@ -100,7 +100,7 @@ public class PortableQualifiedName extends Structure implements UaStructuredType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PortableQualifiedName.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PortableQualifiedName.class.getSimpleName() + "[", "]");
     joiner.add("namespaceUri='" + getNamespaceUri() + "'");
     joiner.add("name='" + getName() + "'");
     return joiner.toString();

@@ -83,7 +83,7 @@ public class DoubleComplexNumberType extends Structure implements UaStructuredTy
       return false;
     }
     DoubleComplexNumberType that = (DoubleComplexNumberType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getReal(), that.getReal());
     eqb.append(getImaginary(), that.getImaginary());
     return eqb.build();
@@ -91,7 +91,7 @@ public class DoubleComplexNumberType extends Structure implements UaStructuredTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReal());
     hcb.append(getImaginary());
     return hcb.build();
@@ -99,7 +99,7 @@ public class DoubleComplexNumberType extends Structure implements UaStructuredTy
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DoubleComplexNumberType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DoubleComplexNumberType.class.getSimpleName() + "[", "]");
     joiner.add("real=" + getReal());
     joiner.add("imaginary=" + getImaginary());
     return joiner.toString();

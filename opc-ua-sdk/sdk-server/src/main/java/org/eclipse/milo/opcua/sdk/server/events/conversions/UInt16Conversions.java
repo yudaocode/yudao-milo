@@ -107,7 +107,8 @@ final class UInt16Conversions {
 
   @Nullable
   static Object convert(@Nullable Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof UShort us) {
+    if (o instanceof UShort) {
+      UShort us = (UShort) o;
       return implicit ? implicitConversion(us, targetType) : explicitConversion(us, targetType);
     } else {
       return null;

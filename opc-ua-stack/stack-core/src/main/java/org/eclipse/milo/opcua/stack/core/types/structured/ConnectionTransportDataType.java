@@ -54,7 +54,7 @@ public abstract class ConnectionTransportDataType extends Structure implements U
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ConnectionTransportDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

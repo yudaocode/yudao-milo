@@ -30,9 +30,9 @@ public final class Lists {
   @SafeVarargs
   public static <T> List<T> ofNullable(@Nullable T... elements) {
     if (elements == null) {
-      return List.of();
+      return Java8Collections.listOf();
     } else {
-      return List.of(elements);
+      return Java8Collections.listOf(elements);
     }
   }
 

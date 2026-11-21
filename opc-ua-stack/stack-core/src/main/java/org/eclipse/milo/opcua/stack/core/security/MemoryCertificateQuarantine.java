@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.security;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.security.cert.X509Certificate;
 import java.util.ArrayDeque;
@@ -41,7 +42,7 @@ public class MemoryCertificateQuarantine implements CertificateQuarantine {
     try {
       lock.readLock().lock();
 
-      return List.copyOf(certificates);
+      return Java8Collections.listCopyOf(certificates);
     } finally {
       lock.readLock().unlock();
     }

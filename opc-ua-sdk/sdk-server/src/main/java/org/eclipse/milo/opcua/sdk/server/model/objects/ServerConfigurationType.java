@@ -232,7 +232,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateGroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -240,7 +240,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateTypeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -248,7 +248,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "Certificate",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -256,7 +256,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "IssuerCertificates",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -264,7 +264,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "PrivateKeyFormat",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -272,7 +272,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "PrivateKey",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -291,7 +291,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "ApplyChangesRequired",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -354,7 +354,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateGroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -362,7 +362,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateTypeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -370,7 +370,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "SubjectName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -378,7 +378,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "DnsNames",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -386,7 +386,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "IpAddresses",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -394,7 +394,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "LifetimeInDays",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -402,7 +402,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "KeySizeInBits",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -421,7 +421,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "Certificate",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -485,7 +485,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateGroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -493,7 +493,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateTypeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -543,7 +543,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateGroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -562,7 +562,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateTypeIds",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -570,7 +570,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "Certificates",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -671,7 +671,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateGroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -679,7 +679,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateTypeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -687,7 +687,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "SubjectName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -695,7 +695,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "RegeneratePrivateKey",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -703,7 +703,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "Nonce",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -722,7 +722,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "CertificateRequest",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -785,7 +785,7 @@ public interface ServerConfigurationType extends BaseObjectType {
                   "Certificates",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

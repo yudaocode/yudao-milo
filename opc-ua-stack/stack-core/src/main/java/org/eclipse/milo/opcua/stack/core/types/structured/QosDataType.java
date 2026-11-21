@@ -54,7 +54,7 @@ public abstract class QosDataType extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", QosDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", QosDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

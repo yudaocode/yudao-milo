@@ -83,7 +83,7 @@ public class RationalNumber extends Structure implements UaStructuredType {
       return false;
     }
     RationalNumber that = (RationalNumber) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNumerator(), that.getNumerator());
     eqb.append(getDenominator(), that.getDenominator());
     return eqb.build();
@@ -91,7 +91,7 @@ public class RationalNumber extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNumerator());
     hcb.append(getDenominator());
     return hcb.build();
@@ -99,7 +99,7 @@ public class RationalNumber extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RationalNumber.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RationalNumber.class.getSimpleName() + "[", "]");
     joiner.add("numerator=" + getNumerator());
     joiner.add("denominator=" + getDenominator());
     return joiner.toString();

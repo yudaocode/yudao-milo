@@ -60,7 +60,7 @@ public class OpcUaDefaultXmlEncoding implements DataTypeEncoding {
           "no codec registered for encodingId=" + encodingId.toParseableString());
     }
 
-    try (var encoder = new OpcUaXmlEncoder(context)) {
+    try (OpcUaXmlEncoder encoder = new OpcUaXmlEncoder(context)) {
       String xmlName =
           OpcUaXmlEncoder.getXmlName(
               OpcUaXmlEncoder.getNamespaceUri(context, struct.getTypeId()), struct);
@@ -75,7 +75,8 @@ public class OpcUaDefaultXmlEncoding implements DataTypeEncoding {
 
   @Override
   public UaStructuredType decode(EncodingContext context, ExtensionObject encoded) {
-    if (encoded instanceof ExtensionObject.Xml xo) {
+    if (encoded instanceof ExtensionObject.Xml) {
+      ExtensionObject.Xml xo = (ExtensionObject.Xml) encoded;
       DataTypeCodec codec = context.getDataTypeManager().getCodec(encoded.getEncodingOrTypeId());
 
       if (codec == null) {

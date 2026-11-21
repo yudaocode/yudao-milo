@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.identity;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.Set;
 import org.eclipse.milo.opcua.sdk.server.Session;
 import org.eclipse.milo.opcua.stack.core.types.enumerated.UserTokenType;
@@ -24,7 +26,7 @@ public final class AnonymousIdentityValidator extends AbstractIdentityValidator 
 
   @Override
   public Set<UserTokenType> getSupportedTokenTypes() {
-    return Set.of(UserTokenType.Anonymous);
+    return Java8Collections.setOf(UserTokenType.Anonymous);
   }
 
   @Override

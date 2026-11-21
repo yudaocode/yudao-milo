@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.examples.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static java.util.Objects.requireNonNull;
 
@@ -62,7 +63,7 @@ public class ReadExample implements ClientExample {
 
   private CompletableFuture<List<DataValue>> readServerStateAndTime(OpcUaClient client) {
     List<NodeId> nodeIds =
-        List.of(NodeIds.Server_ServerStatus_State, NodeIds.Server_ServerStatus_CurrentTime);
+        Java8Collections.listOf(NodeIds.Server_ServerStatus_State, NodeIds.Server_ServerStatus_CurrentTime);
 
     return client.readValuesAsync(0.0, TimestampsToReturn.Both, nodeIds);
   }

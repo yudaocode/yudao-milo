@@ -84,7 +84,7 @@ public class CallRequest extends Structure implements UaRequestMessageType {
       return false;
     }
     CallRequest that = (CallRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getMethodsToCall(), that.getMethodsToCall());
     return eqb.build();
@@ -92,7 +92,7 @@ public class CallRequest extends Structure implements UaRequestMessageType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getMethodsToCall());
     return hcb.build();
@@ -100,7 +100,7 @@ public class CallRequest extends Structure implements UaRequestMessageType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CallRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CallRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("methodsToCall=" + java.util.Arrays.toString(getMethodsToCall()));
     return joiner.toString();

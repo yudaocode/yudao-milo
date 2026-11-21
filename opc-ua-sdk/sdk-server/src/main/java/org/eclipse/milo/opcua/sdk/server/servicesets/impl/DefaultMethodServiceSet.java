@@ -80,13 +80,14 @@ public class DefaultMethodServiceSet implements MethodServiceSet {
             accessResults::get,
             accessResult ->
                 group -> {
-                  if (accessResult instanceof AccessResult.Denied denied) {
-                    var result = new CallMethodResult(denied.statusCode(), null, null, null);
+                  if (accessResult instanceof AccessResult.Denied) {
+      AccessResult.Denied denied = (AccessResult.Denied) accessResult;
+                    org.eclipse.milo.opcua.stack.core.types.structured.CallMethodResult result = new CallMethodResult(denied.statusCode(), null, null, null);
                     return Collections.nCopies(group.size(), result);
                   } else {
-                    var diagnosticsContext = new DiagnosticsContext<CallMethodRequest>();
+                    org.eclipse.milo.opcua.sdk.server.DiagnosticsContext<org.eclipse.milo.opcua.stack.core.types.structured.CallMethodRequest> diagnosticsContext = new DiagnosticsContext<CallMethodRequest>();
 
-                    var callContext =
+                    org.eclipse.milo.opcua.sdk.server.AddressSpace.CallContext callContext =
                         new CallContext(
                             server,
                             session,
@@ -102,6 +103,6 @@ public class DefaultMethodServiceSet implements MethodServiceSet {
     ResponseHeader header = createResponseHeader(request);
 
     return new CallResponse(
-        header, results.toArray(CallMethodResult[]::new), new DiagnosticInfo[0]);
+        header, results.toArray(new CallMethodResult[0]), new DiagnosticInfo[0]);
   }
 }

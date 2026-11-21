@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.examples.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -36,7 +37,7 @@ import org.slf4j.LoggerFactory;
 public class KeyLogExample implements ClientExample {
 
   public static void main(String[] args) throws Exception {
-    var example = new KeyLogExample();
+    org.eclipse.milo.examples.client.KeyLogExample example = new KeyLogExample();
 
     logger.info("Server key log: {}", example.serverKeyLogFile);
     logger.info("Client key log: {}", example.clientKeyLogFile);
@@ -84,7 +85,7 @@ public class KeyLogExample implements ClientExample {
             .readValuesAsync(
                 0.0,
                 TimestampsToReturn.Both,
-                List.of(NodeIds.Server_ServerStatus_State, NodeIds.Server_ServerStatus_CurrentTime))
+                Java8Collections.listOf(NodeIds.Server_ServerStatus_State, NodeIds.Server_ServerStatus_CurrentTime))
             .get();
 
     logger.info("ServerState = {}", values.get(0).value().value());

@@ -83,7 +83,7 @@ public class SubscriptionAcknowledgement extends Structure implements UaStructur
       return false;
     }
     SubscriptionAcknowledgement that = (SubscriptionAcknowledgement) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getSequenceNumber(), that.getSequenceNumber());
     return eqb.build();
@@ -91,7 +91,7 @@ public class SubscriptionAcknowledgement extends Structure implements UaStructur
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSubscriptionId());
     hcb.append(getSequenceNumber());
     return hcb.build();
@@ -99,7 +99,7 @@ public class SubscriptionAcknowledgement extends Structure implements UaStructur
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", SubscriptionAcknowledgement.class.getSimpleName() + "[", "]");
     joiner.add("subscriptionId=" + getSubscriptionId());
     joiner.add("sequenceNumber=" + getSequenceNumber());

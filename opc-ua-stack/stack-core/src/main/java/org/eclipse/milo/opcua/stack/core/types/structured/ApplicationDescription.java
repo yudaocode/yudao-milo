@@ -127,7 +127,7 @@ public class ApplicationDescription extends Structure implements UaStructuredTyp
       return false;
     }
     ApplicationDescription that = (ApplicationDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getApplicationUri(), that.getApplicationUri());
     eqb.append(getProductUri(), that.getProductUri());
     eqb.append(getApplicationName(), that.getApplicationName());
@@ -140,7 +140,7 @@ public class ApplicationDescription extends Structure implements UaStructuredTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getApplicationUri());
     hcb.append(getProductUri());
     hcb.append(getApplicationName());
@@ -153,7 +153,7 @@ public class ApplicationDescription extends Structure implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ApplicationDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ApplicationDescription.class.getSimpleName() + "[", "]");
     joiner.add("applicationUri='" + getApplicationUri() + "'");
     joiner.add("productUri='" + getProductUri() + "'");
     joiner.add("applicationName=" + getApplicationName());

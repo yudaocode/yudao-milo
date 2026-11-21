@@ -80,7 +80,7 @@ public class ClientExampleRunner {
   private OpcUaClient createClient() throws Exception {
     KeyStoreLoader loader = new KeyStoreLoader().load(securityTempDir);
 
-    var certificateValidator =
+    DefaultClientCertificateValidator certificateValidator =
         new DefaultClientCertificateValidator(
             clientTrustListManager, new MemoryCertificateQuarantine());
 

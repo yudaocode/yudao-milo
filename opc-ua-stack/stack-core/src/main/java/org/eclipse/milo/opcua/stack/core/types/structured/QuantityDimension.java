@@ -133,7 +133,7 @@ public class QuantityDimension extends Structure implements UaStructuredType {
       return false;
     }
     QuantityDimension that = (QuantityDimension) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMassExponent(), that.getMassExponent());
     eqb.append(getLengthExponent(), that.getLengthExponent());
     eqb.append(getTimeExponent(), that.getTimeExponent());
@@ -147,7 +147,7 @@ public class QuantityDimension extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMassExponent());
     hcb.append(getLengthExponent());
     hcb.append(getTimeExponent());
@@ -161,7 +161,7 @@ public class QuantityDimension extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", QuantityDimension.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", QuantityDimension.class.getSimpleName() + "[", "]");
     joiner.add("massExponent=" + getMassExponent());
     joiner.add("lengthExponent=" + getLengthExponent());
     joiner.add("timeExponent=" + getTimeExponent());

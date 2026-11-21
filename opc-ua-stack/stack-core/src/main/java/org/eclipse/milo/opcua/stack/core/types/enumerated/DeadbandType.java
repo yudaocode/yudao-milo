@@ -41,12 +41,16 @@ public enum DeadbandType implements UaEnumeratedType {
   }
 
   public static @Nullable DeadbandType from(int value) {
-    return switch (value) {
-      case 0 -> None;
-      case 1 -> Absolute;
-      case 2 -> Percent;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return None;
+      case 1:
+        return Absolute;
+      case 2:
+        return Percent;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

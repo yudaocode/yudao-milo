@@ -85,7 +85,7 @@ public class ReadAtTimeDetails extends HistoryReadDetails implements UaStructure
       return false;
     }
     ReadAtTimeDetails that = (ReadAtTimeDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getReqTimes(), that.getReqTimes());
     eqb.append(getUseSimpleBounds(), that.getUseSimpleBounds());
     return eqb.build();
@@ -93,7 +93,7 @@ public class ReadAtTimeDetails extends HistoryReadDetails implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReqTimes());
     hcb.append(getUseSimpleBounds());
     return hcb.build();
@@ -101,7 +101,7 @@ public class ReadAtTimeDetails extends HistoryReadDetails implements UaStructure
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadAtTimeDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadAtTimeDetails.class.getSimpleName() + "[", "]");
     joiner.add("reqTimes=" + java.util.Arrays.toString(getReqTimes()));
     joiner.add("useSimpleBounds=" + getUseSimpleBounds());
     return joiner.toString();

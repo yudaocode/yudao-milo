@@ -49,14 +49,20 @@ public enum PubSubState implements UaEnumeratedType {
   }
 
   public static @Nullable PubSubState from(int value) {
-    return switch (value) {
-      case 0 -> Disabled;
-      case 1 -> Paused;
-      case 2 -> Operational;
-      case 3 -> Error;
-      case 4 -> PreOperational;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Disabled;
+      case 1:
+        return Paused;
+      case 2:
+        return Operational;
+      case 3:
+        return Error;
+      case 4:
+        return PreOperational;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

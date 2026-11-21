@@ -94,7 +94,7 @@ public class PubSubConfigurationDataType extends Structure implements UaStructur
       return false;
     }
     PubSubConfigurationDataType that = (PubSubConfigurationDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getPublishedDataSets(), that.getPublishedDataSets());
     eqb.append(getConnections(), that.getConnections());
     eqb.append(getEnabled(), that.getEnabled());
@@ -103,7 +103,7 @@ public class PubSubConfigurationDataType extends Structure implements UaStructur
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPublishedDataSets());
     hcb.append(getConnections());
     hcb.append(getEnabled());
@@ -112,7 +112,7 @@ public class PubSubConfigurationDataType extends Structure implements UaStructur
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PubSubConfigurationDataType.class.getSimpleName() + "[", "]");
     joiner.add("publishedDataSets=" + java.util.Arrays.toString(getPublishedDataSets()));
     joiner.add("connections=" + java.util.Arrays.toString(getConnections()));

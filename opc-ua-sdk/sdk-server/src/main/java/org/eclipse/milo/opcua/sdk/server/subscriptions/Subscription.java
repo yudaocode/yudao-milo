@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.subscriptions;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.sdk.server.servicesets.AbstractServiceSet.createResponseHeader;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
@@ -172,7 +174,7 @@ public class Subscription {
 
     logger.debug("[id={}] subscription deleted.", subscriptionId);
 
-    return List.copyOf(itemsById.values());
+    return Java8Collections.listCopyOf(itemsById.values());
   }
 
   public synchronized void setPublishingMode(SetPublishingModeRequest request) {
@@ -447,7 +449,7 @@ public class Subscription {
    */
   private void gatherAndSend(
       PeekingIterator<BaseMonitoredItem<?>> iterator, PendingPublish pending) {
-    var notifications = new ArrayList<UaStructuredType>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.UaStructuredType> notifications = new ArrayList<UaStructuredType>();
 
     while (notifications.size() < maxNotificationsPerPublish && iterator.hasNext()) {
       BaseMonitoredItem<?> item = iterator.peek();
@@ -487,8 +489,8 @@ public class Subscription {
   }
 
   private void sendNotifications(PendingPublish pending, List<UaStructuredType> notifications) {
-    var dataNotifications = new ArrayList<MonitoredItemNotification>();
-    var eventNotifications = new ArrayList<EventFieldList>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.MonitoredItemNotification> dataNotifications = new ArrayList<MonitoredItemNotification>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.EventFieldList> eventNotifications = new ArrayList<EventFieldList>();
 
     notifications.forEach(
         notification -> {
@@ -499,7 +501,7 @@ public class Subscription {
           }
         });
 
-    var notificationData = new ArrayList<ExtensionObject>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.ExtensionObject> notificationData = new ArrayList<ExtensionObject>();
 
     if (!dataNotifications.isEmpty()) {
       DataChangeNotification dataChange =

@@ -122,17 +122,23 @@ public abstract class SimpleAddressSpaceFilter implements AddressSpaceFilter {
   public boolean filterHistoryUpdate(
       OpcUaServer server, HistoryUpdateDetails historyUpdateDetails) {
 
-    if (historyUpdateDetails instanceof DeleteAtTimeDetails details) {
+    if (historyUpdateDetails instanceof DeleteAtTimeDetails) {
+      DeleteAtTimeDetails details = (DeleteAtTimeDetails) historyUpdateDetails;
       return filterNode(details.getNodeId());
-    } else if (historyUpdateDetails instanceof DeleteEventDetails details) {
+    } else if (historyUpdateDetails instanceof DeleteEventDetails) {
+      DeleteEventDetails details = (DeleteEventDetails) historyUpdateDetails;
       return filterNode(details.getNodeId());
-    } else if (historyUpdateDetails instanceof DeleteRawModifiedDetails details) {
+    } else if (historyUpdateDetails instanceof DeleteRawModifiedDetails) {
+      DeleteRawModifiedDetails details = (DeleteRawModifiedDetails) historyUpdateDetails;
       return filterNode(details.getNodeId());
-    } else if (historyUpdateDetails instanceof UpdateDataDetails details) {
+    } else if (historyUpdateDetails instanceof UpdateDataDetails) {
+      UpdateDataDetails details = (UpdateDataDetails) historyUpdateDetails;
       return filterNode(details.getNodeId());
-    } else if (historyUpdateDetails instanceof UpdateEventDetails details) {
+    } else if (historyUpdateDetails instanceof UpdateEventDetails) {
+      UpdateEventDetails details = (UpdateEventDetails) historyUpdateDetails;
       return filterNode(details.getNodeId());
-    } else if (historyUpdateDetails instanceof UpdateStructureDataDetails details) {
+    } else if (historyUpdateDetails instanceof UpdateStructureDataDetails) {
+      UpdateStructureDataDetails details = (UpdateStructureDataDetails) historyUpdateDetails;
       return filterNode(details.getNodeId());
     } else {
       throw new IllegalArgumentException(

@@ -119,7 +119,8 @@ final class UInt32Conversions {
 
   @Nullable
   static Object convert(@Nullable Object o, OpcUaDataType targetType, boolean implicit) {
-    if (o instanceof UInteger ui) {
+    if (o instanceof UInteger) {
+      UInteger ui = (UInteger) o;
       return implicit ? implicitConversion(ui, targetType) : explicitConversion(ui, targetType);
     } else {
       return null;

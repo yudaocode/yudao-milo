@@ -82,16 +82,24 @@ public enum ChassisIdSubtype implements UaEnumeratedType {
   }
 
   public static @Nullable ChassisIdSubtype from(int value) {
-    return switch (value) {
-      case 1 -> ChassisComponent;
-      case 2 -> InterfaceAlias;
-      case 3 -> PortComponent;
-      case 4 -> MacAddress;
-      case 5 -> NetworkAddress;
-      case 6 -> InterfaceName;
-      case 7 -> Local;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return ChassisComponent;
+      case 2:
+        return InterfaceAlias;
+      case 3:
+        return PortComponent;
+      case 4:
+        return MacAddress;
+      case 5:
+        return NetworkAddress;
+      case 6:
+        return InterfaceName;
+      case 7:
+        return Local;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

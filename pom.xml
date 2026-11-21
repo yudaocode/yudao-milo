@@ -66,7 +66,7 @@
     <jakarta-xml-bind-api.version>4.0.5</jakarta-xml-bind-api.version>
     <jaxb.version>4.0.9</jaxb.version>
     <netty.version>4.1.138.Final</netty.version>
-    <netty-channel-fsm.version>1.0.2</netty-channel-fsm.version>
+    <netty-channel-fsm.version>0.9</netty-channel-fsm.version>
     <slf4j.version>2.0.20</slf4j.version>
     <jspecify.version>1.0.1</jspecify.version>
     <xmlunit.version>2.14.0</xmlunit.version>
@@ -74,7 +74,7 @@
     <!-- Plugin Dependency Versions -->
     <central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
     <checkstyle.version>12.3.1</checkstyle.version>
-    <jaxb2-maven-plugin.version>4.2.0</jaxb2-maven-plugin.version>
+    <jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
     <license-tool-plugin.version>1.1.0</license-tool-plugin.version>
     <maven-antrun-plugin.version>3.2.0</maven-antrun-plugin.version>
     <maven-bundle-plugin.version>6.2.0</maven-bundle-plugin.version>
@@ -415,8 +415,8 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven-compiler-plugin.version}</version>
           <configuration>
-            <source>17</source>
-            <target>17</target>
+            <source>8</source>
+            <target>8</target>
           </configuration>
         </plugin>
 

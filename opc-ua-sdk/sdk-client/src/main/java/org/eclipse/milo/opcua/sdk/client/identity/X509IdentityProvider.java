@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.sdk.client.identity;
 
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 
 import java.nio.ByteBuffer;
 import java.security.PrivateKey;

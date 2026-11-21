@@ -54,7 +54,7 @@ public abstract class Frame extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", Frame.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", Frame.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

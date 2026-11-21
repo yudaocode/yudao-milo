@@ -107,7 +107,7 @@ public class JsonActionResponderMessage extends Structure implements UaStructure
       return false;
     }
     JsonActionResponderMessage that = (JsonActionResponderMessage) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMessageId(), that.getMessageId());
     eqb.append(getMessageType(), that.getMessageType());
     eqb.append(getPublisherId(), that.getPublisherId());
@@ -118,7 +118,7 @@ public class JsonActionResponderMessage extends Structure implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMessageId());
     hcb.append(getMessageType());
     hcb.append(getPublisherId());
@@ -129,7 +129,7 @@ public class JsonActionResponderMessage extends Structure implements UaStructure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", JsonActionResponderMessage.class.getSimpleName() + "[", "]");
     joiner.add("messageId='" + getMessageId() + "'");
     joiner.add("messageType='" + getMessageType() + "'");

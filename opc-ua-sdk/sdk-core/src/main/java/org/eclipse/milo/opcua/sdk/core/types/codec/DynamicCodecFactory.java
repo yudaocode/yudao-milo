@@ -33,12 +33,22 @@ public class DynamicCodecFactory {
       // that means it's an OptionSet subclass. True enumerations are encoded/decoded as
       // integers, so they don't have a corresponding codec.
       return new DynamicOptionSetCodec(dataType);
-    } else if (definition instanceof StructureDefinition structureDefinition) {
-      return switch (structureDefinition.getStructureType()) {
-        case Structure, StructureWithOptionalFields, StructureWithSubtypedValues ->
-            new DynamicStructCodec(dataType, dataTypeTree);
-        case Union, UnionWithSubtypedValues -> new DynamicUnionCodec(dataType, dataTypeTree);
-      };
+    } else if (definition instanceof StructureDefinition) {
+      StructureDefinition structureDefinition = (StructureDefinition) definition;
+      switch ((structureDefinition.getStructureType())) {
+      case Structure:
+
+      case StructureWithOptionalFields:
+
+      case StructureWithSubtypedValues:
+        return new DynamicStructCodec(dataType, dataTypeTree);
+      case Union:
+
+      case UnionWithSubtypedValues:
+        return new DynamicUnionCodec(dataType, dataTypeTree);
+      default:
+        throw new IllegalArgumentException("structureType=" + structureDefinition.getStructureType());
+      }
     } else {
       throw new RuntimeException("unknown DataTypeDefinition: " + definition);
     }

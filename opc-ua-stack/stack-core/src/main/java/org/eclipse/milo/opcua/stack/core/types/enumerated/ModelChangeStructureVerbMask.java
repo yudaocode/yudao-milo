@@ -45,14 +45,20 @@ public enum ModelChangeStructureVerbMask implements UaEnumeratedType {
   }
 
   public static @Nullable ModelChangeStructureVerbMask from(int value) {
-    return switch (value) {
-      case 1 -> NodeAdded;
-      case 2 -> NodeDeleted;
-      case 4 -> ReferenceAdded;
-      case 8 -> ReferenceDeleted;
-      case 16 -> DataTypeChanged;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return NodeAdded;
+      case 2:
+        return NodeDeleted;
+      case 4:
+        return ReferenceAdded;
+      case 8:
+        return ReferenceDeleted;
+      case 16:
+        return DataTypeChanged;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

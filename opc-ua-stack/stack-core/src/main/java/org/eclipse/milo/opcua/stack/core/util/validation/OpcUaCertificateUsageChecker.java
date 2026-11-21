@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.util.validation;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.security.cert.CertPath;
 import java.security.cert.CertPathValidatorException;
@@ -59,7 +60,7 @@ class OpcUaCertificateUsageChecker extends PKIXCertPathChecker {
 
   @Override
   public Set<String> getSupportedExtensions() {
-    return Set.of(KEY_USAGE_OID, EXTENDED_KEY_USAGE_OID);
+    return Java8Collections.setOf(KEY_USAGE_OID, EXTENDED_KEY_USAGE_OID);
   }
 
   @Override

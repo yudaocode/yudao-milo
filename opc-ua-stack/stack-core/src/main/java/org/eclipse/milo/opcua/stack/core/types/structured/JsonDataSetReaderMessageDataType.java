@@ -86,7 +86,7 @@ public class JsonDataSetReaderMessageDataType extends DataSetReaderMessageDataTy
       return false;
     }
     JsonDataSetReaderMessageDataType that = (JsonDataSetReaderMessageDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNetworkMessageContentMask(), that.getNetworkMessageContentMask());
     eqb.append(getDataSetMessageContentMask(), that.getDataSetMessageContentMask());
     return eqb.build();
@@ -94,7 +94,7 @@ public class JsonDataSetReaderMessageDataType extends DataSetReaderMessageDataTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNetworkMessageContentMask());
     hcb.append(getDataSetMessageContentMask());
     return hcb.build();
@@ -102,7 +102,7 @@ public class JsonDataSetReaderMessageDataType extends DataSetReaderMessageDataTy
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", JsonDataSetReaderMessageDataType.class.getSimpleName() + "[", "]");
     joiner.add("networkMessageContentMask=" + getNetworkMessageContentMask());
     joiner.add("dataSetMessageContentMask=" + getDataSetMessageContentMask());

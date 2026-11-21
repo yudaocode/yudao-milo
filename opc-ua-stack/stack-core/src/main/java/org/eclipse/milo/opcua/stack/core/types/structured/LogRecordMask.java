@@ -59,7 +59,7 @@ public class LogRecordMask extends OptionSetUI32<LogRecordMask.Field> {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LogRecordMask.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LogRecordMask.class.getSimpleName() + "[", "]");
     joiner.add("eventType=" + getEventType());
     joiner.add("sourceNode=" + getSourceNode());
     joiner.add("sourceName=" + getSourceName());

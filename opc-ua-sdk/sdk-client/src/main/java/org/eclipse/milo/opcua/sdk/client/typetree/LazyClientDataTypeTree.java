@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.typetree;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
 import java.util.ArrayList;
@@ -299,7 +301,7 @@ public class LazyClientDataTypeTree extends DataTypeTree {
       List<NodeId> nodeIds, NamespaceTable nsTable, OperationLimits limits) throws UaException {
 
     // Read attributes: BrowseName, IsAbstract, DataTypeDefinition
-    var readValueIds = new ArrayList<ReadValueId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId> readValueIds = new ArrayList<ReadValueId>();
     for (NodeId nodeId : nodeIds) {
       readValueIds.add(
           new ReadValueId(nodeId, AttributeId.BrowseName.uid(), null, QualifiedName.NULL_VALUE));
@@ -317,7 +319,7 @@ public class LazyClientDataTypeTree extends DataTypeTree {
     List<List<ReferenceDescription>> encodingRefs =
         ClientBrowseUtils.browseEncodings(client, nodeIds, limits);
 
-    var result = new ArrayList<@Nullable ClientDataType>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.client.typetree.@org.jspecify.annotations.Nullable ClientDataType> result = new ArrayList<@Nullable ClientDataType>();
 
     for (int i = 0; i < nodeIds.size(); i++) {
       NodeId nodeId = nodeIds.get(i);
@@ -363,7 +365,7 @@ public class LazyClientDataTypeTree extends DataTypeTree {
   private List<NodeId> browseInverseUntilKnown(
       NodeId startId, Set<NodeId> knownTypeIds, NamespaceTable namespaceTable) {
 
-    var visited = new HashSet<NodeId>();
+    java.util.HashSet<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId> visited = new HashSet<NodeId>();
     List<NodeId> path = new ArrayList<>();
     NodeId current = startId;
 
@@ -373,7 +375,7 @@ public class LazyClientDataTypeTree extends DataTypeTree {
             "Inverse HasSubtype references from {} are cyclic or exceed depth {}",
             startId,
             MAX_RESOLUTION_DEPTH);
-        return List.of();
+        return Java8Collections.listOf();
       }
       path.add(current);
       current = browseInverseParent(current, namespaceTable);
@@ -384,7 +386,7 @@ public class LazyClientDataTypeTree extends DataTypeTree {
       return path;
     }
 
-    return List.of();
+    return Java8Collections.listOf();
   }
 
   /**
@@ -421,14 +423,16 @@ public class LazyClientDataTypeTree extends DataTypeTree {
   }
 
   private static @Nullable QualifiedName extractBrowseName(DataValue value) {
-    if (value.statusCode().isGood() && value.value().value() instanceof QualifiedName qn) {
+    if (value.statusCode().isGood() && value.value().value() instanceof QualifiedName) {
+      QualifiedName qn = (QualifiedName) value.value().value();
       return qn;
     }
     return null;
   }
 
   private static Boolean extractIsAbstract(DataValue value) {
-    if (value.statusCode().isGood() && value.value().value() instanceof Boolean b) {
+    if (value.statusCode().isGood() && value.value().value() instanceof Boolean) {
+      Boolean b = (Boolean) value.value().value();
       return b;
     }
     return false;
@@ -437,16 +441,19 @@ public class LazyClientDataTypeTree extends DataTypeTree {
   private @Nullable DataTypeDefinition extractDataTypeDefinition(DataValue value) {
     if (value.statusCode().isGood()) {
       Object o = value.value().value();
-      if (o instanceof ExtensionObject xo) {
+      if (o instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) o;
         try {
           Object decoded = xo.decode(client.getStaticEncodingContext());
-          if (decoded instanceof DataTypeDefinition dtd) {
+          if (decoded instanceof DataTypeDefinition) {
+      DataTypeDefinition dtd = (DataTypeDefinition) decoded;
             return dtd;
           }
         } catch (Exception e) {
           LOGGER.debug("Error decoding DataTypeDefinition: {}", e.getMessage());
         }
-      } else if (o instanceof DataTypeDefinition dtd) {
+      } else if (o instanceof DataTypeDefinition) {
+      DataTypeDefinition dtd = (DataTypeDefinition) o;
         return dtd;
       }
     }
@@ -520,7 +527,7 @@ public class LazyClientDataTypeTree extends DataTypeTree {
 
       Tree<DataType> snapshot = tree.map(dataType -> dataType);
 
-      var treeNode = new AtomicReference<Tree<DataType>>();
+      java.util.concurrent.atomic.AtomicReference<org.eclipse.milo.opcua.stack.core.util.Tree<org.eclipse.milo.opcua.sdk.core.typetree.DataType>> treeNode = new AtomicReference<Tree<DataType>>();
       snapshot.traverseNodes(
           node -> {
             if (node.getValue().getNodeId().equals(dataTypeId)) {

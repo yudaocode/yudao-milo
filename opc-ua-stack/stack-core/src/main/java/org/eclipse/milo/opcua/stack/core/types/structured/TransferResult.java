@@ -85,7 +85,7 @@ public class TransferResult extends Structure implements UaStructuredType {
       return false;
     }
     TransferResult that = (TransferResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getAvailableSequenceNumbers(), that.getAvailableSequenceNumbers());
     return eqb.build();
@@ -93,7 +93,7 @@ public class TransferResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getAvailableSequenceNumbers());
     return hcb.build();
@@ -101,7 +101,7 @@ public class TransferResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TransferResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TransferResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add(
         "availableSequenceNumbers=" + java.util.Arrays.toString(getAvailableSequenceNumbers()));

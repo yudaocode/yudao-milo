@@ -9,6 +9,9 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.typetree;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
+import java.util.stream.Collectors;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,9 +33,9 @@ public class ReferenceTypeTreeBuilder {
 
   public static ReferenceTypeTree build(OpcUaServer server) {
     UaNode rootNode =
-        server.getAddressSpaceManager().getManagedNode(NodeIds.References).orElseThrow();
+        server.getAddressSpaceManager().getManagedNode(NodeIds.References).get();
 
-    var tree =
+    org.eclipse.milo.opcua.stack.core.util.Tree<org.eclipse.milo.opcua.sdk.core.typetree.ReferenceType> tree =
         new Tree<ReferenceType>(
             null, new ServerReferenceType(null, (UaReferenceTypeNode) rootNode));
 
@@ -54,8 +57,8 @@ public class ReferenceTypeTreeBuilder {
     List<UaNode> childNodes =
         references.stream()
             .flatMap(
-                r -> server.getAddressSpaceManager().getManagedNode(r.getTargetNodeId()).stream())
-            .toList();
+                r -> Java8Collections.optionalStream(server.getAddressSpaceManager().getManagedNode(r.getTargetNodeId())))
+            .collect(Collectors.toList());
 
     childNodes.forEach(
         node -> {

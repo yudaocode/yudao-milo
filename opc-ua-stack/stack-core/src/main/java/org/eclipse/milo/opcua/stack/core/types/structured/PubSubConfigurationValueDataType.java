@@ -95,7 +95,7 @@ public class PubSubConfigurationValueDataType extends Structure implements UaStr
       return false;
     }
     PubSubConfigurationValueDataType that = (PubSubConfigurationValueDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getConfigurationElement(), that.getConfigurationElement());
     eqb.append(getName(), that.getName());
     eqb.append(getIdentifier(), that.getIdentifier());
@@ -104,7 +104,7 @@ public class PubSubConfigurationValueDataType extends Structure implements UaStr
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getConfigurationElement());
     hcb.append(getName());
     hcb.append(getIdentifier());
@@ -113,7 +113,7 @@ public class PubSubConfigurationValueDataType extends Structure implements UaStr
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PubSubConfigurationValueDataType.class.getSimpleName() + "[", "]");
     joiner.add("configurationElement=" + getConfigurationElement());
     joiner.add("name='" + getName() + "'");

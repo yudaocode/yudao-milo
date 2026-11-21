@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.security;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.security.KeyPair;
 import java.security.cert.X509Certificate;
@@ -72,7 +73,7 @@ public class DefaultApplicationGroup implements CertificateGroup {
 
   @Override
   public List<NodeId> getSupportedCertificateTypeIds() {
-    return List.of(NodeIds.RsaSha256ApplicationCertificateType);
+    return Java8Collections.listOf(NodeIds.RsaSha256ApplicationCertificateType);
   }
 
   @Override
@@ -82,7 +83,7 @@ public class DefaultApplicationGroup implements CertificateGroup {
 
   @Override
   public List<Entry> getCertificateEntries() {
-    var entries = new ArrayList<Entry>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.security.CertificateGroup.Entry> entries = new ArrayList<Entry>();
 
     for (NodeId certificateTypeId : getSupportedCertificateTypeIds()) {
       try {
@@ -94,7 +95,7 @@ public class DefaultApplicationGroup implements CertificateGroup {
                   getCertificateGroupId(), certificateTypeId, entry.certificateChain));
         }
       } catch (Exception e) {
-        return List.of();
+        return Java8Collections.listOf();
       }
     }
 
@@ -172,7 +173,7 @@ public class DefaultApplicationGroup implements CertificateGroup {
       CertificateValidator certificateValidator)
       throws Exception {
 
-    var defaultApplicationGroup =
+    org.eclipse.milo.opcua.stack.core.security.DefaultApplicationGroup defaultApplicationGroup =
         new DefaultApplicationGroup(
             trustListManager, certificateStore, certificateFactory, certificateValidator);
 

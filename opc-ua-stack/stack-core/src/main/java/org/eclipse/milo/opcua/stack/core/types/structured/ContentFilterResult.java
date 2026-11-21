@@ -87,7 +87,7 @@ public class ContentFilterResult extends Structure implements UaStructuredType {
       return false;
     }
     ContentFilterResult that = (ContentFilterResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getElementResults(), that.getElementResults());
     eqb.append(getElementDiagnosticInfos(), that.getElementDiagnosticInfos());
     return eqb.build();
@@ -95,7 +95,7 @@ public class ContentFilterResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getElementResults());
     hcb.append(getElementDiagnosticInfos());
     return hcb.build();
@@ -103,7 +103,7 @@ public class ContentFilterResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ContentFilterResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ContentFilterResult.class.getSimpleName() + "[", "]");
     joiner.add("elementResults=" + java.util.Arrays.toString(getElementResults()));
     joiner.add("elementDiagnosticInfos=" + java.util.Arrays.toString(getElementDiagnosticInfos()));
     return joiner.toString();

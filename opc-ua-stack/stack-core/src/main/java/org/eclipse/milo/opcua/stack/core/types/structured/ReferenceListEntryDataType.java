@@ -87,7 +87,7 @@ public class ReferenceListEntryDataType extends Structure implements UaStructure
       return false;
     }
     ReferenceListEntryDataType that = (ReferenceListEntryDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getReferenceType(), that.getReferenceType());
     eqb.append(getIsForward(), that.getIsForward());
     eqb.append(getTargetNode(), that.getTargetNode());
@@ -96,7 +96,7 @@ public class ReferenceListEntryDataType extends Structure implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReferenceType());
     hcb.append(getIsForward());
     hcb.append(getTargetNode());
@@ -105,7 +105,7 @@ public class ReferenceListEntryDataType extends Structure implements UaStructure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ReferenceListEntryDataType.class.getSimpleName() + "[", "]");
     joiner.add("referenceType=" + getReferenceType());
     joiner.add("isForward=" + getIsForward());

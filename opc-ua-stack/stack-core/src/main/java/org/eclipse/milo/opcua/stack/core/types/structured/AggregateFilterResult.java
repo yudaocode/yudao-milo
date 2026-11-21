@@ -94,7 +94,7 @@ public class AggregateFilterResult extends MonitoringFilterResult implements UaS
       return false;
     }
     AggregateFilterResult that = (AggregateFilterResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRevisedStartTime(), that.getRevisedStartTime());
     eqb.append(getRevisedProcessingInterval(), that.getRevisedProcessingInterval());
     eqb.append(getRevisedAggregateConfiguration(), that.getRevisedAggregateConfiguration());
@@ -103,7 +103,7 @@ public class AggregateFilterResult extends MonitoringFilterResult implements UaS
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRevisedStartTime());
     hcb.append(getRevisedProcessingInterval());
     hcb.append(getRevisedAggregateConfiguration());
@@ -112,7 +112,7 @@ public class AggregateFilterResult extends MonitoringFilterResult implements UaS
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AggregateFilterResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AggregateFilterResult.class.getSimpleName() + "[", "]");
     joiner.add("revisedStartTime=" + getRevisedStartTime());
     joiner.add("revisedProcessingInterval=" + getRevisedProcessingInterval());
     joiner.add("revisedAggregateConfiguration=" + getRevisedAggregateConfiguration());

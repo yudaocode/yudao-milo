@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.examples.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -34,7 +35,7 @@ public class WriteExample implements ClientExample {
   public void run(OpcUaClient client, CompletableFuture<OpcUaClient> future) throws Exception {
     client.connect();
 
-    List<NodeId> nodeIds = List.of(new NodeId(2, "HelloWorld/ScalarTypes/Int32"));
+    List<NodeId> nodeIds = Java8Collections.listOf(new NodeId(2, "HelloWorld/ScalarTypes/Int32"));
 
     for (int i = 0; i < 10; i++) {
       Variant v = Variant.ofInt32(i);
@@ -42,7 +43,7 @@ public class WriteExample implements ClientExample {
       // don't write timestamps
       DataValue dv = DataValue.valueOnly(v);
 
-      List<StatusCode> statusCodes = client.writeValues(nodeIds, List.of(dv));
+      List<StatusCode> statusCodes = client.writeValues(nodeIds, Java8Collections.listOf(dv));
 
       StatusCode status = statusCodes.get(0);
 

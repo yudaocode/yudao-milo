@@ -119,7 +119,7 @@ public class ServerStatusDataType extends Structure implements UaStructuredType 
       return false;
     }
     ServerStatusDataType that = (ServerStatusDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStartTime(), that.getStartTime());
     eqb.append(getCurrentTime(), that.getCurrentTime());
     eqb.append(getState(), that.getState());
@@ -131,7 +131,7 @@ public class ServerStatusDataType extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStartTime());
     hcb.append(getCurrentTime());
     hcb.append(getState());
@@ -143,7 +143,7 @@ public class ServerStatusDataType extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ServerStatusDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ServerStatusDataType.class.getSimpleName() + "[", "]");
     joiner.add("startTime=" + getStartTime());
     joiner.add("currentTime=" + getCurrentTime());
     joiner.add("state=" + getState());

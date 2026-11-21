@@ -74,7 +74,7 @@ public class UadpNetworkMessageContentMask
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", UadpNetworkMessageContentMask.class.getSimpleName() + "[", "]");
     joiner.add("publisherId=" + getPublisherId());
     joiner.add("groupHeader=" + getGroupHeader());

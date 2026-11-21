@@ -287,7 +287,8 @@ public class OpcUaNamespace extends ManagedNamespaceWithLifecycle {
   private void configureGetMonitoredItems() {
     UaNode node = getNodeManager().get(NodeIds.Server_GetMonitoredItems);
 
-    if (node instanceof UaMethodNode methodNode) {
+    if (node instanceof UaMethodNode) {
+      UaMethodNode methodNode = (UaMethodNode) node;
       configureMethodNode(methodNode, GetMonitoredItemsMethodImpl::new);
     } else {
       logger.warn("GetMonitoredItems UaMethodNode not found.");
@@ -297,7 +298,8 @@ public class OpcUaNamespace extends ManagedNamespaceWithLifecycle {
   private void configureResendData() {
     UaNode node = getNodeManager().get(NodeIds.Server_ResendData);
 
-    if (node instanceof UaMethodNode resendDataNode) {
+    if (node instanceof UaMethodNode) {
+      UaMethodNode resendDataNode = (UaMethodNode) node;
       configureMethodNode(resendDataNode, ResendDataMethodImpl::new);
     } else {
       logger.warn("ResendData UaMethodNode not found.");
@@ -307,7 +309,8 @@ public class OpcUaNamespace extends ManagedNamespaceWithLifecycle {
   private void configureConditionRefresh() {
     UaNode node = getNodeManager().get(NodeIds.ConditionType_ConditionRefresh);
 
-    if (node instanceof UaMethodNode conditionRefreshNode) {
+    if (node instanceof UaMethodNode) {
+      UaMethodNode conditionRefreshNode = (UaMethodNode) node;
       configureMethodNode(conditionRefreshNode, ConditionRefreshMethodImpl::new);
     } else {
       logger.warn("ConditionRefresh UaMethodNode not found.");
@@ -427,8 +430,8 @@ public class OpcUaNamespace extends ManagedNamespaceWithLifecycle {
         throw new UaException(StatusCodes.Bad_UserAccessDenied);
       }
 
-      var serverHandleList = new ArrayList<UInteger>();
-      var clientHandleList = new ArrayList<UInteger>();
+      java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger> serverHandleList = new ArrayList<UInteger>();
+      java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger> clientHandleList = new ArrayList<UInteger>();
 
       for (BaseMonitoredItem<?> item : subscription.getMonitoredItems().values()) {
         serverHandleList.add(item.getId());

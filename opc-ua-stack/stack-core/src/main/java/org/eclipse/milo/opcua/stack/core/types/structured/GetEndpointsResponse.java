@@ -85,7 +85,7 @@ public class GetEndpointsResponse extends Structure implements UaResponseMessage
       return false;
     }
     GetEndpointsResponse that = (GetEndpointsResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getEndpoints(), that.getEndpoints());
     return eqb.build();
@@ -93,7 +93,7 @@ public class GetEndpointsResponse extends Structure implements UaResponseMessage
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getEndpoints());
     return hcb.build();
@@ -101,7 +101,7 @@ public class GetEndpointsResponse extends Structure implements UaResponseMessage
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", GetEndpointsResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", GetEndpointsResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("endpoints=" + java.util.Arrays.toString(getEndpoints()));
     return joiner.toString();

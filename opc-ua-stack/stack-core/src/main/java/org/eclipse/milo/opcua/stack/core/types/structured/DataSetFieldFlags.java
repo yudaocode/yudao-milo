@@ -33,7 +33,7 @@ public class DataSetFieldFlags extends OptionSetUI16<DataSetFieldFlags.Field> {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataSetFieldFlags.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataSetFieldFlags.class.getSimpleName() + "[", "]");
     joiner.add("promotedField=" + getPromotedField());
     return joiner.toString();
   }

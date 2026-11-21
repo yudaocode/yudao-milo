@@ -85,7 +85,7 @@ public class RegisterNodesResponse extends Structure implements UaResponseMessag
       return false;
     }
     RegisterNodesResponse that = (RegisterNodesResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getRegisteredNodeIds(), that.getRegisteredNodeIds());
     return eqb.build();
@@ -93,7 +93,7 @@ public class RegisterNodesResponse extends Structure implements UaResponseMessag
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getRegisteredNodeIds());
     return hcb.build();
@@ -101,7 +101,7 @@ public class RegisterNodesResponse extends Structure implements UaResponseMessag
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RegisterNodesResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RegisterNodesResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("registeredNodeIds=" + java.util.Arrays.toString(getRegisteredNodeIds()));
     return joiner.toString();

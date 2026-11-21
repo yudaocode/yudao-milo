@@ -85,7 +85,7 @@ public class EventFieldList extends Structure implements UaStructuredType {
       return false;
     }
     EventFieldList that = (EventFieldList) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getClientHandle(), that.getClientHandle());
     eqb.append(getEventFields(), that.getEventFields());
     return eqb.build();
@@ -93,7 +93,7 @@ public class EventFieldList extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getClientHandle());
     hcb.append(getEventFields());
     return hcb.build();
@@ -101,7 +101,7 @@ public class EventFieldList extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EventFieldList.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EventFieldList.class.getSimpleName() + "[", "]");
     joiner.add("clientHandle=" + getClientHandle());
     joiner.add("eventFields=" + java.util.Arrays.toString(getEventFields()));
     return joiner.toString();

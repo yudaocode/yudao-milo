@@ -123,7 +123,7 @@ public class UascClientAcknowledgeHandler extends ByteToMessageCodec<UaRequestMe
 
     EncodingLimits encodingLimits = application.getEncodingContext().getEncodingLimits();
 
-    var hello =
+    org.eclipse.milo.opcua.stack.core.channel.messages.HelloMessage hello =
         new HelloMessage(
             PROTOCOL_VERSION,
             encodingLimits.getMaxChunkSize(),
@@ -232,7 +232,7 @@ public class UascClientAcknowledgeHandler extends ByteToMessageCodec<UaRequestMe
     /* Max chunk count the remote can send us; not influenced by remote configuration. */
     long localMaxChunkCount = encodingLimits.getMaxChunkCount();
 
-    var channelParameters =
+    org.eclipse.milo.opcua.stack.core.channel.ChannelParameters channelParameters =
         new ChannelParameters(
             Ints.saturatedCast(localMaxMessageSize),
             Ints.saturatedCast(localReceiveBufferSize),
@@ -246,7 +246,7 @@ public class UascClientAcknowledgeHandler extends ByteToMessageCodec<UaRequestMe
     ctx.executor()
         .execute(
             () -> {
-              var messageHandler =
+              org.eclipse.milo.opcua.stack.transport.client.uasc.UascClientMessageHandler messageHandler =
                   new UascClientMessageHandler(
                       config,
                       application,

@@ -85,7 +85,7 @@ public class UnregisterNodesRequest extends Structure implements UaRequestMessag
       return false;
     }
     UnregisterNodesRequest that = (UnregisterNodesRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getNodesToUnregister(), that.getNodesToUnregister());
     return eqb.build();
@@ -93,7 +93,7 @@ public class UnregisterNodesRequest extends Structure implements UaRequestMessag
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getNodesToUnregister());
     return hcb.build();
@@ -101,7 +101,7 @@ public class UnregisterNodesRequest extends Structure implements UaRequestMessag
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UnregisterNodesRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UnregisterNodesRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("nodesToUnregister=" + java.util.Arrays.toString(getNodesToUnregister()));
     return joiner.toString();

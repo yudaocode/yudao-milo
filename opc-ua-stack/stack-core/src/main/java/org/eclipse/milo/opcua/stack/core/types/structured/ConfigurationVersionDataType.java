@@ -83,7 +83,7 @@ public class ConfigurationVersionDataType extends Structure implements UaStructu
       return false;
     }
     ConfigurationVersionDataType that = (ConfigurationVersionDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMajorVersion(), that.getMajorVersion());
     eqb.append(getMinorVersion(), that.getMinorVersion());
     return eqb.build();
@@ -91,7 +91,7 @@ public class ConfigurationVersionDataType extends Structure implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMajorVersion());
     hcb.append(getMinorVersion());
     return hcb.build();
@@ -99,7 +99,7 @@ public class ConfigurationVersionDataType extends Structure implements UaStructu
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ConfigurationVersionDataType.class.getSimpleName() + "[", "]");
     joiner.add("majorVersion=" + getMajorVersion());
     joiner.add("minorVersion=" + getMinorVersion());

@@ -143,7 +143,7 @@ public class PubSubKeyPushTargetDataType extends Structure implements UaStructur
       return false;
     }
     PubSubKeyPushTargetDataType that = (PubSubKeyPushTargetDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getApplicationUri(), that.getApplicationUri());
     eqb.append(getPushTargetFolder(), that.getPushTargetFolder());
     eqb.append(getEndpointUrl(), that.getEndpointUrl());
@@ -158,7 +158,7 @@ public class PubSubKeyPushTargetDataType extends Structure implements UaStructur
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getApplicationUri());
     hcb.append(getPushTargetFolder());
     hcb.append(getEndpointUrl());
@@ -173,7 +173,7 @@ public class PubSubKeyPushTargetDataType extends Structure implements UaStructur
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PubSubKeyPushTargetDataType.class.getSimpleName() + "[", "]");
     joiner.add("applicationUri='" + getApplicationUri() + "'");
     joiner.add("pushTargetFolder=" + java.util.Arrays.toString(getPushTargetFolder()));

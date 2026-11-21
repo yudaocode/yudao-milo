@@ -173,7 +173,7 @@ public interface PubSubKeyPushTargetType extends BaseObjectType {
                   "SecurityGroupIds",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -192,7 +192,7 @@ public interface PubSubKeyPushTargetType extends BaseObjectType {
                   "ConnectResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -237,7 +237,7 @@ public interface PubSubKeyPushTargetType extends BaseObjectType {
                   "SecurityGroupIds",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -256,7 +256,7 @@ public interface PubSubKeyPushTargetType extends BaseObjectType {
                   "DisconnectResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

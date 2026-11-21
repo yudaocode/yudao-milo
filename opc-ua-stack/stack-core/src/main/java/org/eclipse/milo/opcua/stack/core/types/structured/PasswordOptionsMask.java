@@ -65,7 +65,7 @@ public class PasswordOptionsMask extends OptionSetUI32<PasswordOptionsMask.Field
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PasswordOptionsMask.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PasswordOptionsMask.class.getSimpleName() + "[", "]");
     joiner.add("supportInitialPasswordChange=" + getSupportInitialPasswordChange());
     joiner.add("supportDisableUser=" + getSupportDisableUser());
     joiner.add("supportDisableDeleteForUser=" + getSupportDisableDeleteForUser());

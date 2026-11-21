@@ -100,7 +100,7 @@ public class UABinaryFileDataType extends DataTypeSchemaHeader implements UaStru
       return false;
     }
     UABinaryFileDataType that = (UABinaryFileDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getSchemaLocation(), that.getSchemaLocation());
     eqb.append(getFileHeader(), that.getFileHeader());
@@ -110,7 +110,7 @@ public class UABinaryFileDataType extends DataTypeSchemaHeader implements UaStru
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSchemaLocation());
     hcb.append(getFileHeader());
     hcb.append(getBody());
@@ -120,7 +120,7 @@ public class UABinaryFileDataType extends DataTypeSchemaHeader implements UaStru
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UABinaryFileDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UABinaryFileDataType.class.getSimpleName() + "[", "]");
     joiner.add("schemaLocation='" + getSchemaLocation() + "'");
     joiner.add("fileHeader=" + java.util.Arrays.toString(getFileHeader()));
     joiner.add("body=" + getBody());

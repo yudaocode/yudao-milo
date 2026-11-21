@@ -85,7 +85,7 @@ public class StatusChangeNotification extends NotificationData implements UaStru
       return false;
     }
     StatusChangeNotification that = (StatusChangeNotification) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatus(), that.getStatus());
     eqb.append(getDiagnosticInfo(), that.getDiagnosticInfo());
     return eqb.build();
@@ -93,7 +93,7 @@ public class StatusChangeNotification extends NotificationData implements UaStru
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatus());
     hcb.append(getDiagnosticInfo());
     return hcb.build();
@@ -101,7 +101,7 @@ public class StatusChangeNotification extends NotificationData implements UaStru
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", StatusChangeNotification.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", StatusChangeNotification.class.getSimpleName() + "[", "]");
     joiner.add("status=" + getStatus());
     joiner.add("diagnosticInfo=" + getDiagnosticInfo());
     return joiner.toString();

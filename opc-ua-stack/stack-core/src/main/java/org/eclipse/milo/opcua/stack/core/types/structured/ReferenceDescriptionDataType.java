@@ -94,7 +94,7 @@ public class ReferenceDescriptionDataType extends Structure implements UaStructu
       return false;
     }
     ReferenceDescriptionDataType that = (ReferenceDescriptionDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSourceNode(), that.getSourceNode());
     eqb.append(getReferenceType(), that.getReferenceType());
     eqb.append(getIsForward(), that.getIsForward());
@@ -104,7 +104,7 @@ public class ReferenceDescriptionDataType extends Structure implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSourceNode());
     hcb.append(getReferenceType());
     hcb.append(getIsForward());
@@ -114,7 +114,7 @@ public class ReferenceDescriptionDataType extends Structure implements UaStructu
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ReferenceDescriptionDataType.class.getSimpleName() + "[", "]");
     joiner.add("sourceNode=" + getSourceNode());
     joiner.add("referenceType=" + getReferenceType());

@@ -54,7 +54,7 @@ public abstract class SubscribedDataSetDataType extends Structure implements UaS
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SubscribedDataSetDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SubscribedDataSetDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

@@ -144,7 +144,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "SecurityGroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -152,7 +152,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "SecurityPolicyUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -160,7 +160,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "CurrentTokenId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=288")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -168,7 +168,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "CurrentKey",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -176,7 +176,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "FutureKeys",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -184,7 +184,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "TimeToNextKey",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -192,7 +192,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "KeyLifetime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -260,7 +260,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "Configuration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15617")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -279,7 +279,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "ConnectionId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -322,7 +322,7 @@ public interface PublishSubscribeType extends PubSubKeyServiceType {
                   "ConnectionId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

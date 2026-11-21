@@ -130,7 +130,7 @@ public class ApplicationConfigurationDataType extends BaseConfigurationDataType
       return false;
     }
     ApplicationConfigurationDataType that = (ApplicationConfigurationDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getApplicationIdentity(), that.getApplicationIdentity());
     eqb.append(getCertificateGroups(), that.getCertificateGroups());
@@ -144,7 +144,7 @@ public class ApplicationConfigurationDataType extends BaseConfigurationDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getApplicationIdentity());
     hcb.append(getCertificateGroups());
     hcb.append(getServerEndpoints());
@@ -158,7 +158,7 @@ public class ApplicationConfigurationDataType extends BaseConfigurationDataType
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ApplicationConfigurationDataType.class.getSimpleName() + "[", "]");
     joiner.add("applicationIdentity=" + getApplicationIdentity());
     joiner.add("certificateGroups=" + java.util.Arrays.toString(getCertificateGroups()));

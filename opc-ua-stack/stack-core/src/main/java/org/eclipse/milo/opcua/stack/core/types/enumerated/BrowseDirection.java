@@ -47,13 +47,18 @@ public enum BrowseDirection implements UaEnumeratedType {
   }
 
   public static @Nullable BrowseDirection from(int value) {
-    return switch (value) {
-      case 0 -> Forward;
-      case 1 -> Inverse;
-      case 2 -> Both;
-      case 3 -> Invalid;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Forward;
+      case 1:
+        return Inverse;
+      case 2:
+        return Both;
+      case 3:
+        return Invalid;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

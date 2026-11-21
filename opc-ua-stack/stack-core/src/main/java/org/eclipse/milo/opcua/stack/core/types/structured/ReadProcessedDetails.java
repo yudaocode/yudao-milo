@@ -111,7 +111,7 @@ public class ReadProcessedDetails extends HistoryReadDetails implements UaStruct
       return false;
     }
     ReadProcessedDetails that = (ReadProcessedDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStartTime(), that.getStartTime());
     eqb.append(getEndTime(), that.getEndTime());
     eqb.append(getProcessingInterval(), that.getProcessingInterval());
@@ -122,7 +122,7 @@ public class ReadProcessedDetails extends HistoryReadDetails implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStartTime());
     hcb.append(getEndTime());
     hcb.append(getProcessingInterval());
@@ -133,7 +133,7 @@ public class ReadProcessedDetails extends HistoryReadDetails implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadProcessedDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadProcessedDetails.class.getSimpleName() + "[", "]");
     joiner.add("startTime=" + getStartTime());
     joiner.add("endTime=" + getEndTime());
     joiner.add("processingInterval=" + getProcessingInterval());

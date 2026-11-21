@@ -108,7 +108,7 @@ public class MethodNode extends InstanceNode implements UaStructuredType {
       return false;
     }
     MethodNode that = (MethodNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getExecutable(), that.getExecutable());
     eqb.append(getUserExecutable(), that.getUserExecutable());
@@ -117,7 +117,7 @@ public class MethodNode extends InstanceNode implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getExecutable());
     hcb.append(getUserExecutable());
     hcb.appendSuper(super.hashCode());
@@ -126,7 +126,7 @@ public class MethodNode extends InstanceNode implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", MethodNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", MethodNode.class.getSimpleName() + "[", "]");
     joiner.add("executable=" + getExecutable());
     joiner.add("userExecutable=" + getUserExecutable());
     return joiner.toString();

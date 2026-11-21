@@ -95,7 +95,7 @@ public class HistoryReadResponse extends Structure implements UaResponseMessageT
       return false;
     }
     HistoryReadResponse that = (HistoryReadResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getResults(), that.getResults());
     eqb.append(getDiagnosticInfos(), that.getDiagnosticInfos());
@@ -104,7 +104,7 @@ public class HistoryReadResponse extends Structure implements UaResponseMessageT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getResults());
     hcb.append(getDiagnosticInfos());
@@ -113,7 +113,7 @@ public class HistoryReadResponse extends Structure implements UaResponseMessageT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryReadResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryReadResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("results=" + java.util.Arrays.toString(getResults()));
     joiner.add("diagnosticInfos=" + java.util.Arrays.toString(getDiagnosticInfos()));

@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.dtd;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.concurrent.CompletableFuture.completedFuture;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedFuture;
@@ -20,7 +22,7 @@ import com.google.common.primitives.Ints;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.CompositeByteBuf;
 import io.netty.buffer.Unpooled;
-import jakarta.xml.bind.JAXBException;
+import javax.xml.bind.JAXBException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -101,7 +103,7 @@ public class BinaryDataTypeDictionaryReader {
             references ->
                 references.stream()
                     .filter(r -> r.getTypeDefinition().equalTo(NodeIds.DataTypeDictionaryType))
-                    .flatMap(r -> r.getNodeId().toNodeId(client.getNamespaceTable()).stream()));
+                    .flatMap(r -> Java8Collections.optionalStream(r.getNodeId().toNodeId(client.getNamespaceTable()))));
 
     return dictionaryNodeIds
         .thenApply(
@@ -117,7 +119,7 @@ public class BinaryDataTypeDictionaryReader {
 
   private DataTypeDictionary createDataTypeDictionary(
       TypeDictionaryInfo info, BinaryCodecFactory codecFactory) {
-    var dictionary = new BinaryDataTypeDictionary(info.typeDictionary);
+    org.eclipse.milo.opcua.sdk.core.dtd.BinaryDataTypeDictionary dictionary = new BinaryDataTypeDictionary(info.typeDictionary);
 
     Map<String, StructuredType> structuredTypes = new HashMap<>();
 
@@ -476,7 +478,7 @@ public class BinaryDataTypeDictionaryReader {
         references ->
             references.stream()
                 .filter(r -> NodeIds.DataTypeDescriptionType.equalTo(r.getTypeDefinition()))
-                .flatMap(r -> r.getNodeId().toNodeId(client.getNamespaceTable()).stream())
+                .flatMap(r -> Java8Collections.optionalStream(r.getNodeId().toNodeId(client.getNamespaceTable())))
                 .collect(Collectors.toList()));
   }
 
@@ -603,7 +605,7 @@ public class BinaryDataTypeDictionaryReader {
         .browseAsync(browseDescription)
         .thenCompose(
             result -> {
-              var references = Collections.synchronizedList(new ArrayList<ReferenceDescription>());
+              java.util.List<org.eclipse.milo.opcua.stack.core.types.structured.ReferenceDescription> references = Collections.synchronizedList(new ArrayList<ReferenceDescription>());
 
               return maybeBrowseNext(result, references);
             });
@@ -636,13 +638,13 @@ public class BinaryDataTypeDictionaryReader {
       ByteString continuationPoint, List<ReferenceDescription> references) {
 
     return client
-        .browseNextAsync(false, List.of(continuationPoint))
+        .browseNextAsync(false, Java8Collections.listOf(continuationPoint))
         .thenApply(BrowseNextResponse::getResults)
         .thenCompose(result -> maybeBrowseNext(result[0], references));
   }
 
   private CompletableFuture<DataValue> readNode(ReadValueId readValueId) {
-    return readNodes(List.of(readValueId)).thenApply(values -> values.get(0));
+    return readNodes(Java8Collections.listOf(readValueId)).thenApply(values -> values.get(0));
   }
 
   private CompletableFuture<List<DataValue>> readNodes(List<ReadValueId> readValueIds) {

@@ -10,8 +10,10 @@
 
 package org.eclipse.milo.opcua.sdk.client.nodes;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.Objects.requireNonNull;
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static java.util.concurrent.CompletableFuture.completedFuture;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedFuture;
@@ -826,7 +828,7 @@ public abstract class UaNode implements Node {
         new ReadValueId(getNodeId(), attributeId.uid(), null, QualifiedName.NULL_VALUE);
 
     CompletableFuture<ReadResponse> future =
-        client.readAsync(0.0, TimestampsToReturn.Both, List.of(readValueId));
+        client.readAsync(0.0, TimestampsToReturn.Both, Java8Collections.listOf(readValueId));
 
     return future.thenApply(response -> requireNonNull(response.getResults())[0]);
   }
@@ -839,9 +841,9 @@ public abstract class UaNode implements Node {
    */
   public CompletableFuture<StatusCode> writeAttributeAsync(
       AttributeId attributeId, DataValue value) {
-    var writeValue = new WriteValue(getNodeId(), attributeId.uid(), null, value);
+    org.eclipse.milo.opcua.stack.core.types.structured.WriteValue writeValue = new WriteValue(getNodeId(), attributeId.uid(), null, value);
 
-    CompletableFuture<WriteResponse> future = client.writeAsync(List.of(writeValue));
+    CompletableFuture<WriteResponse> future = client.writeAsync(Java8Collections.listOf(writeValue));
 
     return future.thenApply(response -> requireNonNull(response.getResults())[0]);
   }
@@ -1003,7 +1005,7 @@ public abstract class UaNode implements Node {
             }
           }
 
-          return List.of(values);
+          return Java8Collections.listOf(values);
         });
   }
 
@@ -1041,7 +1043,7 @@ public abstract class UaNode implements Node {
             response -> {
               StatusCode[] results = requireNonNullElse(response.getResults(), new StatusCode[0]);
 
-              return List.of(results);
+              return Java8Collections.listOf(results);
             });
   }
 
@@ -1074,20 +1076,30 @@ public abstract class UaNode implements Node {
   }
 
   protected DataValue getAttributeValue(AttributeId attributeId) {
-    return switch (attributeId) {
-      case NodeId -> DataValue.valueOnly(new Variant(getNodeId()));
-      case NodeClass -> DataValue.valueOnly(new Variant(getNodeClass().getValue()));
-      case BrowseName -> DataValue.valueOnly(new Variant(getBrowseName()));
-      case DisplayName -> DataValue.valueOnly(new Variant(getDisplayName()));
-      case Description -> DataValue.valueOnly(new Variant(getDescription()));
-      case WriteMask -> DataValue.valueOnly(new Variant(getWriteMask()));
-      case UserWriteMask -> DataValue.valueOnly(new Variant(getUserWriteMask()));
-      case RolePermissions -> DataValue.valueOnly(new Variant(getRolePermissions()));
-      case UserRolePermissions -> DataValue.valueOnly(new Variant(getUserRolePermissions()));
-      case AccessRestrictions ->
-          DataValue.valueOnly(new Variant(getAccessRestrictions().getValue()));
-      default -> throw new IllegalArgumentException("attributeId: " + attributeId);
-    };
+    switch ((attributeId)) {
+      case NodeId:
+        return DataValue.valueOnly(new Variant(getNodeId()));
+      case NodeClass:
+        return DataValue.valueOnly(new Variant(getNodeClass().getValue()));
+      case BrowseName:
+        return DataValue.valueOnly(new Variant(getBrowseName()));
+      case DisplayName:
+        return DataValue.valueOnly(new Variant(getDisplayName()));
+      case Description:
+        return DataValue.valueOnly(new Variant(getDescription()));
+      case WriteMask:
+        return DataValue.valueOnly(new Variant(getWriteMask()));
+      case UserWriteMask:
+        return DataValue.valueOnly(new Variant(getUserWriteMask()));
+      case RolePermissions:
+        return DataValue.valueOnly(new Variant(getRolePermissions()));
+      case UserRolePermissions:
+        return DataValue.valueOnly(new Variant(getUserRolePermissions()));
+      case AccessRestrictions:
+        return DataValue.valueOnly(new Variant(getAccessRestrictions().getValue()));
+      default:
+        throw new IllegalArgumentException("attributeId: " + attributeId);
+    }
   }
 
   protected void setAttributeValue(AttributeId attributeId, DataValue value) {
@@ -1258,7 +1270,7 @@ public abstract class UaNode implements Node {
                                 .toNodeId(client.getNamespaceTable())
                                 .map(id -> client.getAddressSpace().getNodeAsync(id));
 
-                        return opt.stream();
+                        return Java8Collections.optionalStream(opt);
                       })
                   .findFirst();
 
@@ -1308,7 +1320,7 @@ public abstract class UaNode implements Node {
                                             .getNodeAsync(id)
                                             .thenApply(n -> (PropertyTypeNode) n));
 
-                        return opt.stream();
+                        return Java8Collections.optionalStream(opt);
                       })
                   .findFirst();
 
@@ -1357,7 +1369,8 @@ public abstract class UaNode implements Node {
    * @return the object after casting, or null if {@code o} is null.
    */
   protected <T> T cast(Object o, Class<T> clazz) {
-    if (UaEnumeratedType.class.isAssignableFrom(clazz) && o instanceof Integer i) {
+    if (UaEnumeratedType.class.isAssignableFrom(clazz) && o instanceof Integer) {
+      Integer i = (Integer) o;
       try {
         Object enumeration = clazz.getMethod("from", new Class[] {Integer.class}).invoke(null, i);
 
@@ -1365,11 +1378,13 @@ public abstract class UaNode implements Node {
       } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
         return null;
       }
-    } else if (o instanceof ExtensionObject xo) {
+    } else if (o instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) o;
       Object decoded = xo.decode(client.getStaticEncodingContext());
 
       return clazz.cast(decoded);
-    } else if (o instanceof ExtensionObject[] xos) {
+    } else if (o instanceof ExtensionObject[]) {
+      ExtensionObject[] xos = (ExtensionObject[]) o;
       Class<?> componentType = clazz.getComponentType();
 
       Object array = Array.newInstance(componentType, xos.length);

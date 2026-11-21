@@ -9,8 +9,9 @@
  */
 
 package org.eclipse.milo.opcua.sdk.client.nodes;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedFuture;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedUaFuture;
@@ -565,7 +566,7 @@ public class UaObjectNode extends UaNode implements ObjectNode {
                                             .getNodeAsync(id)
                                             .thenApply(n -> (UaObjectTypeNode) n));
 
-                        return opt.stream();
+                        return Java8Collections.optionalStream(opt);
                       })
                   .findFirst();
 
@@ -641,10 +642,12 @@ public class UaObjectNode extends UaNode implements ObjectNode {
 
   @Override
   protected DataValue getAttributeValue(AttributeId attributeId) {
-    return switch (attributeId) {
-      case EventNotifier -> DataValue.valueOnly(new Variant(getEventNotifier()));
-      default -> super.getAttributeValue(attributeId);
-    };
+    switch ((attributeId)) {
+      case EventNotifier:
+        return DataValue.valueOnly(new Variant(getEventNotifier()));
+      default:
+        return super.getAttributeValue(attributeId);
+    }
   }
 
   @Override

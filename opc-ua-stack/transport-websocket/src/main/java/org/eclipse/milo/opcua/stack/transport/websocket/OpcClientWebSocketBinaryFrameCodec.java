@@ -56,7 +56,7 @@ public class OpcClientWebSocketBinaryFrameCodec
       logger.debug("WebSocket handshake event: {}", event);
 
       if (event == ClientHandshakeStateEvent.HANDSHAKE_COMPLETE) {
-        var acknowledgeHandler =
+        UascClientAcknowledgeHandler acknowledgeHandler =
             new UascClientAcknowledgeHandler(config, application, requestIdSupplier, handshake);
 
         ctx.pipeline().addLast(acknowledgeHandler);
@@ -73,7 +73,8 @@ public class OpcClientWebSocketBinaryFrameCodec
   protected void decode(ChannelHandlerContext ctx, WebSocketFrame msg, List<Object> out) {
     if (msg instanceof BinaryWebSocketFrame) {
       out.add(msg.content().retain());
-    } else if (msg instanceof TextWebSocketFrame textFrame) {
+    } else if (msg instanceof TextWebSocketFrame) {
+      TextWebSocketFrame textFrame = (TextWebSocketFrame) msg;
       logger.error("Received WebSocket frame:\n{}", textFrame.text());
       ctx.close();
     }

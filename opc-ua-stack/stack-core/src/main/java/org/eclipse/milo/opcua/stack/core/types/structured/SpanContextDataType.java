@@ -85,7 +85,7 @@ public class SpanContextDataType extends Structure implements UaStructuredType {
       return false;
     }
     SpanContextDataType that = (SpanContextDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTraceId(), that.getTraceId());
     eqb.append(getSpanId(), that.getSpanId());
     return eqb.build();
@@ -93,7 +93,7 @@ public class SpanContextDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTraceId());
     hcb.append(getSpanId());
     return hcb.build();
@@ -101,7 +101,7 @@ public class SpanContextDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SpanContextDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SpanContextDataType.class.getSimpleName() + "[", "]");
     joiner.add("traceId=" + getTraceId());
     joiner.add("spanId=" + getSpanId());
     return joiner.toString();

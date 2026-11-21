@@ -83,7 +83,7 @@ public class AliasCategoryUpdateDataType extends Structure implements UaStructur
       return false;
     }
     AliasCategoryUpdateDataType that = (AliasCategoryUpdateDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getCategory(), that.getCategory());
     eqb.append(getLastChange(), that.getLastChange());
     return eqb.build();
@@ -91,7 +91,7 @@ public class AliasCategoryUpdateDataType extends Structure implements UaStructur
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getCategory());
     hcb.append(getLastChange());
     return hcb.build();
@@ -99,7 +99,7 @@ public class AliasCategoryUpdateDataType extends Structure implements UaStructur
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", AliasCategoryUpdateDataType.class.getSimpleName() + "[", "]");
     joiner.add("category=" + getCategory());
     joiner.add("lastChange=" + getLastChange());

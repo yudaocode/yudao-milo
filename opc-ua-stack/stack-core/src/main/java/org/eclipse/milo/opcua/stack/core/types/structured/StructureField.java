@@ -126,7 +126,7 @@ public class StructureField extends Structure implements UaStructuredType {
       return false;
     }
     StructureField that = (StructureField) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getDescription(), that.getDescription());
     eqb.append(getDataType(), that.getDataType());
@@ -139,7 +139,7 @@ public class StructureField extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getDescription());
     hcb.append(getDataType());
@@ -152,7 +152,7 @@ public class StructureField extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", StructureField.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", StructureField.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("description=" + getDescription());
     joiner.add("dataType=" + getDataType());

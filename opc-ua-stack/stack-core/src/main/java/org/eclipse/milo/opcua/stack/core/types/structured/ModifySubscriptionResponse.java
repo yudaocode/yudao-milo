@@ -101,7 +101,7 @@ public class ModifySubscriptionResponse extends Structure implements UaResponseM
       return false;
     }
     ModifySubscriptionResponse that = (ModifySubscriptionResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getRevisedPublishingInterval(), that.getRevisedPublishingInterval());
     eqb.append(getRevisedLifetimeCount(), that.getRevisedLifetimeCount());
@@ -111,7 +111,7 @@ public class ModifySubscriptionResponse extends Structure implements UaResponseM
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getRevisedPublishingInterval());
     hcb.append(getRevisedLifetimeCount());
@@ -121,7 +121,7 @@ public class ModifySubscriptionResponse extends Structure implements UaResponseM
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ModifySubscriptionResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("revisedPublishingInterval=" + getRevisedPublishingInterval());

@@ -103,7 +103,7 @@ public class UpdateEventDetails extends HistoryUpdateDetails implements UaStruct
       return false;
     }
     UpdateEventDetails that = (UpdateEventDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getPerformInsertReplace(), that.getPerformInsertReplace());
     eqb.append(getFilter(), that.getFilter());
@@ -113,7 +113,7 @@ public class UpdateEventDetails extends HistoryUpdateDetails implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getPerformInsertReplace());
     hcb.append(getFilter());
@@ -123,7 +123,7 @@ public class UpdateEventDetails extends HistoryUpdateDetails implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UpdateEventDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UpdateEventDetails.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("performInsertReplace=" + getPerformInsertReplace());
     joiner.add("filter=" + getFilter());

@@ -86,7 +86,7 @@ public class HistoryUpdateRequest extends Structure implements UaRequestMessageT
       return false;
     }
     HistoryUpdateRequest that = (HistoryUpdateRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getHistoryUpdateDetails(), that.getHistoryUpdateDetails());
     return eqb.build();
@@ -94,7 +94,7 @@ public class HistoryUpdateRequest extends Structure implements UaRequestMessageT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getHistoryUpdateDetails());
     return hcb.build();
@@ -102,7 +102,7 @@ public class HistoryUpdateRequest extends Structure implements UaRequestMessageT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryUpdateRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryUpdateRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("historyUpdateDetails=" + java.util.Arrays.toString(getHistoryUpdateDetails()));
     return joiner.toString();

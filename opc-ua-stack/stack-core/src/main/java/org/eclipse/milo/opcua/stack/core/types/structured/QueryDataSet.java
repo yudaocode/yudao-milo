@@ -93,7 +93,7 @@ public class QueryDataSet extends Structure implements UaStructuredType {
       return false;
     }
     QueryDataSet that = (QueryDataSet) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getTypeDefinitionNode(), that.getTypeDefinitionNode());
     eqb.append(getValues(), that.getValues());
@@ -102,7 +102,7 @@ public class QueryDataSet extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getTypeDefinitionNode());
     hcb.append(getValues());
@@ -111,7 +111,7 @@ public class QueryDataSet extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", QueryDataSet.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", QueryDataSet.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("typeDefinitionNode=" + getTypeDefinitionNode());
     joiner.add("values=" + java.util.Arrays.toString(getValues()));

@@ -99,7 +99,7 @@ public class AuthorizationServiceConfigurationDataType extends BaseConfiguration
     }
     AuthorizationServiceConfigurationDataType that =
         (AuthorizationServiceConfigurationDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getServiceUri(), that.getServiceUri());
     eqb.append(getServiceCertificates(), that.getServiceCertificates());
@@ -109,7 +109,7 @@ public class AuthorizationServiceConfigurationDataType extends BaseConfiguration
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getServiceUri());
     hcb.append(getServiceCertificates());
     hcb.append(getIssuerEndpointSettings());
@@ -119,7 +119,7 @@ public class AuthorizationServiceConfigurationDataType extends BaseConfiguration
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", AuthorizationServiceConfigurationDataType.class.getSimpleName() + "[", "]");
     joiner.add("serviceUri='" + getServiceUri() + "'");

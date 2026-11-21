@@ -100,7 +100,7 @@ public interface AccessController {
       Session session, List<DeleteReferencesItem> referencesToDelete);
 
   /** The result of an access control check. */
-  sealed interface AccessResult {
+  interface AccessResult {
 
     /** Access is allowed. */
     AccessResult ALLOWED = new Allowed();
@@ -115,14 +115,28 @@ public interface AccessController {
     AccessResult DENIED_SECURITY_MODE = new Denied(StatusCodes.Bad_SecurityModeInsufficient);
 
     /** Access is allowed. */
-    record Allowed() implements AccessResult {}
+    static final class Allowed implements AccessResult {
+
+      Allowed() {
+      }
+}
 
     /**
      * Access is denied for the reason described by {@code statusCode}.
      *
      * @param statusCode the {@link StatusCode} describing the reason access is denied.
      */
-    record Denied(StatusCode statusCode) implements AccessResult {
+    static final class Denied implements AccessResult {
+      private final StatusCode statusCode;
+
+      public StatusCode statusCode() {
+        return statusCode;
+      }
+
+      Denied(StatusCode statusCode) {
+        this.statusCode = statusCode;
+      }
+
       public Denied(long code) {
         this(new StatusCode(code));
       }

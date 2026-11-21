@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.util;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.ArrayList;
 import java.util.EnumSet;
 import org.eclipse.milo.opcua.stack.core.types.enumerated.BrowseResultMask;
@@ -18,7 +20,7 @@ import org.eclipse.milo.opcua.stack.core.types.enumerated.NodeClass;
 public class UaEnumUtil {
 
   public static EnumSet<NodeClass> nodeClasses(long mask) {
-    var list = new ArrayList<NodeClass>();
+    ArrayList<NodeClass> list = new ArrayList<NodeClass>();
 
     for (NodeClass nc : NodeClass.values()) {
       if ((mask & nc.getValue()) == nc.getValue()) {
@@ -30,7 +32,7 @@ public class UaEnumUtil {
   }
 
   public static EnumSet<BrowseResultMask> browseResultMasks(long mask) {
-    var list = new ArrayList<BrowseResultMask>();
+    ArrayList<BrowseResultMask> list = new ArrayList<BrowseResultMask>();
 
     for (BrowseResultMask brm : BrowseResultMask.values()) {
       if ((mask & brm.getValue()) == brm.getValue()) {

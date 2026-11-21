@@ -10,6 +10,10 @@
 
 package org.eclipse.milo.opcua.sdk.server.servicesets.impl;
 
+import java.util.stream.Collectors;
+
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.stream.Collectors.toList;
 import static org.eclipse.milo.opcua.sdk.server.servicesets.AbstractServiceSet.createResponseHeader;
 
@@ -49,7 +53,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
   private final Supplier<List<ApplicationDescription>> additionalServers;
 
   public DefaultDiscoveryServiceSet(OpcUaServer server) {
-    this(server, List::of);
+    this(server, java.util.Collections::emptyList);
   }
 
   /**
@@ -79,7 +83,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
       ServiceRequestContext context, GetEndpointsRequest request) {
     List<String> profileUris =
         request.getProfileUris() != null
-            ? List.of(request.getProfileUris())
+            ? Java8Collections.listOf(request.getProfileUris())
             : Collections.emptyList();
 
     List<EndpointDescription> allEndpoints =
@@ -91,7 +95,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
                 })
             .filter(ed -> filterProfileUris(ed, profileUris))
             .distinct()
-            .toList();
+            .collect(Collectors.toList());
 
     ApplicationDescription filteredApplicationDescription =
         getFilteredApplicationDescription(request.getEndpointUrl());
@@ -102,7 +106,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
             .map(
                 endpoint -> replaceApplicationDescription(endpoint, filteredApplicationDescription))
             .distinct()
-            .toList();
+            .collect(Collectors.toList());
 
     return new GetEndpointsResponse(
         createResponseHeader(request),
@@ -116,7 +120,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
       ServiceRequestContext context, FindServersRequest request) {
     List<String> serverUris =
         request.getServerUris() != null
-            ? List.of(request.getServerUris())
+            ? Java8Collections.listOf(request.getServerUris())
             : Collections.emptyList();
 
     List<ApplicationDescription> applicationDescriptions = new ArrayList<>();
@@ -124,7 +128,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
     applicationDescriptions.addAll(additionalServers.get());
 
     applicationDescriptions =
-        applicationDescriptions.stream().filter(ad -> filterServerUris(ad, serverUris)).toList();
+        applicationDescriptions.stream().filter(ad -> filterServerUris(ad, serverUris)).collect(Collectors.toList());
 
     return new FindServersResponse(
         createResponseHeader(request),
@@ -161,7 +165,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
       String requestedHost = EndpointUtil.getHost(endpointUrl);
       String endpointHost = EndpointUtil.getHost(endpoint.getEndpointUrl());
 
-      return Objects.requireNonNullElse(requestedHost, "").equalsIgnoreCase(endpointHost);
+      return Java8Collections.requireNonNullElse(requestedHost, "").equalsIgnoreCase(endpointHost);
     } catch (Throwable e) {
       logger.debug("Unable to create URI.", e);
       return false;
@@ -195,7 +199,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
           server.getConfig().getEndpoints().stream()
               .map(EndpointConfig::getEndpointUrl)
               .distinct()
-              .toList();
+              .collect(Collectors.toList());
     }
 
     List<String> matchingDiscoveryUrls =
@@ -210,7 +214,7 @@ public class DefaultDiscoveryServiceSet implements DiscoveryServiceSet {
                     logger.debug(
                         "requestedHost={}, discoveryHost={}", requestedHost, discoveryHost);
 
-                    return Objects.requireNonNullElse(requestedHost, "")
+                    return Java8Collections.requireNonNullElse(requestedHost, "")
                         .equalsIgnoreCase(discoveryHost);
                   } catch (Throwable e) {
                     logger.debug("Unable to create URI.", e);

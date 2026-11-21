@@ -94,7 +94,7 @@ public class UpdateStructureDataDetails extends HistoryUpdateDetails implements 
       return false;
     }
     UpdateStructureDataDetails that = (UpdateStructureDataDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getPerformInsertReplace(), that.getPerformInsertReplace());
     eqb.append(getUpdateValues(), that.getUpdateValues());
@@ -103,7 +103,7 @@ public class UpdateStructureDataDetails extends HistoryUpdateDetails implements 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getPerformInsertReplace());
     hcb.append(getUpdateValues());
@@ -112,7 +112,7 @@ public class UpdateStructureDataDetails extends HistoryUpdateDetails implements 
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", UpdateStructureDataDetails.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("performInsertReplace=" + getPerformInsertReplace());

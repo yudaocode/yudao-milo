@@ -65,7 +65,7 @@ public class HostnameUtil {
    */
   public static Set<String> getHostnames(
       String address, boolean includeLoopback, boolean resolveHostNames) {
-    var hostnames = new HashSet<String>();
+    java.util.HashSet<java.lang.String> hostnames = new HashSet<String>();
 
     try {
       InetAddress inetAddress = InetAddress.getByName(address);

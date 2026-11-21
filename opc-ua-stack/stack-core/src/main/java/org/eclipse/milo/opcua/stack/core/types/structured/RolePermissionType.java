@@ -83,7 +83,7 @@ public class RolePermissionType extends Structure implements UaStructuredType {
       return false;
     }
     RolePermissionType that = (RolePermissionType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRoleId(), that.getRoleId());
     eqb.append(getPermissions(), that.getPermissions());
     return eqb.build();
@@ -91,7 +91,7 @@ public class RolePermissionType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRoleId());
     hcb.append(getPermissions());
     return hcb.build();
@@ -99,7 +99,7 @@ public class RolePermissionType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RolePermissionType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RolePermissionType.class.getSimpleName() + "[", "]");
     joiner.add("roleId=" + getRoleId());
     joiner.add("permissions=" + getPermissions());
     return joiner.toString();

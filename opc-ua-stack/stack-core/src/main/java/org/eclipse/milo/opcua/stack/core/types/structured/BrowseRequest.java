@@ -102,7 +102,7 @@ public class BrowseRequest extends Structure implements UaRequestMessageType {
       return false;
     }
     BrowseRequest that = (BrowseRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getView(), that.getView());
     eqb.append(getRequestedMaxReferencesPerNode(), that.getRequestedMaxReferencesPerNode());
@@ -112,7 +112,7 @@ public class BrowseRequest extends Structure implements UaRequestMessageType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getView());
     hcb.append(getRequestedMaxReferencesPerNode());
@@ -122,7 +122,7 @@ public class BrowseRequest extends Structure implements UaRequestMessageType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", BrowseRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", BrowseRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("view=" + getView());
     joiner.add("requestedMaxReferencesPerNode=" + getRequestedMaxReferencesPerNode());

@@ -102,7 +102,7 @@ public class StructureDefinition extends DataTypeDefinition implements UaStructu
       return false;
     }
     StructureDefinition that = (StructureDefinition) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDefaultEncodingId(), that.getDefaultEncodingId());
     eqb.append(getBaseDataType(), that.getBaseDataType());
     eqb.append(getStructureType(), that.getStructureType());
@@ -112,7 +112,7 @@ public class StructureDefinition extends DataTypeDefinition implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDefaultEncodingId());
     hcb.append(getBaseDataType());
     hcb.append(getStructureType());
@@ -122,7 +122,7 @@ public class StructureDefinition extends DataTypeDefinition implements UaStructu
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", StructureDefinition.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", StructureDefinition.class.getSimpleName() + "[", "]");
     joiner.add("defaultEncodingId=" + getDefaultEncodingId());
     joiner.add("baseDataType=" + getBaseDataType());
     joiner.add("structureType=" + getStructureType());

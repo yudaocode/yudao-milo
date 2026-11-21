@@ -133,7 +133,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode0() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 3062),
@@ -153,7 +153,7 @@ class ObjectNodeLoader {
 
   void loadNode1() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
           new BaseObjectTypeNode(
               this.context,
               new NodeId(0, 3063),
@@ -175,7 +175,7 @@ class ObjectNodeLoader {
 
   void loadNode2() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
           new BaseObjectTypeNode(
               this.context,
               new NodeId(0, 24502),
@@ -196,7 +196,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode3() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ModellingRuleTypeNode node =
         new ModellingRuleTypeNode(
             this.context,
             new NodeId(0, 78),
@@ -215,7 +215,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode4() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ModellingRuleTypeNode node =
         new ModellingRuleTypeNode(
             this.context,
             new NodeId(0, 80),
@@ -234,7 +234,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode5() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ModellingRuleTypeNode node =
         new ModellingRuleTypeNode(
             this.context,
             new NodeId(0, 83),
@@ -253,7 +253,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode6() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ModellingRuleTypeNode node =
         new ModellingRuleTypeNode(
             this.context,
             new NodeId(0, 11508),
@@ -272,7 +272,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode7() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ModellingRuleTypeNode node =
         new ModellingRuleTypeNode(
             this.context,
             new NodeId(0, 11510),
@@ -291,7 +291,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode8() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 84),
@@ -310,7 +310,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode9() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 85),
@@ -331,7 +331,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode10() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 86),
@@ -352,7 +352,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode11() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 87),
@@ -373,7 +373,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode12() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 88),
@@ -396,7 +396,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode13() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 89),
@@ -419,7 +419,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode14() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 90),
@@ -442,7 +442,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode15() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 91),
@@ -465,7 +465,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode16() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeSystemTypeNode node =
         new DataTypeSystemTypeNode(
             this.context,
             new NodeId(0, 92),
@@ -486,7 +486,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode17() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeSystemTypeNode node =
         new DataTypeSystemTypeNode(
             this.context,
             new NodeId(0, 93),
@@ -507,7 +507,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode18() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NamespaceMetadataTypeNode node =
         new NamespaceMetadataTypeNode(
             this.context,
             new NodeId(0, 15957),
@@ -563,7 +563,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode19() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerCapabilitiesTypeNode node =
         new ServerCapabilitiesTypeNode(
             this.context,
             new NodeId(0, 2009),
@@ -615,7 +615,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode20() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 3093),
@@ -639,7 +639,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode21() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 3094),
@@ -663,7 +663,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode22() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerDiagnosticsTypeNode node =
         new ServerDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 2010),
@@ -700,7 +700,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode23() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SessionsDiagnosticsSummaryTypeNode node =
         new SessionsDiagnosticsSummaryTypeNode(
             this.context,
             new NodeId(0, 3111),
@@ -731,7 +731,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode24() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.VendorServerInfoTypeNode node =
         new VendorServerInfoTypeNode(
             this.context,
             new NodeId(0, 2011),
@@ -756,7 +756,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode25() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerRedundancyTypeNode node =
         new ServerRedundancyTypeNode(
             this.context,
             new NodeId(0, 2012),
@@ -784,7 +784,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode26() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NamespacesTypeNode node =
         new NamespacesTypeNode(
             this.context,
             new NodeId(0, 11527),
@@ -809,7 +809,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode27() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.OperationLimitsTypeNode node =
         new OperationLimitsTypeNode(
             this.context,
             new NodeId(0, 11551),
@@ -834,7 +834,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode28() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 2019),
@@ -858,7 +858,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode29() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 2754),
@@ -882,7 +882,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode30() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleSetTypeNode node =
         new RoleSetTypeNode(
             this.context,
             new NodeId(0, 16295),
@@ -913,7 +913,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode31() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SessionsDiagnosticsSummaryTypeNode node =
         new SessionsDiagnosticsSummaryTypeNode(
             this.context,
             new NodeId(0, 2744),
@@ -944,7 +944,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode32() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SessionDiagnosticsObjectTypeNode node =
         new SessionDiagnosticsObjectTypeNode(
             this.context,
             new NodeId(0, 12097),
@@ -979,7 +979,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode33() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AddressSpaceFileTypeNode node =
         new AddressSpaceFileTypeNode(
             this.context,
             new NodeId(0, 11624),
@@ -1034,7 +1034,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode34() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NamespaceMetadataTypeNode node =
         new NamespaceMetadataTypeNode(
             this.context,
             new NodeId(0, 11646),
@@ -1081,7 +1081,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode35() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 3048),
@@ -1105,7 +1105,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode36() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 31915),
@@ -1127,7 +1127,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode37() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerTypeNode node =
         new ServerTypeNode(
             this.context,
             new NodeId(0, 2253),
@@ -1207,7 +1207,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode38() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerCapabilitiesTypeNode node =
         new ServerCapabilitiesTypeNode(
             this.context,
             new NodeId(0, 2268),
@@ -1306,7 +1306,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode39() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.OperationLimitsTypeNode node =
         new OperationLimitsTypeNode(
             this.context,
             new NodeId(0, 11704),
@@ -1372,7 +1372,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode40() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 2996),
@@ -1401,7 +1401,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode41() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 2997),
@@ -1430,7 +1430,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode42() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleSetTypeNode node =
         new RoleSetTypeNode(
             this.context,
             new NodeId(0, 15606),
@@ -1463,7 +1463,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode43() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerDiagnosticsTypeNode node =
         new ServerDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 2274),
@@ -1508,7 +1508,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode44() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SessionsDiagnosticsSummaryTypeNode node =
         new SessionsDiagnosticsSummaryTypeNode(
             this.context,
             new NodeId(0, 3706),
@@ -1544,7 +1544,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode45() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.VendorServerInfoTypeNode node =
         new VendorServerInfoTypeNode(
             this.context,
             new NodeId(0, 2295),
@@ -1574,7 +1574,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode46() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerRedundancyTypeNode node =
         new ServerRedundancyTypeNode(
             this.context,
             new NodeId(0, 2296),
@@ -1610,7 +1610,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode47() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NamespacesTypeNode node =
         new NamespacesTypeNode(
             this.context,
             new NodeId(0, 11715),
@@ -1640,7 +1640,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode48() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.HistoryServerCapabilitiesTypeNode node =
         new HistoryServerCapabilitiesTypeNode(
             this.context,
             new NodeId(0, 11192),
@@ -1711,7 +1711,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode49() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 11201),
@@ -1733,7 +1733,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode50() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FileDirectoryTypeNode node =
         new FileDirectoryTypeNode(
             this.context,
             new NodeId(0, 13354),
@@ -1771,7 +1771,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode51() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FileTypeNode node =
         new FileTypeNode(
             this.context,
             new NodeId(0, 13366),
@@ -1827,7 +1827,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode52() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FileDirectoryTypeNode node =
         new FileDirectoryTypeNode(
             this.context,
             new NodeId(0, 16314),
@@ -1859,7 +1859,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode53() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FileTransferStateMachineTypeNode node =
         new FileTransferStateMachineTypeNode(
             this.context,
             new NodeId(0, 15754),
@@ -1891,7 +1891,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode54() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.InitialStateTypeNode node =
         new InitialStateTypeNode(
             this.context,
             new NodeId(0, 15815),
@@ -1932,7 +1932,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode55() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 15817),
@@ -1967,7 +1967,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode56() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 15819),
@@ -2002,7 +2002,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode57() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 15821),
@@ -2037,7 +2037,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode58() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 15823),
@@ -2075,7 +2075,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode59() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15825),
@@ -2110,7 +2110,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode60() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15827),
@@ -2145,7 +2145,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode61() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15829),
@@ -2180,7 +2180,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode62() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15831),
@@ -2215,7 +2215,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode63() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15833),
@@ -2250,7 +2250,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode64() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15835),
@@ -2285,7 +2285,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode65() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15837),
@@ -2320,7 +2320,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode66() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15839),
@@ -2355,7 +2355,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode67() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 15841),
@@ -2390,7 +2390,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode68() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15608),
@@ -2419,7 +2419,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode69() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15644),
@@ -2452,7 +2452,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode70() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15656),
@@ -2485,7 +2485,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode71() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 18625),
@@ -2516,7 +2516,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode72() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15668),
@@ -2582,7 +2582,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode73() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15680),
@@ -2648,7 +2648,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode74() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 16036),
@@ -2714,7 +2714,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode75() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15692),
@@ -2780,7 +2780,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode76() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15716),
@@ -2845,7 +2845,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode77() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 15704),
@@ -2908,7 +2908,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode78() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 25565),
@@ -2975,7 +2975,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode79() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 25603),
@@ -3042,7 +3042,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode80() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.RoleTypeNode node =
         new RoleTypeNode(
             this.context,
             new NodeId(0, 25584),
@@ -3108,7 +3108,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode81() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DictionaryEntryTypeNode node =
         new DictionaryEntryTypeNode(
             this.context,
             new NodeId(0, 17590),
@@ -3134,7 +3134,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode82() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DictionaryFolderTypeNode node =
         new DictionaryFolderTypeNode(
             this.context,
             new NodeId(0, 17592),
@@ -3160,7 +3160,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode83() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DictionaryEntryTypeNode node =
         new DictionaryEntryTypeNode(
             this.context,
             new NodeId(0, 17593),
@@ -3186,7 +3186,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode84() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DictionaryFolderTypeNode node =
         new DictionaryFolderTypeNode(
             this.context,
             new NodeId(0, 17594),
@@ -3209,7 +3209,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode85() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 17708),
@@ -3234,7 +3234,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode86() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 23519),
@@ -3265,7 +3265,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode87() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 32452),
@@ -3292,7 +3292,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode88() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AlternativeUnitTypeNode node =
         new AlternativeUnitTypeNode(
             this.context,
             new NodeId(0, 32587),
@@ -3324,7 +3324,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode89() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.UnitTypeNode node =
         new UnitTypeNode(
             this.context,
             new NodeId(0, 32462),
@@ -3355,7 +3355,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode90() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 32481),
@@ -3382,7 +3382,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode91() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerUnitTypeNode node =
         new ServerUnitTypeNode(
             this.context,
             new NodeId(0, 32482),
@@ -3417,7 +3417,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode92() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 32530),
@@ -3442,7 +3442,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode93() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ShelvedStateMachineTypeNode node =
         new ShelvedStateMachineTypeNode(
             this.context,
             new NodeId(0, 9178),
@@ -3488,7 +3488,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode94() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AlarmGroupTypeNode node =
         new AlarmGroupTypeNode(
             this.context,
             new NodeId(0, 16398),
@@ -3513,7 +3513,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode95() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AlarmGroupTypeNode node =
         new AlarmGroupTypeNode(
             this.context,
             new NodeId(0, 16399),
@@ -3539,7 +3539,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode96() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AlarmConditionTypeNode node =
         new AlarmConditionTypeNode(
             this.context,
             new NodeId(0, 16406),
@@ -3643,7 +3643,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode97() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AlarmConditionTypeNode node =
         new AlarmConditionTypeNode(
             this.context,
             new NodeId(0, 19847),
@@ -3747,7 +3747,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode98() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 2930),
@@ -3785,7 +3785,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode99() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 2932),
@@ -3823,7 +3823,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode100() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 2933),
@@ -3861,7 +3861,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode101() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2935),
@@ -3902,7 +3902,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode102() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2936),
@@ -3943,7 +3943,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode103() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2940),
@@ -3984,7 +3984,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode104() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2942),
@@ -4025,7 +4025,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode105() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2943),
@@ -4066,7 +4066,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode106() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2945),
@@ -4107,7 +4107,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode107() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 9329),
@@ -4139,7 +4139,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode108() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 9331),
@@ -4171,7 +4171,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode109() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 9333),
@@ -4203,7 +4203,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode110() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 9335),
@@ -4235,7 +4235,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode111() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 9337),
@@ -4270,7 +4270,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode112() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 9338),
@@ -4305,7 +4305,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode113() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 9339),
@@ -4340,7 +4340,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode114() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 9340),
@@ -4375,7 +4375,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode115() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ExclusiveLimitStateMachineTypeNode node =
         new ExclusiveLimitStateMachineTypeNode(
             this.context,
             new NodeId(0, 9455),
@@ -4409,7 +4409,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode116() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 3850),
@@ -4433,7 +4433,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode117() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 2406),
@@ -4471,7 +4471,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode118() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 2400),
@@ -4512,7 +4512,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode119() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 2402),
@@ -4553,7 +4553,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode120() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StateTypeNode node =
         new StateTypeNode(
             this.context,
             new NodeId(0, 2404),
@@ -4591,7 +4591,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode121() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2408),
@@ -4632,7 +4632,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode122() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2410),
@@ -4673,7 +4673,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode123() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2412),
@@ -4714,7 +4714,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode124() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2414),
@@ -4752,7 +4752,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode125() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2416),
@@ -4793,7 +4793,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode126() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2418),
@@ -4834,7 +4834,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode127() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2420),
@@ -4878,7 +4878,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode128() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2422),
@@ -4919,7 +4919,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode129() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransitionTypeNode node =
         new TransitionTypeNode(
             this.context,
             new NodeId(0, 2424),
@@ -4960,7 +4960,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode130() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateConfigurationTypeNode node =
         new AggregateConfigurationTypeNode(
             this.context,
             new NodeId(0, 3059),
@@ -4997,7 +4997,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode131() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 11876),
@@ -5021,7 +5021,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode132() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 32622),
@@ -5045,7 +5045,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode133() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.HistoricalDataConfigurationTypeNode node =
         new HistoricalDataConfigurationTypeNode(
             this.context,
             new NodeId(0, 11202),
@@ -5071,7 +5071,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode134() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateConfigurationTypeNode node =
         new AggregateConfigurationTypeNode(
             this.context,
             new NodeId(0, 11203),
@@ -5106,7 +5106,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode135() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.HistoricalDataConfigurationTypeNode node =
         new HistoricalDataConfigurationTypeNode(
             this.context,
             new NodeId(0, 32637),
@@ -5168,7 +5168,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode136() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateConfigurationTypeNode node =
         new AggregateConfigurationTypeNode(
             this.context,
             new NodeId(0, 32638),
@@ -5203,7 +5203,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode137() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 32643),
@@ -5225,7 +5225,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode138() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.HistoricalEventConfigurationTypeNode node =
         new HistoricalEventConfigurationTypeNode(
             this.context,
             new NodeId(0, 32754),
@@ -5257,7 +5257,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode139() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 32755),
@@ -5279,7 +5279,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode140() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 11172),
@@ -5303,7 +5303,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode141() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 13599),
@@ -5373,7 +5373,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode142() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateExpirationAlarmTypeNode node =
         new CertificateExpirationAlarmTypeNode(
             this.context,
             new NodeId(0, 19450),
@@ -5488,7 +5488,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode143() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListOutOfDateAlarmTypeNode node =
         new TrustListOutOfDateAlarmTypeNode(
             this.context,
             new NodeId(0, 20143),
@@ -5603,7 +5603,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode144() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 13814),
@@ -5640,7 +5640,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode145() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 13815),
@@ -5710,7 +5710,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode146() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 13848),
@@ -5747,7 +5747,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode147() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 13849),
@@ -5817,7 +5817,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode148() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 13882),
@@ -5854,7 +5854,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode149() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 13883),
@@ -5924,7 +5924,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode150() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 13916),
@@ -5962,7 +5962,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode151() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 13917),
@@ -6032,7 +6032,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode152() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ApplicationConfigurationTypeNode node =
         new ApplicationConfigurationTypeNode(
             this.context,
             new NodeId(0, 16663),
@@ -6097,7 +6097,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode153() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupFolderTypeNode node =
         new CertificateGroupFolderTypeNode(
             this.context,
             new NodeId(0, 16707),
@@ -6125,7 +6125,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode154() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 16708),
@@ -6156,7 +6156,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode155() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 16709),
@@ -6226,7 +6226,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode156() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ApplicationConfigurationFolderTypeNode node =
         new ApplicationConfigurationFolderTypeNode(
             this.context,
             new NodeId(0, 16706),
@@ -6249,7 +6249,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode157() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupFolderTypeNode node =
         new CertificateGroupFolderTypeNode(
             this.context,
             new NodeId(0, 13950),
@@ -6277,7 +6277,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode158() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 13951),
@@ -6314,7 +6314,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode159() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 13952),
@@ -6384,7 +6384,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode160() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransactionDiagnosticsTypeNode node =
         new TransactionDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 32299),
@@ -6427,7 +6427,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode161() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ApplicationConfigurationFileTypeNode node =
         new ApplicationConfigurationFileTypeNode(
             this.context,
             new NodeId(0, 15564),
@@ -6524,7 +6524,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode162() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.KeyCredentialConfigurationFolderTypeNode node =
         new KeyCredentialConfigurationFolderTypeNode(
             this.context,
             new NodeId(0, 19423),
@@ -6549,7 +6549,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode163() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AuthorizationServicesConfigurationFolderTypeNode node =
         new AuthorizationServicesConfigurationFolderTypeNode(
             this.context,
             new NodeId(0, 19427),
@@ -6574,7 +6574,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode164() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ServerConfigurationTypeNode node =
         new ServerConfigurationTypeNode(
             this.context,
             new NodeId(0, 12637),
@@ -6654,7 +6654,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode165() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupFolderTypeNode node =
         new CertificateGroupFolderTypeNode(
             this.context,
             new NodeId(0, 14053),
@@ -6692,7 +6692,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode166() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 14156),
@@ -6730,7 +6730,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode167() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 12642),
@@ -6801,7 +6801,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode168() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 14088),
@@ -6839,7 +6839,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode169() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 14089),
@@ -6910,7 +6910,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode170() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 14122),
@@ -6948,7 +6948,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode171() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 14123),
@@ -7019,7 +7019,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode172() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TransactionDiagnosticsTypeNode node =
         new TransactionDiagnosticsTypeNode(
             this.context,
             new NodeId(0, 32336),
@@ -7063,7 +7063,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode173() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ApplicationConfigurationFileTypeNode node =
         new ApplicationConfigurationFileTypeNode(
             this.context,
             new NodeId(0, 15892),
@@ -7161,7 +7161,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode174() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.KeyCredentialConfigurationTypeNode node =
         new KeyCredentialConfigurationTypeNode(
             this.context,
             new NodeId(0, 17511),
@@ -7193,7 +7193,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode175() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.KeyCredentialConfigurationFolderTypeNode node =
         new KeyCredentialConfigurationFolderTypeNode(
             this.context,
             new NodeId(0, 18155),
@@ -7219,7 +7219,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode176() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AuthorizationServiceConfigurationTypeNode node =
         new AuthorizationServiceConfigurationTypeNode(
             this.context,
             new NodeId(0, 23557),
@@ -7254,7 +7254,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode177() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 17732),
@@ -7276,7 +7276,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode178() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2341),
@@ -7296,7 +7296,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode179() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2342),
@@ -7316,7 +7316,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode180() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2343),
@@ -7336,7 +7336,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode181() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11285),
@@ -7356,7 +7356,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode182() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2344),
@@ -7376,7 +7376,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode183() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11304),
@@ -7396,7 +7396,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode184() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2346),
@@ -7416,7 +7416,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode185() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2347),
@@ -7436,7 +7436,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode186() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2348),
@@ -7456,7 +7456,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode187() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2349),
@@ -7476,7 +7476,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode188() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2350),
@@ -7496,7 +7496,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode189() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11286),
@@ -7516,7 +7516,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode190() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11287),
@@ -7536,7 +7536,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode191() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11305),
@@ -7556,7 +7556,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode192() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11306),
@@ -7576,7 +7576,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode193() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11288),
@@ -7596,7 +7596,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode194() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2351),
@@ -7616,7 +7616,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode195() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2352),
@@ -7636,7 +7636,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode196() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11307),
@@ -7656,7 +7656,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode197() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11308),
@@ -7676,7 +7676,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode198() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2355),
@@ -7696,7 +7696,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode199() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2357),
@@ -7716,7 +7716,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode200() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2358),
@@ -7736,7 +7736,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode201() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2359),
@@ -7756,7 +7756,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode202() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11505),
@@ -7776,7 +7776,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode203() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11506),
@@ -7796,7 +7796,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode204() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11507),
@@ -7816,7 +7816,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode205() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2360),
@@ -7836,7 +7836,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode206() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2361),
@@ -7856,7 +7856,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode207() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2362),
@@ -7876,7 +7876,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode208() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2363),
@@ -7896,7 +7896,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode209() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 2364),
@@ -7916,7 +7916,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode210() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11292),
@@ -7936,7 +7936,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode211() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11426),
@@ -7956,7 +7956,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode212() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11427),
@@ -7976,7 +7976,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode213() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11428),
@@ -7996,7 +7996,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode214() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AggregateFunctionTypeNode node =
         new AggregateFunctionTypeNode(
             this.context,
             new NodeId(0, 11429),
@@ -8016,7 +8016,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode215() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SecurityGroupFolderTypeNode node =
         new SecurityGroupFolderTypeNode(
             this.context,
             new NodeId(0, 15913),
@@ -8047,7 +8047,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode216() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubKeyPushTargetFolderTypeNode node =
         new PubSubKeyPushTargetFolderTypeNode(
             this.context,
             new NodeId(0, 25277),
@@ -8078,7 +8078,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode217() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SecurityGroupFolderTypeNode node =
         new SecurityGroupFolderTypeNode(
             this.context,
             new NodeId(0, 15453),
@@ -8119,7 +8119,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode218() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SecurityGroupTypeNode node =
         new SecurityGroupTypeNode(
             this.context,
             new NodeId(0, 15459),
@@ -8160,7 +8160,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode219() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SecurityGroupTypeNode node =
         new SecurityGroupTypeNode(
             this.context,
             new NodeId(0, 25626),
@@ -8201,7 +8201,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode220() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubKeyPushTargetFolderTypeNode node =
         new PubSubKeyPushTargetFolderTypeNode(
             this.context,
             new NodeId(0, 25347),
@@ -8239,7 +8239,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode221() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubKeyPushTargetTypeNode node =
         new PubSubKeyPushTargetTypeNode(
             this.context,
             new NodeId(0, 25358),
@@ -8298,7 +8298,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode222() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubConnectionTypeNode node =
         new PubSubConnectionTypeNode(
             this.context,
             new NodeId(0, 14417),
@@ -8339,7 +8339,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode223() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NetworkAddressTypeNode node =
         new NetworkAddressTypeNode(
             this.context,
             new NodeId(0, 14423),
@@ -8367,7 +8367,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode224() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 14419),
@@ -8395,7 +8395,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode225() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetFolderTypeNode node =
         new DataSetFolderTypeNode(
             this.context,
             new NodeId(0, 14434),
@@ -8420,7 +8420,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode226() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SubscribedDataSetFolderTypeNode node =
         new SubscribedDataSetFolderTypeNode(
             this.context,
             new NodeId(0, 23622),
@@ -8445,7 +8445,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode227() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubConfigurationTypeNode node =
         new PubSubConfigurationTypeNode(
             this.context,
             new NodeId(0, 25403),
@@ -8506,7 +8506,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode228() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 15844),
@@ -8534,7 +8534,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode229() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubDiagnosticsRootTypeNode node =
         new PubSubDiagnosticsRootTypeNode(
             this.context,
             new NodeId(0, 18715),
@@ -8580,7 +8580,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode230() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 18729),
@@ -8622,7 +8622,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode231() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 18760),
@@ -8658,7 +8658,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode232() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubCapabilitiesTypeNode node =
         new PubSubCapabilitiesTypeNode(
             this.context,
             new NodeId(0, 23642),
@@ -8701,7 +8701,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode233() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 23649),
@@ -8728,7 +8728,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode234() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PublishSubscribeTypeNode node =
         new PublishSubscribeTypeNode(
             this.context,
             new NodeId(0, 14443),
@@ -8813,7 +8813,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode235() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SecurityGroupFolderTypeNode node =
         new SecurityGroupFolderTypeNode(
             this.context,
             new NodeId(0, 15443),
@@ -8847,7 +8847,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode236() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubKeyPushTargetFolderTypeNode node =
         new PubSubKeyPushTargetFolderTypeNode(
             this.context,
             new NodeId(0, 25440),
@@ -8879,7 +8879,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode237() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetFolderTypeNode node =
         new DataSetFolderTypeNode(
             this.context,
             new NodeId(0, 17371),
@@ -8902,7 +8902,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode238() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SubscribedDataSetFolderTypeNode node =
         new SubscribedDataSetFolderTypeNode(
             this.context,
             new NodeId(0, 23658),
@@ -8925,7 +8925,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode239() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubConfigurationTypeNode node =
         new PubSubConfigurationTypeNode(
             this.context,
             new NodeId(0, 25451),
@@ -8989,7 +8989,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode240() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 17405),
@@ -9015,7 +9015,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode241() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubDiagnosticsRootTypeNode node =
         new PubSubDiagnosticsRootTypeNode(
             this.context,
             new NodeId(0, 17409),
@@ -9064,7 +9064,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode242() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 17423),
@@ -9104,7 +9104,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode243() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 17457),
@@ -9138,7 +9138,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode244() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubCapabilitiesTypeNode node =
         new PubSubCapabilitiesTypeNode(
             this.context,
             new NodeId(0, 23678),
@@ -9209,7 +9209,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode245() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 23685),
@@ -9231,7 +9231,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode246() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetWriterTypeNode node =
         new DataSetWriterTypeNode(
             this.context,
             new NodeId(0, 15222),
@@ -9269,7 +9269,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode247() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 15223),
@@ -9297,7 +9297,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode248() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ExtensionFieldsTypeNode node =
         new ExtensionFieldsTypeNode(
             this.context,
             new NodeId(0, 15481),
@@ -9328,7 +9328,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode249() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetFolderTypeNode node =
         new DataSetFolderTypeNode(
             this.context,
             new NodeId(0, 14478),
@@ -9375,7 +9375,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode250() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PublishedDataSetTypeNode node =
         new PublishedDataSetTypeNode(
             this.context,
             new NodeId(0, 14487),
@@ -9407,7 +9407,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode251() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NetworkAddressTypeNode node =
         new NetworkAddressTypeNode(
             this.context,
             new NodeId(0, 14221),
@@ -9435,7 +9435,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode252() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ConnectionTransportTypeNode node =
         new ConnectionTransportTypeNode(
             this.context,
             new NodeId(0, 17203),
@@ -9460,7 +9460,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode253() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.WriterGroupTypeNode node =
         new WriterGroupTypeNode(
             this.context,
             new NodeId(0, 17310),
@@ -9516,7 +9516,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode254() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 17314),
@@ -9544,7 +9544,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode255() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ReaderGroupTypeNode node =
         new ReaderGroupTypeNode(
             this.context,
             new NodeId(0, 17325),
@@ -9582,7 +9582,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode256() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 17329),
@@ -9610,7 +9610,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode257() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 14600),
@@ -9638,7 +9638,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode258() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubDiagnosticsConnectionTypeNode node =
         new PubSubDiagnosticsConnectionTypeNode(
             this.context,
             new NodeId(0, 19241),
@@ -9684,7 +9684,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode259() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19255),
@@ -9726,7 +9726,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode260() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19286),
@@ -9753,7 +9753,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode261() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 15265),
@@ -9781,7 +9781,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode262() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.WriterGroupTransportTypeNode node =
         new WriterGroupTransportTypeNode(
             this.context,
             new NodeId(0, 17741),
@@ -9806,7 +9806,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode263() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.WriterGroupMessageTypeNode node =
         new WriterGroupMessageTypeNode(
             this.context,
             new NodeId(0, 17742),
@@ -9831,7 +9831,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode264() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetWriterTypeNode node =
         new DataSetWriterTypeNode(
             this.context,
             new NodeId(0, 17743),
@@ -9869,7 +9869,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode265() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 17749),
@@ -9897,7 +9897,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode266() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubDiagnosticsWriterGroupTypeNode node =
         new PubSubDiagnosticsWriterGroupTypeNode(
             this.context,
             new NodeId(0, 17812),
@@ -9943,7 +9943,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode267() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 17826),
@@ -9994,7 +9994,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode268() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 17858),
@@ -10024,7 +10024,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode269() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetReaderTypeNode node =
         new DataSetReaderTypeNode(
             this.context,
             new NodeId(0, 18076),
@@ -10083,7 +10083,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode270() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 18088),
@@ -10111,7 +10111,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode271() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SubscribedDataSetTypeNode node =
         new SubscribedDataSetTypeNode(
             this.context,
             new NodeId(0, 21006),
@@ -10136,7 +10136,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode272() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubDiagnosticsReaderGroupTypeNode node =
         new PubSubDiagnosticsReaderGroupTypeNode(
             this.context,
             new NodeId(0, 21015),
@@ -10182,7 +10182,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode273() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 21029),
@@ -10227,7 +10227,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode274() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 21060),
@@ -10257,7 +10257,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode275() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ReaderGroupTransportTypeNode node =
         new ReaderGroupTransportTypeNode(
             this.context,
             new NodeId(0, 21080),
@@ -10282,7 +10282,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode276() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ReaderGroupMessageTypeNode node =
         new ReaderGroupMessageTypeNode(
             this.context,
             new NodeId(0, 21081),
@@ -10307,7 +10307,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode277() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetWriterTransportTypeNode node =
         new DataSetWriterTransportTypeNode(
             this.context,
             new NodeId(0, 15303),
@@ -10332,7 +10332,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode278() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetWriterMessageTypeNode node =
         new DataSetWriterMessageTypeNode(
             this.context,
             new NodeId(0, 21095),
@@ -10357,7 +10357,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode279() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 15299),
@@ -10385,7 +10385,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode280() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubDiagnosticsDataSetWriterTypeNode node =
         new PubSubDiagnosticsDataSetWriterTypeNode(
             this.context,
             new NodeId(0, 19550),
@@ -10431,7 +10431,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode281() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19564),
@@ -10476,7 +10476,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode282() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19595),
@@ -10500,7 +10500,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode283() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetReaderTransportTypeNode node =
         new DataSetReaderTransportTypeNode(
             this.context,
             new NodeId(0, 15311),
@@ -10525,7 +10525,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode284() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataSetReaderMessageTypeNode node =
         new DataSetReaderMessageTypeNode(
             this.context,
             new NodeId(0, 21103),
@@ -10550,7 +10550,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode285() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubStatusTypeNode node =
         new PubSubStatusTypeNode(
             this.context,
             new NodeId(0, 15307),
@@ -10578,7 +10578,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode286() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.PubSubDiagnosticsDataSetReaderTypeNode node =
         new PubSubDiagnosticsDataSetReaderTypeNode(
             this.context,
             new NodeId(0, 19609),
@@ -10624,7 +10624,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode287() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19623),
@@ -10669,7 +10669,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode288() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19654),
@@ -10693,7 +10693,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode289() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SubscribedDataSetTypeNode node =
         new SubscribedDataSetTypeNode(
             this.context,
             new NodeId(0, 15316),
@@ -10718,7 +10718,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode290() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SubscribedDataSetFolderTypeNode node =
         new SubscribedDataSetFolderTypeNode(
             this.context,
             new NodeId(0, 23796),
@@ -10756,7 +10756,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode291() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.StandaloneSubscribedDataSetTypeNode node =
         new StandaloneSubscribedDataSetTypeNode(
             this.context,
             new NodeId(0, 23807),
@@ -10791,7 +10791,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode292() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SubscribedDataSetTypeNode node =
         new SubscribedDataSetTypeNode(
             this.context,
             new NodeId(0, 23808),
@@ -10816,7 +10816,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode293() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.SubscribedDataSetTypeNode node =
         new SubscribedDataSetTypeNode(
             this.context,
             new NodeId(0, 23829),
@@ -10841,7 +10841,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode294() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19691),
@@ -10883,7 +10883,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode295() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19722),
@@ -10907,7 +10907,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode296() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19777),
@@ -10943,7 +10943,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode297() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19831),
@@ -10970,7 +10970,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode298() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19848),
@@ -11003,7 +11003,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode299() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19879),
@@ -11039,7 +11039,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode300() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19917),
@@ -11072,7 +11072,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode301() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19948),
@@ -11102,7 +11102,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode302() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 19982),
@@ -11129,7 +11129,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode303() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 20013),
@@ -11165,7 +11165,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode304() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 20041),
@@ -11195,7 +11195,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode305() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 20072),
@@ -11237,7 +11237,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode306() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NetworkAddressTypeNode node =
         new NetworkAddressTypeNode(
             this.context,
             new NodeId(0, 15072),
@@ -11265,7 +11265,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode307() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NetworkAddressTypeNode node =
         new NetworkAddressTypeNode(
             this.context,
             new NodeId(0, 23842),
@@ -11293,7 +11293,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode308() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.NetworkAddressTypeNode node =
         new NetworkAddressTypeNode(
             this.context,
             new NodeId(0, 24017),
@@ -11321,7 +11321,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode309() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AliasNameTypeNode node =
         new AliasNameTypeNode(
             this.context,
             new NodeId(0, 23457),
@@ -11347,7 +11347,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode310() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AliasNameCategoryTypeNode node =
         new AliasNameCategoryTypeNode(
             this.context,
             new NodeId(0, 23458),
@@ -11388,7 +11388,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode311() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AliasNameCategoryTypeNode node =
         new AliasNameCategoryTypeNode(
             this.context,
             new NodeId(0, 23470),
@@ -11417,7 +11417,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode312() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AliasNameCategoryTypeNode node =
         new AliasNameCategoryTypeNode(
             this.context,
             new NodeId(0, 23479),
@@ -11443,7 +11443,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode313() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.AliasNameCategoryTypeNode node =
         new AliasNameCategoryTypeNode(
             this.context,
             new NodeId(0, 23488),
@@ -11469,7 +11469,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode314() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.UserManagementTypeNode node =
         new UserManagementTypeNode(
             this.context,
             new NodeId(0, 24290),
@@ -11521,7 +11521,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode315() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ApplicationConfigurationTypeNode node =
         new ApplicationConfigurationTypeNode(
             this.context,
             new NodeId(0, 26878),
@@ -11586,7 +11586,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode316() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupFolderTypeNode node =
         new CertificateGroupFolderTypeNode(
             this.context,
             new NodeId(0, 26879),
@@ -11614,7 +11614,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode317() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.CertificateGroupTypeNode node =
         new CertificateGroupTypeNode(
             this.context,
             new NodeId(0, 26880),
@@ -11645,7 +11645,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode318() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.TrustListTypeNode node =
         new TrustListTypeNode(
             this.context,
             new NodeId(0, 26881),
@@ -11715,7 +11715,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode319() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.ProvisionableDeviceTypeNode node =
         new ProvisionableDeviceTypeNode(
             this.context,
             new NodeId(0, 29878),
@@ -11744,7 +11744,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode320() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 24226),
@@ -11766,7 +11766,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode321() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 24227),
@@ -11788,7 +11788,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode322() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 24228),
@@ -11810,7 +11810,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode323() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 24229),
@@ -11832,7 +11832,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode324() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 24230),
@@ -11854,7 +11854,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode325() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 24231),
@@ -11876,7 +11876,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode326() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 24232),
@@ -11898,7 +11898,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode327() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.LldpInformationTypeNode node =
         new LldpInformationTypeNode(
             this.context,
             new NodeId(0, 18958),
@@ -11927,7 +11927,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode328() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.LldpLocalSystemTypeNode node =
         new LldpLocalSystemTypeNode(
             this.context,
             new NodeId(0, 18965),
@@ -11962,7 +11962,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode329() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 18972),
@@ -11984,7 +11984,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode330() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.BaseObjectTypeNode node =
         new BaseObjectTypeNode(
             this.context,
             new NodeId(0, 25226),
@@ -12012,7 +12012,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode331() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.LldpRemoteStatisticsTypeNode node =
         new LldpRemoteStatisticsTypeNode(
             this.context,
             new NodeId(0, 18974),
@@ -12052,7 +12052,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode332() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.LldpLocalSystemTypeNode node =
         new LldpLocalSystemTypeNode(
             this.context,
             new NodeId(0, 18980),
@@ -12089,7 +12089,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode333() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 18987),
@@ -12116,7 +12116,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode334() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.LldpPortInformationTypeNode node =
         new LldpPortInformationTypeNode(
             this.context,
             new NodeId(0, 18988),
@@ -12154,7 +12154,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode335() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 19016),
@@ -12181,7 +12181,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode336() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.LldpRemoteSystemTypeNode node =
         new LldpRemoteSystemTypeNode(
             this.context,
             new NodeId(0, 19017),
@@ -12225,7 +12225,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode337() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.LogObjectTypeNode node =
         new LogObjectTypeNode(
             this.context,
             new NodeId(0, 19372),
@@ -12260,7 +12260,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode338() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.FolderTypeNode node =
         new FolderTypeNode(
             this.context,
             new NodeId(0, 19378),
@@ -12282,7 +12282,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode339() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12766),
@@ -12307,7 +12307,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode340() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 14846),
@@ -12332,7 +12332,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode341() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 17537),
@@ -12357,7 +12357,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode342() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 17549),
@@ -12382,7 +12382,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode343() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15671),
@@ -12407,7 +12407,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode344() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32422),
@@ -12432,7 +12432,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode345() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18815),
@@ -12457,7 +12457,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode346() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18816),
@@ -12482,7 +12482,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode347() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18817),
@@ -12507,7 +12507,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode348() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18818),
@@ -12532,7 +12532,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode349() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18819),
@@ -12557,7 +12557,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode350() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18820),
@@ -12582,7 +12582,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode351() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18821),
@@ -12607,7 +12607,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode352() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18822),
@@ -12632,7 +12632,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode353() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18823),
@@ -12657,7 +12657,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode354() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15736),
@@ -12682,7 +12682,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode355() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23507),
@@ -12707,7 +12707,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode356() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24250),
@@ -12732,7 +12732,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode357() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32560),
@@ -12757,7 +12757,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode358() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32561),
@@ -12782,7 +12782,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode359() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32562),
@@ -12807,7 +12807,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode360() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12680),
@@ -12832,7 +12832,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode361() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16538),
@@ -12857,7 +12857,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode362() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16539),
@@ -12882,7 +12882,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode363() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16540),
@@ -12907,7 +12907,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode364() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16541),
@@ -12932,7 +12932,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode365() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32382),
@@ -12957,7 +12957,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode366() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23754),
@@ -12982,7 +12982,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode367() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16543),
@@ -13007,7 +13007,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode368() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16544),
@@ -13032,7 +13032,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode369() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16545),
@@ -13057,7 +13057,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode370() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16546),
@@ -13082,7 +13082,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode371() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 16547),
@@ -13107,7 +13107,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode372() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23725),
@@ -13132,7 +13132,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode373() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23755),
@@ -13157,7 +13157,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode374() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15676),
@@ -13182,7 +13182,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode375() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 125),
@@ -13207,7 +13207,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode376() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 126),
@@ -13232,7 +13232,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode377() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 127),
@@ -13257,7 +13257,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode378() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15421),
@@ -13282,7 +13282,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode379() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15422),
@@ -13307,7 +13307,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode380() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24108),
@@ -13332,7 +13332,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode381() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24109),
@@ -13357,7 +13357,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode382() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24110),
@@ -13382,7 +13382,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode383() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 124),
@@ -13407,7 +13407,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode384() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 14839),
@@ -13432,7 +13432,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode385() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 14847),
@@ -13457,7 +13457,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode386() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15677),
@@ -13482,7 +13482,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode387() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15678),
@@ -13507,7 +13507,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode388() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 14323),
@@ -13532,7 +13532,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode389() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15679),
@@ -13557,7 +13557,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode390() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15681),
@@ -13582,7 +13582,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode391() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 25529),
@@ -13607,7 +13607,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode392() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18598),
@@ -13632,7 +13632,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode393() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18599),
@@ -13657,7 +13657,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode394() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18600),
@@ -13682,7 +13682,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode395() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18795),
@@ -13707,7 +13707,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode396() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15682),
@@ -13732,7 +13732,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode397() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15683),
@@ -13757,7 +13757,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode398() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15688),
@@ -13782,7 +13782,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode399() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15689),
@@ -13807,7 +13807,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode400() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 21150),
@@ -13832,7 +13832,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode401() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15691),
@@ -13857,7 +13857,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode402() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15693),
@@ -13882,7 +13882,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode403() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15694),
@@ -13907,7 +13907,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode404() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15695),
@@ -13932,7 +13932,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode405() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 21151),
@@ -13957,7 +13957,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode406() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 21152),
@@ -13982,7 +13982,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode407() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 21153),
@@ -14007,7 +14007,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode408() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15701),
@@ -14032,7 +14032,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode409() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15702),
@@ -14057,7 +14057,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode410() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15703),
@@ -14082,7 +14082,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode411() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15705),
@@ -14107,7 +14107,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode412() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15706),
@@ -14132,7 +14132,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode413() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15707),
@@ -14157,7 +14157,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode414() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15712),
@@ -14182,7 +14182,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode415() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 14848),
@@ -14207,7 +14207,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode416() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15713),
@@ -14232,7 +14232,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode417() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 21154),
@@ -14257,7 +14257,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode418() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23851),
@@ -14282,7 +14282,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode419() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23852),
@@ -14307,7 +14307,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode420() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23853),
@@ -14332,7 +14332,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode421() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 25530),
@@ -14357,7 +14357,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode422() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23854),
@@ -14382,7 +14382,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode423() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15715),
@@ -14407,7 +14407,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode424() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15717),
@@ -14432,7 +14432,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode425() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15718),
@@ -14457,7 +14457,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode426() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15719),
@@ -14482,7 +14482,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode427() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15724),
@@ -14507,7 +14507,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode428() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15725),
@@ -14532,7 +14532,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode429() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23855),
@@ -14557,7 +14557,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode430() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23856),
@@ -14582,7 +14582,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode431() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23857),
@@ -14607,7 +14607,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode432() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23860),
@@ -14632,7 +14632,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode433() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23861),
@@ -14657,7 +14657,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode434() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 17468),
@@ -14682,7 +14682,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode435() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23864),
@@ -14707,7 +14707,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode436() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 21155),
@@ -14732,7 +14732,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode437() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23865),
@@ -14757,7 +14757,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode438() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23866),
@@ -14782,7 +14782,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode439() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 18930),
@@ -14807,7 +14807,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode440() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15479),
@@ -14832,7 +14832,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode441() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15727),
@@ -14857,7 +14857,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode442() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15729),
@@ -14882,7 +14882,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode443() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 15733),
@@ -14907,7 +14907,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode444() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 25531),
@@ -14932,7 +14932,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode445() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 25532),
@@ -14957,7 +14957,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode446() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 23499),
@@ -14982,7 +14982,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode447() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24262),
@@ -15007,7 +15007,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode448() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24338),
@@ -15032,7 +15032,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode449() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24339),
@@ -15057,7 +15057,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode450() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24292),
@@ -15082,7 +15082,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode451() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 25239),
@@ -15107,7 +15107,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode452() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19079),
@@ -15132,7 +15132,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode453() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19080),
@@ -15157,7 +15157,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode454() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19081),
@@ -15182,7 +15182,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode455() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32661),
@@ -15207,7 +15207,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode456() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32662),
@@ -15232,7 +15232,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode457() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19379),
@@ -15257,7 +15257,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode458() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19753),
@@ -15282,7 +15282,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode459() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19754),
@@ -15307,7 +15307,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode460() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19755),
@@ -15332,7 +15332,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode461() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 19756),
@@ -15357,7 +15357,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode462() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 128),
@@ -15381,7 +15381,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode463() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 121),
@@ -15405,7 +15405,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode464() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 14844),
@@ -15430,7 +15430,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode465() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 122),
@@ -15454,7 +15454,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode466() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 123),
@@ -15478,7 +15478,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode467() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 298),
@@ -15501,7 +15501,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode468() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 8251),
@@ -15526,7 +15526,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode469() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 14845),
@@ -15551,7 +15551,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode470() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12765),
@@ -15576,7 +15576,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode471() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 8917),
@@ -15601,7 +15601,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode472() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 310),
@@ -15624,7 +15624,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode473() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12207),
@@ -15649,7 +15649,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode474() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 306),
@@ -15672,7 +15672,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode475() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 314),
@@ -15695,7 +15695,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode476() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 434),
@@ -15718,7 +15718,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode477() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12900),
@@ -15743,7 +15743,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode478() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12901),
@@ -15768,7 +15768,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode479() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 346),
@@ -15791,7 +15791,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode480() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 458),
@@ -15815,7 +15815,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode481() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 318),
@@ -15838,7 +15838,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode482() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 321),
@@ -15861,7 +15861,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode483() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 324),
@@ -15884,7 +15884,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode484() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 327),
@@ -15907,7 +15907,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode485() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 940),
@@ -15930,7 +15930,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode486() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 378),
@@ -15953,7 +15953,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode487() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 381),
@@ -15976,7 +15976,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode488() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 384),
@@ -15999,7 +15999,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode489() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 387),
@@ -16022,7 +16022,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode490() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 539),
@@ -16046,7 +16046,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode491() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 542),
@@ -16070,7 +16070,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode492() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 333),
@@ -16093,7 +16093,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode493() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 585),
@@ -16116,7 +16116,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode494() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 588),
@@ -16139,7 +16139,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode495() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 591),
@@ -16162,7 +16162,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode496() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 594),
@@ -16185,7 +16185,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode497() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 597),
@@ -16208,7 +16208,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode498() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 600),
@@ -16231,7 +16231,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode499() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 603),
@@ -16254,7 +16254,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode500() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 11226),
@@ -16279,7 +16279,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode501() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 661),
@@ -16302,7 +16302,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode502() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 32825),
@@ -16327,7 +16327,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode503() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 721),
@@ -16350,7 +16350,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode504() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 727),
@@ -16373,7 +16373,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode505() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 950),
@@ -16396,7 +16396,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode506() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 922),
@@ -16419,7 +16419,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode507() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 340),
@@ -16442,7 +16442,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode508() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 855),
@@ -16465,7 +16465,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode509() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 11957),
@@ -16490,7 +16490,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode510() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 11958),
@@ -16515,7 +16515,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode511() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 858),
@@ -16538,7 +16538,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode512() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 861),
@@ -16561,7 +16561,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode513() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 864),
@@ -16584,7 +16584,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode514() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 867),
@@ -16607,7 +16607,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode515() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 870),
@@ -16630,7 +16630,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode516() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 873),
@@ -16653,7 +16653,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode517() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 301),
@@ -16676,7 +16676,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode518() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 876),
@@ -16699,7 +16699,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode519() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 879),
@@ -16722,7 +16722,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode520() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 899),
@@ -16745,7 +16745,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode521() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 886),
@@ -16768,7 +16768,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode522() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 889),
@@ -16791,7 +16791,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode523() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12181),
@@ -16816,7 +16816,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode524() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12182),
@@ -16841,7 +16841,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode525() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12089),
@@ -16866,7 +16866,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode526() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 12090),
@@ -16891,7 +16891,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode527() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 896),
@@ -16914,7 +16914,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode528() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 24034),
@@ -16939,7 +16939,7 @@ class ObjectNodeLoader {
   }
 
   void loadNode529() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
         new DataTypeEncodingTypeNode(
             this.context,
             new NodeId(0, 893),
@@ -16963,7 +16963,7 @@ class ObjectNodeLoader {
 
   void loadNode530() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12758),
@@ -16991,7 +16991,7 @@ class ObjectNodeLoader {
 
   void loadNode531() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14802),
@@ -17019,7 +17019,7 @@ class ObjectNodeLoader {
 
   void loadNode532() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 17541),
@@ -17047,7 +17047,7 @@ class ObjectNodeLoader {
 
   void loadNode533() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 17553),
@@ -17075,7 +17075,7 @@ class ObjectNodeLoader {
 
   void loadNode534() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15949),
@@ -17103,7 +17103,7 @@ class ObjectNodeLoader {
 
   void loadNode535() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32426),
@@ -17131,7 +17131,7 @@ class ObjectNodeLoader {
 
   void loadNode536() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18851),
@@ -17159,7 +17159,7 @@ class ObjectNodeLoader {
 
   void loadNode537() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18852),
@@ -17187,7 +17187,7 @@ class ObjectNodeLoader {
 
   void loadNode538() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18853),
@@ -17215,7 +17215,7 @@ class ObjectNodeLoader {
 
   void loadNode539() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18854),
@@ -17243,7 +17243,7 @@ class ObjectNodeLoader {
 
   void loadNode540() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18855),
@@ -17271,7 +17271,7 @@ class ObjectNodeLoader {
 
   void loadNode541() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18856),
@@ -17299,7 +17299,7 @@ class ObjectNodeLoader {
 
   void loadNode542() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18857),
@@ -17327,7 +17327,7 @@ class ObjectNodeLoader {
 
   void loadNode543() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18858),
@@ -17355,7 +17355,7 @@ class ObjectNodeLoader {
 
   void loadNode544() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18859),
@@ -17383,7 +17383,7 @@ class ObjectNodeLoader {
 
   void loadNode545() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15728),
@@ -17411,7 +17411,7 @@ class ObjectNodeLoader {
 
   void loadNode546() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23520),
@@ -17439,7 +17439,7 @@ class ObjectNodeLoader {
 
   void loadNode547() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24352),
@@ -17467,7 +17467,7 @@ class ObjectNodeLoader {
 
   void loadNode548() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32572),
@@ -17495,7 +17495,7 @@ class ObjectNodeLoader {
 
   void loadNode549() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32573),
@@ -17523,7 +17523,7 @@ class ObjectNodeLoader {
 
   void loadNode550() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32574),
@@ -17551,7 +17551,7 @@ class ObjectNodeLoader {
 
   void loadNode551() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12676),
@@ -17579,7 +17579,7 @@ class ObjectNodeLoader {
 
   void loadNode552() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16587),
@@ -17607,7 +17607,7 @@ class ObjectNodeLoader {
 
   void loadNode553() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16588),
@@ -17635,7 +17635,7 @@ class ObjectNodeLoader {
 
   void loadNode554() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16589),
@@ -17663,7 +17663,7 @@ class ObjectNodeLoader {
 
   void loadNode555() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16590),
@@ -17691,7 +17691,7 @@ class ObjectNodeLoader {
 
   void loadNode556() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32386),
@@ -17719,7 +17719,7 @@ class ObjectNodeLoader {
 
   void loadNode557() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23762),
@@ -17747,7 +17747,7 @@ class ObjectNodeLoader {
 
   void loadNode558() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16592),
@@ -17775,7 +17775,7 @@ class ObjectNodeLoader {
 
   void loadNode559() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16593),
@@ -17803,7 +17803,7 @@ class ObjectNodeLoader {
 
   void loadNode560() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16594),
@@ -17831,7 +17831,7 @@ class ObjectNodeLoader {
 
   void loadNode561() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16595),
@@ -17859,7 +17859,7 @@ class ObjectNodeLoader {
 
   void loadNode562() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16596),
@@ -17887,7 +17887,7 @@ class ObjectNodeLoader {
 
   void loadNode563() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23735),
@@ -17915,7 +17915,7 @@ class ObjectNodeLoader {
 
   void loadNode564() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23763),
@@ -17943,7 +17943,7 @@ class ObjectNodeLoader {
 
   void loadNode565() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15950),
@@ -17971,7 +17971,7 @@ class ObjectNodeLoader {
 
   void loadNode566() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14796),
@@ -17999,7 +17999,7 @@ class ObjectNodeLoader {
 
   void loadNode567() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15589),
@@ -18027,7 +18027,7 @@ class ObjectNodeLoader {
 
   void loadNode568() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15590),
@@ -18055,7 +18055,7 @@ class ObjectNodeLoader {
 
   void loadNode569() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15529),
@@ -18083,7 +18083,7 @@ class ObjectNodeLoader {
 
   void loadNode570() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15531),
@@ -18111,7 +18111,7 @@ class ObjectNodeLoader {
 
   void loadNode571() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24120),
@@ -18139,7 +18139,7 @@ class ObjectNodeLoader {
 
   void loadNode572() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24121),
@@ -18167,7 +18167,7 @@ class ObjectNodeLoader {
 
   void loadNode573() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24122),
@@ -18195,7 +18195,7 @@ class ObjectNodeLoader {
 
   void loadNode574() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14794),
@@ -18223,7 +18223,7 @@ class ObjectNodeLoader {
 
   void loadNode575() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14795),
@@ -18251,7 +18251,7 @@ class ObjectNodeLoader {
 
   void loadNode576() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14803),
@@ -18279,7 +18279,7 @@ class ObjectNodeLoader {
 
   void loadNode577() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15951),
@@ -18307,7 +18307,7 @@ class ObjectNodeLoader {
 
   void loadNode578() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15952),
@@ -18335,7 +18335,7 @@ class ObjectNodeLoader {
 
   void loadNode579() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14319),
@@ -18363,7 +18363,7 @@ class ObjectNodeLoader {
 
   void loadNode580() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15953),
@@ -18391,7 +18391,7 @@ class ObjectNodeLoader {
 
   void loadNode581() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15954),
@@ -18419,7 +18419,7 @@ class ObjectNodeLoader {
 
   void loadNode582() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25545),
@@ -18447,7 +18447,7 @@ class ObjectNodeLoader {
 
   void loadNode583() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18610),
@@ -18475,7 +18475,7 @@ class ObjectNodeLoader {
 
   void loadNode584() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18611),
@@ -18503,7 +18503,7 @@ class ObjectNodeLoader {
 
   void loadNode585() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18612),
@@ -18531,7 +18531,7 @@ class ObjectNodeLoader {
 
   void loadNode586() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18937),
@@ -18559,7 +18559,7 @@ class ObjectNodeLoader {
 
   void loadNode587() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15955),
@@ -18587,7 +18587,7 @@ class ObjectNodeLoader {
 
   void loadNode588() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15956),
@@ -18615,7 +18615,7 @@ class ObjectNodeLoader {
 
   void loadNode589() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15987),
@@ -18643,7 +18643,7 @@ class ObjectNodeLoader {
 
   void loadNode590() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15988),
@@ -18671,7 +18671,7 @@ class ObjectNodeLoader {
 
   void loadNode591() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21174),
@@ -18699,7 +18699,7 @@ class ObjectNodeLoader {
 
   void loadNode592() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15990),
@@ -18727,7 +18727,7 @@ class ObjectNodeLoader {
 
   void loadNode593() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15991),
@@ -18755,7 +18755,7 @@ class ObjectNodeLoader {
 
   void loadNode594() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15992),
@@ -18783,7 +18783,7 @@ class ObjectNodeLoader {
 
   void loadNode595() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15993),
@@ -18811,7 +18811,7 @@ class ObjectNodeLoader {
 
   void loadNode596() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21175),
@@ -18839,7 +18839,7 @@ class ObjectNodeLoader {
 
   void loadNode597() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21176),
@@ -18867,7 +18867,7 @@ class ObjectNodeLoader {
 
   void loadNode598() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21177),
@@ -18895,7 +18895,7 @@ class ObjectNodeLoader {
 
   void loadNode599() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15995),
@@ -18923,7 +18923,7 @@ class ObjectNodeLoader {
 
   void loadNode600() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15996),
@@ -18951,7 +18951,7 @@ class ObjectNodeLoader {
 
   void loadNode601() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16007),
@@ -18979,7 +18979,7 @@ class ObjectNodeLoader {
 
   void loadNode602() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16008),
@@ -19007,7 +19007,7 @@ class ObjectNodeLoader {
 
   void loadNode603() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16009),
@@ -19035,7 +19035,7 @@ class ObjectNodeLoader {
 
   void loadNode604() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16010),
@@ -19063,7 +19063,7 @@ class ObjectNodeLoader {
 
   void loadNode605() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16011),
@@ -19091,7 +19091,7 @@ class ObjectNodeLoader {
 
   void loadNode606() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14804),
@@ -19119,7 +19119,7 @@ class ObjectNodeLoader {
 
   void loadNode607() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16012),
@@ -19147,7 +19147,7 @@ class ObjectNodeLoader {
 
   void loadNode608() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21178),
@@ -19175,7 +19175,7 @@ class ObjectNodeLoader {
 
   void loadNode609() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23919),
@@ -19203,7 +19203,7 @@ class ObjectNodeLoader {
 
   void loadNode610() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23920),
@@ -19231,7 +19231,7 @@ class ObjectNodeLoader {
 
   void loadNode611() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23921),
@@ -19259,7 +19259,7 @@ class ObjectNodeLoader {
 
   void loadNode612() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25546),
@@ -19287,7 +19287,7 @@ class ObjectNodeLoader {
 
   void loadNode613() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23922),
@@ -19315,7 +19315,7 @@ class ObjectNodeLoader {
 
   void loadNode614() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16014),
@@ -19343,7 +19343,7 @@ class ObjectNodeLoader {
 
   void loadNode615() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16015),
@@ -19371,7 +19371,7 @@ class ObjectNodeLoader {
 
   void loadNode616() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16016),
@@ -19399,7 +19399,7 @@ class ObjectNodeLoader {
 
   void loadNode617() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16017),
@@ -19427,7 +19427,7 @@ class ObjectNodeLoader {
 
   void loadNode618() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16018),
@@ -19455,7 +19455,7 @@ class ObjectNodeLoader {
 
   void loadNode619() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16019),
@@ -19483,7 +19483,7 @@ class ObjectNodeLoader {
 
   void loadNode620() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23923),
@@ -19511,7 +19511,7 @@ class ObjectNodeLoader {
 
   void loadNode621() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23924),
@@ -19539,7 +19539,7 @@ class ObjectNodeLoader {
 
   void loadNode622() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23925),
@@ -19567,7 +19567,7 @@ class ObjectNodeLoader {
 
   void loadNode623() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23928),
@@ -19595,7 +19595,7 @@ class ObjectNodeLoader {
 
   void loadNode624() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23929),
@@ -19623,7 +19623,7 @@ class ObjectNodeLoader {
 
   void loadNode625() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 17472),
@@ -19651,7 +19651,7 @@ class ObjectNodeLoader {
 
   void loadNode626() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23932),
@@ -19679,7 +19679,7 @@ class ObjectNodeLoader {
 
   void loadNode627() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21179),
@@ -19707,7 +19707,7 @@ class ObjectNodeLoader {
 
   void loadNode628() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23933),
@@ -19735,7 +19735,7 @@ class ObjectNodeLoader {
 
   void loadNode629() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23934),
@@ -19763,7 +19763,7 @@ class ObjectNodeLoader {
 
   void loadNode630() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18938),
@@ -19791,7 +19791,7 @@ class ObjectNodeLoader {
 
   void loadNode631() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15579),
@@ -19819,7 +19819,7 @@ class ObjectNodeLoader {
 
   void loadNode632() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16021),
@@ -19847,7 +19847,7 @@ class ObjectNodeLoader {
 
   void loadNode633() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16022),
@@ -19875,7 +19875,7 @@ class ObjectNodeLoader {
 
   void loadNode634() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16023),
@@ -19903,7 +19903,7 @@ class ObjectNodeLoader {
 
   void loadNode635() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25547),
@@ -19931,7 +19931,7 @@ class ObjectNodeLoader {
 
   void loadNode636() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25548),
@@ -19959,7 +19959,7 @@ class ObjectNodeLoader {
 
   void loadNode637() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23505),
@@ -19987,7 +19987,7 @@ class ObjectNodeLoader {
 
   void loadNode638() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24353),
@@ -20015,7 +20015,7 @@ class ObjectNodeLoader {
 
   void loadNode639() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24354),
@@ -20043,7 +20043,7 @@ class ObjectNodeLoader {
 
   void loadNode640() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24355),
@@ -20071,7 +20071,7 @@ class ObjectNodeLoader {
 
   void loadNode641() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24296),
@@ -20099,7 +20099,7 @@ class ObjectNodeLoader {
 
   void loadNode642() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25243),
@@ -20127,7 +20127,7 @@ class ObjectNodeLoader {
 
   void loadNode643() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19100),
@@ -20155,7 +20155,7 @@ class ObjectNodeLoader {
 
   void loadNode644() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19101),
@@ -20183,7 +20183,7 @@ class ObjectNodeLoader {
 
   void loadNode645() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19102),
@@ -20211,7 +20211,7 @@ class ObjectNodeLoader {
 
   void loadNode646() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32669),
@@ -20239,7 +20239,7 @@ class ObjectNodeLoader {
 
   void loadNode647() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32670),
@@ -20267,7 +20267,7 @@ class ObjectNodeLoader {
 
   void loadNode648() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19383),
@@ -20295,7 +20295,7 @@ class ObjectNodeLoader {
 
   void loadNode649() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19773),
@@ -20323,7 +20323,7 @@ class ObjectNodeLoader {
 
   void loadNode650() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19774),
@@ -20351,7 +20351,7 @@ class ObjectNodeLoader {
 
   void loadNode651() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19775),
@@ -20379,7 +20379,7 @@ class ObjectNodeLoader {
 
   void loadNode652() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19776),
@@ -20407,7 +20407,7 @@ class ObjectNodeLoader {
 
   void loadNode653() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16126),
@@ -20435,7 +20435,7 @@ class ObjectNodeLoader {
 
   void loadNode654() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14797),
@@ -20463,7 +20463,7 @@ class ObjectNodeLoader {
 
   void loadNode655() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14800),
@@ -20491,7 +20491,7 @@ class ObjectNodeLoader {
 
   void loadNode656() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14798),
@@ -20519,7 +20519,7 @@ class ObjectNodeLoader {
 
   void loadNode657() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14799),
@@ -20547,7 +20547,7 @@ class ObjectNodeLoader {
 
   void loadNode658() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 297),
@@ -20574,7 +20574,7 @@ class ObjectNodeLoader {
 
   void loadNode659() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 7616),
@@ -20602,7 +20602,7 @@ class ObjectNodeLoader {
 
   void loadNode660() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 14801),
@@ -20630,7 +20630,7 @@ class ObjectNodeLoader {
 
   void loadNode661() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12757),
@@ -20658,7 +20658,7 @@ class ObjectNodeLoader {
 
   void loadNode662() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 8913),
@@ -20686,7 +20686,7 @@ class ObjectNodeLoader {
 
   void loadNode663() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 309),
@@ -20713,7 +20713,7 @@ class ObjectNodeLoader {
 
   void loadNode664() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12195),
@@ -20741,7 +20741,7 @@ class ObjectNodeLoader {
 
   void loadNode665() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 305),
@@ -20768,7 +20768,7 @@ class ObjectNodeLoader {
 
   void loadNode666() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 313),
@@ -20795,7 +20795,7 @@ class ObjectNodeLoader {
 
   void loadNode667() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 433),
@@ -20822,7 +20822,7 @@ class ObjectNodeLoader {
 
   void loadNode668() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12892),
@@ -20850,7 +20850,7 @@ class ObjectNodeLoader {
 
   void loadNode669() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12893),
@@ -20878,7 +20878,7 @@ class ObjectNodeLoader {
 
   void loadNode670() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 345),
@@ -20905,7 +20905,7 @@ class ObjectNodeLoader {
 
   void loadNode671() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 457),
@@ -20932,7 +20932,7 @@ class ObjectNodeLoader {
 
   void loadNode672() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 317),
@@ -20959,7 +20959,7 @@ class ObjectNodeLoader {
 
   void loadNode673() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 320),
@@ -20986,7 +20986,7 @@ class ObjectNodeLoader {
 
   void loadNode674() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 323),
@@ -21013,7 +21013,7 @@ class ObjectNodeLoader {
 
   void loadNode675() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 326),
@@ -21040,7 +21040,7 @@ class ObjectNodeLoader {
 
   void loadNode676() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 939),
@@ -21067,7 +21067,7 @@ class ObjectNodeLoader {
 
   void loadNode677() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 377),
@@ -21094,7 +21094,7 @@ class ObjectNodeLoader {
 
   void loadNode678() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 380),
@@ -21121,7 +21121,7 @@ class ObjectNodeLoader {
 
   void loadNode679() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 383),
@@ -21148,7 +21148,7 @@ class ObjectNodeLoader {
 
   void loadNode680() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 386),
@@ -21175,7 +21175,7 @@ class ObjectNodeLoader {
 
   void loadNode681() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 538),
@@ -21202,7 +21202,7 @@ class ObjectNodeLoader {
 
   void loadNode682() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 541),
@@ -21229,7 +21229,7 @@ class ObjectNodeLoader {
 
   void loadNode683() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 332),
@@ -21256,7 +21256,7 @@ class ObjectNodeLoader {
 
   void loadNode684() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 584),
@@ -21283,7 +21283,7 @@ class ObjectNodeLoader {
 
   void loadNode685() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 587),
@@ -21310,7 +21310,7 @@ class ObjectNodeLoader {
 
   void loadNode686() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 590),
@@ -21337,7 +21337,7 @@ class ObjectNodeLoader {
 
   void loadNode687() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 593),
@@ -21364,7 +21364,7 @@ class ObjectNodeLoader {
 
   void loadNode688() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 596),
@@ -21391,7 +21391,7 @@ class ObjectNodeLoader {
 
   void loadNode689() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 599),
@@ -21418,7 +21418,7 @@ class ObjectNodeLoader {
 
   void loadNode690() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 602),
@@ -21445,7 +21445,7 @@ class ObjectNodeLoader {
 
   void loadNode691() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 11218),
@@ -21473,7 +21473,7 @@ class ObjectNodeLoader {
 
   void loadNode692() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 660),
@@ -21500,7 +21500,7 @@ class ObjectNodeLoader {
 
   void loadNode693() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32829),
@@ -21528,7 +21528,7 @@ class ObjectNodeLoader {
 
   void loadNode694() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 720),
@@ -21555,7 +21555,7 @@ class ObjectNodeLoader {
 
   void loadNode695() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 726),
@@ -21582,7 +21582,7 @@ class ObjectNodeLoader {
 
   void loadNode696() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 949),
@@ -21609,7 +21609,7 @@ class ObjectNodeLoader {
 
   void loadNode697() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 921),
@@ -21636,7 +21636,7 @@ class ObjectNodeLoader {
 
   void loadNode698() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 339),
@@ -21663,7 +21663,7 @@ class ObjectNodeLoader {
 
   void loadNode699() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 854),
@@ -21690,7 +21690,7 @@ class ObjectNodeLoader {
 
   void loadNode700() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 11949),
@@ -21718,7 +21718,7 @@ class ObjectNodeLoader {
 
   void loadNode701() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 11950),
@@ -21746,7 +21746,7 @@ class ObjectNodeLoader {
 
   void loadNode702() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 857),
@@ -21773,7 +21773,7 @@ class ObjectNodeLoader {
 
   void loadNode703() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 860),
@@ -21800,7 +21800,7 @@ class ObjectNodeLoader {
 
   void loadNode704() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 863),
@@ -21827,7 +21827,7 @@ class ObjectNodeLoader {
 
   void loadNode705() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 866),
@@ -21854,7 +21854,7 @@ class ObjectNodeLoader {
 
   void loadNode706() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 869),
@@ -21881,7 +21881,7 @@ class ObjectNodeLoader {
 
   void loadNode707() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 872),
@@ -21908,7 +21908,7 @@ class ObjectNodeLoader {
 
   void loadNode708() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 300),
@@ -21935,7 +21935,7 @@ class ObjectNodeLoader {
 
   void loadNode709() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 875),
@@ -21962,7 +21962,7 @@ class ObjectNodeLoader {
 
   void loadNode710() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 878),
@@ -21989,7 +21989,7 @@ class ObjectNodeLoader {
 
   void loadNode711() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 898),
@@ -22016,7 +22016,7 @@ class ObjectNodeLoader {
 
   void loadNode712() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 885),
@@ -22043,7 +22043,7 @@ class ObjectNodeLoader {
 
   void loadNode713() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 888),
@@ -22070,7 +22070,7 @@ class ObjectNodeLoader {
 
   void loadNode714() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12173),
@@ -22098,7 +22098,7 @@ class ObjectNodeLoader {
 
   void loadNode715() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12174),
@@ -22126,7 +22126,7 @@ class ObjectNodeLoader {
 
   void loadNode716() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12081),
@@ -22154,7 +22154,7 @@ class ObjectNodeLoader {
 
   void loadNode717() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 12082),
@@ -22182,7 +22182,7 @@ class ObjectNodeLoader {
 
   void loadNode718() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 895),
@@ -22209,7 +22209,7 @@ class ObjectNodeLoader {
 
   void loadNode719() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24038),
@@ -22237,7 +22237,7 @@ class ObjectNodeLoader {
 
   void loadNode720() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.XML_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 892),
@@ -22264,7 +22264,7 @@ class ObjectNodeLoader {
 
   void loadNode721() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15085),
@@ -22289,7 +22289,7 @@ class ObjectNodeLoader {
 
   void loadNode722() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15041),
@@ -22314,7 +22314,7 @@ class ObjectNodeLoader {
 
   void loadNode723() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 17547),
@@ -22339,7 +22339,7 @@ class ObjectNodeLoader {
 
   void loadNode724() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 17557),
@@ -22364,7 +22364,7 @@ class ObjectNodeLoader {
 
   void loadNode725() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16150),
@@ -22389,7 +22389,7 @@ class ObjectNodeLoader {
 
   void loadNode726() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32430),
@@ -22414,7 +22414,7 @@ class ObjectNodeLoader {
 
   void loadNode727() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19064),
@@ -22439,7 +22439,7 @@ class ObjectNodeLoader {
 
   void loadNode728() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19065),
@@ -22464,7 +22464,7 @@ class ObjectNodeLoader {
 
   void loadNode729() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19066),
@@ -22489,7 +22489,7 @@ class ObjectNodeLoader {
 
   void loadNode730() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19067),
@@ -22514,7 +22514,7 @@ class ObjectNodeLoader {
 
   void loadNode731() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19068),
@@ -22539,7 +22539,7 @@ class ObjectNodeLoader {
 
   void loadNode732() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19069),
@@ -22564,7 +22564,7 @@ class ObjectNodeLoader {
 
   void loadNode733() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19070),
@@ -22589,7 +22589,7 @@ class ObjectNodeLoader {
 
   void loadNode734() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19071),
@@ -22614,7 +22614,7 @@ class ObjectNodeLoader {
 
   void loadNode735() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19072),
@@ -22639,7 +22639,7 @@ class ObjectNodeLoader {
 
   void loadNode736() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15042),
@@ -22664,7 +22664,7 @@ class ObjectNodeLoader {
 
   void loadNode737() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23528),
@@ -22689,7 +22689,7 @@ class ObjectNodeLoader {
 
   void loadNode738() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24368),
@@ -22714,7 +22714,7 @@ class ObjectNodeLoader {
 
   void loadNode739() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32584),
@@ -22739,7 +22739,7 @@ class ObjectNodeLoader {
 
   void loadNode740() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32585),
@@ -22764,7 +22764,7 @@ class ObjectNodeLoader {
 
   void loadNode741() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32586),
@@ -22789,7 +22789,7 @@ class ObjectNodeLoader {
 
   void loadNode742() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15044),
@@ -22814,7 +22814,7 @@ class ObjectNodeLoader {
 
   void loadNode743() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16632),
@@ -22839,7 +22839,7 @@ class ObjectNodeLoader {
 
   void loadNode744() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16633),
@@ -22864,7 +22864,7 @@ class ObjectNodeLoader {
 
   void loadNode745() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16634),
@@ -22889,7 +22889,7 @@ class ObjectNodeLoader {
 
   void loadNode746() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16635),
@@ -22914,7 +22914,7 @@ class ObjectNodeLoader {
 
   void loadNode747() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32390),
@@ -22939,7 +22939,7 @@ class ObjectNodeLoader {
 
   void loadNode748() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23776),
@@ -22964,7 +22964,7 @@ class ObjectNodeLoader {
 
   void loadNode749() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16637),
@@ -22989,7 +22989,7 @@ class ObjectNodeLoader {
 
   void loadNode750() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16642),
@@ -23014,7 +23014,7 @@ class ObjectNodeLoader {
 
   void loadNode751() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16643),
@@ -23039,7 +23039,7 @@ class ObjectNodeLoader {
 
   void loadNode752() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16644),
@@ -23064,7 +23064,7 @@ class ObjectNodeLoader {
 
   void loadNode753() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16645),
@@ -23089,7 +23089,7 @@ class ObjectNodeLoader {
 
   void loadNode754() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23739),
@@ -23114,7 +23114,7 @@ class ObjectNodeLoader {
 
   void loadNode755() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23777),
@@ -23139,7 +23139,7 @@ class ObjectNodeLoader {
 
   void loadNode756() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16151),
@@ -23164,7 +23164,7 @@ class ObjectNodeLoader {
 
   void loadNode757() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15057),
@@ -23189,7 +23189,7 @@ class ObjectNodeLoader {
 
   void loadNode758() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15058),
@@ -23214,7 +23214,7 @@ class ObjectNodeLoader {
 
   void loadNode759() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15059),
@@ -23239,7 +23239,7 @@ class ObjectNodeLoader {
 
   void loadNode760() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15700),
@@ -23264,7 +23264,7 @@ class ObjectNodeLoader {
 
   void loadNode761() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15714),
@@ -23289,7 +23289,7 @@ class ObjectNodeLoader {
 
   void loadNode762() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24132),
@@ -23314,7 +23314,7 @@ class ObjectNodeLoader {
 
   void loadNode763() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24133),
@@ -23339,7 +23339,7 @@ class ObjectNodeLoader {
 
   void loadNode764() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24134),
@@ -23364,7 +23364,7 @@ class ObjectNodeLoader {
 
   void loadNode765() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15050),
@@ -23389,7 +23389,7 @@ class ObjectNodeLoader {
 
   void loadNode766() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15051),
@@ -23414,7 +23414,7 @@ class ObjectNodeLoader {
 
   void loadNode767() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15049),
@@ -23439,7 +23439,7 @@ class ObjectNodeLoader {
 
   void loadNode768() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16152),
@@ -23464,7 +23464,7 @@ class ObjectNodeLoader {
 
   void loadNode769() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16153),
@@ -23489,7 +23489,7 @@ class ObjectNodeLoader {
 
   void loadNode770() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15060),
@@ -23514,7 +23514,7 @@ class ObjectNodeLoader {
 
   void loadNode771() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16154),
@@ -23539,7 +23539,7 @@ class ObjectNodeLoader {
 
   void loadNode772() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16155),
@@ -23564,7 +23564,7 @@ class ObjectNodeLoader {
 
   void loadNode773() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25561),
@@ -23589,7 +23589,7 @@ class ObjectNodeLoader {
 
   void loadNode774() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18622),
@@ -23614,7 +23614,7 @@ class ObjectNodeLoader {
 
   void loadNode775() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18623),
@@ -23639,7 +23639,7 @@ class ObjectNodeLoader {
 
   void loadNode776() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18624),
@@ -23664,7 +23664,7 @@ class ObjectNodeLoader {
 
   void loadNode777() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18945),
@@ -23689,7 +23689,7 @@ class ObjectNodeLoader {
 
   void loadNode778() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16156),
@@ -23714,7 +23714,7 @@ class ObjectNodeLoader {
 
   void loadNode779() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16157),
@@ -23739,7 +23739,7 @@ class ObjectNodeLoader {
 
   void loadNode780() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16158),
@@ -23764,7 +23764,7 @@ class ObjectNodeLoader {
 
   void loadNode781() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16159),
@@ -23789,7 +23789,7 @@ class ObjectNodeLoader {
 
   void loadNode782() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21198),
@@ -23814,7 +23814,7 @@ class ObjectNodeLoader {
 
   void loadNode783() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16161),
@@ -23839,7 +23839,7 @@ class ObjectNodeLoader {
 
   void loadNode784() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16280),
@@ -23864,7 +23864,7 @@ class ObjectNodeLoader {
 
   void loadNode785() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16281),
@@ -23889,7 +23889,7 @@ class ObjectNodeLoader {
 
   void loadNode786() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16282),
@@ -23914,7 +23914,7 @@ class ObjectNodeLoader {
 
   void loadNode787() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21199),
@@ -23939,7 +23939,7 @@ class ObjectNodeLoader {
 
   void loadNode788() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21200),
@@ -23964,7 +23964,7 @@ class ObjectNodeLoader {
 
   void loadNode789() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21201),
@@ -23989,7 +23989,7 @@ class ObjectNodeLoader {
 
   void loadNode790() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16284),
@@ -24014,7 +24014,7 @@ class ObjectNodeLoader {
 
   void loadNode791() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16285),
@@ -24039,7 +24039,7 @@ class ObjectNodeLoader {
 
   void loadNode792() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16286),
@@ -24064,7 +24064,7 @@ class ObjectNodeLoader {
 
   void loadNode793() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16287),
@@ -24089,7 +24089,7 @@ class ObjectNodeLoader {
 
   void loadNode794() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16288),
@@ -24114,7 +24114,7 @@ class ObjectNodeLoader {
 
   void loadNode795() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16308),
@@ -24139,7 +24139,7 @@ class ObjectNodeLoader {
 
   void loadNode796() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16310),
@@ -24164,7 +24164,7 @@ class ObjectNodeLoader {
 
   void loadNode797() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15061),
@@ -24189,7 +24189,7 @@ class ObjectNodeLoader {
 
   void loadNode798() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16311),
@@ -24214,7 +24214,7 @@ class ObjectNodeLoader {
 
   void loadNode799() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21202),
@@ -24239,7 +24239,7 @@ class ObjectNodeLoader {
 
   void loadNode800() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23987),
@@ -24264,7 +24264,7 @@ class ObjectNodeLoader {
 
   void loadNode801() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23988),
@@ -24289,7 +24289,7 @@ class ObjectNodeLoader {
 
   void loadNode802() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23989),
@@ -24314,7 +24314,7 @@ class ObjectNodeLoader {
 
   void loadNode803() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25562),
@@ -24339,7 +24339,7 @@ class ObjectNodeLoader {
 
   void loadNode804() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23990),
@@ -24364,7 +24364,7 @@ class ObjectNodeLoader {
 
   void loadNode805() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16323),
@@ -24389,7 +24389,7 @@ class ObjectNodeLoader {
 
   void loadNode806() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16391),
@@ -24414,7 +24414,7 @@ class ObjectNodeLoader {
 
   void loadNode807() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16392),
@@ -24439,7 +24439,7 @@ class ObjectNodeLoader {
 
   void loadNode808() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16393),
@@ -24464,7 +24464,7 @@ class ObjectNodeLoader {
 
   void loadNode809() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16394),
@@ -24489,7 +24489,7 @@ class ObjectNodeLoader {
 
   void loadNode810() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16404),
@@ -24514,7 +24514,7 @@ class ObjectNodeLoader {
 
   void loadNode811() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23991),
@@ -24539,7 +24539,7 @@ class ObjectNodeLoader {
 
   void loadNode812() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23992),
@@ -24564,7 +24564,7 @@ class ObjectNodeLoader {
 
   void loadNode813() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23993),
@@ -24589,7 +24589,7 @@ class ObjectNodeLoader {
 
   void loadNode814() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23996),
@@ -24614,7 +24614,7 @@ class ObjectNodeLoader {
 
   void loadNode815() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23997),
@@ -24639,7 +24639,7 @@ class ObjectNodeLoader {
 
   void loadNode816() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 17476),
@@ -24664,7 +24664,7 @@ class ObjectNodeLoader {
 
   void loadNode817() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24000),
@@ -24689,7 +24689,7 @@ class ObjectNodeLoader {
 
   void loadNode818() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 21203),
@@ -24714,7 +24714,7 @@ class ObjectNodeLoader {
 
   void loadNode819() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24001),
@@ -24739,7 +24739,7 @@ class ObjectNodeLoader {
 
   void loadNode820() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24002),
@@ -24764,7 +24764,7 @@ class ObjectNodeLoader {
 
   void loadNode821() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 18946),
@@ -24789,7 +24789,7 @@ class ObjectNodeLoader {
 
   void loadNode822() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15726),
@@ -24814,7 +24814,7 @@ class ObjectNodeLoader {
 
   void loadNode823() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16524),
@@ -24839,7 +24839,7 @@ class ObjectNodeLoader {
 
   void loadNode824() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16525),
@@ -24864,7 +24864,7 @@ class ObjectNodeLoader {
 
   void loadNode825() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 16526),
@@ -24889,7 +24889,7 @@ class ObjectNodeLoader {
 
   void loadNode826() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25563),
@@ -24914,7 +24914,7 @@ class ObjectNodeLoader {
 
   void loadNode827() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25564),
@@ -24939,7 +24939,7 @@ class ObjectNodeLoader {
 
   void loadNode828() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 23511),
@@ -24964,7 +24964,7 @@ class ObjectNodeLoader {
 
   void loadNode829() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24369),
@@ -24989,7 +24989,7 @@ class ObjectNodeLoader {
 
   void loadNode830() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24370),
@@ -25014,7 +25014,7 @@ class ObjectNodeLoader {
 
   void loadNode831() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24371),
@@ -25039,7 +25039,7 @@ class ObjectNodeLoader {
 
   void loadNode832() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24300),
@@ -25064,7 +25064,7 @@ class ObjectNodeLoader {
 
   void loadNode833() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 25247),
@@ -25089,7 +25089,7 @@ class ObjectNodeLoader {
 
   void loadNode834() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19299),
@@ -25114,7 +25114,7 @@ class ObjectNodeLoader {
 
   void loadNode835() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19300),
@@ -25139,7 +25139,7 @@ class ObjectNodeLoader {
 
   void loadNode836() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19301),
@@ -25164,7 +25164,7 @@ class ObjectNodeLoader {
 
   void loadNode837() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32677),
@@ -25189,7 +25189,7 @@ class ObjectNodeLoader {
 
   void loadNode838() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32678),
@@ -25214,7 +25214,7 @@ class ObjectNodeLoader {
 
   void loadNode839() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19387),
@@ -25239,7 +25239,7 @@ class ObjectNodeLoader {
 
   void loadNode840() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19803),
@@ -25264,7 +25264,7 @@ class ObjectNodeLoader {
 
   void loadNode841() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19804),
@@ -25289,7 +25289,7 @@ class ObjectNodeLoader {
 
   void loadNode842() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19805),
@@ -25314,7 +25314,7 @@ class ObjectNodeLoader {
 
   void loadNode843() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 19806),
@@ -25339,7 +25339,7 @@ class ObjectNodeLoader {
 
   void loadNode844() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15062),
@@ -25364,7 +25364,7 @@ class ObjectNodeLoader {
 
   void loadNode845() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15063),
@@ -25389,7 +25389,7 @@ class ObjectNodeLoader {
 
   void loadNode846() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15065),
@@ -25414,7 +25414,7 @@ class ObjectNodeLoader {
 
   void loadNode847() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15066),
@@ -25439,7 +25439,7 @@ class ObjectNodeLoader {
 
   void loadNode848() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15067),
@@ -25464,7 +25464,7 @@ class ObjectNodeLoader {
 
   void loadNode849() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15081),
@@ -25489,7 +25489,7 @@ class ObjectNodeLoader {
 
   void loadNode850() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15082),
@@ -25514,7 +25514,7 @@ class ObjectNodeLoader {
 
   void loadNode851() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15083),
@@ -25539,7 +25539,7 @@ class ObjectNodeLoader {
 
   void loadNode852() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15084),
@@ -25564,7 +25564,7 @@ class ObjectNodeLoader {
 
   void loadNode853() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15086),
@@ -25589,7 +25589,7 @@ class ObjectNodeLoader {
 
   void loadNode854() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15087),
@@ -25614,7 +25614,7 @@ class ObjectNodeLoader {
 
   void loadNode855() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15095),
@@ -25639,7 +25639,7 @@ class ObjectNodeLoader {
 
   void loadNode856() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15098),
@@ -25664,7 +25664,7 @@ class ObjectNodeLoader {
 
   void loadNode857() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15099),
@@ -25689,7 +25689,7 @@ class ObjectNodeLoader {
 
   void loadNode858() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15102),
@@ -25714,7 +25714,7 @@ class ObjectNodeLoader {
 
   void loadNode859() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15105),
@@ -25739,7 +25739,7 @@ class ObjectNodeLoader {
 
   void loadNode860() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15106),
@@ -25764,7 +25764,7 @@ class ObjectNodeLoader {
 
   void loadNode861() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15136),
@@ -25789,7 +25789,7 @@ class ObjectNodeLoader {
 
   void loadNode862() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15137),
@@ -25814,7 +25814,7 @@ class ObjectNodeLoader {
 
   void loadNode863() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15140),
@@ -25839,7 +25839,7 @@ class ObjectNodeLoader {
 
   void loadNode864() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15141),
@@ -25864,7 +25864,7 @@ class ObjectNodeLoader {
 
   void loadNode865() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15142),
@@ -25889,7 +25889,7 @@ class ObjectNodeLoader {
 
   void loadNode866() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15143),
@@ -25914,7 +25914,7 @@ class ObjectNodeLoader {
 
   void loadNode867() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15144),
@@ -25939,7 +25939,7 @@ class ObjectNodeLoader {
 
   void loadNode868() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15165),
@@ -25964,7 +25964,7 @@ class ObjectNodeLoader {
 
   void loadNode869() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15169),
@@ -25989,7 +25989,7 @@ class ObjectNodeLoader {
 
   void loadNode870() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15172),
@@ -26014,7 +26014,7 @@ class ObjectNodeLoader {
 
   void loadNode871() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15175),
@@ -26039,7 +26039,7 @@ class ObjectNodeLoader {
 
   void loadNode872() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15188),
@@ -26064,7 +26064,7 @@ class ObjectNodeLoader {
 
   void loadNode873() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15189),
@@ -26089,7 +26089,7 @@ class ObjectNodeLoader {
 
   void loadNode874() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15199),
@@ -26114,7 +26114,7 @@ class ObjectNodeLoader {
 
   void loadNode875() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15204),
@@ -26139,7 +26139,7 @@ class ObjectNodeLoader {
 
   void loadNode876() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15205),
@@ -26164,7 +26164,7 @@ class ObjectNodeLoader {
 
   void loadNode877() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15206),
@@ -26189,7 +26189,7 @@ class ObjectNodeLoader {
 
   void loadNode878() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15207),
@@ -26214,7 +26214,7 @@ class ObjectNodeLoader {
 
   void loadNode879() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15208),
@@ -26239,7 +26239,7 @@ class ObjectNodeLoader {
 
   void loadNode880() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15209),
@@ -26264,7 +26264,7 @@ class ObjectNodeLoader {
 
   void loadNode881() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15210),
@@ -26289,7 +26289,7 @@ class ObjectNodeLoader {
 
   void loadNode882() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15271),
@@ -26314,7 +26314,7 @@ class ObjectNodeLoader {
 
   void loadNode883() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15273),
@@ -26339,7 +26339,7 @@ class ObjectNodeLoader {
 
   void loadNode884() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 32833),
@@ -26364,7 +26364,7 @@ class ObjectNodeLoader {
 
   void loadNode885() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15293),
@@ -26389,7 +26389,7 @@ class ObjectNodeLoader {
 
   void loadNode886() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15295),
@@ -26414,7 +26414,7 @@ class ObjectNodeLoader {
 
   void loadNode887() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15304),
@@ -26439,7 +26439,7 @@ class ObjectNodeLoader {
 
   void loadNode888() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15349),
@@ -26464,7 +26464,7 @@ class ObjectNodeLoader {
 
   void loadNode889() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15361),
@@ -26489,7 +26489,7 @@ class ObjectNodeLoader {
 
   void loadNode890() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15362),
@@ -26514,7 +26514,7 @@ class ObjectNodeLoader {
 
   void loadNode891() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15363),
@@ -26539,7 +26539,7 @@ class ObjectNodeLoader {
 
   void loadNode892() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15364),
@@ -26564,7 +26564,7 @@ class ObjectNodeLoader {
 
   void loadNode893() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15365),
@@ -26589,7 +26589,7 @@ class ObjectNodeLoader {
 
   void loadNode894() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15366),
@@ -26614,7 +26614,7 @@ class ObjectNodeLoader {
 
   void loadNode895() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15367),
@@ -26639,7 +26639,7 @@ class ObjectNodeLoader {
 
   void loadNode896() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15368),
@@ -26664,7 +26664,7 @@ class ObjectNodeLoader {
 
   void loadNode897() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15369),
@@ -26689,7 +26689,7 @@ class ObjectNodeLoader {
 
   void loadNode898() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15370),
@@ -26714,7 +26714,7 @@ class ObjectNodeLoader {
 
   void loadNode899() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15371),
@@ -26739,7 +26739,7 @@ class ObjectNodeLoader {
 
   void loadNode900() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15372),
@@ -26764,7 +26764,7 @@ class ObjectNodeLoader {
 
   void loadNode901() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15373),
@@ -26789,7 +26789,7 @@ class ObjectNodeLoader {
 
   void loadNode902() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15374),
@@ -26814,7 +26814,7 @@ class ObjectNodeLoader {
 
   void loadNode903() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15375),
@@ -26839,7 +26839,7 @@ class ObjectNodeLoader {
 
   void loadNode904() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15376),
@@ -26864,7 +26864,7 @@ class ObjectNodeLoader {
 
   void loadNode905() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15377),
@@ -26889,7 +26889,7 @@ class ObjectNodeLoader {
 
   void loadNode906() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15378),
@@ -26914,7 +26914,7 @@ class ObjectNodeLoader {
 
   void loadNode907() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15379),
@@ -26939,7 +26939,7 @@ class ObjectNodeLoader {
 
   void loadNode908() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15380),
@@ -26964,7 +26964,7 @@ class ObjectNodeLoader {
 
   void loadNode909() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15381),
@@ -26989,7 +26989,7 @@ class ObjectNodeLoader {
 
   void loadNode910() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 24042),
@@ -27014,7 +27014,7 @@ class ObjectNodeLoader {
 
   void loadNode911() {
     if (context.getServer().getEncodingManager().hasEncoding(DataTypeEncoding.JSON_ENCODING_NAME)) {
-      var node =
+      org.eclipse.milo.opcua.sdk.server.model.objects.DataTypeEncodingTypeNode node =
           new DataTypeEncodingTypeNode(
               this.context,
               new NodeId(0, 15382),

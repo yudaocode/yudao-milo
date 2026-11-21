@@ -105,7 +105,7 @@ public class ActivateSessionResponse extends Structure implements UaResponseMess
       return false;
     }
     ActivateSessionResponse that = (ActivateSessionResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getServerNonce(), that.getServerNonce());
     eqb.append(getResults(), that.getResults());
@@ -115,7 +115,7 @@ public class ActivateSessionResponse extends Structure implements UaResponseMess
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getServerNonce());
     hcb.append(getResults());
@@ -125,7 +125,7 @@ public class ActivateSessionResponse extends Structure implements UaResponseMess
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ActivateSessionResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ActivateSessionResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("serverNonce=" + getServerNonce());
     joiner.add("results=" + java.util.Arrays.toString(getResults()));

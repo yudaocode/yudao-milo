@@ -51,7 +51,7 @@ public abstract class Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", Structure.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", Structure.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 }

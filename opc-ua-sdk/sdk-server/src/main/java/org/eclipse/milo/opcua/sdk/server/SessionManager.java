@@ -10,7 +10,7 @@
 
 package org.eclipse.milo.opcua.sdk.server;
 
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 import static org.eclipse.milo.opcua.sdk.server.servicesets.AbstractServiceSet.createResponseHeader;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 import static org.eclipse.milo.opcua.stack.core.util.DigestUtil.sha1;
@@ -616,7 +616,7 @@ public class SessionManager {
               .getConfig()
               .getCertificateManager()
               .getCertificateChain(thumbprint)
-              .map(List::of)
+              .map(c -> java.util.Arrays.asList(c))
               .orElseThrow(() -> new UaException(StatusCodes.Bad_ConfigurationError));
     }
 
@@ -962,7 +962,8 @@ public class SessionManager {
    * @throws UaException if the token object is invalid or no matching policy is found.
    */
   private UserTokenPolicy validatePolicyId(Session session, Object tokenObject) throws UaException {
-    if (tokenObject instanceof UserIdentityToken token) {
+    if (tokenObject instanceof UserIdentityToken) {
+      UserIdentityToken token = (UserIdentityToken) tokenObject;
       String policyId = token.getPolicyId();
 
       UserTokenPolicy[] userIdentityTokens =

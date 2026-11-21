@@ -61,8 +61,8 @@ public abstract class AbstractUascClientTransport
   protected CompletableFuture<UaResponseMessageType> sendRequestMessage(
       UaRequestMessageType requestMessage, Channel channel) {
 
-    var request = new UascRequest(requestId.getAndIncrement(), requestMessage);
-    var responseFuture = new CompletableFuture<UaResponseMessageType>();
+    org.eclipse.milo.opcua.stack.transport.client.uasc.UascRequest request = new UascRequest(requestId.getAndIncrement(), requestMessage);
+    java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.core.types.UaResponseMessageType> responseFuture = new CompletableFuture<UaResponseMessageType>();
 
     pendingRequests.put(request.getRequestId(), responseFuture);
     scheduleRequestTimeout(request);

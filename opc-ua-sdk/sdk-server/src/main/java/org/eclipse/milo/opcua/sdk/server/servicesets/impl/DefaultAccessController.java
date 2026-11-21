@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.servicesets.impl;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -57,7 +59,7 @@ public class DefaultAccessController implements AccessController {
   @Override
   public Map<ReadValueId, AccessResult> checkReadAccess(
       Session session, List<ReadValueId> readValueIds) {
-    var context = new DefaultAccessControlContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.DefaultAccessControlContext context = new DefaultAccessControlContext(server, session);
 
     return checkReadAccess(context, readValueIds);
   }
@@ -65,9 +67,9 @@ public class DefaultAccessController implements AccessController {
   static Map<ReadValueId, AccessResult> checkReadAccess(
       AccessControlContext context, List<ReadValueId> readValueIds) {
     List<PendingResult<ReadValueId>> pending =
-        readValueIds.stream().map(PendingResult::new).toList();
+        readValueIds.stream().map(PendingResult::new).collect(Collectors.toList());
 
-    List<NodeId> nodeIds = readValueIds.stream().map(ReadValueId::getNodeId).toList();
+    List<NodeId> nodeIds = readValueIds.stream().map(ReadValueId::getNodeId).collect(Collectors.toList());
 
     Map<NodeId, AccessControlAttributes> attributes = context.readAccessControlAttributes(nodeIds);
 
@@ -122,7 +124,7 @@ public class DefaultAccessController implements AccessController {
   @Override
   public Map<WriteValue, AccessResult> checkWriteAccess(
       Session session, List<WriteValue> writeValues) {
-    var context = new DefaultAccessControlContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.DefaultAccessControlContext context = new DefaultAccessControlContext(server, session);
 
     return checkWriteAccess(context, writeValues);
   }
@@ -130,9 +132,9 @@ public class DefaultAccessController implements AccessController {
   static Map<WriteValue, AccessResult> checkWriteAccess(
       AccessControlContext context, List<WriteValue> writeValues) {
 
-    List<PendingResult<WriteValue>> pending = writeValues.stream().map(PendingResult::new).toList();
+    List<PendingResult<WriteValue>> pending = writeValues.stream().map(PendingResult::new).collect(Collectors.toList());
 
-    List<NodeId> nodeIds = writeValues.stream().map(WriteValue::getNodeId).toList();
+    List<NodeId> nodeIds = writeValues.stream().map(WriteValue::getNodeId).collect(Collectors.toList());
 
     Map<NodeId, AccessControlAttributes> attributes = context.readAccessControlAttributes(nodeIds);
 
@@ -226,14 +228,14 @@ public class DefaultAccessController implements AccessController {
 
   @Override
   public Map<NodeId, AccessResult> checkBrowseAccess(Session session, List<NodeId> nodeIds) {
-    var context = new DefaultAccessControlContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.DefaultAccessControlContext context = new DefaultAccessControlContext(server, session);
 
     return checkBrowseAccess(context, nodeIds);
   }
 
   static Map<NodeId, AccessResult> checkBrowseAccess(
       AccessControlContext context, List<NodeId> nodeIds) {
-    List<PendingResult<NodeId>> pending = nodeIds.stream().map(PendingResult::new).toList();
+    List<PendingResult<NodeId>> pending = nodeIds.stream().map(PendingResult::new).collect(Collectors.toList());
 
     Map<NodeId, AccessControlAttributes> attributes = context.readAccessControlAttributes(nodeIds);
 
@@ -267,7 +269,7 @@ public class DefaultAccessController implements AccessController {
   @Override
   public Map<CallMethodRequest, AccessResult> checkCallAccess(
       Session session, List<CallMethodRequest> requests) {
-    var context = new DefaultAccessControlContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.DefaultAccessControlContext context = new DefaultAccessControlContext(server, session);
 
     return checkCallAccess(context, requests);
   }
@@ -280,9 +282,9 @@ public class DefaultAccessController implements AccessController {
                 r ->
                     Stream.of(
                         new PendingResult<>(r.getObjectId()), new PendingResult<>(r.getMethodId())))
-            .toList();
+            .collect(Collectors.toList());
 
-    var nodeIds = new ArrayList<NodeId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId> nodeIds = new ArrayList<NodeId>();
 
     for (CallMethodRequest request : requests) {
       nodeIds.add(request.getObjectId());
@@ -328,7 +330,7 @@ public class DefaultAccessController implements AccessController {
       }
     }
 
-    var results = new HashMap<CallMethodRequest, AccessResult>();
+    java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.structured.CallMethodRequest,org.eclipse.milo.opcua.sdk.server.servicesets.impl.AccessController.AccessResult> results = new HashMap<CallMethodRequest, AccessResult>();
 
     for (int i = 0; i < pending.size(); i += 2) {
       CallMethodRequest request = requests.get(i / 2);
@@ -357,7 +359,7 @@ public class DefaultAccessController implements AccessController {
   @Override
   public Map<AddReferencesItem, AccessResult> checkAddReferencesAccess(
       Session session, List<AddReferencesItem> referencesToAdd) {
-    var context = new DefaultAccessControlContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.DefaultAccessControlContext context = new DefaultAccessControlContext(server, session);
 
     return checkAddReferencesAccess(context, referencesToAdd);
   }
@@ -366,10 +368,10 @@ public class DefaultAccessController implements AccessController {
       AccessControlContext context, List<AddReferencesItem> referencesToAdd) {
 
     List<PendingResult<AddReferencesItem>> pending =
-        referencesToAdd.stream().map(PendingResult::new).toList();
+        referencesToAdd.stream().map(PendingResult::new).collect(Collectors.toList());
 
     List<NodeId> nodeIds =
-        referencesToAdd.stream().map(AddReferencesItem::getSourceNodeId).toList();
+        referencesToAdd.stream().map(AddReferencesItem::getSourceNodeId).collect(Collectors.toList());
 
     Map<NodeId, AccessControlAttributes> attributes = context.readAccessControlAttributes(nodeIds);
 
@@ -404,7 +406,7 @@ public class DefaultAccessController implements AccessController {
   @Override
   public Map<DeleteNodesItem, AccessResult> checkDeleteNodesAccess(
       Session session, List<DeleteNodesItem> nodesToDelete) {
-    var context = new DefaultAccessControlContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.DefaultAccessControlContext context = new DefaultAccessControlContext(server, session);
 
     return checkDeleteNodesAccess(context, nodesToDelete);
   }
@@ -412,9 +414,9 @@ public class DefaultAccessController implements AccessController {
   static Map<DeleteNodesItem, AccessResult> checkDeleteNodesAccess(
       AccessControlContext context, List<DeleteNodesItem> nodesToDelete) {
     List<PendingResult<DeleteNodesItem>> pending =
-        nodesToDelete.stream().map(PendingResult::new).toList();
+        nodesToDelete.stream().map(PendingResult::new).collect(Collectors.toList());
 
-    List<NodeId> nodeIds = nodesToDelete.stream().map(DeleteNodesItem::getNodeId).toList();
+    List<NodeId> nodeIds = nodesToDelete.stream().map(DeleteNodesItem::getNodeId).collect(Collectors.toList());
 
     Map<NodeId, AccessControlAttributes> attributes = context.readAccessControlAttributes(nodeIds);
 
@@ -450,7 +452,7 @@ public class DefaultAccessController implements AccessController {
   public Map<DeleteReferencesItem, AccessResult> checkDeleteReferencesAccess(
       Session session, List<DeleteReferencesItem> referencesToDelete) {
 
-    var context = new DefaultAccessControlContext(server, session);
+    org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.DefaultAccessControlContext context = new DefaultAccessControlContext(server, session);
 
     return checkDeleteReferencesAccess(context, referencesToDelete);
   }
@@ -459,10 +461,10 @@ public class DefaultAccessController implements AccessController {
       AccessControlContext context, List<DeleteReferencesItem> referencesToDelete) {
 
     List<PendingResult<DeleteReferencesItem>> pending =
-        referencesToDelete.stream().map(PendingResult::new).toList();
+        referencesToDelete.stream().map(PendingResult::new).collect(Collectors.toList());
 
     List<NodeId> nodeIds =
-        referencesToDelete.stream().map(DeleteReferencesItem::getSourceNodeId).toList();
+        referencesToDelete.stream().map(DeleteReferencesItem::getSourceNodeId).collect(Collectors.toList());
 
     Map<NodeId, AccessControlAttributes> attributes = context.readAccessControlAttributes(nodeIds);
 
@@ -574,13 +576,47 @@ public class DefaultAccessController implements AccessController {
     Map<NodeId, AccessControlAttributes> readAccessControlAttributes(List<NodeId> nodeIds);
   }
 
-  record AccessControlAttributes(
-      @Nullable NodeClass nodeClass,
-      @Nullable AccessRestrictionType accessRestrictions,
-      @Nullable UInteger userWriteMask,
-      @Nullable UByte userAccessLevel,
-      @Nullable Boolean userExecutable,
-      RolePermissionType @Nullable [] userRolePermissions) {}
+  static final class AccessControlAttributes {
+    private final @Nullable NodeClass nodeClass;
+    private final @Nullable AccessRestrictionType accessRestrictions;
+    private final @Nullable UInteger userWriteMask;
+    private final @Nullable UByte userAccessLevel;
+    private final @Nullable Boolean userExecutable;
+    private final RolePermissionType @Nullable [] userRolePermissions;
+
+    public @Nullable NodeClass nodeClass() {
+      return nodeClass;
+    }
+
+    public @Nullable AccessRestrictionType accessRestrictions() {
+      return accessRestrictions;
+    }
+
+    public @Nullable UInteger userWriteMask() {
+      return userWriteMask;
+    }
+
+    public @Nullable UByte userAccessLevel() {
+      return userAccessLevel;
+    }
+
+    public @Nullable Boolean userExecutable() {
+      return userExecutable;
+    }
+
+    public RolePermissionType @Nullable [] userRolePermissions() {
+      return userRolePermissions;
+    }
+
+    AccessControlAttributes(@Nullable NodeClass nodeClass, @Nullable AccessRestrictionType accessRestrictions, @Nullable UInteger userWriteMask, @Nullable UByte userAccessLevel, @Nullable Boolean userExecutable, RolePermissionType @Nullable [] userRolePermissions) {
+      this.nodeClass = nodeClass;
+      this.accessRestrictions = accessRestrictions;
+      this.userWriteMask = userWriteMask;
+      this.userAccessLevel = userAccessLevel;
+      this.userExecutable = userExecutable;
+      this.userRolePermissions = userRolePermissions;
+    }
+}
 
   static class DefaultAccessControlContext implements AccessControlContext {
 
@@ -610,7 +646,7 @@ public class DefaultAccessController implements AccessController {
               .flatMap(
                   id -> {
                     List<ReadValueId> attributes =
-                        List.of(
+                        Java8Collections.listOf(
                             new ReadValueId(id, AttributeId.NodeClass.uid(), null, null),
                             new ReadValueId(id, AttributeId.AccessRestrictions.uid(), null, null),
                             new ReadValueId(id, AttributeId.UserWriteMask.uid(), null, null),
@@ -620,7 +656,7 @@ public class DefaultAccessController implements AccessController {
 
                     return attributes.stream();
                   })
-              .toList();
+              .collect(Collectors.toList());
 
       List<DataValue> values =
           server
@@ -631,7 +667,7 @@ public class DefaultAccessController implements AccessController {
                   TimestampsToReturn.Neither,
                   readValueIds);
 
-      var attributesMap = new HashMap<NodeId, AccessControlAttributes>();
+      java.util.HashMap<org.eclipse.milo.opcua.stack.core.types.builtin.NodeId,org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.AccessControlAttributes> attributesMap = new HashMap<NodeId, AccessControlAttributes>();
 
       for (int i = 0; i < readValueIds.size(); i += 6) {
         NodeId nodeId = readValueIds.get(i).getNodeId();
@@ -650,26 +686,32 @@ public class DefaultAccessController implements AccessController {
         Boolean userExecutable = null;
         RolePermissionType[] userRolePermissions = null;
 
-        if (v0 instanceof NodeClass nc) {
+        if (v0 instanceof NodeClass) {
+      NodeClass nc = (NodeClass) v0;
           nodeClass = nc;
         }
-        if (v1 instanceof AccessRestrictionType art) {
+        if (v1 instanceof AccessRestrictionType) {
+      AccessRestrictionType art = (AccessRestrictionType) v1;
           accessRestrictions = art;
         }
-        if (v2 instanceof UInteger um) {
+        if (v2 instanceof UInteger) {
+      UInteger um = (UInteger) v2;
           userWriteMask = um;
         }
-        if (v3 instanceof UByte ub) {
+        if (v3 instanceof UByte) {
+      UByte ub = (UByte) v3;
           userAccessLevel = ub;
         }
-        if (v4 instanceof Boolean b) {
+        if (v4 instanceof Boolean) {
+      Boolean b = (Boolean) v4;
           userExecutable = b;
         }
-        if (v5 instanceof RolePermissionType[] rpt) {
+        if (v5 instanceof RolePermissionType[]) {
+      RolePermissionType[] rpt = (RolePermissionType[]) v5;
           userRolePermissions = rpt;
         }
 
-        var attributes =
+        org.eclipse.milo.opcua.sdk.server.servicesets.impl.DefaultAccessController.AccessControlAttributes attributes =
             new AccessControlAttributes(
                 nodeClass,
                 accessRestrictions,

@@ -10,6 +10,10 @@
 
 package org.eclipse.milo.opcua.sdk.server;
 
+import java.util.stream.Collectors;
+
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static java.util.stream.Collectors.toList;
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.ubyte;
 
@@ -332,7 +336,7 @@ public class OpcUaServer extends AbstractServiceHandler {
 
               if (transport != null) {
                 try {
-                  var bindAddress =
+                  java.net.InetSocketAddress bindAddress =
                       new InetSocketAddress(endpoint.getBindAddress(), endpoint.getBindPort());
                   transport.bind(applicationContext, bindAddress);
 
@@ -355,7 +359,7 @@ public class OpcUaServer extends AbstractServiceHandler {
             });
 
     if (boundEndpoints.isEmpty()) {
-      return CompletableFuture.failedFuture(
+      return Java8Collections.failedFuture(
           new UaException(StatusCodes.Bad_ConfigurationError, "No endpoints bound"));
     } else {
       return CompletableFuture.completedFuture(this);
@@ -647,7 +651,7 @@ public class OpcUaServer extends AbstractServiceHandler {
    * @return the {@link EndpointConfig}s that were successfully bound during {@link #startup()}.
    */
   public List<EndpointConfig> getBoundEndpoints() {
-    return List.copyOf(boundEndpoints);
+    return Java8Collections.listCopyOf(boundEndpoints);
   }
 
   /**
@@ -697,7 +701,7 @@ public class OpcUaServer extends AbstractServiceHandler {
     public CompletableFuture<UaResponseMessageType> handleServiceRequest(
         ServiceRequestContext context, UaRequestMessageType requestMessage) {
 
-      var future = new CompletableFuture<UaResponseMessageType>();
+      java.util.concurrent.CompletableFuture<org.eclipse.milo.opcua.stack.core.types.UaResponseMessageType> future = new CompletableFuture<UaResponseMessageType>();
 
       getExecutorService().execute(() -> handleServiceRequest(context, requestMessage, future));
 
@@ -722,7 +726,7 @@ public class OpcUaServer extends AbstractServiceHandler {
                 e -> Objects.equals(e.getSecurityPolicyUri(), SecurityPolicy.None.getUri()))) {
 
           if (!isDiscoveryService(requestMessage)) {
-            var errorMessage =
+            org.eclipse.milo.opcua.stack.core.channel.messages.ErrorMessage errorMessage =
                 new ErrorMessage(
                     StatusCodes.Bad_SecurityPolicyRejected,
                     StatusCodes.lookup(StatusCodes.Bad_SecurityPolicyRejected)
@@ -750,7 +754,8 @@ public class OpcUaServer extends AbstractServiceHandler {
               context.getChannel().remoteAddress());
         }
 
-        if (serviceHandler instanceof AsyncServiceHandler asyncServiceHandler) {
+        if (serviceHandler instanceof AsyncServiceHandler) {
+      AsyncServiceHandler asyncServiceHandler = (AsyncServiceHandler) serviceHandler;
           CompletableFuture<UaResponseMessageType> response =
               asyncServiceHandler
                   .handleAsync(context, requestMessage)
@@ -829,15 +834,20 @@ public class OpcUaServer extends AbstractServiceHandler {
       Service service = Service.from(requestMessage.getTypeId());
 
       if (service != null) {
-        return switch (service) {
-          case DISCOVERY_FIND_SERVERS,
-              DISCOVERY_GET_ENDPOINTS,
-              DISCOVERY_REGISTER_SERVER,
-              DISCOVERY_FIND_SERVERS_ON_NETWORK,
-              DISCOVERY_REGISTER_SERVER_2 ->
-              true;
-          default -> false;
-        };
+        switch ((service)) {
+      case DISCOVERY_FIND_SERVERS:
+
+      case DISCOVERY_GET_ENDPOINTS:
+
+      case DISCOVERY_REGISTER_SERVER:
+
+      case DISCOVERY_FIND_SERVERS_ON_NETWORK:
+
+      case DISCOVERY_REGISTER_SERVER_2:
+        return true;
+      default:
+        return false;
+    }
       }
 
       return false;
@@ -846,7 +856,7 @@ public class OpcUaServer extends AbstractServiceHandler {
     private List<EndpointDescription> transformEndpoints(Set<EndpointConfig> endpoints) {
       UserTokenPolicyIds userTokenPolicyIds = UserTokenPolicyIds.assign(endpoints);
 
-      return endpoints.stream().map(e -> transformEndpoint(e, userTokenPolicyIds)).toList();
+      return endpoints.stream().map(e -> transformEndpoint(e, userTokenPolicyIds)).collect(Collectors.toList());
     }
 
     private EndpointDescription transformEndpoint(
@@ -890,7 +900,7 @@ public class OpcUaServer extends AbstractServiceHandler {
                   config.getEndpoints().stream()
                       .map(EndpointConfig::getEndpointUrl)
                       .distinct()
-                      .toList();
+                      .collect(Collectors.toList());
             }
 
             return new ApplicationDescription(
@@ -952,7 +962,7 @@ public class OpcUaServer extends AbstractServiceHandler {
     public void fire(BaseEventTypeNode event) {
       List<EventListener> toNotify;
       synchronized (eventListeners) {
-        toNotify = List.copyOf(eventListeners);
+        toNotify = Java8Collections.listCopyOf(eventListeners);
       }
 
       for (EventListener eventListener : toNotify) {

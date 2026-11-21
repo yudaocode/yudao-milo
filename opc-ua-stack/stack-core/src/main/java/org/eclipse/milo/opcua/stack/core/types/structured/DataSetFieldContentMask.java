@@ -53,7 +53,7 @@ public class DataSetFieldContentMask extends OptionSetUI32<DataSetFieldContentMa
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataSetFieldContentMask.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataSetFieldContentMask.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("sourceTimestamp=" + getSourceTimestamp());
     joiner.add("serverTimestamp=" + getServerTimestamp());

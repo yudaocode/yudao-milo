@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.stack.core.util.ArrayUtil.transformArray;
 
@@ -97,7 +98,8 @@ public class AttributeReader {
           NumericRange range = NumericRange.parse(indexRange);
 
           Object valueAtRange;
-          if (dv.value().value() instanceof Matrix matrix) {
+          if (dv.value().value() instanceof Matrix) {
+            Matrix matrix = (Matrix) dv.value().value();
             valueAtRange = NumericRange.readFromValueAtRange(matrix.nestedArrayValue(), range);
             if (ArrayUtil.getValueRank(valueAtRange) > 1) {
               valueAtRange = new Matrix(valueAtRange);
@@ -124,7 +126,8 @@ public class AttributeReader {
       switch (attributeId) {
         case DataTypeDefinition:
           {
-            if (value instanceof StructureDefinition definition) {
+            if (value instanceof StructureDefinition) {
+      StructureDefinition definition = (StructureDefinition) value;
               NodeId defaultEncodingId = definition.getDefaultEncodingId();
 
               if (defaultEncodingId.isNull()) {
@@ -227,7 +230,7 @@ public class AttributeReader {
     if (dataTypeNode != null) {
       return dataTypeNode.getReferences().stream()
           .filter(r -> r.isForward() && NodeIds.HasEncoding.equals(r.getReferenceTypeId()))
-          .flatMap(r -> addressSpaceManager.getManagedNode(r.getTargetNodeId()).stream())
+          .flatMap(r -> Java8Collections.optionalStream(addressSpaceManager.getManagedNode(r.getTargetNodeId())))
           .filter(n -> encodingName.equals(n.getBrowseName()))
           .map(Node::getNodeId)
           .findFirst()

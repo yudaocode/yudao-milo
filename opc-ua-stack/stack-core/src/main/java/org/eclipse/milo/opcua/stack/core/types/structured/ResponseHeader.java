@@ -122,7 +122,7 @@ public class ResponseHeader extends Structure implements UaStructuredType {
       return false;
     }
     ResponseHeader that = (ResponseHeader) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTimestamp(), that.getTimestamp());
     eqb.append(getRequestHandle(), that.getRequestHandle());
     eqb.append(getServiceResult(), that.getServiceResult());
@@ -134,7 +134,7 @@ public class ResponseHeader extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTimestamp());
     hcb.append(getRequestHandle());
     hcb.append(getServiceResult());
@@ -146,7 +146,7 @@ public class ResponseHeader extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ResponseHeader.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ResponseHeader.class.getSimpleName() + "[", "]");
     joiner.add("timestamp=" + getTimestamp());
     joiner.add("requestHandle=" + getRequestHandle());
     joiner.add("serviceResult=" + getServiceResult());

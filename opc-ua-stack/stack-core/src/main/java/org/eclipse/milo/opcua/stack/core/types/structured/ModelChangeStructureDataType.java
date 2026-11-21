@@ -91,7 +91,7 @@ public class ModelChangeStructureDataType extends Structure implements UaStructu
       return false;
     }
     ModelChangeStructureDataType that = (ModelChangeStructureDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAffected(), that.getAffected());
     eqb.append(getAffectedType(), that.getAffectedType());
     eqb.append(getVerb(), that.getVerb());
@@ -100,7 +100,7 @@ public class ModelChangeStructureDataType extends Structure implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAffected());
     hcb.append(getAffectedType());
     hcb.append(getVerb());
@@ -109,7 +109,7 @@ public class ModelChangeStructureDataType extends Structure implements UaStructu
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ModelChangeStructureDataType.class.getSimpleName() + "[", "]");
     joiner.add("affected=" + getAffected());
     joiner.add("affectedType=" + getAffectedType());

@@ -79,7 +79,7 @@ public class X509IdentityToken extends UserIdentityToken implements UaStructured
       return false;
     }
     X509IdentityToken that = (X509IdentityToken) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getCertificateData(), that.getCertificateData());
     return eqb.build();
@@ -87,7 +87,7 @@ public class X509IdentityToken extends UserIdentityToken implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getCertificateData());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -95,7 +95,7 @@ public class X509IdentityToken extends UserIdentityToken implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", X509IdentityToken.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", X509IdentityToken.class.getSimpleName() + "[", "]");
     joiner.add("certificateData=" + getCertificateData());
     return joiner.toString();
   }

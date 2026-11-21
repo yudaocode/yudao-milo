@@ -95,7 +95,7 @@ public class BrowseNextRequest extends Structure implements UaRequestMessageType
       return false;
     }
     BrowseNextRequest that = (BrowseNextRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getReleaseContinuationPoints(), that.getReleaseContinuationPoints());
     eqb.append(getContinuationPoints(), that.getContinuationPoints());
@@ -104,7 +104,7 @@ public class BrowseNextRequest extends Structure implements UaRequestMessageType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getReleaseContinuationPoints());
     hcb.append(getContinuationPoints());
@@ -113,7 +113,7 @@ public class BrowseNextRequest extends Structure implements UaRequestMessageType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", BrowseNextRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", BrowseNextRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("releaseContinuationPoints=" + getReleaseContinuationPoints());
     joiner.add("continuationPoints=" + java.util.Arrays.toString(getContinuationPoints()));

@@ -81,7 +81,7 @@ public class PubSubConfigurationRefMask extends OptionSetUI32<PubSubConfiguratio
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PubSubConfigurationRefMask.class.getSimpleName() + "[", "]");
     joiner.add("elementAdd=" + getElementAdd());
     joiner.add("elementMatch=" + getElementMatch());

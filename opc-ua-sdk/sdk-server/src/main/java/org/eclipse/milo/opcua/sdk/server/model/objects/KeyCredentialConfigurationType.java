@@ -127,7 +127,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "CredentialId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -135,7 +135,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "RequestedSecurityPolicyUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -154,7 +154,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "PublicKey",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -162,7 +162,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "RevisedSecurityPolicyUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -212,7 +212,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "CredentialId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -220,7 +220,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "CredentialSecret",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -228,7 +228,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "CertificateThumbprint",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -236,7 +236,7 @@ public interface KeyCredentialConfigurationType extends BaseObjectType {
                   "SecurityPolicyUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

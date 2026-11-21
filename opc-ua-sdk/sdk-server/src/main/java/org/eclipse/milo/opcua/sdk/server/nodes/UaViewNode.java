@@ -108,11 +108,14 @@ public class UaViewNode extends UaNode implements ViewNode {
 
   @Override
   public synchronized Object getAttribute(AttributeId attributeId) {
-    return switch (attributeId) {
-      case ContainsNoLoops -> containsNoLoops;
-      case EventNotifier -> eventNotifier;
-      default -> super.getAttribute(attributeId);
-    };
+    switch ((attributeId)) {
+      case ContainsNoLoops:
+        return containsNoLoops;
+      case EventNotifier:
+        return eventNotifier;
+      default:
+        return super.getAttribute(attributeId);
+    }
   }
 
   @Override

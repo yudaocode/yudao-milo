@@ -85,7 +85,7 @@ public class DeleteAtTimeDetails extends HistoryUpdateDetails implements UaStruc
       return false;
     }
     DeleteAtTimeDetails that = (DeleteAtTimeDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getReqTimes(), that.getReqTimes());
     return eqb.build();
@@ -93,7 +93,7 @@ public class DeleteAtTimeDetails extends HistoryUpdateDetails implements UaStruc
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getReqTimes());
     return hcb.build();
@@ -101,7 +101,7 @@ public class DeleteAtTimeDetails extends HistoryUpdateDetails implements UaStruc
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DeleteAtTimeDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DeleteAtTimeDetails.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("reqTimes=" + java.util.Arrays.toString(getReqTimes()));
     return joiner.toString();

@@ -96,7 +96,7 @@ public class ContentFilterElementResult extends Structure implements UaStructure
       return false;
     }
     ContentFilterElementResult that = (ContentFilterElementResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getOperandStatusCodes(), that.getOperandStatusCodes());
     eqb.append(getOperandDiagnosticInfos(), that.getOperandDiagnosticInfos());
@@ -105,7 +105,7 @@ public class ContentFilterElementResult extends Structure implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getOperandStatusCodes());
     hcb.append(getOperandDiagnosticInfos());
@@ -114,7 +114,7 @@ public class ContentFilterElementResult extends Structure implements UaStructure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ContentFilterElementResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("operandStatusCodes=" + java.util.Arrays.toString(getOperandStatusCodes()));

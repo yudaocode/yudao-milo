@@ -86,7 +86,7 @@ public class TranslateBrowsePathsToNodeIdsRequest extends Structure
       return false;
     }
     TranslateBrowsePathsToNodeIdsRequest that = (TranslateBrowsePathsToNodeIdsRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getBrowsePaths(), that.getBrowsePaths());
     return eqb.build();
@@ -94,7 +94,7 @@ public class TranslateBrowsePathsToNodeIdsRequest extends Structure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getBrowsePaths());
     return hcb.build();
@@ -102,7 +102,7 @@ public class TranslateBrowsePathsToNodeIdsRequest extends Structure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", TranslateBrowsePathsToNodeIdsRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());

@@ -71,7 +71,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -79,7 +79,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "FieldNameAliases",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -87,7 +87,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "PromotedFields",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -95,7 +95,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "VariablesToAdd",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14273")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -114,7 +114,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "NewConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -122,7 +122,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "AddResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -186,7 +186,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -194,7 +194,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "VariablesToRemove",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -213,7 +213,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "NewConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -221,7 +221,7 @@ public interface PublishedDataItemsType extends PublishedDataSetType {
                   "RemoveResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

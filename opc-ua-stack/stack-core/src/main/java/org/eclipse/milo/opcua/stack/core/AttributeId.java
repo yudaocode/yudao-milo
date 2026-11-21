@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.uint;
 
@@ -72,7 +73,7 @@ public enum AttributeId {
   static {
     ALL = Arrays.asList(AttributeId.values());
 
-    var baseAttributes = new LinkedHashSet<AttributeId>();
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> baseAttributes = new LinkedHashSet<AttributeId>();
     baseAttributes.add(NodeId);
     baseAttributes.add(NodeClass);
     baseAttributes.add(BrowseName);
@@ -85,31 +86,31 @@ public enum AttributeId {
     baseAttributes.add(AccessRestrictions);
     BASE_ATTRIBUTES = Collections.unmodifiableSet(baseAttributes);
 
-    var dataTypeAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> dataTypeAttributes = new LinkedHashSet<>(baseAttributes);
     dataTypeAttributes.add(IsAbstract);
     dataTypeAttributes.add(DataTypeDefinition);
     DATA_TYPE_ATTRIBUTES = Collections.unmodifiableSet(dataTypeAttributes);
 
-    var methodAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> methodAttributes = new LinkedHashSet<>(baseAttributes);
     methodAttributes.add(Executable);
     methodAttributes.add(UserExecutable);
     METHOD_ATTRIBUTES = Collections.unmodifiableSet(methodAttributes);
 
-    var objectAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> objectAttributes = new LinkedHashSet<>(baseAttributes);
     objectAttributes.add(EventNotifier);
     OBJECT_ATTRIBUTES = Collections.unmodifiableSet(objectAttributes);
 
-    var objectTypeAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> objectTypeAttributes = new LinkedHashSet<>(baseAttributes);
     objectTypeAttributes.add(IsAbstract);
     OBJECT_TYPE_ATTRIBUTES = Collections.unmodifiableSet(objectTypeAttributes);
 
-    var referenceTypeAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> referenceTypeAttributes = new LinkedHashSet<>(baseAttributes);
     referenceTypeAttributes.add(IsAbstract);
     referenceTypeAttributes.add(Symmetric);
     referenceTypeAttributes.add(InverseName);
     REFERENCE_TYPE_ATTRIBUTES = Collections.unmodifiableSet(referenceTypeAttributes);
 
-    var variableAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> variableAttributes = new LinkedHashSet<>(baseAttributes);
     variableAttributes.add(Value);
     variableAttributes.add(DataType);
     variableAttributes.add(ValueRank);
@@ -121,7 +122,7 @@ public enum AttributeId {
     variableAttributes.add(AccessLevelEx);
     VARIABLE_ATTRIBUTES = Collections.unmodifiableSet(variableAttributes);
 
-    var variableTypeAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> variableTypeAttributes = new LinkedHashSet<>(baseAttributes);
     variableTypeAttributes.add(Value);
     variableTypeAttributes.add(DataType);
     variableTypeAttributes.add(ValueRank);
@@ -129,7 +130,7 @@ public enum AttributeId {
     variableTypeAttributes.add(IsAbstract);
     VARIABLE_TYPE_ATTRIBUTES = Collections.unmodifiableSet(variableTypeAttributes);
 
-    var viewAttributes = new LinkedHashSet<>(baseAttributes);
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.stack.core.AttributeId> viewAttributes = new LinkedHashSet<>(baseAttributes);
     viewAttributes.add(ContainsNoLoops);
     viewAttributes.add(EventNotifier);
     VIEW_ATTRIBUTES = Collections.unmodifiableSet(viewAttributes);
@@ -196,16 +197,25 @@ public enum AttributeId {
   public static Set<AttributeId> getAttributes(
       org.eclipse.milo.opcua.stack.core.types.enumerated.NodeClass nodeClass) {
 
-    return switch (nodeClass) {
-      case Object -> OBJECT_ATTRIBUTES;
-      case Variable -> VARIABLE_ATTRIBUTES;
-      case Method -> METHOD_ATTRIBUTES;
-      case ObjectType -> OBJECT_TYPE_ATTRIBUTES;
-      case VariableType -> VARIABLE_TYPE_ATTRIBUTES;
-      case ReferenceType -> REFERENCE_TYPE_ATTRIBUTES;
-      case DataType -> DATA_TYPE_ATTRIBUTES;
-      case View -> VIEW_ATTRIBUTES;
-      default -> Set.of();
-    };
+    switch ((nodeClass)) {
+      case Object:
+        return OBJECT_ATTRIBUTES;
+      case Variable:
+        return VARIABLE_ATTRIBUTES;
+      case Method:
+        return METHOD_ATTRIBUTES;
+      case ObjectType:
+        return OBJECT_TYPE_ATTRIBUTES;
+      case VariableType:
+        return VARIABLE_TYPE_ATTRIBUTES;
+      case ReferenceType:
+        return REFERENCE_TYPE_ATTRIBUTES;
+      case DataType:
+        return DATA_TYPE_ATTRIBUTES;
+      case View:
+        return VIEW_ATTRIBUTES;
+      default:
+        return Java8Collections.setOf();
+    }
   }
 }

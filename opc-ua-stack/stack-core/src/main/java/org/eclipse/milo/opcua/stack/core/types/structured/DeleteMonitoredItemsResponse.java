@@ -96,7 +96,7 @@ public class DeleteMonitoredItemsResponse extends Structure implements UaRespons
       return false;
     }
     DeleteMonitoredItemsResponse that = (DeleteMonitoredItemsResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getResults(), that.getResults());
     eqb.append(getDiagnosticInfos(), that.getDiagnosticInfos());
@@ -105,7 +105,7 @@ public class DeleteMonitoredItemsResponse extends Structure implements UaRespons
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getResults());
     hcb.append(getDiagnosticInfos());
@@ -114,7 +114,7 @@ public class DeleteMonitoredItemsResponse extends Structure implements UaRespons
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", DeleteMonitoredItemsResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("results=" + java.util.Arrays.toString(getResults()));

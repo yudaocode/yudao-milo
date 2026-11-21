@@ -96,7 +96,7 @@ public class ParsingResult extends Structure implements UaStructuredType {
       return false;
     }
     ParsingResult that = (ParsingResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getDataStatusCodes(), that.getDataStatusCodes());
     eqb.append(getDataDiagnosticInfos(), that.getDataDiagnosticInfos());
@@ -105,7 +105,7 @@ public class ParsingResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getDataStatusCodes());
     hcb.append(getDataDiagnosticInfos());
@@ -114,7 +114,7 @@ public class ParsingResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ParsingResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ParsingResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("dataStatusCodes=" + java.util.Arrays.toString(getDataStatusCodes()));
     joiner.add("dataDiagnosticInfos=" + java.util.Arrays.toString(getDataDiagnosticInfos()));

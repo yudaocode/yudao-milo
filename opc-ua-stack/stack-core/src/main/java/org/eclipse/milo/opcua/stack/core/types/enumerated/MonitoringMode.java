@@ -45,12 +45,16 @@ public enum MonitoringMode implements UaEnumeratedType {
   }
 
   public static @Nullable MonitoringMode from(int value) {
-    return switch (value) {
-      case 0 -> Disabled;
-      case 1 -> Sampling;
-      case 2 -> Reporting;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Disabled;
+      case 1:
+        return Sampling;
+      case 2:
+        return Reporting;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

@@ -82,7 +82,7 @@ public class PublishedActionMethodDataType extends PublishedActionDataType
       return false;
     }
     PublishedActionMethodDataType that = (PublishedActionMethodDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getActionMethods(), that.getActionMethods());
     return eqb.build();
@@ -90,7 +90,7 @@ public class PublishedActionMethodDataType extends PublishedActionDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getActionMethods());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -98,7 +98,7 @@ public class PublishedActionMethodDataType extends PublishedActionDataType
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PublishedActionMethodDataType.class.getSimpleName() + "[", "]");
     joiner.add("actionMethods=" + java.util.Arrays.toString(getActionMethods()));
     return joiner.toString();

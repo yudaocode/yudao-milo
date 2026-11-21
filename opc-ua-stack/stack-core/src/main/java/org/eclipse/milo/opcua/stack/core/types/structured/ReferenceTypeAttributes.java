@@ -99,7 +99,7 @@ public class ReferenceTypeAttributes extends NodeAttributes implements UaStructu
       return false;
     }
     ReferenceTypeAttributes that = (ReferenceTypeAttributes) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getIsAbstract(), that.getIsAbstract());
     eqb.append(getSymmetric(), that.getSymmetric());
@@ -109,7 +109,7 @@ public class ReferenceTypeAttributes extends NodeAttributes implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getIsAbstract());
     hcb.append(getSymmetric());
     hcb.append(getInverseName());
@@ -119,7 +119,7 @@ public class ReferenceTypeAttributes extends NodeAttributes implements UaStructu
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReferenceTypeAttributes.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReferenceTypeAttributes.class.getSimpleName() + "[", "]");
     joiner.add("isAbstract=" + getIsAbstract());
     joiner.add("symmetric=" + getSymmetric());
     joiner.add("inverseName=" + getInverseName());

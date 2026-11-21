@@ -119,7 +119,7 @@ public class AddReferencesItem extends Structure implements UaStructuredType {
       return false;
     }
     AddReferencesItem that = (AddReferencesItem) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSourceNodeId(), that.getSourceNodeId());
     eqb.append(getReferenceTypeId(), that.getReferenceTypeId());
     eqb.append(getIsForward(), that.getIsForward());
@@ -131,7 +131,7 @@ public class AddReferencesItem extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSourceNodeId());
     hcb.append(getReferenceTypeId());
     hcb.append(getIsForward());
@@ -143,7 +143,7 @@ public class AddReferencesItem extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AddReferencesItem.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AddReferencesItem.class.getSimpleName() + "[", "]");
     joiner.add("sourceNodeId=" + getSourceNodeId());
     joiner.add("referenceTypeId=" + getReferenceTypeId());
     joiner.add("isForward=" + getIsForward());

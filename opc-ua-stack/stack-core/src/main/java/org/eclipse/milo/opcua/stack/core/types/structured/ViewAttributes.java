@@ -92,7 +92,7 @@ public class ViewAttributes extends NodeAttributes implements UaStructuredType {
       return false;
     }
     ViewAttributes that = (ViewAttributes) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getContainsNoLoops(), that.getContainsNoLoops());
     eqb.append(getEventNotifier(), that.getEventNotifier());
@@ -101,7 +101,7 @@ public class ViewAttributes extends NodeAttributes implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getContainsNoLoops());
     hcb.append(getEventNotifier());
     hcb.appendSuper(super.hashCode());
@@ -110,7 +110,7 @@ public class ViewAttributes extends NodeAttributes implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ViewAttributes.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ViewAttributes.class.getSimpleName() + "[", "]");
     joiner.add("containsNoLoops=" + getContainsNoLoops());
     joiner.add("eventNotifier=" + getEventNotifier());
     return joiner.toString();

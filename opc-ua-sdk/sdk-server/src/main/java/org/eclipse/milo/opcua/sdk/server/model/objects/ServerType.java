@@ -178,7 +178,7 @@ public interface ServerType extends BaseObjectType {
                   "SubscriptionId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -197,7 +197,7 @@ public interface ServerType extends BaseObjectType {
                   "ServerHandles",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -205,7 +205,7 @@ public interface ServerType extends BaseObjectType {
                   "ClientHandles",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -250,7 +250,7 @@ public interface ServerType extends BaseObjectType {
                   "SubscriptionId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -297,7 +297,7 @@ public interface ServerType extends BaseObjectType {
                   "SubscriptionId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -305,7 +305,7 @@ public interface ServerType extends BaseObjectType {
                   "LifetimeInHours",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -324,7 +324,7 @@ public interface ServerType extends BaseObjectType {
                   "RevisedLifetimeInHours",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -369,7 +369,7 @@ public interface ServerType extends BaseObjectType {
                   "State",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=852")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -377,7 +377,7 @@ public interface ServerType extends BaseObjectType {
                   "EstimatedReturnTime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=13")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -385,7 +385,7 @@ public interface ServerType extends BaseObjectType {
                   "SecondsTillShutdown",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -393,7 +393,7 @@ public interface ServerType extends BaseObjectType {
                   "Reason",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=21")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -401,7 +401,7 @@ public interface ServerType extends BaseObjectType {
                   "Restart",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=1")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

@@ -83,7 +83,7 @@ public class DeleteNodesItem extends Structure implements UaStructuredType {
       return false;
     }
     DeleteNodesItem that = (DeleteNodesItem) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getDeleteTargetReferences(), that.getDeleteTargetReferences());
     return eqb.build();
@@ -91,7 +91,7 @@ public class DeleteNodesItem extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getDeleteTargetReferences());
     return hcb.build();
@@ -99,7 +99,7 @@ public class DeleteNodesItem extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DeleteNodesItem.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DeleteNodesItem.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("deleteTargetReferences=" + getDeleteTargetReferences());
     return joiner.toString();

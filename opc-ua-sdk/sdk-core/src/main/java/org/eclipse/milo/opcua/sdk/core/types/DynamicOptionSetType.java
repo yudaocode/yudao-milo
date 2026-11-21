@@ -11,7 +11,6 @@
 package org.eclipse.milo.opcua.sdk.core.types;
 
 import static java.util.Objects.requireNonNull;
-import static java.util.Objects.requireNonNullElse;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -171,7 +170,7 @@ public final class DynamicOptionSetType extends DynamicType implements UaStructu
           EnumDefinition definition = (EnumDefinition) dataType.getDataTypeDefinition();
           assert definition != null;
 
-          EnumField[] fields = requireNonNullElse(definition.getFields(), new EnumField[0]);
+          EnumField[] fields = definition.getFields() != null ? definition.getFields() : new EnumField[0];
 
           for (EnumField field : fields) {
             fieldMap.put(field.getValue().intValue(), field);
@@ -196,7 +195,7 @@ public final class DynamicOptionSetType extends DynamicType implements UaStructu
   }
 
   private static String toBitString(ByteString bs) {
-    var sb = new StringBuilder();
+    java.lang.StringBuilder sb = new StringBuilder();
     for (byte b : bs.bytesOrEmpty()) {
       for (int i = 0; i < 8; i++) {
         sb.append((b >> i & 1) == 1 ? "1" : "0");

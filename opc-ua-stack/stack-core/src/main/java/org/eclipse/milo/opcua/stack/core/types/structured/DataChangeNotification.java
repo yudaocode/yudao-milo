@@ -87,7 +87,7 @@ public class DataChangeNotification extends NotificationData implements UaStruct
       return false;
     }
     DataChangeNotification that = (DataChangeNotification) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMonitoredItems(), that.getMonitoredItems());
     eqb.append(getDiagnosticInfos(), that.getDiagnosticInfos());
     return eqb.build();
@@ -95,7 +95,7 @@ public class DataChangeNotification extends NotificationData implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMonitoredItems());
     hcb.append(getDiagnosticInfos());
     return hcb.build();
@@ -103,7 +103,7 @@ public class DataChangeNotification extends NotificationData implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataChangeNotification.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataChangeNotification.class.getSimpleName() + "[", "]");
     joiner.add("monitoredItems=" + java.util.Arrays.toString(getMonitoredItems()));
     joiner.add("diagnosticInfos=" + java.util.Arrays.toString(getDiagnosticInfos()));
     return joiner.toString();

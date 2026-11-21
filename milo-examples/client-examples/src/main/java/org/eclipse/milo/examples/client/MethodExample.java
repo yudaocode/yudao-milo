@@ -9,9 +9,10 @@
  */
 
 package org.eclipse.milo.examples.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static java.util.Objects.requireNonNull;
-import static java.util.Objects.requireNonNullElse;
+import static org.eclipse.milo.opcua.stack.core.util.Java8Collections.requireNonNullElse;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -58,11 +59,11 @@ public class MethodExample implements ClientExample {
     NodeId objectId = NodeId.parse("ns=2;s=HelloWorld");
     NodeId methodId = NodeId.parse("ns=2;s=HelloWorld/sqrt(x)");
 
-    var request =
+    CallMethodRequest request =
         new CallMethodRequest(objectId, methodId, new Variant[] {Variant.ofDouble(input)});
 
     CompletableFuture<CallMethodResult> future =
-        client.callAsync(List.of(request)).thenApply(r -> requireNonNull(r.getResults())[0]);
+        client.callAsync(Java8Collections.listOf(request)).thenApply(r -> requireNonNull(r.getResults())[0]);
 
     return future.thenCompose(
         result -> {

@@ -18,13 +18,47 @@ import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 
 @NullMarked
-public record DataValue(
-    Variant value,
-    StatusCode statusCode,
-    @Nullable DateTime sourceTime,
-    @Nullable UShort sourcePicoseconds,
-    @Nullable DateTime serverTime,
-    @Nullable UShort serverPicoseconds) {
+public final class DataValue {
+  private final Variant value;
+  private final StatusCode statusCode;
+  private final @Nullable DateTime sourceTime;
+  private final @Nullable UShort sourcePicoseconds;
+  private final @Nullable DateTime serverTime;
+  private final @Nullable UShort serverPicoseconds;
+
+  public Variant value() {
+    return value;
+  }
+
+  public StatusCode statusCode() {
+    return statusCode;
+  }
+
+  public @Nullable DateTime sourceTime() {
+    return sourceTime;
+  }
+
+  public @Nullable UShort sourcePicoseconds() {
+    return sourcePicoseconds;
+  }
+
+  public @Nullable DateTime serverTime() {
+    return serverTime;
+  }
+
+  public @Nullable UShort serverPicoseconds() {
+    return serverPicoseconds;
+  }
+
+  public DataValue(Variant value, StatusCode statusCode, @Nullable DateTime sourceTime, @Nullable UShort sourcePicoseconds, @Nullable DateTime serverTime, @Nullable UShort serverPicoseconds) {
+    this.value = value;
+    this.statusCode = statusCode;
+    this.sourceTime = sourceTime;
+    this.sourcePicoseconds = sourcePicoseconds;
+    this.serverTime = serverTime;
+    this.serverPicoseconds = serverPicoseconds;
+  }
+
 
   public DataValue(long statusCode) {
     this(new StatusCode(statusCode));

@@ -101,7 +101,7 @@ public class SamplingIntervalDiagnosticsDataType extends Structure implements Ua
       return false;
     }
     SamplingIntervalDiagnosticsDataType that = (SamplingIntervalDiagnosticsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSamplingInterval(), that.getSamplingInterval());
     eqb.append(getMonitoredItemCount(), that.getMonitoredItemCount());
     eqb.append(getMaxMonitoredItemCount(), that.getMaxMonitoredItemCount());
@@ -111,7 +111,7 @@ public class SamplingIntervalDiagnosticsDataType extends Structure implements Ua
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSamplingInterval());
     hcb.append(getMonitoredItemCount());
     hcb.append(getMaxMonitoredItemCount());
@@ -121,7 +121,7 @@ public class SamplingIntervalDiagnosticsDataType extends Structure implements Ua
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", SamplingIntervalDiagnosticsDataType.class.getSimpleName() + "[", "]");
     joiner.add("samplingInterval=" + getSamplingInterval());

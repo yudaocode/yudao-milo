@@ -75,27 +75,46 @@ public enum FilterOperator implements UaEnumeratedType {
   }
 
   public static @Nullable FilterOperator from(int value) {
-    return switch (value) {
-      case 0 -> Equals;
-      case 1 -> IsNull;
-      case 2 -> GreaterThan;
-      case 3 -> LessThan;
-      case 4 -> GreaterThanOrEqual;
-      case 5 -> LessThanOrEqual;
-      case 6 -> Like;
-      case 7 -> Not;
-      case 8 -> Between;
-      case 9 -> InList;
-      case 10 -> And;
-      case 11 -> Or;
-      case 12 -> Cast;
-      case 13 -> InView;
-      case 14 -> OfType;
-      case 15 -> RelatedTo;
-      case 16 -> BitwiseAnd;
-      case 17 -> BitwiseOr;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Equals;
+      case 1:
+        return IsNull;
+      case 2:
+        return GreaterThan;
+      case 3:
+        return LessThan;
+      case 4:
+        return GreaterThanOrEqual;
+      case 5:
+        return LessThanOrEqual;
+      case 6:
+        return Like;
+      case 7:
+        return Not;
+      case 8:
+        return Between;
+      case 9:
+        return InList;
+      case 10:
+        return And;
+      case 11:
+        return Or;
+      case 12:
+        return Cast;
+      case 13:
+        return InView;
+      case 14:
+        return OfType;
+      case 15:
+        return RelatedTo;
+      case 16:
+        return BitwiseAnd;
+      case 17:
+        return BitwiseOr;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

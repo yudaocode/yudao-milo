@@ -102,7 +102,7 @@ public class PubSubConfigurationRefDataType extends Structure implements UaStruc
       return false;
     }
     PubSubConfigurationRefDataType that = (PubSubConfigurationRefDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getConfigurationMask(), that.getConfigurationMask());
     eqb.append(getElementIndex(), that.getElementIndex());
     eqb.append(getConnectionIndex(), that.getConnectionIndex());
@@ -112,7 +112,7 @@ public class PubSubConfigurationRefDataType extends Structure implements UaStruc
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getConfigurationMask());
     hcb.append(getElementIndex());
     hcb.append(getConnectionIndex());
@@ -122,7 +122,7 @@ public class PubSubConfigurationRefDataType extends Structure implements UaStruc
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PubSubConfigurationRefDataType.class.getSimpleName() + "[", "]");
     joiner.add("configurationMask=" + getConfigurationMask());
     joiner.add("elementIndex=" + getElementIndex());

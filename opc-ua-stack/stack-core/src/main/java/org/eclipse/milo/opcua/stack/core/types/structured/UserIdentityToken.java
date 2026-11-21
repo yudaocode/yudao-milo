@@ -73,21 +73,21 @@ public abstract class UserIdentityToken extends Structure implements UaStructure
       return false;
     }
     UserIdentityToken that = (UserIdentityToken) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getPolicyId(), that.getPolicyId());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPolicyId());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UserIdentityToken.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UserIdentityToken.class.getSimpleName() + "[", "]");
     joiner.add("policyId='" + getPolicyId() + "'");
     return joiner.toString();
   }

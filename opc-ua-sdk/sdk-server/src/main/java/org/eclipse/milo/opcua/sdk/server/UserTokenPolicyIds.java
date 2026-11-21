@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -122,7 +123,7 @@ final class UserTokenPolicyIds {
       EndpointConfig endpoint, UserTokenPolicy tokenPolicy) {
 
     return new UserTokenPolicy(
-        Objects.requireNonNullElse(tokenPolicy.getPolicyId(), ""),
+        Java8Collections.requireNonNullElse(tokenPolicy.getPolicyId(), ""),
         tokenPolicy.getTokenType(),
         tokenPolicy.getIssuedTokenType(),
         tokenPolicy.getIssuerEndpointUrl(),

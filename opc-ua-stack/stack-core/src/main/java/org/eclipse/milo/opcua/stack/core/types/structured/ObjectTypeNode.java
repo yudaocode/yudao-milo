@@ -100,7 +100,7 @@ public class ObjectTypeNode extends TypeNode implements UaStructuredType {
       return false;
     }
     ObjectTypeNode that = (ObjectTypeNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getIsAbstract(), that.getIsAbstract());
     return eqb.build();
@@ -108,7 +108,7 @@ public class ObjectTypeNode extends TypeNode implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getIsAbstract());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -116,7 +116,7 @@ public class ObjectTypeNode extends TypeNode implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ObjectTypeNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ObjectTypeNode.class.getSimpleName() + "[", "]");
     joiner.add("isAbstract=" + getIsAbstract());
     return joiner.toString();
   }

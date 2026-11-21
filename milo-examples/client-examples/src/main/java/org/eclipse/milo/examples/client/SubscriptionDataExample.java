@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 public class SubscriptionDataExample implements ClientExample {
 
   public static void main(String[] args) throws Exception {
-    var example = new SubscriptionDataExample();
+    org.eclipse.milo.examples.client.SubscriptionDataExample example = new SubscriptionDataExample();
 
     new ClientExampleRunner(example).run();
   }
@@ -35,7 +35,7 @@ public class SubscriptionDataExample implements ClientExample {
   public void run(OpcUaClient client, CompletableFuture<OpcUaClient> future) throws Exception {
     client.connect();
 
-    var subscription = new OpcUaSubscription(client);
+    org.eclipse.milo.opcua.sdk.client.subscriptions.OpcUaSubscription subscription = new OpcUaSubscription(client);
 
     // Set a listener for data changes at the subscription level.
     subscription.setSubscriptionListener(
@@ -58,7 +58,7 @@ public class SubscriptionDataExample implements ClientExample {
     // Create the subscription on the server.
     subscription.create();
 
-    var monitoredItem = OpcUaMonitoredItem.newDataItem(NodeIds.Server_ServerStatus_CurrentTime);
+    OpcUaMonitoredItem monitoredItem = OpcUaMonitoredItem.newDataItem(NodeIds.Server_ServerStatus_CurrentTime);
 
     // Set a listener for data changes at the monitored item level.
     monitoredItem.setDataValueListener(

@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.nodes;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.sdk.core.Reference.HAS_COMPONENT_PREDICATE;
 import static org.eclipse.milo.opcua.sdk.core.Reference.HAS_ORDERED_COMPONENT_PREDICATE;
@@ -132,7 +133,7 @@ public class UaObjectTypeNode extends UaNode implements ObjectTypeNode {
   public UaMethodNode findMethodNode(NodeId methodId) {
     return getReferences().stream()
         .filter(HAS_COMPONENT_PREDICATE.or(HAS_ORDERED_COMPONENT_PREDICATE))
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .filter(n -> (n instanceof UaMethodNode) && Objects.equals(n.getNodeId(), methodId))
         .map(UaMethodNode.class::cast)
         .findFirst()
@@ -142,7 +143,7 @@ public class UaObjectTypeNode extends UaNode implements ObjectTypeNode {
   public List<UaMethodNode> getMethodNodes() {
     return getReferences().stream()
         .filter(HAS_COMPONENT_PREDICATE.or(HAS_ORDERED_COMPONENT_PREDICATE))
-        .flatMap(r -> getManagedNode(r.getTargetNodeId()).stream())
+        .flatMap(r -> Java8Collections.optionalStream(getManagedNode(r.getTargetNodeId())))
         .filter(n -> (n instanceof UaMethodNode))
         .map(UaMethodNode.class::cast)
         .collect(Collectors.toList());

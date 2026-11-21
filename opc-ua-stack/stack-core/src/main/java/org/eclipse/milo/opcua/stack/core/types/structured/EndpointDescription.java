@@ -137,7 +137,7 @@ public class EndpointDescription extends Structure implements UaStructuredType {
       return false;
     }
     EndpointDescription that = (EndpointDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getEndpointUrl(), that.getEndpointUrl());
     eqb.append(getServer(), that.getServer());
     eqb.append(getServerCertificate(), that.getServerCertificate());
@@ -151,7 +151,7 @@ public class EndpointDescription extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEndpointUrl());
     hcb.append(getServer());
     hcb.append(getServerCertificate());
@@ -165,7 +165,7 @@ public class EndpointDescription extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EndpointDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EndpointDescription.class.getSimpleName() + "[", "]");
     joiner.add("endpointUrl='" + getEndpointUrl() + "'");
     joiner.add("server=" + getServer());
     joiner.add("serverCertificate=" + getServerCertificate());

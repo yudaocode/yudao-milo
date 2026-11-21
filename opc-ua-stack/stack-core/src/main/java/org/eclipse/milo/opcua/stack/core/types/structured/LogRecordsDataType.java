@@ -77,21 +77,21 @@ public class LogRecordsDataType extends Structure implements UaStructuredType {
       return false;
     }
     LogRecordsDataType that = (LogRecordsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getLogRecordArray(), that.getLogRecordArray());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getLogRecordArray());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LogRecordsDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LogRecordsDataType.class.getSimpleName() + "[", "]");
     joiner.add("logRecordArray=" + java.util.Arrays.toString(getLogRecordArray()));
     return joiner.toString();
   }

@@ -11,14 +11,23 @@
 package org.eclipse.milo.opcua.stack.core.types.builtin;
 
 import java.util.Arrays;
-import java.util.HexFormat;
 import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UByte;
 import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned;
 import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 
 @NullMarked
-public record ByteString(byte @Nullable [] bytes) {
+public final class ByteString {
+  private final byte @Nullable [] bytes;
+
+  public byte @Nullable [] bytes() {
+    return bytes;
+  }
+
+  public ByteString(byte @Nullable [] bytes) {
+    this.bytes = bytes;
+  }
+
 
   public static final ByteString NULL_VALUE = new ByteString(null);
 
@@ -98,7 +107,14 @@ public record ByteString(byte @Nullable [] bytes) {
 
   @Override
   public String toString() {
-    return "ByteString[bytes=" + (bytes == null ? "null" : HexFormat.of().formatHex(bytes)) + "]";
+    return "ByteString[bytes=" + (bytes == null ? "null" : toHex(bytes)) + "]";
+  }
+
+  private static String toHex(byte[] bytes) {
+    char[] hex = "0123456789abcdef".toCharArray();
+    char[] out = new char[bytes.length * 2];
+    for (int i = 0; i < bytes.length; i++) { out[i * 2] = hex[(bytes[i] >>> 4) & 0xf]; out[i * 2 + 1] = hex[bytes[i] & 0xf]; }
+    return new String(out);
   }
 
   public static ByteString of(byte[] bs) {

@@ -162,14 +162,20 @@ public class UaVariableTypeNode extends UaNode implements VariableTypeNode {
 
   @Override
   public synchronized Object getAttribute(AttributeId attributeId) {
-    return switch (attributeId) {
-      case Value -> value;
-      case DataType -> dataType;
-      case ValueRank -> valueRank;
-      case ArrayDimensions -> arrayDimensions;
-      case IsAbstract -> isAbstract;
-      default -> super.getAttribute(attributeId);
-    };
+    switch ((attributeId)) {
+      case Value:
+        return value;
+      case DataType:
+        return dataType;
+      case ValueRank:
+        return valueRank;
+      case ArrayDimensions:
+        return arrayDimensions;
+      case IsAbstract:
+        return isAbstract;
+      default:
+        return super.getAttribute(attributeId);
+    }
   }
 
   @Override

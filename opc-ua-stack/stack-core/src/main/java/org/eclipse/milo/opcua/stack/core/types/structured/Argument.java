@@ -110,7 +110,7 @@ public class Argument extends Structure implements UaStructuredType {
       return false;
     }
     Argument that = (Argument) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getDataType(), that.getDataType());
     eqb.append(getValueRank(), that.getValueRank());
@@ -121,7 +121,7 @@ public class Argument extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getDataType());
     hcb.append(getValueRank());
@@ -132,7 +132,7 @@ public class Argument extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", Argument.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", Argument.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("dataType=" + getDataType());
     joiner.add("valueRank=" + getValueRank());

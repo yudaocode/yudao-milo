@@ -94,7 +94,7 @@ public class UserManagementDataType extends Structure implements UaStructuredTyp
       return false;
     }
     UserManagementDataType that = (UserManagementDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getUserName(), that.getUserName());
     eqb.append(getUserConfiguration(), that.getUserConfiguration());
     eqb.append(getDescription(), that.getDescription());
@@ -103,7 +103,7 @@ public class UserManagementDataType extends Structure implements UaStructuredTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getUserName());
     hcb.append(getUserConfiguration());
     hcb.append(getDescription());
@@ -112,7 +112,7 @@ public class UserManagementDataType extends Structure implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UserManagementDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UserManagementDataType.class.getSimpleName() + "[", "]");
     joiner.add("userName='" + getUserName() + "'");
     joiner.add("userConfiguration=" + getUserConfiguration());
     joiner.add("description='" + getDescription() + "'");

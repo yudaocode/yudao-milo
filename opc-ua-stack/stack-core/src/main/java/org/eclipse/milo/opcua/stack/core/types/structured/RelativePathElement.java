@@ -102,7 +102,7 @@ public class RelativePathElement extends Structure implements UaStructuredType {
       return false;
     }
     RelativePathElement that = (RelativePathElement) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getReferenceTypeId(), that.getReferenceTypeId());
     eqb.append(getIsInverse(), that.getIsInverse());
     eqb.append(getIncludeSubtypes(), that.getIncludeSubtypes());
@@ -112,7 +112,7 @@ public class RelativePathElement extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReferenceTypeId());
     hcb.append(getIsInverse());
     hcb.append(getIncludeSubtypes());
@@ -122,7 +122,7 @@ public class RelativePathElement extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RelativePathElement.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RelativePathElement.class.getSimpleName() + "[", "]");
     joiner.add("referenceTypeId=" + getReferenceTypeId());
     joiner.add("isInverse=" + getIsInverse());
     joiner.add("includeSubtypes=" + getIncludeSubtypes());

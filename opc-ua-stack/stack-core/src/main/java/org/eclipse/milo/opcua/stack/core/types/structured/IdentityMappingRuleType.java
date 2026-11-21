@@ -85,7 +85,7 @@ public class IdentityMappingRuleType extends Structure implements UaStructuredTy
       return false;
     }
     IdentityMappingRuleType that = (IdentityMappingRuleType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getCriteriaType(), that.getCriteriaType());
     eqb.append(getCriteria(), that.getCriteria());
     return eqb.build();
@@ -93,7 +93,7 @@ public class IdentityMappingRuleType extends Structure implements UaStructuredTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getCriteriaType());
     hcb.append(getCriteria());
     return hcb.build();
@@ -101,7 +101,7 @@ public class IdentityMappingRuleType extends Structure implements UaStructuredTy
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", IdentityMappingRuleType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", IdentityMappingRuleType.class.getSimpleName() + "[", "]");
     joiner.add("criteriaType=" + getCriteriaType());
     joiner.add("criteria='" + getCriteria() + "'");
     return joiner.toString();

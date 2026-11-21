@@ -79,7 +79,7 @@ public class HistoryModifiedEvent extends HistoryEvent implements UaStructuredTy
       return false;
     }
     HistoryModifiedEvent that = (HistoryModifiedEvent) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getModificationInfos(), that.getModificationInfos());
     return eqb.build();
@@ -87,7 +87,7 @@ public class HistoryModifiedEvent extends HistoryEvent implements UaStructuredTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getModificationInfos());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -95,7 +95,7 @@ public class HistoryModifiedEvent extends HistoryEvent implements UaStructuredTy
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryModifiedEvent.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryModifiedEvent.class.getSimpleName() + "[", "]");
     joiner.add("modificationInfos=" + java.util.Arrays.toString(getModificationInfos()));
     return joiner.toString();
   }

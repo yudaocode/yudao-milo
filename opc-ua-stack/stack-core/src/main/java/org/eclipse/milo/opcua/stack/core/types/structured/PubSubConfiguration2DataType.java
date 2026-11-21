@@ -131,7 +131,7 @@ public class PubSubConfiguration2DataType extends PubSubConfigurationDataType
       return false;
     }
     PubSubConfiguration2DataType that = (PubSubConfiguration2DataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getSubscribedDataSets(), that.getSubscribedDataSets());
     eqb.append(getDataSetClasses(), that.getDataSetClasses());
@@ -145,7 +145,7 @@ public class PubSubConfiguration2DataType extends PubSubConfigurationDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSubscribedDataSets());
     hcb.append(getDataSetClasses());
     hcb.append(getDefaultSecurityKeyServices());
@@ -159,7 +159,7 @@ public class PubSubConfiguration2DataType extends PubSubConfigurationDataType
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", PubSubConfiguration2DataType.class.getSimpleName() + "[", "]");
     joiner.add("subscribedDataSets=" + java.util.Arrays.toString(getSubscribedDataSets()));
     joiner.add("dataSetClasses=" + java.util.Arrays.toString(getDataSetClasses()));

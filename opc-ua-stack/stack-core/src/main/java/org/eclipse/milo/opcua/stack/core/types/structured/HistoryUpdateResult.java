@@ -96,7 +96,7 @@ public class HistoryUpdateResult extends Structure implements UaStructuredType {
       return false;
     }
     HistoryUpdateResult that = (HistoryUpdateResult) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStatusCode(), that.getStatusCode());
     eqb.append(getOperationResults(), that.getOperationResults());
     eqb.append(getDiagnosticInfos(), that.getDiagnosticInfos());
@@ -105,7 +105,7 @@ public class HistoryUpdateResult extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStatusCode());
     hcb.append(getOperationResults());
     hcb.append(getDiagnosticInfos());
@@ -114,7 +114,7 @@ public class HistoryUpdateResult extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryUpdateResult.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryUpdateResult.class.getSimpleName() + "[", "]");
     joiner.add("statusCode=" + getStatusCode());
     joiner.add("operationResults=" + java.util.Arrays.toString(getOperationResults()));
     joiner.add("diagnosticInfos=" + java.util.Arrays.toString(getDiagnosticInfos()));

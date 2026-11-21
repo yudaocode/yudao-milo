@@ -83,7 +83,7 @@ public class RegisterServerRequest extends Structure implements UaRequestMessage
       return false;
     }
     RegisterServerRequest that = (RegisterServerRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getServer(), that.getServer());
     return eqb.build();
@@ -91,7 +91,7 @@ public class RegisterServerRequest extends Structure implements UaRequestMessage
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getServer());
     return hcb.build();
@@ -99,7 +99,7 @@ public class RegisterServerRequest extends Structure implements UaRequestMessage
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RegisterServerRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RegisterServerRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("server=" + getServer());
     return joiner.toString();

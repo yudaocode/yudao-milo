@@ -72,18 +72,28 @@ public enum IdentityCriteriaType implements UaEnumeratedType {
   }
 
   public static @Nullable IdentityCriteriaType from(int value) {
-    return switch (value) {
-      case 1 -> UserName;
-      case 2 -> Thumbprint;
-      case 3 -> Role;
-      case 4 -> GroupId;
-      case 5 -> Anonymous;
-      case 6 -> AuthenticatedUser;
-      case 7 -> Application;
-      case 8 -> X509Subject;
-      case 9 -> TrustedApplication;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return UserName;
+      case 2:
+        return Thumbprint;
+      case 3:
+        return Role;
+      case 4:
+        return GroupId;
+      case 5:
+        return Anonymous;
+      case 6:
+        return AuthenticatedUser;
+      case 7:
+        return Application;
+      case 8:
+        return X509Subject;
+      case 9:
+        return TrustedApplication;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

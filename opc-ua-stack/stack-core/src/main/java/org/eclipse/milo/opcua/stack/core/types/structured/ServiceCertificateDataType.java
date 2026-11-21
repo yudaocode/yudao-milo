@@ -104,7 +104,7 @@ public class ServiceCertificateDataType extends Structure implements UaStructure
       return false;
     }
     ServiceCertificateDataType that = (ServiceCertificateDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getCertificate(), that.getCertificate());
     eqb.append(getIssuers(), that.getIssuers());
     eqb.append(getValidFrom(), that.getValidFrom());
@@ -114,7 +114,7 @@ public class ServiceCertificateDataType extends Structure implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getCertificate());
     hcb.append(getIssuers());
     hcb.append(getValidFrom());
@@ -124,7 +124,7 @@ public class ServiceCertificateDataType extends Structure implements UaStructure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ServiceCertificateDataType.class.getSimpleName() + "[", "]");
     joiner.add("certificate=" + getCertificate());
     joiner.add("issuers=" + java.util.Arrays.toString(getIssuers()));

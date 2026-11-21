@@ -67,7 +67,8 @@ class FieldUtil {
 
     Object value = _decodeFieldValue(decoder, definition, field, fieldHints);
 
-    if (value instanceof Variant v && v.getValue() != null) {
+    if (value instanceof Variant && ((Variant) value).getValue() != null) {
+      Variant v = (Variant) value;
       value = Variant.of(maybeEagerlyDecodeValue(decoder, field, v.getValue()));
     } else {
       value = maybeEagerlyDecodeValue(decoder, field, value);
@@ -90,9 +91,11 @@ class FieldUtil {
       UaDecoder decoder, StructureField field, Object value) {
 
     try {
-      if (value instanceof ExtensionObject xo) {
+      if (value instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) value;
         return eagerlyDecodeExtensionObject(decoder, xo);
-      } else if (value instanceof ExtensionObject[] xos) {
+      } else if (value instanceof ExtensionObject[]) {
+      ExtensionObject[] xos = (ExtensionObject[]) value;
         Object decodedArray = null;
         for (int i = 0; i < xos.length; i++) {
           Object decoded = eagerlyDecodeExtensionObject(decoder, xos[i]);
@@ -104,7 +107,8 @@ class FieldUtil {
         if (decodedArray != null) {
           return decodedArray;
         }
-      } else if (value instanceof Matrix matrix) {
+      } else if (value instanceof Matrix) {
+      Matrix matrix = (Matrix) value;
         Class<?> elementType = matrix.getElementType().orElse(Object.class);
 
         if (elementType == ExtensionObject.class) {
@@ -162,9 +166,11 @@ class FieldUtil {
     Integer valueRank = field.getValueRank();
 
     if (valueRank == -1) {
-      if (fieldHint instanceof FieldHint.Builtin hint) {
+      if (fieldHint instanceof FieldHint.Builtin) {
+      FieldHint.Builtin hint = (FieldHint.Builtin) fieldHint;
         return decodeBuiltinDataType(decoder, fieldName, hint.dataType);
-      } else if (fieldHint instanceof FieldHint.Enum hint) {
+      } else if (fieldHint instanceof FieldHint.Enum) {
+      FieldHint.Enum hint = (FieldHint.Enum) fieldHint;
         Integer enumValue = decoder.decodeEnum(fieldName);
 
         return new DynamicEnumType(hint.dataType, enumValue);
@@ -180,9 +186,11 @@ class FieldUtil {
         throw new IllegalArgumentException("hint: " + fieldHint);
       }
     } else if (valueRank == 1) {
-      if (fieldHint instanceof FieldHint.Builtin hint) {
+      if (fieldHint instanceof FieldHint.Builtin) {
+      FieldHint.Builtin hint = (FieldHint.Builtin) fieldHint;
         return decodeBuiltinDataTypeArray(decoder, fieldName, hint.dataType);
-      } else if (fieldHint instanceof FieldHint.Enum hint) {
+      } else if (fieldHint instanceof FieldHint.Enum) {
+      FieldHint.Enum hint = (FieldHint.Enum) fieldHint;
         Integer[] enumValues = decoder.decodeEnumArray(fieldName);
 
         return Arrays.stream(enumValues)
@@ -202,9 +210,11 @@ class FieldUtil {
         throw new IllegalArgumentException("hint: " + fieldHint);
       }
     } else if (valueRank > 1) {
-      if (fieldHint instanceof FieldHint.Builtin hint) {
+      if (fieldHint instanceof FieldHint.Builtin) {
+      FieldHint.Builtin hint = (FieldHint.Builtin) fieldHint;
         return decoder.decodeMatrix(fieldName, hint.dataType);
-      } else if (fieldHint instanceof FieldHint.Enum hint) {
+      } else if (fieldHint instanceof FieldHint.Enum) {
+      FieldHint.Enum hint = (FieldHint.Enum) fieldHint;
         Matrix matrix = decoder.decodeEnumMatrix(fieldName);
 
         return matrix.transform(
@@ -252,9 +262,11 @@ class FieldUtil {
     Integer valueRank = field.getValueRank();
 
     if (valueRank == -1) {
-      if (fieldHint instanceof FieldHint.Builtin hint) {
+      if (fieldHint instanceof FieldHint.Builtin) {
+      FieldHint.Builtin hint = (FieldHint.Builtin) fieldHint;
         if (hint.dataType == OpcUaDataType.ExtensionObject
-            && value instanceof UaStructuredType structuredType) {
+            && value instanceof UaStructuredType) {
+          UaStructuredType structuredType = (UaStructuredType) value;
 
           ExtensionObject xo = ExtensionObject.encode(encoder.getEncodingContext(), structuredType);
 
@@ -276,9 +288,11 @@ class FieldUtil {
         throw new IllegalArgumentException("hint: " + fieldHint);
       }
     } else if (valueRank == 1) {
-      if (fieldHint instanceof FieldHint.Builtin hint) {
+      if (fieldHint instanceof FieldHint.Builtin) {
+      FieldHint.Builtin hint = (FieldHint.Builtin) fieldHint;
         if (hint.dataType == OpcUaDataType.ExtensionObject
-            && value instanceof UaStructuredType[] structuredTypes) {
+            && value instanceof UaStructuredType[]) {
+          UaStructuredType[] structuredTypes = (UaStructuredType[]) value;
 
           ExtensionObject[] xos =
               Arrays.stream(structuredTypes)
@@ -310,7 +324,8 @@ class FieldUtil {
     } else if (valueRank > 1) {
       Matrix matrix = (Matrix) value;
 
-      if (fieldHint instanceof FieldHint.Builtin hint) {
+      if (fieldHint instanceof FieldHint.Builtin) {
+      FieldHint.Builtin hint = (FieldHint.Builtin) fieldHint;
         if (hint.dataType == OpcUaDataType.ExtensionObject
             && UaStructuredType.class.isAssignableFrom(
                 matrix.getElementType().orElse(Object.class))) {
@@ -369,7 +384,7 @@ class FieldUtil {
       StructureDefinition definition, DataTypeTree dataTypeTree) {
 
     StructureField[] fields =
-        Objects.requireNonNullElse(definition.getFields(), new StructureField[0]);
+        definition.getFields() != null ? definition.getFields() : new StructureField[0];
 
     Map<StructureField, FieldHint> fieldHints = new HashMap<>();
 
@@ -398,65 +413,117 @@ class FieldUtil {
   private static Object decodeBuiltinDataType(
       UaDecoder decoder, String fieldName, OpcUaDataType dataType) {
 
-    return switch (dataType) {
-      case Boolean -> decoder.decodeBoolean(fieldName);
-      case SByte -> decoder.decodeSByte(fieldName);
-      case Byte -> decoder.decodeByte(fieldName);
-      case Int16 -> decoder.decodeInt16(fieldName);
-      case UInt16 -> decoder.decodeUInt16(fieldName);
-      case Int32 -> decoder.decodeInt32(fieldName);
-      case UInt32 -> decoder.decodeUInt32(fieldName);
-      case Int64 -> decoder.decodeInt64(fieldName);
-      case UInt64 -> decoder.decodeUInt64(fieldName);
-      case Float -> decoder.decodeFloat(fieldName);
-      case Double -> decoder.decodeDouble(fieldName);
-      case String -> decoder.decodeString(fieldName);
-      case DateTime -> decoder.decodeDateTime(fieldName);
-      case Guid -> decoder.decodeGuid(fieldName);
-      case ByteString -> decoder.decodeByteString(fieldName);
-      case XmlElement -> decoder.decodeXmlElement(fieldName);
-      case NodeId -> decoder.decodeNodeId(fieldName);
-      case ExpandedNodeId -> decoder.decodeExpandedNodeId(fieldName);
-      case StatusCode -> decoder.decodeStatusCode(fieldName);
-      case QualifiedName -> decoder.decodeQualifiedName(fieldName);
-      case LocalizedText -> decoder.decodeLocalizedText(fieldName);
-      case ExtensionObject -> decoder.decodeExtensionObject(fieldName);
-      case DataValue -> decoder.decodeDataValue(fieldName);
-      case Variant -> decoder.decodeVariant(fieldName);
-      case DiagnosticInfo -> decoder.decodeDiagnosticInfo(fieldName);
-    };
+    switch ((dataType)) {
+      case Boolean:
+        return decoder.decodeBoolean(fieldName);
+      case SByte:
+        return decoder.decodeSByte(fieldName);
+      case Byte:
+        return decoder.decodeByte(fieldName);
+      case Int16:
+        return decoder.decodeInt16(fieldName);
+      case UInt16:
+        return decoder.decodeUInt16(fieldName);
+      case Int32:
+        return decoder.decodeInt32(fieldName);
+      case UInt32:
+        return decoder.decodeUInt32(fieldName);
+      case Int64:
+        return decoder.decodeInt64(fieldName);
+      case UInt64:
+        return decoder.decodeUInt64(fieldName);
+      case Float:
+        return decoder.decodeFloat(fieldName);
+      case Double:
+        return decoder.decodeDouble(fieldName);
+      case String:
+        return decoder.decodeString(fieldName);
+      case DateTime:
+        return decoder.decodeDateTime(fieldName);
+      case Guid:
+        return decoder.decodeGuid(fieldName);
+      case ByteString:
+        return decoder.decodeByteString(fieldName);
+      case XmlElement:
+        return decoder.decodeXmlElement(fieldName);
+      case NodeId:
+        return decoder.decodeNodeId(fieldName);
+      case ExpandedNodeId:
+        return decoder.decodeExpandedNodeId(fieldName);
+      case StatusCode:
+        return decoder.decodeStatusCode(fieldName);
+      case QualifiedName:
+        return decoder.decodeQualifiedName(fieldName);
+      case LocalizedText:
+        return decoder.decodeLocalizedText(fieldName);
+      case ExtensionObject:
+        return decoder.decodeExtensionObject(fieldName);
+      case DataValue:
+        return decoder.decodeDataValue(fieldName);
+      case Variant:
+        return decoder.decodeVariant(fieldName);
+      case DiagnosticInfo:
+        return decoder.decodeDiagnosticInfo(fieldName);
+      default: throw new IllegalArgumentException("dataType=" + dataType);
+    }
   }
 
   private static Object decodeBuiltinDataTypeArray(
       UaDecoder decoder, String fieldName, OpcUaDataType dataType) {
 
-    return switch (dataType) {
-      case Boolean -> decoder.decodeBooleanArray(fieldName);
-      case SByte -> decoder.decodeSByteArray(fieldName);
-      case Byte -> decoder.decodeByteArray(fieldName);
-      case Int16 -> decoder.decodeInt16Array(fieldName);
-      case UInt16 -> decoder.decodeUInt16Array(fieldName);
-      case Int32 -> decoder.decodeInt32Array(fieldName);
-      case UInt32 -> decoder.decodeUInt32Array(fieldName);
-      case Int64 -> decoder.decodeInt64Array(fieldName);
-      case UInt64 -> decoder.decodeUInt64Array(fieldName);
-      case Float -> decoder.decodeFloatArray(fieldName);
-      case Double -> decoder.decodeDoubleArray(fieldName);
-      case String -> decoder.decodeStringArray(fieldName);
-      case DateTime -> decoder.decodeDateTimeArray(fieldName);
-      case Guid -> decoder.decodeGuidArray(fieldName);
-      case ByteString -> decoder.decodeByteStringArray(fieldName);
-      case XmlElement -> decoder.decodeXmlElementArray(fieldName);
-      case NodeId -> decoder.decodeNodeIdArray(fieldName);
-      case ExpandedNodeId -> decoder.decodeExpandedNodeIdArray(fieldName);
-      case StatusCode -> decoder.decodeStatusCodeArray(fieldName);
-      case QualifiedName -> decoder.decodeQualifiedNameArray(fieldName);
-      case LocalizedText -> decoder.decodeLocalizedTextArray(fieldName);
-      case ExtensionObject -> decoder.decodeExtensionObjectArray(fieldName);
-      case DataValue -> decoder.decodeDataValueArray(fieldName);
-      case Variant -> decoder.decodeVariantArray(fieldName);
-      case DiagnosticInfo -> decoder.decodeDiagnosticInfoArray(fieldName);
-    };
+    switch ((dataType)) {
+      case Boolean:
+        return decoder.decodeBooleanArray(fieldName);
+      case SByte:
+        return decoder.decodeSByteArray(fieldName);
+      case Byte:
+        return decoder.decodeByteArray(fieldName);
+      case Int16:
+        return decoder.decodeInt16Array(fieldName);
+      case UInt16:
+        return decoder.decodeUInt16Array(fieldName);
+      case Int32:
+        return decoder.decodeInt32Array(fieldName);
+      case UInt32:
+        return decoder.decodeUInt32Array(fieldName);
+      case Int64:
+        return decoder.decodeInt64Array(fieldName);
+      case UInt64:
+        return decoder.decodeUInt64Array(fieldName);
+      case Float:
+        return decoder.decodeFloatArray(fieldName);
+      case Double:
+        return decoder.decodeDoubleArray(fieldName);
+      case String:
+        return decoder.decodeStringArray(fieldName);
+      case DateTime:
+        return decoder.decodeDateTimeArray(fieldName);
+      case Guid:
+        return decoder.decodeGuidArray(fieldName);
+      case ByteString:
+        return decoder.decodeByteStringArray(fieldName);
+      case XmlElement:
+        return decoder.decodeXmlElementArray(fieldName);
+      case NodeId:
+        return decoder.decodeNodeIdArray(fieldName);
+      case ExpandedNodeId:
+        return decoder.decodeExpandedNodeIdArray(fieldName);
+      case StatusCode:
+        return decoder.decodeStatusCodeArray(fieldName);
+      case QualifiedName:
+        return decoder.decodeQualifiedNameArray(fieldName);
+      case LocalizedText:
+        return decoder.decodeLocalizedTextArray(fieldName);
+      case ExtensionObject:
+        return decoder.decodeExtensionObjectArray(fieldName);
+      case DataValue:
+        return decoder.decodeDataValueArray(fieldName);
+      case Variant:
+        return decoder.decodeVariantArray(fieldName);
+      case DiagnosticInfo:
+        return decoder.decodeDiagnosticInfoArray(fieldName);
+      default: throw new IllegalArgumentException("dataType=" + dataType);
+    }
   }
 
   private static void encodeBuiltinDataType(
@@ -629,12 +696,36 @@ class FieldUtil {
     }
   }
 
-  sealed interface FieldHint permits FieldHint.Builtin, FieldHint.Enum, FieldHint.Struct {
+  interface FieldHint {
 
-    record Builtin(OpcUaDataType dataType) implements FieldHint {}
+    static final class Builtin implements FieldHint {
+      private final OpcUaDataType dataType;
 
-    record Enum(DataType dataType) implements FieldHint {}
+      public OpcUaDataType dataType() {
+        return dataType;
+      }
 
-    record Struct() implements FieldHint {}
+      Builtin(OpcUaDataType dataType) {
+        this.dataType = dataType;
+      }
+}
+
+    static final class Enum implements FieldHint {
+      private final DataType dataType;
+
+      public DataType dataType() {
+        return dataType;
+      }
+
+      Enum(DataType dataType) {
+        this.dataType = dataType;
+      }
+}
+
+    static final class Struct implements FieldHint {
+
+      Struct() {
+      }
+}
   }
 }

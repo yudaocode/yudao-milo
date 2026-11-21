@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
@@ -108,8 +109,8 @@ public enum OpcUaDataType {
     primitiveBuiltinTypes.put(float.class, 10);
     primitiveBuiltinTypes.put(double.class, 11);
 
-    PRIMITIVE_BUILTIN_TYPES = Map.copyOf(primitiveBuiltinTypes);
-    PRIMITIVE_BUILTIN_TYPES_INVERSE = Map.copyOf(primitiveBuiltinTypes.inverse());
+    PRIMITIVE_BUILTIN_TYPES = Java8Collections.mapCopyOf(primitiveBuiltinTypes);
+    PRIMITIVE_BUILTIN_TYPES_INVERSE = Java8Collections.mapCopyOf(primitiveBuiltinTypes.inverse());
   }
 
   /**
@@ -172,7 +173,8 @@ public enum OpcUaDataType {
 
   @Nullable
   public static OpcUaDataType fromNodeId(ExpandedNodeId nodeId) {
-    if (nodeId.isOpcUaNamespace() && nodeId.getIdentifier() instanceof UInteger id) {
+    if (nodeId.isOpcUaNamespace() && nodeId.getIdentifier() instanceof UInteger) {
+      UInteger id = (UInteger) nodeId.getIdentifier();
       return fromNodeId(new NodeId(0, id));
     } else {
       return null;

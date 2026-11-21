@@ -10,8 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.client.session;
 
-import com.digitalpetri.fsm.Fsm;
-import com.digitalpetri.fsm.FsmContext;
+import com.digitalpetri.strictmachine.Fsm;
+import com.digitalpetri.strictmachine.FsmContext;
 import com.digitalpetri.netty.fsm.ChannelFsm;
 import com.google.common.util.concurrent.MoreExecutors;
 import java.util.List;

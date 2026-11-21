@@ -103,7 +103,7 @@ public class UadpDataSetWriterMessageDataType extends DataSetWriterMessageDataTy
       return false;
     }
     UadpDataSetWriterMessageDataType that = (UadpDataSetWriterMessageDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDataSetMessageContentMask(), that.getDataSetMessageContentMask());
     eqb.append(getConfiguredSize(), that.getConfiguredSize());
     eqb.append(getNetworkMessageNumber(), that.getNetworkMessageNumber());
@@ -113,7 +113,7 @@ public class UadpDataSetWriterMessageDataType extends DataSetWriterMessageDataTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDataSetMessageContentMask());
     hcb.append(getConfiguredSize());
     hcb.append(getNetworkMessageNumber());
@@ -123,7 +123,7 @@ public class UadpDataSetWriterMessageDataType extends DataSetWriterMessageDataTy
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", UadpDataSetWriterMessageDataType.class.getSimpleName() + "[", "]");
     joiner.add("dataSetMessageContentMask=" + getDataSetMessageContentMask());
     joiner.add("configuredSize=" + getConfiguredSize());

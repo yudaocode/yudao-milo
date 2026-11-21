@@ -85,7 +85,7 @@ public class AliasUpdateDataType extends Structure implements UaStructuredType {
       return false;
     }
     AliasUpdateDataType that = (AliasUpdateDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getApplicationUri(), that.getApplicationUri());
     eqb.append(getCategories(), that.getCategories());
     return eqb.build();
@@ -93,7 +93,7 @@ public class AliasUpdateDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getApplicationUri());
     hcb.append(getCategories());
     return hcb.build();
@@ -101,7 +101,7 @@ public class AliasUpdateDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AliasUpdateDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AliasUpdateDataType.class.getSimpleName() + "[", "]");
     joiner.add("applicationUri='" + getApplicationUri() + "'");
     joiner.add("categories=" + java.util.Arrays.toString(getCategories()));
     return joiner.toString();

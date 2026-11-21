@@ -43,11 +43,14 @@ public enum SortOrderType implements UaEnumeratedType {
   }
 
   public static @Nullable SortOrderType from(int value) {
-    return switch (value) {
-      case 0 -> Ascending;
-      case 1 -> Descending;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Ascending;
+      case 1:
+        return Descending;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

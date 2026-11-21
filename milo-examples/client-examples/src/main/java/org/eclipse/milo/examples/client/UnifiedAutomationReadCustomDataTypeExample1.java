@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.examples.client;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static java.util.Objects.requireNonNull;
 
@@ -39,7 +40,7 @@ import org.slf4j.LoggerFactory;
 public class UnifiedAutomationReadCustomDataTypeExample1 implements ClientExample {
 
   public static void main(String[] args) throws Exception {
-    var example = new UnifiedAutomationReadCustomDataTypeExample1();
+    org.eclipse.milo.examples.client.UnifiedAutomationReadCustomDataTypeExample1 example = new UnifiedAutomationReadCustomDataTypeExample1();
 
     new ClientExampleRunner(example, false).run();
   }
@@ -120,7 +121,7 @@ public class UnifiedAutomationReadCustomDataTypeExample1 implements ClientExampl
 
   private static DynamicType readScalarValue(OpcUaClient client, NodeId nodeId) throws Exception {
     DataValue dataValue =
-        client.readValues(0.0, TimestampsToReturn.Neither, List.of(nodeId)).get(0);
+        client.readValues(0.0, TimestampsToReturn.Neither, Java8Collections.listOf(nodeId)).get(0);
 
     ExtensionObject xo = (ExtensionObject) dataValue.value().value();
     assert xo != null;
@@ -130,7 +131,7 @@ public class UnifiedAutomationReadCustomDataTypeExample1 implements ClientExampl
 
   private static DynamicType[] readArrayValue(OpcUaClient client, NodeId nodeId) throws Exception {
     DataValue dataValue =
-        client.readValues(0.0, TimestampsToReturn.Neither, List.of(nodeId)).get(0);
+        client.readValues(0.0, TimestampsToReturn.Neither, Java8Collections.listOf(nodeId)).get(0);
 
     ExtensionObject[] xos = (ExtensionObject[]) dataValue.value().value();
     assert xos != null;
@@ -149,7 +150,7 @@ public class UnifiedAutomationReadCustomDataTypeExample1 implements ClientExampl
     ExtensionObject xo = ExtensionObject.encode(client.getDynamicEncodingContext(), value);
 
     return client
-        .writeValues(List.of(nodeId), List.of(DataValue.valueOnly(new Variant(xo))))
+        .writeValues(Java8Collections.listOf(nodeId), Java8Collections.listOf(DataValue.valueOnly(new Variant(xo))))
         .get(0);
   }
 

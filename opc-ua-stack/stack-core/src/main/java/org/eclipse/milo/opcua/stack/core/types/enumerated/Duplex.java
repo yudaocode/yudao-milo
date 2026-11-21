@@ -48,12 +48,16 @@ public enum Duplex implements UaEnumeratedType {
   }
 
   public static @Nullable Duplex from(int value) {
-    return switch (value) {
-      case 0 -> Full;
-      case 1 -> Half;
-      case 2 -> Unknown;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Full;
+      case 1:
+        return Half;
+      case 2:
+        return Unknown;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

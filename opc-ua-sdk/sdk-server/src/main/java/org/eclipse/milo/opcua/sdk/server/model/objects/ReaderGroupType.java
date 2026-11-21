@@ -59,7 +59,7 @@ public interface ReaderGroupType extends PubSubGroupType {
                   "Configuration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15623")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -78,7 +78,7 @@ public interface ReaderGroupType extends PubSubGroupType {
                   "DataSetReaderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -121,7 +121,7 @@ public interface ReaderGroupType extends PubSubGroupType {
                   "DataSetReaderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

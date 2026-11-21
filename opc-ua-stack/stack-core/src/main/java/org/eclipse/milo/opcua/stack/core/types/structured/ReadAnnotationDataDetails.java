@@ -78,21 +78,21 @@ public class ReadAnnotationDataDetails extends HistoryReadDetails implements UaS
       return false;
     }
     ReadAnnotationDataDetails that = (ReadAnnotationDataDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getReqTimes(), that.getReqTimes());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReqTimes());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadAnnotationDataDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadAnnotationDataDetails.class.getSimpleName() + "[", "]");
     joiner.add("reqTimes=" + java.util.Arrays.toString(getReqTimes()));
     return joiner.toString();
   }

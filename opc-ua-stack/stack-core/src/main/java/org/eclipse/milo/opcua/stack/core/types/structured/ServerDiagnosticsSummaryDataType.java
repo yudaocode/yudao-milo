@@ -165,7 +165,7 @@ public class ServerDiagnosticsSummaryDataType extends Structure implements UaStr
       return false;
     }
     ServerDiagnosticsSummaryDataType that = (ServerDiagnosticsSummaryDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getServerViewCount(), that.getServerViewCount());
     eqb.append(getCurrentSessionCount(), that.getCurrentSessionCount());
     eqb.append(getCumulatedSessionCount(), that.getCumulatedSessionCount());
@@ -183,7 +183,7 @@ public class ServerDiagnosticsSummaryDataType extends Structure implements UaStr
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getServerViewCount());
     hcb.append(getCurrentSessionCount());
     hcb.append(getCumulatedSessionCount());
@@ -201,7 +201,7 @@ public class ServerDiagnosticsSummaryDataType extends Structure implements UaStr
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ServerDiagnosticsSummaryDataType.class.getSimpleName() + "[", "]");
     joiner.add("serverViewCount=" + getServerViewCount());
     joiner.add("currentSessionCount=" + getCurrentSessionCount());

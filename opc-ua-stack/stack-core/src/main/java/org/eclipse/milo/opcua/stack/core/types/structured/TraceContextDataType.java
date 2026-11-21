@@ -88,7 +88,7 @@ public class TraceContextDataType extends SpanContextDataType implements UaStruc
       return false;
     }
     TraceContextDataType that = (TraceContextDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getParentSpanId(), that.getParentSpanId());
     eqb.append(getParentIdentifier(), that.getParentIdentifier());
@@ -97,7 +97,7 @@ public class TraceContextDataType extends SpanContextDataType implements UaStruc
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getParentSpanId());
     hcb.append(getParentIdentifier());
     hcb.appendSuper(super.hashCode());
@@ -106,7 +106,7 @@ public class TraceContextDataType extends SpanContextDataType implements UaStruc
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TraceContextDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TraceContextDataType.class.getSimpleName() + "[", "]");
     joiner.add("parentSpanId=" + getParentSpanId());
     joiner.add("parentIdentifier='" + getParentIdentifier() + "'");
     return joiner.toString();

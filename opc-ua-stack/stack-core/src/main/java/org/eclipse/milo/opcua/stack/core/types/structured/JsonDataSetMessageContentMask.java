@@ -78,7 +78,7 @@ public class JsonDataSetMessageContentMask
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", JsonDataSetMessageContentMask.class.getSimpleName() + "[", "]");
     joiner.add("dataSetWriterId=" + getDataSetWriterId());
     joiner.add("metaDataVersion=" + getMetaDataVersion());

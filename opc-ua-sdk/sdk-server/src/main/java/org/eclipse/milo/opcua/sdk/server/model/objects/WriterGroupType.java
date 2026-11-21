@@ -147,7 +147,7 @@ public interface WriterGroupType extends PubSubGroupType {
                   "Configuration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15597")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -166,7 +166,7 @@ public interface WriterGroupType extends PubSubGroupType {
                   "DataSetWriterNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -209,7 +209,7 @@ public interface WriterGroupType extends PubSubGroupType {
                   "DataSetWriterNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

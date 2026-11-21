@@ -141,7 +141,7 @@ public class JsonActionNetworkMessage extends Structure implements UaStructuredT
       return false;
     }
     JsonActionNetworkMessage that = (JsonActionNetworkMessage) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMessageId(), that.getMessageId());
     eqb.append(getMessageType(), that.getMessageType());
     eqb.append(getPublisherId(), that.getPublisherId());
@@ -156,7 +156,7 @@ public class JsonActionNetworkMessage extends Structure implements UaStructuredT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMessageId());
     hcb.append(getMessageType());
     hcb.append(getPublisherId());
@@ -171,7 +171,7 @@ public class JsonActionNetworkMessage extends Structure implements UaStructuredT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", JsonActionNetworkMessage.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", JsonActionNetworkMessage.class.getSimpleName() + "[", "]");
     joiner.add("messageId='" + getMessageId() + "'");
     joiner.add("messageType='" + getMessageType() + "'");
     joiner.add("publisherId='" + getPublisherId() + "'");

@@ -120,7 +120,8 @@ public class UascServerSymmetricHandler extends ByteToMessageCodec<UascServiceRe
 
   @Override
   public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-    if (evt instanceof ErrorMessage errorMessage) {
+    if (evt instanceof ErrorMessage) {
+      ErrorMessage errorMessage = (ErrorMessage) evt;
       // ErrorMessage triggered by ServerApplication
       ByteBuf messageBuffer = TcpMessageEncoder.encode(errorMessage);
 
@@ -206,7 +207,7 @@ public class UascServerSymmetricHandler extends ByteToMessageCodec<UascServiceRe
 
           String endpointUrl = ctx.channel().attr(UascServerHelloHandler.ENDPOINT_URL_KEY).get();
 
-          var serviceRequest =
+          org.eclipse.milo.opcua.stack.transport.server.uasc.UascServiceRequest serviceRequest =
               new UascServiceRequest(
                   endpointUrl,
                   transportProfile,
@@ -279,7 +280,7 @@ public class UascServerSymmetricHandler extends ByteToMessageCodec<UascServiceRe
             .map(UaException::getStatusCode)
             .orElse(new StatusCode(StatusCodes.Bad_InternalError));
 
-    var serviceFault =
+    org.eclipse.milo.opcua.stack.core.types.structured.ServiceFault serviceFault =
         new ServiceFault(
             new ResponseHeader(
                 DateTime.now(),

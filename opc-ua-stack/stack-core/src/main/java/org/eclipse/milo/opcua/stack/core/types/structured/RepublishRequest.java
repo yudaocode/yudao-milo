@@ -91,7 +91,7 @@ public class RepublishRequest extends Structure implements UaRequestMessageType 
       return false;
     }
     RepublishRequest that = (RepublishRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getRetransmitSequenceNumber(), that.getRetransmitSequenceNumber());
@@ -100,7 +100,7 @@ public class RepublishRequest extends Structure implements UaRequestMessageType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getSubscriptionId());
     hcb.append(getRetransmitSequenceNumber());
@@ -109,7 +109,7 @@ public class RepublishRequest extends Structure implements UaRequestMessageType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RepublishRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RepublishRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("subscriptionId=" + getSubscriptionId());
     joiner.add("retransmitSequenceNumber=" + getRetransmitSequenceNumber());

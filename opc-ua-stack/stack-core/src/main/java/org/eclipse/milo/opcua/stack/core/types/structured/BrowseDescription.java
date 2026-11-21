@@ -118,7 +118,7 @@ public class BrowseDescription extends Structure implements UaStructuredType {
       return false;
     }
     BrowseDescription that = (BrowseDescription) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getBrowseDirection(), that.getBrowseDirection());
     eqb.append(getReferenceTypeId(), that.getReferenceTypeId());
@@ -130,7 +130,7 @@ public class BrowseDescription extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getBrowseDirection());
     hcb.append(getReferenceTypeId());
@@ -142,7 +142,7 @@ public class BrowseDescription extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", BrowseDescription.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", BrowseDescription.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("browseDirection=" + getBrowseDirection());
     joiner.add("referenceTypeId=" + getReferenceTypeId());

@@ -35,7 +35,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode0() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 58),
@@ -52,7 +52,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode1() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 61),
@@ -71,7 +71,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode2() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 75),
@@ -90,7 +90,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode3() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 76),
@@ -109,7 +109,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode4() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 77),
@@ -128,7 +128,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode5() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2004),
@@ -198,7 +198,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode6() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2013),
@@ -292,7 +292,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode7() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2020),
@@ -326,7 +326,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode8() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2026),
@@ -354,7 +354,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode9() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2029),
@@ -385,7 +385,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode10() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2033),
@@ -404,7 +404,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode11() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2034),
@@ -429,7 +429,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode12() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2036),
@@ -455,7 +455,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode13() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2039),
@@ -478,7 +478,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode14() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11945),
@@ -501,7 +501,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode15() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32411),
@@ -530,7 +530,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode16() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11564),
@@ -586,7 +586,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode17() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11575),
@@ -645,7 +645,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode18() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11595),
@@ -668,7 +668,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode19() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11616),
@@ -727,7 +727,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode20() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11645),
@@ -750,7 +750,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode21() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2041),
@@ -808,7 +808,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode22() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2052),
@@ -851,7 +851,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode23() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2058),
@@ -879,7 +879,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode24() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2059),
@@ -907,7 +907,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode25() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2060),
@@ -953,7 +953,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode26() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2069),
@@ -981,7 +981,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode27() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2071),
@@ -1018,7 +1018,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode28() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2748),
@@ -1046,7 +1046,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode29() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2075),
@@ -1083,7 +1083,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode30() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2078),
@@ -1111,7 +1111,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode31() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2080),
@@ -1139,7 +1139,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode32() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2082),
@@ -1170,7 +1170,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode33() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2085),
@@ -1195,7 +1195,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode34() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2086),
@@ -1220,7 +1220,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode35() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2087),
@@ -1245,7 +1245,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode36() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2088),
@@ -1270,7 +1270,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode37() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2089),
@@ -1295,7 +1295,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode38() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2090),
@@ -1320,7 +1320,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode39() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2091),
@@ -1348,7 +1348,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode40() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2093),
@@ -1376,7 +1376,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode41() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2095),
@@ -1404,7 +1404,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode42() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2097),
@@ -1432,7 +1432,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode43() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2099),
@@ -1457,7 +1457,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode44() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2100),
@@ -1494,7 +1494,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode45() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2104),
@@ -1522,7 +1522,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode46() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2127),
@@ -1559,7 +1559,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode47() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2130),
@@ -1579,7 +1579,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode48() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2131),
@@ -1599,7 +1599,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode49() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11446),
@@ -1622,7 +1622,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode50() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2132),
@@ -1642,7 +1642,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode51() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2133),
@@ -1665,7 +1665,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode52() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2738),
@@ -1688,7 +1688,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode53() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 3035),
@@ -1708,7 +1708,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode54() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11436),
@@ -1734,7 +1734,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode55() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23606),
@@ -1762,7 +1762,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode56() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23926),
@@ -1802,7 +1802,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode57() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2340),
@@ -1821,7 +1821,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode58() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19820),
@@ -1844,7 +1844,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode59() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19822),
@@ -1867,7 +1867,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode60() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2299),
@@ -1892,7 +1892,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode61() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2771),
@@ -1924,7 +1924,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode62() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2307),
@@ -1946,7 +1946,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode63() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2309),
@@ -1966,7 +1966,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode64() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2310),
@@ -1988,7 +1988,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode65() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15109),
@@ -2008,7 +2008,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode66() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2311),
@@ -2037,7 +2037,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode67() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2315),
@@ -2068,7 +2068,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode68() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 13353),
@@ -2106,7 +2106,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode69() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15744),
@@ -2141,7 +2141,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode70() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15803),
@@ -2206,7 +2206,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode71() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15607),
@@ -2235,7 +2235,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode72() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15620),
@@ -2291,7 +2291,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode73() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17641),
@@ -2311,7 +2311,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode74() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17589),
@@ -2334,7 +2334,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode75() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17591),
@@ -2360,7 +2360,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode76() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17598),
@@ -2380,7 +2380,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode77() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17600),
@@ -2400,7 +2400,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode78() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17602),
@@ -2420,7 +2420,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode79() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23513),
@@ -2443,7 +2443,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode80() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23518),
@@ -2472,7 +2472,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode81() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32439),
@@ -2495,7 +2495,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode82() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32442),
@@ -2524,7 +2524,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode83() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32447),
@@ -2553,7 +2553,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode84() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32467),
@@ -2582,7 +2582,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode85() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32475),
@@ -2617,7 +2617,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode86() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2782),
@@ -2691,7 +2691,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode87() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2830),
@@ -2741,7 +2741,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode88() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2881),
@@ -2776,7 +2776,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode89() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2915),
@@ -2889,7 +2889,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode90() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 16405),
@@ -2912,7 +2912,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode91() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32064),
@@ -2938,7 +2938,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode92() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2929),
@@ -3006,7 +3006,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode93() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2955),
@@ -3074,7 +3074,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode94() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 9318),
@@ -3118,7 +3118,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode95() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 9341),
@@ -3144,7 +3144,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode96() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 9906),
@@ -3179,7 +3179,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode97() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 10060),
@@ -3199,7 +3199,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode98() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 9482),
@@ -3219,7 +3219,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode99() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 10368),
@@ -3245,7 +3245,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode100() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 10214),
@@ -3268,7 +3268,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode101() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 9764),
@@ -3294,7 +3294,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode102() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 9623),
@@ -3317,7 +3317,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode103() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 10523),
@@ -3337,7 +3337,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode104() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 10637),
@@ -3360,7 +3360,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode105() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11753),
@@ -3380,7 +3380,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode106() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 10751),
@@ -3400,7 +3400,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode107() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18347),
@@ -3420,7 +3420,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode108() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18496),
@@ -3440,7 +3440,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode109() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 13225),
@@ -3472,7 +3472,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode110() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17080),
@@ -3501,7 +3501,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode111() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11163),
@@ -3521,7 +3521,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode112() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11164),
@@ -3541,7 +3541,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode113() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11165),
@@ -3561,7 +3561,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode114() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11166),
@@ -3581,7 +3581,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode115() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17218),
@@ -3601,7 +3601,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode116() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17219),
@@ -3621,7 +3621,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode117() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17220),
@@ -3641,7 +3641,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode118() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18665),
@@ -3661,7 +3661,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode119() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17221),
@@ -3681,7 +3681,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode120() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2790),
@@ -3706,7 +3706,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode121() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2803),
@@ -3731,7 +3731,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode122() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2829),
@@ -3762,7 +3762,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode123() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 8927),
@@ -3790,7 +3790,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode124() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 8944),
@@ -3821,7 +3821,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode125() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 8961),
@@ -3852,7 +3852,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode126() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11093),
@@ -3880,7 +3880,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode127() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17225),
@@ -3905,7 +3905,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode128() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17242),
@@ -3930,7 +3930,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode129() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15013),
@@ -3955,7 +3955,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode130() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17259),
@@ -3980,7 +3980,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode131() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2787),
@@ -4000,7 +4000,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode132() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2788),
@@ -4020,7 +4020,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode133() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2789),
@@ -4040,7 +4040,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode134() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17279),
@@ -4087,7 +4087,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode135() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2391),
@@ -4194,7 +4194,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode136() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2378),
@@ -4217,7 +4217,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode137() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11856),
@@ -4245,7 +4245,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode138() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 3806),
@@ -4268,7 +4268,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode139() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2318),
@@ -4326,7 +4326,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode140() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32621),
@@ -4358,7 +4358,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode141() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32625),
@@ -4399,7 +4399,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode142() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2330),
@@ -4466,7 +4466,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode143() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 2999),
@@ -4506,7 +4506,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode144() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 3006),
@@ -4543,7 +4543,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode145() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19095),
@@ -4577,7 +4577,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode146() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 3012),
@@ -4605,7 +4605,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode147() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 3014),
@@ -4642,7 +4642,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode148() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 3019),
@@ -4673,7 +4673,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode149() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 3022),
@@ -4704,7 +4704,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode150() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32758),
@@ -4729,7 +4729,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode151() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32803),
@@ -4763,7 +4763,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode152() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12522),
@@ -4807,7 +4807,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode153() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19297),
@@ -4836,7 +4836,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode154() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12555),
@@ -4880,7 +4880,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode155() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 13813),
@@ -4912,7 +4912,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode156() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12556),
@@ -4932,7 +4932,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode157() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12557),
@@ -4952,7 +4952,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode158() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12558),
@@ -4972,7 +4972,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode159() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19323),
@@ -4992,7 +4992,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode160() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19324),
@@ -5012,7 +5012,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode161() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19325),
@@ -5032,7 +5032,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode162() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19326),
@@ -5052,7 +5052,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode163() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12559),
@@ -5072,7 +5072,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode164() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12560),
@@ -5092,7 +5092,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode165() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23537),
@@ -5112,7 +5112,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode166() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23538),
@@ -5132,7 +5132,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode167() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23539),
@@ -5152,7 +5152,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode168() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23540),
@@ -5172,7 +5172,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode169() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23541),
@@ -5192,7 +5192,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode170() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23542),
@@ -5212,7 +5212,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode171() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23543),
@@ -5232,7 +5232,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode172() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15437),
@@ -5270,7 +5270,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode173() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15541),
@@ -5296,7 +5296,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode174() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32260),
@@ -5316,7 +5316,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode175() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12561),
@@ -5339,7 +5339,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode176() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32286),
@@ -5377,7 +5377,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode177() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 16662),
@@ -5400,7 +5400,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode178() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15550),
@@ -5444,7 +5444,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode179() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12581),
@@ -5533,7 +5533,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode180() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 25731),
@@ -5574,7 +5574,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode181() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 32306),
@@ -5594,7 +5594,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode182() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 12620),
@@ -5620,7 +5620,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode183() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17496),
@@ -5646,7 +5646,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode184() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18001),
@@ -5690,7 +5690,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode185() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18011),
@@ -5713,7 +5713,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode186() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18029),
@@ -5733,7 +5733,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode187() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18047),
@@ -5756,7 +5756,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode188() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23556),
@@ -5779,7 +5779,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode189() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17852),
@@ -5808,7 +5808,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode190() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 11187),
@@ -5840,7 +5840,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode191() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15906),
@@ -5872,7 +5872,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode192() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15452),
@@ -5913,7 +5913,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode193() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15471),
@@ -5954,7 +5954,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode194() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 25337),
@@ -6010,7 +6010,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode195() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 25346),
@@ -6048,7 +6048,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode196() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14416),
@@ -6116,7 +6116,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode197() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 25482),
@@ -6142,7 +6142,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode198() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14509),
@@ -6180,7 +6180,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode199() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15489),
@@ -6209,7 +6209,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode200() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14534),
@@ -6238,7 +6238,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode201() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14572),
@@ -6270,7 +6270,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode202() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14477),
@@ -6317,7 +6317,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode203() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14209),
@@ -6373,7 +6373,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode204() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17721),
@@ -6393,7 +6393,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode205() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14232),
@@ -6431,7 +6431,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode206() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17725),
@@ -6487,7 +6487,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode207() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17997),
@@ -6507,7 +6507,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode208() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17998),
@@ -6527,7 +6527,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode209() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 17999),
@@ -6565,7 +6565,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode210() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21090),
@@ -6585,7 +6585,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode211() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21091),
@@ -6605,7 +6605,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode212() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15298),
@@ -6649,7 +6649,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode213() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15305),
@@ -6669,7 +6669,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode214() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21096),
@@ -6689,7 +6689,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode215() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15306),
@@ -6766,7 +6766,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode216() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15319),
@@ -6786,7 +6786,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode217() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21104),
@@ -6806,7 +6806,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode218() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15108),
@@ -6826,7 +6826,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode219() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15111),
@@ -6855,7 +6855,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode220() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15127),
@@ -6875,7 +6875,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode221() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23795),
@@ -6913,7 +6913,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode222() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23828),
@@ -6942,7 +6942,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode223() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 14643),
@@ -6971,7 +6971,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode224() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19677),
@@ -7012,7 +7012,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode225() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19732),
@@ -7035,7 +7035,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode226() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19786),
@@ -7058,7 +7058,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode227() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19834),
@@ -7084,7 +7084,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode228() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19903),
@@ -7110,7 +7110,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode229() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19968),
@@ -7136,7 +7136,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode230() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 20027),
@@ -7162,7 +7162,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode231() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23832),
@@ -7230,7 +7230,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode232() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15535),
@@ -7259,7 +7259,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode233() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15548),
@@ -7285,7 +7285,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode234() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15563),
@@ -7308,7 +7308,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode235() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21105),
@@ -7343,7 +7343,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode236() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21111),
@@ -7375,7 +7375,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode237() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21116),
@@ -7422,7 +7422,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode238() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21126),
@@ -7445,7 +7445,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode239() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21128),
@@ -7468,7 +7468,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode240() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21130),
@@ -7494,7 +7494,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode241() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15064),
@@ -7529,7 +7529,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode242() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21133),
@@ -7570,7 +7570,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode243() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24016),
@@ -7602,7 +7602,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode244() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 15155),
@@ -7628,7 +7628,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode245() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21136),
@@ -7660,7 +7660,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode246() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21138),
@@ -7698,7 +7698,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode247() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21142),
@@ -7733,7 +7733,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode248() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21145),
@@ -7756,7 +7756,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode249() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 21147),
@@ -7779,7 +7779,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode250() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23455),
@@ -7799,7 +7799,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode251() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 23456),
@@ -7840,7 +7840,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode252() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24264),
@@ -7884,7 +7884,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode253() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 26871),
@@ -7916,7 +7916,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode254() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24148),
@@ -7948,7 +7948,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode255() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24158),
@@ -7977,7 +7977,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode256() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24233),
@@ -8000,7 +8000,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode257() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24167),
@@ -8023,7 +8023,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode258() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 25218),
@@ -8046,7 +8046,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode259() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24169),
@@ -8075,7 +8075,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode260() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24173),
@@ -8110,7 +8110,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode261() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24179),
@@ -8139,7 +8139,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode262() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24183),
@@ -8171,7 +8171,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode263() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24188),
@@ -8197,7 +8197,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode264() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24191),
@@ -8220,7 +8220,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode265() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24195),
@@ -8243,7 +8243,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode266() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24199),
@@ -8269,7 +8269,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode267() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24202),
@@ -8295,7 +8295,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode268() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 24205),
@@ -8327,7 +8327,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode269() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 25221),
@@ -8365,7 +8365,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode270() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 25227),
@@ -8394,7 +8394,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode271() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18973),
@@ -8423,7 +8423,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode272() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 18996),
@@ -8458,7 +8458,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode273() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19002),
@@ -8496,7 +8496,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode274() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19009),
@@ -8537,7 +8537,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode275() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19033),
@@ -8602,7 +8602,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode276() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19824),
@@ -8655,7 +8655,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode277() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19352),
@@ -8690,7 +8690,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode278() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19362),
@@ -8725,7 +8725,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode279() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19369),
@@ -8745,7 +8745,7 @@ class ObjectTypeNodeLoader {
   }
 
   void loadNode280() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaObjectTypeNode node =
         new UaObjectTypeNode(
             this.context,
             new NodeId(0, 19370),

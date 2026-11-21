@@ -104,7 +104,7 @@ public class DatagramDataSetReaderTransportDataType extends DataSetReaderTranspo
       return false;
     }
     DatagramDataSetReaderTransportDataType that = (DatagramDataSetReaderTransportDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAddress(), that.getAddress());
     eqb.append(getQosCategory(), that.getQosCategory());
     eqb.append(getDatagramQos(), that.getDatagramQos());
@@ -114,7 +114,7 @@ public class DatagramDataSetReaderTransportDataType extends DataSetReaderTranspo
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAddress());
     hcb.append(getQosCategory());
     hcb.append(getDatagramQos());
@@ -124,7 +124,7 @@ public class DatagramDataSetReaderTransportDataType extends DataSetReaderTranspo
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", DatagramDataSetReaderTransportDataType.class.getSimpleName() + "[", "]");
     joiner.add("address=" + getAddress());

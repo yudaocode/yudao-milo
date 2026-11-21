@@ -98,7 +98,7 @@ public abstract class DataTypeSchemaHeader extends Structure implements UaStruct
       return false;
     }
     DataTypeSchemaHeader that = (DataTypeSchemaHeader) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNamespaces(), that.getNamespaces());
     eqb.append(getStructureDataTypes(), that.getStructureDataTypes());
     eqb.append(getEnumDataTypes(), that.getEnumDataTypes());
@@ -108,7 +108,7 @@ public abstract class DataTypeSchemaHeader extends Structure implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNamespaces());
     hcb.append(getStructureDataTypes());
     hcb.append(getEnumDataTypes());
@@ -118,7 +118,7 @@ public abstract class DataTypeSchemaHeader extends Structure implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataTypeSchemaHeader.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataTypeSchemaHeader.class.getSimpleName() + "[", "]");
     joiner.add("namespaces=" + java.util.Arrays.toString(getNamespaces()));
     joiner.add("structureDataTypes=" + java.util.Arrays.toString(getStructureDataTypes()));
     joiner.add("enumDataTypes=" + java.util.Arrays.toString(getEnumDataTypes()));

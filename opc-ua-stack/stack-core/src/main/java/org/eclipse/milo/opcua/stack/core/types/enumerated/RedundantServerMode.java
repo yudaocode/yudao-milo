@@ -47,13 +47,18 @@ public enum RedundantServerMode implements UaEnumeratedType {
   }
 
   public static @Nullable RedundantServerMode from(int value) {
-    return switch (value) {
-      case 0 -> PrimaryWithBackup;
-      case 1 -> PrimaryOnly;
-      case 2 -> BackupReady;
-      case 3 -> BackupNotReady;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return PrimaryWithBackup;
+      case 1:
+        return PrimaryOnly;
+      case 2:
+        return BackupReady;
+      case 3:
+        return BackupNotReady;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

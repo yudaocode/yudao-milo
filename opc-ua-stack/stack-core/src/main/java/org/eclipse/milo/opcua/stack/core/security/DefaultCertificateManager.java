@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.stack.core.security;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import java.security.KeyPair;
 import java.security.cert.X509Certificate;
@@ -35,7 +36,7 @@ public class DefaultCertificateManager implements CertificateManager {
 
   public DefaultCertificateManager(
       CertificateQuarantine certificateQuarantine, CertificateGroup group) {
-    this(certificateQuarantine, List.of(group));
+    this(certificateQuarantine, Java8Collections.listOf(group));
   }
 
   public DefaultCertificateManager(
@@ -77,7 +78,7 @@ public class DefaultCertificateManager implements CertificateManager {
 
   @Override
   public List<CertificateGroup> getCertificateGroups() {
-    return List.copyOf(certificateGroups.values());
+    return Java8Collections.listCopyOf(certificateGroups.values());
   }
 
   @Override

@@ -193,7 +193,8 @@ public class MonitoredDataItem extends BaseMonitoredItem<DataValue> implements D
 
   @Override
   public void installFilter(MonitoringFilter filter) throws UaException {
-    if (filter instanceof DataChangeFilter dataChangeFilter) {
+    if (filter instanceof DataChangeFilter) {
+      DataChangeFilter dataChangeFilter = (DataChangeFilter) filter;
       DeadbandType deadbandType = DeadbandType.from(dataChangeFilter.getDeadbandType().intValue());
 
       if (deadbandType == DeadbandType.Percent) {

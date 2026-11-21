@@ -88,7 +88,7 @@ public class SessionlessInvokeResponseType extends Structure implements UaStruct
       return false;
     }
     SessionlessInvokeResponseType that = (SessionlessInvokeResponseType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNamespaceUris(), that.getNamespaceUris());
     eqb.append(getServerUris(), that.getServerUris());
     eqb.append(getServiceId(), that.getServiceId());
@@ -97,7 +97,7 @@ public class SessionlessInvokeResponseType extends Structure implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNamespaceUris());
     hcb.append(getServerUris());
     hcb.append(getServiceId());
@@ -106,7 +106,7 @@ public class SessionlessInvokeResponseType extends Structure implements UaStruct
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", SessionlessInvokeResponseType.class.getSimpleName() + "[", "]");
     joiner.add("namespaceUris=" + java.util.Arrays.toString(getNamespaceUris()));
     joiner.add("serverUris=" + java.util.Arrays.toString(getServerUris()));

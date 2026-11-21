@@ -173,50 +173,58 @@ public class ArrayUtil {
       return value;
     }
 
-    if (value instanceof byte[] primitive) {
-      var boxed = new Byte[primitive.length];
+    if (value instanceof byte[]) {
+      byte[] primitive = (byte[]) value;
+      java.lang.Byte[] boxed = new Byte[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }
       return boxed;
-    } else if (value instanceof short[] primitive) {
-      var boxed = new Short[primitive.length];
+    } else if (value instanceof short[]) {
+      short[] primitive = (short[]) value;
+      java.lang.Short[] boxed = new Short[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }
       return boxed;
-    } else if (value instanceof int[] primitive) {
-      var boxed = new Integer[primitive.length];
+    } else if (value instanceof int[]) {
+      int[] primitive = (int[]) value;
+      java.lang.Integer[] boxed = new Integer[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }
       return boxed;
-    } else if (value instanceof long[] primitive) {
-      var boxed = new Long[primitive.length];
+    } else if (value instanceof long[]) {
+      long[] primitive = (long[]) value;
+      java.lang.Long[] boxed = new Long[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }
       return boxed;
-    } else if (value instanceof float[] primitive) {
-      var boxed = new Float[primitive.length];
+    } else if (value instanceof float[]) {
+      float[] primitive = (float[]) value;
+      java.lang.Float[] boxed = new Float[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }
       return boxed;
-    } else if (value instanceof double[] primitive) {
-      var boxed = new Double[primitive.length];
+    } else if (value instanceof double[]) {
+      double[] primitive = (double[]) value;
+      java.lang.Double[] boxed = new Double[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }
       return boxed;
-    } else if (value instanceof char[] primitive) {
-      var boxed = new Character[primitive.length];
+    } else if (value instanceof char[]) {
+      char[] primitive = (char[]) value;
+      java.lang.Character[] boxed = new Character[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }
       return boxed;
-    } else if (value instanceof boolean[] primitive) {
-      var boxed = new Boolean[primitive.length];
+    } else if (value instanceof boolean[]) {
+      boolean[] primitive = (boolean[]) value;
+      java.lang.Boolean[] boxed = new Boolean[primitive.length];
       for (int i = 0; i < boxed.length; i++) {
         boxed[i] = primitive[i];
       }

@@ -143,14 +143,40 @@ public interface AddressSpace {
    * @param revisedSamplingInterval the revised sampling interval.
    * @param revisedQueueSize the revised queue size.
    */
-  record RevisedDataItemParameters(Double revisedSamplingInterval, UInteger revisedQueueSize) {}
+  static final class RevisedDataItemParameters {
+    private final Double revisedSamplingInterval;
+    private final UInteger revisedQueueSize;
+
+    public Double revisedSamplingInterval() {
+      return revisedSamplingInterval;
+    }
+
+    public UInteger revisedQueueSize() {
+      return revisedQueueSize;
+    }
+
+    RevisedDataItemParameters(Double revisedSamplingInterval, UInteger revisedQueueSize) {
+      this.revisedSamplingInterval = revisedSamplingInterval;
+      this.revisedQueueSize = revisedQueueSize;
+    }
+}
 
   /**
    * Possibly revised parameter values for an {@link EventItem} that is being created or modified.
    *
    * @param revisedQueueSize the revised queue size.
    */
-  record RevisedEventItemParameters(UInteger revisedQueueSize) {}
+  static final class RevisedEventItemParameters {
+    private final UInteger revisedQueueSize;
+
+    public UInteger revisedQueueSize() {
+      return revisedQueueSize;
+    }
+
+    RevisedEventItemParameters(UInteger revisedQueueSize) {
+      this.revisedQueueSize = revisedQueueSize;
+    }
+}
 
   /**
    * A {@link DataItem} is being created for a Node managed by this {@link AddressSpace}.
@@ -316,17 +342,31 @@ public interface AddressSpace {
    * @see AddressSpace#browse(BrowseContext, ViewDescription, List)
    * @see AddressSpace#gather(BrowseContext, ViewDescription, NodeId)
    */
-  sealed interface ReferenceResult {
+  interface ReferenceResult {
 
     /** The NodeId being browsed is unknown to the {@link AddressSpace}. */
-    record BadNodeIdUnknown() implements ReferenceResult {}
+    static final class BadNodeIdUnknown implements ReferenceResult {
+
+      BadNodeIdUnknown() {
+      }
+}
 
     /**
      * The {@link AddressSpace} being browsed or gathered has references to contribute.
      *
      * @param references the {@link Reference}s being contributed.
      */
-    record ReferenceList(List<Reference> references) implements ReferenceResult {}
+    static final class ReferenceList implements ReferenceResult {
+      private final List<Reference> references;
+
+      public List<Reference> references() {
+        return references;
+      }
+
+      ReferenceList(List<Reference> references) {
+        this.references = references;
+      }
+}
 
     /**
      * Create a {@link ReferenceList} from a List of {@link Reference}s.
@@ -410,7 +450,7 @@ public interface AddressSpace {
 
   // endregion
 
-  final class ReadContext extends ServiceOperationContext<ReadValueId> {
+  static final class ReadContext extends ServiceOperationContext<ReadValueId> {
 
     public ReadContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -428,7 +468,7 @@ public interface AddressSpace {
     }
   }
 
-  final class WriteContext extends ServiceOperationContext<WriteValue> {
+  static final class WriteContext extends ServiceOperationContext<WriteValue> {
 
     public WriteContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -446,7 +486,7 @@ public interface AddressSpace {
     }
   }
 
-  final class HistoryReadContext extends ServiceOperationContext<HistoryReadValueId> {
+  static final class HistoryReadContext extends ServiceOperationContext<HistoryReadValueId> {
 
     public HistoryReadContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -464,7 +504,7 @@ public interface AddressSpace {
     }
   }
 
-  final class HistoryUpdateContext extends ServiceOperationContext<HistoryUpdateDetails> {
+  static final class HistoryUpdateContext extends ServiceOperationContext<HistoryUpdateDetails> {
 
     public HistoryUpdateContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -482,7 +522,7 @@ public interface AddressSpace {
     }
   }
 
-  final class CallContext extends ServiceOperationContext<CallMethodRequest> {
+  static final class CallContext extends ServiceOperationContext<CallMethodRequest> {
 
     public CallContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -500,7 +540,7 @@ public interface AddressSpace {
     }
   }
 
-  final class AddNodesContext extends ServiceOperationContext<AddNodesItem> {
+  static final class AddNodesContext extends ServiceOperationContext<AddNodesItem> {
 
     public AddNodesContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -518,7 +558,7 @@ public interface AddressSpace {
     }
   }
 
-  final class DeleteNodesContext extends ServiceOperationContext<DeleteNodesItem> {
+  static final class DeleteNodesContext extends ServiceOperationContext<DeleteNodesItem> {
 
     public DeleteNodesContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -536,7 +576,7 @@ public interface AddressSpace {
     }
   }
 
-  final class AddReferencesContext extends ServiceOperationContext<AddReferencesItem> {
+  static final class AddReferencesContext extends ServiceOperationContext<AddReferencesItem> {
 
     public AddReferencesContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -554,7 +594,7 @@ public interface AddressSpace {
     }
   }
 
-  final class DeleteReferencesContext extends ServiceOperationContext<DeleteReferencesItem> {
+  static final class DeleteReferencesContext extends ServiceOperationContext<DeleteReferencesItem> {
 
     public DeleteReferencesContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -572,7 +612,7 @@ public interface AddressSpace {
     }
   }
 
-  final class BrowseContext extends ServiceOperationContext<NodeId> {
+  static final class BrowseContext extends ServiceOperationContext<NodeId> {
 
     public BrowseContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -590,7 +630,7 @@ public interface AddressSpace {
     }
   }
 
-  final class RegisterNodesContext extends ServiceOperationContext<NodeId> {
+  static final class RegisterNodesContext extends ServiceOperationContext<NodeId> {
 
     public RegisterNodesContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);
@@ -608,7 +648,7 @@ public interface AddressSpace {
     }
   }
 
-  final class UnregisterNodesContext extends ServiceOperationContext<NodeId> {
+  static final class UnregisterNodesContext extends ServiceOperationContext<NodeId> {
 
     public UnregisterNodesContext(OpcUaServer server, @Nullable Session session) {
       super(server, session);

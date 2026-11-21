@@ -86,7 +86,7 @@ public class ReferenceNode extends Structure implements UaStructuredType {
       return false;
     }
     ReferenceNode that = (ReferenceNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getReferenceTypeId(), that.getReferenceTypeId());
     eqb.append(getIsInverse(), that.getIsInverse());
     eqb.append(getTargetId(), that.getTargetId());
@@ -95,7 +95,7 @@ public class ReferenceNode extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReferenceTypeId());
     hcb.append(getIsInverse());
     hcb.append(getTargetId());
@@ -104,7 +104,7 @@ public class ReferenceNode extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReferenceNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReferenceNode.class.getSimpleName() + "[", "]");
     joiner.add("referenceTypeId=" + getReferenceTypeId());
     joiner.add("isInverse=" + getIsInverse());
     joiner.add("targetId=" + getTargetId());

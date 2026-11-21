@@ -54,7 +54,7 @@ public abstract class CartesianCoordinates extends Structure implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CartesianCoordinates.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CartesianCoordinates.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

@@ -59,7 +59,8 @@ public class StructCodec extends AbstractBsdCodec<Struct, Struct.Member> {
 
     if (value == null) {
       return null;
-    } else if (value instanceof List<?> list) {
+    } else if (value instanceof List<?>) {
+      List<?> list = (List<?>) value;
       return list.toArray();
     } else if (value.getClass().isArray()) {
       List<Object> values = new ArrayList<>();

@@ -83,7 +83,7 @@ public class ReadEventDetails2 extends ReadEventDetails implements UaStructuredT
       return false;
     }
     ReadEventDetails2 that = (ReadEventDetails2) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getReadModified(), that.getReadModified());
     return eqb.build();
@@ -91,7 +91,7 @@ public class ReadEventDetails2 extends ReadEventDetails implements UaStructuredT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getReadModified());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -99,7 +99,7 @@ public class ReadEventDetails2 extends ReadEventDetails implements UaStructuredT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ReadEventDetails2.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ReadEventDetails2.class.getSimpleName() + "[", "]");
     joiner.add("readModified=" + getReadModified());
     return joiner.toString();
   }

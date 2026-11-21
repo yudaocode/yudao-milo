@@ -96,7 +96,7 @@ public class NotificationMessage extends Structure implements UaStructuredType {
       return false;
     }
     NotificationMessage that = (NotificationMessage) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSequenceNumber(), that.getSequenceNumber());
     eqb.append(getPublishTime(), that.getPublishTime());
     eqb.append(getNotificationData(), that.getNotificationData());
@@ -105,7 +105,7 @@ public class NotificationMessage extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSequenceNumber());
     hcb.append(getPublishTime());
     hcb.append(getNotificationData());
@@ -114,7 +114,7 @@ public class NotificationMessage extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NotificationMessage.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NotificationMessage.class.getSimpleName() + "[", "]");
     joiner.add("sequenceNumber=" + getSequenceNumber());
     joiner.add("publishTime=" + getPublishTime());
     joiner.add("notificationData=" + java.util.Arrays.toString(getNotificationData()));

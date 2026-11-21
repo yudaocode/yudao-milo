@@ -42,11 +42,15 @@ public enum CustomEnumType implements UaEnumeratedType {
 
   @Nullable
   public static CustomEnumType from(int value) {
-    return switch (value) {
-      case 0 -> Field0;
-      case 1 -> Field1;
-      case 2 -> Field2;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Field0;
+      case 1:
+        return Field1;
+      case 2:
+        return Field2;
+      default:
+        return null;
+    }
   }
 }

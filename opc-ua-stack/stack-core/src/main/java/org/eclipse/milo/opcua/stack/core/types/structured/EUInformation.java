@@ -102,7 +102,7 @@ public class EUInformation extends Structure implements UaStructuredType {
       return false;
     }
     EUInformation that = (EUInformation) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNamespaceUri(), that.getNamespaceUri());
     eqb.append(getUnitId(), that.getUnitId());
     eqb.append(getDisplayName(), that.getDisplayName());
@@ -112,7 +112,7 @@ public class EUInformation extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNamespaceUri());
     hcb.append(getUnitId());
     hcb.append(getDisplayName());
@@ -122,7 +122,7 @@ public class EUInformation extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EUInformation.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EUInformation.class.getSimpleName() + "[", "]");
     joiner.add("namespaceUri='" + getNamespaceUri() + "'");
     joiner.add("unitId=" + getUnitId());
     joiner.add("displayName=" + getDisplayName());

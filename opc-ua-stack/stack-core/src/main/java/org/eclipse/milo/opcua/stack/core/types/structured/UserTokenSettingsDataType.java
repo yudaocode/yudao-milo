@@ -123,7 +123,7 @@ public class UserTokenSettingsDataType extends BaseConfigurationRecordDataType
       return false;
     }
     UserTokenSettingsDataType that = (UserTokenSettingsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getTokenType(), that.getTokenType());
     eqb.append(getIssuedTokenType(), that.getIssuedTokenType());
@@ -136,7 +136,7 @@ public class UserTokenSettingsDataType extends BaseConfigurationRecordDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTokenType());
     hcb.append(getIssuedTokenType());
     hcb.append(getIssuerEndpointUrl());
@@ -149,7 +149,7 @@ public class UserTokenSettingsDataType extends BaseConfigurationRecordDataType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UserTokenSettingsDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UserTokenSettingsDataType.class.getSimpleName() + "[", "]");
     joiner.add("tokenType=" + getTokenType());
     joiner.add("issuedTokenType='" + getIssuedTokenType() + "'");
     joiner.add("issuerEndpointUrl='" + getIssuerEndpointUrl() + "'");

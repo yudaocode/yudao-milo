@@ -91,7 +91,7 @@ public class TransactionErrorType extends Structure implements UaStructuredType 
       return false;
     }
     TransactionErrorType that = (TransactionErrorType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTargetId(), that.getTargetId());
     eqb.append(getError(), that.getError());
     eqb.append(getMessage(), that.getMessage());
@@ -100,7 +100,7 @@ public class TransactionErrorType extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTargetId());
     hcb.append(getError());
     hcb.append(getMessage());
@@ -109,7 +109,7 @@ public class TransactionErrorType extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TransactionErrorType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TransactionErrorType.class.getSimpleName() + "[", "]");
     joiner.add("targetId=" + getTargetId());
     joiner.add("error=" + getError());
     joiner.add("message=" + getMessage());

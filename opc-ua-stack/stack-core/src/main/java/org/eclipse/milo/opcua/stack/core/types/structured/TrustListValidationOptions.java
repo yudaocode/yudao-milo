@@ -67,7 +67,7 @@ public class TrustListValidationOptions extends OptionSetUI32<TrustListValidatio
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", TrustListValidationOptions.class.getSimpleName() + "[", "]");
     joiner.add("suppressCertificateExpired=" + getSuppressCertificateExpired());
     joiner.add("suppressHostNameInvalid=" + getSuppressHostNameInvalid());

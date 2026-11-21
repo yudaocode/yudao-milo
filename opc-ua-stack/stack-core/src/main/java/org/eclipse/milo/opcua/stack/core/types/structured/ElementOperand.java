@@ -76,21 +76,21 @@ public class ElementOperand extends FilterOperand implements UaStructuredType {
       return false;
     }
     ElementOperand that = (ElementOperand) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getIndex(), that.getIndex());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getIndex());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ElementOperand.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ElementOperand.class.getSimpleName() + "[", "]");
     joiner.add("index=" + getIndex());
     return joiner.toString();
   }

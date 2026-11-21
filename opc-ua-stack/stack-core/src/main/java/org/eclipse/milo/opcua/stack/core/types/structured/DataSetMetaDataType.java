@@ -116,7 +116,7 @@ public class DataSetMetaDataType extends DataTypeSchemaHeader implements UaStruc
       return false;
     }
     DataSetMetaDataType that = (DataSetMetaDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getName(), that.getName());
     eqb.append(getDescription(), that.getDescription());
@@ -128,7 +128,7 @@ public class DataSetMetaDataType extends DataTypeSchemaHeader implements UaStruc
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getDescription());
     hcb.append(getFields());
@@ -140,7 +140,7 @@ public class DataSetMetaDataType extends DataTypeSchemaHeader implements UaStruc
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataSetMetaDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataSetMetaDataType.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("description=" + getDescription());
     joiner.add("fields=" + java.util.Arrays.toString(getFields()));

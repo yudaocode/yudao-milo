@@ -70,7 +70,7 @@ public interface DataSetFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -78,7 +78,7 @@ public interface DataSetFolderType extends FolderType {
                   "FieldNameAliases",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -86,7 +86,7 @@ public interface DataSetFolderType extends FolderType {
                   "FieldFlags",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15904")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -94,7 +94,7 @@ public interface DataSetFolderType extends FolderType {
                   "VariablesToAdd",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14273")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -113,7 +113,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -121,7 +121,7 @@ public interface DataSetFolderType extends FolderType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -129,7 +129,7 @@ public interface DataSetFolderType extends FolderType {
                   "AddResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -197,7 +197,7 @@ public interface DataSetFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -205,7 +205,7 @@ public interface DataSetFolderType extends FolderType {
                   "EventNotifier",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -213,7 +213,7 @@ public interface DataSetFolderType extends FolderType {
                   "FieldNameAliases",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -221,7 +221,7 @@ public interface DataSetFolderType extends FolderType {
                   "FieldFlags",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15904")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -229,7 +229,7 @@ public interface DataSetFolderType extends FolderType {
                   "SelectedFields",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=601")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -237,7 +237,7 @@ public interface DataSetFolderType extends FolderType {
                   "Filter",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=586")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -256,7 +256,7 @@ public interface DataSetFolderType extends FolderType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -264,7 +264,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -333,7 +333,7 @@ public interface DataSetFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -341,7 +341,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetMetaData",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14523")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -349,7 +349,7 @@ public interface DataSetFolderType extends FolderType {
                   "VariablesToAdd",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14273")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -368,7 +368,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -376,7 +376,7 @@ public interface DataSetFolderType extends FolderType {
                   "AddResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -428,7 +428,7 @@ public interface DataSetFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -436,7 +436,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetMetaData",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14523")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -444,7 +444,7 @@ public interface DataSetFolderType extends FolderType {
                   "EventNotifier",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -452,7 +452,7 @@ public interface DataSetFolderType extends FolderType {
                   "SelectedFields",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=601")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", "")),
@@ -460,7 +460,7 @@ public interface DataSetFolderType extends FolderType {
                   "Filter",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=586")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -479,7 +479,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -531,7 +531,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -578,7 +578,7 @@ public interface DataSetFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -597,7 +597,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -640,7 +640,7 @@ public interface DataSetFolderType extends FolderType {
                   "DataSetFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

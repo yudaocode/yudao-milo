@@ -43,13 +43,18 @@ public enum OpenFileMode implements UaEnumeratedType {
   }
 
   public static @Nullable OpenFileMode from(int value) {
-    return switch (value) {
-      case 1 -> Read;
-      case 2 -> Write;
-      case 4 -> EraseExisting;
-      case 8 -> Append;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return Read;
+      case 2:
+        return Write;
+      case 4:
+        return EraseExisting;
+      case 8:
+        return Append;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

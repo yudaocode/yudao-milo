@@ -103,7 +103,7 @@ public class ModifyMonitoredItemsRequest extends Structure implements UaRequestM
       return false;
     }
     ModifyMonitoredItemsRequest that = (ModifyMonitoredItemsRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getSubscriptionId(), that.getSubscriptionId());
     eqb.append(getTimestampsToReturn(), that.getTimestampsToReturn());
@@ -113,7 +113,7 @@ public class ModifyMonitoredItemsRequest extends Structure implements UaRequestM
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getSubscriptionId());
     hcb.append(getTimestampsToReturn());
@@ -123,7 +123,7 @@ public class ModifyMonitoredItemsRequest extends Structure implements UaRequestM
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", ModifyMonitoredItemsRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("subscriptionId=" + getSubscriptionId());

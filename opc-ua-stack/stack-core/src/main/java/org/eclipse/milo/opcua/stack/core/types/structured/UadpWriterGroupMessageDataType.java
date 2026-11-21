@@ -112,7 +112,7 @@ public class UadpWriterGroupMessageDataType extends WriterGroupMessageDataType
       return false;
     }
     UadpWriterGroupMessageDataType that = (UadpWriterGroupMessageDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getGroupVersion(), that.getGroupVersion());
     eqb.append(getDataSetOrdering(), that.getDataSetOrdering());
     eqb.append(getNetworkMessageContentMask(), that.getNetworkMessageContentMask());
@@ -123,7 +123,7 @@ public class UadpWriterGroupMessageDataType extends WriterGroupMessageDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getGroupVersion());
     hcb.append(getDataSetOrdering());
     hcb.append(getNetworkMessageContentMask());
@@ -134,7 +134,7 @@ public class UadpWriterGroupMessageDataType extends WriterGroupMessageDataType
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", UadpWriterGroupMessageDataType.class.getSimpleName() + "[", "]");
     joiner.add("groupVersion=" + getGroupVersion());
     joiner.add("dataSetOrdering=" + getDataSetOrdering());

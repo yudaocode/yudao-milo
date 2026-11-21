@@ -142,7 +142,7 @@ public class SecurityGroupDataType extends Structure implements UaStructuredType
       return false;
     }
     SecurityGroupDataType that = (SecurityGroupDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getSecurityGroupFolder(), that.getSecurityGroupFolder());
     eqb.append(getKeyLifetime(), that.getKeyLifetime());
@@ -157,7 +157,7 @@ public class SecurityGroupDataType extends Structure implements UaStructuredType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getSecurityGroupFolder());
     hcb.append(getKeyLifetime());
@@ -172,7 +172,7 @@ public class SecurityGroupDataType extends Structure implements UaStructuredType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SecurityGroupDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SecurityGroupDataType.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("securityGroupFolder=" + java.util.Arrays.toString(getSecurityGroupFolder()));
     joiner.add("keyLifetime=" + getKeyLifetime());

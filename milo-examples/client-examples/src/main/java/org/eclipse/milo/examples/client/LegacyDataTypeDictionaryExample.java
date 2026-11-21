@@ -36,7 +36,7 @@ import org.eclipse.milo.opcua.stack.core.types.enumerated.TimestampsToReturn;
 public class LegacyDataTypeDictionaryExample implements ClientExample {
 
   public static void main(String[] args) throws Exception {
-    var example = new LegacyDataTypeDictionaryExample();
+    org.eclipse.milo.examples.client.LegacyDataTypeDictionaryExample example = new LegacyDataTypeDictionaryExample();
 
     new ClientExampleRunner(example, false).run();
   }
@@ -52,7 +52,8 @@ public class LegacyDataTypeDictionaryExample implements ClientExample {
         client.readValue(
             0.0, TimestampsToReturn.Both, NodeId.parse("ns=3;s=Demo.WorkOrder.WorkOrderVariable"));
 
-    if (dataValue.getValue().getValue() instanceof ExtensionObject xo) {
+    if (dataValue.getValue().getValue() instanceof ExtensionObject) {
+      ExtensionObject xo = (ExtensionObject) dataValue.getValue().getValue();
       Object decoded = xo.decode(client.getDynamicEncodingContext());
 
       System.out.println("Decoded: " + decoded);

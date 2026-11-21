@@ -34,11 +34,11 @@ class BrowseUtil {
   public static ExpandedNodeId normalize(ExpandedNodeId nodeId, NamespaceTable namespaceTable) {
     if (nodeId.isLocal()) {
       if (nodeId.isAbsolute()) {
-        nodeId = nodeId.relative(namespaceTable).orElseThrow();
+        nodeId = nodeId.relative(namespaceTable).get();
       }
     } else {
       if (nodeId.isRelative()) {
-        nodeId = nodeId.absolute(namespaceTable).orElseThrow();
+        nodeId = nodeId.absolute(namespaceTable).get();
       }
     }
     return nodeId;

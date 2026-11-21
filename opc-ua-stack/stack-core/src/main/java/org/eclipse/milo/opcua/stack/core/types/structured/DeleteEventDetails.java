@@ -85,7 +85,7 @@ public class DeleteEventDetails extends HistoryUpdateDetails implements UaStruct
       return false;
     }
     DeleteEventDetails that = (DeleteEventDetails) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getEventIds(), that.getEventIds());
     return eqb.build();
@@ -93,7 +93,7 @@ public class DeleteEventDetails extends HistoryUpdateDetails implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getEventIds());
     return hcb.build();
@@ -101,7 +101,7 @@ public class DeleteEventDetails extends HistoryUpdateDetails implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DeleteEventDetails.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DeleteEventDetails.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("eventIds=" + java.util.Arrays.toString(getEventIds()));
     return joiner.toString();

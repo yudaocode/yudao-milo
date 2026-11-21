@@ -83,7 +83,7 @@ public class CancelRequest extends Structure implements UaRequestMessageType {
       return false;
     }
     CancelRequest that = (CancelRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getRequestHandle(), that.getRequestHandle());
     return eqb.build();
@@ -91,7 +91,7 @@ public class CancelRequest extends Structure implements UaRequestMessageType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getRequestHandle());
     return hcb.build();
@@ -99,7 +99,7 @@ public class CancelRequest extends Structure implements UaRequestMessageType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CancelRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CancelRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("requestHandle=" + getRequestHandle());
     return joiner.toString();

@@ -58,7 +58,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "ApplicationUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -66,7 +66,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "EndpointUrl",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -74,7 +74,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "SecurityPolicyUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -82,7 +82,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "UserTokenType",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=304")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -90,7 +90,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "RequestedKeyCount",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -98,7 +98,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "RetryInterval",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=290")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -117,7 +117,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "PushTargetId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -178,7 +178,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "PushTargetId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -225,7 +225,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "Name",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -244,7 +244,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "PushTargetFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -287,7 +287,7 @@ public interface PubSubKeyPushTargetFolderType extends FolderType {
                   "PushTargetFolderNodeId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

@@ -98,7 +98,7 @@ public class LinearConversionDataType extends Structure implements UaStructuredT
       return false;
     }
     LinearConversionDataType that = (LinearConversionDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getInitialAddend(), that.getInitialAddend());
     eqb.append(getMultiplicand(), that.getMultiplicand());
     eqb.append(getDivisor(), that.getDivisor());
@@ -108,7 +108,7 @@ public class LinearConversionDataType extends Structure implements UaStructuredT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getInitialAddend());
     hcb.append(getMultiplicand());
     hcb.append(getDivisor());
@@ -118,7 +118,7 @@ public class LinearConversionDataType extends Structure implements UaStructuredT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LinearConversionDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LinearConversionDataType.class.getSimpleName() + "[", "]");
     joiner.add("initialAddend=" + getInitialAddend());
     joiner.add("multiplicand=" + getMultiplicand());
     joiner.add("divisor=" + getDivisor());

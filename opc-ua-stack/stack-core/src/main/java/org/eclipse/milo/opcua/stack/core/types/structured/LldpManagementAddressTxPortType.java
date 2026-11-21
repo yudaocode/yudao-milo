@@ -119,7 +119,7 @@ public class LldpManagementAddressTxPortType extends Structure implements UaStru
       return false;
     }
     LldpManagementAddressTxPortType that = (LldpManagementAddressTxPortType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAddressSubtype(), that.getAddressSubtype());
     eqb.append(getManAddress(), that.getManAddress());
     eqb.append(getTxEnable(), that.getTxEnable());
@@ -131,7 +131,7 @@ public class LldpManagementAddressTxPortType extends Structure implements UaStru
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAddressSubtype());
     hcb.append(getManAddress());
     hcb.append(getTxEnable());
@@ -143,7 +143,7 @@ public class LldpManagementAddressTxPortType extends Structure implements UaStru
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", LldpManagementAddressTxPortType.class.getSimpleName() + "[", "]");
     joiner.add("addressSubtype=" + getAddressSubtype());
     joiner.add("manAddress='" + getManAddress() + "'");

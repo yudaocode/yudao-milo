@@ -35,7 +35,7 @@ class MethodNodeLoader {
   }
 
   void loadNode0() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11489),
@@ -64,7 +64,7 @@ class MethodNodeLoader {
   }
 
   void loadNode1() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12871),
@@ -90,7 +90,7 @@ class MethodNodeLoader {
   }
 
   void loadNode2() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12746),
@@ -119,7 +119,7 @@ class MethodNodeLoader {
   }
 
   void loadNode3() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12883),
@@ -145,7 +145,7 @@ class MethodNodeLoader {
   }
 
   void loadNode4() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16296),
@@ -174,7 +174,7 @@ class MethodNodeLoader {
   }
 
   void loadNode5() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16299),
@@ -200,7 +200,7 @@ class MethodNodeLoader {
   }
 
   void loadNode6() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 32416),
@@ -223,7 +223,7 @@ class MethodNodeLoader {
   }
 
   void loadNode7() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11580),
@@ -252,7 +252,7 @@ class MethodNodeLoader {
   }
 
   void loadNode8() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11583),
@@ -278,7 +278,7 @@ class MethodNodeLoader {
   }
 
   void loadNode9() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11585),
@@ -307,7 +307,7 @@ class MethodNodeLoader {
   }
 
   void loadNode10() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11588),
@@ -333,7 +333,7 @@ class MethodNodeLoader {
   }
 
   void loadNode11() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11590),
@@ -362,7 +362,7 @@ class MethodNodeLoader {
   }
 
   void loadNode12() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11593),
@@ -388,7 +388,7 @@ class MethodNodeLoader {
   }
 
   void loadNode13() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11615),
@@ -411,7 +411,7 @@ class MethodNodeLoader {
   }
 
   void loadNode14() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11629),
@@ -440,7 +440,7 @@ class MethodNodeLoader {
   }
 
   void loadNode15() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11632),
@@ -466,7 +466,7 @@ class MethodNodeLoader {
   }
 
   void loadNode16() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11634),
@@ -495,7 +495,7 @@ class MethodNodeLoader {
   }
 
   void loadNode17() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11637),
@@ -521,7 +521,7 @@ class MethodNodeLoader {
   }
 
   void loadNode18() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11639),
@@ -550,7 +550,7 @@ class MethodNodeLoader {
   }
 
   void loadNode19() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11642),
@@ -576,7 +576,7 @@ class MethodNodeLoader {
   }
 
   void loadNode20() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16301),
@@ -606,7 +606,7 @@ class MethodNodeLoader {
   }
 
   void loadNode21() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16304),
@@ -633,7 +633,7 @@ class MethodNodeLoader {
   }
 
   void loadNode22() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 11492),
@@ -667,7 +667,7 @@ class MethodNodeLoader {
   }
 
   void loadNode23() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12873),
@@ -698,7 +698,7 @@ class MethodNodeLoader {
   }
 
   void loadNode24() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12749),
@@ -732,7 +732,7 @@ class MethodNodeLoader {
   }
 
   void loadNode25() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12886),
@@ -761,7 +761,7 @@ class MethodNodeLoader {
   }
 
   void loadNode26() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13355),
@@ -790,7 +790,7 @@ class MethodNodeLoader {
   }
 
   void loadNode27() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13358),
@@ -819,7 +819,7 @@ class MethodNodeLoader {
   }
 
   void loadNode28() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17718),
@@ -845,7 +845,7 @@ class MethodNodeLoader {
   }
 
   void loadNode29() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13363),
@@ -874,7 +874,7 @@ class MethodNodeLoader {
   }
 
   void loadNode30() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13372),
@@ -903,7 +903,7 @@ class MethodNodeLoader {
   }
 
   void loadNode31() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13375),
@@ -929,7 +929,7 @@ class MethodNodeLoader {
   }
 
   void loadNode32() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13377),
@@ -958,7 +958,7 @@ class MethodNodeLoader {
   }
 
   void loadNode33() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13380),
@@ -984,7 +984,7 @@ class MethodNodeLoader {
   }
 
   void loadNode34() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13382),
@@ -1013,7 +1013,7 @@ class MethodNodeLoader {
   }
 
   void loadNode35() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13385),
@@ -1039,7 +1039,7 @@ class MethodNodeLoader {
   }
 
   void loadNode36() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13387),
@@ -1068,7 +1068,7 @@ class MethodNodeLoader {
   }
 
   void loadNode37() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13390),
@@ -1097,7 +1097,7 @@ class MethodNodeLoader {
   }
 
   void loadNode38() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13393),
@@ -1123,7 +1123,7 @@ class MethodNodeLoader {
   }
 
   void loadNode39() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13395),
@@ -1152,7 +1152,7 @@ class MethodNodeLoader {
   }
 
   void loadNode40() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16348),
@@ -1179,7 +1179,7 @@ class MethodNodeLoader {
   }
 
   void loadNode41() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16351),
@@ -1206,7 +1206,7 @@ class MethodNodeLoader {
   }
 
   void loadNode42() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16354),
@@ -1230,7 +1230,7 @@ class MethodNodeLoader {
   }
 
   void loadNode43() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16356),
@@ -1257,7 +1257,7 @@ class MethodNodeLoader {
   }
 
   void loadNode44() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15746),
@@ -1286,7 +1286,7 @@ class MethodNodeLoader {
   }
 
   void loadNode45() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15749),
@@ -1315,7 +1315,7 @@ class MethodNodeLoader {
   }
 
   void loadNode46() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15751),
@@ -1344,7 +1344,7 @@ class MethodNodeLoader {
   }
 
   void loadNode47() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15794),
@@ -1367,7 +1367,7 @@ class MethodNodeLoader {
   }
 
   void loadNode48() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15843),
@@ -1390,7 +1390,7 @@ class MethodNodeLoader {
   }
 
   void loadNode49() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15997),
@@ -1419,7 +1419,7 @@ class MethodNodeLoader {
   }
 
   void loadNode50() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16000),
@@ -1445,7 +1445,7 @@ class MethodNodeLoader {
   }
 
   void loadNode51() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15624),
@@ -1471,7 +1471,7 @@ class MethodNodeLoader {
   }
 
   void loadNode52() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15626),
@@ -1497,7 +1497,7 @@ class MethodNodeLoader {
   }
 
   void loadNode53() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16176),
@@ -1523,7 +1523,7 @@ class MethodNodeLoader {
   }
 
   void loadNode54() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16178),
@@ -1549,7 +1549,7 @@ class MethodNodeLoader {
   }
 
   void loadNode55() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16180),
@@ -1575,7 +1575,7 @@ class MethodNodeLoader {
   }
 
   void loadNode56() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16182),
@@ -1601,7 +1601,7 @@ class MethodNodeLoader {
   }
 
   void loadNode57() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15672),
@@ -1628,7 +1628,7 @@ class MethodNodeLoader {
   }
 
   void loadNode58() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15674),
@@ -1655,7 +1655,7 @@ class MethodNodeLoader {
   }
 
   void loadNode59() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16217),
@@ -1682,7 +1682,7 @@ class MethodNodeLoader {
   }
 
   void loadNode60() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16219),
@@ -1709,7 +1709,7 @@ class MethodNodeLoader {
   }
 
   void loadNode61() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16221),
@@ -1736,7 +1736,7 @@ class MethodNodeLoader {
   }
 
   void loadNode62() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16223),
@@ -1763,7 +1763,7 @@ class MethodNodeLoader {
   }
 
   void loadNode63() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15684),
@@ -1790,7 +1790,7 @@ class MethodNodeLoader {
   }
 
   void loadNode64() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15686),
@@ -1817,7 +1817,7 @@ class MethodNodeLoader {
   }
 
   void loadNode65() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16228),
@@ -1844,7 +1844,7 @@ class MethodNodeLoader {
   }
 
   void loadNode66() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16230),
@@ -1871,7 +1871,7 @@ class MethodNodeLoader {
   }
 
   void loadNode67() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16232),
@@ -1898,7 +1898,7 @@ class MethodNodeLoader {
   }
 
   void loadNode68() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16234),
@@ -1925,7 +1925,7 @@ class MethodNodeLoader {
   }
 
   void loadNode69() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16041),
@@ -1952,7 +1952,7 @@ class MethodNodeLoader {
   }
 
   void loadNode70() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16043),
@@ -1979,7 +1979,7 @@ class MethodNodeLoader {
   }
 
   void loadNode71() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16239),
@@ -2006,7 +2006,7 @@ class MethodNodeLoader {
   }
 
   void loadNode72() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16241),
@@ -2033,7 +2033,7 @@ class MethodNodeLoader {
   }
 
   void loadNode73() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16243),
@@ -2060,7 +2060,7 @@ class MethodNodeLoader {
   }
 
   void loadNode74() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16245),
@@ -2087,7 +2087,7 @@ class MethodNodeLoader {
   }
 
   void loadNode75() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15696),
@@ -2114,7 +2114,7 @@ class MethodNodeLoader {
   }
 
   void loadNode76() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15698),
@@ -2141,7 +2141,7 @@ class MethodNodeLoader {
   }
 
   void loadNode77() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16250),
@@ -2168,7 +2168,7 @@ class MethodNodeLoader {
   }
 
   void loadNode78() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16252),
@@ -2195,7 +2195,7 @@ class MethodNodeLoader {
   }
 
   void loadNode79() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16254),
@@ -2222,7 +2222,7 @@ class MethodNodeLoader {
   }
 
   void loadNode80() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16256),
@@ -2249,7 +2249,7 @@ class MethodNodeLoader {
   }
 
   void loadNode81() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15720),
@@ -2276,7 +2276,7 @@ class MethodNodeLoader {
   }
 
   void loadNode82() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15722),
@@ -2303,7 +2303,7 @@ class MethodNodeLoader {
   }
 
   void loadNode83() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16272),
@@ -2330,7 +2330,7 @@ class MethodNodeLoader {
   }
 
   void loadNode84() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16274),
@@ -2357,7 +2357,7 @@ class MethodNodeLoader {
   }
 
   void loadNode85() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16276),
@@ -2384,7 +2384,7 @@ class MethodNodeLoader {
   }
 
   void loadNode86() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16278),
@@ -2411,7 +2411,7 @@ class MethodNodeLoader {
   }
 
   void loadNode87() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15708),
@@ -2438,7 +2438,7 @@ class MethodNodeLoader {
   }
 
   void loadNode88() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15710),
@@ -2465,7 +2465,7 @@ class MethodNodeLoader {
   }
 
   void loadNode89() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16261),
@@ -2492,7 +2492,7 @@ class MethodNodeLoader {
   }
 
   void loadNode90() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16263),
@@ -2519,7 +2519,7 @@ class MethodNodeLoader {
   }
 
   void loadNode91() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16265),
@@ -2546,7 +2546,7 @@ class MethodNodeLoader {
   }
 
   void loadNode92() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16267),
@@ -2573,7 +2573,7 @@ class MethodNodeLoader {
   }
 
   void loadNode93() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25572),
@@ -2600,7 +2600,7 @@ class MethodNodeLoader {
   }
 
   void loadNode94() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25574),
@@ -2627,7 +2627,7 @@ class MethodNodeLoader {
   }
 
   void loadNode95() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25576),
@@ -2654,7 +2654,7 @@ class MethodNodeLoader {
   }
 
   void loadNode96() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25578),
@@ -2681,7 +2681,7 @@ class MethodNodeLoader {
   }
 
   void loadNode97() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25580),
@@ -2708,7 +2708,7 @@ class MethodNodeLoader {
   }
 
   void loadNode98() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25582),
@@ -2735,7 +2735,7 @@ class MethodNodeLoader {
   }
 
   void loadNode99() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25610),
@@ -2762,7 +2762,7 @@ class MethodNodeLoader {
   }
 
   void loadNode100() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25612),
@@ -2789,7 +2789,7 @@ class MethodNodeLoader {
   }
 
   void loadNode101() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25614),
@@ -2816,7 +2816,7 @@ class MethodNodeLoader {
   }
 
   void loadNode102() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25616),
@@ -2843,7 +2843,7 @@ class MethodNodeLoader {
   }
 
   void loadNode103() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25618),
@@ -2870,7 +2870,7 @@ class MethodNodeLoader {
   }
 
   void loadNode104() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25620),
@@ -2897,7 +2897,7 @@ class MethodNodeLoader {
   }
 
   void loadNode105() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25591),
@@ -2924,7 +2924,7 @@ class MethodNodeLoader {
   }
 
   void loadNode106() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25593),
@@ -2951,7 +2951,7 @@ class MethodNodeLoader {
   }
 
   void loadNode107() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25595),
@@ -2978,7 +2978,7 @@ class MethodNodeLoader {
   }
 
   void loadNode108() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25597),
@@ -3005,7 +3005,7 @@ class MethodNodeLoader {
   }
 
   void loadNode109() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25599),
@@ -3032,7 +3032,7 @@ class MethodNodeLoader {
   }
 
   void loadNode110() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25601),
@@ -3059,7 +3059,7 @@ class MethodNodeLoader {
   }
 
   void loadNode111() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9028),
@@ -3085,7 +3085,7 @@ class MethodNodeLoader {
   }
 
   void loadNode112() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9027),
@@ -3111,7 +3111,7 @@ class MethodNodeLoader {
   }
 
   void loadNode113() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9029),
@@ -3140,7 +3140,7 @@ class MethodNodeLoader {
   }
 
   void loadNode114() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 3875),
@@ -3170,7 +3170,7 @@ class MethodNodeLoader {
   }
 
   void loadNode115() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12912),
@@ -3200,7 +3200,7 @@ class MethodNodeLoader {
   }
 
   void loadNode116() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9069),
@@ -3229,7 +3229,7 @@ class MethodNodeLoader {
   }
 
   void loadNode117() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24312),
@@ -3258,7 +3258,7 @@ class MethodNodeLoader {
   }
 
   void loadNode118() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9111),
@@ -3287,7 +3287,7 @@ class MethodNodeLoader {
   }
 
   void loadNode119() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9113),
@@ -3316,7 +3316,7 @@ class MethodNodeLoader {
   }
 
   void loadNode120() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9213),
@@ -3345,7 +3345,7 @@ class MethodNodeLoader {
   }
 
   void loadNode121() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9211),
@@ -3371,7 +3371,7 @@ class MethodNodeLoader {
   }
 
   void loadNode122() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 9212),
@@ -3397,7 +3397,7 @@ class MethodNodeLoader {
   }
 
   void loadNode123() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16402),
@@ -3423,7 +3423,7 @@ class MethodNodeLoader {
   }
 
   void loadNode124() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16403),
@@ -3449,7 +3449,7 @@ class MethodNodeLoader {
   }
 
   void loadNode125() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24316),
@@ -3478,7 +3478,7 @@ class MethodNodeLoader {
   }
 
   void loadNode126() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17868),
@@ -3504,7 +3504,7 @@ class MethodNodeLoader {
   }
 
   void loadNode127() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24318),
@@ -3533,7 +3533,7 @@ class MethodNodeLoader {
   }
 
   void loadNode128() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17869),
@@ -3559,7 +3559,7 @@ class MethodNodeLoader {
   }
 
   void loadNode129() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24320),
@@ -3588,7 +3588,7 @@ class MethodNodeLoader {
   }
 
   void loadNode130() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17870),
@@ -3614,7 +3614,7 @@ class MethodNodeLoader {
   }
 
   void loadNode131() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24322),
@@ -3643,7 +3643,7 @@ class MethodNodeLoader {
   }
 
   void loadNode132() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18199),
@@ -3669,7 +3669,7 @@ class MethodNodeLoader {
   }
 
   void loadNode133() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24324),
@@ -3698,7 +3698,7 @@ class MethodNodeLoader {
   }
 
   void loadNode134() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24744),
@@ -3724,7 +3724,7 @@ class MethodNodeLoader {
   }
 
   void loadNode135() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16439),
@@ -3750,7 +3750,7 @@ class MethodNodeLoader {
   }
 
   void loadNode136() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16440),
@@ -3776,7 +3776,7 @@ class MethodNodeLoader {
   }
 
   void loadNode137() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16441),
@@ -3805,7 +3805,7 @@ class MethodNodeLoader {
   }
 
   void loadNode138() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16461),
@@ -3834,7 +3834,7 @@ class MethodNodeLoader {
   }
 
   void loadNode139() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 20034),
@@ -3860,7 +3860,7 @@ class MethodNodeLoader {
   }
 
   void loadNode140() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 20035),
@@ -3886,7 +3886,7 @@ class MethodNodeLoader {
   }
 
   void loadNode141() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 20036),
@@ -3915,7 +3915,7 @@ class MethodNodeLoader {
   }
 
   void loadNode142() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23493),
@@ -3944,7 +3944,7 @@ class MethodNodeLoader {
   }
 
   void loadNode143() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2949),
@@ -3979,7 +3979,7 @@ class MethodNodeLoader {
   }
 
   void loadNode144() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24756),
@@ -4014,7 +4014,7 @@ class MethodNodeLoader {
   }
 
   void loadNode145() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2947),
@@ -4046,7 +4046,7 @@ class MethodNodeLoader {
   }
 
   void loadNode146() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24758),
@@ -4081,7 +4081,7 @@ class MethodNodeLoader {
   }
 
   void loadNode147() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2948),
@@ -4113,7 +4113,7 @@ class MethodNodeLoader {
   }
 
   void loadNode148() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24760),
@@ -4148,7 +4148,7 @@ class MethodNodeLoader {
   }
 
   void loadNode149() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18666),
@@ -4174,7 +4174,7 @@ class MethodNodeLoader {
   }
 
   void loadNode150() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2426),
@@ -4201,7 +4201,7 @@ class MethodNodeLoader {
   }
 
   void loadNode151() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2427),
@@ -4228,7 +4228,7 @@ class MethodNodeLoader {
   }
 
   void loadNode152() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2428),
@@ -4255,7 +4255,7 @@ class MethodNodeLoader {
   }
 
   void loadNode153() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2429),
@@ -4288,7 +4288,7 @@ class MethodNodeLoader {
   }
 
   void loadNode154() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 2430),
@@ -4321,7 +4321,7 @@ class MethodNodeLoader {
   }
 
   void loadNode155() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12543),
@@ -4350,7 +4350,7 @@ class MethodNodeLoader {
   }
 
   void loadNode156() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12546),
@@ -4379,7 +4379,7 @@ class MethodNodeLoader {
   }
 
   void loadNode157() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12548),
@@ -4405,7 +4405,7 @@ class MethodNodeLoader {
   }
 
   void loadNode158() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12550),
@@ -4431,7 +4431,7 @@ class MethodNodeLoader {
   }
 
   void loadNode159() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13605),
@@ -4460,7 +4460,7 @@ class MethodNodeLoader {
   }
 
   void loadNode160() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13608),
@@ -4486,7 +4486,7 @@ class MethodNodeLoader {
   }
 
   void loadNode161() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13610),
@@ -4515,7 +4515,7 @@ class MethodNodeLoader {
   }
 
   void loadNode162() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13613),
@@ -4541,7 +4541,7 @@ class MethodNodeLoader {
   }
 
   void loadNode163() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13615),
@@ -4570,7 +4570,7 @@ class MethodNodeLoader {
   }
 
   void loadNode164() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13618),
@@ -4596,7 +4596,7 @@ class MethodNodeLoader {
   }
 
   void loadNode165() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13621),
@@ -4625,7 +4625,7 @@ class MethodNodeLoader {
   }
 
   void loadNode166() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13624),
@@ -4654,7 +4654,7 @@ class MethodNodeLoader {
   }
 
   void loadNode167() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13627),
@@ -4680,7 +4680,7 @@ class MethodNodeLoader {
   }
 
   void loadNode168() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13629),
@@ -4706,7 +4706,7 @@ class MethodNodeLoader {
   }
 
   void loadNode169() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19483),
@@ -4732,7 +4732,7 @@ class MethodNodeLoader {
   }
 
   void loadNode170() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19484),
@@ -4758,7 +4758,7 @@ class MethodNodeLoader {
   }
 
   void loadNode171() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19485),
@@ -4787,7 +4787,7 @@ class MethodNodeLoader {
   }
 
   void loadNode172() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19505),
@@ -4816,7 +4816,7 @@ class MethodNodeLoader {
   }
 
   void loadNode173() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 20176),
@@ -4842,7 +4842,7 @@ class MethodNodeLoader {
   }
 
   void loadNode174() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 20177),
@@ -4868,7 +4868,7 @@ class MethodNodeLoader {
   }
 
   void loadNode175() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 20178),
@@ -4897,7 +4897,7 @@ class MethodNodeLoader {
   }
 
   void loadNode176() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 20198),
@@ -4926,7 +4926,7 @@ class MethodNodeLoader {
   }
 
   void loadNode177() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23526),
@@ -4952,7 +4952,7 @@ class MethodNodeLoader {
   }
 
   void loadNode178() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13821),
@@ -4981,7 +4981,7 @@ class MethodNodeLoader {
   }
 
   void loadNode179() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13824),
@@ -5007,7 +5007,7 @@ class MethodNodeLoader {
   }
 
   void loadNode180() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13826),
@@ -5036,7 +5036,7 @@ class MethodNodeLoader {
   }
 
   void loadNode181() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13829),
@@ -5062,7 +5062,7 @@ class MethodNodeLoader {
   }
 
   void loadNode182() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13831),
@@ -5091,7 +5091,7 @@ class MethodNodeLoader {
   }
 
   void loadNode183() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13834),
@@ -5117,7 +5117,7 @@ class MethodNodeLoader {
   }
 
   void loadNode184() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13837),
@@ -5146,7 +5146,7 @@ class MethodNodeLoader {
   }
 
   void loadNode185() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13840),
@@ -5175,7 +5175,7 @@ class MethodNodeLoader {
   }
 
   void loadNode186() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13843),
@@ -5201,7 +5201,7 @@ class MethodNodeLoader {
   }
 
   void loadNode187() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13845),
@@ -5227,7 +5227,7 @@ class MethodNodeLoader {
   }
 
   void loadNode188() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13855),
@@ -5256,7 +5256,7 @@ class MethodNodeLoader {
   }
 
   void loadNode189() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13858),
@@ -5282,7 +5282,7 @@ class MethodNodeLoader {
   }
 
   void loadNode190() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13860),
@@ -5311,7 +5311,7 @@ class MethodNodeLoader {
   }
 
   void loadNode191() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13863),
@@ -5337,7 +5337,7 @@ class MethodNodeLoader {
   }
 
   void loadNode192() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13865),
@@ -5366,7 +5366,7 @@ class MethodNodeLoader {
   }
 
   void loadNode193() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13868),
@@ -5392,7 +5392,7 @@ class MethodNodeLoader {
   }
 
   void loadNode194() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13871),
@@ -5421,7 +5421,7 @@ class MethodNodeLoader {
   }
 
   void loadNode195() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13874),
@@ -5450,7 +5450,7 @@ class MethodNodeLoader {
   }
 
   void loadNode196() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13877),
@@ -5476,7 +5476,7 @@ class MethodNodeLoader {
   }
 
   void loadNode197() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13879),
@@ -5502,7 +5502,7 @@ class MethodNodeLoader {
   }
 
   void loadNode198() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13889),
@@ -5531,7 +5531,7 @@ class MethodNodeLoader {
   }
 
   void loadNode199() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13892),
@@ -5557,7 +5557,7 @@ class MethodNodeLoader {
   }
 
   void loadNode200() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13894),
@@ -5586,7 +5586,7 @@ class MethodNodeLoader {
   }
 
   void loadNode201() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13897),
@@ -5612,7 +5612,7 @@ class MethodNodeLoader {
   }
 
   void loadNode202() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13899),
@@ -5641,7 +5641,7 @@ class MethodNodeLoader {
   }
 
   void loadNode203() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13902),
@@ -5667,7 +5667,7 @@ class MethodNodeLoader {
   }
 
   void loadNode204() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13905),
@@ -5696,7 +5696,7 @@ class MethodNodeLoader {
   }
 
   void loadNode205() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13908),
@@ -5725,7 +5725,7 @@ class MethodNodeLoader {
   }
 
   void loadNode206() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13911),
@@ -5751,7 +5751,7 @@ class MethodNodeLoader {
   }
 
   void loadNode207() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13913),
@@ -5777,7 +5777,7 @@ class MethodNodeLoader {
   }
 
   void loadNode208() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13923),
@@ -5806,7 +5806,7 @@ class MethodNodeLoader {
   }
 
   void loadNode209() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13926),
@@ -5832,7 +5832,7 @@ class MethodNodeLoader {
   }
 
   void loadNode210() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13928),
@@ -5861,7 +5861,7 @@ class MethodNodeLoader {
   }
 
   void loadNode211() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13931),
@@ -5887,7 +5887,7 @@ class MethodNodeLoader {
   }
 
   void loadNode212() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13933),
@@ -5916,7 +5916,7 @@ class MethodNodeLoader {
   }
 
   void loadNode213() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13936),
@@ -5942,7 +5942,7 @@ class MethodNodeLoader {
   }
 
   void loadNode214() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13939),
@@ -5971,7 +5971,7 @@ class MethodNodeLoader {
   }
 
   void loadNode215() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13942),
@@ -6000,7 +6000,7 @@ class MethodNodeLoader {
   }
 
   void loadNode216() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13945),
@@ -6026,7 +6026,7 @@ class MethodNodeLoader {
   }
 
   void loadNode217() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13947),
@@ -6052,7 +6052,7 @@ class MethodNodeLoader {
   }
 
   void loadNode218() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15508),
@@ -6078,7 +6078,7 @@ class MethodNodeLoader {
   }
 
   void loadNode219() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15505),
@@ -6107,7 +6107,7 @@ class MethodNodeLoader {
   }
 
   void loadNode220() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18533),
@@ -6136,7 +6136,7 @@ class MethodNodeLoader {
   }
 
   void loadNode221() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18539),
@@ -6159,7 +6159,7 @@ class MethodNodeLoader {
   }
 
   void loadNode222() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18541),
@@ -6188,7 +6188,7 @@ class MethodNodeLoader {
   }
 
   void loadNode223() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18544),
@@ -6214,7 +6214,7 @@ class MethodNodeLoader {
   }
 
   void loadNode224() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16717),
@@ -6243,7 +6243,7 @@ class MethodNodeLoader {
   }
 
   void loadNode225() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16724),
@@ -6269,7 +6269,7 @@ class MethodNodeLoader {
   }
 
   void loadNode226() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16726),
@@ -6298,7 +6298,7 @@ class MethodNodeLoader {
   }
 
   void loadNode227() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16729),
@@ -6324,7 +6324,7 @@ class MethodNodeLoader {
   }
 
   void loadNode228() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16732),
@@ -6353,7 +6353,7 @@ class MethodNodeLoader {
   }
 
   void loadNode229() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16735),
@@ -6379,7 +6379,7 @@ class MethodNodeLoader {
   }
 
   void loadNode230() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16741),
@@ -6408,7 +6408,7 @@ class MethodNodeLoader {
   }
 
   void loadNode231() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16744),
@@ -6437,7 +6437,7 @@ class MethodNodeLoader {
   }
 
   void loadNode232() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16747),
@@ -6463,7 +6463,7 @@ class MethodNodeLoader {
   }
 
   void loadNode233() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16749),
@@ -6489,7 +6489,7 @@ class MethodNodeLoader {
   }
 
   void loadNode234() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12616),
@@ -6518,7 +6518,7 @@ class MethodNodeLoader {
   }
 
   void loadNode235() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19337),
@@ -6547,7 +6547,7 @@ class MethodNodeLoader {
   }
 
   void loadNode236() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19340),
@@ -6573,7 +6573,7 @@ class MethodNodeLoader {
   }
 
   void loadNode237() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 32296),
@@ -6602,7 +6602,7 @@ class MethodNodeLoader {
   }
 
   void loadNode238() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12734),
@@ -6625,7 +6625,7 @@ class MethodNodeLoader {
   }
 
   void loadNode239() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25698),
@@ -6648,7 +6648,7 @@ class MethodNodeLoader {
   }
 
   void loadNode240() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12731),
@@ -6677,7 +6677,7 @@ class MethodNodeLoader {
   }
 
   void loadNode241() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12775),
@@ -6703,7 +6703,7 @@ class MethodNodeLoader {
   }
 
   void loadNode242() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25699),
@@ -6726,7 +6726,7 @@ class MethodNodeLoader {
   }
 
   void loadNode243() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13958),
@@ -6755,7 +6755,7 @@ class MethodNodeLoader {
   }
 
   void loadNode244() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13961),
@@ -6781,7 +6781,7 @@ class MethodNodeLoader {
   }
 
   void loadNode245() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13963),
@@ -6810,7 +6810,7 @@ class MethodNodeLoader {
   }
 
   void loadNode246() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13966),
@@ -6836,7 +6836,7 @@ class MethodNodeLoader {
   }
 
   void loadNode247() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13968),
@@ -6865,7 +6865,7 @@ class MethodNodeLoader {
   }
 
   void loadNode248() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13971),
@@ -6891,7 +6891,7 @@ class MethodNodeLoader {
   }
 
   void loadNode249() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13974),
@@ -6920,7 +6920,7 @@ class MethodNodeLoader {
   }
 
   void loadNode250() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13977),
@@ -6949,7 +6949,7 @@ class MethodNodeLoader {
   }
 
   void loadNode251() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13980),
@@ -6975,7 +6975,7 @@ class MethodNodeLoader {
   }
 
   void loadNode252() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13982),
@@ -7001,7 +7001,7 @@ class MethodNodeLoader {
   }
 
   void loadNode253() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15572),
@@ -7030,7 +7030,7 @@ class MethodNodeLoader {
   }
 
   void loadNode254() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15575),
@@ -7056,7 +7056,7 @@ class MethodNodeLoader {
   }
 
   void loadNode255() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15791),
@@ -7085,7 +7085,7 @@ class MethodNodeLoader {
   }
 
   void loadNode256() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15805),
@@ -7111,7 +7111,7 @@ class MethodNodeLoader {
   }
 
   void loadNode257() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15807),
@@ -7140,7 +7140,7 @@ class MethodNodeLoader {
   }
 
   void loadNode258() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15810),
@@ -7166,7 +7166,7 @@ class MethodNodeLoader {
   }
 
   void loadNode259() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15863),
@@ -7192,7 +7192,7 @@ class MethodNodeLoader {
   }
 
   void loadNode260() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15849),
@@ -7221,7 +7221,7 @@ class MethodNodeLoader {
   }
 
   void loadNode261() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 13737),
@@ -7251,7 +7251,7 @@ class MethodNodeLoader {
   }
 
   void loadNode262() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12740),
@@ -7275,7 +7275,7 @@ class MethodNodeLoader {
   }
 
   void loadNode263() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25708),
@@ -7299,7 +7299,7 @@ class MethodNodeLoader {
   }
 
   void loadNode264() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12737),
@@ -7329,7 +7329,7 @@ class MethodNodeLoader {
   }
 
   void loadNode265() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12777),
@@ -7356,7 +7356,7 @@ class MethodNodeLoader {
   }
 
   void loadNode266() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25709),
@@ -7380,7 +7380,7 @@ class MethodNodeLoader {
   }
 
   void loadNode267() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12647),
@@ -7410,7 +7410,7 @@ class MethodNodeLoader {
   }
 
   void loadNode268() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12650),
@@ -7437,7 +7437,7 @@ class MethodNodeLoader {
   }
 
   void loadNode269() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12652),
@@ -7467,7 +7467,7 @@ class MethodNodeLoader {
   }
 
   void loadNode270() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12655),
@@ -7494,7 +7494,7 @@ class MethodNodeLoader {
   }
 
   void loadNode271() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12657),
@@ -7524,7 +7524,7 @@ class MethodNodeLoader {
   }
 
   void loadNode272() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12660),
@@ -7551,7 +7551,7 @@ class MethodNodeLoader {
   }
 
   void loadNode273() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12663),
@@ -7581,7 +7581,7 @@ class MethodNodeLoader {
   }
 
   void loadNode274() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12666),
@@ -7611,7 +7611,7 @@ class MethodNodeLoader {
   }
 
   void loadNode275() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12668),
@@ -7638,7 +7638,7 @@ class MethodNodeLoader {
   }
 
   void loadNode276() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 12670),
@@ -7665,7 +7665,7 @@ class MethodNodeLoader {
   }
 
   void loadNode277() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14095),
@@ -7695,7 +7695,7 @@ class MethodNodeLoader {
   }
 
   void loadNode278() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14098),
@@ -7722,7 +7722,7 @@ class MethodNodeLoader {
   }
 
   void loadNode279() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14100),
@@ -7752,7 +7752,7 @@ class MethodNodeLoader {
   }
 
   void loadNode280() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14103),
@@ -7779,7 +7779,7 @@ class MethodNodeLoader {
   }
 
   void loadNode281() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14105),
@@ -7809,7 +7809,7 @@ class MethodNodeLoader {
   }
 
   void loadNode282() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14108),
@@ -7836,7 +7836,7 @@ class MethodNodeLoader {
   }
 
   void loadNode283() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14111),
@@ -7866,7 +7866,7 @@ class MethodNodeLoader {
   }
 
   void loadNode284() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14114),
@@ -7896,7 +7896,7 @@ class MethodNodeLoader {
   }
 
   void loadNode285() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14117),
@@ -7923,7 +7923,7 @@ class MethodNodeLoader {
   }
 
   void loadNode286() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14119),
@@ -7950,7 +7950,7 @@ class MethodNodeLoader {
   }
 
   void loadNode287() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14129),
@@ -7980,7 +7980,7 @@ class MethodNodeLoader {
   }
 
   void loadNode288() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14132),
@@ -8007,7 +8007,7 @@ class MethodNodeLoader {
   }
 
   void loadNode289() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14134),
@@ -8037,7 +8037,7 @@ class MethodNodeLoader {
   }
 
   void loadNode290() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14137),
@@ -8064,7 +8064,7 @@ class MethodNodeLoader {
   }
 
   void loadNode291() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14139),
@@ -8094,7 +8094,7 @@ class MethodNodeLoader {
   }
 
   void loadNode292() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14142),
@@ -8121,7 +8121,7 @@ class MethodNodeLoader {
   }
 
   void loadNode293() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14145),
@@ -8151,7 +8151,7 @@ class MethodNodeLoader {
   }
 
   void loadNode294() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14148),
@@ -8181,7 +8181,7 @@ class MethodNodeLoader {
   }
 
   void loadNode295() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14151),
@@ -8208,7 +8208,7 @@ class MethodNodeLoader {
   }
 
   void loadNode296() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14153),
@@ -8235,7 +8235,7 @@ class MethodNodeLoader {
   }
 
   void loadNode297() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16013),
@@ -8265,7 +8265,7 @@ class MethodNodeLoader {
   }
 
   void loadNode298() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16060),
@@ -8292,7 +8292,7 @@ class MethodNodeLoader {
   }
 
   void loadNode299() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16074),
@@ -8322,7 +8322,7 @@ class MethodNodeLoader {
   }
 
   void loadNode300() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16101),
@@ -8349,7 +8349,7 @@ class MethodNodeLoader {
   }
 
   void loadNode301() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16103),
@@ -8379,7 +8379,7 @@ class MethodNodeLoader {
   }
 
   void loadNode302() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16124),
@@ -8406,7 +8406,7 @@ class MethodNodeLoader {
   }
 
   void loadNode303() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16320),
@@ -8433,7 +8433,7 @@ class MethodNodeLoader {
   }
 
   void loadNode304() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16317),
@@ -8463,7 +8463,7 @@ class MethodNodeLoader {
   }
 
   void loadNode305() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17522),
@@ -8492,7 +8492,7 @@ class MethodNodeLoader {
   }
 
   void loadNode306() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17528),
@@ -8522,7 +8522,7 @@ class MethodNodeLoader {
   }
 
   void loadNode307() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17534),
@@ -8551,7 +8551,7 @@ class MethodNodeLoader {
   }
 
   void loadNode308() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18006),
@@ -8577,7 +8577,7 @@ class MethodNodeLoader {
   }
 
   void loadNode309() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18008),
@@ -8600,7 +8600,7 @@ class MethodNodeLoader {
   }
 
   void loadNode310() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15907),
@@ -8629,7 +8629,7 @@ class MethodNodeLoader {
   }
 
   void loadNode311() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15910),
@@ -8658,7 +8658,7 @@ class MethodNodeLoader {
   }
 
   void loadNode312() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15914),
@@ -8687,7 +8687,7 @@ class MethodNodeLoader {
   }
 
   void loadNode313() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15917),
@@ -8713,7 +8713,7 @@ class MethodNodeLoader {
   }
 
   void loadNode314() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25278),
@@ -8742,7 +8742,7 @@ class MethodNodeLoader {
   }
 
   void loadNode315() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25281),
@@ -8768,7 +8768,7 @@ class MethodNodeLoader {
   }
 
   void loadNode316() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15454),
@@ -8797,7 +8797,7 @@ class MethodNodeLoader {
   }
 
   void loadNode317() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15457),
@@ -8823,7 +8823,7 @@ class MethodNodeLoader {
   }
 
   void loadNode318() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25293),
@@ -8852,7 +8852,7 @@ class MethodNodeLoader {
   }
 
   void loadNode319() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25296),
@@ -8878,7 +8878,7 @@ class MethodNodeLoader {
   }
 
   void loadNode320() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15461),
@@ -8907,7 +8907,7 @@ class MethodNodeLoader {
   }
 
   void loadNode321() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15464),
@@ -8933,7 +8933,7 @@ class MethodNodeLoader {
   }
 
   void loadNode322() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25312),
@@ -8962,7 +8962,7 @@ class MethodNodeLoader {
   }
 
   void loadNode323() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25315),
@@ -8988,7 +8988,7 @@ class MethodNodeLoader {
   }
 
   void loadNode324() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25624),
@@ -9011,7 +9011,7 @@ class MethodNodeLoader {
   }
 
   void loadNode325() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25625),
@@ -9034,7 +9034,7 @@ class MethodNodeLoader {
   }
 
   void loadNode326() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25641),
@@ -9063,7 +9063,7 @@ class MethodNodeLoader {
   }
 
   void loadNode327() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25644),
@@ -9092,7 +9092,7 @@ class MethodNodeLoader {
   }
 
   void loadNode328() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25647),
@@ -9115,7 +9115,7 @@ class MethodNodeLoader {
   }
 
   void loadNode329() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25348),
@@ -9144,7 +9144,7 @@ class MethodNodeLoader {
   }
 
   void loadNode330() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25351),
@@ -9170,7 +9170,7 @@ class MethodNodeLoader {
   }
 
   void loadNode331() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25353),
@@ -9199,7 +9199,7 @@ class MethodNodeLoader {
   }
 
   void loadNode332() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25356),
@@ -9225,7 +9225,7 @@ class MethodNodeLoader {
   }
 
   void loadNode333() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25655),
@@ -9254,7 +9254,7 @@ class MethodNodeLoader {
   }
 
   void loadNode334() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25658),
@@ -9283,7 +9283,7 @@ class MethodNodeLoader {
   }
 
   void loadNode335() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25661),
@@ -9306,7 +9306,7 @@ class MethodNodeLoader {
   }
 
   void loadNode336() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25366),
@@ -9335,7 +9335,7 @@ class MethodNodeLoader {
   }
 
   void loadNode337() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25369),
@@ -9361,7 +9361,7 @@ class MethodNodeLoader {
   }
 
   void loadNode338() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25371),
@@ -9390,7 +9390,7 @@ class MethodNodeLoader {
   }
 
   void loadNode339() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25374),
@@ -9416,7 +9416,7 @@ class MethodNodeLoader {
   }
 
   void loadNode340() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17296),
@@ -9442,7 +9442,7 @@ class MethodNodeLoader {
   }
 
   void loadNode341() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16598),
@@ -9471,7 +9471,7 @@ class MethodNodeLoader {
   }
 
   void loadNode342() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14432),
@@ -9497,7 +9497,7 @@ class MethodNodeLoader {
   }
 
   void loadNode343() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25411),
@@ -9526,7 +9526,7 @@ class MethodNodeLoader {
   }
 
   void loadNode344() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25414),
@@ -9552,7 +9552,7 @@ class MethodNodeLoader {
   }
 
   void loadNode345() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25416),
@@ -9581,7 +9581,7 @@ class MethodNodeLoader {
   }
 
   void loadNode346() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25419),
@@ -9607,7 +9607,7 @@ class MethodNodeLoader {
   }
 
   void loadNode347() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25421),
@@ -9636,7 +9636,7 @@ class MethodNodeLoader {
   }
 
   void loadNode348() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25424),
@@ -9662,7 +9662,7 @@ class MethodNodeLoader {
   }
 
   void loadNode349() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25426),
@@ -9691,7 +9691,7 @@ class MethodNodeLoader {
   }
 
   void loadNode350() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25429),
@@ -9720,7 +9720,7 @@ class MethodNodeLoader {
   }
 
   void loadNode351() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 18727),
@@ -9743,7 +9743,7 @@ class MethodNodeLoader {
   }
 
   void loadNode352() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15215),
@@ -9775,7 +9775,7 @@ class MethodNodeLoader {
   }
 
   void loadNode353() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15440),
@@ -9807,7 +9807,7 @@ class MethodNodeLoader {
   }
 
   void loadNode354() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15444),
@@ -9837,7 +9837,7 @@ class MethodNodeLoader {
   }
 
   void loadNode355() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15447),
@@ -9864,7 +9864,7 @@ class MethodNodeLoader {
   }
 
   void loadNode356() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25441),
@@ -9894,7 +9894,7 @@ class MethodNodeLoader {
   }
 
   void loadNode357() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25444),
@@ -9921,7 +9921,7 @@ class MethodNodeLoader {
   }
 
   void loadNode358() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17364),
@@ -9951,7 +9951,7 @@ class MethodNodeLoader {
   }
 
   void loadNode359() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17366),
@@ -9981,7 +9981,7 @@ class MethodNodeLoader {
   }
 
   void loadNode360() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17369),
@@ -10008,7 +10008,7 @@ class MethodNodeLoader {
   }
 
   void loadNode361() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25459),
@@ -10040,7 +10040,7 @@ class MethodNodeLoader {
   }
 
   void loadNode362() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25462),
@@ -10069,7 +10069,7 @@ class MethodNodeLoader {
   }
 
   void loadNode363() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25464),
@@ -10101,7 +10101,7 @@ class MethodNodeLoader {
   }
 
   void loadNode364() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25467),
@@ -10128,7 +10128,7 @@ class MethodNodeLoader {
   }
 
   void loadNode365() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25469),
@@ -10160,7 +10160,7 @@ class MethodNodeLoader {
   }
 
   void loadNode366() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25472),
@@ -10189,7 +10189,7 @@ class MethodNodeLoader {
   }
 
   void loadNode367() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25474),
@@ -10219,7 +10219,7 @@ class MethodNodeLoader {
   }
 
   void loadNode368() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25477),
@@ -10249,7 +10249,7 @@ class MethodNodeLoader {
   }
 
   void loadNode369() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17421),
@@ -10273,7 +10273,7 @@ class MethodNodeLoader {
   }
 
   void loadNode370() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25505),
@@ -10302,7 +10302,7 @@ class MethodNodeLoader {
   }
 
   void loadNode371() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25508),
@@ -10331,7 +10331,7 @@ class MethodNodeLoader {
   }
 
   void loadNode372() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15482),
@@ -10360,7 +10360,7 @@ class MethodNodeLoader {
   }
 
   void loadNode373() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15485),
@@ -10386,7 +10386,7 @@ class MethodNodeLoader {
   }
 
   void loadNode374() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15491),
@@ -10415,7 +10415,7 @@ class MethodNodeLoader {
   }
 
   void loadNode375() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15494),
@@ -10441,7 +10441,7 @@ class MethodNodeLoader {
   }
 
   void loadNode376() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14555),
@@ -10470,7 +10470,7 @@ class MethodNodeLoader {
   }
 
   void loadNode377() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14558),
@@ -10499,7 +10499,7 @@ class MethodNodeLoader {
   }
 
   void loadNode378() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15052),
@@ -10528,7 +10528,7 @@ class MethodNodeLoader {
   }
 
   void loadNode379() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14479),
@@ -10557,7 +10557,7 @@ class MethodNodeLoader {
   }
 
   void loadNode380() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14482),
@@ -10586,7 +10586,7 @@ class MethodNodeLoader {
   }
 
   void loadNode381() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16842),
@@ -10615,7 +10615,7 @@ class MethodNodeLoader {
   }
 
   void loadNode382() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16881),
@@ -10644,7 +10644,7 @@ class MethodNodeLoader {
   }
 
   void loadNode383() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14485),
@@ -10670,7 +10670,7 @@ class MethodNodeLoader {
   }
 
   void loadNode384() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16884),
@@ -10699,7 +10699,7 @@ class MethodNodeLoader {
   }
 
   void loadNode385() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16923),
@@ -10725,7 +10725,7 @@ class MethodNodeLoader {
   }
 
   void loadNode386() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14493),
@@ -10754,7 +10754,7 @@ class MethodNodeLoader {
   }
 
   void loadNode387() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14496),
@@ -10783,7 +10783,7 @@ class MethodNodeLoader {
   }
 
   void loadNode388() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16935),
@@ -10812,7 +10812,7 @@ class MethodNodeLoader {
   }
 
   void loadNode389() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16960),
@@ -10841,7 +10841,7 @@ class MethodNodeLoader {
   }
 
   void loadNode390() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14499),
@@ -10867,7 +10867,7 @@ class MethodNodeLoader {
   }
 
   void loadNode391() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16994),
@@ -10896,7 +10896,7 @@ class MethodNodeLoader {
   }
 
   void loadNode392() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 16997),
@@ -10922,7 +10922,7 @@ class MethodNodeLoader {
   }
 
   void loadNode393() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19253),
@@ -10945,7 +10945,7 @@ class MethodNodeLoader {
   }
 
   void loadNode394() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17427),
@@ -10974,7 +10974,7 @@ class MethodNodeLoader {
   }
 
   void loadNode395() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17465),
@@ -11003,7 +11003,7 @@ class MethodNodeLoader {
   }
 
   void loadNode396() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14225),
@@ -11029,7 +11029,7 @@ class MethodNodeLoader {
   }
 
   void loadNode397() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17824),
@@ -11052,7 +11052,7 @@ class MethodNodeLoader {
   }
 
   void loadNode398() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17969),
@@ -11081,7 +11081,7 @@ class MethodNodeLoader {
   }
 
   void loadNode399() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17992),
@@ -11107,7 +11107,7 @@ class MethodNodeLoader {
   }
 
   void loadNode400() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 21027),
@@ -11130,7 +11130,7 @@ class MethodNodeLoader {
   }
 
   void loadNode401() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 21082),
@@ -11159,7 +11159,7 @@ class MethodNodeLoader {
   }
 
   void loadNode402() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 21085),
@@ -11185,7 +11185,7 @@ class MethodNodeLoader {
   }
 
   void loadNode403() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19562),
@@ -11208,7 +11208,7 @@ class MethodNodeLoader {
   }
 
   void loadNode404() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19621),
@@ -11231,7 +11231,7 @@ class MethodNodeLoader {
   }
 
   void loadNode405() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17386),
@@ -11260,7 +11260,7 @@ class MethodNodeLoader {
   }
 
   void loadNode406() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 17389),
@@ -11289,7 +11289,7 @@ class MethodNodeLoader {
   }
 
   void loadNode407() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15115),
@@ -11318,7 +11318,7 @@ class MethodNodeLoader {
   }
 
   void loadNode408() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 15118),
@@ -11347,7 +11347,7 @@ class MethodNodeLoader {
   }
 
   void loadNode409() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23797),
@@ -11376,7 +11376,7 @@ class MethodNodeLoader {
   }
 
   void loadNode410() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23800),
@@ -11402,7 +11402,7 @@ class MethodNodeLoader {
   }
 
   void loadNode411() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23802),
@@ -11431,7 +11431,7 @@ class MethodNodeLoader {
   }
 
   void loadNode412() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23805),
@@ -11457,7 +11457,7 @@ class MethodNodeLoader {
   }
 
   void loadNode413() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23811),
@@ -11486,7 +11486,7 @@ class MethodNodeLoader {
   }
 
   void loadNode414() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23814),
@@ -11512,7 +11512,7 @@ class MethodNodeLoader {
   }
 
   void loadNode415() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23816),
@@ -11541,7 +11541,7 @@ class MethodNodeLoader {
   }
 
   void loadNode416() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23819),
@@ -11567,7 +11567,7 @@ class MethodNodeLoader {
   }
 
   void loadNode417() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14645),
@@ -11590,7 +11590,7 @@ class MethodNodeLoader {
   }
 
   void loadNode418() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 14646),
@@ -11613,7 +11613,7 @@ class MethodNodeLoader {
   }
 
   void loadNode419() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19689),
@@ -11636,7 +11636,7 @@ class MethodNodeLoader {
   }
 
   void loadNode420() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23459),
@@ -11665,7 +11665,7 @@ class MethodNodeLoader {
   }
 
   void loadNode421() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23930),
@@ -11694,7 +11694,7 @@ class MethodNodeLoader {
   }
 
   void loadNode422() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23936),
@@ -11723,7 +11723,7 @@ class MethodNodeLoader {
   }
 
   void loadNode423() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23960),
@@ -11752,7 +11752,7 @@ class MethodNodeLoader {
   }
 
   void loadNode424() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23462),
@@ -11781,7 +11781,7 @@ class MethodNodeLoader {
   }
 
   void loadNode425() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23963),
@@ -11810,7 +11810,7 @@ class MethodNodeLoader {
   }
 
   void loadNode426() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23972),
@@ -11839,7 +11839,7 @@ class MethodNodeLoader {
   }
 
   void loadNode427() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23975),
@@ -11868,7 +11868,7 @@ class MethodNodeLoader {
   }
 
   void loadNode428() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23476),
@@ -11895,7 +11895,7 @@ class MethodNodeLoader {
   }
 
   void loadNode429() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23485),
@@ -11922,7 +11922,7 @@ class MethodNodeLoader {
   }
 
   void loadNode430() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 23494),
@@ -11949,7 +11949,7 @@ class MethodNodeLoader {
   }
 
   void loadNode431() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24269),
@@ -11975,7 +11975,7 @@ class MethodNodeLoader {
   }
 
   void loadNode432() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24271),
@@ -12001,7 +12001,7 @@ class MethodNodeLoader {
   }
 
   void loadNode433() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24273),
@@ -12027,7 +12027,7 @@ class MethodNodeLoader {
   }
 
   void loadNode434() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24275),
@@ -12053,7 +12053,7 @@ class MethodNodeLoader {
   }
 
   void loadNode435() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24304),
@@ -12080,7 +12080,7 @@ class MethodNodeLoader {
   }
 
   void loadNode436() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24306),
@@ -12107,7 +12107,7 @@ class MethodNodeLoader {
   }
 
   void loadNode437() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24308),
@@ -12134,7 +12134,7 @@ class MethodNodeLoader {
   }
 
   void loadNode438() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24310),
@@ -12163,7 +12163,7 @@ class MethodNodeLoader {
   }
 
   void loadNode439() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26873),
@@ -12189,7 +12189,7 @@ class MethodNodeLoader {
   }
 
   void loadNode440() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26875),
@@ -12215,7 +12215,7 @@ class MethodNodeLoader {
   }
 
   void loadNode441() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 28005),
@@ -12244,7 +12244,7 @@ class MethodNodeLoader {
   }
 
   void loadNode442() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 28008),
@@ -12267,7 +12267,7 @@ class MethodNodeLoader {
   }
 
   void loadNode443() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 28010),
@@ -12296,7 +12296,7 @@ class MethodNodeLoader {
   }
 
   void loadNode444() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 28013),
@@ -12322,7 +12322,7 @@ class MethodNodeLoader {
   }
 
   void loadNode445() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26889),
@@ -12351,7 +12351,7 @@ class MethodNodeLoader {
   }
 
   void loadNode446() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26892),
@@ -12377,7 +12377,7 @@ class MethodNodeLoader {
   }
 
   void loadNode447() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26894),
@@ -12406,7 +12406,7 @@ class MethodNodeLoader {
   }
 
   void loadNode448() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26897),
@@ -12432,7 +12432,7 @@ class MethodNodeLoader {
   }
 
   void loadNode449() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26899),
@@ -12461,7 +12461,7 @@ class MethodNodeLoader {
   }
 
   void loadNode450() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26902),
@@ -12487,7 +12487,7 @@ class MethodNodeLoader {
   }
 
   void loadNode451() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26907),
@@ -12516,7 +12516,7 @@ class MethodNodeLoader {
   }
 
   void loadNode452() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26910),
@@ -12545,7 +12545,7 @@ class MethodNodeLoader {
   }
 
   void loadNode453() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26913),
@@ -12571,7 +12571,7 @@ class MethodNodeLoader {
   }
 
   void loadNode454() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 26915),
@@ -12597,7 +12597,7 @@ class MethodNodeLoader {
   }
 
   void loadNode455() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 29880),
@@ -12621,7 +12621,7 @@ class MethodNodeLoader {
   }
 
   void loadNode456() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25229),
@@ -12647,7 +12647,7 @@ class MethodNodeLoader {
   }
 
   void loadNode457() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 25231),
@@ -12673,7 +12673,7 @@ class MethodNodeLoader {
   }
 
   void loadNode458() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19839),
@@ -12702,7 +12702,7 @@ class MethodNodeLoader {
   }
 
   void loadNode459() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19353),
@@ -12731,7 +12731,7 @@ class MethodNodeLoader {
   }
 
   void loadNode460() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 24372),
@@ -12757,7 +12757,7 @@ class MethodNodeLoader {
   }
 
   void loadNode461() {
-    var node =
+    org.eclipse.milo.opcua.sdk.server.nodes.UaMethodNode node =
         new UaMethodNode(
             this.context,
             new NodeId(0, 19373),

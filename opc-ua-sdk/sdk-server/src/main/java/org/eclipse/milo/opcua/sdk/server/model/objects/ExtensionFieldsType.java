@@ -53,7 +53,7 @@ public interface ExtensionFieldsType extends BaseObjectType {
                   "FieldName",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=20")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -61,7 +61,7 @@ public interface ExtensionFieldsType extends BaseObjectType {
                   "FieldValue",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=24")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -80,7 +80,7 @@ public interface ExtensionFieldsType extends BaseObjectType {
                   "FieldId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -125,7 +125,7 @@ public interface ExtensionFieldsType extends BaseObjectType {
                   "FieldId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

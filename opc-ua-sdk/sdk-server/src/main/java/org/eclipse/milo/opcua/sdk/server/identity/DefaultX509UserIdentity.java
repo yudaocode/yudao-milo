@@ -34,7 +34,8 @@ public class DefaultX509UserIdentity extends AbstractIdentity implements Identit
 
   @Override
   public boolean equalTo(Identity identity) {
-    if (identity instanceof X509UserIdentity other) {
+    if (identity instanceof X509UserIdentity) {
+      X509UserIdentity other = (X509UserIdentity) identity;
       return Objects.equal(getCertificate(), other.getCertificate());
     }
 

@@ -9,6 +9,7 @@
  */
 
 package org.eclipse.milo.opcua.sdk.server.servicesets.impl;
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
 
 import static org.eclipse.milo.opcua.sdk.server.servicesets.AbstractServiceSet.createResponseHeader;
 import static org.eclipse.milo.opcua.stack.core.util.FutureUtils.failedUaFuture;
@@ -178,7 +179,7 @@ public class DefaultSubscriptionServiceSet implements SubscriptionServiceSet {
     try {
       session = server.getSessionManager().getSession(context, request.getRequestHeader());
     } catch (UaException e) {
-      return CompletableFuture.failedFuture(e);
+      return Java8Collections.failedFuture(e);
     }
 
     CompletableFuture<PublishResponse> future =
@@ -199,7 +200,7 @@ public class DefaultSubscriptionServiceSet implements SubscriptionServiceSet {
       return failedUaFuture(StatusCodes.Bad_NothingToDo);
     }
 
-    var results = new ArrayList<TransferResult>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.TransferResult> results = new ArrayList<TransferResult>();
 
     for (UInteger subscriptionId : subscriptionIds) {
       Subscription subscription = server.getSubscriptions().get(subscriptionId);
@@ -280,10 +281,10 @@ public class DefaultSubscriptionServiceSet implements SubscriptionServiceSet {
       }
     }
 
-    var response =
+    org.eclipse.milo.opcua.stack.core.types.structured.TransferSubscriptionsResponse response =
         new TransferSubscriptionsResponse(
             createResponseHeader(request),
-            results.toArray(TransferResult[]::new),
+            results.toArray(new TransferResult[0]),
             new DiagnosticInfo[0]);
 
     return CompletableFuture.completedFuture(response);

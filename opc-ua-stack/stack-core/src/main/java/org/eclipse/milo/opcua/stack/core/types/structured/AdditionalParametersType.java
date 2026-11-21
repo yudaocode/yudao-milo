@@ -77,21 +77,21 @@ public class AdditionalParametersType extends Structure implements UaStructuredT
       return false;
     }
     AdditionalParametersType that = (AdditionalParametersType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getParameters(), that.getParameters());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getParameters());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AdditionalParametersType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AdditionalParametersType.class.getSimpleName() + "[", "]");
     joiner.add("parameters=" + java.util.Arrays.toString(getParameters()));
     return joiner.toString();
   }

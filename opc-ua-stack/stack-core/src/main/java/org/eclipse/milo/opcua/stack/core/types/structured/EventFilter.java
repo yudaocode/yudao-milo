@@ -84,7 +84,7 @@ public class EventFilter extends MonitoringFilter implements UaStructuredType {
       return false;
     }
     EventFilter that = (EventFilter) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSelectClauses(), that.getSelectClauses());
     eqb.append(getWhereClause(), that.getWhereClause());
     return eqb.build();
@@ -92,7 +92,7 @@ public class EventFilter extends MonitoringFilter implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSelectClauses());
     hcb.append(getWhereClause());
     return hcb.build();
@@ -100,7 +100,7 @@ public class EventFilter extends MonitoringFilter implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EventFilter.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EventFilter.class.getSimpleName() + "[", "]");
     joiner.add("selectClauses=" + java.util.Arrays.toString(getSelectClauses()));
     joiner.add("whereClause=" + getWhereClause());
     return joiner.toString();

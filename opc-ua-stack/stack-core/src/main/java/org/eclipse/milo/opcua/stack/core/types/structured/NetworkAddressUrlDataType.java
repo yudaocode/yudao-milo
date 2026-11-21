@@ -78,7 +78,7 @@ public class NetworkAddressUrlDataType extends NetworkAddressDataType implements
       return false;
     }
     NetworkAddressUrlDataType that = (NetworkAddressUrlDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getUrl(), that.getUrl());
     return eqb.build();
@@ -86,7 +86,7 @@ public class NetworkAddressUrlDataType extends NetworkAddressDataType implements
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getUrl());
     hcb.appendSuper(super.hashCode());
     return hcb.build();
@@ -94,7 +94,7 @@ public class NetworkAddressUrlDataType extends NetworkAddressDataType implements
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NetworkAddressUrlDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NetworkAddressUrlDataType.class.getSimpleName() + "[", "]");
     joiner.add("url='" + getUrl() + "'");
     return joiner.toString();
   }

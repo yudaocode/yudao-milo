@@ -99,7 +99,7 @@ public class SecuritySettingsDataType extends BaseConfigurationRecordDataType
       return false;
     }
     SecuritySettingsDataType that = (SecuritySettingsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getSecurityModes(), that.getSecurityModes());
     eqb.append(getSecurityPolicyUris(), that.getSecurityPolicyUris());
@@ -109,7 +109,7 @@ public class SecuritySettingsDataType extends BaseConfigurationRecordDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSecurityModes());
     hcb.append(getSecurityPolicyUris());
     hcb.append(getCertificateGroupName());
@@ -119,7 +119,7 @@ public class SecuritySettingsDataType extends BaseConfigurationRecordDataType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", SecuritySettingsDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", SecuritySettingsDataType.class.getSimpleName() + "[", "]");
     joiner.add("securityModes=" + java.util.Arrays.toString(getSecurityModes()));
     joiner.add("securityPolicyUris=" + java.util.Arrays.toString(getSecurityPolicyUris()));
     joiner.add("certificateGroupName='" + getCertificateGroupName() + "'");

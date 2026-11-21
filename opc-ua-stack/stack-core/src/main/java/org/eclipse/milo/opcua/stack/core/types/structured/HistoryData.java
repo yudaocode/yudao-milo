@@ -78,21 +78,21 @@ public class HistoryData extends Structure implements UaStructuredType {
       return false;
     }
     HistoryData that = (HistoryData) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getDataValues(), that.getDataValues());
     return eqb.build();
   }
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDataValues());
     return hcb.build();
   }
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryData.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryData.class.getSimpleName() + "[", "]");
     joiner.add("dataValues=" + java.util.Arrays.toString(getDataValues()));
     return joiner.toString();
   }

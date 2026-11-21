@@ -151,7 +151,7 @@ public class CreateSessionResponse extends Structure implements UaResponseMessag
       return false;
     }
     CreateSessionResponse that = (CreateSessionResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getSessionId(), that.getSessionId());
     eqb.append(getAuthenticationToken(), that.getAuthenticationToken());
@@ -167,7 +167,7 @@ public class CreateSessionResponse extends Structure implements UaResponseMessag
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getSessionId());
     hcb.append(getAuthenticationToken());
@@ -183,7 +183,7 @@ public class CreateSessionResponse extends Structure implements UaResponseMessag
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CreateSessionResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CreateSessionResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("sessionId=" + getSessionId());
     joiner.add("authenticationToken=" + getAuthenticationToken());

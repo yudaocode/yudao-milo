@@ -109,7 +109,7 @@ public class DataTypeNode extends TypeNode implements UaStructuredType {
       return false;
     }
     DataTypeNode that = (DataTypeNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getIsAbstract(), that.getIsAbstract());
     eqb.append(getDataTypeDefinition(), that.getDataTypeDefinition());
@@ -118,7 +118,7 @@ public class DataTypeNode extends TypeNode implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getIsAbstract());
     hcb.append(getDataTypeDefinition());
     hcb.appendSuper(super.hashCode());
@@ -127,7 +127,7 @@ public class DataTypeNode extends TypeNode implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataTypeNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataTypeNode.class.getSimpleName() + "[", "]");
     joiner.add("isAbstract=" + getIsAbstract());
     joiner.add("dataTypeDefinition=" + getDataTypeDefinition());
     return joiner.toString();

@@ -147,7 +147,7 @@ public class ProgramDiagnosticDataType extends Structure implements UaStructured
       return false;
     }
     ProgramDiagnosticDataType that = (ProgramDiagnosticDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getCreateSessionId(), that.getCreateSessionId());
     eqb.append(getCreateClientName(), that.getCreateClientName());
     eqb.append(getInvocationCreationTime(), that.getInvocationCreationTime());
@@ -163,7 +163,7 @@ public class ProgramDiagnosticDataType extends Structure implements UaStructured
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getCreateSessionId());
     hcb.append(getCreateClientName());
     hcb.append(getInvocationCreationTime());
@@ -179,7 +179,7 @@ public class ProgramDiagnosticDataType extends Structure implements UaStructured
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ProgramDiagnosticDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ProgramDiagnosticDataType.class.getSimpleName() + "[", "]");
     joiner.add("createSessionId=" + getCreateSessionId());
     joiner.add("createClientName='" + getCreateClientName() + "'");
     joiner.add("invocationCreationTime=" + getInvocationCreationTime());

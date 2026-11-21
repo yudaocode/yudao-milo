@@ -29,27 +29,41 @@ public enum MessageType {
   private static final int MSG = ('G' << 16) | ('S' << 8) | 'M';
 
   public static int toMediumInt(MessageType messageType) {
-    return switch (messageType) {
-      case Hello -> HEL;
-      case Acknowledge -> ACK;
-      case Error -> ERR;
-      case OpenSecureChannel -> OPN;
-      case CloseSecureChannel -> CLO;
-      case SecureMessage -> MSG;
-    };
+    switch ((messageType)) {
+      case Hello:
+        return HEL;
+      case Acknowledge:
+        return ACK;
+      case Error:
+        return ERR;
+      case OpenSecureChannel:
+        return OPN;
+      case CloseSecureChannel:
+        return CLO;
+      case SecureMessage:
+        return MSG;
+      default:
+        throw new IllegalArgumentException("messageType=" + messageType);
+    }
   }
 
   public static MessageType fromMediumInt(int messageType) throws UaException {
-    return switch (messageType) {
-      case HEL -> Hello;
-      case ACK -> Acknowledge;
-      case ERR -> Error;
-      case OPN -> OpenSecureChannel;
-      case CLO -> CloseSecureChannel;
-      case MSG -> SecureMessage;
-      default ->
-          throw new UaException(
+    switch ((messageType)) {
+      case HEL:
+        return Hello;
+      case ACK:
+        return Acknowledge;
+      case ERR:
+        return Error;
+      case OPN:
+        return OpenSecureChannel;
+      case CLO:
+        return CloseSecureChannel;
+      case MSG:
+        return SecureMessage;
+      default:
+        throw new UaException(
               StatusCodes.Bad_TcpMessageTypeInvalid, "unknown message type: " + messageType);
-    };
+    }
   }
 }

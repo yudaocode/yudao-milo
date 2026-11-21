@@ -97,7 +97,7 @@ public class PermissionType extends OptionSetUI32<PermissionType.Field> {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PermissionType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PermissionType.class.getSimpleName() + "[", "]");
     joiner.add("browse=" + getBrowse());
     joiner.add("readRolePermissions=" + getReadRolePermissions());
     joiner.add("writeAttribute=" + getWriteAttribute());

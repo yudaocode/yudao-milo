@@ -118,7 +118,7 @@ public class QueryFirstRequest extends Structure implements UaRequestMessageType
       return false;
     }
     QueryFirstRequest that = (QueryFirstRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getView(), that.getView());
     eqb.append(getNodeTypes(), that.getNodeTypes());
@@ -130,7 +130,7 @@ public class QueryFirstRequest extends Structure implements UaRequestMessageType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getView());
     hcb.append(getNodeTypes());
@@ -142,7 +142,7 @@ public class QueryFirstRequest extends Structure implements UaRequestMessageType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", QueryFirstRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", QueryFirstRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("view=" + getView());
     joiner.add("nodeTypes=" + java.util.Arrays.toString(getNodeTypes()));

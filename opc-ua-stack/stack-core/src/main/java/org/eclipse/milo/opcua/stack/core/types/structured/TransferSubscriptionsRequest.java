@@ -94,7 +94,7 @@ public class TransferSubscriptionsRequest extends Structure implements UaRequest
       return false;
     }
     TransferSubscriptionsRequest that = (TransferSubscriptionsRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getSubscriptionIds(), that.getSubscriptionIds());
     eqb.append(getSendInitialValues(), that.getSendInitialValues());
@@ -103,7 +103,7 @@ public class TransferSubscriptionsRequest extends Structure implements UaRequest
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getSubscriptionIds());
     hcb.append(getSendInitialValues());
@@ -112,7 +112,7 @@ public class TransferSubscriptionsRequest extends Structure implements UaRequest
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", TransferSubscriptionsRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("subscriptionIds=" + java.util.Arrays.toString(getSubscriptionIds()));

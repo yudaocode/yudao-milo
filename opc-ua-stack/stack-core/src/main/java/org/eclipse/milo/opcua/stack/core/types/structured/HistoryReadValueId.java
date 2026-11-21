@@ -100,7 +100,7 @@ public class HistoryReadValueId extends Structure implements UaStructuredType {
       return false;
     }
     HistoryReadValueId that = (HistoryReadValueId) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNodeId(), that.getNodeId());
     eqb.append(getIndexRange(), that.getIndexRange());
     eqb.append(getDataEncoding(), that.getDataEncoding());
@@ -110,7 +110,7 @@ public class HistoryReadValueId extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNodeId());
     hcb.append(getIndexRange());
     hcb.append(getDataEncoding());
@@ -120,7 +120,7 @@ public class HistoryReadValueId extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", HistoryReadValueId.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", HistoryReadValueId.class.getSimpleName() + "[", "]");
     joiner.add("nodeId=" + getNodeId());
     joiner.add("indexRange='" + getIndexRange() + "'");
     joiner.add("dataEncoding=" + getDataEncoding());

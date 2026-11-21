@@ -110,7 +110,7 @@ public class DtlsPubSubConnectionDataType extends Structure implements UaStructu
       return false;
     }
     DtlsPubSubConnectionDataType that = (DtlsPubSubConnectionDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getClientCipherSuite(), that.getClientCipherSuite());
     eqb.append(getServerCipherSuites(), that.getServerCipherSuites());
     eqb.append(getZeroRtt(), that.getZeroRtt());
@@ -121,7 +121,7 @@ public class DtlsPubSubConnectionDataType extends Structure implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getClientCipherSuite());
     hcb.append(getServerCipherSuites());
     hcb.append(getZeroRtt());
@@ -132,7 +132,7 @@ public class DtlsPubSubConnectionDataType extends Structure implements UaStructu
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", DtlsPubSubConnectionDataType.class.getSimpleName() + "[", "]");
     joiner.add("clientCipherSuite='" + getClientCipherSuite() + "'");
     joiner.add("serverCipherSuites=" + java.util.Arrays.toString(getServerCipherSuites()));

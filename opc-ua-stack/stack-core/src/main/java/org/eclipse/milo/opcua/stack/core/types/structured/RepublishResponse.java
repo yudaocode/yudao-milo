@@ -83,7 +83,7 @@ public class RepublishResponse extends Structure implements UaResponseMessageTyp
       return false;
     }
     RepublishResponse that = (RepublishResponse) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getResponseHeader(), that.getResponseHeader());
     eqb.append(getNotificationMessage(), that.getNotificationMessage());
     return eqb.build();
@@ -91,7 +91,7 @@ public class RepublishResponse extends Structure implements UaResponseMessageTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getResponseHeader());
     hcb.append(getNotificationMessage());
     return hcb.build();
@@ -99,7 +99,7 @@ public class RepublishResponse extends Structure implements UaResponseMessageTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RepublishResponse.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RepublishResponse.class.getSimpleName() + "[", "]");
     joiner.add("responseHeader=" + getResponseHeader());
     joiner.add("notificationMessage=" + getNotificationMessage());
     return joiner.toString();

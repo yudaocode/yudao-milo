@@ -58,7 +58,7 @@ public class NotificationData extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NotificationData.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NotificationData.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

@@ -58,7 +58,7 @@ public class MonitoringFilter extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", MonitoringFilter.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", MonitoringFilter.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

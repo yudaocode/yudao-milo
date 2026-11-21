@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 public class EventSubscriptionExample implements ClientExample {
 
   public static void main(String[] args) throws Exception {
-    var example = new EventSubscriptionExample();
+    org.eclipse.milo.examples.client.EventSubscriptionExample example = new EventSubscriptionExample();
 
     new ClientExampleRunner(example, true).run();
   }
@@ -40,7 +40,7 @@ public class EventSubscriptionExample implements ClientExample {
     client.connect();
 
     // create a subscription and a monitored item
-    final var subscription = new OpcUaSubscription(client);
+    final OpcUaSubscription subscription = new OpcUaSubscription(client);
     subscription.create();
 
     EventFilter eventFilter =
@@ -76,7 +76,7 @@ public class EventSubscriptionExample implements ClientExample {
 
     final AtomicInteger eventCount = new AtomicInteger(0);
 
-    var monitoredItem = OpcUaMonitoredItem.newEventItem(NodeIds.Server, eventFilter);
+    OpcUaMonitoredItem monitoredItem = OpcUaMonitoredItem.newEventItem(NodeIds.Server, eventFilter);
 
     monitoredItem.setEventValueListener(
         (item, vs) -> {

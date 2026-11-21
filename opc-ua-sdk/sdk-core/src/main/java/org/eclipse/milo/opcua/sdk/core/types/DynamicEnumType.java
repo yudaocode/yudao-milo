@@ -11,7 +11,6 @@
 package org.eclipse.milo.opcua.sdk.core.types;
 
 import static java.util.Objects.requireNonNull;
-import static java.util.Objects.requireNonNullElse;
 
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -39,7 +38,7 @@ public final class DynamicEnumType extends DynamicType implements UaEnumeratedTy
     EnumDefinition definition = (EnumDefinition) dataType.getDataTypeDefinition();
     assert definition != null;
 
-    EnumField[] fields = requireNonNullElse(definition.getFields(), new EnumField[0]);
+    EnumField[] fields = definition.getFields() != null ? definition.getFields() : new EnumField[0];
 
     for (EnumField field : fields) {
       if (field.getValue() == value) {

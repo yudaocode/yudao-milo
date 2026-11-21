@@ -123,7 +123,7 @@ public abstract class PubSubGroupDataType extends Structure implements UaStructu
       return false;
     }
     PubSubGroupDataType that = (PubSubGroupDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getEnabled(), that.getEnabled());
     eqb.append(getSecurityMode(), that.getSecurityMode());
@@ -136,7 +136,7 @@ public abstract class PubSubGroupDataType extends Structure implements UaStructu
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getEnabled());
     hcb.append(getSecurityMode());
@@ -149,7 +149,7 @@ public abstract class PubSubGroupDataType extends Structure implements UaStructu
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PubSubGroupDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PubSubGroupDataType.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");
     joiner.add("enabled=" + getEnabled());
     joiner.add("securityMode=" + getSecurityMode());

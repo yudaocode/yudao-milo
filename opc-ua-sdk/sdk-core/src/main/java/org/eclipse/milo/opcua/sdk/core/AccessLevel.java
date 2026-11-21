@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.core;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned.ubyte;
 
 import java.util.EnumSet;
@@ -25,12 +27,12 @@ public enum AccessLevel {
   StatusWrite(0x20),
   TimestampWrite(0x40);
 
-  public static final Set<AccessLevel> NONE = Set.of();
-  public static final Set<AccessLevel> READ_ONLY = Set.of(CurrentRead);
-  public static final Set<AccessLevel> WRITE_ONLY = Set.of(CurrentWrite);
-  public static final Set<AccessLevel> READ_WRITE = Set.of(CurrentRead, CurrentWrite);
-  public static final Set<AccessLevel> HISTORY_READ_ONLY = Set.of(HistoryRead);
-  public static final Set<AccessLevel> HISTORY_READ_WRITE = Set.of(HistoryRead, HistoryWrite);
+  public static final Set<AccessLevel> NONE = Java8Collections.setOf();
+  public static final Set<AccessLevel> READ_ONLY = Java8Collections.setOf(CurrentRead);
+  public static final Set<AccessLevel> WRITE_ONLY = Java8Collections.setOf(CurrentWrite);
+  public static final Set<AccessLevel> READ_WRITE = Java8Collections.setOf(CurrentRead, CurrentWrite);
+  public static final Set<AccessLevel> HISTORY_READ_ONLY = Java8Collections.setOf(HistoryRead);
+  public static final Set<AccessLevel> HISTORY_READ_WRITE = Java8Collections.setOf(HistoryRead, HistoryWrite);
 
   private final int value;
 

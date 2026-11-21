@@ -85,7 +85,7 @@ public class DeleteSubscriptionsRequest extends Structure implements UaRequestMe
       return false;
     }
     DeleteSubscriptionsRequest that = (DeleteSubscriptionsRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getSubscriptionIds(), that.getSubscriptionIds());
     return eqb.build();
@@ -93,7 +93,7 @@ public class DeleteSubscriptionsRequest extends Structure implements UaRequestMe
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getSubscriptionIds());
     return hcb.build();
@@ -101,7 +101,7 @@ public class DeleteSubscriptionsRequest extends Structure implements UaRequestMe
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", DeleteSubscriptionsRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("subscriptionIds=" + java.util.Arrays.toString(getSubscriptionIds()));

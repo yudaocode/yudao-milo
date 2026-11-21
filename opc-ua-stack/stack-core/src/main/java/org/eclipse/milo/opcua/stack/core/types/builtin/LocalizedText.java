@@ -19,7 +19,23 @@ import org.jspecify.annotations.Nullable;
  * @param text the text in the specified locale.
  */
 @NullMarked
-public record LocalizedText(@Nullable String locale, @Nullable String text) {
+public final class LocalizedText {
+  private final @Nullable String locale;
+  private final @Nullable String text;
+
+  public @Nullable String locale() {
+    return locale;
+  }
+
+  public @Nullable String text() {
+    return text;
+  }
+
+  public LocalizedText(@Nullable String locale, @Nullable String text) {
+    this.locale = locale;
+    this.text = text;
+  }
+
 
   public static final LocalizedText NULL_VALUE = new LocalizedText(null, null);
 

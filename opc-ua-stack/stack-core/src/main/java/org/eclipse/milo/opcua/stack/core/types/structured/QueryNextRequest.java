@@ -92,7 +92,7 @@ public class QueryNextRequest extends Structure implements UaRequestMessageType 
       return false;
     }
     QueryNextRequest that = (QueryNextRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getReleaseContinuationPoint(), that.getReleaseContinuationPoint());
     eqb.append(getContinuationPoint(), that.getContinuationPoint());
@@ -101,7 +101,7 @@ public class QueryNextRequest extends Structure implements UaRequestMessageType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getReleaseContinuationPoint());
     hcb.append(getContinuationPoint());
@@ -110,7 +110,7 @@ public class QueryNextRequest extends Structure implements UaRequestMessageType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", QueryNextRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", QueryNextRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("releaseContinuationPoint=" + getReleaseContinuationPoint());
     joiner.add("continuationPoint=" + getContinuationPoint());

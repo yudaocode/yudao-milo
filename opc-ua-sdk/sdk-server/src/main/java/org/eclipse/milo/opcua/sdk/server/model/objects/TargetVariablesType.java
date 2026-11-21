@@ -71,7 +71,7 @@ public interface TargetVariablesType extends SubscribedDataSetType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -79,7 +79,7 @@ public interface TargetVariablesType extends SubscribedDataSetType {
                   "TargetVariablesToAdd",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14744")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -98,7 +98,7 @@ public interface TargetVariablesType extends SubscribedDataSetType {
                   "AddResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -147,7 +147,7 @@ public interface TargetVariablesType extends SubscribedDataSetType {
                   "ConfigurationVersion",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14593")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -155,7 +155,7 @@ public interface TargetVariablesType extends SubscribedDataSetType {
                   "TargetsToRemove",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -174,7 +174,7 @@ public interface TargetVariablesType extends SubscribedDataSetType {
                   "RemoveResults",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

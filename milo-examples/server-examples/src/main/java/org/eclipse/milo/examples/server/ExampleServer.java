@@ -127,7 +127,7 @@ public class ExampleServer {
 
     KeyStoreLoader loader = new KeyStoreLoader().load(securityTempDir);
 
-    var certificateStore =
+    KeyStoreCertificateStore certificateStore =
         KeyStoreCertificateStore.createAndInitialize(
             new KeyStoreCertificateStore.Settings(
                 securityTempDir.resolve("example-server.pfx"),
@@ -136,10 +136,10 @@ public class ExampleServer {
 
     trustListManager = FileBasedTrustListManager.createAndInitialize(pkiDir.toPath());
 
-    var certificateQuarantine =
+    FileBasedCertificateQuarantine certificateQuarantine =
         FileBasedCertificateQuarantine.create(pkiDir.toPath().resolve("rejected").resolve("certs"));
 
-    var certificateFactory =
+    RsaSha256CertificateFactory certificateFactory =
         new RsaSha256CertificateFactory() {
           @Override
           protected KeyPair createRsaSha256KeyPair() {
@@ -152,16 +152,16 @@ public class ExampleServer {
           }
         };
 
-    var certificateValidator =
+    DefaultServerCertificateValidator certificateValidator =
         new DefaultServerCertificateValidator(trustListManager, certificateQuarantine);
 
-    var defaultGroup =
+    DefaultApplicationGroup defaultGroup =
         DefaultApplicationGroup.createAndInitialize(
             trustListManager, certificateStore, certificateFactory, certificateValidator);
 
-    var certificateManager = new DefaultCertificateManager(certificateQuarantine, defaultGroup);
+    DefaultCertificateManager certificateManager = new DefaultCertificateManager(certificateQuarantine, defaultGroup);
 
-    var identityValidator =
+    org.eclipse.milo.opcua.sdk.server.identity.UsernameIdentityValidator identityValidator =
         new UsernameIdentityValidator(
             authChallenge -> {
               String username = authChallenge.getUsername();
@@ -173,7 +173,7 @@ public class ExampleServer {
               return userOk || adminOk;
             });
 
-    var x509IdentityValidator = new X509IdentityValidator(c -> true);
+    org.eclipse.milo.opcua.sdk.server.identity.X509IdentityValidator x509IdentityValidator = new X509IdentityValidator(c -> true);
 
     X509Certificate certificate = loader.getServerCertificate();
 
@@ -188,7 +188,7 @@ public class ExampleServer {
 
     Set<EndpointConfig> endpointConfigurations = createEndpointConfigs(certificate);
 
-    var serverConfigBuilder =
+    OpcUaServerConfigBuilder serverConfigBuilder =
         OpcUaServerConfig.builder()
             .setApplicationUri(applicationUri)
             .setApplicationName(LocalizedText.english("Eclipse Milo OPC UA Example Server"))
@@ -228,11 +228,11 @@ public class ExampleServer {
   }
 
   private Set<EndpointConfig> createEndpointConfigs(X509Certificate certificate) {
-    var endpointConfigs = new LinkedHashSet<EndpointConfig>();
+    java.util.LinkedHashSet<org.eclipse.milo.opcua.sdk.server.EndpointConfig> endpointConfigs = new LinkedHashSet<EndpointConfig>();
 
-    List<String> bindAddresses = List.of("0.0.0.0");
+    List<String> bindAddresses = java.util.Collections.singletonList("0.0.0.0");
 
-    var hostnames = new LinkedHashSet<String>();
+    java.util.LinkedHashSet<java.lang.String> hostnames = new LinkedHashSet<String>();
     hostnames.add(HostnameUtil.getHostname());
     hostnames.addAll(HostnameUtil.getHostnames("0.0.0.0", true, false));
 

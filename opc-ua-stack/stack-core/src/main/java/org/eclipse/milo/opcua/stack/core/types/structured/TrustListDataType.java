@@ -111,7 +111,7 @@ public class TrustListDataType extends Structure implements UaStructuredType {
       return false;
     }
     TrustListDataType that = (TrustListDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getSpecifiedLists(), that.getSpecifiedLists());
     eqb.append(getTrustedCertificates(), that.getTrustedCertificates());
     eqb.append(getTrustedCrls(), that.getTrustedCrls());
@@ -122,7 +122,7 @@ public class TrustListDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getSpecifiedLists());
     hcb.append(getTrustedCertificates());
     hcb.append(getTrustedCrls());
@@ -133,7 +133,7 @@ public class TrustListDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TrustListDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TrustListDataType.class.getSimpleName() + "[", "]");
     joiner.add("specifiedLists=" + getSpecifiedLists());
     joiner.add("trustedCertificates=" + java.util.Arrays.toString(getTrustedCertificates()));
     joiner.add("trustedCrls=" + java.util.Arrays.toString(getTrustedCrls()));

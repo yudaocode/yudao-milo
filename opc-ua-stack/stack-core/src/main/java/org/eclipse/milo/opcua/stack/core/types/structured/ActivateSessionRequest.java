@@ -119,7 +119,7 @@ public class ActivateSessionRequest extends Structure implements UaRequestMessag
       return false;
     }
     ActivateSessionRequest that = (ActivateSessionRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getClientSignature(), that.getClientSignature());
     eqb.append(getClientSoftwareCertificates(), that.getClientSoftwareCertificates());
@@ -131,7 +131,7 @@ public class ActivateSessionRequest extends Structure implements UaRequestMessag
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getClientSignature());
     hcb.append(getClientSoftwareCertificates());
@@ -143,7 +143,7 @@ public class ActivateSessionRequest extends Structure implements UaRequestMessag
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ActivateSessionRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ActivateSessionRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("clientSignature=" + getClientSignature());
     joiner.add(

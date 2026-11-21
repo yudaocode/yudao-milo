@@ -49,14 +49,20 @@ public enum ExceptionDeviationFormat implements UaEnumeratedType {
   }
 
   public static @Nullable ExceptionDeviationFormat from(int value) {
-    return switch (value) {
-      case 0 -> AbsoluteValue;
-      case 1 -> PercentOfValue;
-      case 2 -> PercentOfRange;
-      case 3 -> PercentOfEuRange;
-      case 4 -> Unknown;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return AbsoluteValue;
+      case 1:
+        return PercentOfValue;
+      case 2:
+        return PercentOfRange;
+      case 3:
+        return PercentOfEuRange;
+      case 4:
+        return Unknown;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

@@ -84,7 +84,7 @@ public class NumberRange extends Structure implements UaStructuredType {
       return false;
     }
     NumberRange that = (NumberRange) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getLow(), that.getLow());
     eqb.append(getHigh(), that.getHigh());
     return eqb.build();
@@ -92,7 +92,7 @@ public class NumberRange extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getLow());
     hcb.append(getHigh());
     return hcb.build();
@@ -100,7 +100,7 @@ public class NumberRange extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NumberRange.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NumberRange.class.getSimpleName() + "[", "]");
     joiner.add("low=" + getLow());
     joiner.add("high=" + getHigh());
     return joiner.toString();

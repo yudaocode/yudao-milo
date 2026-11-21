@@ -189,7 +189,7 @@ public interface SerializationEntityType extends BaseObjectType {
                   "SerializationFilterProperties",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=14533")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))
@@ -208,7 +208,7 @@ public interface SerializationEntityType extends BaseObjectType {
                   "Results",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=6")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   1,
                   new UInteger[] {UInteger.valueOf(0)},
                   new LocalizedText("", ""))

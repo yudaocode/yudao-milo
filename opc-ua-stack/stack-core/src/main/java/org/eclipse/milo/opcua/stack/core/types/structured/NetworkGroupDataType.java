@@ -85,7 +85,7 @@ public class NetworkGroupDataType extends Structure implements UaStructuredType 
       return false;
     }
     NetworkGroupDataType that = (NetworkGroupDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getServerUri(), that.getServerUri());
     eqb.append(getNetworkPaths(), that.getNetworkPaths());
     return eqb.build();
@@ -93,7 +93,7 @@ public class NetworkGroupDataType extends Structure implements UaStructuredType 
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getServerUri());
     hcb.append(getNetworkPaths());
     return hcb.build();
@@ -101,7 +101,7 @@ public class NetworkGroupDataType extends Structure implements UaStructuredType 
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", NetworkGroupDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", NetworkGroupDataType.class.getSimpleName() + "[", "]");
     joiner.add("serverUri='" + getServerUri() + "'");
     joiner.add("networkPaths=" + java.util.Arrays.toString(getNetworkPaths()));
     return joiner.toString();

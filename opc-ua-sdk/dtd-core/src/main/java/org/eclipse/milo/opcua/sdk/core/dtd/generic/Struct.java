@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.core.dtd.generic;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Preconditions;
 import java.util.ArrayList;
@@ -31,7 +33,7 @@ public class Struct {
     Preconditions.checkNotNull(members);
 
     this.name = name;
-    this.members = Map.copyOf(members);
+    this.members = Java8Collections.mapCopyOf(members);
   }
 
   @NonNull

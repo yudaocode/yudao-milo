@@ -26,16 +26,19 @@ public class ExceptionHandler {
     String message = cause.getMessage();
     long statusCode = StatusCodes.Bad_UnexpectedError;
 
-    if (cause instanceof UaException ex) {
+    if (cause instanceof UaException) {
+      UaException ex = (UaException) cause;
       message = ex.getMessage();
       statusCode = ex.getStatusCode().value();
     } else {
       Throwable innerCause = cause.getCause();
 
-      if (innerCause instanceof UaException ex) {
+      if (innerCause instanceof UaException) {
+      UaException ex = (UaException) innerCause;
         message = ex.getMessage();
         statusCode = ex.getStatusCode().value();
-      } else if (innerCause instanceof UaRuntimeException ex) {
+      } else if (innerCause instanceof UaRuntimeException) {
+      UaRuntimeException ex = (UaRuntimeException) innerCause;
         message = ex.getMessage();
         statusCode = ex.getStatusCode().value();
       }

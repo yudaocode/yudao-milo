@@ -102,7 +102,7 @@ public class FindServersOnNetworkRequest extends Structure implements UaRequestM
       return false;
     }
     FindServersOnNetworkRequest that = (FindServersOnNetworkRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getStartingRecordId(), that.getStartingRecordId());
     eqb.append(getMaxRecordsToReturn(), that.getMaxRecordsToReturn());
@@ -112,7 +112,7 @@ public class FindServersOnNetworkRequest extends Structure implements UaRequestM
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getStartingRecordId());
     hcb.append(getMaxRecordsToReturn());
@@ -122,7 +122,7 @@ public class FindServersOnNetworkRequest extends Structure implements UaRequestM
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", FindServersOnNetworkRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("startingRecordId=" + getStartingRecordId());

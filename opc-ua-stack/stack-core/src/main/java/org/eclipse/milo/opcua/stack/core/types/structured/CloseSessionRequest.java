@@ -83,7 +83,7 @@ public class CloseSessionRequest extends Structure implements UaRequestMessageTy
       return false;
     }
     CloseSessionRequest that = (CloseSessionRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getDeleteSubscriptions(), that.getDeleteSubscriptions());
     return eqb.build();
@@ -91,7 +91,7 @@ public class CloseSessionRequest extends Structure implements UaRequestMessageTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getDeleteSubscriptions());
     return hcb.build();
@@ -99,7 +99,7 @@ public class CloseSessionRequest extends Structure implements UaRequestMessageTy
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CloseSessionRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CloseSessionRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("deleteSubscriptions=" + getDeleteSubscriptions());
     return joiner.toString();

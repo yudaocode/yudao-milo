@@ -45,12 +45,16 @@ public enum OverrideValueHandling implements UaEnumeratedType {
   }
 
   public static @Nullable OverrideValueHandling from(int value) {
-    return switch (value) {
-      case 0 -> Disabled;
-      case 1 -> LastUsableValue;
-      case 2 -> OverrideValue;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Disabled;
+      case 1:
+        return LastUsableValue;
+      case 2:
+        return OverrideValue;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

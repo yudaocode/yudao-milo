@@ -58,7 +58,7 @@ public class DiscoveryConfiguration extends Structure implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DiscoveryConfiguration.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DiscoveryConfiguration.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

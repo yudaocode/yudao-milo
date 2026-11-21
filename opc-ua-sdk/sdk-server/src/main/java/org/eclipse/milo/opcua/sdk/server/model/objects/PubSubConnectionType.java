@@ -102,7 +102,7 @@ public interface PubSubConnectionType extends BaseObjectType {
                   "Configuration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15480")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -121,7 +121,7 @@ public interface PubSubConnectionType extends BaseObjectType {
                   "GroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -166,7 +166,7 @@ public interface PubSubConnectionType extends BaseObjectType {
                   "Configuration",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15520")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -185,7 +185,7 @@ public interface PubSubConnectionType extends BaseObjectType {
                   "GroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -228,7 +228,7 @@ public interface PubSubConnectionType extends BaseObjectType {
                   "GroupId",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=17")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

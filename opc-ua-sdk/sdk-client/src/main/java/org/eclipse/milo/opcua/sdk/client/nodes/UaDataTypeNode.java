@@ -316,11 +316,14 @@ public class UaDataTypeNode extends UaNode implements DataTypeNode {
 
   @Override
   protected DataValue getAttributeValue(AttributeId attributeId) {
-    return switch (attributeId) {
-      case IsAbstract -> DataValue.valueOnly(new Variant(getIsAbstract()));
-      case DataType -> DataValue.valueOnly(new Variant(getDataTypeDefinition()));
-      default -> super.getAttributeValue(attributeId);
-    };
+    switch ((attributeId)) {
+      case IsAbstract:
+        return DataValue.valueOnly(new Variant(getIsAbstract()));
+      case DataType:
+        return DataValue.valueOnly(new Variant(getDataTypeDefinition()));
+      default:
+        return super.getAttributeValue(attributeId);
+    }
   }
 
   @Override

@@ -64,14 +64,20 @@ public enum TsnStreamState implements UaEnumeratedType {
   }
 
   public static @Nullable TsnStreamState from(int value) {
-    return switch (value) {
-      case 0 -> Disabled;
-      case 1 -> Configuring;
-      case 2 -> Ready;
-      case 3 -> Operational;
-      case 4 -> Error;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Disabled;
+      case 1:
+        return Configuring;
+      case 2:
+        return Ready;
+      case 3:
+        return Operational;
+      case 4:
+        return Error;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

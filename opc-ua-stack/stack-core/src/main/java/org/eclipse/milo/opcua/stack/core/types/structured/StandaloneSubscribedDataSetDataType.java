@@ -104,7 +104,7 @@ public class StandaloneSubscribedDataSetDataType extends SubscribedDataSetDataTy
       return false;
     }
     StandaloneSubscribedDataSetDataType that = (StandaloneSubscribedDataSetDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getName(), that.getName());
     eqb.append(getDataSetFolder(), that.getDataSetFolder());
     eqb.append(getDataSetMetaData(), that.getDataSetMetaData());
@@ -114,7 +114,7 @@ public class StandaloneSubscribedDataSetDataType extends SubscribedDataSetDataTy
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getName());
     hcb.append(getDataSetFolder());
     hcb.append(getDataSetMetaData());
@@ -124,7 +124,7 @@ public class StandaloneSubscribedDataSetDataType extends SubscribedDataSetDataTy
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", StandaloneSubscribedDataSetDataType.class.getSimpleName() + "[", "]");
     joiner.add("name='" + getName() + "'");

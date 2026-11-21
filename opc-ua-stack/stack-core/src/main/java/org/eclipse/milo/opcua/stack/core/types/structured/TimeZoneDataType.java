@@ -83,7 +83,7 @@ public class TimeZoneDataType extends Structure implements UaStructuredType {
       return false;
     }
     TimeZoneDataType that = (TimeZoneDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getOffset(), that.getOffset());
     eqb.append(getDaylightSavingInOffset(), that.getDaylightSavingInOffset());
     return eqb.build();
@@ -91,7 +91,7 @@ public class TimeZoneDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getOffset());
     hcb.append(getDaylightSavingInOffset());
     return hcb.build();
@@ -99,7 +99,7 @@ public class TimeZoneDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TimeZoneDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TimeZoneDataType.class.getSimpleName() + "[", "]");
     joiner.add("offset=" + getOffset());
     joiner.add("daylightSavingInOffset=" + getDaylightSavingInOffset());
     return joiner.toString();

@@ -58,7 +58,7 @@ public class JsonNetworkMessageContentMask
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", JsonNetworkMessageContentMask.class.getSimpleName() + "[", "]");
     joiner.add("networkMessageHeader=" + getNetworkMessageHeader());
     joiner.add("dataSetMessageHeader=" + getDataSetMessageHeader());

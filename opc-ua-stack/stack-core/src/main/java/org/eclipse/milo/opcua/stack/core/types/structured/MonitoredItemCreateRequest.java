@@ -94,7 +94,7 @@ public class MonitoredItemCreateRequest extends Structure implements UaStructure
       return false;
     }
     MonitoredItemCreateRequest that = (MonitoredItemCreateRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getItemToMonitor(), that.getItemToMonitor());
     eqb.append(getMonitoringMode(), that.getMonitoringMode());
     eqb.append(getRequestedParameters(), that.getRequestedParameters());
@@ -103,7 +103,7 @@ public class MonitoredItemCreateRequest extends Structure implements UaStructure
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getItemToMonitor());
     hcb.append(getMonitoringMode());
     hcb.append(getRequestedParameters());
@@ -112,7 +112,7 @@ public class MonitoredItemCreateRequest extends Structure implements UaStructure
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", MonitoredItemCreateRequest.class.getSimpleName() + "[", "]");
     joiner.add("itemToMonitor=" + getItemToMonitor());
     joiner.add("monitoringMode=" + getMonitoringMode());

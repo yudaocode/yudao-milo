@@ -260,11 +260,14 @@ public class UaViewNode extends UaNode implements ViewNode {
 
   @Override
   protected DataValue getAttributeValue(AttributeId attributeId) {
-    return switch (attributeId) {
-      case ContainsNoLoops -> DataValue.valueOnly(new Variant(getContainsNoLoops()));
-      case EventNotifier -> DataValue.valueOnly(new Variant(getEventNotifier()));
-      default -> super.getAttributeValue(attributeId);
-    };
+    switch ((attributeId)) {
+      case ContainsNoLoops:
+        return DataValue.valueOnly(new Variant(getContainsNoLoops()));
+      case EventNotifier:
+        return DataValue.valueOnly(new Variant(getEventNotifier()));
+      default:
+        return super.getAttributeValue(attributeId);
+    }
   }
 
   @Override

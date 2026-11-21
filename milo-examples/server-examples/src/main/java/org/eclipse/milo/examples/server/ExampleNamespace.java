@@ -379,7 +379,8 @@ public class ExampleNamespace extends ManagedNamespaceWithLifecycle {
         .addLast(
             new RestrictedAccessFilter(
                 identity -> {
-                  if (identity instanceof Identity.UsernameIdentity ui) {
+                  if (identity instanceof Identity.UsernameIdentity) {
+      Identity.UsernameIdentity ui = (Identity.UsernameIdentity) identity;
                     if (ui.getUsername().equals("admin")) {
                       return AccessLevel.READ_WRITE;
                     } else {
@@ -422,7 +423,8 @@ public class ExampleNamespace extends ManagedNamespaceWithLifecycle {
         .addLast(
             new RestrictedAccessFilter(
                 identity -> {
-                  if (identity instanceof Identity.UsernameIdentity ui) {
+                  if (identity instanceof Identity.UsernameIdentity) {
+      Identity.UsernameIdentity ui = (Identity.UsernameIdentity) identity;
                     if (ui.getUsername().equals("admin")) {
                       return AccessLevel.READ_WRITE;
                     } else {
@@ -962,7 +964,7 @@ public class ExampleNamespace extends ManagedNamespaceWithLifecycle {
   private DataType registerDynamicEnumType() throws Exception {
     // Define NodeId for DataType
     NodeId dataTypeId =
-        ExpandedNodeId.parse("nsu=%s;s=DataType.DynamicEnumType".formatted(NAMESPACE_URI))
+        ExpandedNodeId.parse(String.format("nsu=%s;s=DataType.DynamicEnumType", NAMESPACE_URI))
             .toNodeIdOrThrow(getServer().getNamespaceTable());
 
     // Add a custom DataTypeNode with a SubtypeOf reference to Enumeration
@@ -1027,12 +1029,12 @@ public class ExampleNamespace extends ManagedNamespaceWithLifecycle {
   private DataType registerDynamicStructType() throws Exception {
     // Define NodeIds for DataType and encoding Nodes
     NodeId dataTypeId =
-        ExpandedNodeId.parse("nsu=%s;s=DataType.DynamicStructType".formatted(NAMESPACE_URI))
+        ExpandedNodeId.parse(String.format("nsu=%s;s=DataType.DynamicStructType", NAMESPACE_URI))
             .toNodeIdOrThrow(getServer().getNamespaceTable());
 
     NodeId binaryEncodingId =
         ExpandedNodeId.parse(
-                "nsu=%s;s=DataType.DynamicStructType.BinaryEncoding".formatted(NAMESPACE_URI))
+                String.format("nsu=%s;s=DataType.DynamicStructType.BinaryEncoding", NAMESPACE_URI))
             .toNodeIdOrThrow(getServer().getNamespaceTable());
 
     // Add a custom DataTypeNode with a SubtypeOf reference to Structure
@@ -1100,7 +1102,7 @@ public class ExampleNamespace extends ManagedNamespaceWithLifecycle {
     assert dataType != null;
 
     // Register Codecs for each supported encoding with DataTypeManager
-    var codec = new DynamicStructCodec(dataType, dataTypeTree);
+    DynamicStructCodec codec = new DynamicStructCodec(dataType, dataTypeTree);
 
     getNodeContext()
         .getServer()

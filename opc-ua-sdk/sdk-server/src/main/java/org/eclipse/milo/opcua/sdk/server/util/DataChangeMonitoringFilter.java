@@ -92,12 +92,16 @@ public class DataChangeMonitoringFilter {
 
     DataChangeTrigger trigger = filter.getTrigger();
 
-    return switch (trigger) {
-      case Status -> filterByStatus(lastValue, currentValue);
-      case StatusValue -> filterByStatusValue(lastValue, currentValue, filter, euRange);
-      case StatusValueTimestamp ->
-          filterByStatusValueTimestamp(lastValue, currentValue, filter, euRange);
-    };
+    switch ((trigger)) {
+      case Status:
+        return filterByStatus(lastValue, currentValue);
+      case StatusValue:
+        return filterByStatusValue(lastValue, currentValue, filter, euRange);
+      case StatusValueTimestamp:
+        return filterByStatusValueTimestamp(lastValue, currentValue, filter, euRange);
+      default:
+        return false;
+    }
   }
 
   /**
@@ -208,7 +212,9 @@ public class DataChangeMonitoringFilter {
       return true;
     }
 
-    if (last instanceof Matrix lastMatrix && current instanceof Matrix currentMatrix) {
+    if (last instanceof Matrix && current instanceof Matrix) {
+      Matrix lastMatrix = (Matrix) last;
+      Matrix currentMatrix = (Matrix) current;
       // Dimension changes must be reported regardless of the numeric deadband.
       if (!Arrays.equals(lastMatrix.getDimensions(), currentMatrix.getDimensions())) {
         return true;

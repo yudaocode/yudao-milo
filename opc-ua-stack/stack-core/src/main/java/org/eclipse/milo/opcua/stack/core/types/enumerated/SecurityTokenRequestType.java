@@ -43,11 +43,14 @@ public enum SecurityTokenRequestType implements UaEnumeratedType {
   }
 
   public static @Nullable SecurityTokenRequestType from(int value) {
-    return switch (value) {
-      case 0 -> Issue;
-      case 1 -> Renew;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Issue;
+      case 1:
+        return Renew;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

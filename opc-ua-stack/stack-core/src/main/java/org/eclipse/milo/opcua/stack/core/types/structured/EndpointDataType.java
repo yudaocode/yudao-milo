@@ -98,7 +98,7 @@ public class EndpointDataType extends BaseConfigurationRecordDataType implements
       return false;
     }
     EndpointDataType that = (EndpointDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getDiscoveryUrls(), that.getDiscoveryUrls());
     eqb.append(getNetworkName(), that.getNetworkName());
@@ -108,7 +108,7 @@ public class EndpointDataType extends BaseConfigurationRecordDataType implements
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getDiscoveryUrls());
     hcb.append(getNetworkName());
     hcb.append(getPort());
@@ -118,7 +118,7 @@ public class EndpointDataType extends BaseConfigurationRecordDataType implements
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EndpointDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EndpointDataType.class.getSimpleName() + "[", "]");
     joiner.add("discoveryUrls=" + java.util.Arrays.toString(getDiscoveryUrls()));
     joiner.add("networkName='" + getNetworkName() + "'");
     joiner.add("port=" + getPort());

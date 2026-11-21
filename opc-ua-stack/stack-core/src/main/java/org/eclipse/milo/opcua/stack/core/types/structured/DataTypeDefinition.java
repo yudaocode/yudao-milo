@@ -54,7 +54,7 @@ public abstract class DataTypeDefinition extends Structure implements UaStructur
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", DataTypeDefinition.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", DataTypeDefinition.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

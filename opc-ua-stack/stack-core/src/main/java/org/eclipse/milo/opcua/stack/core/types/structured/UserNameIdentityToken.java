@@ -97,7 +97,7 @@ public class UserNameIdentityToken extends UserIdentityToken implements UaStruct
       return false;
     }
     UserNameIdentityToken that = (UserNameIdentityToken) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getUserName(), that.getUserName());
     eqb.append(getPassword(), that.getPassword());
@@ -107,7 +107,7 @@ public class UserNameIdentityToken extends UserIdentityToken implements UaStruct
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getUserName());
     hcb.append(getPassword());
     hcb.append(getEncryptionAlgorithm());
@@ -117,7 +117,7 @@ public class UserNameIdentityToken extends UserIdentityToken implements UaStruct
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", UserNameIdentityToken.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", UserNameIdentityToken.class.getSimpleName() + "[", "]");
     joiner.add("userName='" + getUserName() + "'");
     joiner.add("password=" + getPassword());
     joiner.add("encryptionAlgorithm='" + getEncryptionAlgorithm() + "'");

@@ -103,7 +103,7 @@ public class EndpointType extends Structure implements UaStructuredType {
       return false;
     }
     EndpointType that = (EndpointType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getEndpointUrl(), that.getEndpointUrl());
     eqb.append(getSecurityMode(), that.getSecurityMode());
     eqb.append(getSecurityPolicyUri(), that.getSecurityPolicyUri());
@@ -113,7 +113,7 @@ public class EndpointType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEndpointUrl());
     hcb.append(getSecurityMode());
     hcb.append(getSecurityPolicyUri());
@@ -123,7 +123,7 @@ public class EndpointType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EndpointType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EndpointType.class.getSimpleName() + "[", "]");
     joiner.add("endpointUrl='" + getEndpointUrl() + "'");
     joiner.add("securityMode=" + getSecurityMode());
     joiner.add("securityPolicyUri='" + getSecurityPolicyUri() + "'");

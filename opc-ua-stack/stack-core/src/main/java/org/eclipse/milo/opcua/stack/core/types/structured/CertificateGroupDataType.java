@@ -106,7 +106,7 @@ public class CertificateGroupDataType extends BaseConfigurationRecordDataType
       return false;
     }
     CertificateGroupDataType that = (CertificateGroupDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getPurpose(), that.getPurpose());
     eqb.append(getCertificateTypes(), that.getCertificateTypes());
@@ -117,7 +117,7 @@ public class CertificateGroupDataType extends BaseConfigurationRecordDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getPurpose());
     hcb.append(getCertificateTypes());
     hcb.append(getIsCertificateAssigned());
@@ -128,7 +128,7 @@ public class CertificateGroupDataType extends BaseConfigurationRecordDataType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CertificateGroupDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CertificateGroupDataType.class.getSimpleName() + "[", "]");
     joiner.add("purpose=" + getPurpose());
     joiner.add("certificateTypes=" + java.util.Arrays.toString(getCertificateTypes()));
     joiner.add("isCertificateAssigned=" + java.util.Arrays.toString(getIsCertificateAssigned()));

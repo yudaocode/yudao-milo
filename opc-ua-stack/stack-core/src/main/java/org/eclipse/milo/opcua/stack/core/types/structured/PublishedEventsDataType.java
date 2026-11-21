@@ -95,7 +95,7 @@ public class PublishedEventsDataType extends PublishedDataSetSourceDataType
       return false;
     }
     PublishedEventsDataType that = (PublishedEventsDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getEventNotifier(), that.getEventNotifier());
     eqb.append(getSelectedFields(), that.getSelectedFields());
     eqb.append(getFilter(), that.getFilter());
@@ -104,7 +104,7 @@ public class PublishedEventsDataType extends PublishedDataSetSourceDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getEventNotifier());
     hcb.append(getSelectedFields());
     hcb.append(getFilter());
@@ -113,7 +113,7 @@ public class PublishedEventsDataType extends PublishedDataSetSourceDataType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PublishedEventsDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PublishedEventsDataType.class.getSimpleName() + "[", "]");
     joiner.add("eventNotifier=" + getEventNotifier());
     joiner.add("selectedFields=" + java.util.Arrays.toString(getSelectedFields()));
     joiner.add("filter=" + getFilter());

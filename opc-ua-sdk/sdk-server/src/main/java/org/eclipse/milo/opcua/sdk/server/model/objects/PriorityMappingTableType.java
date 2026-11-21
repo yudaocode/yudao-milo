@@ -67,7 +67,7 @@ public interface PriorityMappingTableType extends BaseObjectType {
                   "MappingUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -75,7 +75,7 @@ public interface PriorityMappingTableType extends BaseObjectType {
                   "PriorityLabel",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -83,7 +83,7 @@ public interface PriorityMappingTableType extends BaseObjectType {
                   "PriorityValue_PCP",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=3")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -91,7 +91,7 @@ public interface PriorityMappingTableType extends BaseObjectType {
                   "PriorityValue_DSCP",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -143,7 +143,7 @@ public interface PriorityMappingTableType extends BaseObjectType {
                   "MappingUri",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -151,7 +151,7 @@ public interface PriorityMappingTableType extends BaseObjectType {
                   "PriorityLabel",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=12")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.identity;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -35,11 +37,11 @@ public class CompositeValidator implements IdentityValidator {
   private final List<IdentityValidator> validators;
 
   public CompositeValidator(IdentityValidator... validators) {
-    this(List.of(validators));
+    this(Java8Collections.listOf(validators));
   }
 
   public CompositeValidator(List<IdentityValidator> validators) {
-    this.validators = List.copyOf(validators);
+    this.validators = Java8Collections.listCopyOf(validators);
   }
 
   @Override

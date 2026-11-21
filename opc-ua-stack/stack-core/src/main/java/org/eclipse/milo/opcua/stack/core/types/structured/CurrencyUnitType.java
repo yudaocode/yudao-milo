@@ -99,7 +99,7 @@ public class CurrencyUnitType extends Structure implements UaStructuredType {
       return false;
     }
     CurrencyUnitType that = (CurrencyUnitType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getNumericCode(), that.getNumericCode());
     eqb.append(getExponent(), that.getExponent());
     eqb.append(getAlphabeticCode(), that.getAlphabeticCode());
@@ -109,7 +109,7 @@ public class CurrencyUnitType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getNumericCode());
     hcb.append(getExponent());
     hcb.append(getAlphabeticCode());
@@ -119,7 +119,7 @@ public class CurrencyUnitType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", CurrencyUnitType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", CurrencyUnitType.class.getSimpleName() + "[", "]");
     joiner.add("numericCode=" + getNumericCode());
     joiner.add("exponent=" + getExponent());
     joiner.add("alphabeticCode='" + getAlphabeticCode() + "'");

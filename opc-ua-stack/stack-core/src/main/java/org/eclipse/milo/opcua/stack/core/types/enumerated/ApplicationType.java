@@ -47,13 +47,18 @@ public enum ApplicationType implements UaEnumeratedType {
   }
 
   public static @Nullable ApplicationType from(int value) {
-    return switch (value) {
-      case 0 -> Server;
-      case 1 -> Client;
-      case 2 -> ClientAndServer;
-      case 3 -> DiscoveryServer;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Server;
+      case 1:
+        return Client;
+      case 2:
+        return ClientAndServer;
+      case 3:
+        return DiscoveryServer;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

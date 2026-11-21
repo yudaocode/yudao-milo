@@ -84,7 +84,7 @@ public class LldpTlvType extends Structure implements UaStructuredType {
       return false;
     }
     LldpTlvType that = (LldpTlvType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTlvType(), that.getTlvType());
     eqb.append(getTlvInfo(), that.getTlvInfo());
     return eqb.build();
@@ -92,7 +92,7 @@ public class LldpTlvType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTlvType());
     hcb.append(getTlvInfo());
     return hcb.build();
@@ -100,7 +100,7 @@ public class LldpTlvType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", LldpTlvType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", LldpTlvType.class.getSimpleName() + "[", "]");
     joiner.add("tlvType=" + getTlvType());
     joiner.add("tlvInfo=" + getTlvInfo());
     return joiner.toString();

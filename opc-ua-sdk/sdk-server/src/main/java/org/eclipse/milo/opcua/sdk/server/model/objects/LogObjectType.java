@@ -101,7 +101,7 @@ public interface LogObjectType extends BaseObjectType {
                   "StartTime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=13")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -109,7 +109,7 @@ public interface LogObjectType extends BaseObjectType {
                   "EndTime",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=13")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -117,7 +117,7 @@ public interface LogObjectType extends BaseObjectType {
                   "MaxReturnRecords",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=7")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -125,7 +125,7 @@ public interface LogObjectType extends BaseObjectType {
                   "MinimumSeverity",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=5")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -133,7 +133,7 @@ public interface LogObjectType extends BaseObjectType {
                   "RequestMask",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19749")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -141,7 +141,7 @@ public interface LogObjectType extends BaseObjectType {
                   "ContinuationPointIn",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -160,7 +160,7 @@ public interface LogObjectType extends BaseObjectType {
                   "Results",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=19745")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", "")),
@@ -168,7 +168,7 @@ public interface LogObjectType extends BaseObjectType {
                   "ContinuationPointOut",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))
@@ -232,7 +232,7 @@ public interface LogObjectType extends BaseObjectType {
                   "ContinuationPointIn",
                   ExpandedNodeId.parse("nsu=http://opcfoundation.org/UA/;i=15")
                       .toNodeId(namespaceTable)
-                      .orElseThrow(),
+                      .get(),
                   -1,
                   null,
                   new LocalizedText("", ""))

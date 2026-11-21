@@ -91,7 +91,7 @@ public class MethodAttributes extends NodeAttributes implements UaStructuredType
       return false;
     }
     MethodAttributes that = (MethodAttributes) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     eqb.append(getExecutable(), that.getExecutable());
     eqb.append(getUserExecutable(), that.getUserExecutable());
@@ -100,7 +100,7 @@ public class MethodAttributes extends NodeAttributes implements UaStructuredType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getExecutable());
     hcb.append(getUserExecutable());
     hcb.appendSuper(super.hashCode());
@@ -109,7 +109,7 @@ public class MethodAttributes extends NodeAttributes implements UaStructuredType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", MethodAttributes.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", MethodAttributes.class.getSimpleName() + "[", "]");
     joiner.add("executable=" + getExecutable());
     joiner.add("userExecutable=" + getUserExecutable());
     return joiner.toString();

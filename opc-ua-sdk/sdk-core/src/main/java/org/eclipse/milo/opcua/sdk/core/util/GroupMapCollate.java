@@ -21,7 +21,7 @@ public class GroupMapCollate {
   public static <T, K, R> List<R> groupMapCollate(
       List<T> items, Function<T, K> grouper, Function<K, Function<List<T>, List<R>>> mappers) {
 
-    var pending = new ArrayList<Pending<T, R>>(items.size());
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.core.util.GroupMapCollate.Pending<T,R>> pending = new ArrayList<Pending<T, R>>(items.size());
 
     for (int i = 0; i < items.size(); i++) {
       pending.add(new Pending<>(items.get(i), i));

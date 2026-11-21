@@ -85,7 +85,7 @@ public class DatagramWriterGroupTransportDataType extends WriterGroupTransportDa
       return false;
     }
     DatagramWriterGroupTransportDataType that = (DatagramWriterGroupTransportDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getMessageRepeatCount(), that.getMessageRepeatCount());
     eqb.append(getMessageRepeatDelay(), that.getMessageRepeatDelay());
     return eqb.build();
@@ -93,7 +93,7 @@ public class DatagramWriterGroupTransportDataType extends WriterGroupTransportDa
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getMessageRepeatCount());
     hcb.append(getMessageRepeatDelay());
     return hcb.build();
@@ -101,7 +101,7 @@ public class DatagramWriterGroupTransportDataType extends WriterGroupTransportDa
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(
             ", ", DatagramWriterGroupTransportDataType.class.getSimpleName() + "[", "]");
     joiner.add("messageRepeatCount=" + getMessageRepeatCount());

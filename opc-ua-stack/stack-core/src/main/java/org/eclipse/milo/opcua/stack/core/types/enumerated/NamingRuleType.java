@@ -47,12 +47,16 @@ public enum NamingRuleType implements UaEnumeratedType {
   }
 
   public static @Nullable NamingRuleType from(int value) {
-    return switch (value) {
-      case 1 -> Mandatory;
-      case 2 -> Optional;
-      case 3 -> Constraint;
-      default -> null;
-    };
+    switch ((value)) {
+      case 1:
+        return Mandatory;
+      case 2:
+        return Optional;
+      case 3:
+        return Constraint;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

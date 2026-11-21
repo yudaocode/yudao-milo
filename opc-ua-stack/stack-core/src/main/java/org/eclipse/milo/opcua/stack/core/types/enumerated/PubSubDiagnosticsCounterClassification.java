@@ -43,11 +43,14 @@ public enum PubSubDiagnosticsCounterClassification implements UaEnumeratedType {
   }
 
   public static @Nullable PubSubDiagnosticsCounterClassification from(int value) {
-    return switch (value) {
-      case 0 -> Information;
-      case 1 -> Error;
-      default -> null;
-    };
+    switch ((value)) {
+      case 0:
+        return Information;
+      case 1:
+        return Error;
+      default:
+        return null;
+    }
   }
 
   public static EnumDefinition definition() {

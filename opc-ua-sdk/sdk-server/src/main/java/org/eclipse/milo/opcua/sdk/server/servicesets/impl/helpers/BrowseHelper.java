@@ -10,6 +10,8 @@
 
 package org.eclipse.milo.opcua.sdk.server.servicesets.impl.helpers;
 
+import org.eclipse.milo.opcua.stack.core.util.Java8Collections;
+
 import static org.eclipse.milo.opcua.sdk.server.util.UaEnumUtil.browseResultMasks;
 import static org.eclipse.milo.opcua.sdk.server.util.UaEnumUtil.nodeClasses;
 
@@ -58,14 +60,14 @@ public class BrowseHelper {
   public static List<BrowseResult> browse(
       OpcUaServer server, AccessContext context, BrowseRequest browseRequest) {
 
-    Session session = context.getSession().orElseThrow();
+    Session session = context.getSession().get();
 
     List<PendingBrowse> pending =
         Lists.ofNullable(browseRequest.getNodesToBrowse()).stream()
             .map(PendingBrowse::new)
-            .toList();
+            .collect(Collectors.toList());
 
-    List<NodeId> nodeIds = pending.stream().map(pb -> pb.browseDescription.getNodeId()).toList();
+    List<NodeId> nodeIds = pending.stream().map(pb -> pb.browseDescription.getNodeId()).collect(Collectors.toList());
 
     Map<NodeId, AccessResult> accessResults =
         server.getAccessController().checkBrowseAccess(session, nodeIds);
@@ -98,7 +100,7 @@ public class BrowseHelper {
         pending.stream()
             .filter(pb -> pb.referenceDescriptionResult == null)
             .map(pb -> pb.browseDescription)
-            .toList();
+            .collect(Collectors.toList());
 
     List<AddressSpace.ReferenceResult> referenceResults =
         server
@@ -120,7 +122,8 @@ public class BrowseHelper {
       if (referenceDescriptionResult instanceof ReferenceDescriptionResult.BadNoReferences) {
         pb.referenceDescriptionResult = referenceDescriptionResult;
       } else if (referenceDescriptionResult
-          instanceof ReferenceDescriptionResult.ReferenceDescriptionList rdl) {
+          instanceof ReferenceDescriptionResult.ReferenceDescriptionList) {
+        ReferenceDescriptionResult.ReferenceDescriptionList rdl = (ReferenceDescriptionResult.ReferenceDescriptionList) referenceDescriptionResult;
         List<NodeId> nodeIdsToCheck =
             rdl.referenceDescriptions.stream()
                 .map(
@@ -128,12 +131,12 @@ public class BrowseHelper {
                         r.getNodeId()
                             .toNodeId(server.getNamespaceTable())
                             .orElse(NodeId.NULL_VALUE))
-                .toList();
+                .collect(Collectors.toList());
 
         Map<NodeId, AccessResult> referenceAccessResults =
             server.getAccessController().checkBrowseAccess(session, nodeIdsToCheck);
 
-        var filteredReferences = new ArrayList<ReferenceDescription>();
+        java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReferenceDescription> filteredReferences = new ArrayList<ReferenceDescription>();
 
         for (ReferenceDescription reference : rdl.referenceDescriptions) {
           NodeId nodeId =
@@ -154,20 +157,22 @@ public class BrowseHelper {
     // Gather all the ReferenceDescription lists: the ones we initially filtered out due to
     // lack of Browse permission and the ones from the actual Browse.
     List<ReferenceDescriptionResult> allReferenceDescriptionResults =
-        pending.stream().map(pb -> pb.referenceDescriptionResult).toList();
+        pending.stream().map(pb -> pb.referenceDescriptionResult).collect(Collectors.toList());
 
     int max =
         browseRequest.getRequestedMaxReferencesPerNode().longValue() == 0
             ? Integer.MAX_VALUE
             : Ints.saturatedCast(browseRequest.getRequestedMaxReferencesPerNode().longValue());
 
-    var browseResults = new ArrayList<BrowseResult>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.BrowseResult> browseResults = new ArrayList<BrowseResult>();
 
     for (ReferenceDescriptionResult referenceDescriptionResult : allReferenceDescriptionResults) {
-      if (referenceDescriptionResult instanceof ReferenceDescriptionResult.BadNoReferences bnr) {
+      if (referenceDescriptionResult instanceof ReferenceDescriptionResult.BadNoReferences) {
+      ReferenceDescriptionResult.BadNoReferences bnr = (ReferenceDescriptionResult.BadNoReferences) referenceDescriptionResult;
         browseResults.add(new BrowseResult(bnr.statusCode, null, new ReferenceDescription[0]));
       } else if (referenceDescriptionResult
-          instanceof ReferenceDescriptionResult.ReferenceDescriptionList rdl) {
+          instanceof ReferenceDescriptionResult.ReferenceDescriptionList) {
+        ReferenceDescriptionResult.ReferenceDescriptionList rdl = (ReferenceDescriptionResult.ReferenceDescriptionList) referenceDescriptionResult;
         BrowseResult browseResult =
             createBrowseResult(
                 server, context.getSession().orElse(null), max, rdl.referenceDescriptions);
@@ -184,14 +189,15 @@ public class BrowseHelper {
       List<BrowseDescription> nodesToBrowse,
       List<AddressSpace.ReferenceResult> referenceResults) {
 
-    var referenceDescriptionsList = new ArrayList<ReferenceDescriptionResult>();
+    java.util.ArrayList<org.eclipse.milo.opcua.sdk.server.servicesets.impl.helpers.BrowseHelper.ReferenceDescriptionResult> referenceDescriptionsList = new ArrayList<ReferenceDescriptionResult>();
 
     for (int i = 0; i < nodesToBrowse.size(); i++) {
       BrowseDescription browseDescription = nodesToBrowse.get(i);
       AddressSpace.ReferenceResult result = referenceResults.get(i);
 
       List<Reference> references;
-      if (result instanceof AddressSpace.ReferenceResult.ReferenceList r) {
+      if (result instanceof AddressSpace.ReferenceResult.ReferenceList) {
+        AddressSpace.ReferenceResult.ReferenceList r = (AddressSpace.ReferenceResult.ReferenceList) result;
         references = r.references();
       } else {
         referenceDescriptionsList.add(ReferenceDescriptionResult.of(StatusCodes.Bad_NodeIdUnknown));
@@ -202,7 +208,7 @@ public class BrowseHelper {
           references.stream()
               .filter(reference -> filterDirection(browseDescription, reference))
               .filter(reference -> filterReferenceType(server, browseDescription, reference))
-              .toList();
+              .collect(Collectors.toList());
 
       // The target of each of these references is going to need "BrowseAttributes" read
       // and possibly the TypeDefinition browsed for. How can we batch these up?
@@ -216,7 +222,7 @@ public class BrowseHelper {
           browseTypeDefinitions(
               server, targetNodeIds, browseAttributes, browseDescription.getResultMask());
 
-      var referenceDescriptions = new ArrayList<ReferenceDescription>();
+      java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReferenceDescription> referenceDescriptions = new ArrayList<ReferenceDescription>();
 
       for (int j = 0; j < stage1Refs.size(); j++) {
         Reference reference = stage1Refs.get(j);
@@ -291,7 +297,7 @@ public class BrowseHelper {
             new ReferenceDescription[0]);
       } else {
         List<ReferenceDescription> subList = references.subList(0, max);
-        List<ReferenceDescription> current = List.copyOf(subList);
+        List<ReferenceDescription> current = Java8Collections.listCopyOf(subList);
         subList.clear();
 
         ContinuationPoint c = new ContinuationPoint(references, max);
@@ -309,9 +315,9 @@ public class BrowseHelper {
   private static List<BrowseAttributes> readBrowseAttributes(
       OpcUaServer server, List<ExpandedNodeId> nodeIds) {
 
-    final var browseAttributes = new ArrayList<BrowseAttributes>();
+    final ArrayList<BrowseAttributes> browseAttributes = new ArrayList<BrowseAttributes>();
 
-    var readValueIds = new ArrayList<ReadValueId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId> readValueIds = new ArrayList<ReadValueId>();
 
     for (ExpandedNodeId xni : nodeIds) {
       NodeId nodeId = xni.toNodeId(server.getNamespaceTable()).orElse(NodeId.NULL_VALUE);
@@ -323,7 +329,7 @@ public class BrowseHelper {
           new ReadValueId(nodeId, AttributeId.NodeClass.uid(), null, QualifiedName.NULL_VALUE));
     }
 
-    var context = new ReadContext(server, null);
+    org.eclipse.milo.opcua.sdk.server.AddressSpace.ReadContext context = new ReadContext(server, null);
 
     List<DataValue> values =
         server
@@ -353,7 +359,7 @@ public class BrowseHelper {
       return Collections.nCopies(nodeIds.size(), ExpandedNodeId.NULL_VALUE);
     }
 
-    var typeDefinitions = new ArrayList<ExpandedNodeId>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.types.builtin.ExpandedNodeId> typeDefinitions = new ArrayList<ExpandedNodeId>();
 
     for (int i = 0; i < nodeIds.size(); i++) {
       NamespaceTable namespaceTable = server.getNamespaceTable();
@@ -366,7 +372,8 @@ public class BrowseHelper {
         typeDefinitions.add(ExpandedNodeId.NULL_VALUE);
       } else {
         switch (attributes.nodeClass) {
-          case Object, Variable -> {
+          case Object:
+          case Variable: {
             try {
               ExpandedNodeId typeDefinitionId = browseTypeDefinition(server, nodeId);
               typeDefinitionId = BrowseUtil.normalize(typeDefinitionId, namespaceTable);
@@ -379,7 +386,7 @@ public class BrowseHelper {
               typeDefinitions.add(ExpandedNodeId.NULL_VALUE);
             }
           }
-          default -> typeDefinitions.add(ExpandedNodeId.NULL_VALUE);
+          default: typeDefinitions.add(ExpandedNodeId.NULL_VALUE);
         }
       }
     }
@@ -404,14 +411,15 @@ public class BrowseHelper {
       LoggerFactory.getLogger(BrowseHelper.class)
           .debug("No managed TypeDefinition for nodeId={}, browsing...", nodeId);
 
-      var browseContext = new BrowseContext(server, null);
+      org.eclipse.milo.opcua.sdk.server.AddressSpace.BrowseContext browseContext = new BrowseContext(server, null);
 
-      var view = new ViewDescription(NodeId.NULL_VALUE, DateTime.NULL_VALUE, UInteger.valueOf(0));
+      ViewDescription view = new ViewDescription(NodeId.NULL_VALUE, DateTime.NULL_VALUE, UInteger.valueOf(0));
 
       AddressSpace.ReferenceResult result =
-          server.getAddressSpaceManager().browse(browseContext, view, List.of(nodeId)).get(0);
+          server.getAddressSpaceManager().browse(browseContext, view, Java8Collections.listOf(nodeId)).get(0);
 
-      if (result instanceof AddressSpace.ReferenceResult.ReferenceList rl) {
+      if (result instanceof AddressSpace.ReferenceResult.ReferenceList) {
+        AddressSpace.ReferenceResult.ReferenceList rl = (AddressSpace.ReferenceResult.ReferenceList) result;
         List<Reference> references = rl.references();
 
         return references.stream()
@@ -428,11 +436,14 @@ public class BrowseHelper {
 
   private static boolean filterDirection(BrowseDescription browseDescription, Reference reference) {
 
-    return switch (browseDescription.getBrowseDirection()) {
-      case Forward -> reference.isForward();
-      case Inverse -> reference.isInverse();
-      default -> true;
-    };
+    switch ((browseDescription.getBrowseDirection())) {
+      case Forward:
+        return reference.isForward();
+      case Inverse:
+        return reference.isInverse();
+      default:
+        return true;
+    }
   }
 
   private static boolean filterReferenceType(
@@ -460,10 +471,29 @@ public class BrowseHelper {
     return nodeClasses.contains(nodeClass);
   }
 
-  private record BrowseAttributes(
-      @Nullable QualifiedName browseName,
-      @Nullable LocalizedText displayName,
-      @Nullable NodeClass nodeClass) {}
+  private static final class BrowseAttributes {
+    private final @Nullable QualifiedName browseName;
+    private final @Nullable LocalizedText displayName;
+    private final @Nullable NodeClass nodeClass;
+
+    public @Nullable QualifiedName browseName() {
+      return browseName;
+    }
+
+    public @Nullable LocalizedText displayName() {
+      return displayName;
+    }
+
+    public @Nullable NodeClass nodeClass() {
+      return nodeClass;
+    }
+
+    BrowseAttributes(@Nullable QualifiedName browseName, @Nullable LocalizedText displayName, @Nullable NodeClass nodeClass) {
+      this.browseName = browseName;
+      this.displayName = displayName;
+      this.nodeClass = nodeClass;
+    }
+}
 
   private static class PendingBrowse {
 
@@ -475,12 +505,31 @@ public class BrowseHelper {
     }
   }
 
-  private sealed interface ReferenceDescriptionResult {
+  private interface ReferenceDescriptionResult {
 
-    record BadNoReferences(StatusCode statusCode) implements ReferenceDescriptionResult {}
+    static final class BadNoReferences implements ReferenceDescriptionResult {
+      private final StatusCode statusCode;
 
-    record ReferenceDescriptionList(List<ReferenceDescription> referenceDescriptions)
-        implements ReferenceDescriptionResult {}
+      public StatusCode statusCode() {
+        return statusCode;
+      }
+
+      BadNoReferences(StatusCode statusCode) {
+        this.statusCode = statusCode;
+      }
+}
+
+    static final class ReferenceDescriptionList implements ReferenceDescriptionResult {
+      private final List<ReferenceDescription> referenceDescriptions;
+
+      public List<ReferenceDescription> referenceDescriptions() {
+        return referenceDescriptions;
+      }
+
+      ReferenceDescriptionList(List<ReferenceDescription> referenceDescriptions) {
+        this.referenceDescriptions = referenceDescriptions;
+      }
+}
 
     static BadNoReferences of(long statusCode) {
       return of(new StatusCode(statusCode));

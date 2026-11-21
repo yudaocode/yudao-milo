@@ -85,7 +85,7 @@ public class AddReferencesRequest extends Structure implements UaRequestMessageT
       return false;
     }
     AddReferencesRequest that = (AddReferencesRequest) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getReferencesToAdd(), that.getReferencesToAdd());
     return eqb.build();
@@ -93,7 +93,7 @@ public class AddReferencesRequest extends Structure implements UaRequestMessageT
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getReferencesToAdd());
     return hcb.build();
@@ -101,7 +101,7 @@ public class AddReferencesRequest extends Structure implements UaRequestMessageT
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AddReferencesRequest.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AddReferencesRequest.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("referencesToAdd=" + java.util.Arrays.toString(getReferencesToAdd()));
     return joiner.toString();

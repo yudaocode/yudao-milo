@@ -41,7 +41,7 @@ public class AlarmMask extends OptionSetUI16<AlarmMask.Field> {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AlarmMask.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AlarmMask.class.getSimpleName() + "[", "]");
     joiner.add("active=" + getActive());
     joiner.add("unacknowledged=" + getUnacknowledged());
     joiner.add("unconfirmed=" + getUnconfirmed());

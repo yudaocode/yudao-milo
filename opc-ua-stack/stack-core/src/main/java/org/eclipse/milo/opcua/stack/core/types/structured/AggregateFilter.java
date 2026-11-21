@@ -102,7 +102,7 @@ public class AggregateFilter extends MonitoringFilter implements UaStructuredTyp
       return false;
     }
     AggregateFilter that = (AggregateFilter) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getStartTime(), that.getStartTime());
     eqb.append(getAggregateType(), that.getAggregateType());
     eqb.append(getProcessingInterval(), that.getProcessingInterval());
@@ -112,7 +112,7 @@ public class AggregateFilter extends MonitoringFilter implements UaStructuredTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getStartTime());
     hcb.append(getAggregateType());
     hcb.append(getProcessingInterval());
@@ -122,7 +122,7 @@ public class AggregateFilter extends MonitoringFilter implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AggregateFilter.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AggregateFilter.class.getSimpleName() + "[", "]");
     joiner.add("startTime=" + getStartTime());
     joiner.add("aggregateType=" + getAggregateType());
     joiner.add("processingInterval=" + getProcessingInterval());

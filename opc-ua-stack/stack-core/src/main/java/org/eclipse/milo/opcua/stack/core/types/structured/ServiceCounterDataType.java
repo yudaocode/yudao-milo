@@ -83,7 +83,7 @@ public class ServiceCounterDataType extends Structure implements UaStructuredTyp
       return false;
     }
     ServiceCounterDataType that = (ServiceCounterDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getTotalCount(), that.getTotalCount());
     eqb.append(getErrorCount(), that.getErrorCount());
     return eqb.build();
@@ -91,7 +91,7 @@ public class ServiceCounterDataType extends Structure implements UaStructuredTyp
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getTotalCount());
     hcb.append(getErrorCount());
     return hcb.build();
@@ -99,7 +99,7 @@ public class ServiceCounterDataType extends Structure implements UaStructuredTyp
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", ServiceCounterDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", ServiceCounterDataType.class.getSimpleName() + "[", "]");
     joiner.add("totalCount=" + getTotalCount());
     joiner.add("errorCount=" + getErrorCount());
     return joiner.toString();

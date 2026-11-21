@@ -14,7 +14,17 @@ import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 
 @NullMarked
-public record XmlElement(@Nullable String fragment) {
+public final class XmlElement {
+  private final @Nullable String fragment;
+
+  public @Nullable String fragment() {
+    return fragment;
+  }
+
+  public XmlElement(@Nullable String fragment) {
+    this.fragment = fragment;
+  }
+
 
   public static XmlElement NULL_VALUE = XmlElement.of(null);
 

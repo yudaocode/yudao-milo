@@ -54,7 +54,7 @@ public abstract class DataSetWriterTransportDataType extends Structure implement
 
   @Override
   public String toString() {
-    var joiner =
+    java.util.StringJoiner joiner =
         new StringJoiner(", ", DataSetWriterTransportDataType.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }

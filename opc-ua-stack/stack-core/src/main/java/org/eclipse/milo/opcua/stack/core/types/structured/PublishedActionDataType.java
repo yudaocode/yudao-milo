@@ -86,7 +86,7 @@ public class PublishedActionDataType extends PublishedDataSetSourceDataType
       return false;
     }
     PublishedActionDataType that = (PublishedActionDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestDataSetMetaData(), that.getRequestDataSetMetaData());
     eqb.append(getActionTargets(), that.getActionTargets());
     return eqb.build();
@@ -94,7 +94,7 @@ public class PublishedActionDataType extends PublishedDataSetSourceDataType
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestDataSetMetaData());
     hcb.append(getActionTargets());
     return hcb.build();
@@ -102,7 +102,7 @@ public class PublishedActionDataType extends PublishedDataSetSourceDataType
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", PublishedActionDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", PublishedActionDataType.class.getSimpleName() + "[", "]");
     joiner.add("requestDataSetMetaData=" + getRequestDataSetMetaData());
     joiner.add("actionTargets=" + java.util.Arrays.toString(getActionTargets()));
     return joiner.toString();

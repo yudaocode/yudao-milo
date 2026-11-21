@@ -92,7 +92,7 @@ public class AnnotationDataType extends Structure implements UaStructuredType {
       return false;
     }
     AnnotationDataType that = (AnnotationDataType) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getAnnotation(), that.getAnnotation());
     eqb.append(getDiscipline(), that.getDiscipline());
     eqb.append(getUri(), that.getUri());
@@ -101,7 +101,7 @@ public class AnnotationDataType extends Structure implements UaStructuredType {
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getAnnotation());
     hcb.append(getDiscipline());
     hcb.append(getUri());
@@ -110,7 +110,7 @@ public class AnnotationDataType extends Structure implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", AnnotationDataType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", AnnotationDataType.class.getSimpleName() + "[", "]");
     joiner.add("annotation='" + getAnnotation() + "'");
     joiner.add("discipline='" + getDiscipline() + "'");
     joiner.add("uri='" + getUri() + "'");

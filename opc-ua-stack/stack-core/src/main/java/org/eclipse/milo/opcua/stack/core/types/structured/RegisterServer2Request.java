@@ -95,7 +95,7 @@ public class RegisterServer2Request extends Structure implements UaRequestMessag
       return false;
     }
     RegisterServer2Request that = (RegisterServer2Request) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.append(getRequestHeader(), that.getRequestHeader());
     eqb.append(getServer(), that.getServer());
     eqb.append(getDiscoveryConfiguration(), that.getDiscoveryConfiguration());
@@ -104,7 +104,7 @@ public class RegisterServer2Request extends Structure implements UaRequestMessag
 
   @Override
   public int hashCode() {
-    var hcb = new HashCodeBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.HashCodeBuilder hcb = new HashCodeBuilder();
     hcb.append(getRequestHeader());
     hcb.append(getServer());
     hcb.append(getDiscoveryConfiguration());
@@ -113,7 +113,7 @@ public class RegisterServer2Request extends Structure implements UaRequestMessag
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", RegisterServer2Request.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", RegisterServer2Request.class.getSimpleName() + "[", "]");
     joiner.add("requestHeader=" + getRequestHeader());
     joiner.add("server=" + getServer());
     joiner.add("discoveryConfiguration=" + java.util.Arrays.toString(getDiscoveryConfiguration()));

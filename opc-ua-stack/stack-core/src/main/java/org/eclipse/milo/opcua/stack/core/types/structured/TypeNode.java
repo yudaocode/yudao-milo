@@ -91,7 +91,7 @@ public class TypeNode extends Node implements UaStructuredType {
       return false;
     }
     TypeNode that = (TypeNode) object;
-    var eqb = new EqualsBuilder();
+    org.eclipse.milo.opcua.stack.core.util.codegen.EqualsBuilder eqb = new EqualsBuilder();
     eqb.appendSuper(super.equals(object));
     return eqb.build();
   }
@@ -103,7 +103,7 @@ public class TypeNode extends Node implements UaStructuredType {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", TypeNode.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", TypeNode.class.getSimpleName() + "[", "]");
     return joiner.toString();
   }
 

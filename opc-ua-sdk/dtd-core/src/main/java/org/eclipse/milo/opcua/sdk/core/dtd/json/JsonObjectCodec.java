@@ -94,7 +94,8 @@ public class JsonObjectCodec extends AbstractBsdCodec<JsonObject, JsonElement> {
       return gson.toJsonTree(value);
     } else if (value instanceof QualifiedName) {
       return gson.toJsonTree(value);
-    } else if (value instanceof ByteString byteString) {
+    } else if (value instanceof ByteString) {
+      ByteString byteString = (ByteString) value;
       byte[] bs = byteString.bytesOrEmpty();
       JsonArray array = new JsonArray();
       for (Byte b : bs) {
@@ -113,8 +114,9 @@ public class JsonObjectCodec extends AbstractBsdCodec<JsonObject, JsonElement> {
     } else if (value instanceof StatusCode) {
       long code = ((StatusCode) value).value();
       return new JsonPrimitive(code);
-    } else if (value instanceof BsdStructWrapper<?> wrapper
-        && wrapper.object() instanceof JsonElement element) {
+    } else if (value instanceof BsdStructWrapper<?>
+        && ((BsdStructWrapper<?>) value).object() instanceof JsonElement) {
+      JsonElement element = (JsonElement) ((BsdStructWrapper<?>) value).object();
       // Nested struct fields decoded by another JsonObjectCodec come back
       // wrapped in BsdStructWrapper (AbstractBsdCodec.decodeBinary always wraps
       // so the result satisfies the UaStructuredType return contract). Unwrap
@@ -132,11 +134,13 @@ public class JsonObjectCodec extends AbstractBsdCodec<JsonObject, JsonElement> {
     } else {
       JsonArray array = new JsonArray();
 
-      if (values instanceof Object[] objects) {
+      if (values instanceof Object[]) {
+      Object[] objects = (Object[]) values;
         for (Object value : objects) {
           array.add(opcUaToMemberTypeScalar(name, value, typeName));
         }
-      } else if (values instanceof Number number) {
+      } else if (values instanceof Number) {
+      Number number = (Number) values;
         // This is a bit array...
         return new JsonPrimitive(number);
       }
@@ -170,45 +174,65 @@ public class JsonObjectCodec extends AbstractBsdCodec<JsonObject, JsonElement> {
     } else if (member.isJsonObject()) {
       JsonObject jsonObject = member.getAsJsonObject();
 
-      return switch (typeName) {
-        case "QualifiedName" ->
-            new QualifiedName(
+      switch ((typeName)) {
+      case "QualifiedName":
+        return new QualifiedName(
                 jsonObject.get("namespaceIndex").getAsInt(), jsonObject.get("name").getAsString());
-        case "LocalizedText" ->
-            new LocalizedText(
+      case "LocalizedText":
+        return new LocalizedText(
                 jsonObject.get("locale").getAsString(), jsonObject.get("text").getAsString());
-        default -> jsonObject;
-      };
+      default:
+        return jsonObject;
+    }
     } else if (member.isJsonPrimitive()) {
       JsonPrimitive primitive = member.getAsJsonPrimitive();
 
       if (primitive.isBoolean()) {
         return primitive.getAsBoolean();
       } else if (primitive.isString()) {
-        return switch (typeName) {
-          case "Guid" -> UUID.fromString(primitive.getAsString());
-          case "NodeId" -> NodeId.parseSafe(primitive.getAsString()).orElse(NodeId.NULL_VALUE);
-          case "ExpandedNodeId" -> ExpandedNodeId.parse(primitive.getAsString());
-          case "XmlElement" -> new XmlElement(primitive.getAsString());
-          default -> primitive.getAsString();
-        };
+        switch ((typeName)) {
+      case "Guid":
+        return UUID.fromString(primitive.getAsString());
+      case "NodeId":
+        return NodeId.parseSafe(primitive.getAsString()).orElse(NodeId.NULL_VALUE);
+      case "ExpandedNodeId":
+        return ExpandedNodeId.parse(primitive.getAsString());
+      case "XmlElement":
+        return new XmlElement(primitive.getAsString());
+      default:
+        return primitive.getAsString();
+    }
       } else if (primitive.isNumber()) {
-        return switch (typeName) {
-          case "Bit" -> primitive.getAsInt();
-          case "SByte" -> primitive.getAsByte();
-          case "Int16" -> primitive.getAsShort();
-          case "Int32" -> primitive.getAsInt();
-          case "Int64" -> primitive.getAsLong();
-          case "Byte" -> ubyte(primitive.getAsShort());
-          case "UInt16" -> ushort(primitive.getAsInt());
-          case "UInt32" -> uint(primitive.getAsLong());
-          case "UInt64" -> ulong(primitive.getAsBigInteger());
-          case "Float" -> primitive.getAsFloat();
-          case "Double" -> primitive.getAsDouble();
-          case "DateTime" -> new DateTime(primitive.getAsLong());
-          case "StatusCode" -> new StatusCode(primitive.getAsLong());
-          default -> primitive.getAsNumber();
-        };
+        switch ((typeName)) {
+      case "Bit":
+        return primitive.getAsInt();
+      case "SByte":
+        return primitive.getAsByte();
+      case "Int16":
+        return primitive.getAsShort();
+      case "Int32":
+        return primitive.getAsInt();
+      case "Int64":
+        return primitive.getAsLong();
+      case "Byte":
+        return ubyte(primitive.getAsShort());
+      case "UInt16":
+        return ushort(primitive.getAsInt());
+      case "UInt32":
+        return uint(primitive.getAsLong());
+      case "UInt64":
+        return ulong(primitive.getAsBigInteger());
+      case "Float":
+        return primitive.getAsFloat();
+      case "Double":
+        return primitive.getAsDouble();
+      case "DateTime":
+        return new DateTime(primitive.getAsLong());
+      case "StatusCode":
+        return new StatusCode(primitive.getAsLong());
+      default:
+        return primitive.getAsNumber();
+    }
       }
     }
 

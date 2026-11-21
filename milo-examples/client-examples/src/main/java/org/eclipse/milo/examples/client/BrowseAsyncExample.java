@@ -24,6 +24,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BrowseAsyncExample implements ClientExample {
+  private static String repeat(String v,int n){StringBuilder b=new StringBuilder();for(int i=0;i<n;i++)b.append(v);return b.toString();}
+
 
   public static void main(String[] args) throws Exception {
     BrowseAsyncExample example = new BrowseAsyncExample();
@@ -74,7 +76,7 @@ public class BrowseAsyncExample implements ClientExample {
   }
 
   private static String indent(int depth) {
-    return "  ".repeat(Math.max(0, depth));
+    return repeat("  ", Math.max(0, depth));
   }
 
   private static <T> void traverse(Tree<T> tree, int depth, BiConsumer<Integer, T> consumer) {

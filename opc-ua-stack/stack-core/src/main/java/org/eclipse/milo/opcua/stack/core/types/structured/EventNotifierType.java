@@ -41,7 +41,7 @@ public class EventNotifierType extends OptionSetUI8<EventNotifierType.Field> {
 
   @Override
   public String toString() {
-    var joiner = new StringJoiner(", ", EventNotifierType.class.getSimpleName() + "[", "]");
+    java.util.StringJoiner joiner = new StringJoiner(", ", EventNotifierType.class.getSimpleName() + "[", "]");
     joiner.add("subscribeToEvents=" + getSubscribeToEvents());
     joiner.add("historyRead=" + getHistoryRead());
     joiner.add("historyWrite=" + getHistoryWrite());

@@ -27,8 +27,29 @@ import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 
 @NullMarked
-public record ExpandedNodeId(
-    ServerReference server, NamespaceReference namespace, Object identifier) {
+public final class ExpandedNodeId {
+  private final ServerReference server;
+  private final NamespaceReference namespace;
+  private final Object identifier;
+
+  public ServerReference server() {
+    return server;
+  }
+
+  public NamespaceReference namespace() {
+    return namespace;
+  }
+
+  public Object identifier() {
+    return identifier;
+  }
+
+  public ExpandedNodeId(ServerReference server, NamespaceReference namespace, Object identifier) {
+    this.server = server;
+    this.namespace = namespace;
+    this.identifier = identifier;
+  }
+
 
   public static final ExpandedNodeId NULL_VALUE = ExpandedNodeId.of(0, 0);
 
@@ -56,7 +77,8 @@ public record ExpandedNodeId(
   }
 
   public @Nullable UShort getNamespaceIndex() {
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       return index.namespaceIndex;
     } else {
       return null;
@@ -64,9 +86,11 @@ public record ExpandedNodeId(
   }
 
   public @Nullable UShort getNamespaceIndex(NamespaceTable namespaceTable) {
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       return index.namespaceIndex;
-    } else if (namespace instanceof NamespaceReference.NamespaceUri uri) {
+    } else if (namespace instanceof NamespaceReference.NamespaceUri) {
+      NamespaceReference.NamespaceUri uri = (NamespaceReference.NamespaceUri) namespace;
       return namespaceTable.getIndex(uri.namespaceUri);
     } else {
       throw new IllegalStateException("NamespaceReference: " + namespace);
@@ -74,7 +98,8 @@ public record ExpandedNodeId(
   }
 
   public @Nullable String getNamespaceUri() {
-    if (namespace instanceof NamespaceReference.NamespaceUri uri) {
+    if (namespace instanceof NamespaceReference.NamespaceUri) {
+      NamespaceReference.NamespaceUri uri = (NamespaceReference.NamespaceUri) namespace;
       return uri.namespaceUri;
     } else {
       return null;
@@ -82,9 +107,11 @@ public record ExpandedNodeId(
   }
 
   public @Nullable String getNamespaceUri(NamespaceTable namespaceTable) {
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       return namespaceTable.get(index.namespaceIndex);
-    } else if (namespace instanceof NamespaceReference.NamespaceUri uri) {
+    } else if (namespace instanceof NamespaceReference.NamespaceUri) {
+      NamespaceReference.NamespaceUri uri = (NamespaceReference.NamespaceUri) namespace;
       return uri.namespaceUri;
     } else {
       throw new IllegalStateException("NamespaceReference: " + namespace);
@@ -92,7 +119,8 @@ public record ExpandedNodeId(
   }
 
   public @Nullable UInteger getServerIndex() {
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       return index.serverIndex;
     } else {
       return null;
@@ -100,9 +128,11 @@ public record ExpandedNodeId(
   }
 
   public @Nullable UInteger getServerIndex(ServerTable serverTable) {
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       return index.serverIndex;
-    } else if (server instanceof ServerReference.ServerUri uri) {
+    } else if (server instanceof ServerReference.ServerUri) {
+      ServerReference.ServerUri uri = (ServerReference.ServerUri) server;
       return serverTable.getIndex(uri.serverUri);
     } else {
       throw new IllegalStateException("ServerReference: " + server);
@@ -110,7 +140,8 @@ public record ExpandedNodeId(
   }
 
   public @Nullable String getServerUri() {
-    if (server instanceof ServerReference.ServerUri uri) {
+    if (server instanceof ServerReference.ServerUri) {
+      ServerReference.ServerUri uri = (ServerReference.ServerUri) server;
       return uri.serverUri;
     } else {
       return null;
@@ -118,9 +149,11 @@ public record ExpandedNodeId(
   }
 
   public @Nullable String getServerUri(ServerTable serverTable) {
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       return serverTable.get(index.serverIndex.intValue());
-    } else if (server instanceof ServerReference.ServerUri uri) {
+    } else if (server instanceof ServerReference.ServerUri) {
+      ServerReference.ServerUri uri = (ServerReference.ServerUri) server;
       return uri.serverUri;
     } else {
       throw new IllegalStateException("ServerReference: " + server);
@@ -135,7 +168,8 @@ public record ExpandedNodeId(
    * @see #isLocal(ServerTable)
    */
   public boolean isLocal() {
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       return index.serverIndex.intValue() == 0;
     } else {
       return false;
@@ -155,9 +189,11 @@ public record ExpandedNodeId(
    * @return {@code true} if this {@link ExpandedNodeId} is local.
    */
   public boolean isLocal(ServerTable serverTable) {
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       return index.serverIndex.intValue() == 0;
-    } else if (server instanceof ServerReference.ServerUri uri) {
+    } else if (server instanceof ServerReference.ServerUri) {
+      ServerReference.ServerUri uri = (ServerReference.ServerUri) server;
       UInteger index = serverTable.getIndex(uri.serverUri);
       return index != null && index.intValue() == 0;
     } else {
@@ -192,9 +228,11 @@ public record ExpandedNodeId(
    * @return {@code true} if this {@link ExpandedNodeId} is in the OPC UA namespace.
    */
   public boolean isOpcUaNamespace() {
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       return index.namespaceIndex.intValue() == 0;
-    } else if (namespace instanceof NamespaceReference.NamespaceUri uri) {
+    } else if (namespace instanceof NamespaceReference.NamespaceUri) {
+      NamespaceReference.NamespaceUri uri = (NamespaceReference.NamespaceUri) namespace;
       return uri.namespaceUri.equals(Namespaces.OPC_UA);
     } else {
       throw new IllegalStateException("NamespaceReference: " + namespace);
@@ -209,13 +247,17 @@ public record ExpandedNodeId(
       return false;
     }
 
-    if (identifier instanceof UInteger id) {
+    if (identifier instanceof UInteger) {
+      UInteger id = (UInteger) identifier;
       return id.intValue() == 0;
-    } else if (identifier instanceof String id) {
+    } else if (identifier instanceof String) {
+      String id = (String) identifier;
       return id.isEmpty();
-    } else if (identifier instanceof UUID id) {
+    } else if (identifier instanceof UUID) {
+      UUID id = (UUID) identifier;
       return id.getLeastSignificantBits() == 0 && id.getMostSignificantBits() == 0;
-    } else if (identifier instanceof ByteString id) {
+    } else if (identifier instanceof ByteString) {
+      ByteString id = (ByteString) identifier;
       return id.isNullOrEmpty();
     } else {
       return true;
@@ -245,9 +287,11 @@ public record ExpandedNodeId(
       return Optional.empty();
     }
 
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       return Optional.of(new NodeId(index.namespaceIndex, identifier));
-    } else if (namespace instanceof NamespaceReference.NamespaceUri uri) {
+    } else if (namespace instanceof NamespaceReference.NamespaceUri) {
+      NamespaceReference.NamespaceUri uri = (NamespaceReference.NamespaceUri) namespace;
       UShort index = namespaceTable.getIndex(uri.namespaceUri);
       if (index == null) {
         return Optional.empty();
@@ -316,7 +360,8 @@ public record ExpandedNodeId(
 
   public Optional<ExpandedNodeId> absolute(ServerTable serverTable, NamespaceTable namespaceTable) {
     ServerReference absoluteServer = server;
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       String serverUri = serverTable.get(index.serverIndex.intValue());
       if (serverUri == null) {
         return Optional.empty();
@@ -326,7 +371,8 @@ public record ExpandedNodeId(
     }
 
     NamespaceReference absoluteNamespace = namespace;
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       String namespaceUri = namespaceTable.get(index.namespaceIndex.intValue());
       if (namespaceUri == null) {
         return Optional.empty();
@@ -381,7 +427,8 @@ public record ExpandedNodeId(
   public ExpandedNodeId reindex(NamespaceTable namespaceTable, String namespaceUri) {
     if (namespace instanceof NamespaceReference.NamespaceUri) {
       return new ExpandedNodeId(server, NamespaceReference.of(namespaceUri), identifier);
-    } else if (namespace instanceof NamespaceIndex index) {
+    } else if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       UShort newNamespaceIndex = namespaceTable.getIndex(namespaceUri);
       if (newNamespaceIndex != null && !Objects.equals(index.namespaceIndex, newNamespaceIndex)) {
         return new ExpandedNodeId(server, NamespaceReference.of(newNamespaceIndex), identifier);
@@ -423,12 +470,14 @@ public record ExpandedNodeId(
       return false;
     }
 
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       int thisIndex = index.namespaceIndex.intValue();
       int thatIndex = nodeId.getNamespaceIndex().intValue();
 
       return thisIndex == thatIndex && identifier.equals(nodeId.getIdentifier());
-    } else if (namespace instanceof NamespaceReference.NamespaceUri uri) {
+    } else if (namespace instanceof NamespaceReference.NamespaceUri) {
+      NamespaceReference.NamespaceUri uri = (NamespaceReference.NamespaceUri) namespace;
       String thisUri = uri.namespaceUri;
       String thatUri = namespaceTable.get(nodeId.getNamespaceIndex());
 
@@ -446,19 +495,23 @@ public record ExpandedNodeId(
   public String toParseableString() {
     StringBuilder sb = new StringBuilder();
 
-    if (server instanceof ServerIndex index) {
+    if (server instanceof ServerIndex) {
+      ServerIndex index = (ServerIndex) server;
       if (index.serverIndex.intValue() != 0) {
         sb.append("svr=").append(index.serverIndex).append(";");
       }
-    } else if (server instanceof ServerReference.ServerUri uri) {
+    } else if (server instanceof ServerReference.ServerUri) {
+      ServerReference.ServerUri uri = (ServerReference.ServerUri) server;
       sb.append("svu=").append(uri.serverUri).append(";");
     }
 
-    if (namespace instanceof NamespaceIndex index) {
+    if (namespace instanceof NamespaceIndex) {
+      NamespaceIndex index = (NamespaceIndex) namespace;
       if (index.namespaceIndex.intValue() != 0) {
         sb.append("ns=").append(index.namespaceIndex).append(";");
       }
-    } else if (namespace instanceof NamespaceReference.NamespaceUri uri) {
+    } else if (namespace instanceof NamespaceReference.NamespaceUri) {
+      NamespaceReference.NamespaceUri uri = (NamespaceReference.NamespaceUri) namespace;
       if (!uri.namespaceUri.equals(Namespaces.OPC_UA)) {
         sb.append("nsu=").append(uri.namespaceUri).append(";");
       }
@@ -531,19 +584,14 @@ public record ExpandedNodeId(
       String type = s.substring(0, 2);
       String id = s.substring(2);
 
-      Object identifier =
-          switch (type) {
-            case "i=":
-              yield uint(Long.parseLong(id));
-            case "s=":
-              yield id;
-            case "g=":
-              yield UUID.fromString(id);
-            case "b=":
-              yield ByteString.of(Base64.getDecoder().decode(id));
-            default:
-              throw new IllegalArgumentException("invalid identifier type: " + type);
-          };
+      Object identifier;
+      switch (type) {
+        case "i=": identifier = uint(Long.parseLong(id)); break;
+        case "s=": identifier = id; break;
+        case "g=": identifier = UUID.fromString(id); break;
+        case "b=": identifier = ByteString.of(Base64.getDecoder().decode(id)); break;
+        default: throw new IllegalArgumentException("invalid identifier type: " + type);
+      }
 
       return new ExpandedNodeId(server, namespace, identifier);
     } catch (Throwable t) {
@@ -725,15 +773,34 @@ public record ExpandedNodeId(
   // endregion
 
   /** A reference to a namespace, either by index or URI. */
-  public sealed interface NamespaceReference
-      permits NamespaceIndex, NamespaceReference.NamespaceUri {
+  public interface NamespaceReference {
 
-    record NamespaceIndex(UShort namespaceIndex) implements NamespaceReference {
+    static final class NamespaceIndex implements NamespaceReference {
+      private final UShort namespaceIndex;
+
+      public UShort namespaceIndex() {
+        return namespaceIndex;
+      }
+
+      NamespaceIndex(UShort namespaceIndex) {
+        this.namespaceIndex = namespaceIndex;
+      }
+
 
       public static final NamespaceIndex OPC_UA = new NamespaceIndex(UShort.MIN);
     }
 
-    record NamespaceUri(String namespaceUri) implements NamespaceReference {
+    static final class NamespaceUri implements NamespaceReference {
+      private final String namespaceUri;
+
+      public String namespaceUri() {
+        return namespaceUri;
+      }
+
+      NamespaceUri(String namespaceUri) {
+        this.namespaceUri = namespaceUri;
+      }
+
 
       public static final NamespaceUri OPC_UA = new NamespaceUri(Namespaces.OPC_UA);
     }
@@ -760,14 +827,34 @@ public record ExpandedNodeId(
   }
 
   /** A reference to a server, either by index or URI. */
-  public sealed interface ServerReference permits ServerIndex, ServerReference.ServerUri {
+  public interface ServerReference {
 
-    record ServerIndex(UInteger serverIndex) implements ServerReference {
+    static final class ServerIndex implements ServerReference {
+      private final UInteger serverIndex;
+
+      public UInteger serverIndex() {
+        return serverIndex;
+      }
+
+      ServerIndex(UInteger serverIndex) {
+        this.serverIndex = serverIndex;
+      }
+
 
       public static final ServerIndex LOCAL = new ServerIndex(UInteger.MIN);
     }
 
-    record ServerUri(String serverUri) implements ServerReference {}
+    static final class ServerUri implements ServerReference {
+      private final String serverUri;
+
+      public String serverUri() {
+        return serverUri;
+      }
+
+      ServerUri(String serverUri) {
+        this.serverUri = serverUri;
+      }
+}
 
     static ServerReference of(long serverIndex) {
       return ServerReference.of(uint(serverIndex));
