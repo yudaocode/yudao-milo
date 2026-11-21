@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo</artifactId>
     <version>1.2.0-RC3-preview-20261121</version>
   </parent>
 
   <name>Milo :: Examples</name>
 
-  <artifactId>milo-examples</artifactId>
+  <artifactId>yudao-milo-examples</artifactId>
   <packaging>pom</packaging>
 
   <modules>

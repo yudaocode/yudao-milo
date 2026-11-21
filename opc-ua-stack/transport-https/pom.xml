@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-opc-ua-stack</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-opc-ua-stack</artifactId>
     <version>1.2.0-RC3-preview-20261121</version>
   </parent>
 
   <name>Milo :: Transport HTTPS</name>
 
-  <artifactId>milo-transport-https</artifactId>
+  <artifactId>yudao-milo-transport-https</artifactId>
   <version>0.1-SNAPSHOT</version>
 
   <properties>
@@ -31,13 +31,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-stack-core</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-stack-core</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-transport</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-transport</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>

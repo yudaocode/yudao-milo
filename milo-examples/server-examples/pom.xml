@@ -15,14 +15,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.eclipse.milo</groupId>
-    <artifactId>milo-examples</artifactId>
+    <groupId>cn.iocoder.boot</groupId>
+    <artifactId>yudao-milo-examples</artifactId>
     <version>1.2.0-RC3-preview-20261121</version>
   </parent>
 
   <name>Milo :: Server Examples</name>
 
-  <artifactId>milo-server-examples</artifactId>
+  <artifactId>yudao-milo-server-examples</artifactId>
 
   <properties>
     <javaModuleName>org.eclipse.milo.examples.server</javaModuleName>
@@ -30,18 +30,18 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-sdk-server</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-sdk-server</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-dtd-core</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-dtd-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.milo</groupId>
-      <artifactId>milo-dtd-manager</artifactId>
+      <groupId>cn.iocoder.boot</groupId>
+      <artifactId>yudao-milo-dtd-manager</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
