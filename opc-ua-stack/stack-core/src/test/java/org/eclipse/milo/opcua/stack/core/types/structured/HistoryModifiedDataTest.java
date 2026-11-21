@@ -23,14 +23,14 @@ class HistoryModifiedDataTest {
 
   @Test
   void testEqualsAndHashCode() {
-    var hmd1 =
+    org.eclipse.milo.opcua.stack.core.types.structured.HistoryModifiedData hmd1 =
         new HistoryModifiedData(
             new DataValue[] {new DataValue(new Variant(0), StatusCode.GOOD, DateTime.NULL_VALUE)},
             new ModificationInfo[] {
               new ModificationInfo(DateTime.NULL_VALUE, HistoryUpdateType.Insert, "foo")
             });
 
-    var hmd2 =
+    org.eclipse.milo.opcua.stack.core.types.structured.HistoryModifiedData hmd2 =
         new HistoryModifiedData(
             new DataValue[] {new DataValue(new Variant(0), StatusCode.GOOD, DateTime.NULL_VALUE)},
             new ModificationInfo[] {

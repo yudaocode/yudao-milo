@@ -82,13 +82,13 @@ class UShortTest {
   void deserializationResolvesToTheCachedInstance() throws Exception {
     UShort original = UShort.valueOf(7);
 
-    var bytes = new ByteArrayOutputStream();
-    try (var out = new ObjectOutputStream(bytes)) {
+    java.io.ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    try (java.io.ObjectOutputStream out = new ObjectOutputStream(bytes)) {
       out.writeObject(original);
     }
 
     Object restored;
-    try (var in = new ObjectInputStream(new ByteArrayInputStream(bytes.toByteArray()))) {
+    try (java.io.ObjectInputStream in = new ObjectInputStream(new ByteArrayInputStream(bytes.toByteArray()))) {
       restored = in.readObject();
     }
 

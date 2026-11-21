@@ -77,10 +77,10 @@ class MatrixTest {
 
     assertArrayEquals(new int[] {0, 2}, transformed.getDimensions());
     assertEquals(0, Array.getLength(transformed.getElements()));
-    assertEquals(String.class, transformed.getElementType().orElseThrow());
-    assertEquals(OpcUaDataType.String, transformed.getDataType().orElseThrow());
+    assertEquals(String.class, transformed.getElementType().get());
+    assertEquals(OpcUaDataType.String, transformed.getDataType().get());
     assertEquals(
-        OpcUaDataType.String.getNodeId().expanded(), transformed.getDataTypeId().orElseThrow());
+        OpcUaDataType.String.getNodeId().expanded(), transformed.getDataTypeId().get());
   }
 
   // The declared interface must accommodate nulls and different structured implementations (#1957).
@@ -105,9 +105,9 @@ class MatrixTest {
     assertEquals(UaStructuredType[].class, transformed.getElements().getClass());
     assertArrayEquals(results, (UaStructuredType[]) transformed.getElements());
     assertArrayEquals(dimensions, transformed.getDimensions());
-    assertEquals(OpcUaDataType.ExtensionObject, transformed.getDataType().orElseThrow());
+    assertEquals(OpcUaDataType.ExtensionObject, transformed.getDataType().get());
     if (explicitDataTypeId) {
-      assertEquals(dataTypeId, transformed.getDataTypeId().orElseThrow());
+      assertEquals(dataTypeId, transformed.getDataTypeId().get());
     }
   }
 
@@ -182,9 +182,9 @@ class MatrixTest {
 
     assertArrayEquals(new int[] {0, 2}, m.getDimensions());
     assertEquals(0, Array.getLength(m.getElements()));
-    assertEquals(ThreeDVector.class, m.getElementType().orElseThrow());
-    assertEquals(OpcUaDataType.ExtensionObject, m.getDataType().orElseThrow());
-    assertEquals(ThreeDVector.TYPE_ID, m.getDataTypeId().orElseThrow());
+    assertEquals(ThreeDVector.class, m.getElementType().get());
+    assertEquals(OpcUaDataType.ExtensionObject, m.getDataType().get());
+    assertEquals(ThreeDVector.TYPE_ID, m.getDataTypeId().get());
   }
 
   @Test
@@ -193,8 +193,8 @@ class MatrixTest {
 
     assertArrayEquals(new int[] {0, 2}, m.getDimensions());
     assertEquals(0, Array.getLength(m.getElements()));
-    assertEquals(OpcUaDataType.ExtensionObject, m.getDataType().orElseThrow());
-    assertTrue(m.getDataTypeId().isEmpty());
+    assertEquals(OpcUaDataType.ExtensionObject, m.getDataType().get());
+    assertTrue(m.getDataTypeId().isPresent() == false);
   }
 
   @Test
@@ -208,9 +208,9 @@ class MatrixTest {
 
     assertArrayEquals(new int[] {0, 2}, m.getDimensions());
     assertEquals(0, Array.getLength(m.getElements()));
-    assertEquals(ApplicationType.class, m.getElementType().orElseThrow());
-    assertEquals(OpcUaDataType.Int32, m.getDataType().orElseThrow());
-    assertEquals(ApplicationType.TypeInfo.TYPE_ID, m.getDataTypeId().orElseThrow());
+    assertEquals(ApplicationType.class, m.getElementType().get());
+    assertEquals(OpcUaDataType.Int32, m.getDataType().get());
+    assertEquals(ApplicationType.TypeInfo.TYPE_ID, m.getDataTypeId().get());
   }
 
   @Test
@@ -392,11 +392,11 @@ class MatrixTest {
 
   @Test
   void getElementType() {
-    assertEquals(Integer.class, boxedMatrix2d.getElementType().orElseThrow());
-    assertEquals(int.class, primitiveMatrix2d.getElementType().orElseThrow());
-    assertEquals(ThreeDVector.class, vectorMatrix2d.getElementType().orElseThrow());
+    assertEquals(Integer.class, boxedMatrix2d.getElementType().get());
+    assertEquals(int.class, primitiveMatrix2d.getElementType().get());
+    assertEquals(ThreeDVector.class, vectorMatrix2d.getElementType().get());
 
     Matrix nullMatrix = Matrix.ofNull();
-    assertTrue(nullMatrix.getElementType().isEmpty());
+    assertTrue(nullMatrix.getElementType().isPresent() == false);
   }
 }

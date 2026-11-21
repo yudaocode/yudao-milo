@@ -73,11 +73,11 @@ public class QualifiedNameTest {
 
   @Test
   void testNameSizeLimit() {
-    String name = "a".repeat(512);
+    String name = org.eclipse.milo.opcua.stack.core.util.Java8Collections.repeat("a", 512);
     QualifiedName qn = new QualifiedName(0, name);
     assertEquals(name, qn.name());
 
-    String longName = "a".repeat(513);
+    String longName = org.eclipse.milo.opcua.stack.core.util.Java8Collections.repeat("a", 513);
     assertThrows(IllegalArgumentException.class, () -> new QualifiedName(0, longName));
   }
 

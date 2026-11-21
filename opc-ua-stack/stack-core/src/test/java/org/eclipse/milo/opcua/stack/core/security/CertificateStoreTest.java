@@ -27,7 +27,7 @@ abstract class CertificateStoreTest {
 
   @BeforeEach
   void setUpCertificateStore() throws Exception {
-    var factory = new TestCertificateFactory();
+    org.eclipse.milo.opcua.stack.core.security.TestCertificateFactory factory = new TestCertificateFactory();
     KeyPair keyPair = factory.createRsaSha256KeyPair();
     X509Certificate[] certificateChain = factory.createRsaSha256CertificateChain(keyPair);
 
@@ -60,7 +60,7 @@ abstract class CertificateStoreTest {
 
   @Test
   void set() throws Exception {
-    var factory = new TestCertificateFactory();
+    org.eclipse.milo.opcua.stack.core.security.TestCertificateFactory factory = new TestCertificateFactory();
     KeyPair keyPair = factory.createRsaSha256KeyPair();
     X509Certificate[] certificateChain = factory.createRsaSha256CertificateChain(keyPair);
 

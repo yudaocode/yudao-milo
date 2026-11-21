@@ -61,7 +61,23 @@ public class TestCertificateGenerator {
   public static final String ALIAS_NO_KEY_USAGE_NO_CA = "no-key-usage-no-ca";
 
   /** Container for a certificate and its associated private key. */
-  public record CertificateKeyPair(X509Certificate certificate, PrivateKey privateKey) {}
+  public static final class CertificateKeyPair {
+    private final X509Certificate certificate;
+    private final PrivateKey privateKey;
+
+    public X509Certificate certificate() {
+      return certificate;
+    }
+
+    public PrivateKey privateKey() {
+      return privateKey;
+    }
+
+    CertificateKeyPair(X509Certificate certificate, PrivateKey privateKey) {
+      this.certificate = certificate;
+      this.privateKey = privateKey;
+    }
+}
 
   /** Container for all generated test certificates. */
   public static class TestCertificates {
@@ -146,7 +162,7 @@ public class TestCertificateGenerator {
                     | KeyUsage.keyEncipherment
                     | KeyUsage.dataEncipherment)
             .setExtendedKeyUsage(
-                List.of(KeyPurposeId.id_kp_serverAuth, KeyPurposeId.id_kp_clientAuth))
+                org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(KeyPurposeId.id_kp_serverAuth, KeyPurposeId.id_kp_clientAuth))
             .build();
 
     testCerts.put(

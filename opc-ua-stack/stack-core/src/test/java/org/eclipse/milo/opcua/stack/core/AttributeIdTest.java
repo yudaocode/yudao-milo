@@ -24,7 +24,7 @@ public class AttributeIdTest {
     for (AttributeId attributeId : AttributeId.values()) {
       int id = attributeId.id();
 
-      assertEquals(attributeId, AttributeId.from(id).orElseThrow());
+      assertEquals(attributeId, AttributeId.from(id).get());
     }
 
     assertFalse(AttributeId.from(-1).isPresent());
@@ -47,7 +47,7 @@ public class AttributeIdTest {
 
   @Test
   public void testDataTypeAttributes() {
-    var attributes = new ArrayList<>(AttributeId.DATA_TYPE_ATTRIBUTES);
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.AttributeId> attributes = new ArrayList<>(AttributeId.DATA_TYPE_ATTRIBUTES);
 
     assertEquals(AttributeId.NodeId, attributes.get(0));
     assertEquals(AttributeId.NodeClass, attributes.get(1));
@@ -65,7 +65,7 @@ public class AttributeIdTest {
 
   @Test
   public void testVariableAttributes() {
-    var attributes = new ArrayList<>(AttributeId.VARIABLE_ATTRIBUTES);
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.AttributeId> attributes = new ArrayList<>(AttributeId.VARIABLE_ATTRIBUTES);
 
     assertEquals(AttributeId.NodeId, attributes.get(0));
     assertEquals(AttributeId.NodeClass, attributes.get(1));
@@ -91,7 +91,7 @@ public class AttributeIdTest {
 
   @Test
   public void testVariableTypeAttributes() {
-    var attributes = new ArrayList<>(AttributeId.VARIABLE_TYPE_ATTRIBUTES);
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.AttributeId> attributes = new ArrayList<>(AttributeId.VARIABLE_TYPE_ATTRIBUTES);
 
     assertEquals(AttributeId.NodeId, attributes.get(0));
     assertEquals(AttributeId.NodeClass, attributes.get(1));

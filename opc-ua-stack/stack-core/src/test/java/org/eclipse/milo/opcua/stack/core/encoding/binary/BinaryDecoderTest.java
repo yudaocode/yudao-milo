@@ -36,7 +36,7 @@ public class BinaryDecoderTest extends BinarySerializationFixture {
 
     DataTypeCodec codec =
         OpcUaDataTypeManager.getInstance()
-            .getCodec(Argument.TYPE_ID.toNodeId(new NamespaceTable()).orElseThrow());
+            .getCodec(Argument.TYPE_ID.toNodeId(new NamespaceTable()).get());
 
     assertNotNull(codec);
 

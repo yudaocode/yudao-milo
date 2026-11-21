@@ -22,11 +22,11 @@ class StatusCodesTest {
 
   @Test
   void lookupGood() {
-    String[] ss = StatusCodes.lookup(StatusCodes.Good).orElseThrow();
+    String[] ss = StatusCodes.lookup(StatusCodes.Good).get();
     assertEquals("Good", ss[0]);
     assertEquals("The operation succeeded.", ss[1]);
 
-    ss = StatusCodes.lookup(StatusCodes.Good_Cascade).orElseThrow();
+    ss = StatusCodes.lookup(StatusCodes.Good_Cascade).get();
     assertEquals("Good_Cascade", ss[0]);
     assertEquals(
         "The value is accurate, and the signal source supports cascade handshaking.", ss[1]);
@@ -34,22 +34,22 @@ class StatusCodesTest {
 
   @Test
   void lookupUncertain() {
-    String[] ss = StatusCodes.lookup(StatusCodes.Uncertain).orElseThrow();
+    String[] ss = StatusCodes.lookup(StatusCodes.Uncertain).get();
     assertEquals("Uncertain", ss[0]);
     assertEquals("The operation was uncertain.", ss[1]);
 
-    ss = StatusCodes.lookup(StatusCodes.Uncertain_ConfigurationError).orElseThrow();
+    ss = StatusCodes.lookup(StatusCodes.Uncertain_ConfigurationError).get();
     assertEquals("Uncertain_ConfigurationError", ss[0]);
     assertEquals("The value may not be accurate due to a configuration issue.", ss[1]);
   }
 
   @Test
   void lookupBad() {
-    String[] ss = StatusCodes.lookup(StatusCodes.Bad).orElseThrow();
+    String[] ss = StatusCodes.lookup(StatusCodes.Bad).get();
     assertEquals("Bad", ss[0]);
     assertEquals("The operation failed.", ss[1]);
 
-    ss = StatusCodes.lookup(StatusCodes.Bad_ServiceUnsupported).orElseThrow();
+    ss = StatusCodes.lookup(StatusCodes.Bad_ServiceUnsupported).get();
     assertEquals("Bad_ServiceUnsupported", ss[0]);
     assertEquals("The server does not support the requested service.", ss[1]);
   }
@@ -64,7 +64,7 @@ class StatusCodesTest {
     StatusCode statusCode = StatusCode.GOOD.withDataValueInfoType();
     assertSame(InfoType.DataValue, statusCode.getInfoType());
     assertEquals(
-        0, statusCode.getDataValueInfoBits().map(StatusCode.DataValueInfoBits::bits).orElseThrow());
+        0, statusCode.getDataValueInfoBits().map(StatusCode.DataValueInfoBits::bits).get());
 
     assertSame(InfoType.NotUsed, statusCode.withoutDataValueInfoType().getInfoType());
   }

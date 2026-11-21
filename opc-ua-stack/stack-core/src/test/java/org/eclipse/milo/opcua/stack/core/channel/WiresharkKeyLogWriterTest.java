@@ -17,7 +17,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.HexFormat;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -26,8 +25,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 public class WiresharkKeyLogWriterTest {
-
-  private static final HexFormat HEX = HexFormat.of().withUpperCase();
 
   @TempDir Path tempDir;
 
@@ -46,7 +43,7 @@ public class WiresharkKeyLogWriterTest {
     SecurityKeyset keyset =
         new SecurityKeyset(2265448448L, 1L, clientKey, clientIv, serverKey, serverIv, 32);
 
-    var writer = new WiresharkKeyLogWriter(keyLogFile);
+    org.eclipse.milo.opcua.stack.core.channel.WiresharkKeyLogWriter writer = new WiresharkKeyLogWriter(keyLogFile);
     writer.onSecurityKeysCreated(keyset);
     writer.close();
 
@@ -54,11 +51,11 @@ public class WiresharkKeyLogWriterTest {
     assertEquals(6, lines.size());
 
     String suffix = "2265448448_1";
-    assertEquals("client_iv_" + suffix + ": " + HEX.formatHex(clientIv), lines.get(0));
-    assertEquals("client_key_" + suffix + ": " + HEX.formatHex(clientKey), lines.get(1));
+    assertEquals("client_iv_" + suffix + ": " + org.eclipse.milo.opcua.stack.core.util.Java8Collections.formatHex(clientIv), lines.get(0));
+    assertEquals("client_key_" + suffix + ": " + org.eclipse.milo.opcua.stack.core.util.Java8Collections.formatHex(clientKey), lines.get(1));
     assertEquals("client_siglen_" + suffix + ": 32", lines.get(2));
-    assertEquals("server_iv_" + suffix + ": " + HEX.formatHex(serverIv), lines.get(3));
-    assertEquals("server_key_" + suffix + ": " + HEX.formatHex(serverKey), lines.get(4));
+    assertEquals("server_iv_" + suffix + ": " + org.eclipse.milo.opcua.stack.core.util.Java8Collections.formatHex(serverIv), lines.get(3));
+    assertEquals("server_key_" + suffix + ": " + org.eclipse.milo.opcua.stack.core.util.Java8Collections.formatHex(serverKey), lines.get(4));
     assertEquals("server_siglen_" + suffix + ": 32", lines.get(5));
   }
 
@@ -72,7 +69,7 @@ public class WiresharkKeyLogWriterTest {
     SecurityKeyset keyset1 = new SecurityKeyset(100L, 1L, key, iv, key, iv, 20);
     SecurityKeyset keyset2 = new SecurityKeyset(100L, 2L, key, iv, key, iv, 20);
 
-    var writer = new WiresharkKeyLogWriter(keyLogFile);
+    org.eclipse.milo.opcua.stack.core.channel.WiresharkKeyLogWriter writer = new WiresharkKeyLogWriter(keyLogFile);
     writer.onSecurityKeysCreated(keyset1);
     writer.onSecurityKeysCreated(keyset2);
     writer.close();
@@ -94,9 +91,9 @@ public class WiresharkKeyLogWriterTest {
     byte[] key = {0x0A, 0x0B, 0x0C, 0x0D};
     byte[] iv = {0x01, 0x02, 0x03, 0x04};
 
-    var writer = new WiresharkKeyLogWriter(keyLogFile);
+    org.eclipse.milo.opcua.stack.core.channel.WiresharkKeyLogWriter writer = new WiresharkKeyLogWriter(keyLogFile);
     ExecutorService executor = Executors.newFixedThreadPool(numThreads);
-    var latch = new CountDownLatch(numThreads);
+    java.util.concurrent.CountDownLatch latch = new CountDownLatch(numThreads);
 
     List<SecurityKeyset> keysets = new ArrayList<>();
     for (int i = 0; i < numThreads; i++) {
@@ -127,17 +124,21 @@ public class WiresharkKeyLogWriterTest {
     for (int i = 0; i < lines.size(); i++) {
       int posInEntry = i % 6;
       switch (posInEntry) {
-        case 0 -> assertTrue(lines.get(i).startsWith("client_iv_"));
-        case 1 -> assertTrue(lines.get(i).startsWith("client_key_"));
-        case 2 -> assertTrue(lines.get(i).startsWith("client_siglen_"));
-        case 3 -> assertTrue(lines.get(i).startsWith("server_iv_"));
-        case 4 -> assertTrue(lines.get(i).startsWith("server_key_"));
-        case 5 -> assertTrue(lines.get(i).startsWith("server_siglen_"));
+        case 0: assertTrue(lines.get(i).startsWith("client_iv_")); break;
+        case 1: assertTrue(lines.get(i).startsWith("client_key_")); break;
+        case 2: assertTrue(lines.get(i).startsWith("client_siglen_")); break;
+        case 3: assertTrue(lines.get(i).startsWith("server_iv_")); break;
+        case 4: assertTrue(lines.get(i).startsWith("server_key_")); break;
+        case 5: assertTrue(lines.get(i).startsWith("server_siglen_")); break;
       }
     }
   }
 
   private static byte[] hexToBytes(String hex) {
-    return HexFormat.of().parseHex(hex);
+    byte[] bytes = new byte[hex.length() / 2];
+    for (int i = 0; i < bytes.length; i++) {
+      bytes[i] = (byte) Integer.parseInt(hex.substring(i * 2, i * 2 + 2), 16);
+    }
+    return bytes;
   }
 }

@@ -224,7 +224,7 @@ public class ExpandedNodeIdTest {
   }
 
   public static Object[][] isLocalServerTableProvider() {
-    var serverTable = new ServerTable();
+    org.eclipse.milo.opcua.stack.core.ServerTable serverTable = new ServerTable();
     serverTable.add("uri:server1");
     serverTable.add("uri:server2");
 

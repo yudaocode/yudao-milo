@@ -105,7 +105,7 @@ public class CertificateValidationUtilTest {
     X509Certificate certificate = builder.build();
 
     PKIXCertPathBuilderResult result =
-        buildTrustedCertPath(List.of(certificate), Set.of(certificate), emptySet());
+        buildTrustedCertPath(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(certificate), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(certificate), emptySet());
 
     validateTrustedCertPath(
         result.getCertPath(),
@@ -124,14 +124,14 @@ public class CertificateValidationUtilTest {
 
   @Test
   public void testBuildTrustedCertPath_LeafSelfSigned() throws Exception {
-    List<X509Certificate> certificateChain = List.of(leafSelfSigned);
+    List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafSelfSigned);
 
-    buildTrustedCertPath(certificateChain, Set.of(leafSelfSigned), emptySet());
+    buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(leafSelfSigned), emptySet());
   }
 
   @Test
   public void testBuildTrustedCertPath_LeafSelfSigned_NotTrusted() {
-    List<X509Certificate> certificateChain = List.of(leafSelfSigned);
+    List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafSelfSigned);
 
     assertThrows(
         UaException.class, () -> buildTrustedCertPath(certificateChain, emptySet(), emptySet()));
@@ -143,26 +143,26 @@ public class CertificateValidationUtilTest {
     // trusted: ca-intermedate
     // issuers: ca-root
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned);
 
-      buildTrustedCertPath(certificateChain, Set.of(caIntermediate), Set.of(caRoot));
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot));
     }
 
     // chain: leaf, ca-intermediate
     // trusted: ca-intermediate
     // issuers: ca-root
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned, caIntermediate);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate);
 
-      buildTrustedCertPath(certificateChain, Set.of(caIntermediate), Set.of(caRoot));
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot));
     }
 
     // chain: leaf, ca-intermediate
     // trusted: ca-root
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned, caIntermediate);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate);
 
-      buildTrustedCertPath(certificateChain, Set.of(caRoot), emptySet());
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot), emptySet());
     }
 
     // chain: leaf, ca-intermediate, ca-root
@@ -170,27 +170,27 @@ public class CertificateValidationUtilTest {
     // issuers: ca-root
     {
       List<X509Certificate> certificateChain =
-          List.of(leafIntermediateSigned, caIntermediate, caRoot);
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate, caRoot);
 
-      buildTrustedCertPath(certificateChain, Set.of(caIntermediate), Set.of(caRoot));
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot));
     }
 
     // chain: leaf, ca-intermediate, ca-root
     // trusted: ca-root
     {
       List<X509Certificate> certificateChain =
-          List.of(leafIntermediateSigned, caIntermediate, caRoot);
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate, caRoot);
 
-      buildTrustedCertPath(certificateChain, Set.of(caRoot), emptySet());
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot), emptySet());
     }
 
     // chain: leaf, ca-intermediate, ca-root
     // trusted: ca-intermediate, ca-root
     {
       List<X509Certificate> certificateChain =
-          List.of(leafIntermediateSigned, caIntermediate, caRoot);
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate, caRoot);
 
-      buildTrustedCertPath(certificateChain, Set.of(caIntermediate, caRoot), emptySet());
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate, caRoot), emptySet());
     }
   }
 
@@ -201,14 +201,14 @@ public class CertificateValidationUtilTest {
     // issuers: ca-root
     // crls: ca-intermediate revokes leaf
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned);
 
       UaException e =
           assertThrows(
               UaException.class,
               () -> {
                 Set<X509CRL> x509CRLS =
-                    Set.of(
+                    org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(
                         generateCrl(caRoot, testCertificates.getPrivateKey(ALIAS_CA_ROOT)),
                         generateCrl(
                             caIntermediate,
@@ -216,7 +216,7 @@ public class CertificateValidationUtilTest {
                             leafIntermediateSigned));
 
                 PKIXCertPathBuilderResult pathBuilderResult =
-                    buildTrustedCertPath(certificateChain, Set.of(caIntermediate), Set.of(caRoot));
+                    buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot));
 
                 validateTrustedCertPath(
                     pathBuilderResult.getCertPath(),
@@ -241,21 +241,21 @@ public class CertificateValidationUtilTest {
     // issuers: ca-root
     // crls: ca-root revokes ca-intermediate
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned);
 
       UaException e =
           assertThrows(
               UaException.class,
               () -> {
                 Set<X509CRL> x509CRLS =
-                    Set.of(
+                    org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(
                         generateCrl(
                             caRoot, testCertificates.getPrivateKey(ALIAS_CA_ROOT), caIntermediate),
                         generateCrl(
                             caIntermediate, testCertificates.getPrivateKey(ALIAS_CA_INTERMEDIATE)));
 
                 PKIXCertPathBuilderResult pathBuilderResult =
-                    buildTrustedCertPath(certificateChain, Set.of(caIntermediate), Set.of(caRoot));
+                    buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot));
 
                 validateTrustedCertPath(
                     pathBuilderResult.getCertPath(),
@@ -280,23 +280,23 @@ public class CertificateValidationUtilTest {
   public void testBuildTrustedCertPath_NoTrusted_NoIssuers() {
     assertThrows(
         UaException.class,
-        () -> buildTrustedCertPath(List.of(leafSelfSigned), emptySet(), emptySet()));
+        () -> buildTrustedCertPath(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafSelfSigned), emptySet(), emptySet()));
 
     assertThrows(
         UaException.class,
-        () -> buildTrustedCertPath(List.of(leafIntermediateSigned), emptySet(), emptySet()));
-
-    assertThrows(
-        UaException.class,
-        () ->
-            buildTrustedCertPath(
-                List.of(leafIntermediateSigned, caIntermediate), emptySet(), emptySet()));
+        () -> buildTrustedCertPath(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned), emptySet(), emptySet()));
 
     assertThrows(
         UaException.class,
         () ->
             buildTrustedCertPath(
-                List.of(leafIntermediateSigned, caIntermediate, caRoot), emptySet(), emptySet()));
+                org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate), emptySet(), emptySet()));
+
+    assertThrows(
+        UaException.class,
+        () ->
+            buildTrustedCertPath(
+                org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate, caRoot), emptySet(), emptySet()));
   }
 
   @Test
@@ -305,18 +305,18 @@ public class CertificateValidationUtilTest {
     // trusted: ca-root
     // issuers: ca-intermediate
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned);
 
-      buildTrustedCertPath(certificateChain, Set.of(caRoot), Set.of(caIntermediate));
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate));
     }
 
     // chain: leaf, ca-intermediate
     // trusted: ca-root
     // issuers: ca-intermediate
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned, caIntermediate);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate);
 
-      buildTrustedCertPath(certificateChain, Set.of(caRoot), Set.of(caIntermediate));
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate));
     }
 
     // chain: leaf, ca-intermediate, ca-root
@@ -324,9 +324,9 @@ public class CertificateValidationUtilTest {
     // issuers: ca-intermediate
     {
       List<X509Certificate> certificateChain =
-          List.of(leafIntermediateSigned, caIntermediate, caRoot);
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned, caIntermediate, caRoot);
 
-      buildTrustedCertPath(certificateChain, Set.of(caRoot), Set.of(caIntermediate));
+      buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate));
     }
   }
 
@@ -337,19 +337,19 @@ public class CertificateValidationUtilTest {
     // issuers: ca-intermediate
     // crls: ca-root revokes ca-intermediate
     {
-      List<X509Certificate> certificateChain = List.of(leafIntermediateSigned);
+      List<X509Certificate> certificateChain = org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(leafIntermediateSigned);
 
       UaException e =
           assertThrows(
               UaException.class,
               () -> {
                 Set<X509CRL> x509CRLS =
-                    Set.of(
+                    org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(
                         generateCrl(
                             caRoot, testCertificates.getPrivateKey(ALIAS_CA_ROOT), caIntermediate));
 
                 PKIXCertPathBuilderResult pathBuilderResult =
-                    buildTrustedCertPath(certificateChain, Set.of(caRoot), Set.of(caIntermediate));
+                    buildTrustedCertPath(certificateChain, org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caRoot), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(caIntermediate));
 
                 CertificateValidationUtil.validateTrustedCertPath(
                     pathBuilderResult.getCertPath(),

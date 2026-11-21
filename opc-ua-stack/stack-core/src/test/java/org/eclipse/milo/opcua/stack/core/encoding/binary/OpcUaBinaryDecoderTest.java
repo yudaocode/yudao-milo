@@ -175,7 +175,7 @@ public class OpcUaBinaryDecoderTest {
 
     assertArrayEquals(new int[] {0, 2}, matrix.getDimensions());
     assertEquals(0, Array.getLength(matrix.getElements()));
-    assertEquals(XVType.TYPE_ID, matrix.getDataTypeId().orElseThrow());
+    assertEquals(XVType.TYPE_ID, matrix.getDataTypeId().get());
   }
 
   @Test

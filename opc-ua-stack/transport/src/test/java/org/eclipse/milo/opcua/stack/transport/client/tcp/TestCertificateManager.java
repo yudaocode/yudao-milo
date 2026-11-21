@@ -86,7 +86,7 @@ public class TestCertificateManager implements CertificateManager {
 
   @Override
   public List<CertificateGroup> getCertificateGroups() {
-    return List.of(certificateGroup);
+    return org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(certificateGroup);
   }
 
   @Override

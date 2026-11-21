@@ -50,8 +50,8 @@ class OpcTcpServerTransportTest {
   @Test
   void unbindClosesAcceptedChannelsBeforeReturning() throws Exception {
     eventLoop = new NioEventLoopGroup(1);
-    var acceptedChannel = new AtomicReference<Channel>();
-    var channelAccepted = new CountDownLatch(1);
+    java.util.concurrent.atomic.AtomicReference<io.netty.channel.Channel> acceptedChannel = new AtomicReference<Channel>();
+    java.util.concurrent.CountDownLatch channelAccepted = new CountDownLatch(1);
 
     OpcTcpServerTransportConfig config =
         OpcTcpServerTransportConfig.newBuilder()
@@ -63,10 +63,10 @@ class OpcTcpServerTransportTest {
                 })
             .build();
 
-    var transport = new OpcTcpServerTransport(config);
-    var bindAddress = new InetSocketAddress("localhost", allocatePort());
+    org.eclipse.milo.opcua.stack.transport.server.tcp.OpcTcpServerTransport transport = new OpcTcpServerTransport(config);
+    java.net.InetSocketAddress bindAddress = new InetSocketAddress("localhost", allocatePort());
 
-    try (var socket = new Socket()) {
+    try (java.net.Socket socket = new Socket()) {
       transport.bind(newServerApplicationContext(), bindAddress);
       socket.connect(bindAddress);
 
@@ -87,7 +87,7 @@ class OpcTcpServerTransportTest {
 
       @Override
       public List<EndpointDescription> getEndpointDescriptions() {
-        return List.of();
+        return org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf();
       }
 
       @Override

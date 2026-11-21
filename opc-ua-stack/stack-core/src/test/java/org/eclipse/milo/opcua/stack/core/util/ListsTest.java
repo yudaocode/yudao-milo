@@ -27,7 +27,7 @@ class ListsTest {
   @Test
   void partition() {
     {
-      List<List<Integer>> partitions = Lists.partition(List.of(1, 2, 3), 1).toList();
+      List<List<Integer>> partitions = Lists.partition(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(1, 2, 3), 1).collect(java.util.stream.Collectors.toList());
       assertEquals(3, partitions.size());
       assertEquals(1, partitions.get(0).size());
       assertEquals(1, partitions.get(1).size());
@@ -35,14 +35,14 @@ class ListsTest {
     }
 
     {
-      List<List<Integer>> partitions = Lists.partition(List.of(1, 2, 3), 2).toList();
+      List<List<Integer>> partitions = Lists.partition(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(1, 2, 3), 2).collect(java.util.stream.Collectors.toList());
       assertEquals(2, partitions.size());
       assertEquals(2, partitions.get(0).size());
       assertEquals(1, partitions.get(1).size());
     }
 
     {
-      List<List<Integer>> partitions = Lists.partition(List.of(1, 2, 3), 3).toList();
+      List<List<Integer>> partitions = Lists.partition(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(1, 2, 3), 3).collect(java.util.stream.Collectors.toList());
       assertEquals(1, partitions.size());
       assertEquals(3, partitions.get(0).size());
     }

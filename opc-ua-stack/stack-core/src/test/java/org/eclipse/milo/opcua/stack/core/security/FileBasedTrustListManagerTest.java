@@ -62,14 +62,14 @@ class FileBasedTrustListManagerTest {
     Path certs = Files.createDirectories(directory.resolve(list).resolve("certs"));
     Path imported = certs.resolve("operator-certificate.pem");
     Path duplicate = certs.resolve("another-name.cer");
-    Files.writeString(imported, pem("CERTIFICATE", removed.certificate().getEncoded()));
+    Files.write(imported, pem("CERTIFICATE", removed.certificate().getEncoded()).getBytes(java.nio.charset.StandardCharsets.UTF_8));
     Files.write(duplicate, removed.certificate().getEncoded());
     Files.write(certs.resolve("retained.cer"), retained.certificate().getEncoded());
 
-    try (var manager = FileBasedTrustListManager.createAndInitialize(directory)) {
+    try (org.eclipse.milo.opcua.stack.core.security.FileBasedTrustListManager manager = FileBasedTrustListManager.createAndInitialize(directory)) {
       assertEquals(
-          Set.of(removed.certificate(), retained.certificate()),
-          Set.copyOf(certificates(manager, list)));
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(removed.certificate(), retained.certificate()),
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.setCopyOf(certificates(manager, list)));
 
       if (operation.equals("remove")) {
         ByteString thumbprint = CertificateUtil.thumbprint(removed.certificate());
@@ -79,19 +79,19 @@ class FileBasedTrustListManagerTest {
                 : manager.removeIssuerCertificate(thumbprint);
         assertTrue(changed);
       } else if (list.equals("trusted")) {
-        manager.setTrustedCertificates(List.of(retained.certificate()));
+        manager.setTrustedCertificates(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(retained.certificate()));
       } else {
-        manager.setIssuerCertificates(List.of(retained.certificate()));
+        manager.setIssuerCertificates(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(retained.certificate()));
       }
 
-      assertEquals(List.of(retained.certificate()), certificates(manager, list));
+      assertEquals(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(retained.certificate()), certificates(manager, list));
     }
 
     assertFalse(Files.exists(imported));
     assertFalse(Files.exists(duplicate));
 
-    try (var reopened = FileBasedTrustListManager.createAndInitialize(directory)) {
-      assertEquals(List.of(retained.certificate()), certificates(reopened, list));
+    try (org.eclipse.milo.opcua.stack.core.security.FileBasedTrustListManager reopened = FileBasedTrustListManager.createAndInitialize(directory)) {
+      assertEquals(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(retained.certificate()), certificates(reopened, list));
     }
   }
 
@@ -105,11 +105,12 @@ class FileBasedTrustListManagerTest {
     Material alsoRetained = material("AlsoRetained");
     Path crls = Files.createDirectories(directory.resolve(list).resolve("crl"));
     Path bundle = crls.resolve("operator-bundle.pem");
-    Files.writeString(
+    Files.write(
         bundle,
-        pem("X509 CRL", removed.crl().getEncoded())
+        (pem("X509 CRL", removed.crl().getEncoded())
             + pem("X509 CRL", retained.crl().getEncoded())
-            + pem("X509 CRL", alsoRetained.crl().getEncoded()));
+            + pem("X509 CRL", alsoRetained.crl().getEncoded()))
+            .getBytes(java.nio.charset.StandardCharsets.UTF_8));
     Path duplicate = crls.resolve("duplicate.revocations");
     Files.write(duplicate, removed.crl().getEncoded());
 
@@ -118,18 +119,18 @@ class FileBasedTrustListManagerTest {
       Files.setPosixFilePermissions(bundle, PosixFilePermissions.fromString("rw-r-----"));
     }
 
-    try (var manager = FileBasedTrustListManager.createAndInitialize(directory)) {
+    try (org.eclipse.milo.opcua.stack.core.security.FileBasedTrustListManager manager = FileBasedTrustListManager.createAndInitialize(directory)) {
       assertEquals(
-          Set.of(removed.crl(), retained.crl(), alsoRetained.crl()),
-          Set.copyOf(crls(manager, list)));
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(removed.crl(), retained.crl(), alsoRetained.crl()),
+          org.eclipse.milo.opcua.stack.core.util.Java8Collections.setCopyOf(crls(manager, list)));
 
       if (list.equals("trusted")) {
-        manager.setTrustedCrls(List.of(retained.crl(), alsoRetained.crl()));
+        manager.setTrustedCrls(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(retained.crl(), alsoRetained.crl()));
       } else {
-        manager.setIssuerCrls(List.of(retained.crl(), alsoRetained.crl()));
+        manager.setIssuerCrls(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(retained.crl(), alsoRetained.crl()));
       }
 
-      assertEquals(Set.of(retained.crl(), alsoRetained.crl()), Set.copyOf(crls(manager, list)));
+      assertEquals(org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(retained.crl(), alsoRetained.crl()), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setCopyOf(crls(manager, list)));
     }
 
     assertFalse(Files.exists(duplicate));
@@ -139,8 +140,8 @@ class FileBasedTrustListManagerTest {
           PosixFilePermissions.fromString("rw-r-----"), Files.getPosixFilePermissions(bundle));
     }
 
-    try (var reopened = FileBasedTrustListManager.createAndInitialize(directory)) {
-      assertEquals(Set.of(retained.crl(), alsoRetained.crl()), Set.copyOf(crls(reopened, list)));
+    try (org.eclipse.milo.opcua.stack.core.security.FileBasedTrustListManager reopened = FileBasedTrustListManager.createAndInitialize(directory)) {
+      assertEquals(org.eclipse.milo.opcua.stack.core.util.Java8Collections.setOf(retained.crl(), alsoRetained.crl()), org.eclipse.milo.opcua.stack.core.util.Java8Collections.setCopyOf(crls(reopened, list)));
     }
   }
 
@@ -194,5 +195,21 @@ class FileBasedTrustListManagerTest {
         + "-----\n";
   }
 
-  private record Material(X509Certificate certificate, X509CRL crl) {}
+  private static final class Material {
+    private final X509Certificate certificate;
+    private final X509CRL crl;
+
+    public X509Certificate certificate() {
+      return certificate;
+    }
+
+    public X509CRL crl() {
+      return crl;
+    }
+
+    Material(X509Certificate certificate, X509CRL crl) {
+      this.certificate = certificate;
+      this.crl = crl;
+    }
+}
 }

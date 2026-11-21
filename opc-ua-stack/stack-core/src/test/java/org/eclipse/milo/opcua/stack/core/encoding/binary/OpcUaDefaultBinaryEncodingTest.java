@@ -43,7 +43,7 @@ class OpcUaDefaultBinaryEncodingTest {
     EncodingContext context = new DefaultEncodingContext();
     OpcUaDefaultBinaryEncoding encoding = OpcUaDefaultBinaryEncoding.getInstance();
 
-    var value = new XVType(1.0, 2.0f);
+    org.eclipse.milo.opcua.stack.core.types.structured.XVType value = new XVType(1.0, 2.0f);
     NodeId encodingId = XVType.XML_ENCODING_ID.toNodeIdOrThrow(context.getNamespaceTable());
 
     ExtensionObject encoded = encoding.encode(context, value);
@@ -65,7 +65,7 @@ class OpcUaDefaultBinaryEncodingTest {
 
     assertEquals(StatusCodes.Bad_EncodingLimitsExceeded, exception.getStatusCode().value());
 
-    var value = new XVType(1.0, 2.0f);
+    org.eclipse.milo.opcua.stack.core.types.structured.XVType value = new XVType(1.0, 2.0f);
     assertEquals(value, ExtensionObject.encode(context, value).decode(context));
   }
 
@@ -166,5 +166,21 @@ class OpcUaDefaultBinaryEncodingTest {
     return nested;
   }
 
-  private record DecodeChain(ExtensionObject root, DataTypeEncoding encoding) {}
+  private static final class DecodeChain {
+    private final ExtensionObject root;
+    private final DataTypeEncoding encoding;
+
+    public ExtensionObject root() {
+      return root;
+    }
+
+    public DataTypeEncoding encoding() {
+      return encoding;
+    }
+
+    DecodeChain(ExtensionObject root, DataTypeEncoding encoding) {
+      this.root = root;
+      this.encoding = encoding;
+    }
+}
 }

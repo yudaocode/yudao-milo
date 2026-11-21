@@ -30,14 +30,14 @@ public class NonBlockingLazyTest {
 
   @Test
   void get() {
-    var lazy = new NonBlockingLazy<>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.Object> lazy = new NonBlockingLazy<>();
 
     assertEquals("foo", lazy.get(() -> "foo"));
   }
 
   @Test
   void getOrThrow() {
-    var lazy = new NonBlockingLazy<>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.Object> lazy = new NonBlockingLazy<>();
 
     assertThrows(
         Exception.class,
@@ -72,12 +72,12 @@ public class NonBlockingLazyTest {
 
   @Test
   void onlyComputesOnce() {
-    var lazy = new NonBlockingLazy<>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.Object> lazy = new NonBlockingLazy<>();
 
-    final var instance = new Object();
+    final Object instance = new Object();
 
     Supplier<Object> supplier =
-        new Supplier<>() {
+        new Supplier<Object>() {
           final AtomicInteger count = new AtomicInteger(0);
 
           @Override
@@ -96,13 +96,13 @@ public class NonBlockingLazyTest {
 
   @Test
   void isResettable() {
-    var lazy = new NonBlockingLazy<>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.Object> lazy = new NonBlockingLazy<>();
 
     final Object instance1 = new Object();
     final Object instance2 = new Object();
 
     Supplier<Object> supplier =
-        new Supplier<>() {
+        new Supplier<Object>() {
           final AtomicInteger count = new AtomicInteger(0);
 
           @Override
@@ -124,18 +124,18 @@ public class NonBlockingLazyTest {
 
   @Test
   void set() {
-    var lazy = new NonBlockingLazy<>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.Object> lazy = new NonBlockingLazy<>();
 
     assertEquals("foo", lazy.get(() -> "foo"));
 
-    var instance = new Object();
+    java.lang.Object instance = new Object();
     lazy.set(instance);
     assertSame(instance, lazy.get(() -> null));
   }
 
   @Test
   void failedComputationIsNotCached() {
-    var lazy = new NonBlockingLazy<String>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.String> lazy = new NonBlockingLazy<String>();
 
     assertThrows(
         Exception.class,
@@ -150,10 +150,10 @@ public class NonBlockingLazyTest {
 
   @Test
   void resetDoesNotBlockWhileComputationInProgress() throws Exception {
-    var lazy = new NonBlockingLazy<String>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.String> lazy = new NonBlockingLazy<String>();
 
-    var computeStarted = new CountDownLatch(1);
-    var computeRelease = new CountDownLatch(1);
+    java.util.concurrent.CountDownLatch computeStarted = new CountDownLatch(1);
+    java.util.concurrent.CountDownLatch computeRelease = new CountDownLatch(1);
 
     ExecutorService executor = Executors.newCachedThreadPool();
     try {
@@ -174,7 +174,7 @@ public class NonBlockingLazyTest {
       assertTrue(computeStarted.await(5, TimeUnit.SECONDS));
 
       // reset() must return promptly even though a computation is in progress
-      var resetDone = new CountDownLatch(1);
+      java.util.concurrent.CountDownLatch resetDone = new CountDownLatch(1);
       executor.submit(
           () -> {
             lazy.reset();
@@ -199,11 +199,11 @@ public class NonBlockingLazyTest {
 
   @Test
   void waitersReceiveValueFromInProgressComputation() throws Exception {
-    var lazy = new NonBlockingLazy<String>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.String> lazy = new NonBlockingLazy<String>();
 
-    var computeStarted = new CountDownLatch(1);
-    var computeRelease = new CountDownLatch(1);
-    var supplierInvocations = new AtomicInteger(0);
+    java.util.concurrent.CountDownLatch computeStarted = new CountDownLatch(1);
+    java.util.concurrent.CountDownLatch computeRelease = new CountDownLatch(1);
+    java.util.concurrent.atomic.AtomicInteger supplierInvocations = new AtomicInteger(0);
 
     ExecutorService executor = Executors.newCachedThreadPool();
     try {
@@ -238,10 +238,10 @@ public class NonBlockingLazyTest {
 
   @Test
   void waitersReceiveExceptionFromInProgressComputation() throws Exception {
-    var lazy = new NonBlockingLazy<String>();
+    org.eclipse.milo.opcua.stack.core.util.NonBlockingLazy<java.lang.String> lazy = new NonBlockingLazy<String>();
 
-    var computeStarted = new CountDownLatch(1);
-    var computeRelease = new CountDownLatch(1);
+    java.util.concurrent.CountDownLatch computeStarted = new CountDownLatch(1);
+    java.util.concurrent.CountDownLatch computeRelease = new CountDownLatch(1);
 
     ExecutorService executor = Executors.newCachedThreadPool();
     try {

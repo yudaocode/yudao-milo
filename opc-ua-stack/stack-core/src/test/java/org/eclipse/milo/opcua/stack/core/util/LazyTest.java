@@ -22,14 +22,14 @@ public class LazyTest {
 
   @Test
   void get() {
-    var lazy = new Lazy<>();
+    org.eclipse.milo.opcua.stack.core.util.Lazy<java.lang.Object> lazy = new Lazy<>();
 
     assertEquals("foo", lazy.get(() -> "foo"));
   }
 
   @Test
   void getOrThrow() throws Exception {
-    var lazy = new Lazy<>();
+    org.eclipse.milo.opcua.stack.core.util.Lazy<java.lang.Object> lazy = new Lazy<>();
 
     assertThrows(
         Exception.class,
@@ -66,12 +66,12 @@ public class LazyTest {
 
   @Test
   void lazyOnlyComputesOnce() {
-    var lazy = new Lazy<>();
+    org.eclipse.milo.opcua.stack.core.util.Lazy<java.lang.Object> lazy = new Lazy<>();
 
-    final var instance = new Object();
+    final Object instance = new Object();
 
     Supplier<Object> supplier =
-        new Supplier<>() {
+        new Supplier<Object>() {
           final AtomicInteger count = new AtomicInteger(0);
 
           @Override
@@ -93,21 +93,23 @@ public class LazyTest {
 
   @Test
   void lazyIsResettable() {
-    var lazy = new Lazy<>();
+    org.eclipse.milo.opcua.stack.core.util.Lazy<java.lang.Object> lazy = new Lazy<>();
 
     final Object instance1 = new Object();
     final Object instance2 = new Object();
 
     Supplier<Object> supplier =
-        new Supplier<>() {
+        new Supplier<Object>() {
           final AtomicInteger count = new AtomicInteger(0);
 
           @Override
           public Object get() {
-            return switch (count.incrementAndGet()) {
-              case 1 -> instance1;
-              default -> instance2;
-            };
+            switch (count.incrementAndGet()) {
+              case 1:
+                return instance1;
+              default:
+                return instance2;
+            }
           }
         };
 
@@ -122,11 +124,11 @@ public class LazyTest {
 
   @Test
   void lazySet() {
-    var lazy = new Lazy<>();
+    org.eclipse.milo.opcua.stack.core.util.Lazy<java.lang.Object> lazy = new Lazy<>();
 
     assertEquals("foo", lazy.get(() -> "foo"));
 
-    var instance = new Object();
+    java.lang.Object instance = new Object();
     lazy.set(instance);
     assertEquals(instance, lazy.get(() -> null));
   }

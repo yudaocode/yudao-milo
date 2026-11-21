@@ -105,7 +105,7 @@ public class OpcUaBinaryEncoderTest {
 
     encoder.encodeMatrix(null, matrix);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Matrix decodedMatrix = decoder.decodeMatrix(null, OpcUaDataType.Int32);
 
     assertEquals(matrix, decodedMatrix);
@@ -121,7 +121,7 @@ public class OpcUaBinaryEncoderTest {
     Matrix matrix = Matrix.ofStruct(xvTypes);
     encoder.encodeMatrix(null, matrix);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Matrix decodedMatrix = decoder.decodeMatrix(null, OpcUaDataType.ExtensionObject);
 
     assertEquals(
@@ -140,7 +140,7 @@ public class OpcUaBinaryEncoderTest {
     Matrix matrix = Matrix.ofEnum(applicationTypes);
     encoder.encodeMatrix(null, matrix);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Matrix decodedMatrix = decoder.decodeMatrix(null, OpcUaDataType.Int32);
 
     assertEquals(matrix, decodedMatrix.transform(v -> ApplicationType.from((Integer) v)));
@@ -158,7 +158,7 @@ public class OpcUaBinaryEncoderTest {
 
     encoder.encodeEnumMatrix(null, matrix);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Matrix decodedMatrix = decoder.decodeMatrix(null, OpcUaDataType.Int32);
 
     assertArrayEquals(
@@ -180,7 +180,7 @@ public class OpcUaBinaryEncoderTest {
 
     encoder.encodeStructMatrix(null, matrix, dataTypeId);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Matrix decodedMatrix = decoder.decodeStructMatrix(null, dataTypeId);
 
     assertArrayEquals(new XVType[] {xv1, xv2}, (XVType[]) decodedMatrix.getElements());
@@ -197,7 +197,7 @@ public class OpcUaBinaryEncoderTest {
 
     encoder.encodeVariant(new Variant(values));
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Variant decoded = decoder.decodeVariant();
 
     // OptionSets go on the wire as their backing UInteger, so they come back as UByte here.
@@ -218,7 +218,7 @@ public class OpcUaBinaryEncoderTest {
 
     encoder.encodeVariant(new Variant(Matrix.ofOptionSetUI(values)));
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Variant decoded = decoder.decodeVariant();
 
     Matrix decodedMatrix = (Matrix) decoded.value();
@@ -255,7 +255,7 @@ public class OpcUaBinaryEncoderTest {
     Matrix matrix = Matrix.ofOptionSetUI(accessLevelTypes);
     encoder.encodeMatrix(null, matrix);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Matrix decodedMatrix = decoder.decodeMatrix(null, OpcUaDataType.Byte);
 
     assertEquals(matrix, decodedMatrix.transform(v -> new AccessLevelType((UByte) v)));
@@ -272,7 +272,7 @@ public class OpcUaBinaryEncoderTest {
     Variant variant = Variant.ofMatrix(matrix);
     encoder.encodeVariant(variant);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Variant decodedVariant = decoder.decodeVariant();
     Matrix decodedMatrix = (Matrix) decodedVariant.value();
     assert decodedMatrix != null;
@@ -291,7 +291,7 @@ public class OpcUaBinaryEncoderTest {
     Variant variant = Variant.ofMatrix(matrix);
     encoder.encodeVariant(variant);
 
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     Variant decodedVariant = decoder.decodeVariant();
     Matrix decodedMatrix = (Matrix) decodedVariant.value();
     assert decodedMatrix != null;
@@ -312,7 +312,7 @@ public class OpcUaBinaryEncoderTest {
     assertEquals(0b00000001, encodingMask);
 
     // decode the DataValue and ensure we decoded the value as true
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     DataValue decodedDataValue = decoder.decodeDataValue();
 
     assertEquals(Variant.ofBoolean(true), decodedDataValue.value());
@@ -328,7 +328,7 @@ public class OpcUaBinaryEncoderTest {
     assertEquals(0b00000000, encodingMask);
 
     // decode the DataValue and ensure we decoded the value as null
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     DataValue decodedDataValue = decoder.decodeDataValue();
 
     assertTrue(decodedDataValue.value().isNull());
@@ -344,7 +344,7 @@ public class OpcUaBinaryEncoderTest {
     assertEquals(0b00000001, encodingMask);
 
     // decode the DataValue and ensure we decoded the StatusCode as GOOD
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     DataValue decodedDataValue = decoder.decodeDataValue();
 
     assertEquals(StatusCode.GOOD, decodedDataValue.statusCode());
@@ -362,7 +362,7 @@ public class OpcUaBinaryEncoderTest {
     assertEquals(0b00000011, encodingMask);
 
     // decode the DataValue and ensure we decoded the same StatusCode
-    var decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
+    org.eclipse.milo.opcua.stack.core.encoding.binary.OpcUaBinaryDecoder decoder = new OpcUaBinaryDecoder(DefaultEncodingContext.INSTANCE).setBuffer(buffer);
     DataValue decodedDataValue = decoder.decodeDataValue();
 
     assertEquals(new StatusCode(StatusCodes.Good_Overload), decodedDataValue.statusCode());

@@ -105,7 +105,7 @@ public abstract class SecurityFixture {
 
     serverCertificateManager
         .getDefaultApplicationGroup()
-        .orElseThrow()
+        .get()
         .getTrustListManager()
         .addTrustedCertificate(clientCertificate);
   }

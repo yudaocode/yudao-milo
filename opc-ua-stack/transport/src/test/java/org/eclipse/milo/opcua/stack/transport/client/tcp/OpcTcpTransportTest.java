@@ -100,7 +100,7 @@ class OpcTcpTransportTest extends SecurityFixture {
       throws Exception {
     OpcServerTransport serverTransport = bindServerTransport(securityPolicy, messageSecurityMode);
 
-    var applicationContext =
+    ClientApplicationContext applicationContext =
         new ClientApplicationContext() {
           @Override
           public EndpointDescription getEndpoint() {
@@ -140,7 +140,7 @@ class OpcTcpTransportTest extends SecurityFixture {
 
     OpcTcpClientTransportConfig config = OpcTcpClientTransportConfig.newBuilder().build();
 
-    var transport = new OpcTcpClientTransport(config);
+    org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransport transport = new OpcTcpClientTransport(config);
 
     LOGGER.debug("connecting...");
     transport.connect(applicationContext).get();
@@ -165,7 +165,7 @@ class OpcTcpTransportTest extends SecurityFixture {
     OpcServerTransport serverTransport =
         bindServerTransport(SecurityPolicy.Basic256Sha256, MessageSecurityMode.SignAndEncrypt);
 
-    var applicationContext =
+    ClientApplicationContext applicationContext =
         new ClientApplicationContext() {
           @Override
           public EndpointDescription getEndpoint() {
@@ -205,7 +205,7 @@ class OpcTcpTransportTest extends SecurityFixture {
 
     OpcTcpClientTransportConfig config = OpcTcpClientTransportConfig.newBuilder().build();
 
-    var transport = new OpcTcpClientTransport(config);
+    org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransport transport = new OpcTcpClientTransport(config);
 
     LOGGER.debug("connecting...");
     transport.connect(applicationContext).get();
@@ -228,7 +228,7 @@ class OpcTcpTransportTest extends SecurityFixture {
     OpcServerTransport serverTransport =
         bindServerTransport(SecurityPolicy.Basic256Sha256, MessageSecurityMode.SignAndEncrypt);
 
-    var applicationContext =
+    ClientApplicationContext applicationContext =
         new ClientApplicationContext() {
           @Override
           public EndpointDescription getEndpoint() {
@@ -268,7 +268,7 @@ class OpcTcpTransportTest extends SecurityFixture {
 
     OpcTcpClientTransportConfig config = OpcTcpClientTransportConfig.newBuilder().build();
 
-    var transport = new OpcTcpClientTransport(config);
+    org.eclipse.milo.opcua.stack.transport.client.tcp.OpcTcpClientTransport transport = new OpcTcpClientTransport(config);
 
     LOGGER.debug("connecting...");
     transport.connect(applicationContext).get();
@@ -280,11 +280,11 @@ class OpcTcpTransportTest extends SecurityFixture {
   }
 
   private void createSession(OpcTcpClientTransport transport) throws Exception {
-    var header =
+    org.eclipse.milo.opcua.stack.core.types.structured.RequestHeader header =
         new RequestHeader(
             NodeId.NULL_VALUE, DateTime.now(), uint(0), uint(0), null, uint(5_000), null);
 
-    var request =
+    org.eclipse.milo.opcua.stack.core.types.structured.CreateSessionRequest request =
         new CreateSessionRequest(
             header,
             new ApplicationDescription(
@@ -303,7 +303,7 @@ class OpcTcpTransportTest extends SecurityFixture {
   private OpcServerTransport bindServerTransport(
       SecurityPolicy securityPolicy, MessageSecurityMode messageSecurityMode) throws Exception {
 
-    var applicationContext =
+    ServerApplicationContext applicationContext =
         new ServerApplicationContext() {
 
           private final AtomicLong secureChannelId = new AtomicLong(0L);
@@ -311,7 +311,7 @@ class OpcTcpTransportTest extends SecurityFixture {
 
           @Override
           public List<EndpointDescription> getEndpointDescriptions() {
-            return List.of(newEndpointDescription(securityPolicy, messageSecurityMode));
+            return org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(newEndpointDescription(securityPolicy, messageSecurityMode));
           }
 
           @Override
@@ -344,7 +344,7 @@ class OpcTcpTransportTest extends SecurityFixture {
                       e ->
                           Objects.equals(e.getSecurityPolicyUri(), SecurityPolicy.None.getUri()))) {
 
-                var errorMessage =
+                org.eclipse.milo.opcua.stack.core.channel.messages.ErrorMessage errorMessage =
                     new ErrorMessage(
                         StatusCodes.Bad_SecurityPolicyRejected,
                         StatusCodes.lookup(StatusCodes.Bad_SecurityPolicyRejected)
@@ -354,13 +354,13 @@ class OpcTcpTransportTest extends SecurityFixture {
                 context.getChannel().pipeline().fireUserEventTriggered(errorMessage);
 
                 // won't complete, doesn't matter, we're closing down
-                return new CompletableFuture<>();
+                return new CompletableFuture<UaResponseMessageType>();
               }
             }
 
             LOGGER.debug("request: {}", requestMessage);
 
-            return CompletableFuture.failedFuture(new RuntimeException("not implemented"));
+            return org.eclipse.milo.opcua.stack.core.util.Java8Collections.<UaResponseMessageType>failedFuture(new RuntimeException("not implemented"));
           }
         };
 

@@ -29,7 +29,7 @@ class OpcUaDataTypeTest {
       assertEquals(
           dataType,
           fromBackingClass,
-          "%s should return %s".formatted(backingClass.getName(), dataType));
+          String.format("%s should return %s", backingClass.getName(), dataType));
     }
   }
 
@@ -39,7 +39,7 @@ class OpcUaDataTypeTest {
     assertEquals(
         OpcUaDataType.ExtensionObject,
         OpcUaDataType.fromBackingClass(clazz),
-        "%s should return OpcUaDataType.ExtensionObject".formatted(clazz.getName()));
+        String.format("%s should return OpcUaDataType.ExtensionObject", clazz.getName()));
   }
 
   @ParameterizedTest

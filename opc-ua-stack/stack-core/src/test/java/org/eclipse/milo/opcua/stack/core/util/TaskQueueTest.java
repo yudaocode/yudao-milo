@@ -24,10 +24,10 @@ class TaskQueueTest {
 
   @Test
   void serialTaskExecution() {
-    var taskExecutor =
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor =
         TaskQueue.newBuilder().setExecutor(executor).setMaxConcurrentTasks(1).build();
 
-    var task = new TestTask();
+    org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask task = new TestTask();
 
     taskExecutor.execute(task);
 
@@ -36,7 +36,7 @@ class TaskQueueTest {
 
   @Test
   void concurrentTaskExecution() {
-    var taskExecutor =
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor =
         TaskQueue.newBuilder().setExecutor(executor).setMaxConcurrentTasks(2).build();
 
     taskExecutor.execute(
@@ -53,7 +53,7 @@ class TaskQueueTest {
         });
 
     // these task should still execute because concurrency > 1
-    var tasks = new ArrayList<TestTask>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask> tasks = new ArrayList<TestTask>();
     for (int i = 0; i < 10; i++) {
       tasks.add(new TestTask());
     }
@@ -64,7 +64,7 @@ class TaskQueueTest {
 
   @Test
   void priorityRatio() {
-    var taskExecutor =
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor =
         TaskQueue.newBuilder()
             .setExecutor(executor)
             .setMaxConcurrentTasks(1)
@@ -73,16 +73,16 @@ class TaskQueueTest {
 
     taskExecutor.pause();
 
-    var regularTasks = new ArrayList<TestTask>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask> regularTasks = new ArrayList<TestTask>();
     for (int i = 0; i < 2; i++) {
-      var task = new TestTask();
+      org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask task = new TestTask();
       taskExecutor.execute(task);
       regularTasks.add(task);
     }
 
-    var elevatedTasks = new ArrayList<TestTask>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask> elevatedTasks = new ArrayList<TestTask>();
     for (int i = 0; i < 6; i++) {
-      var task =
+       TestTask task =
           new TestTask() {
             @Override
             public TaskQueue.TaskPriority getPriority() {
@@ -112,7 +112,7 @@ class TaskQueueTest {
 
   @Test
   void criticalRequests() {
-    var taskExecutor =
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor =
         TaskQueue.newBuilder()
             .setExecutor(executor)
             .setMaxConcurrentTasks(1)
@@ -120,16 +120,16 @@ class TaskQueueTest {
             .build();
     taskExecutor.pause();
 
-    var regularTasks = new ArrayList<TestTask>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask> regularTasks = new ArrayList<TestTask>();
     for (int i = 0; i < 10; i++) {
-      var task = new TestTask();
+      org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask task = new TestTask();
       taskExecutor.execute(task);
       regularTasks.add(task);
     }
 
-    var criticalTasks = new ArrayList<TestTask>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask> criticalTasks = new ArrayList<TestTask>();
     for (int i = 0; i < 100; i++) {
-      var task =
+       TestTask task =
           new TestTask() {
             @Override
             public TaskQueue.TaskPriority getPriority() {
@@ -157,13 +157,13 @@ class TaskQueueTest {
 
   @Test
   void queueSize() {
-    var taskExecutor = TaskQueue.newBuilder().setExecutor(executor).setMaxQueueSize(3).build();
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor = TaskQueue.newBuilder().setExecutor(executor).setMaxQueueSize(3).build();
 
     taskExecutor.pause();
 
-    var tasks = new ArrayList<TestTask>();
+    java.util.ArrayList<org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask> tasks = new ArrayList<TestTask>();
     for (int i = 0; i < 3; i++) {
-      var task = new TestTask();
+      org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask task = new TestTask();
       tasks.add(task);
       assertTrue(taskExecutor.execute(task));
     }
@@ -178,9 +178,9 @@ class TaskQueueTest {
 
   @Test
   void shutdown() throws InterruptedException {
-    var taskExecutor = new TaskQueue(executor);
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor = new TaskQueue(executor);
 
-    var triggeredTask = new TriggeredTestTask();
+    org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TriggeredTestTask triggeredTask = new TriggeredTestTask();
 
     taskExecutor.execute(triggeredTask);
     taskExecutor.execute(new TestTask());
@@ -196,9 +196,9 @@ class TaskQueueTest {
 
   @Test
   void shutdownQuiescence() throws InterruptedException {
-    var taskExecutor = new TaskQueue(executor);
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor = new TaskQueue(executor);
 
-    var triggeredTask = new TriggeredTestTask();
+    org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TriggeredTestTask triggeredTask = new TriggeredTestTask();
 
     taskExecutor.execute(triggeredTask);
 
@@ -222,10 +222,10 @@ class TaskQueueTest {
 
   @Test
   void executionCallback() throws ExecutionException, InterruptedException {
-    var taskExecutor = new TaskQueue(executor);
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor = new TaskQueue(executor);
 
     {
-      var task = new TestTask();
+      org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask task = new TestTask();
       CompletionStage<Unit> callback = taskExecutor.submit(task);
       assertNotNull(callback);
       task.awaitExecution();
@@ -234,7 +234,7 @@ class TaskQueueTest {
     }
 
     {
-      var task = new TriggeredTestTask();
+      org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TriggeredTestTask task = new TriggeredTestTask();
       CompletionStage<Unit> callback = taskExecutor.submit(task);
       assertNotNull(callback);
       assertFalse(callback.toCompletableFuture().isDone());
@@ -247,9 +247,9 @@ class TaskQueueTest {
 
   @Test
   void callbackCompletesExceptionallyWhenTaskThrows() throws Exception {
-    var taskExecutor = new TaskQueue(executor);
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor = new TaskQueue(executor);
 
-    var task =
+     TestTask task =
         new TestTask() {
           @Override
           public void execute() {
@@ -286,10 +286,10 @@ class TaskQueueTest {
           }
         };
 
-    var taskExecutor = TaskQueue.newBuilder().setExecutor(flakyExecutor).build();
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskExecutor = TaskQueue.newBuilder().setExecutor(flakyExecutor).build();
 
-    var task = new TestTask();
-    var callback = taskExecutor.submit(task);
+    org.eclipse.milo.opcua.stack.core.util.TaskQueueTest.TestTask task = new TestTask();
+    java.util.concurrent.CompletionStage<org.eclipse.milo.opcua.stack.core.util.Unit> callback = taskExecutor.submit(task);
     assertNotNull(callback);
 
     // Ensure the task itself executed successfully
@@ -307,14 +307,14 @@ class TaskQueueTest {
 
   @Test
   void getQueueSizeAndPending() throws InterruptedException {
-    var taskQueue = TaskQueue.newBuilder().setExecutor(executor).setMaxConcurrentTasks(1).build();
+    org.eclipse.milo.opcua.stack.core.util.TaskQueue taskQueue = TaskQueue.newBuilder().setExecutor(executor).setMaxConcurrentTasks(1).build();
 
     // Initially both should be 0
     assertEquals(0, taskQueue.getQueueSize());
     assertEquals(0, taskQueue.getPending());
 
-    var taskStarted = new CountDownLatch(1);
-    var taskRelease = new CountDownLatch(1);
+    java.util.concurrent.CountDownLatch taskStarted = new CountDownLatch(1);
+    java.util.concurrent.CountDownLatch taskRelease = new CountDownLatch(1);
 
     // Submit a blocking task
     taskQueue.execute(

@@ -57,14 +57,14 @@ public class VariantTest {
   @ParameterizedTest
   @MethodSource("getDataTypeSource")
   void getDataType(Object input, OpcUaDataType expected) {
-    assertEquals(expected, Variant.of(input).getDataType().orElseThrow());
+    assertEquals(expected, Variant.of(input).getDataType().get());
   }
 
   @Test
   void variantCanContainAbstractType() {
     Number n = 1.0f;
     Variant v = Variant.of(n);
-    assertEquals(OpcUaDataType.Float, v.getDataType().orElseThrow());
+    assertEquals(OpcUaDataType.Float, v.getDataType().get());
   }
 
   @Test

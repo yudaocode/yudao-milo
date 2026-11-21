@@ -66,7 +66,7 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
    */
   @Test
   void entriesAreWrittenToDisk() throws Exception {
-    var certificateTypeId = new NodeId(2, "persisted");
+    org.eclipse.milo.opcua.stack.core.types.builtin.NodeId certificateTypeId = new NodeId(2, "persisted");
 
     certificateStore.set(certificateTypeId, newEntry());
 
@@ -75,8 +75,8 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
 
   @Test
   void failedWriteLeavesKeyStoreIntact() throws Exception {
-    var certificateTypeId = new NodeId(2, "unwritable");
-    var failWrite = new AtomicBoolean(false);
+    org.eclipse.milo.opcua.stack.core.types.builtin.NodeId certificateTypeId = new NodeId(2, "unwritable");
+    java.util.concurrent.atomic.AtomicBoolean failWrite = new AtomicBoolean(false);
 
     KeyStoreCertificateStore store =
         newKeyStoreCertificateStore(
@@ -99,7 +99,7 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
 
     // ...must not have left a partially written temporary file behind...
     try (Stream<Path> files = Files.list(testPath)) {
-      assertEquals(List.of(keyStorePath), files.toList());
+      assertEquals(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(keyStorePath), files.collect(java.util.stream.Collectors.toList()));
     }
 
     // ...and must not have damaged what was already on disk.
@@ -114,7 +114,7 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
    */
   @Test
   void reloadPicksUpExternalChanges() throws Exception {
-    var certificateTypeId = new NodeId(2, "external");
+    org.eclipse.milo.opcua.stack.core.types.builtin.NodeId certificateTypeId = new NodeId(2, "external");
 
     KeyStoreCertificateStore store = newKeyStoreCertificateStore("password"::toCharArray);
     store.initialize();
@@ -144,7 +144,7 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
 
     assertFalse(
         KeyStoreCertificateStore.isKeyStoreEvent(
-            watchEvent(StandardWatchEventKinds.ENTRY_MODIFY, Path.of(".keystore123.tmp")),
+            watchEvent(StandardWatchEventKinds.ENTRY_MODIFY, java.nio.file.Paths.get(".keystore123.tmp")),
             watchedDirectory,
             keyStorePath));
 
@@ -156,7 +156,7 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
 
   @Test
   void watchForChangesReloadsTheKeyStore() throws Exception {
-    var certificateTypeId = new NodeId(2, "watched");
+    org.eclipse.milo.opcua.stack.core.types.builtin.NodeId certificateTypeId = new NodeId(2, "watched");
 
     KeyStoreCertificateStore store = newKeyStoreCertificateStore("password"::toCharArray, true);
     store.initialize();
@@ -193,9 +193,9 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
 
   private static WatchEvent<?> watchEvent(WatchEvent.Kind<?> kind, @Nullable Object context) {
     @SuppressWarnings("unchecked")
-    var typedKind = (WatchEvent.Kind<Object>) kind;
+    WatchEvent.Kind<Object> typedKind = (WatchEvent.Kind<Object>) kind;
 
-    return new WatchEvent<>() {
+    return new WatchEvent<Object>() {
       @Override
       public WatchEvent.Kind<Object> kind() {
         return typedKind;
@@ -232,7 +232,7 @@ class KeyStoreCertificateStoreTest extends CertificateStoreTest {
   }
 
   private static CertificateStore.Entry newEntry() {
-    var factory = new TestCertificateFactory();
+    org.eclipse.milo.opcua.stack.core.security.TestCertificateFactory factory = new TestCertificateFactory();
     KeyPair keyPair = factory.createRsaSha256KeyPair();
 
     return new CertificateStore.Entry(

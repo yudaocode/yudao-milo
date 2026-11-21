@@ -61,7 +61,7 @@ class UascServerChunkLifecycleTest {
       new ServerApplicationContext() {
         @Override
         public List<EndpointDescription> getEndpointDescriptions() {
-          return List.of(
+          return org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf(
               new EndpointDescription(
                   ENDPOINT_URL,
                   new ApplicationDescription(
@@ -103,16 +103,16 @@ class UascServerChunkLifecycleTest {
         @Override
         public CompletableFuture<UaResponseMessageType> handleServiceRequest(
             ServiceRequestContext context, UaRequestMessageType requestMessage) {
-          return CompletableFuture.failedFuture(new UnsupportedOperationException());
+          return org.eclipse.milo.opcua.stack.core.util.Java8Collections.<UaResponseMessageType>failedFuture(new UnsupportedOperationException());
         }
       };
 
   @Test
   void asymmetricPartialChunkIsReleasedOnDisconnectBeforeSession() {
-    var handler =
+    org.eclipse.milo.opcua.stack.transport.server.uasc.UascServerAsymmetricHandler handler =
         new UascServerAsymmetricHandler(
             null, APPLICATION_CONTEXT, TransportProfile.TCP_UASC_UABINARY, CHANNEL_PARAMETERS);
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
     channel.attr(UascServerHelloHandler.ENDPOINT_URL_KEY).set(ENDPOINT_URL);
 
     ByteBuf chunk = newAsymmetricPartialChunk();
@@ -128,10 +128,10 @@ class UascServerChunkLifecycleTest {
 
   @Test
   void asymmetricPartialChunkIsReleasedOnHandlerRemoval() {
-    var handler =
+    org.eclipse.milo.opcua.stack.transport.server.uasc.UascServerAsymmetricHandler handler =
         new UascServerAsymmetricHandler(
             null, APPLICATION_CONTEXT, TransportProfile.TCP_UASC_UABINARY, CHANNEL_PARAMETERS);
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
     channel.attr(UascServerHelloHandler.ENDPOINT_URL_KEY).set(ENDPOINT_URL);
 
     ByteBuf chunk = newAsymmetricPartialChunk();
@@ -148,7 +148,7 @@ class UascServerChunkLifecycleTest {
   @Test
   void symmetricPartialChunkIsReleasedOnDisconnect() {
     UascServerSymmetricHandler handler = newSymmetricHandler();
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
 
     ByteBuf chunk = newSymmetricPartialChunk();
 
@@ -164,7 +164,7 @@ class UascServerChunkLifecycleTest {
   @Test
   void symmetricPartialChunkIsReleasedOnHandlerRemoval() {
     UascServerSymmetricHandler handler = newSymmetricHandler();
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
 
     ByteBuf chunk = newSymmetricPartialChunk();
 
@@ -179,9 +179,9 @@ class UascServerChunkLifecycleTest {
 
   @Test
   void symmetricPartialChunksAreReleasedOnException() {
-    var channelParameters = new ChannelParameters(8192, 8192, 8192, 1, 8192, 8192, 8192, 16);
+    org.eclipse.milo.opcua.stack.core.channel.ChannelParameters channelParameters = new ChannelParameters(8192, 8192, 8192, 1, 8192, 8192, 8192, 16);
     UascServerSymmetricHandler handler = newSymmetricHandler(channelParameters);
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
 
     ByteBuf firstChunk = newSymmetricChunk('C');
     ByteBuf secondChunk = newSymmetricChunk('C');
@@ -201,7 +201,7 @@ class UascServerChunkLifecycleTest {
   @Test
   void symmetricPartialChunkIsReleasedOnAbort() {
     UascServerSymmetricHandler handler = newSymmetricHandler();
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
 
     ByteBuf partialChunk = newSymmetricPartialChunk();
     ByteBuf abortChunk = newSymmetricChunk('A');
@@ -218,10 +218,10 @@ class UascServerChunkLifecycleTest {
 
   @Test
   void asymmetricMalformedFinalChunkIsReleasedBeforeSession() {
-    var handler =
+    org.eclipse.milo.opcua.stack.transport.server.uasc.UascServerAsymmetricHandler handler =
         new UascServerAsymmetricHandler(
             null, APPLICATION_CONTEXT, TransportProfile.TCP_UASC_UABINARY, CHANNEL_PARAMETERS);
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
     channel.attr(UascServerHelloHandler.ENDPOINT_URL_KEY).set(ENDPOINT_URL);
 
     ByteBuf chunk = newAsymmetricChunk('F', false);
@@ -235,7 +235,7 @@ class UascServerChunkLifecycleTest {
   @Test
   void symmetricMalformedFinalChunkIsReleased() {
     UascServerSymmetricHandler handler = newSymmetricHandler();
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
 
     ByteBuf chunk = newSymmetricFinalChunkWithoutSequenceHeader();
 
@@ -247,10 +247,10 @@ class UascServerChunkLifecycleTest {
 
   @Test
   void coalescedAsymmetricChunksAreReleasedOnMalformedFinalChunk() {
-    var handler =
+    org.eclipse.milo.opcua.stack.transport.server.uasc.UascServerAsymmetricHandler handler =
         new UascServerAsymmetricHandler(
             null, APPLICATION_CONTEXT, TransportProfile.TCP_UASC_UABINARY, CHANNEL_PARAMETERS);
-    var channel = new EmbeddedChannel(handler);
+    io.netty.channel.embedded.EmbeddedChannel channel = new EmbeddedChannel(handler);
     channel.attr(UascServerHelloHandler.ENDPOINT_URL_KEY).set(ENDPOINT_URL);
 
     ByteBuf chunks = PooledByteBufAllocator.DEFAULT.directBuffer();
@@ -265,7 +265,7 @@ class UascServerChunkLifecycleTest {
 
   @Test
   void transferredChunksRemainOwnedByCaller() {
-    var accumulator = new ChunkBufferAccumulator();
+    org.eclipse.milo.opcua.stack.transport.server.uasc.ChunkBufferAccumulator accumulator = new ChunkBufferAccumulator();
     ByteBuf chunk = PooledByteBufAllocator.DEFAULT.directBuffer(1);
 
     accumulator.add(chunk);
@@ -286,7 +286,7 @@ class UascServerChunkLifecycleTest {
 
   private static UascServerSymmetricHandler newSymmetricHandler(
       ChannelParameters channelParameters) {
-    var secureChannel = new ServerSecureChannel();
+    org.eclipse.milo.opcua.stack.core.channel.ServerSecureChannel secureChannel = new ServerSecureChannel();
     secureChannel.setChannelId(1L);
     secureChannel.setSecurityPolicy(SecurityPolicy.None);
     secureChannel.setMessageSecurityMode(MessageSecurityMode.None);
@@ -294,8 +294,8 @@ class UascServerChunkLifecycleTest {
         new ChannelSecurity(
             null, new ChannelSecurityToken(uint(1), uint(1), DateTime.now(), uint(60_000))));
 
-    var chunkEncoder = new ChunkEncoder(channelParameters);
-    var chunkDecoder =
+    org.eclipse.milo.opcua.stack.core.channel.ChunkEncoder chunkEncoder = new ChunkEncoder(channelParameters);
+    org.eclipse.milo.opcua.stack.core.channel.ChunkDecoder chunkDecoder =
         new ChunkDecoder(
             channelParameters, APPLICATION_CONTEXT.getEncodingContext().getEncodingLimits());
 

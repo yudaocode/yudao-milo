@@ -28,9 +28,9 @@ public final class TestPortAllocator {
 
   private static final int MAX_ALLOCATION_ATTEMPTS = 100;
   private static final Path LOCK_DIRECTORY =
-      Path.of(System.getProperty("java.io.tmpdir"), "milo-test-port-locks");
+      java.nio.file.Paths.get(System.getProperty("java.io.tmpdir"), "milo-test-port-locks");
 
-  private static final List<PortReservation> RESERVATIONS = new ArrayList<>();
+  private static final List<PortReservation> RESERVATIONS = new ArrayList<PortReservation>();
 
   private TestPortAllocator() {}
 
@@ -47,7 +47,7 @@ public final class TestPortAllocator {
     Files.createDirectories(LOCK_DIRECTORY);
 
     for (int attempt = 0; attempt < MAX_ALLOCATION_ATTEMPTS; attempt++) {
-      try (var socket = new ServerSocket()) {
+      try (java.net.ServerSocket socket = new ServerSocket()) {
         socket.setReuseAddress(false);
         socket.bind(new InetSocketAddress(InetAddress.getByName("localhost"), 0));
 
@@ -81,5 +81,21 @@ public final class TestPortAllocator {
   }
 
   @SuppressWarnings("unused")
-  private record PortReservation(FileChannel channel, FileLock lock) {}
+  private static final class PortReservation {
+    private final FileChannel channel;
+    private final FileLock lock;
+
+    public FileChannel channel() {
+      return channel;
+    }
+
+    public FileLock lock() {
+      return lock;
+    }
+
+    PortReservation(FileChannel channel, FileLock lock) {
+      this.channel = channel;
+      this.lock = lock;
+    }
+}
 }

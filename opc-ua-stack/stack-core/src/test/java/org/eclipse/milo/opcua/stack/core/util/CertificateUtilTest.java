@@ -89,13 +89,13 @@ public class CertificateUtilTest {
   @Test
   public void testGetSanDnsNames() {
     List<String> sanDnsNames = CertificateUtil.getSanDnsNames(certificate);
-    assertEquals(List.of("localhost", "hostname"), sanDnsNames);
+    assertEquals(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf("localhost", "hostname"), sanDnsNames);
   }
 
   @Test
   public void testGetSanIpAddresses() {
     List<String> sanDnsNames = CertificateUtil.getSanIpAddresses(certificate);
-    assertEquals(List.of("127.0.0.1", "127.0.0.2"), sanDnsNames);
+    assertEquals(org.eclipse.milo.opcua.stack.core.util.Java8Collections.listOf("127.0.0.1", "127.0.0.2"), sanDnsNames);
   }
 
   @Test
