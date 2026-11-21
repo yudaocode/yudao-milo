@@ -46,15 +46,11 @@ public final class SecurityKeyset {
   public SecurityKeyset(long channelId, long tokenId, byte[] clientEncryptionKey, byte[] clientInitializationVector, byte[] serverEncryptionKey, byte[] serverInitializationVector, int signatureSize) {
   this.channelId = channelId;
   this.tokenId = tokenId;
-  this.clientEncryptionKey = clientEncryptionKey;
-  this.clientInitializationVector = clientInitializationVector;
-  this.serverEncryptionKey = serverEncryptionKey;
-  this.serverInitializationVector = serverInitializationVector;
+  this.clientEncryptionKey = clientEncryptionKey.clone();
+  this.clientInitializationVector = clientInitializationVector.clone();
+  this.serverEncryptionKey = serverEncryptionKey.clone();
+  this.serverInitializationVector = serverInitializationVector.clone();
   this.signatureSize = signatureSize;
-    clientEncryptionKey = clientEncryptionKey.clone();
-    clientInitializationVector = clientInitializationVector.clone();
-    serverEncryptionKey = serverEncryptionKey.clone();
-    serverInitializationVector = serverInitializationVector.clone();
   }
 
   public byte[] clientEncryptionKey() {
@@ -71,5 +67,23 @@ public final class SecurityKeyset {
 
   public byte[] serverInitializationVector() {
     return serverInitializationVector.clone();
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof SecurityKeyset)) return false;
+    SecurityKeyset other = (SecurityKeyset) o;
+    return java.util.Objects.equals(channelId, other.channelId) && java.util.Objects.equals(tokenId, other.tokenId) && java.util.Objects.equals(clientEncryptionKey, other.clientEncryptionKey) && java.util.Objects.equals(clientInitializationVector, other.clientInitializationVector) && java.util.Objects.equals(serverEncryptionKey, other.serverEncryptionKey) && java.util.Objects.equals(serverInitializationVector, other.serverInitializationVector) && java.util.Objects.equals(signatureSize, other.signatureSize);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(channelId, tokenId, clientEncryptionKey, clientInitializationVector, serverEncryptionKey, serverInitializationVector, signatureSize);
+  }
+
+  @Override
+  public String toString() {
+    return "SecurityKeyset[" + channelId + ", " + tokenId + ", " + clientEncryptionKey + ", " + clientInitializationVector + ", " + serverEncryptionKey + ", " + serverInitializationVector + ", " + signatureSize + "]";
   }
 }

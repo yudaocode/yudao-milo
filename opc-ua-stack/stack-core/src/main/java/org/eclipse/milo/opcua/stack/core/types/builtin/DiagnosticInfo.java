@@ -102,4 +102,22 @@ public final class DiagnosticInfo {
 
   public static final DiagnosticInfo NULL_VALUE =
       new DiagnosticInfo(-1, -1, -1, -1, null, null, null);
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof DiagnosticInfo)) return false;
+    DiagnosticInfo other = (DiagnosticInfo) o;
+    return java.util.Objects.equals(namespaceUri, other.namespaceUri) && java.util.Objects.equals(symbolicId, other.symbolicId) && java.util.Objects.equals(locale, other.locale) && java.util.Objects.equals(localizedText, other.localizedText) && java.util.Objects.equals(additionalInfo, other.additionalInfo) && java.util.Objects.equals(innerStatusCode, other.innerStatusCode) && java.util.Objects.equals(innerDiagnosticInfo, other.innerDiagnosticInfo);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(namespaceUri, symbolicId, locale, localizedText, additionalInfo, innerStatusCode, innerDiagnosticInfo);
+  }
+
+  @Override
+  public String toString() {
+    return "DiagnosticInfo[" + namespaceUri + ", " + symbolicId + ", " + locale + ", " + localizedText + ", " + additionalInfo + ", " + innerStatusCode + ", " + innerDiagnosticInfo + "]";
+  }
 }

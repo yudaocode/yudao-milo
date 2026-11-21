@@ -69,8 +69,9 @@ public class DynamicUnionCodec extends GenericDataTypeCodec<DynamicUnionType> {
 
     switch (definition.getStructureType()) {
       case Union:
-case UnionWithSubtypedValues:
-encodeUnion(encoder, value);
+      case UnionWithSubtypedValues:
+        encodeUnion(encoder, value);
+        break;
       default:
           throw new IllegalArgumentException("StructureType: " + definition.getStructureType());
     }

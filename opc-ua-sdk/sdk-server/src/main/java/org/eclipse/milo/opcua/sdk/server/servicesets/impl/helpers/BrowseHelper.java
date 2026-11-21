@@ -385,6 +385,7 @@ public class BrowseHelper {
 
               typeDefinitions.add(ExpandedNodeId.NULL_VALUE);
             }
+            break;
           }
           default: typeDefinitions.add(ExpandedNodeId.NULL_VALUE);
         }

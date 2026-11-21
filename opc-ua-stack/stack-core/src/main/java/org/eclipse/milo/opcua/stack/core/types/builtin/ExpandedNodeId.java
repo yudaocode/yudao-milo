@@ -782,10 +782,24 @@ public final class ExpandedNodeId {
         return namespaceIndex;
       }
 
-      NamespaceIndex(UShort namespaceIndex) {
+      public NamespaceIndex(UShort namespaceIndex) {
         this.namespaceIndex = namespaceIndex;
       }
 
+
+      @Override
+      public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof NamespaceIndex)) return false;
+        NamespaceIndex other = (NamespaceIndex) o;
+        return java.util.Objects.equals(namespaceIndex, other.namespaceIndex);
+      }
+
+      @Override
+      public int hashCode() { return java.util.Objects.hash(namespaceIndex); }
+
+      @Override
+      public String toString() { return "NamespaceIndex[" + namespaceIndex + "]"; }
 
       public static final NamespaceIndex OPC_UA = new NamespaceIndex(UShort.MIN);
     }
@@ -797,10 +811,24 @@ public final class ExpandedNodeId {
         return namespaceUri;
       }
 
-      NamespaceUri(String namespaceUri) {
+      public NamespaceUri(String namespaceUri) {
         this.namespaceUri = namespaceUri;
       }
 
+
+      @Override
+      public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof NamespaceUri)) return false;
+        NamespaceUri other = (NamespaceUri) o;
+        return java.util.Objects.equals(namespaceUri, other.namespaceUri);
+      }
+
+      @Override
+      public int hashCode() { return java.util.Objects.hash(namespaceUri); }
+
+      @Override
+      public String toString() { return "NamespaceUri[" + namespaceUri + "]"; }
 
       public static final NamespaceUri OPC_UA = new NamespaceUri(Namespaces.OPC_UA);
     }
@@ -836,10 +864,24 @@ public final class ExpandedNodeId {
         return serverIndex;
       }
 
-      ServerIndex(UInteger serverIndex) {
+      public ServerIndex(UInteger serverIndex) {
         this.serverIndex = serverIndex;
       }
 
+
+      @Override
+      public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ServerIndex)) return false;
+        ServerIndex other = (ServerIndex) o;
+        return java.util.Objects.equals(serverIndex, other.serverIndex);
+      }
+
+      @Override
+      public int hashCode() { return java.util.Objects.hash(serverIndex); }
+
+      @Override
+      public String toString() { return "ServerIndex[" + serverIndex + "]"; }
 
       public static final ServerIndex LOCAL = new ServerIndex(UInteger.MIN);
     }
@@ -851,7 +893,7 @@ public final class ExpandedNodeId {
         return serverUri;
       }
 
-      ServerUri(String serverUri) {
+      public ServerUri(String serverUri) {
         this.serverUri = serverUri;
       }
 }
@@ -871,5 +913,23 @@ public final class ExpandedNodeId {
     static ServerReference of(String serverUri) {
       return new ServerUri(serverUri);
     }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof ExpandedNodeId)) return false;
+    ExpandedNodeId other = (ExpandedNodeId) o;
+    return java.util.Objects.equals(server, other.server) && java.util.Objects.equals(namespace, other.namespace) && java.util.Objects.equals(identifier, other.identifier);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(server, namespace, identifier);
+  }
+
+  @Override
+  public String toString() {
+    return "ExpandedNodeId[" + server + ", " + namespace + ", " + identifier + "]";
   }
 }

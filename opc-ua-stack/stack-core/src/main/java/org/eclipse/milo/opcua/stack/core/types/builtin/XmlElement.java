@@ -47,4 +47,22 @@ public final class XmlElement {
   public boolean isNotNull() {
     return !isNull();
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof XmlElement)) return false;
+    XmlElement other = (XmlElement) o;
+    return java.util.Objects.equals(fragment, other.fragment);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(fragment);
+  }
+
+  @Override
+  public String toString() {
+    return "XmlElement[" + fragment + "]";
+  }
 }

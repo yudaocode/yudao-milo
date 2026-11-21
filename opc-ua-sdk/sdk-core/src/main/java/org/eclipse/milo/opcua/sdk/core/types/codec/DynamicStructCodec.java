@@ -72,9 +72,10 @@ public class DynamicStructCodec extends GenericDataTypeCodec<DynamicStructType> 
 
     switch (definition.getStructureType()) {
       case Structure:
-case StructureWithOptionalFields:
-case StructureWithSubtypedValues:
-encodeStruct(encoder, value);
+      case StructureWithOptionalFields:
+      case StructureWithSubtypedValues:
+        encodeStruct(encoder, value);
+        break;
       default:
           throw new IllegalArgumentException("StructureType: " + definition.getStructureType());
     }

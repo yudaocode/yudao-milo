@@ -377,4 +377,19 @@ public final class StatusCode {
           .toString();
     }
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof StatusCode)) return false;
+    StatusCode other = (StatusCode) o;
+    return java.util.Objects.equals(value, other.value);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(value);
+  }
+
+
 }

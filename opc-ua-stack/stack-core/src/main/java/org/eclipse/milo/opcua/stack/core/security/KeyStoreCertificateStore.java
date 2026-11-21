@@ -34,6 +34,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -398,11 +399,12 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
   }
 
   private void watchForChanges(WatchKey watchKey, Path watchedDirectory, Path keyStorePath) {
+    long[] fileState = fileState(keyStorePath);
     while (true) {
       WatchKey key;
 
       try {
-        key = watchService.take();
+        key = watchService.poll(1, TimeUnit.SECONDS);
       } catch (ClosedWatchServiceException e) {
         return;
       } catch (InterruptedException e) {
@@ -411,20 +413,41 @@ public class KeyStoreCertificateStore implements CertificateStore, Closeable {
         return;
       }
 
-      if (key == watchKey
-          && key.pollEvents().stream()
-              .anyMatch(e -> isKeyStoreEvent(e, watchedDirectory, keyStorePath))) {
+      boolean changed =
+          key != null
+              && key == watchKey
+              && key.pollEvents().stream()
+                  .anyMatch(e -> isKeyStoreEvent(e, watchedDirectory, keyStorePath));
+
+      long[] currentState = fileState(keyStorePath);
+      if (currentState[0] != fileState[0] || currentState[1] != fileState[1]) {
+        changed = true;
+        fileState = currentState;
+      }
+
+      if (changed) {
 
         reload(keyStorePath);
       }
 
       // A WatchKey stays signalled, and is never queued again, until it has been reset.
-      if (!key.reset()) {
+      if (key != null && !key.reset()) {
         logger.warn(
             "No longer watching {} for changes: the watch key is no longer valid", keyStorePath);
 
         return;
       }
+    }
+  }
+
+  private static long[] fileState(Path keyStorePath) {
+    try {
+      if (!Files.exists(keyStorePath)) return new long[] {-1L, -1L};
+      return new long[] {
+        Files.getLastModifiedTime(keyStorePath).toMillis(), Files.size(keyStorePath)
+      };
+    } catch (IOException e) {
+      return new long[] {-1L, -1L};
     }
   }
 

@@ -94,4 +94,22 @@ public final class LocalizedText {
   public static LocalizedText english(@Nullable String text) {
     return new LocalizedText(text);
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof LocalizedText)) return false;
+    LocalizedText other = (LocalizedText) o;
+    return java.util.Objects.equals(locale, other.locale) && java.util.Objects.equals(text, other.text);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(locale, text);
+  }
+
+  @Override
+  public String toString() {
+    return "LocalizedText[" + locale + ", " + text + "]";
+  }
 }

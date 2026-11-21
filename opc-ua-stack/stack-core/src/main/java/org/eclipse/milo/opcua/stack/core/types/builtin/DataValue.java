@@ -282,4 +282,22 @@ public final class DataValue {
           value, status, sourceTime, sourcePicoseconds, serverTime, serverPicoseconds);
     }
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof DataValue)) return false;
+    DataValue other = (DataValue) o;
+    return java.util.Objects.equals(value, other.value) && java.util.Objects.equals(statusCode, other.statusCode) && java.util.Objects.equals(sourceTime, other.sourceTime) && java.util.Objects.equals(sourcePicoseconds, other.sourcePicoseconds) && java.util.Objects.equals(serverTime, other.serverTime) && java.util.Objects.equals(serverPicoseconds, other.serverPicoseconds);
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(value, statusCode, sourceTime, sourcePicoseconds, serverTime, serverPicoseconds);
+  }
+
+  @Override
+  public String toString() {
+    return "DataValue[" + value + ", " + statusCode + ", " + sourceTime + ", " + sourcePicoseconds + ", " + serverTime + ", " + serverPicoseconds + "]";
+  }
 }

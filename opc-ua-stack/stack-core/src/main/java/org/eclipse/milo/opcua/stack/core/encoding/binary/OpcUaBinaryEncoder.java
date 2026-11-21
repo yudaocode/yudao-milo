@@ -834,6 +834,7 @@ public class OpcUaBinaryEncoder implements UaEncoder {
           for (int i = 0; i < length; i++) encodeBoolean(values[i]);
         }
       }
+        break;
       case 2: {
         if (array instanceof byte[]) {
       byte[] values = (byte[]) array;
@@ -843,10 +844,12 @@ public class OpcUaBinaryEncoder implements UaEncoder {
           for (int i = 0; i < length; i++) encodeSByte(values[i]);
         }
       }
+        break;
       case 3: {
         UByte[] values = (UByte[]) array;
         for (int i = 0; i < length; i++) encodeByte(values[i]);
       }
+        break;
       case 4: {
         if (array instanceof short[]) {
       short[] values = (short[]) array;
@@ -856,10 +859,12 @@ public class OpcUaBinaryEncoder implements UaEncoder {
           for (int i = 0; i < length; i++) encodeInt16(values[i]);
         }
       }
+        break;
       case 5: {
         UShort[] values = (UShort[]) array;
         for (int i = 0; i < length; i++) encodeUInt16(values[i]);
       }
+        break;
       case 6: {
         if (array instanceof int[]) {
       int[] values = (int[]) array;
@@ -869,10 +874,12 @@ public class OpcUaBinaryEncoder implements UaEncoder {
           for (int i = 0; i < length; i++) encodeInt32(values[i]);
         }
       }
+        break;
       case 7: {
         UInteger[] values = (UInteger[]) array;
         for (int i = 0; i < length; i++) encodeUInt32(values[i]);
       }
+        break;
       case 8: {
         if (array instanceof long[]) {
       long[] values = (long[]) array;
@@ -882,10 +889,12 @@ public class OpcUaBinaryEncoder implements UaEncoder {
           for (int i = 0; i < length; i++) encodeInt64(values[i]);
         }
       }
+        break;
       case 9: {
         ULong[] values = (ULong[]) array;
         for (int i = 0; i < length; i++) encodeUInt64(values[i]);
       }
+        break;
       case 10: {
         if (array instanceof float[]) {
       float[] values = (float[]) array;
@@ -895,6 +904,7 @@ public class OpcUaBinaryEncoder implements UaEncoder {
           for (int i = 0; i < length; i++) encodeFloat(values[i]);
         }
       }
+        break;
       case 11: {
         if (array instanceof double[]) {
       double[] values = (double[]) array;
@@ -904,68 +914,82 @@ public class OpcUaBinaryEncoder implements UaEncoder {
           for (int i = 0; i < length; i++) encodeDouble(values[i]);
         }
       }
+        break;
       case 12: {
         String[] values = (String[]) array;
         for (int i = 0; i < length; i++) encodeString(values[i]);
       }
+        break;
       case 13: {
         DateTime[] values = (DateTime[]) array;
         for (int i = 0; i < length; i++) encodeDateTime(values[i]);
       }
+        break;
       case 14: {
         UUID[] values = (UUID[]) array;
         for (int i = 0; i < length; i++) encodeGuid(values[i]);
       }
+        break;
       case 15: {
         ByteString[] values = (ByteString[]) array;
         for (int i = 0; i < length; i++) encodeByteString(values[i]);
       }
+        break;
       case 16: {
         XmlElement[] values = (XmlElement[]) array;
         for (int i = 0; i < length; i++) encodeXmlElement(values[i]);
       }
+        break;
       case 17: {
         NodeId[] values = (NodeId[]) array;
         for (int i = 0; i < length; i++) encodeNodeId(values[i]);
       }
+        break;
       case 18: {
         ExpandedNodeId[] values = (ExpandedNodeId[]) array;
         for (int i = 0; i < length; i++) encodeExpandedNodeId(values[i]);
       }
+        break;
       case 19: {
         StatusCode[] values = (StatusCode[]) array;
         for (int i = 0; i < length; i++) encodeStatusCode(values[i]);
       }
+        break;
       case 20: {
         QualifiedName[] values = (QualifiedName[]) array;
         for (int i = 0; i < length; i++) encodeQualifiedName(values[i]);
       }
+        break;
       case 21: {
         LocalizedText[] values = (LocalizedText[]) array;
         for (int i = 0; i < length; i++) encodeLocalizedText(values[i]);
       }
+        break;
       case 22: {
         ExtensionObject[] values = (ExtensionObject[]) array;
         for (int i = 0; i < length; i++) encodeExtensionObject(values[i]);
       }
+        break;
       case 23: {
         DataValue[] values = (DataValue[]) array;
         for (int i = 0; i < length; i++) encodeDataValue(values[i]);
       }
+        break;
       case 24: {
         Variant[] values = (Variant[]) array;
         for (int i = 0; i < length; i++) encodeVariant(values[i]);
       }
+        break;
       case 25: {
         DiagnosticInfo[] values = (DiagnosticInfo[]) array;
         for (int i = 0; i < length; i++) encodeDiagnosticInfo(values[i]);
       }
+        break;
       default:
           throw new UaSerializationException(
               StatusCodes.Bad_EncodingError, "unknown builtin type: " + typeId);
     }
   }
-
   private Class<?> getClass(@NonNull Object o) {
     if (o.getClass().isArray()) {
       return ArrayUtil.getType(o);

@@ -178,14 +178,18 @@ public class Like implements Operator<Boolean> {
           if (tokens.isEmpty() || tokens.get(tokens.size() - 1) != STAR) {
             tokens.add(STAR);
           }
+          break;
         }
-        case '_': tokens.add((CharMatcher) ch -> true);
+        case '_':
+          tokens.add((CharMatcher) ch -> true);
+          break;
         case '\\': {
           if (++i >= pattern.length()) {
             throw new IllegalArgumentException("trailing escape");
           }
           char literal = pattern.charAt(i);
           tokens.add((CharMatcher) ch -> ch == literal);
+          break;
         }
         case '[':
           i = parseCharacterClass(pattern, i, tokens);
