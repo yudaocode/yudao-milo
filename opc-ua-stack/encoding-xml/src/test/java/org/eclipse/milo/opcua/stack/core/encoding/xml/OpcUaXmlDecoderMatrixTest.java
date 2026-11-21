@@ -69,10 +69,10 @@ public class OpcUaXmlDecoderMatrixTest {
     Matrix decoded;
     try (OpcUaXmlDecoder decoder = new OpcUaXmlDecoder(context)) {
       decoder.setInput(new StringReader(encoded));
-      decoded = decoder.decodeMatrix("Test", matrix.getDataType().orElseThrow());
+      decoded = decoder.decodeMatrix("Test", matrix.getDataType().get());
     }
 
-    Class<?> elementType = matrix.getElementType().orElseThrow();
+    Class<?> elementType = matrix.getElementType().get();
     if (elementType == ExtensionObject.class) {
       // An ExtensionObject carries its body as an XmlElement whose fragment the scalar codec
       // normalizes (so the ExtensionObjects don't compare verbatim), but the structures they wrap
@@ -87,7 +87,7 @@ public class OpcUaXmlDecoderMatrixTest {
       // dimensions + element count (the last guards against dropped/duplicated elements).
       assertFalse(decoded.isNull(), "decodeMatrix returned a null Matrix");
       assertArrayEquals(matrix.getDimensions(), decoded.getDimensions());
-      assertEquals(elementType, decoded.getElementType().orElseThrow());
+      assertEquals(elementType, decoded.getElementType().get());
       assertEquals(
           Array.getLength(matrix.getElements()),
           Array.getLength(decoded.getElements()),
@@ -123,7 +123,7 @@ public class OpcUaXmlDecoderMatrixTest {
     // expected value has Int32 elements equal to each enum's value, with the dimensions preserved.
     assertFalse(decoded.isNull(), "decodeEnumMatrix returned a null Matrix");
     assertArrayEquals(matrix.getDimensions(), decoded.getDimensions());
-    assertEquals(OpcUaDataType.Int32, decoded.getDataType().orElseThrow());
+    assertEquals(OpcUaDataType.Int32, decoded.getDataType().get());
 
     Matrix expected = matrix.transform(v -> ((UaEnumeratedType) v).getValue());
     assertEquals(expected, decoded);
@@ -138,7 +138,7 @@ public class OpcUaXmlDecoderMatrixTest {
       "org.eclipse.milo.opcua.stack.core.encoding.xml.args.MatrixArguments#matrixOfStructuredTypeArguments")
   void structMatrixRoundTripsWithNodeId(Matrix matrix, String ignoredExpectedXml) throws Exception {
     NodeId dataTypeId =
-        matrix.getDataTypeId().orElseThrow().toNodeId(context.getNamespaceTable()).orElseThrow();
+        matrix.getDataTypeId().get().toNodeId(context.getNamespaceTable()).get();
 
     String encoded = encode(e -> e.encodeStructMatrix("Test", matrix, dataTypeId));
 
@@ -153,8 +153,8 @@ public class OpcUaXmlDecoderMatrixTest {
     assertFalse(decoded.isNull(), "decodeStructMatrix(NodeId) returned a null Matrix");
     assertArrayEquals(matrix.getDimensions(), decoded.getDimensions());
     assertTrue(
-        UaStructuredType.class.isAssignableFrom(decoded.getElementType().orElseThrow()),
-        "expected struct elements, got " + decoded.getElementType().orElseThrow());
+        UaStructuredType.class.isAssignableFrom(decoded.getElementType().get()),
+        "expected struct elements, got " + decoded.getElementType().get());
     assertEquals(matrix, decoded);
   }
 
@@ -163,7 +163,7 @@ public class OpcUaXmlDecoderMatrixTest {
       "org.eclipse.milo.opcua.stack.core.encoding.xml.args.MatrixArguments#matrixOfStructuredTypeArguments")
   void structMatrixRoundTripsWithExpandedNodeId(Matrix matrix, String ignoredExpectedXml)
       throws Exception {
-    ExpandedNodeId dataTypeId = matrix.getDataTypeId().orElseThrow();
+    ExpandedNodeId dataTypeId = matrix.getDataTypeId().get();
 
     String encoded = encode(e -> e.encodeStructMatrix("Test", matrix, dataTypeId));
 
@@ -176,8 +176,8 @@ public class OpcUaXmlDecoderMatrixTest {
     assertFalse(decoded.isNull(), "decodeStructMatrix(ExpandedNodeId) returned a null Matrix");
     assertArrayEquals(matrix.getDimensions(), decoded.getDimensions());
     assertTrue(
-        UaStructuredType.class.isAssignableFrom(decoded.getElementType().orElseThrow()),
-        "expected struct elements, got " + decoded.getElementType().orElseThrow());
+        UaStructuredType.class.isAssignableFrom(decoded.getElementType().get()),
+        "expected struct elements, got " + decoded.getElementType().get());
     assertEquals(matrix, decoded);
   }
 
